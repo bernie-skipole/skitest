@@ -1,0 +1,42 @@
+{
+"backcol": "#9dbd7a",
+"css_links": [
+"skitest_css"
+],
+"js_links": [
+"jquery_core",
+"skipole_js"
+],
+"widgets": {
+"links": {
+"ButtonLink1": {
+"widget_class": "ski_midbutton"
+},
+"JSONButtonLink": {
+"widget_class": "ski_midbutton"
+}
+},
+"checkbox": {
+"CheckBox1": {
+"error_class": "ski_errorcol"
+}
+},
+"error_messages": {
+"ErrorPara": {
+"widget_class": "ski_errorcol"
+}
+},
+"headers": {
+"NavButtons1": {
+"button_class": "ski_leftbutton",
+"li_class": "",
+"ul_class": "ski_no_bullets"
+}
+},
+"inputforms": {
+"SubmitForm1": {
+"div_class": ""
+}
+}
+}
+}

@@ -1,0 +1,5916 @@
+{
+"url": "/",
+"default_language": "en",
+"brief": "Project to test the skipole framework",
+"version": "0.0.0",
+"skipole": "0.2.0",
+"subprojects": {
+"lib": "/lib/"
+},
+"specialpages": {
+"check10test": 4011,
+"check11test": 4012,
+"check12test": 4013,
+"check1test": 4003,
+"check2test": 4004,
+"check3test": 4005,
+"check4test": 4006,
+"check5test": 4007,
+"check6test": 4008,
+"checkbox": 3002,
+"checkbox1": 4002,
+"checkbox2": 4010,
+"checkedtext": 4020,
+"confirm": 3003,
+"general_json": 570,
+"home": 1,
+"jquery_core": "lib,jquery_core",
+"login": 100,
+"login1": 100002,
+"login2": 100005,
+"logout1": 100003,
+"logout2": 100006,
+"modules": 3001,
+"no_javascript": 540,
+"paras": 3006,
+"redirector": 530,
+"secure1": 100001,
+"secure2": 100004,
+"secure3": 100007,
+"server_error": 520,
+"ski_basic": "lib,ski_basic",
+"ski_checkbox": "lib,ski_checkbox",
+"ski_confirm": "lib,ski_confirm",
+"ski_debug_tools": "lib,ski_debug_tools",
+"ski_dropdown": "lib,ski_dropdown",
+"ski_error_messages": "lib,ski_error_messages",
+"ski_footers": "lib,ski_footers",
+"ski_headers": "lib,ski_headers",
+"ski_info": "lib,ski_info",
+"ski_inputforms": "lib,ski_inputforms",
+"ski_inputtables": "lib,ski_inputtables",
+"ski_inputtext": "lib,ski_inputtext",
+"ski_links": "lib,ski_links",
+"ski_paras": "lib,ski_paras",
+"ski_paths": "lib,ski_paths",
+"ski_radio": "lib,ski_radio",
+"ski_svgarrows": "lib,ski_svgarrows",
+"ski_svgbasics": "lib,ski_svgbasics",
+"ski_tables": "lib,ski_tables",
+"ski_textarea": "lib,ski_textarea",
+"skipole_js": "lib,skipole_js",
+"skitest_css": 1002,
+"url_not_found": 500,
+"validate_error": 510
+},
+"sections": {
+"header": [
+"Section",
+{
+"tag_name": "header",
+"brief": "header section for each page",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "ski_top"
+},
+"parts": [
+[
+"Widget",
+{
+"class": "paras.TextPara",
+"name": "headpara",
+"brief": "Paragraph in the page header",
+"fields": {
+"clear_error": false,
+"error_class": "",
+"para_class": "",
+"para_text": "Page header paragraph text",
+"show": true,
+"show_error": "",
+"widget_class": ""
+}
+}
+],
+[
+"Widget",
+{
+"class": "error_messages.ErrorPara",
+"name": "top_error",
+"brief": "Error paragraph",
+"fields": {
+"clear_error": false,
+"hide": true,
+"show": true,
+"show_error": "",
+"widget_class": "ski_errorcol"
+}
+}
+]
+]
+}
+],
+"navigation": [
+"Section",
+{
+"tag_name": "div",
+"brief": "left navigation div",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "ski_left"
+},
+"parts": [
+[
+"Widget",
+{
+"class": "headers.NavButtons1",
+"name": "navbuttons",
+"brief": "List of navigation buttons",
+"fields": {
+"button_class": "ski_leftbutton",
+"clear_error": false,
+"error_class": "",
+"li_class": "",
+"nav_links": [
+[
+"",
+"",
+false,
+""
+]
+],
+"show": true,
+"show_error": "",
+"ul_class": "ski_no_bullets",
+"widget_class": ""
+}
+}
+]
+]
+}
+]
+},
+"RootFolder": {
+"brief": "Site root",
+"default_page_name": "index",
+"folders": {
+"css": {
+"ident": 1000,
+"brief": "Holds CSS pages",
+"default_page_name": "index",
+"restricted": false,
+"folders": {},
+"pages": {
+"skitest.css": {
+"ident": 1002,
+"brief": "CSS page for the skitest project",
+"CSS": {
+"enable_cache": true,
+"style": {
+"*": [
+[
+"font-size",
+"12px"
+],
+[
+"margin",
+"0"
+],
+[
+"padding",
+"0"
+]
+],
+"body": [
+[
+"background-color",
+"#9dbd7a"
+],
+[
+"color",
+"#000000"
+],
+[
+"font-family",
+"\"Arial Black\", Gadget, sans-serif"
+]
+],
+".ski_container": [
+[
+"margin-bottom",
+"10px"
+],
+[
+"margin-left",
+"auto"
+],
+[
+"margin-right",
+"auto"
+],
+[
+"margin-top",
+"10px"
+],
+[
+"max-width",
+"1250px"
+],
+[
+"min-width",
+"400px"
+],
+[
+"position",
+"relative"
+],
+[
+"width",
+"90%"
+]
+],
+".ski_top": [
+[
+"background",
+"#69b585"
+],
+[
+"margin-bottom",
+"20px"
+],
+[
+"width",
+"100%"
+],
+[
+"padding",
+"2px"
+]
+],
+".ski_centre": [
+[
+"float",
+"right"
+],
+[
+"margin-left",
+"1%"
+],
+[
+"width",
+"78%"
+]
+],
+".ski_left": [
+[
+"background",
+"#69b585"
+],
+[
+"float",
+"left"
+],
+[
+"width",
+"20%"
+]
+],
+".ski_midbutton": [
+[
+"-moz-border-radius",
+"8"
+],
+[
+"-webkit-border-radius",
+"8"
+],
+[
+"background",
+"green"
+],
+[
+"border",
+"solid blue 2px"
+],
+[
+"border-radius",
+"8px"
+],
+[
+"color",
+"white"
+],
+[
+"display",
+"block"
+],
+[
+"margin-bottom",
+"10px"
+],
+[
+"margin-left",
+"30%"
+],
+[
+"margin-right",
+"auto"
+],
+[
+"margin-top",
+"10px"
+],
+[
+"padding",
+"4px 6px 6px 4px"
+],
+[
+"text-align",
+"center"
+],
+[
+"text-decoration",
+"none"
+],
+[
+"width",
+"20%"
+]
+],
+".ski_midbutton:hover": [
+[
+"background",
+"blue"
+],
+[
+"border",
+"solid black 2px"
+],
+[
+"color",
+"white"
+]
+],
+".ski_leftbutton": [
+[
+"-moz-border-radius",
+"8"
+],
+[
+"-webkit-border-radius",
+"8"
+],
+[
+"background",
+"green"
+],
+[
+"border",
+"solid blue 2px"
+],
+[
+"border-radius",
+"8px"
+],
+[
+"color",
+"white"
+],
+[
+"display",
+"block"
+],
+[
+"margin-bottom",
+"10px"
+],
+[
+"margin-left",
+"5%"
+],
+[
+"margin-right",
+"5%"
+],
+[
+"margin-top",
+"10px"
+],
+[
+"padding",
+"4px 6px 6px 4px"
+],
+[
+"text-align",
+"center"
+],
+[
+"text-decoration",
+"none"
+]
+],
+".ski_leftbutton:hover": [
+[
+"background",
+"blue"
+],
+[
+"border",
+"solid black 2px"
+],
+[
+"color",
+"white"
+]
+],
+".ski_left_label": [
+[
+"display",
+"inline-block"
+],
+[
+"font-weight",
+"bold"
+],
+[
+"margin-right",
+"1%"
+],
+[
+"padding-bottom",
+"3px"
+],
+[
+"padding-top",
+"3px"
+],
+[
+"text-align",
+"right"
+],
+[
+"vertical-align",
+"top"
+],
+[
+"width",
+"29%"
+]
+],
+".ski_errorcol": [
+[
+"color",
+"red"
+]
+],
+".ski_no_bullets": [
+[
+"list-style-type",
+"none"
+]
+],
+".ski_inline": [
+[
+"display",
+"inline-block"
+]
+],
+".ski_input_errored": [
+[
+"border",
+"2px solid red"
+]
+],
+".odd": [
+[
+"background-color",
+"#9dbd50"
+],
+[
+"padding",
+"2px"
+],
+[
+"margin",
+"2px"
+]
+],
+".even": [
+[
+"background-color",
+"#9dbd70"
+],
+[
+"padding",
+"2px"
+],
+[
+"margin",
+"2px"
+]
+],
+".bottom10": [
+[
+"margin-bottom",
+"10px"
+]
+],
+".bottom20": [
+[
+"margin-bottom",
+"20px"
+]
+]
+}
+}
+}
+}
+},
+"logon": {
+"ident": 100000,
+"brief": "Holds logon test",
+"default_page_name": "index",
+"restricted": false,
+"folders": {
+"restricted": {
+"ident": 100100,
+"brief": "holds logon templates",
+"default_page_name": "index",
+"restricted": true,
+"folders": {},
+"pages": {
+"login3": {
+"ident": 100107,
+"brief": "Requests basic authentication",
+"RespondPage": {
+"message": "Invalid operation",
+"class": "SubmitPlainText",
+"original_args": {
+"fail_ident": "home",
+"submit_list": [
+"login",
+"request_login3"
+]
+},
+"original_fields": {}
+}
+},
+"login_template": {
+"ident": 100101,
+"brief": "Template holding login form",
+"TemplatePage": {
+"show_backcol": false,
+"last_scroll": true,
+"lang": "en",
+"backcol": "#9dbd7a",
+"default_error_widget": [
+"header",
+"top_error"
+]
+},
+"head": [
+"Part",
+{
+"tag_name": "head",
+"brief": "The head section of the page",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"ClosedPart",
+{
+"tag_name": "meta",
+"brief": "The charset meta declaration",
+"show": true,
+"attribs": {
+"charset": "utf-8"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "meta",
+"brief": "The viewport meta declaration",
+"show": true,
+"attribs": {
+"content": "width=device-width, initial-scale=1",
+"name": "viewport"
+}
+}
+],
+[
+"Part",
+{
+"tag_name": "title",
+"brief": "The page title element",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Text",
+"Index"
+]
+]
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to skitest_css",
+"show": true,
+"attribs": {
+"href": "{skitest_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"Comment",
+{
+"text": "HTML5shiv - included as a TextBlock"
+}
+],
+[
+"TextBlock",
+{
+"textref": "html5shiv",
+"failmessage": "failed to read textblocks database with ref html5shiv",
+"show": true,
+"escape": false,
+"linebreaks": false
+}
+],
+[
+"Part",
+{
+"tag_name": "script",
+"brief": "script link to jquery_core",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"src": "{jquery_core}"
+},
+"parts": []
+}
+],
+[
+"Part",
+{
+"tag_name": "script",
+"brief": "script link to skipole_js",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"src": "{skipole_js}"
+},
+"parts": []
+}
+]
+]
+}
+],
+"body": [
+"Part",
+{
+"tag_name": "body",
+"brief": "The body section of the page",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "container",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "ski_container"
+},
+"parts": [
+[
+"SectionPlaceHolder",
+{
+"brief": "Page header",
+"section_name": "header",
+"placename": "header"
+}
+],
+[
+"SectionPlaceHolder",
+{
+"brief": "Left navigation panel",
+"section_name": "navigation",
+"placename": "navigation"
+}
+],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "centre",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "ski_centre"
+},
+"parts": [
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "secure1 test",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "odd"
+},
+"parts": [
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "Top description",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"TextBlock",
+{
+"textref": "page.100101.01",
+"failmessage": "TextBlock not found",
+"show": true,
+"escape": true,
+"linebreaks": true
+}
+]
+]
+}
+],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "Holds password form for secure 1",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"style": "padding-left:20%"
+},
+"parts": [
+[
+"Widget",
+{
+"class": "inputforms.SubmitForm1",
+"name": "password",
+"brief": "Form to hold password for secure1",
+"fields": {
+"action": "login1",
+"action_json": "",
+"button_text": "Submit",
+"clear_error": false,
+"div_class": "",
+"error_class": "",
+"hidden_field1": "",
+"hidden_field2": "",
+"hidden_field3": "",
+"hidden_field4": "",
+"left_class": "",
+"left_label": "",
+"right_class": "",
+"right_label": "",
+"show": true,
+"show_error": "",
+"widget_class": ""
+},
+"container_0": [
+"ClosedWidget",
+{
+"class": "inputtext.Password1",
+"name": "passwd1",
+"brief": "Password input field",
+"fields": {
+"disabled": false,
+"input_accepted_class": "",
+"input_errored_class": "ski_input_errored",
+"input_text": "",
+"maxlength": "10",
+"required": true,
+"set_input_accepted": false,
+"set_input_errored": false,
+"show": true,
+"size": "10",
+"widget_class": ""
+}
+}
+]
+}
+]
+]
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink1",
+"name": "to_secure1",
+"brief": "Button link to secure1 page",
+"fields": {
+"button_text": "Link to secure1",
+"clear_error": false,
+"error_class": "",
+"force_ident": false,
+"get_field1": "",
+"get_field2": "",
+"link_ident": "secure1",
+"new_window": false,
+"show": true,
+"show_error": "",
+"widget_class": "ski_midbutton"
+}
+}
+]
+]
+}
+],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "secure2 test",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "even"
+},
+"parts": [
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "About secure2",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"TextBlock",
+{
+"textref": "page.100101.02",
+"failmessage": "TextBlock not found",
+"show": true,
+"escape": true,
+"linebreaks": true
+}
+]
+]
+}
+],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "Holds password form for secure2",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"style": "padding-left:20%"
+},
+"parts": [
+[
+"Widget",
+{
+"class": "inputforms.SubmitForm1",
+"name": "password2",
+"brief": "Form to hold password for secure2",
+"fields": {
+"action": "login2",
+"action_json": "",
+"button_text": "Submit",
+"clear_error": false,
+"div_class": "",
+"error_class": "",
+"hidden_field1": "",
+"hidden_field2": "",
+"hidden_field3": "",
+"hidden_field4": "",
+"left_class": "",
+"left_label": "",
+"right_class": "",
+"right_label": "",
+"show": true,
+"show_error": "",
+"widget_class": ""
+},
+"container_0": [
+"ClosedWidget",
+{
+"class": "inputtext.Password1",
+"name": "passwd2",
+"brief": "Password input field",
+"fields": {
+"disabled": false,
+"input_accepted_class": "",
+"input_errored_class": "ski_input_errored",
+"input_text": "",
+"maxlength": "10",
+"required": true,
+"set_input_accepted": false,
+"set_input_errored": false,
+"show": true,
+"size": "10",
+"widget_class": ""
+}
+}
+]
+}
+]
+]
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink1",
+"name": "to_secure2",
+"brief": "Button link to secure2 page",
+"fields": {
+"button_text": "Link to secure2",
+"clear_error": false,
+"error_class": "",
+"force_ident": false,
+"get_field1": "",
+"get_field2": "",
+"link_ident": "secure2",
+"new_window": false,
+"show": true,
+"show_error": "",
+"widget_class": "ski_midbutton"
+}
+}
+]
+]
+}
+],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "secure3 test",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "odd"
+},
+"parts": [
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "About secure3",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"TextBlock",
+{
+"textref": "page.100101.03",
+"failmessage": "TextBlock not found",
+"show": true,
+"escape": true,
+"linebreaks": true
+}
+]
+]
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink1",
+"name": "to_secure3",
+"brief": "Button link to secure3 page",
+"fields": {
+"button_text": "Link to secure3",
+"clear_error": false,
+"error_class": "",
+"force_ident": false,
+"get_field1": "",
+"get_field2": "",
+"link_ident": "secure3",
+"new_window": false,
+"show": true,
+"show_error": "",
+"widget_class": "ski_midbutton"
+}
+}
+]
+]
+}
+]
+]
+}
+]
+]
+}
+]
+]
+}
+]
+},
+"secure1_cookie": {
+"ident": 100103,
+"brief": "Set cookie for access to secure1 page",
+"RespondPage": {
+"class": "SessionCookie",
+"original_args": {
+"allowed_callers": [
+100002
+],
+"fail_ident": "login",
+"submit_list": [
+"login",
+"set_cookie1"
+],
+"target_ident": 100102
+},
+"original_fields": {}
+}
+},
+"secure1_template": {
+"ident": 100102,
+"brief": "template for secure1 page",
+"TemplatePage": {
+"show_backcol": false,
+"last_scroll": true,
+"lang": "en",
+"backcol": "#9dbd7a",
+"default_error_widget": [
+"header",
+"top_error"
+]
+},
+"head": [
+"Part",
+{
+"tag_name": "head",
+"brief": "The head section of the page",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"ClosedPart",
+{
+"tag_name": "meta",
+"brief": "The charset meta declaration",
+"show": true,
+"attribs": {
+"charset": "utf-8"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "meta",
+"brief": "The viewport meta declaration",
+"show": true,
+"attribs": {
+"content": "width=device-width, initial-scale=1",
+"name": "viewport"
+}
+}
+],
+[
+"Part",
+{
+"tag_name": "title",
+"brief": "The page title element",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Text",
+"Index"
+]
+]
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to skitest_css",
+"show": true,
+"attribs": {
+"href": "{skitest_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"Comment",
+{
+"text": "HTML5shiv - included as a TextBlock"
+}
+],
+[
+"TextBlock",
+{
+"textref": "html5shiv",
+"failmessage": "failed to read textblocks database with ref html5shiv",
+"show": true,
+"escape": false,
+"linebreaks": false
+}
+],
+[
+"Part",
+{
+"tag_name": "script",
+"brief": "script link to jquery_core",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"src": "{jquery_core}"
+},
+"parts": []
+}
+],
+[
+"Part",
+{
+"tag_name": "script",
+"brief": "script link to skipole_js",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"src": "{skipole_js}"
+},
+"parts": []
+}
+]
+]
+}
+],
+"body": [
+"Part",
+{
+"tag_name": "body",
+"brief": "The body section of the page",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "container",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "ski_container"
+},
+"parts": [
+[
+"SectionPlaceHolder",
+{
+"brief": "Page header",
+"section_name": "header",
+"placename": "header"
+}
+],
+[
+"SectionPlaceHolder",
+{
+"brief": "Left navigation panel",
+"section_name": "navigation",
+"placename": "navigation"
+}
+],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "centre",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "ski_centre"
+},
+"parts": [
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "Top description",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"TextBlock",
+{
+"textref": "page.100102.01",
+"failmessage": "TextBlock not found",
+"show": true,
+"escape": true,
+"linebreaks": true
+}
+]
+]
+}
+],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "logout",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "odd"
+},
+"parts": [
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "Logout description",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"TextBlock",
+{
+"textref": "page.100102.02",
+"failmessage": "TextBlock not found",
+"show": true,
+"escape": true,
+"linebreaks": true
+}
+]
+]
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink1",
+"name": "logout",
+"brief": "Button link to logout",
+"fields": {
+"button_text": "Logout",
+"clear_error": false,
+"error_class": "",
+"force_ident": false,
+"get_field1": "",
+"get_field2": "",
+"link_ident": "logout1",
+"new_window": false,
+"show": true,
+"show_error": "",
+"widget_class": "ski_midbutton"
+}
+}
+]
+]
+}
+]
+]
+}
+]
+]
+}
+]
+]
+}
+]
+},
+"secure2_cookie": {
+"ident": 100105,
+"brief": "Set cookie for access to secure2 page",
+"RespondPage": {
+"class": "SetCookies",
+"original_args": {
+"allowed_callers": [
+100005
+],
+"fail_ident": "login",
+"submit_list": [
+"login",
+"set_cookie2"
+],
+"target_ident": 100104
+},
+"original_fields": {}
+}
+},
+"secure2_template": {
+"ident": 100104,
+"brief": "template for secure2 page",
+"TemplatePage": {
+"show_backcol": false,
+"last_scroll": true,
+"lang": "en",
+"backcol": "#9dbd7a",
+"default_error_widget": [
+"header",
+"top_error"
+]
+},
+"head": [
+"Part",
+{
+"tag_name": "head",
+"brief": "The head section of the page",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"ClosedPart",
+{
+"tag_name": "meta",
+"brief": "The charset meta declaration",
+"show": true,
+"attribs": {
+"charset": "utf-8"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "meta",
+"brief": "The viewport meta declaration",
+"show": true,
+"attribs": {
+"content": "width=device-width, initial-scale=1",
+"name": "viewport"
+}
+}
+],
+[
+"Part",
+{
+"tag_name": "title",
+"brief": "The page title element",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Text",
+"Index"
+]
+]
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to skitest_css",
+"show": true,
+"attribs": {
+"href": "{skitest_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"Comment",
+{
+"text": "HTML5shiv - included as a TextBlock"
+}
+],
+[
+"TextBlock",
+{
+"textref": "html5shiv",
+"failmessage": "failed to read textblocks database with ref html5shiv",
+"show": true,
+"escape": false,
+"linebreaks": false
+}
+],
+[
+"Part",
+{
+"tag_name": "script",
+"brief": "script link to jquery_core",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"src": "{jquery_core}"
+},
+"parts": []
+}
+],
+[
+"Part",
+{
+"tag_name": "script",
+"brief": "script link to skipole_js",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"src": "{skipole_js}"
+},
+"parts": []
+}
+]
+]
+}
+],
+"body": [
+"Part",
+{
+"tag_name": "body",
+"brief": "The body section of the page",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "container",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "ski_container"
+},
+"parts": [
+[
+"SectionPlaceHolder",
+{
+"brief": "Page header",
+"section_name": "header",
+"placename": "header"
+}
+],
+[
+"SectionPlaceHolder",
+{
+"brief": "Left navigation panel",
+"section_name": "navigation",
+"placename": "navigation"
+}
+],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "centre",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "ski_centre"
+},
+"parts": [
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "Top description",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"TextBlock",
+{
+"textref": "page.100104.01",
+"failmessage": "TextBlock not found",
+"show": true,
+"escape": true,
+"linebreaks": true
+}
+]
+]
+}
+],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "logout",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "odd"
+},
+"parts": [
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "Logout description",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"TextBlock",
+{
+"textref": "page.100104.02",
+"failmessage": "TextBlock not found",
+"show": true,
+"escape": true,
+"linebreaks": true
+}
+]
+]
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink1",
+"name": "logout",
+"brief": "Button link to logout",
+"fields": {
+"button_text": "Logout",
+"clear_error": false,
+"error_class": "",
+"force_ident": false,
+"get_field1": "",
+"get_field2": "",
+"link_ident": "logout2",
+"new_window": false,
+"show": true,
+"show_error": "",
+"widget_class": "ski_midbutton"
+}
+}
+]
+]
+}
+]
+]
+}
+]
+]
+}
+]
+]
+}
+]
+},
+"secure3_template": {
+"ident": 100106,
+"brief": "template for secure3 page",
+"TemplatePage": {
+"show_backcol": false,
+"last_scroll": true,
+"lang": "en",
+"backcol": "#9dbd7a",
+"default_error_widget": [
+"header",
+"top_error"
+]
+},
+"head": [
+"Part",
+{
+"tag_name": "head",
+"brief": "The head section of the page",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"ClosedPart",
+{
+"tag_name": "meta",
+"brief": "The charset meta declaration",
+"show": true,
+"attribs": {
+"charset": "utf-8"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "meta",
+"brief": "The viewport meta declaration",
+"show": true,
+"attribs": {
+"content": "width=device-width, initial-scale=1",
+"name": "viewport"
+}
+}
+],
+[
+"Part",
+{
+"tag_name": "title",
+"brief": "The page title element",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Text",
+"Index"
+]
+]
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to skitest_css",
+"show": true,
+"attribs": {
+"href": "{skitest_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"Comment",
+{
+"text": "HTML5shiv - included as a TextBlock"
+}
+],
+[
+"TextBlock",
+{
+"textref": "html5shiv",
+"failmessage": "failed to read textblocks database with ref html5shiv",
+"show": true,
+"escape": false,
+"linebreaks": false
+}
+],
+[
+"Part",
+{
+"tag_name": "script",
+"brief": "script link to jquery_core",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"src": "{jquery_core}"
+},
+"parts": []
+}
+],
+[
+"Part",
+{
+"tag_name": "script",
+"brief": "script link to skipole_js",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"src": "{skipole_js}"
+},
+"parts": []
+}
+]
+]
+}
+],
+"body": [
+"Part",
+{
+"tag_name": "body",
+"brief": "The body section of the page",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "container",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "ski_container"
+},
+"parts": [
+[
+"SectionPlaceHolder",
+{
+"brief": "Page header",
+"section_name": "header",
+"placename": "header"
+}
+],
+[
+"SectionPlaceHolder",
+{
+"brief": "Left navigation panel",
+"section_name": "navigation",
+"placename": "navigation"
+}
+],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "centre",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "ski_centre"
+},
+"parts": [
+[
+"Widget",
+{
+"class": "paras.ParaText",
+"name": "show_username",
+"brief": "Displays logged in username",
+"fields": {
+"para_text": "",
+"show": true,
+"widget_class": "bottom20"
+}
+}
+],
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "Top description",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"TextBlock",
+{
+"textref": "page.100106.01",
+"failmessage": "TextBlock not found",
+"show": true,
+"escape": true,
+"linebreaks": true
+}
+]
+]
+}
+]
+]
+}
+]
+]
+}
+]
+]
+}
+]
+}
+}
+}
+},
+"pages": {
+"login1": {
+"ident": 100002,
+"brief": "Checks login and if ok goes to secure1 page",
+"RespondPage": {
+"message": "Invalid Login",
+"class": "AllowStore",
+"original_args": {
+"allowed_callers": [
+100101
+],
+"alternate_ident": "home",
+"fail_ident": "login",
+"submit_list": [
+"login",
+"check_login1"
+],
+"submit_option": true,
+"target_ident": 100103,
+"validate_fail_ident": null,
+"validate_option": false
+},
+"original_fields": {
+"passwd1:input_text": ""
+}
+}
+},
+"login2": {
+"ident": 100005,
+"brief": "Checks login and if ok goes to secure2 page",
+"RespondPage": {
+"message": "Invalid Login",
+"class": "AllowStore",
+"original_args": {
+"allowed_callers": [
+100101
+],
+"alternate_ident": "home",
+"fail_ident": "login",
+"submit_list": [
+"login",
+"check_login2"
+],
+"submit_option": true,
+"target_ident": 100105,
+"validate_fail_ident": null,
+"validate_option": false
+},
+"original_fields": {
+"passwd2:input_text": ""
+}
+}
+},
+"logout1": {
+"ident": 100003,
+"brief": "Logs out of secure1",
+"RespondPage": {
+"message": "Unknown failure",
+"class": "SessionCookie",
+"original_args": {
+"allowed_callers": [],
+"fail_ident": "home",
+"submit_list": [
+"login",
+"secure1_logout"
+],
+"target_ident": 100
+},
+"original_fields": {}
+}
+},
+"logout2": {
+"ident": 100006,
+"brief": "Logs out of secure2",
+"RespondPage": {
+"message": "Unknown failure",
+"class": "SetCookies",
+"original_args": {
+"allowed_callers": [],
+"fail_ident": "home",
+"submit_list": [
+"login",
+"secure2_logout"
+],
+"target_ident": 100
+},
+"original_fields": {}
+}
+},
+"secure1": {
+"ident": 100001,
+"brief": "Check access for secure1 page",
+"RespondPage": {
+"message": "You are not logged in.",
+"class": "SubmitData",
+"original_args": {
+"fail_ident": 100,
+"submit_list": [
+"login",
+"secure1_access"
+],
+"target_ident": 100102
+},
+"original_fields": {}
+}
+},
+"secure2": {
+"ident": 100004,
+"brief": "Check access for secure2 page",
+"RespondPage": {
+"message": "You are not logged in.",
+"class": "SubmitData",
+"original_args": {
+"fail_ident": 100,
+"submit_list": [
+"login",
+"secure2_access"
+],
+"target_ident": 100104
+},
+"original_fields": {}
+}
+},
+"secure3": {
+"ident": 100007,
+"brief": "Sets username for secure3 page",
+"RespondPage": {
+"message": "Invalid operation",
+"class": "SubmitData",
+"original_args": {
+"fail_ident": "home",
+"submit_list": [
+"login",
+"setup_secure3"
+],
+"target_ident": 100106
+},
+"original_fields": {}
+}
+}
+}
+},
+"restricted": {
+"ident": 2000,
+"brief": "Holds pages not accessable directly via URL",
+"default_page_name": "index",
+"restricted": true,
+"folders": {},
+"pages": {
+"general_json": {
+"ident": 570,
+"brief": "General purpose JSON file",
+"JSON": {
+"enable_cache": false,
+"content": {}
+}
+},
+"index_template": {
+"ident": 2001,
+"brief": "The template for the index page",
+"TemplatePage": {
+"show_backcol": false,
+"last_scroll": true,
+"lang": "en",
+"backcol": "#9dbd7a",
+"default_error_widget": [
+"header",
+"top_error"
+]
+},
+"head": [
+"Part",
+{
+"tag_name": "head",
+"brief": "The head section of the page",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"ClosedPart",
+{
+"tag_name": "meta",
+"brief": "The charset meta declaration",
+"show": true,
+"attribs": {
+"charset": "utf-8"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "meta",
+"brief": "The viewport meta declaration",
+"show": true,
+"attribs": {
+"content": "width=device-width, initial-scale=1",
+"name": "viewport"
+}
+}
+],
+[
+"Part",
+{
+"tag_name": "title",
+"brief": "The page title element",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Text",
+"Index"
+]
+]
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to skitest_css",
+"show": true,
+"attribs": {
+"href": "{skitest_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"Comment",
+{
+"text": "HTML5shiv - included as a TextBlock"
+}
+],
+[
+"TextBlock",
+{
+"textref": "html5shiv",
+"failmessage": "failed to read textblocks database with ref html5shiv",
+"show": true,
+"escape": false,
+"linebreaks": false
+}
+],
+[
+"Part",
+{
+"tag_name": "script",
+"brief": "script link to jquery_core",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"src": "{jquery_core}"
+},
+"parts": []
+}
+],
+[
+"Part",
+{
+"tag_name": "script",
+"brief": "script link to skipole_js",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"src": "{skipole_js}"
+},
+"parts": []
+}
+]
+]
+}
+],
+"body": [
+"Part",
+{
+"tag_name": "body",
+"brief": "The body section of the page",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "container",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "ski_container"
+},
+"parts": [
+[
+"SectionPlaceHolder",
+{
+"brief": "Page header",
+"section_name": "header",
+"placename": "header"
+}
+],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "centre",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "ski_centre"
+},
+"parts": [
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "Top description",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"TextBlock",
+{
+"textref": "index01",
+"failmessage": "TextBlock not found",
+"show": true,
+"escape": true,
+"linebreaks": true
+}
+]
+]
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink1",
+"name": "to_widgets",
+"brief": "To widgets test page",
+"fields": {
+"button_text": "Widgets",
+"clear_error": false,
+"error_class": "",
+"force_ident": false,
+"get_field1": "",
+"get_field2": "",
+"link_ident": "modules",
+"new_window": false,
+"show": true,
+"show_error": "",
+"widget_class": "ski_midbutton"
+}
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink1",
+"name": "to_validators",
+"brief": "To validators test page",
+"fields": {
+"button_text": "Validators",
+"clear_error": false,
+"error_class": "",
+"force_ident": false,
+"get_field1": "",
+"get_field2": "",
+"link_ident": "home",
+"new_window": false,
+"show": true,
+"show_error": "",
+"widget_class": "ski_midbutton"
+}
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink1",
+"name": "to_responders",
+"brief": "To responders test page",
+"fields": {
+"button_text": "Responders",
+"clear_error": false,
+"error_class": "",
+"force_ident": false,
+"get_field1": "",
+"get_field2": "",
+"link_ident": "home",
+"new_window": false,
+"show": true,
+"show_error": "",
+"widget_class": "ski_midbutton"
+}
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink1",
+"name": "show_validate_error",
+"brief": "Displays the validate error page",
+"fields": {
+"button_text": "Validate Error Page",
+"clear_error": false,
+"error_class": "",
+"force_ident": false,
+"get_field1": "",
+"get_field2": "",
+"link_ident": 550,
+"new_window": false,
+"show": true,
+"show_error": "",
+"widget_class": "ski_midbutton"
+}
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink1",
+"name": "show_server_error",
+"brief": "Displays the server error page",
+"fields": {
+"button_text": "Server Error Page",
+"clear_error": false,
+"error_class": "",
+"force_ident": false,
+"get_field1": "",
+"get_field2": "",
+"link_ident": 560,
+"new_window": false,
+"show": true,
+"show_error": "",
+"widget_class": "ski_midbutton"
+}
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink1",
+"name": "to_login",
+"brief": "To login page",
+"fields": {
+"button_text": "Test Login",
+"clear_error": false,
+"error_class": "",
+"force_ident": false,
+"get_field1": "",
+"get_field2": "",
+"link_ident": "login",
+"new_window": false,
+"show": true,
+"show_error": "",
+"widget_class": "ski_midbutton"
+}
+}
+],
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "bottom description",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"TextBlock",
+{
+"textref": "index02",
+"failmessage": "TextBlock not found",
+"show": true,
+"escape": true,
+"linebreaks": true
+}
+]
+]
+}
+]
+]
+}
+]
+]
+}
+]
+]
+}
+]
+},
+"redirector": {
+"ident": 530,
+"brief": "Redirect to an external url.",
+"TemplatePage": {
+"show_backcol": false,
+"last_scroll": false,
+"lang": "en",
+"backcol": "#9dbd7a",
+"default_error_widget": [
+"",
+"top_error"
+]
+},
+"head": [
+"Part",
+{
+"tag_name": "head",
+"brief": "The head section of the page",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"ClosedPart",
+{
+"tag_name": "meta",
+"brief": "The charset meta declaration",
+"show": true,
+"attribs": {
+"charset": "utf-8"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "meta",
+"brief": "meta for viewport",
+"show": true,
+"attribs": {
+"content": "width=device-width, initial-scale=1",
+"name": "viewport"
+}
+}
+],
+[
+"Part",
+{
+"tag_name": "title",
+"brief": "The page title element",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Text",
+"Redirector"
+]
+]
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to simple_css",
+"show": true,
+"attribs": {
+"href": "{simple_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"Comment",
+{
+"text": "HTML5shiv - included as a TextBlock"
+}
+],
+[
+"TextBlock",
+{
+"textref": "html5shiv",
+"failmessage": "failed to read textblocks database with ref html5shiv",
+"show": true,
+"escape": false,
+"linebreaks": false
+}
+],
+[
+"Part",
+{
+"tag_name": "script",
+"brief": "script link to jquery_core",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"src": "{jquery_core}"
+},
+"parts": []
+}
+],
+[
+"Part",
+{
+"tag_name": "script",
+"brief": "script link to skipole_js",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"src": "{skipole_js}"
+},
+"parts": []
+}
+]
+]
+}
+],
+"body": [
+"Part",
+{
+"tag_name": "body",
+"brief": "The body section of the page",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Widget",
+{
+"class": "info.Redirector",
+"name": "redirect_to",
+"brief": "Redirector",
+"fields": {
+"show": true,
+"text_refnotfound": "",
+"text_replaceblock": "If this page does not redirect automatically, follow this link:",
+"textblock_ref": "",
+"url": "http://www.bbc.co.uk",
+"widget_class": ""
+}
+}
+]
+]
+}
+]
+},
+"server_error": {
+"ident": 520,
+"brief": "The server error page",
+"TemplatePage": {
+"show_backcol": false,
+"last_scroll": false,
+"lang": "en",
+"backcol": "#9dbd7a",
+"default_error_widget": [
+"",
+"diagnostic"
+]
+},
+"head": [
+"Part",
+{
+"tag_name": "head",
+"brief": "The head section of the page",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"ClosedPart",
+{
+"tag_name": "meta",
+"brief": "The charset meta declaration",
+"show": true,
+"attribs": {
+"charset": "utf-8"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "meta",
+"brief": "meta for viewport",
+"show": true,
+"attribs": {
+"content": "width=device-width, initial-scale=1",
+"name": "viewport"
+}
+}
+],
+[
+"Part",
+{
+"tag_name": "title",
+"brief": "The page title element",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Text",
+"Server Error"
+]
+]
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to simple_css",
+"show": true,
+"attribs": {
+"href": "{simple_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"Comment",
+{
+"text": "HTML5shiv - included as a TextBlock"
+}
+],
+[
+"TextBlock",
+{
+"textref": "html5shiv",
+"failmessage": "failed to read textblocks database with ref html5shiv",
+"show": true,
+"escape": false,
+"linebreaks": false
+}
+],
+[
+"Part",
+{
+"tag_name": "script",
+"brief": "script link to jquery_core",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"src": "{jquery_core}"
+},
+"parts": []
+}
+],
+[
+"Part",
+{
+"tag_name": "script",
+"brief": "script link to skipole_js",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"src": "{skipole_js}"
+},
+"parts": []
+}
+]
+]
+}
+],
+"body": [
+"Part",
+{
+"tag_name": "body",
+"brief": "The body section of the page",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "Paragraph holds diagnostic message heading",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Text",
+"Diagnostic message:"
+]
+]
+}
+],
+[
+"Widget",
+{
+"class": "error_messages.ErrorDiv",
+"name": "diagnostic",
+"brief": "Shows the error message",
+"fields": {
+"clear_error": false,
+"error_class": "",
+"hide": true,
+"show": true,
+"show_error": "No error message available",
+"widget_class": ""
+}
+}
+],
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "Paragraph holds home link",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Widget",
+{
+"class": "links.Link",
+"name": "homelink",
+"brief": "Link to site home",
+"fields": {
+"content": "Return to home page",
+"force_ident": false,
+"get_field1": "",
+"get_field2": "",
+"link_ident": "home",
+"new_window": false,
+"show": true,
+"widget_class": ""
+}
+}
+]
+]
+}
+],
+[
+"Widget",
+{
+"class": "debug_tools.ShowEnviron",
+"name": "se1",
+"brief": "ShowEnviron",
+"fields": {
+"clear_error": false,
+"error_class": "ski_errorcol",
+"para_class": "",
+"show": true,
+"show_error": "",
+"toptext": "Environmental variables for this call:",
+"widget_class": ""
+}
+}
+]
+]
+}
+]
+},
+"url_not_found": {
+"ident": 500,
+"brief": "The url not found error page",
+"TemplatePage": {
+"show_backcol": false,
+"last_scroll": false,
+"lang": "en",
+"backcol": "#9dbd7a",
+"default_error_widget": [
+"",
+"url"
+]
+},
+"head": [
+"Part",
+{
+"tag_name": "head",
+"brief": "The head section of the page",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"ClosedPart",
+{
+"tag_name": "meta",
+"brief": "The charset meta declaration",
+"show": true,
+"attribs": {
+"charset": "utf-8"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "meta",
+"brief": "meta for viewport",
+"show": true,
+"attribs": {
+"content": "width=device-width, initial-scale=1",
+"name": "viewport"
+}
+}
+],
+[
+"Part",
+{
+"tag_name": "title",
+"brief": "The page title element",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Text",
+"URL not found"
+]
+]
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to simple_css",
+"show": true,
+"attribs": {
+"href": "{simple_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"Comment",
+{
+"text": "HTML5shiv - included as a TextBlock"
+}
+],
+[
+"TextBlock",
+{
+"textref": "html5shiv",
+"failmessage": "failed to read textblocks database with ref html5shiv",
+"show": true,
+"escape": false,
+"linebreaks": false
+}
+],
+[
+"Part",
+{
+"tag_name": "script",
+"brief": "script link to jquery_core",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"src": "{jquery_core}"
+},
+"parts": []
+}
+],
+[
+"Part",
+{
+"tag_name": "script",
+"brief": "script link to skipole_js",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"src": "{skipole_js}"
+},
+"parts": []
+}
+]
+]
+}
+],
+"body": [
+"Part",
+{
+"tag_name": "body",
+"brief": "The body section of the page",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "Holds heading text",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Text",
+"The page:"
+]
+]
+}
+],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "Holds called URL",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"id": "divmessage1"
+},
+"parts": [
+[
+"Widget",
+{
+"class": "paras.TextBlockPara",
+"name": "url",
+"brief": "TextBlockPara",
+"fields": {
+"clear_error": false,
+"error_class": "errorcol",
+"linebreaks": true,
+"project_ident": "",
+"replace_strings": [],
+"show": true,
+"show_error": "",
+"text_refnotfound": "",
+"text_replaceblock": "",
+"textblock_ref": "",
+"widget_class": ""
+},
+"set_names": {
+"text_replaceblock": "message_text"
+}
+}
+]
+]
+}
+],
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "Not found paragraph",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Text",
+"Has not been found at this site"
+]
+]
+}
+],
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "Paragraph holds home link",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Widget",
+{
+"class": "links.Link",
+"name": "homelink",
+"brief": "Link to site home",
+"fields": {
+"content": "Return to home page",
+"force_ident": false,
+"get_field1": "",
+"get_field2": "",
+"link_ident": "home",
+"new_window": false,
+"show": true,
+"widget_class": ""
+}
+}
+]
+]
+}
+]
+]
+}
+]
+},
+"validate_error": {
+"ident": 510,
+"brief": "The validation error page",
+"TemplatePage": {
+"show_backcol": false,
+"last_scroll": false,
+"lang": "en",
+"backcol": "#9dbd7a",
+"default_error_widget": [
+"",
+"diagnostic"
+]
+},
+"head": [
+"Part",
+{
+"tag_name": "head",
+"brief": "The head section of the page",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"ClosedPart",
+{
+"tag_name": "meta",
+"brief": "The charset meta declaration",
+"show": true,
+"attribs": {
+"charset": "utf-8"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "meta",
+"brief": "meta for viewport",
+"show": true,
+"attribs": {
+"content": "width=device-width, initial-scale=1",
+"name": "viewport"
+}
+}
+],
+[
+"Part",
+{
+"tag_name": "title",
+"brief": "The page title element",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Text",
+"Validation Error"
+]
+]
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to simple_css",
+"show": true,
+"attribs": {
+"href": "{simple_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"Comment",
+{
+"text": "HTML5shiv - included as a TextBlock"
+}
+],
+[
+"TextBlock",
+{
+"textref": "html5shiv",
+"failmessage": "failed to read textblocks database with ref html5shiv",
+"show": true,
+"escape": false,
+"linebreaks": false
+}
+],
+[
+"Part",
+{
+"tag_name": "script",
+"brief": "script link to jquery_core",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"src": "{jquery_core}"
+},
+"parts": []
+}
+],
+[
+"Part",
+{
+"tag_name": "script",
+"brief": "script link to skipole_js",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"src": "{skipole_js}"
+},
+"parts": []
+}
+]
+]
+}
+],
+"body": [
+"Part",
+{
+"tag_name": "body",
+"brief": "The body section of the page",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "Paragraph holds diagnostic message heading",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Text",
+"Diagnostic message:"
+]
+]
+}
+],
+[
+"Widget",
+{
+"class": "error_messages.ErrorDiv",
+"name": "diagnostic",
+"brief": "Shows the error message",
+"fields": {
+"clear_error": false,
+"error_class": "",
+"hide": true,
+"show": true,
+"show_error": "No error message available",
+"widget_class": ""
+}
+}
+],
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "Paragraph holds home link",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Widget",
+{
+"class": "links.Link",
+"name": "homelink",
+"brief": "Link to site home",
+"fields": {
+"content": "Return to home page",
+"force_ident": false,
+"get_field1": "",
+"get_field2": "",
+"link_ident": "home",
+"new_window": false,
+"show": true,
+"widget_class": ""
+}
+}
+]
+]
+}
+]
+]
+}
+]
+}
+}
+},
+"widgets": {
+"ident": 3000,
+"brief": "Folder holding test widgets pages",
+"default_page_name": "index",
+"restricted": false,
+"folders": {
+"restricted": {
+"ident": 5000,
+"brief": "Holds restricted template pages",
+"default_page_name": "index",
+"restricted": true,
+"folders": {
+"checkbox": {
+"ident": 5001,
+"brief": "folder holding checkbox templates",
+"default_page_name": "index",
+"restricted": true,
+"folders": {},
+"pages": {
+"checkbox1": {
+"ident": 5002,
+"brief": "template for checkbox1",
+"TemplatePage": {
+"show_backcol": false,
+"last_scroll": true,
+"lang": "en",
+"backcol": "#9dbd7a",
+"default_error_widget": [
+"header",
+"top_error"
+]
+},
+"head": [
+"Part",
+{
+"tag_name": "head",
+"brief": "The head section of the page",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"ClosedPart",
+{
+"tag_name": "meta",
+"brief": "The charset meta declaration",
+"show": true,
+"attribs": {
+"charset": "utf-8"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "meta",
+"brief": "The viewport meta declaration",
+"show": true,
+"attribs": {
+"content": "width=device-width, initial-scale=1",
+"name": "viewport"
+}
+}
+],
+[
+"Part",
+{
+"tag_name": "title",
+"brief": "The page title element",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Text",
+"Index"
+]
+]
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to skitest_css",
+"show": true,
+"attribs": {
+"href": "{skitest_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"Comment",
+{
+"text": "HTML5shiv - included as a TextBlock"
+}
+],
+[
+"TextBlock",
+{
+"textref": "html5shiv",
+"failmessage": "failed to read textblocks database with ref html5shiv",
+"show": true,
+"escape": false,
+"linebreaks": false
+}
+],
+[
+"Part",
+{
+"tag_name": "script",
+"brief": "script link to jquery_core",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"src": "{jquery_core}"
+},
+"parts": []
+}
+],
+[
+"Part",
+{
+"tag_name": "script",
+"brief": "script link to skipole_js",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"src": "{skipole_js}"
+},
+"parts": []
+}
+]
+]
+}
+],
+"body": [
+"Part",
+{
+"tag_name": "body",
+"brief": "The body section of the page",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "container",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "ski_container"
+},
+"parts": [
+[
+"SectionPlaceHolder",
+{
+"brief": "Page header",
+"section_name": "header",
+"placename": "header"
+}
+],
+[
+"SectionPlaceHolder",
+{
+"brief": "Left navigation panel",
+"section_name": "navigation",
+"placename": "navigation"
+}
+],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "centre",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "ski_centre"
+},
+"parts": [
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "Top description",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"TextBlock",
+{
+"textref": "page.5002.01",
+"failmessage": "TextBlock not found",
+"show": true,
+"escape": true,
+"linebreaks": true
+}
+]
+]
+}
+],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "check1",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "odd"
+},
+"parts": [
+[
+"Widget",
+{
+"class": "inputforms.SubmitForm1",
+"name": "form1",
+"brief": "submitform1 holding check1",
+"fields": {
+"action": "check1test",
+"action_json": "",
+"button_text": "Submit",
+"clear_error": false,
+"div_class": "",
+"error_class": "",
+"hidden_field1": "",
+"hidden_field2": "",
+"hidden_field3": "",
+"hidden_field4": "",
+"left_class": "ski_left_label",
+"left_label": "Submit to send check1 value:",
+"right_class": "",
+"right_label": "",
+"show": true,
+"show_error": "",
+"widget_class": ""
+},
+"container_0": [
+"Widget",
+{
+"class": "checkbox.CheckBox1",
+"name": "check1",
+"brief": "check1",
+"fields": {
+"checkbox": "check1",
+"checked": false,
+"clear_error": false,
+"div_class": "",
+"error_class": "ski_errorcol",
+"left_class": "ski_left_label",
+"left_label": "check1:",
+"right_class": "",
+"right_label": "",
+"show": true,
+"show_error": "",
+"widget_class": ""
+}
+}
+]
+}
+],
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "check1 form description",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"TextBlock",
+{
+"textref": "page.5002.02",
+"failmessage": "TextBlock not found",
+"show": true,
+"escape": true,
+"linebreaks": true
+}
+]
+]
+}
+],
+[
+"Widget",
+{
+"class": "paras.TextPara",
+"name": "check1result",
+"brief": "Result of check1 test",
+"fields": {
+"clear_error": false,
+"error_class": "",
+"para_class": "",
+"para_text": "Form submission result: The checkbox is unticked.",
+"show": true,
+"show_error": "",
+"widget_class": ""
+}
+}
+]
+]
+}
+],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "check2",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "even"
+},
+"parts": [
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "Error test description",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"TextBlock",
+{
+"textref": "page.5002.03",
+"failmessage": "TextBlock not found",
+"show": true,
+"escape": true,
+"linebreaks": true
+}
+]
+]
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink1",
+"name": "check2",
+"brief": "Requests an error",
+"fields": {
+"button_text": "Set Error",
+"clear_error": false,
+"error_class": "",
+"force_ident": true,
+"get_field1": "",
+"get_field2": "",
+"link_ident": "check2test",
+"new_window": false,
+"show": true,
+"show_error": "",
+"widget_class": "ski_midbutton"
+}
+}
+]
+]
+}
+],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "check3",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "odd"
+},
+"parts": [
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "JSON check description",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"TextBlock",
+{
+"textref": "page.5002.04",
+"failmessage": "TextBlock not found",
+"show": true,
+"escape": true,
+"linebreaks": true
+}
+]
+]
+}
+],
+[
+"Widget",
+{
+"class": "links.JSONButtonLink",
+"name": "check3",
+"brief": "Sets checked using JSON",
+"fields": {
+"button_text": "Set checked (JSON)",
+"button_wait_text": "Please wait...",
+"clear_error": false,
+"error_class": "",
+"get_field1": "",
+"get_field2": "",
+"link_ident": "check3test",
+"nojs_link_ident": "no_javascript",
+"show": true,
+"show_error": "",
+"widget_class": "ski_midbutton"
+}
+}
+]
+]
+}
+],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "check4",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "even"
+},
+"parts": [
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "JSON uncheck description",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"TextBlock",
+{
+"textref": "page.5002.05",
+"failmessage": "TextBlock not found",
+"show": true,
+"escape": true,
+"linebreaks": true
+}
+]
+]
+}
+],
+[
+"Widget",
+{
+"class": "links.JSONButtonLink",
+"name": "check4",
+"brief": "Sets unchecked using JSON",
+"fields": {
+"button_text": "Set unchecked (JSON)",
+"button_wait_text": "Please wait...",
+"clear_error": false,
+"error_class": "",
+"get_field1": "",
+"get_field2": "",
+"link_ident": "check4test",
+"nojs_link_ident": "no_javascript",
+"show": true,
+"show_error": "",
+"widget_class": "ski_midbutton"
+}
+}
+]
+]
+}
+],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "check5",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "odd"
+},
+"parts": [
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "Requests an error using JSON",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"TextBlock",
+{
+"textref": "page.5002.06",
+"failmessage": "TextBlock not found",
+"show": true,
+"escape": true,
+"linebreaks": true
+}
+]
+]
+}
+],
+[
+"Widget",
+{
+"class": "links.JSONButtonLink",
+"name": "check5",
+"brief": "Requests an error using JSON",
+"fields": {
+"button_text": "Set Error (JSON)",
+"button_wait_text": "Please wait...",
+"clear_error": false,
+"error_class": "",
+"get_field1": "",
+"get_field2": "",
+"link_ident": "check5test",
+"nojs_link_ident": "no_javascript",
+"show": true,
+"show_error": "",
+"widget_class": "ski_midbutton"
+}
+}
+]
+]
+}
+],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "check6",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "even"
+},
+"parts": [
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "Clears an error using JSON",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"TextBlock",
+{
+"textref": "page.5002.07",
+"failmessage": "TextBlock not found",
+"show": true,
+"escape": true,
+"linebreaks": true
+}
+]
+]
+}
+],
+[
+"Widget",
+{
+"class": "links.JSONButtonLink",
+"name": "check6",
+"brief": "Clears an error using JSON",
+"fields": {
+"button_text": "Clear Error (JSON)",
+"button_wait_text": "Please wait...",
+"clear_error": false,
+"error_class": "",
+"get_field1": "",
+"get_field2": "",
+"link_ident": "check6test",
+"nojs_link_ident": "no_javascript",
+"show": true,
+"show_error": "",
+"widget_class": "ski_midbutton"
+}
+}
+]
+]
+}
+]
+]
+}
+]
+]
+}
+]
+]
+}
+]
+},
+"checkbox2": {
+"ident": 5010,
+"brief": "template for checkbox2",
+"TemplatePage": {
+"show_backcol": false,
+"last_scroll": true,
+"lang": "en",
+"backcol": "#9dbd7a",
+"default_error_widget": [
+"header",
+"top_error"
+]
+},
+"head": [
+"Part",
+{
+"tag_name": "head",
+"brief": "The head section of the page",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"ClosedPart",
+{
+"tag_name": "meta",
+"brief": "The charset meta declaration",
+"show": true,
+"attribs": {
+"charset": "utf-8"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "meta",
+"brief": "The viewport meta declaration",
+"show": true,
+"attribs": {
+"content": "width=device-width, initial-scale=1",
+"name": "viewport"
+}
+}
+],
+[
+"Part",
+{
+"tag_name": "title",
+"brief": "The page title element",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Text",
+"Index"
+]
+]
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to skitest_css",
+"show": true,
+"attribs": {
+"href": "{skitest_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"Comment",
+{
+"text": "HTML5shiv - included as a TextBlock"
+}
+],
+[
+"TextBlock",
+{
+"textref": "html5shiv",
+"failmessage": "failed to read textblocks database with ref html5shiv",
+"show": true,
+"escape": false,
+"linebreaks": false
+}
+],
+[
+"Part",
+{
+"tag_name": "script",
+"brief": "script link to jquery_core",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"src": "{jquery_core}"
+},
+"parts": []
+}
+],
+[
+"Part",
+{
+"tag_name": "script",
+"brief": "script link to skipole_js",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"src": "{skipole_js}"
+},
+"parts": []
+}
+]
+]
+}
+],
+"body": [
+"Part",
+{
+"tag_name": "body",
+"brief": "The body section of the page",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "container",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "ski_container"
+},
+"parts": [
+[
+"SectionPlaceHolder",
+{
+"brief": "Page header",
+"section_name": "header",
+"placename": "header"
+}
+],
+[
+"SectionPlaceHolder",
+{
+"brief": "Left navigation panel",
+"section_name": "navigation",
+"placename": "navigation"
+}
+],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "centre",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "ski_centre"
+},
+"parts": [
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "Top description",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"TextBlock",
+{
+"textref": "page.5010.01",
+"failmessage": "TextBlock not found",
+"show": true,
+"escape": true,
+"linebreaks": true
+}
+]
+]
+}
+],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "check10",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "even"
+},
+"parts": [
+[
+"Widget",
+{
+"class": "inputforms.SubmitForm1",
+"name": "form1",
+"brief": "submitform1 holding check10",
+"fields": {
+"action": "check10test",
+"action_json": "",
+"button_text": "Submit",
+"clear_error": false,
+"div_class": "ski_inline",
+"error_class": "",
+"hidden_field1": "",
+"hidden_field2": "",
+"hidden_field3": "",
+"hidden_field4": "",
+"left_class": "",
+"left_label": "",
+"right_class": "",
+"right_label": "",
+"show": true,
+"show_error": "",
+"widget_class": ""
+},
+"container_0": [
+"Widget",
+{
+"class": "checkbox.CheckBox2",
+"name": "check10",
+"brief": "check10",
+"fields": {
+"checkbox": "check10",
+"checked": false,
+"left_class": "ski_left_label",
+"left_label": "check10:",
+"right_class": "",
+"right_label": "",
+"show": true,
+"widget_class": ""
+}
+}
+]
+}
+],
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "check10 form description",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"TextBlock",
+{
+"textref": "page.5010.02",
+"failmessage": "TextBlock not found",
+"show": true,
+"escape": true,
+"linebreaks": true
+}
+]
+]
+}
+],
+[
+"Widget",
+{
+"class": "paras.TextPara",
+"name": "check10result",
+"brief": "Result of check10 test",
+"fields": {
+"clear_error": false,
+"error_class": "",
+"para_class": "",
+"para_text": "Form submission result: The checkbox is unticked.",
+"show": true,
+"show_error": "",
+"widget_class": ""
+}
+}
+]
+]
+}
+],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "check11",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "odd"
+},
+"parts": [
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "JSON check description",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"TextBlock",
+{
+"textref": "page.5010.03",
+"failmessage": "TextBlock not found",
+"show": true,
+"escape": true,
+"linebreaks": true
+}
+]
+]
+}
+],
+[
+"Widget",
+{
+"class": "links.JSONButtonLink",
+"name": "check11",
+"brief": "Sets checked using JSON",
+"fields": {
+"button_text": "Set checked (JSON)",
+"button_wait_text": "Please wait...",
+"clear_error": false,
+"error_class": "",
+"get_field1": "",
+"get_field2": "",
+"link_ident": "check11test",
+"nojs_link_ident": "no_javascript",
+"show": true,
+"show_error": "",
+"widget_class": "ski_midbutton"
+}
+}
+]
+]
+}
+],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "check12",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "even"
+},
+"parts": [
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "JSON uncheck description",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"TextBlock",
+{
+"textref": "page.5010.04",
+"failmessage": "TextBlock not found",
+"show": true,
+"escape": true,
+"linebreaks": true
+}
+]
+]
+}
+],
+[
+"Widget",
+{
+"class": "links.JSONButtonLink",
+"name": "check12",
+"brief": "Sets unchecked using JSON",
+"fields": {
+"button_text": "Set unchecked (JSON)",
+"button_wait_text": "Please wait...",
+"clear_error": false,
+"error_class": "",
+"get_field1": "",
+"get_field2": "",
+"link_ident": "check12test",
+"nojs_link_ident": "no_javascript",
+"show": true,
+"show_error": "",
+"widget_class": "ski_midbutton"
+}
+}
+]
+]
+}
+]
+]
+}
+]
+]
+}
+]
+]
+}
+]
+},
+"checkedtext": {
+"ident": 5020,
+"brief": "template for checkedtext",
+"TemplatePage": {
+"show_backcol": false,
+"last_scroll": true,
+"lang": "en",
+"backcol": "#9dbd7a",
+"default_error_widget": [
+"header",
+"top_error"
+]
+},
+"head": [
+"Part",
+{
+"tag_name": "head",
+"brief": "The head section of the page",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"ClosedPart",
+{
+"tag_name": "meta",
+"brief": "The charset meta declaration",
+"show": true,
+"attribs": {
+"charset": "utf-8"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "meta",
+"brief": "The viewport meta declaration",
+"show": true,
+"attribs": {
+"content": "width=device-width, initial-scale=1",
+"name": "viewport"
+}
+}
+],
+[
+"Part",
+{
+"tag_name": "title",
+"brief": "The page title element",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Text",
+"Index"
+]
+]
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to skitest_css",
+"show": true,
+"attribs": {
+"href": "{skitest_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"Comment",
+{
+"text": "HTML5shiv - included as a TextBlock"
+}
+],
+[
+"TextBlock",
+{
+"textref": "html5shiv",
+"failmessage": "failed to read textblocks database with ref html5shiv",
+"show": true,
+"escape": false,
+"linebreaks": false
+}
+],
+[
+"Part",
+{
+"tag_name": "script",
+"brief": "script link to jquery_core",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"src": "{jquery_core}"
+},
+"parts": []
+}
+],
+[
+"Part",
+{
+"tag_name": "script",
+"brief": "script link to skipole_js",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"src": "{skipole_js}"
+},
+"parts": []
+}
+]
+]
+}
+],
+"body": [
+"Part",
+{
+"tag_name": "body",
+"brief": "The body section of the page",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "container",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "ski_container"
+},
+"parts": [
+[
+"SectionPlaceHolder",
+{
+"brief": "Page header",
+"section_name": "header",
+"placename": "header"
+}
+],
+[
+"SectionPlaceHolder",
+{
+"brief": "Left navigation panel",
+"section_name": "navigation",
+"placename": "navigation"
+}
+],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "centre",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "ski_centre"
+},
+"parts": [
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "Top description",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"TextBlock",
+{
+"textref": "page.5020.01",
+"failmessage": "TextBlock not found",
+"show": true,
+"escape": true,
+"linebreaks": true
+}
+]
+]
+}
+],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "check20",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "even"
+},
+"parts": [
+[
+"Widget",
+{
+"class": "inputforms.SubmitForm1",
+"name": "form1",
+"brief": "submitform1 holding check20",
+"fields": {
+"action": "check10test",
+"action_json": "",
+"button_text": "Submit",
+"clear_error": false,
+"div_class": "",
+"error_class": "",
+"hidden_field1": "",
+"hidden_field2": "",
+"hidden_field3": "",
+"hidden_field4": "",
+"left_class": "ski_left_label",
+"left_label": "Submit to send:",
+"right_class": "",
+"right_label": "",
+"show": true,
+"show_error": "",
+"widget_class": ""
+},
+"container_0": [
+"Widget",
+{
+"class": "checkbox.CheckedText",
+"name": "check20",
+"brief": "check20",
+"fields": {
+"checkbox": "",
+"checked": false,
+"clear_error": false,
+"error_class": "",
+"input_text": "",
+"label_class": "ski_left_label",
+"label_text": "check20:",
+"maxlength": "10",
+"show": true,
+"show_error": "",
+"size": "10",
+"widget_class": ""
+}
+}
+]
+}
+],
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "check20 form description",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"TextBlock",
+{
+"textref": "page.5020.02",
+"failmessage": "TextBlock not found",
+"show": true,
+"escape": true,
+"linebreaks": true
+}
+]
+]
+}
+],
+[
+"Widget",
+{
+"class": "paras.TextPara",
+"name": "check20result",
+"brief": "Result of check20 test",
+"fields": {
+"clear_error": false,
+"error_class": "",
+"para_class": "",
+"para_text": "Form submission result: The checkbox is unticked.",
+"show": true,
+"show_error": "",
+"widget_class": ""
+}
+}
+]
+]
+}
+],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "check21",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "odd"
+},
+"parts": [
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "JSON check description",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"TextBlock",
+{
+"textref": "page.5020.03",
+"failmessage": "TextBlock not found",
+"show": true,
+"escape": true,
+"linebreaks": true
+}
+]
+]
+}
+],
+[
+"Widget",
+{
+"class": "links.JSONButtonLink",
+"name": "check21",
+"brief": "Sets checked using JSON",
+"fields": {
+"button_text": "Set checked (JSON)",
+"button_wait_text": "Please wait...",
+"clear_error": false,
+"error_class": "",
+"get_field1": "",
+"get_field2": "",
+"link_ident": "check11test",
+"nojs_link_ident": "no_javascript",
+"show": true,
+"show_error": "",
+"widget_class": "ski_midbutton"
+}
+}
+]
+]
+}
+],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "check22",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "even"
+},
+"parts": [
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "JSON uncheck description",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"TextBlock",
+{
+"textref": "page.5020.04",
+"failmessage": "TextBlock not found",
+"show": true,
+"escape": true,
+"linebreaks": true
+}
+]
+]
+}
+],
+[
+"Widget",
+{
+"class": "links.JSONButtonLink",
+"name": "check22",
+"brief": "Sets unchecked using JSON",
+"fields": {
+"button_text": "Set unchecked (JSON)",
+"button_wait_text": "Please wait...",
+"clear_error": false,
+"error_class": "",
+"get_field1": "",
+"get_field2": "",
+"link_ident": "check12test",
+"nojs_link_ident": "no_javascript",
+"show": true,
+"show_error": "",
+"widget_class": "ski_midbutton"
+}
+}
+]
+]
+}
+]
+]
+}
+]
+]
+}
+]
+]
+}
+]
+}
+}
+}
+},
+"pages": {}
+},
+"tests": {
+"ident": 4000,
+"brief": "Holds test page responders",
+"default_page_name": "index",
+"restricted": false,
+"folders": {
+"checkbox": {
+"ident": 4001,
+"brief": "folder holding checkbox responders",
+"default_page_name": "index",
+"restricted": false,
+"folders": {},
+"pages": {
+"check10test": {
+"ident": 4011,
+"brief": "responder for check10 test",
+"RespondPage": {
+"message": "Invalid",
+"class": "AllowStore",
+"original_args": {
+"allowed_callers": [
+5010
+],
+"alternate_ident": "home",
+"fail_ident": 4010,
+"submit_list": [
+"widgets",
+"checkbox",
+"check10"
+],
+"submit_option": true,
+"target_ident": 4010,
+"validate_fail_ident": null,
+"validate_option": false
+},
+"original_fields": {
+"check10:checkbox": ""
+}
+}
+},
+"check11test": {
+"ident": 4012,
+"brief": "responder for check11 test",
+"RespondPage": {
+"message": "Invalid",
+"class": "AllowStore",
+"original_args": {
+"allowed_callers": [
+5010
+],
+"alternate_ident": "home",
+"fail_ident": "general_json",
+"submit_list": [
+"widgets",
+"checkbox",
+"check11"
+],
+"submit_option": true,
+"target_ident": "general_json",
+"validate_fail_ident": null,
+"validate_option": false
+},
+"original_fields": {}
+}
+},
+"check12test": {
+"ident": 4013,
+"brief": "responder for check12 test",
+"RespondPage": {
+"message": "Invalid",
+"class": "AllowStore",
+"original_args": {
+"allowed_callers": [
+5010
+],
+"alternate_ident": "home",
+"fail_ident": "general_json",
+"submit_list": [
+"widgets",
+"checkbox",
+"check12"
+],
+"submit_option": true,
+"target_ident": "general_json",
+"validate_fail_ident": null,
+"validate_option": false
+},
+"original_fields": {}
+}
+},
+"check1test": {
+"ident": 4003,
+"brief": "responder for check1 test",
+"RespondPage": {
+"message": "Invalid check1",
+"class": "AllowStore",
+"original_args": {
+"allowed_callers": [
+5002
+],
+"alternate_ident": "home",
+"fail_ident": 4002,
+"submit_list": [
+"widgets",
+"checkbox",
+"check1"
+],
+"submit_option": true,
+"target_ident": 4002,
+"validate_fail_ident": null,
+"validate_option": false
+},
+"original_fields": {
+"check1:checkbox": ""
+}
+}
+},
+"check2test": {
+"ident": 4004,
+"brief": "responder for check2 test",
+"RespondPage": {
+"message": "Invalid check2",
+"class": "AllowStore",
+"original_args": {
+"allowed_callers": [
+5002
+],
+"alternate_ident": "home",
+"fail_ident": 5002,
+"submit_list": [
+"widgets",
+"checkbox",
+"check2"
+],
+"submit_option": true,
+"target_ident": 5002,
+"validate_fail_ident": null,
+"validate_option": false
+},
+"original_fields": {}
+}
+},
+"check3test": {
+"ident": 4005,
+"brief": "responder for check3 test",
+"RespondPage": {
+"message": "Invalid",
+"class": "AllowStore",
+"original_args": {
+"allowed_callers": [
+5002
+],
+"alternate_ident": "home",
+"fail_ident": "general_json",
+"submit_list": [
+"widgets",
+"checkbox",
+"check3"
+],
+"submit_option": true,
+"target_ident": "general_json",
+"validate_fail_ident": null,
+"validate_option": false
+},
+"original_fields": {}
+}
+},
+"check4test": {
+"ident": 4006,
+"brief": "responder for check4 test",
+"RespondPage": {
+"message": "Invalid",
+"class": "AllowStore",
+"original_args": {
+"allowed_callers": [
+5002
+],
+"alternate_ident": "home",
+"fail_ident": "general_json",
+"submit_list": [
+"widgets",
+"checkbox",
+"check4"
+],
+"submit_option": true,
+"target_ident": "general_json",
+"validate_fail_ident": null,
+"validate_option": false
+},
+"original_fields": {}
+}
+},
+"check5test": {
+"ident": 4007,
+"brief": "responder for check5 test",
+"RespondPage": {
+"message": "Invalid",
+"class": "AllowStore",
+"original_args": {
+"allowed_callers": [
+5002
+],
+"alternate_ident": "home",
+"fail_ident": "general_json",
+"submit_list": [
+"widgets",
+"checkbox",
+"check5"
+],
+"submit_option": true,
+"target_ident": "general_json",
+"validate_fail_ident": null,
+"validate_option": false
+},
+"original_fields": {}
+}
+},
+"check6test": {
+"ident": 4008,
+"brief": "responder for check6 test",
+"RespondPage": {
+"message": "Invalid",
+"class": "AllowStore",
+"original_args": {
+"allowed_callers": [
+5002
+],
+"alternate_ident": "home",
+"fail_ident": "general_json",
+"submit_list": [
+"widgets",
+"checkbox",
+"check6"
+],
+"submit_option": true,
+"target_ident": "general_json",
+"validate_fail_ident": null,
+"validate_option": false
+},
+"original_fields": {}
+}
+},
+"checkbox1": {
+"ident": 4002,
+"brief": "responder for checkbox1 page",
+"RespondPage": {
+"class": "NoOperation",
+"original_args": {
+"target_ident": 5002
+},
+"original_fields": {}
+}
+},
+"checkbox2": {
+"ident": 4010,
+"brief": "responder for checkbox2 page",
+"RespondPage": {
+"class": "NoOperation",
+"original_args": {
+"target_ident": 5010
+},
+"original_fields": {}
+}
+},
+"checkedtext": {
+"ident": 4020,
+"brief": "responder for checkedtext page",
+"RespondPage": {
+"message": "Invalid operation",
+"class": "NoOperation",
+"original_args": {
+"target_ident": 5020
+},
+"original_fields": {}
+}
+}
+}
+}
+},
+"pages": {}
+}
+},
+"pages": {
+"checkbox": {
+"ident": 3002,
+"brief": "Links to checkbox widgets",
+"TemplatePage": {
+"show_backcol": false,
+"last_scroll": true,
+"lang": "en",
+"backcol": "#9dbd7a",
+"default_error_widget": [
+"header",
+"top_error"
+]
+},
+"head": [
+"Part",
+{
+"tag_name": "head",
+"brief": "The head section of the page",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"ClosedPart",
+{
+"tag_name": "meta",
+"brief": "The charset meta declaration",
+"show": true,
+"attribs": {
+"charset": "utf-8"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "meta",
+"brief": "The viewport meta declaration",
+"show": true,
+"attribs": {
+"content": "width=device-width, initial-scale=1",
+"name": "viewport"
+}
+}
+],
+[
+"Part",
+{
+"tag_name": "title",
+"brief": "The page title element",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Text",
+"Index"
+]
+]
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to skitest_css",
+"show": true,
+"attribs": {
+"href": "{skitest_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"Comment",
+{
+"text": "HTML5shiv - included as a TextBlock"
+}
+],
+[
+"TextBlock",
+{
+"textref": "html5shiv",
+"failmessage": "failed to read textblocks database with ref html5shiv",
+"show": true,
+"escape": false,
+"linebreaks": false
+}
+],
+[
+"Part",
+{
+"tag_name": "script",
+"brief": "script link to jquery_core",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"src": "{jquery_core}"
+},
+"parts": []
+}
+],
+[
+"Part",
+{
+"tag_name": "script",
+"brief": "script link to skipole_js",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"src": "{skipole_js}"
+},
+"parts": []
+}
+]
+]
+}
+],
+"body": [
+"Part",
+{
+"tag_name": "body",
+"brief": "The body section of the page",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "container",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "ski_container"
+},
+"parts": [
+[
+"SectionPlaceHolder",
+{
+"brief": "Page header",
+"section_name": "header",
+"placename": "header"
+}
+],
+[
+"SectionPlaceHolder",
+{
+"brief": "Left navigation panel",
+"section_name": "navigation",
+"placename": "navigation"
+}
+],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "centre",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "ski_centre"
+},
+"parts": [
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "Top description",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"TextBlock",
+{
+"textref": "page.3002.01",
+"failmessage": "TextBlock not found",
+"show": true,
+"escape": true,
+"linebreaks": true
+}
+]
+]
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink1",
+"name": "CheckBox1",
+"brief": "Link to CheckBox1 widget test page",
+"fields": {
+"button_text": "CheckBox1",
+"clear_error": false,
+"error_class": "",
+"force_ident": false,
+"get_field1": "",
+"get_field2": "",
+"link_ident": "checkbox1",
+"new_window": false,
+"show": true,
+"show_error": "",
+"widget_class": "ski_midbutton"
+}
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink1",
+"name": "CheckBox2",
+"brief": "Link to CheckBox2 widget test page",
+"fields": {
+"button_text": "CheckBox2",
+"clear_error": false,
+"error_class": "",
+"force_ident": false,
+"get_field1": "",
+"get_field2": "",
+"link_ident": "checkbox2",
+"new_window": false,
+"show": true,
+"show_error": "",
+"widget_class": "ski_midbutton"
+}
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink1",
+"name": "CheckedText",
+"brief": "Link to CheckedText widget test page",
+"fields": {
+"button_text": "CheckedText",
+"clear_error": false,
+"error_class": "",
+"force_ident": false,
+"get_field1": "",
+"get_field2": "",
+"link_ident": "checkedtext",
+"new_window": false,
+"show": true,
+"show_error": "",
+"widget_class": "ski_midbutton"
+}
+}
+]
+]
+}
+]
+]
+}
+]
+]
+}
+]
+},
+"confirm": {
+"ident": 3003,
+"brief": "Links to confirm widgets",
+"TemplatePage": {
+"show_backcol": false,
+"last_scroll": true,
+"lang": "en",
+"backcol": "#9dbd7a",
+"default_error_widget": [
+"header",
+"top_error"
+]
+},
+"head": [
+"Part",
+{
+"tag_name": "head",
+"brief": "The head section of the page",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"ClosedPart",
+{
+"tag_name": "meta",
+"brief": "The charset meta declaration",
+"show": true,
+"attribs": {
+"charset": "utf-8"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "meta",
+"brief": "The viewport meta declaration",
+"show": true,
+"attribs": {
+"content": "width=device-width, initial-scale=1",
+"name": "viewport"
+}
+}
+],
+[
+"Part",
+{
+"tag_name": "title",
+"brief": "The page title element",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Text",
+"Index"
+]
+]
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to skitest_css",
+"show": true,
+"attribs": {
+"href": "{skitest_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"Comment",
+{
+"text": "HTML5shiv - included as a TextBlock"
+}
+],
+[
+"TextBlock",
+{
+"textref": "html5shiv",
+"failmessage": "failed to read textblocks database with ref html5shiv",
+"show": true,
+"escape": false,
+"linebreaks": false
+}
+],
+[
+"Part",
+{
+"tag_name": "script",
+"brief": "script link to jquery_core",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"src": "{jquery_core}"
+},
+"parts": []
+}
+],
+[
+"Part",
+{
+"tag_name": "script",
+"brief": "script link to skipole_js",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"src": "{skipole_js}"
+},
+"parts": []
+}
+]
+]
+}
+],
+"body": [
+"Part",
+{
+"tag_name": "body",
+"brief": "The body section of the page",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "container",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "ski_container"
+},
+"parts": [
+[
+"SectionPlaceHolder",
+{
+"brief": "Page header",
+"section_name": "header",
+"placename": "header"
+}
+],
+[
+"SectionPlaceHolder",
+{
+"brief": "Left navigation panel",
+"section_name": "navigation",
+"placename": "navigation"
+}
+],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "centre",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "ski_centre"
+},
+"parts": [
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "Top description",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"TextBlock",
+{
+"textref": "page.3003.01",
+"failmessage": "TextBlock not found",
+"show": true,
+"escape": true,
+"linebreaks": true
+}
+]
+]
+}
+],
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "bottom description",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"TextBlock",
+{
+"textref": "page.3003.02",
+"failmessage": "TextBlock not found",
+"show": true,
+"escape": true,
+"linebreaks": true
+}
+]
+]
+}
+]
+]
+}
+]
+]
+}
+]
+]
+}
+]
+},
+"modules": {
+"ident": 3001,
+"brief": "page with links to modules",
+"TemplatePage": {
+"show_backcol": false,
+"last_scroll": true,
+"lang": "en",
+"backcol": "#9dbd7a",
+"default_error_widget": [
+"header",
+"top_error"
+]
+},
+"head": [
+"Part",
+{
+"tag_name": "head",
+"brief": "The head section of the page",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"ClosedPart",
+{
+"tag_name": "meta",
+"brief": "The charset meta declaration",
+"show": true,
+"attribs": {
+"charset": "utf-8"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "meta",
+"brief": "The viewport meta declaration",
+"show": true,
+"attribs": {
+"content": "width=device-width, initial-scale=1",
+"name": "viewport"
+}
+}
+],
+[
+"Part",
+{
+"tag_name": "title",
+"brief": "The page title element",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Text",
+"Index"
+]
+]
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to skitest_css",
+"show": true,
+"attribs": {
+"href": "{skitest_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"Comment",
+{
+"text": "HTML5shiv - included as a TextBlock"
+}
+],
+[
+"TextBlock",
+{
+"textref": "html5shiv",
+"failmessage": "failed to read textblocks database with ref html5shiv",
+"show": true,
+"escape": false,
+"linebreaks": false
+}
+],
+[
+"Part",
+{
+"tag_name": "script",
+"brief": "script link to jquery_core",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"src": "{jquery_core}"
+},
+"parts": []
+}
+],
+[
+"Part",
+{
+"tag_name": "script",
+"brief": "script link to skipole_js",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"src": "{skipole_js}"
+},
+"parts": []
+}
+]
+]
+}
+],
+"body": [
+"Part",
+{
+"tag_name": "body",
+"brief": "The body section of the page",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "container",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "ski_container"
+},
+"parts": [
+[
+"SectionPlaceHolder",
+{
+"brief": "Page header",
+"section_name": "header",
+"placename": "header"
+}
+],
+[
+"SectionPlaceHolder",
+{
+"brief": "Left navigation panel",
+"section_name": "navigation",
+"placename": "navigation"
+}
+],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "centre",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "ski_centre"
+},
+"parts": [
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "Top description",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"TextBlock",
+{
+"textref": "page.3001.01",
+"failmessage": "TextBlock not found",
+"show": true,
+"escape": true,
+"linebreaks": true
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink1",
+"name": "checkbox",
+"brief": "Link to checkbox widgets",
+"fields": {
+"button_text": "checkbox",
+"clear_error": false,
+"error_class": "",
+"force_ident": false,
+"get_field1": "",
+"get_field2": "",
+"link_ident": "checkbox",
+"new_window": false,
+"show": true,
+"show_error": "",
+"widget_class": "ski_midbutton"
+}
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink1",
+"name": "confirm",
+"brief": "Link to confirm widgets",
+"fields": {
+"button_text": "confirm",
+"clear_error": false,
+"error_class": "",
+"force_ident": false,
+"get_field1": "",
+"get_field2": "",
+"link_ident": "confirm",
+"new_window": false,
+"show": true,
+"show_error": "",
+"widget_class": "ski_midbutton"
+}
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink1",
+"name": "paras",
+"brief": "Link to paras widgets",
+"fields": {
+"button_text": "paras",
+"clear_error": false,
+"error_class": "",
+"force_ident": false,
+"get_field1": "",
+"get_field2": "",
+"link_ident": "paras",
+"new_window": false,
+"show": true,
+"show_error": "",
+"widget_class": "ski_midbutton"
+}
+}
+]
+]
+}
+]
+]
+}
+]
+]
+}
+]
+]
+}
+]
+},
+"paras": {
+"ident": 3006,
+"brief": "Links to paras widgets",
+"TemplatePage": {
+"show_backcol": false,
+"last_scroll": true,
+"lang": "en",
+"backcol": "#9dbd7a",
+"default_error_widget": [
+"header",
+"top_error"
+]
+},
+"head": [
+"Part",
+{
+"tag_name": "head",
+"brief": "The head section of the page",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"ClosedPart",
+{
+"tag_name": "meta",
+"brief": "The charset meta declaration",
+"show": true,
+"attribs": {
+"charset": "utf-8"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "meta",
+"brief": "The viewport meta declaration",
+"show": true,
+"attribs": {
+"content": "width=device-width, initial-scale=1",
+"name": "viewport"
+}
+}
+],
+[
+"Part",
+{
+"tag_name": "title",
+"brief": "The page title element",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Text",
+"Index"
+]
+]
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to skitest_css",
+"show": true,
+"attribs": {
+"href": "{skitest_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"Comment",
+{
+"text": "HTML5shiv - included as a TextBlock"
+}
+],
+[
+"TextBlock",
+{
+"textref": "html5shiv",
+"failmessage": "failed to read textblocks database with ref html5shiv",
+"show": true,
+"escape": false,
+"linebreaks": false
+}
+],
+[
+"Part",
+{
+"tag_name": "script",
+"brief": "script link to jquery_core",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"src": "{jquery_core}"
+},
+"parts": []
+}
+],
+[
+"Part",
+{
+"tag_name": "script",
+"brief": "script link to skipole_js",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"src": "{skipole_js}"
+},
+"parts": []
+}
+]
+]
+}
+],
+"body": [
+"Part",
+{
+"tag_name": "body",
+"brief": "The body section of the page",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "container",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "ski_container"
+},
+"parts": [
+[
+"SectionPlaceHolder",
+{
+"brief": "Page header",
+"section_name": "header",
+"placename": "header"
+}
+],
+[
+"SectionPlaceHolder",
+{
+"brief": "Left navigation panel",
+"section_name": "navigation",
+"placename": "navigation"
+}
+],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "centre",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "ski_centre"
+},
+"parts": [
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "Top description",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"TextBlock",
+{
+"textref": "page.3006.01",
+"failmessage": "TextBlock not found",
+"show": true,
+"escape": true,
+"linebreaks": true
+}
+]
+]
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink1",
+"name": "ParaText",
+"brief": "Link to ParaText widget test page",
+"fields": {
+"button_text": "ParaText",
+"clear_error": false,
+"error_class": "",
+"force_ident": false,
+"get_field1": "",
+"get_field2": "",
+"link_ident": "home",
+"new_window": false,
+"show": true,
+"show_error": "",
+"widget_class": "ski_midbutton"
+}
+}
+]
+]
+}
+]
+]
+}
+]
+]
+}
+]
+}
+}
+}
+},
+"pages": {
+"index": {
+"ident": 1,
+"brief": "Responder to fill in index_template fields",
+"RespondPage": {
+"class": "NoOperation",
+"original_args": {
+"target_ident": 2001
+},
+"original_fields": {}
+}
+},
+"login": {
+"ident": 100,
+"brief": "Responder to login page",
+"RespondPage": {
+"message": "Login failed",
+"class": "NoOperation",
+"original_args": {
+"target_ident": 100101
+},
+"original_fields": {}
+}
+},
+"no_javascript": {
+"ident": 540,
+"brief": "javascript disabled page",
+"TemplatePage": {
+"show_backcol": false,
+"last_scroll": true,
+"lang": "en",
+"backcol": "#9dbd7a",
+"default_error_widget": [
+"",
+"top_error"
+]
+},
+"head": [
+"Part",
+{
+"tag_name": "head",
+"brief": "The head section of the page",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"ClosedPart",
+{
+"tag_name": "meta",
+"brief": "The charset meta declaration",
+"show": true,
+"attribs": {
+"charset": "utf-8"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "meta",
+"brief": "The charset meta declaration",
+"show": true,
+"attribs": {
+"content": "width=device-width, initial-scale=1",
+"name": "viewport"
+}
+}
+],
+[
+"Part",
+{
+"tag_name": "title",
+"brief": "The page title element",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Text",
+"New page"
+]
+]
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to simple_css",
+"show": true,
+"attribs": {
+"href": "{simple_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"Comment",
+{
+"text": "HTML5shiv - included as a TextBlock"
+}
+],
+[
+"TextBlock",
+{
+"textref": "html5shiv",
+"failmessage": "failed to read textblocks database with ref html5shiv",
+"show": true,
+"escape": false,
+"linebreaks": false
+}
+],
+[
+"Part",
+{
+"tag_name": "script",
+"brief": "script link to jquery_core",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"src": "{jquery_core}"
+},
+"parts": []
+}
+],
+[
+"Part",
+{
+"tag_name": "script",
+"brief": "script link to skipole_js",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"src": "{skipole_js}"
+},
+"parts": []
+}
+]
+]
+}
+],
+"body": [
+"Part",
+{
+"tag_name": "body",
+"brief": "The body section of the page",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Widget",
+{
+"class": "error_messages.ErrorDiv",
+"name": "top_error",
+"brief": "ErrorDiv",
+"fields": {
+"clear_error": false,
+"error_class": "ski_errorcol",
+"hide": true,
+"show": true,
+"show_error": "",
+"widget_class": ""
+}
+}
+],
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "Paragraph containing no javascript textblock",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"TextBlock",
+{
+"textref": "no_javascript_text",
+"failmessage": "Javascript failure - This page requires javascript to be enabled in your browser.",
+"show": true,
+"escape": true,
+"linebreaks": true
+}
+]
+]
+}
+],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "Home link",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Widget",
+{
+"class": "links.Link",
+"name": "homelink",
+"brief": "Link to site home",
+"fields": {
+"content": "Return to home page",
+"force_ident": false,
+"get_field1": "",
+"get_field2": "",
+"link_ident": "home",
+"new_window": false,
+"show": true,
+"widget_class": ""
+}
+}
+]
+]
+}
+]
+]
+}
+]
+},
+"show_server_error": {
+"ident": 560,
+"brief": "Displays the server error page",
+"RespondPage": {
+"class": "PageData",
+"original_args": {
+"target_ident": "server_error"
+},
+"original_fields": {
+"show_error": "Example server error message"
+}
+}
+},
+"show_validate_error": {
+"ident": 550,
+"brief": "Displays the validate error page",
+"RespondPage": {
+"class": "PageData",
+"original_args": {
+"target_ident": "validate_error"
+},
+"original_fields": {
+"show_error": "Example validate error message"
+}
+}
+}
+}
+}
+}
