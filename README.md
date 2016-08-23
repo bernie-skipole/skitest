@@ -1,3 +1,3 @@
 # skitest #
 
-TProject to test the widgets of the skipole framework.
+Project to test the widgets of the skipole framework.
