@@ -3,7 +3,7 @@
 "default_language": "en",
 "brief": "Project to test the skipole framework",
 "version": "0.0.0",
-"skipole": "0.2.0",
+"skipole": "0.3.1",
 "subprojects": {
 "lib": "/lib/"
 },
@@ -4580,27 +4580,13 @@ false,
 },
 "check3test": {
 "ident": 4005,
-"brief": "responder for check3 test",
-"RespondPage": {
-"message": "Invalid",
-"class": "AllowStore",
-"original_args": {
-"allowed_callers": [
-5002
-],
-"alternate_ident": "home",
-"fail_ident": "general_json",
-"submit_list": [
-"widgets",
-"checkbox",
-"check3"
-],
-"submit_option": true,
-"target_ident": "general_json",
-"validate_fail_ident": null,
-"validate_option": false
-},
-"original_fields": {}
+"brief": "checkbox1 set checked by JSON",
+"JSON": {
+"enable_cache": false,
+"content": {
+"check1result:para_text": "Form submission result: The checkbox is TICKED.",
+"check1:checked": true
+}
 }
 },
 "check4test": {
