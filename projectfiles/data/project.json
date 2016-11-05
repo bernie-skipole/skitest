@@ -4591,27 +4591,13 @@ false,
 },
 "check4test": {
 "ident": 4006,
-"brief": "responder for check4 test",
-"RespondPage": {
-"message": "Invalid",
-"class": "AllowStore",
-"original_args": {
-"allowed_callers": [
-5002
-],
-"alternate_ident": "home",
-"fail_ident": "general_json",
-"submit_list": [
-"widgets",
-"checkbox",
-"check4"
-],
-"submit_option": true,
-"target_ident": "general_json",
-"validate_fail_ident": null,
-"validate_option": false
-},
-"original_fields": {}
+"brief": "checkbox1 set unchecked by JSON",
+"JSON": {
+"enable_cache": false,
+"content": {
+"check1result:para_text": "Form submission result: The checkbox is NOT TICKED.",
+"check1:checked": false
+}
 }
 },
 "check5test": {
