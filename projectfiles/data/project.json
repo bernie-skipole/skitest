@@ -4478,52 +4478,24 @@ false,
 },
 "check11test": {
 "ident": 4012,
-"brief": "responder for check11 test",
-"RespondPage": {
-"message": "Invalid",
-"class": "AllowStore",
-"original_args": {
-"allowed_callers": [
-5010
-],
-"alternate_ident": "home",
-"fail_ident": "general_json",
-"submit_list": [
-"widgets",
-"checkbox",
-"check11"
-],
-"submit_option": true,
-"target_ident": "general_json",
-"validate_fail_ident": null,
-"validate_option": false
-},
-"original_fields": {}
+"brief": "checkbox2 set checked by JSON",
+"JSON": {
+"enable_cache": false,
+"content": {
+"check10result:para_text": "Form submission result: The checkbox is TICKED.",
+"check10:checked": true
+}
 }
 },
 "check12test": {
 "ident": 4013,
-"brief": "responder for check12 test",
-"RespondPage": {
-"message": "Invalid",
-"class": "AllowStore",
-"original_args": {
-"allowed_callers": [
-5010
-],
-"alternate_ident": "home",
-"fail_ident": "general_json",
-"submit_list": [
-"widgets",
-"checkbox",
-"check12"
-],
-"submit_option": true,
-"target_ident": "general_json",
-"validate_fail_ident": null,
-"validate_option": false
-},
-"original_fields": {}
+"brief": "checkbox2 set unchecked by JSON",
+"JSON": {
+"enable_cache": false,
+"content": {
+"check10result:para_text": "Form submission result: The checkbox is NOT TICKED.",
+"check10:checked": false
+}
 }
 },
 "check1test": {

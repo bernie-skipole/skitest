@@ -26,5 +26,6 @@
   "page.5010.01": "A span holding a checkbox. Without a form or submit button, typically included within a form. Does not display errors.",
   "page.5010.02": "Submitting the form should give the checkbox result here.",
   "page.5010.03": "The following calls a JSON file to set the checkbox above to ticked.",
-  "page.5010.04": "The following calls a JSON file to set the checkbox above to unticked."
+  "page.5010.04": "The following calls a JSON file to set the checkbox above to unticked.",
+  "page.5020.01": "A div containing a checkbox and text input field. Without a form or submit button, typically included within a form.\r\nThe text input field is only enabled when the checkbox is checked. Uses javascript and jquery to enable/disable the text input field."
 }

@@ -29,14 +29,3 @@ def check10(caller_ident, ident_list, submit_list, submit_dict, call_data, page_
        page_data['check10result', 'para_text'] = "Form submission result: The checkbox is NOT TICKED."
        page_data['check10', 'checked'] = False
 
-
-def check11(caller_ident, ident_list, submit_list, submit_dict, call_data, page_data, lang):
-    """Ticks CheckBox2 by JSON"""
-    page_data['check10result', 'para_text'] = "Form submission result: The checkbox is TICKED."
-    page_data['check10', 'checked'] = True
-
-
-def check12(caller_ident, ident_list, submit_list, submit_dict, call_data, page_data, lang):
-    """Unticks CheckBox2 by JSON"""
-    page_data['check10result', 'para_text'] = "Form submission result: The checkbox is NOT TICKED."
-    page_data['check10', 'checked'] = False
