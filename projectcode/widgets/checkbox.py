@@ -20,11 +20,6 @@ def check5(caller_ident, ident_list, submit_list, submit_dict, call_data, page_d
     raise FailPage(message="Test error raised", displaywidgetname='check1')
 
 
-def check6(caller_ident, ident_list, submit_list, submit_dict, call_data, page_data, lang):
-    """Clears an error in CheckBox1 by JSON"""
-    page_data['check1', 'clear_error'] = True
-
-
 def check10(caller_ident, ident_list, submit_list, submit_dict, call_data, page_data, lang):
     """Tests CheckBox10 when submitted in a form"""
     if call_data['check10','checkbox'] == 'check10':
