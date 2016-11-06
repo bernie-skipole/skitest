@@ -12,6 +12,9 @@
 "check11test": 4012,
 "check12test": 4013,
 "check1test": 4003,
+"check20test": 4021,
+"check21test": 4022,
+"check22test": 4023,
 "check2test": 4004,
 "check3test": 4005,
 "check4test": 4006,
@@ -4226,7 +4229,7 @@ false,
 "name": "form1",
 "brief": "submitform1 holding check20",
 "fields": {
-"action": "check10test",
+"action": "check20test",
 "action_json": "",
 "button_text": "Submit",
 "clear_error": false,
@@ -4251,7 +4254,7 @@ false,
 "name": "check20",
 "brief": "check20",
 "fields": {
-"checkbox": "",
+"checkbox": "check20",
 "checked": false,
 "clear_error": false,
 "error_class": "",
@@ -4354,7 +4357,7 @@ false,
 "error_class": "",
 "get_field1": "",
 "get_field2": "",
-"link_ident": "check11test",
+"link_ident": "check21test",
 "nojs_link_ident": "no_javascript",
 "show": true,
 "show_error": "",
@@ -4410,7 +4413,7 @@ false,
 "error_class": "",
 "get_field1": "",
 "get_field2": "",
-"link_ident": "check12test",
+"link_ident": "check22test",
 "nojs_link_ident": "no_javascript",
 "show": true,
 "show_error": "",
@@ -4482,7 +4485,7 @@ false,
 "JSON": {
 "enable_cache": false,
 "content": {
-"check10result:para_text": "Form submission result: The checkbox is TICKED.",
+"check10result:para_text": "The checkbox is TICKED.",
 "check10:checked": true
 }
 }
@@ -4493,7 +4496,7 @@ false,
 "JSON": {
 "enable_cache": false,
 "content": {
-"check10result:para_text": "Form submission result: The checkbox is NOT TICKED.",
+"check10result:para_text": "The checkbox is NOT TICKED.",
 "check10:checked": false
 }
 }
@@ -4522,6 +4525,56 @@ false,
 },
 "original_fields": {
 "check1:checkbox": ""
+}
+}
+},
+"check20test": {
+"ident": 4021,
+"brief": "Responder for checkedtext test",
+"RespondPage": {
+"message": "Invalid",
+"class": "AllowStore",
+"original_args": {
+"allowed_callers": [
+5020
+],
+"alternate_ident": "home",
+"fail_ident": 5020,
+"submit_list": [
+"widgets",
+"checkbox",
+"check20"
+],
+"submit_option": true,
+"target_ident": 4020,
+"validate_fail_ident": null,
+"validate_option": false
+},
+"original_fields": {
+"check20:checkbox": "",
+"check20:input_text": ""
+}
+}
+},
+"check21test": {
+"ident": 4022,
+"brief": "checkedtext set checked by JSON",
+"JSON": {
+"enable_cache": false,
+"content": {
+"check20result:para_text": "The checkbox is TICKED.",
+"check20:checked": true
+}
+}
+},
+"check22test": {
+"ident": 4023,
+"brief": "checkedtext set checked by JSON",
+"JSON": {
+"enable_cache": false,
+"content": {
+"check20result:para_text": "The checkbox is NOT TICKED.",
+"check20:checked": false
 }
 }
 },
@@ -4556,7 +4609,7 @@ false,
 "JSON": {
 "enable_cache": false,
 "content": {
-"check1result:para_text": "Form submission result: The checkbox is TICKED.",
+"check1result:para_text": "The checkbox is TICKED.",
 "check1:checked": true
 }
 }
@@ -4567,7 +4620,7 @@ false,
 "JSON": {
 "enable_cache": false,
 "content": {
-"check1result:para_text": "Form submission result: The checkbox is NOT TICKED.",
+"check1result:para_text": "The checkbox is NOT TICKED.",
 "check1:checked": false
 }
 }
@@ -5080,27 +5133,6 @@ false,
 "TextBlock",
 {
 "textref": "page.3003.01",
-"failmessage": "TextBlock not found",
-"show": true,
-"escape": true,
-"linebreaks": true
-}
-]
-]
-}
-],
-[
-"Part",
-{
-"tag_name": "p",
-"brief": "bottom description",
-"show": true,
-"hide_if_empty": false,
-"parts": [
-[
-"TextBlock",
-{
-"textref": "page.3003.02",
 "failmessage": "TextBlock not found",
 "show": true,
 "escape": true,

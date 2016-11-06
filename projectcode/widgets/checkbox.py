@@ -21,11 +21,30 @@ def check5(caller_ident, ident_list, submit_list, submit_dict, call_data, page_d
 
 
 def check10(caller_ident, ident_list, submit_list, submit_dict, call_data, page_data, lang):
-    """Tests CheckBox10 when submitted in a form"""
+    """Tests CheckBox2 when submitted in a form"""
     if call_data['check10','checkbox'] == 'check10':
         page_data['check10result', 'para_text'] = "Form submission result: The checkbox is TICKED."
         page_data['check10', 'checked'] = True
     else:
        page_data['check10result', 'para_text'] = "Form submission result: The checkbox is NOT TICKED."
        page_data['check10', 'checked'] = False
+
+
+
+def check20(caller_ident, ident_list, submit_list, submit_dict, call_data, page_data, lang):
+    """Tests Checkedtext when submitted in a form"""
+    submitted_text = call_data['check20','input_text']
+    if call_data['check20','checkbox'] == 'check20':
+        if submitted_text:
+            page_data['check20result', 'para_text'] = "Form submission result: The checkbox is TICKED. Text: %s" % (submitted_text,)
+        else:
+            page_data['check20result', 'para_text'] = "Form submission result: The checkbox is TICKED."
+        page_data['check20', 'checked'] = True
+    else:
+        if submitted_text:
+            page_data['check20result', 'para_text'] = "Form submission result: The checkbox is NOT TICKED. Text: %s" % (submitted_text,)
+        else:
+           page_data['check20result', 'para_text'] = "Form submission result: The checkbox is NOT TICKED."
+        page_data['check20', 'checked'] = False
+
 
