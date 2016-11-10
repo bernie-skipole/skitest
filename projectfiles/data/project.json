@@ -3,7 +3,7 @@
 "default_language": "en",
 "brief": "Project to test the skipole framework",
 "version": "0.0.0",
-"skipole": "0.3.2",
+"skipole": "0.3.3",
 "subprojects": {
 "lib": "/lib/"
 },
@@ -5379,8 +5379,218 @@ false,
 "Widget",
 {
 "class": "links.ButtonLink1",
+"name": "debug_tools",
+"brief": "Link to debug_tools",
+"fields": {
+"button_text": "debug_tools",
+"clear_error": false,
+"error_class": "",
+"force_ident": false,
+"get_field1": "",
+"get_field2": "",
+"link_ident": "home",
+"new_window": false,
+"show": true,
+"show_error": "",
+"widget_class": "ski_midbutton"
+}
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink1",
+"name": "dropdown",
+"brief": "Link to dropdown",
+"fields": {
+"button_text": "dropdown",
+"clear_error": false,
+"error_class": "",
+"force_ident": false,
+"get_field1": "",
+"get_field2": "",
+"link_ident": "home",
+"new_window": false,
+"show": true,
+"show_error": "",
+"widget_class": "ski_midbutton"
+}
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink1",
+"name": "error_messages",
+"brief": "Link to error_messages",
+"fields": {
+"button_text": "error_messages",
+"clear_error": false,
+"error_class": "",
+"force_ident": false,
+"get_field1": "",
+"get_field2": "",
+"link_ident": "home",
+"new_window": false,
+"show": true,
+"show_error": "",
+"widget_class": "ski_midbutton"
+}
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink1",
+"name": "footers",
+"brief": "Link to footers",
+"fields": {
+"button_text": "footers",
+"clear_error": false,
+"error_class": "",
+"force_ident": false,
+"get_field1": "",
+"get_field2": "",
+"link_ident": "home",
+"new_window": false,
+"show": true,
+"show_error": "",
+"widget_class": "ski_midbutton"
+}
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink1",
+"name": "headers",
+"brief": "Link to headers",
+"fields": {
+"button_text": "headers",
+"clear_error": false,
+"error_class": "",
+"force_ident": false,
+"get_field1": "",
+"get_field2": "",
+"link_ident": "home",
+"new_window": false,
+"show": true,
+"show_error": "",
+"widget_class": "ski_midbutton"
+}
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink1",
+"name": "info",
+"brief": "Link to info",
+"fields": {
+"button_text": "info",
+"clear_error": false,
+"error_class": "",
+"force_ident": false,
+"get_field1": "",
+"get_field2": "",
+"link_ident": "home",
+"new_window": false,
+"show": true,
+"show_error": "",
+"widget_class": "ski_midbutton"
+}
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink1",
+"name": "inputforms",
+"brief": "Link to inputforms",
+"fields": {
+"button_text": "inputforms",
+"clear_error": false,
+"error_class": "",
+"force_ident": false,
+"get_field1": "",
+"get_field2": "",
+"link_ident": "home",
+"new_window": false,
+"show": true,
+"show_error": "",
+"widget_class": "ski_midbutton"
+}
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink1",
+"name": "inputtables",
+"brief": "Link to inputtables",
+"fields": {
+"button_text": "inputtables",
+"clear_error": false,
+"error_class": "",
+"force_ident": false,
+"get_field1": "",
+"get_field2": "",
+"link_ident": "home",
+"new_window": false,
+"show": true,
+"show_error": "",
+"widget_class": "ski_midbutton"
+}
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink1",
+"name": "inputtext",
+"brief": "Link to inputtext",
+"fields": {
+"button_text": "inputtext",
+"clear_error": false,
+"error_class": "",
+"force_ident": false,
+"get_field1": "",
+"get_field2": "",
+"link_ident": "home",
+"new_window": false,
+"show": true,
+"show_error": "",
+"widget_class": "ski_midbutton"
+}
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink1",
+"name": "links",
+"brief": "Link to links",
+"fields": {
+"button_text": "links",
+"clear_error": false,
+"error_class": "",
+"force_ident": false,
+"get_field1": "",
+"get_field2": "",
+"link_ident": "home",
+"new_window": false,
+"show": true,
+"show_error": "",
+"widget_class": "ski_midbutton"
+}
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink1",
 "name": "paras",
-"brief": "Link to paras widgets",
+"brief": "Link to paras",
 "fields": {
 "button_text": "paras",
 "clear_error": false,
@@ -5389,6 +5599,132 @@ false,
 "get_field1": "",
 "get_field2": "",
 "link_ident": "paras",
+"new_window": false,
+"show": true,
+"show_error": "",
+"widget_class": "ski_midbutton"
+}
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink1",
+"name": "radio",
+"brief": "Link to radio",
+"fields": {
+"button_text": "radio",
+"clear_error": false,
+"error_class": "",
+"force_ident": false,
+"get_field1": "",
+"get_field2": "",
+"link_ident": "home",
+"new_window": false,
+"show": true,
+"show_error": "",
+"widget_class": "ski_midbutton"
+}
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink1",
+"name": "svgarrows",
+"brief": "Link to svgarrows",
+"fields": {
+"button_text": "svgarrows",
+"clear_error": false,
+"error_class": "",
+"force_ident": false,
+"get_field1": "",
+"get_field2": "",
+"link_ident": "home",
+"new_window": false,
+"show": true,
+"show_error": "",
+"widget_class": "ski_midbutton"
+}
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink1",
+"name": "svgbasics",
+"brief": "Link to svgbasics",
+"fields": {
+"button_text": "svgbasics",
+"clear_error": false,
+"error_class": "",
+"force_ident": false,
+"get_field1": "",
+"get_field2": "",
+"link_ident": "home",
+"new_window": false,
+"show": true,
+"show_error": "",
+"widget_class": "ski_midbutton"
+}
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink1",
+"name": "tables",
+"brief": "Link to tables",
+"fields": {
+"button_text": "tables",
+"clear_error": false,
+"error_class": "",
+"force_ident": false,
+"get_field1": "",
+"get_field2": "",
+"link_ident": "home",
+"new_window": false,
+"show": true,
+"show_error": "",
+"widget_class": "ski_midbutton"
+}
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink1",
+"name": "textarea",
+"brief": "Link to textarea",
+"fields": {
+"button_text": "textarea",
+"clear_error": false,
+"error_class": "",
+"force_ident": false,
+"get_field1": "",
+"get_field2": "",
+"link_ident": "home",
+"new_window": false,
+"show": true,
+"show_error": "",
+"widget_class": "ski_midbutton"
+}
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink1",
+"name": "upload",
+"brief": "Link to upload",
+"fields": {
+"button_text": "upload",
+"clear_error": false,
+"error_class": "",
+"force_ident": false,
+"get_field1": "",
+"get_field2": "",
+"link_ident": "home",
 "new_window": false,
 "show": true,
 "show_error": "",
