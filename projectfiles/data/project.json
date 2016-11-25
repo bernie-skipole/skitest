@@ -65,7 +65,7 @@
 "skipole_js": "lib,skipole_js",
 "skitest_css": 1002,
 "table1button": 4101,
-"table1button_test1": 5102,
+"table1button_test1": 4102,
 "url_not_found": 500,
 "validate_error": 510
 },
@@ -4711,31 +4711,6 @@ false,
 ]
 }
 ]
-},
-"table1button_test1": {
-"ident": 5102,
-"brief": "Responder to accept table button press",
-"RespondPage": {
-"message": "Invalid operation",
-"class": "AllowStore",
-"original_args": {
-"allowed_callers": [],
-"alternate_ident": "home",
-"fail_ident": "home",
-"submit_list": [
-"widgets",
-"links",
-"table1button_jsontest"
-],
-"submit_option": true,
-"target_ident": "general_json",
-"validate_fail_ident": null,
-"validate_option": false
-},
-"original_fields": {
-"table1button:contents": ""
-}
-}
 }
 }
 }
@@ -5022,6 +4997,31 @@ false,
 "target_ident": 5101
 },
 "original_fields": {}
+}
+},
+"table1button_test1": {
+"ident": 4102,
+"brief": "test",
+"RespondPage": {
+"message": "Invalid operation",
+"class": "AllowStore",
+"original_args": {
+"allowed_callers": [],
+"alternate_ident": "home",
+"fail_ident": "home",
+"submit_list": [
+"widgets",
+"links",
+"table1button_jsontest"
+],
+"submit_option": true,
+"target_ident": "general_json",
+"validate_fail_ident": null,
+"validate_option": false
+},
+"original_fields": {
+"table1button:contents": ""
+}
 }
 }
 }
