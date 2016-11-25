@@ -14,6 +14,11 @@
 },
 "JSONButtonLink": {
 "widget_class": "ski_midbutton"
+},
+"Table1_Button": {
+"even_class": "even",
+"odd_class": "odd",
+"widget_class": "table"
 }
 },
 "checkbox": {
