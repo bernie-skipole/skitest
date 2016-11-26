@@ -66,6 +66,7 @@
 "skitest_css": 1002,
 "table1button": 4101,
 "table1button_test1": 4102,
+"table1button_test2": 4103,
 "url_not_found": 500,
 "validate_error": 510
 },
@@ -556,6 +557,52 @@ false,
 [
 "margin-bottom",
 "20px"
+]
+],
+".ski_table_button": [
+[
+"background",
+"blue"
+],
+[
+"border-style",
+"solid"
+],
+[
+"border-width",
+"1px"
+],
+[
+"color",
+"#FFFFFF"
+],
+[
+"padding",
+"1px 1px 1px 1px"
+],
+[
+"text-decoration",
+"none"
+]
+],
+".ski_table_button:hover": [
+[
+"background",
+"#11216a"
+],
+[
+"border",
+"solid #11216a 1px"
+],
+[
+"color",
+"#FFFFFF"
+]
+],
+".ski_table_button:visited": [
+[
+"color",
+"#FFFFFF"
 ]
 ]
 }
@@ -4667,7 +4714,7 @@ false,
 "name": "table1button",
 "brief": "Table1_Button widget",
 "fields": {
-"button_class": "",
+"button_class": "ski_table_button",
 "button_text": "submit",
 "contents": [
 [
@@ -4728,16 +4775,19 @@ false,
 [
 "Text",
 "The buttons in the table below call a full html refresh of this page to set the paragraph above."
+]
+]
+}
 ],
 [
 "Widget",
 {
 "class": "links.Table1_Button",
-"name": "paratest2",
-"brief": "ccc",
+"name": "table1button2",
+"brief": "Second test table",
 "fields": {
-"button_class": "",
-"button_text": "",
+"button_class": "ski_table_button",
+"button_text": "Submit",
 "contents": [
 [
 "",
@@ -4748,7 +4798,7 @@ false,
 "header_class": "",
 "hide": false,
 "json_ident": "",
-"link_ident": "no_javascript",
+"link_ident": "table1button_test2",
 "maximize_text_col": true,
 "new_window": false,
 "odd_class": "odd",
@@ -4756,9 +4806,6 @@ false,
 "title1": "table 2 text",
 "widget_class": "table"
 }
-}
-]
-]
 }
 ]
 ]
@@ -5080,6 +5127,31 @@ false,
 },
 "original_fields": {
 "table1button:contents": ""
+}
+}
+},
+"table1button_test2": {
+"ident": 4103,
+"brief": "test",
+"RespondPage": {
+"message": "Invalid operation",
+"class": "AllowStore",
+"original_args": {
+"allowed_callers": [],
+"alternate_ident": "home",
+"fail_ident": "home",
+"submit_list": [
+"widgets",
+"links",
+"table1button_htmltest"
+],
+"submit_option": true,
+"target_ident": "table1button",
+"validate_fail_ident": null,
+"validate_option": false
+},
+"original_fields": {
+"table1button2:contents": ""
 }
 }
 }

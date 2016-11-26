@@ -18,7 +18,8 @@
 "Table1_Button": {
 "even_class": "even",
 "odd_class": "odd",
-"widget_class": "table"
+"widget_class": "table",
+"button_class": "ski_table_button"
 }
 },
 "checkbox": {
