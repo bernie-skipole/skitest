@@ -562,7 +562,11 @@ false,
 ".ski_table_button": [
 [
 "background",
-"blue"
+"green"
+],
+[
+"border-color",
+"#9dbd7a"
 ],
 [
 "border-style",
@@ -589,20 +593,18 @@ false,
 [
 "background",
 "#11216a"
-],
-[
-"border",
-"solid #11216a 1px"
-],
-[
-"color",
-"#FFFFFF"
 ]
 ],
 ".ski_table_button:visited": [
 [
 "color",
 "#FFFFFF"
+]
+],
+".ski_table_header": [
+[
+"background-color",
+"#69b585"
 ]
 ]
 }
@@ -4723,12 +4725,11 @@ false,
 ]
 ],
 "even_class": "even",
-"header_class": "",
+"header_class": "ski_table_header",
 "hide": false,
 "json_ident": "table1button_test1",
 "link_ident": "no_javascript",
 "maximize_text_col": true,
-"new_window": false,
 "odd_class": "odd",
 "show": true,
 "title1": "text in table",
@@ -4795,12 +4796,11 @@ false,
 ]
 ],
 "even_class": "even",
-"header_class": "",
+"header_class": "ski_table_header",
 "hide": false,
 "json_ident": "",
 "link_ident": "table1button_test2",
 "maximize_text_col": true,
-"new_window": false,
 "odd_class": "odd",
 "show": true,
 "title1": "table 2 text",

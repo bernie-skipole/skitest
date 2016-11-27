@@ -19,7 +19,8 @@
 "even_class": "even",
 "odd_class": "odd",
 "widget_class": "table",
-"button_class": "ski_table_button"
+"button_class": "ski_table_button",
+"header_class": "ski_table_header"
 }
 },
 "checkbox": {
