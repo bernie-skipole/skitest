@@ -16,6 +16,7 @@
   "page.3003.01": "These are the widgets in the confirm module.",
   "page.3006.01": "These are the widgets in the paras module.",
   "page.3007.01": "These are the widgets in the links module.",
+  "page.3008.01": "These are the widgets in the error_messages module.",
   "page.5002.01": "A checkbox in a div - but without a form or submit button, typically included within a form. On error, a paragraph above the checkbox will display the error message.",
   "page.5002.02": "Submitting the form should give the checkbox result here.",
   "page.5002.03": "The button below sets an error into the checkbox and refreshes the page. This causes the textblock to be set to its original unticked state, since these tests are not retaining the state.",
