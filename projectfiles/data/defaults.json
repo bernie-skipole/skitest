@@ -31,6 +31,9 @@
 "error_messages": {
 "ErrorPara": {
 "widget_class": "ski_errorcol"
+},
+"ErrorDiv": {
+"error_class": "ski_errorcol"
 }
 },
 "headers": {

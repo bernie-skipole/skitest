@@ -32,5 +32,6 @@
   "page.5020.02": "Submitting the form should give the checkbox result here.",
   "page.5020.03": "The following calls a JSON file to set the checkbox above to ticked.",
   "page.5020.04": "The following calls a JSON file to set the checkbox above to unticked.",
-  "page.5101.01": "A table of a single text column, followed by a button link column.\r\nThere is a header and title over the text column, the button link can have one get field."
+  "page.5101.01": "A table of a single text column, followed by a button link column.\r\nThere is a header and title over the text column, the button link can have one get field.",
+  "page.5201.01": "An ErrorDiv widget is set below this paragraph, normally invisible until an error condition is raised, at which point it will show the error message."
 }
