@@ -29,6 +29,7 @@
 "errorclear1": 4220,
 "errordiv": 4201,
 "errordiv_test1": 4202,
+"errordiv_test2": 4203,
 "errorpara": 4210,
 "general_json": 570,
 "home": 1,
@@ -4539,8 +4540,8 @@ false,
 "lang": "en",
 "backcol": "#9dbd7a",
 "default_error_widget": [
-"header",
-"top_error"
+"",
+"testerrordiv"
 ]
 },
 "head": [
@@ -4740,7 +4741,7 @@ false,
 "parts": [
 [
 "Text",
-"This button causes a page refresh with an error set:"
+"This button causes a page refresh with an error message set by a FailPage message in user submit_data function:"
 ]
 ]
 }
@@ -4759,6 +4760,42 @@ false,
 "get_field1": "",
 "get_field2": "",
 "link_ident": "errordiv_test1",
+"new_window": false,
+"show": true,
+"show_error": "",
+"widget_class": "ski_midbutton"
+}
+}
+],
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "New Tag",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Text",
+"This button causes a page refresh with an error message set by Responder with a FailPage raised without a message:"
+]
+]
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink1",
+"name": "respondermessage",
+"brief": "Link to errordiv_test2",
+"fields": {
+"button_text": "ResponderMessage",
+"clear_error": false,
+"error_class": "",
+"force_ident": false,
+"get_field1": "",
+"get_field2": "",
+"link_ident": "errordiv_test2",
 "new_window": false,
 "show": true,
 "show_error": "",
@@ -5451,6 +5488,29 @@ false,
 "class": "SubmitData",
 "original_args": {
 "fail_ident": "errordiv",
+"submit_list": [
+"widgets",
+"error_messages",
+"errordiv_test1"
+],
+"target_ident": "home"
+},
+"original_fields": {}
+}
+},
+"errordiv_test2": {
+"ident": 4203,
+"brief": "Responder default error message",
+"RespondPage": {
+"message": "HTML TEST ERROR; with message set by responder.",
+"class": "SubmitData",
+"original_args": {
+"fail_ident": "errordiv",
+"submit_list": [
+"widgets",
+"error_messages",
+"errordiv_test2"
+],
 "target_ident": "home"
 },
 "original_fields": {}
