@@ -33,6 +33,7 @@
 "errordiv_test3": 4204,
 "errordiv_test4": 4205,
 "errordiv_test5": 4206,
+"errordiv_test6": 4207,
 "errorpara": 4210,
 "general_json": 570,
 "home": 1,
@@ -4905,6 +4906,66 @@ false,
 "widget_class": "ski_midbutton"
 }
 }
+],
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "New Tag",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Text",
+"Validator on field below causes an error if submitted length is longer than three characters."
+]
+]
+}
+],
+[
+"Widget",
+{
+"class": "inputtext.SubmitTextInput1",
+"name": "textinput",
+"brief": "Input field for validator test",
+"fields": {
+"action": "errordiv_test6",
+"action_json": "",
+"button_class": "",
+"button_text": "Submit",
+"clear_error": false,
+"error_class": "",
+"hidden_field1": "",
+"hidden_field2": "",
+"hidden_field3": "",
+"hidden_field4": "",
+"hide": false,
+"input_accepted_class": "",
+"input_class": "",
+"input_errored_class": "",
+"input_text": "",
+"label": "Send text string:",
+"label_class": "ski_left_label",
+"maxlength": "",
+"required": false,
+"set_input_accepted": false,
+"set_input_errored": false,
+"show": true,
+"show_error": "",
+"size": "",
+"widget_class": ""
+},
+"validators": {
+"input_text": [
+{
+"class": "basic.MaxLength",
+"val_args": {
+"maxlength": "3"
+}
+}
+]
+}
+}
 ]
 ]
 }
@@ -5586,6 +5647,27 @@ false,
 "target_ident": "general_json"
 },
 "original_fields": {}
+}
+},
+"errordiv_test6": {
+"ident": 4207,
+"brief": "Responjder for validation of input for errordiv test",
+"RespondPage": {
+"class": "AllowStore",
+"original_args": {
+"allowed_callers": [
+5201
+],
+"alternate_ident": "home",
+"fail_ident": null,
+"submit_option": false,
+"target_ident": "errordiv",
+"validate_fail_ident": "errordiv",
+"validate_option": true
+},
+"original_fields": {
+"textinput:input_text": ""
+}
 }
 },
 "errorpara": {

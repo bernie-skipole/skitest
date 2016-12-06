@@ -47,6 +47,11 @@
 "SubmitForm1": {
 "div_class": ""
 }
+},
+"inputtext": {
+"SubmitTextInput1": {
+"label_class": "ski_left_label"
+}
 }
 }
 }
