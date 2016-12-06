@@ -30,6 +30,9 @@
 "errordiv": 4201,
 "errordiv_test1": 4202,
 "errordiv_test2": 4203,
+"errordiv_test3": 4204,
+"errordiv_test4": 4205,
+"errordiv_test5": 4206,
 "errorpara": 4210,
 "general_json": 570,
 "home": 1,
@@ -4813,18 +4816,54 @@ false,
 [
 "Widget",
 {
-"class": "links.ButtonLink1",
+"class": "links.JSONButtonLink",
 "name": "jsonerror",
 "brief": "Link to json error test",
 "fields": {
 "button_text": "JSON Error",
+"button_wait_text": "Please wait...",
 "clear_error": false,
 "error_class": "",
-"force_ident": false,
 "get_field1": "",
 "get_field2": "",
-"link_ident": "home",
-"new_window": false,
+"json_ident": "errordiv_test3",
+"link_ident": "no_javascript",
+"show": true,
+"show_error": "",
+"widget_class": "ski_midbutton"
+}
+}
+],
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "New Tag",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Text",
+"This button causes a a widget default message shown by JSON call when a FailPage is raised without a message:"
+]
+]
+}
+],
+[
+"Widget",
+{
+"class": "links.JSONButtonLink",
+"name": "jsondefaultmessage",
+"brief": "Link to JSON error test, no message so widget default shown.",
+"fields": {
+"button_text": "Default Message",
+"button_wait_text": "Please wait...",
+"clear_error": false,
+"error_class": "",
+"get_field1": "",
+"get_field2": "",
+"json_ident": "errordiv_test4",
+"link_ident": "no_javascript",
 "show": true,
 "show_error": "",
 "widget_class": "ski_midbutton"
@@ -4849,18 +4888,18 @@ false,
 [
 "Widget",
 {
-"class": "links.ButtonLink1",
+"class": "links.JSONButtonLink",
 "name": "jsonclear",
 "brief": "Link to json clear error test",
 "fields": {
 "button_text": "JSON Clear",
+"button_wait_text": "Please wait...",
 "clear_error": false,
 "error_class": "",
-"force_ident": false,
 "get_field1": "",
 "get_field2": "",
-"link_ident": "home",
-"new_window": false,
+"json_ident": "errordiv_test5",
+"link_ident": "no_javascript",
 "show": true,
 "show_error": "",
 "widget_class": "ski_midbutton"
@@ -5494,6 +5533,57 @@ false,
 "errordiv_test2"
 ],
 "target_ident": "home"
+},
+"original_fields": {}
+}
+},
+"errordiv_test3": {
+"ident": 4204,
+"brief": "Raises an error with JSON call",
+"RespondPage": {
+"class": "SubmitData",
+"original_args": {
+"fail_ident": "general_json",
+"submit_list": [
+"widgets",
+"error_messages",
+"errordiv_test1"
+],
+"target_ident": "general_json"
+},
+"original_fields": {}
+}
+},
+"errordiv_test4": {
+"ident": 4205,
+"brief": "Widget default error message set by JSON",
+"RespondPage": {
+"class": "SubmitData",
+"original_args": {
+"fail_ident": "general_json",
+"submit_list": [
+"widgets",
+"error_messages",
+"errordiv_test2"
+],
+"target_ident": "general_json"
+},
+"original_fields": {}
+}
+},
+"errordiv_test5": {
+"ident": 4206,
+"brief": "Widget error cleared by JSON",
+"RespondPage": {
+"class": "SubmitData",
+"original_args": {
+"fail_ident": "general_json",
+"submit_list": [
+"widgets",
+"error_messages",
+"errordiv_test5"
+],
+"target_ident": "general_json"
 },
 "original_fields": {}
 }
