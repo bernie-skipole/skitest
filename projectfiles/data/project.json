@@ -635,7 +635,6 @@ false,
 "ident": 100107,
 "brief": "Requests basic authentication",
 "RespondPage": {
-"message": "Invalid operation",
 "class": "SubmitPlainText",
 "original_args": {
 "fail_ident": "home",
@@ -1865,7 +1864,6 @@ false,
 "ident": 100002,
 "brief": "Checks login and if ok goes to secure1 page",
 "RespondPage": {
-"message": "Invalid Login",
 "class": "AllowStore",
 "original_args": {
 "allowed_callers": [
@@ -1891,7 +1889,6 @@ false,
 "ident": 100005,
 "brief": "Checks login and if ok goes to secure2 page",
 "RespondPage": {
-"message": "Invalid Login",
 "class": "AllowStore",
 "original_args": {
 "allowed_callers": [
@@ -1917,7 +1914,6 @@ false,
 "ident": 100003,
 "brief": "Logs out of secure1",
 "RespondPage": {
-"message": "Unknown failure",
 "class": "SessionCookie",
 "original_args": {
 "allowed_callers": [],
@@ -1935,7 +1931,6 @@ false,
 "ident": 100006,
 "brief": "Logs out of secure2",
 "RespondPage": {
-"message": "Unknown failure",
 "class": "SetCookies",
 "original_args": {
 "allowed_callers": [],
@@ -1953,7 +1948,6 @@ false,
 "ident": 100001,
 "brief": "Check access for secure1 page",
 "RespondPage": {
-"message": "You are not logged in.",
 "class": "SubmitData",
 "original_args": {
 "fail_ident": 100,
@@ -1970,7 +1964,6 @@ false,
 "ident": 100004,
 "brief": "Check access for secure2 page",
 "RespondPage": {
-"message": "You are not logged in.",
 "class": "SubmitData",
 "original_args": {
 "fail_ident": 100,
@@ -1987,7 +1980,6 @@ false,
 "ident": 100007,
 "brief": "Sets username for secure3 page",
 "RespondPage": {
-"message": "Invalid operation",
 "class": "SubmitData",
 "original_args": {
 "fail_ident": "home",
@@ -4726,7 +4718,7 @@ false,
 "error_class": "ski_errorcol",
 "hide": true,
 "show": true,
-"show_error": "",
+"show_error": "Default error message set on widget.",
 "widget_class": ""
 }
 }
@@ -4777,7 +4769,7 @@ false,
 "parts": [
 [
 "Text",
-"This button causes a page refresh with an error message set by Responder with a FailPage raised without a message:"
+"This button causes a page refresh with a widget default message shown when a FailPage is raised without a message:"
 ]
 ]
 }
@@ -4786,10 +4778,10 @@ false,
 "Widget",
 {
 "class": "links.ButtonLink1",
-"name": "respondermessage",
+"name": "defaultmessage",
 "brief": "Link to errordiv_test2",
 "fields": {
-"button_text": "ResponderMessage",
+"button_text": "Default Message",
 "clear_error": false,
 "error_class": "",
 "force_ident": false,
@@ -5209,7 +5201,6 @@ false,
 "ident": 4011,
 "brief": "responder for check10 test",
 "RespondPage": {
-"message": "Invalid",
 "class": "AllowStore",
 "original_args": {
 "allowed_callers": [
@@ -5258,7 +5249,6 @@ false,
 "ident": 4003,
 "brief": "responder for check1 test",
 "RespondPage": {
-"message": "Invalid check1",
 "class": "AllowStore",
 "original_args": {
 "allowed_callers": [
@@ -5285,7 +5275,6 @@ false,
 "ident": 4021,
 "brief": "Responder for checkedtext test",
 "RespondPage": {
-"message": "Invalid",
 "class": "AllowStore",
 "original_args": {
 "allowed_callers": [
@@ -5335,7 +5324,6 @@ false,
 "ident": 4004,
 "brief": "responder for check2 test",
 "RespondPage": {
-"message": "Invalid check2",
 "class": "AllowStore",
 "original_args": {
 "allowed_callers": [
@@ -5382,7 +5370,6 @@ false,
 "ident": 4007,
 "brief": "responder raises an error for checkbox1",
 "RespondPage": {
-"message": "Invalid",
 "class": "AllowStore",
 "original_args": {
 "allowed_callers": [
@@ -5439,7 +5426,6 @@ false,
 "ident": 4020,
 "brief": "responder for checkedtext page",
 "RespondPage": {
-"message": "Invalid operation",
 "class": "NoOperation",
 "original_args": {
 "target_ident": 5020
@@ -5460,7 +5446,6 @@ false,
 "ident": 4220,
 "brief": "Responder for widget errorclear1 page",
 "RespondPage": {
-"message": "Invalid operation",
 "class": "NoOperation",
 "original_args": {
 "target_ident": 5220
@@ -5472,7 +5457,6 @@ false,
 "ident": 4201,
 "brief": "Responder for widget errordiv page",
 "RespondPage": {
-"message": "Invalid operation",
 "class": "NoOperation",
 "original_args": {
 "target_ident": 5201
@@ -5484,7 +5468,6 @@ false,
 "ident": 4202,
 "brief": "Raises an error with html page refresh",
 "RespondPage": {
-"message": "HTML TEST ERROR has been set.",
 "class": "SubmitData",
 "original_args": {
 "fail_ident": "errordiv",
@@ -5500,9 +5483,8 @@ false,
 },
 "errordiv_test2": {
 "ident": 4203,
-"brief": "Responder default error message",
+"brief": "Widget default error message",
 "RespondPage": {
-"message": "HTML TEST ERROR; with message set by responder.",
 "class": "SubmitData",
 "original_args": {
 "fail_ident": "errordiv",
@@ -5520,7 +5502,6 @@ false,
 "ident": 4210,
 "brief": "Responder for widget errorpara page",
 "RespondPage": {
-"message": "Invalid operation",
 "class": "NoOperation",
 "original_args": {
 "target_ident": 5210
@@ -5541,7 +5522,6 @@ false,
 "ident": 4101,
 "brief": "tests for Table1_Button widget",
 "RespondPage": {
-"message": "Invalid operation",
 "class": "SubmitData",
 "original_args": {
 "fail_ident": "home",
@@ -5559,7 +5539,6 @@ false,
 "ident": 4102,
 "brief": "test",
 "RespondPage": {
-"message": "Invalid operation",
 "class": "AllowStore",
 "original_args": {
 "allowed_callers": [],
@@ -5584,7 +5563,6 @@ false,
 "ident": 4103,
 "brief": "test",
 "RespondPage": {
-"message": "Invalid operation",
 "class": "AllowStore",
 "original_args": {
 "allowed_callers": [],
@@ -7362,7 +7340,6 @@ false,
 "ident": 100,
 "brief": "Responder to login page",
 "RespondPage": {
-"message": "Login failed",
 "class": "NoOperation",
 "original_args": {
 "target_ident": 100101
