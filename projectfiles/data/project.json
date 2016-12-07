@@ -4959,11 +4959,25 @@ false,
 "input_text": [
 {
 "class": "basic.MaxLength",
+"message": "The input text must be less than four characters.",
 "val_args": {
 "maxlength": "3"
 }
 }
 ]
+}
+}
+],
+[
+"Widget",
+{
+"class": "paras.ParaText",
+"name": "resulttext",
+"brief": "Shows the result of the text input field",
+"fields": {
+"para_text": "",
+"show": true,
+"widget_class": ""
 }
 }
 ]
@@ -5651,7 +5665,7 @@ false,
 },
 "errordiv_test6": {
 "ident": 4207,
-"brief": "Responjder for validation of input for errordiv test",
+"brief": "Responder for validation of input for errordiv test",
 "RespondPage": {
 "class": "AllowStore",
 "original_args": {
@@ -5659,8 +5673,13 @@ false,
 5201
 ],
 "alternate_ident": "home",
-"fail_ident": null,
-"submit_option": false,
+"fail_ident": "errordiv",
+"submit_list": [
+"widgets",
+"error_messages",
+"errordiv_test6"
+],
+"submit_option": true,
 "target_ident": "errordiv",
 "validate_fail_ident": "errordiv",
 "validate_option": true

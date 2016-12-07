@@ -11,3 +11,11 @@ def errordiv_test2(caller_ident, ident_list, submit_list, submit_dict, call_data
 def errordiv_test5(caller_ident, ident_list, submit_list, submit_dict, call_data, page_data, lang):
     """Clears an error for errordiv"""
     page_data['testerrordiv', 'clear_error'] = True
+
+
+def errordiv_test6(caller_ident, ident_list, submit_list, submit_dict, call_data, page_data, lang):
+    """Puts received string in resulttext,para_text"""
+    if call_data['textinput','input_text']:
+        page_data['resulttext','para_text'] = "Text received : %s." % call_data['textinput','input_text']
+    else:
+        page_data['resulttext','para_text'] = "No text received."
