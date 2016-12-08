@@ -4992,7 +4992,7 @@ false,
 ]
 },
 "errorpara": {
-"ident": 5202,
+"ident": 5210,
 "brief": "tests for errorpara widget",
 "TemplatePage": {
 "show_backcol": false,
@@ -5001,7 +5001,7 @@ false,
 "backcol": "#9dbd7a",
 "default_error_widget": [
 "",
-"testerrorpara"
+"testerrordiv"
 ]
 },
 "head": [
