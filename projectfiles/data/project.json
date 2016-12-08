@@ -4959,7 +4959,7 @@ false,
 "input_text": [
 {
 "class": "basic.MaxLength",
-"message": "The input text must be less than four characters.",
+"message": "Only three characters or less allowed.",
 "val_args": {
 "maxlength": "3"
 }
