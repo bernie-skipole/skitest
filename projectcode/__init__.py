@@ -17,7 +17,7 @@ from . import widgets, login
 ##############################################################################
 
 
-def start_project(project, path, option):
+def start_project(project, projectfiles, path, option):
     """On a project being loaded, and before the wsgi service is started, this is called once,
           and should return a dictionary (typically an empty dictionary if this value is not used).
            This function can be used to set any initial parameters, and the dictionary returned will
