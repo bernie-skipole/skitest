@@ -109,10 +109,10 @@ _NAV_BUTTONS = {3001:[['home','Home', False, '']],
                                      100104:[['home','Home', False, ''], ['login','Test Login', False, '']],
                                      100106:[['home','Home', False, ''], ['login','Test Login', False, '']]}
 
-def end_call(page_ident, call_data, page_data, proj_data, lang):
+def end_call(page_ident, page_type, call_data, page_data, proj_data, lang):
     """This function is called at the end of a call prior to filling the returned page with page_data,
        it can also return an optional ident_data string to embed into forms."""
-    if page_ident is None:
+    if page_type != "TemplatePage":
         return
     page_num = page_ident[1]
     if page_num in _HEADER_TEXT:
