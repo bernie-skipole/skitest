@@ -96,7 +96,7 @@
 [
 "Widget",
 {
-"class": "paras.TextPara",
+"class": "paras.DivPara",
 "name": "headpara",
 "brief": "Paragraph in the page header",
 "fields": {
@@ -3402,7 +3402,7 @@ false,
 [
 "Widget",
 {
-"class": "paras.TextPara",
+"class": "paras.DivPara",
 "name": "check1result",
 "brief": "Result of check1 test",
 "fields": {
@@ -3973,7 +3973,7 @@ false,
 [
 "Widget",
 {
-"class": "paras.TextPara",
+"class": "paras.DivPara",
 "name": "check10result",
 "brief": "Result of check10 test",
 "fields": {
@@ -4380,7 +4380,7 @@ false,
 [
 "Widget",
 {
-"class": "paras.TextPara",
+"class": "paras.DivPara",
 "name": "check20result",
 "brief": "Result of check20 test",
 "fields": {
