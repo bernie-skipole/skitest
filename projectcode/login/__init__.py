@@ -14,7 +14,7 @@ def check_login1(caller_ident, ident_list, submit_list, submit_dict, call_data, 
 
 def set_cookie1(caller_ident, ident_list, submit_list, submit_dict, call_data, page_data, lang):
     """set cookie for access to secure1"""
-    return 'secure1'
+    call_data['session'] = 'secure1'
 
 
 def secure1_access(caller_ident, ident_list, submit_list, submit_dict, call_data, page_data, lang):
@@ -29,7 +29,7 @@ def secure1_access(caller_ident, ident_list, submit_list, submit_dict, call_data
 
 def secure1_logout(caller_ident, ident_list, submit_list, submit_dict, call_data, page_data, lang):
     """set cookie which will not give access to secure1"""
-    return 'noaccess'
+    call_data['session'] = 'noaccess'
 
 
 def check_login2(caller_ident, ident_list, submit_list, submit_dict, call_data, page_data, lang):

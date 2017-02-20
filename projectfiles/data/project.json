@@ -1120,11 +1120,8 @@ false,
 "ident": 100103,
 "brief": "Set cookie for access to secure1 page",
 "RespondPage": {
-"class": "SessionCookie",
+"class": "SubmitData",
 "original_args": {
-"allowed_callers": [
-100002
-],
 "fail_ident": "login",
 "submit_list": [
 "login",
@@ -1919,9 +1916,8 @@ false,
 "ident": 100003,
 "brief": "Logs out of secure1",
 "RespondPage": {
-"class": "SessionCookie",
+"class": "SubmitData",
 "original_args": {
-"allowed_callers": [],
 "fail_ident": "home",
 "submit_list": [
 "login",
