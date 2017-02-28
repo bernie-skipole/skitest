@@ -3,7 +3,7 @@
 "default_language": "en",
 "brief": "Project to test the skipole framework",
 "version": "0.0.1",
-"skipole": "0.0.2",
+"skipole": "0.0.4",
 "subprojects": {
 "lib": "/lib/"
 },
@@ -74,6 +74,7 @@
 "ski_svgbasics": "lib,ski_svgbasics",
 "ski_tables": "lib,ski_tables",
 "ski_textarea": "lib,ski_textarea",
+"ski_upload": "lib,ski_upload",
 "skipole_js": "lib,skipole_js",
 "skitest_css": 1002,
 "table1button": 4101,
@@ -2198,6 +2199,50 @@ false,
 "Widget",
 {
 "class": "links.ButtonLink1",
+"name": "accept",
+"brief": "Accept responder",
+"fields": {
+"button_text": "Accept",
+"clear_error": false,
+"error_class": "",
+"force_ident": false,
+"get_field1": "",
+"get_field2": "",
+"hide": false,
+"link_ident": "home",
+"new_window": false,
+"show": true,
+"show_error": "",
+"widget_class": "ski_midbutton"
+}
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink1",
+"name": "allowedaccept",
+"brief": "AllowedAccept responder",
+"fields": {
+"button_text": "AllowedAccept",
+"clear_error": false,
+"error_class": "",
+"force_ident": false,
+"get_field1": "",
+"get_field2": "",
+"hide": false,
+"link_ident": "home",
+"new_window": false,
+"show": true,
+"show_error": "",
+"widget_class": "ski_midbutton"
+}
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink1",
 "name": "allowedfields",
 "brief": "AllowedFields responder",
 "fields": {
@@ -2220,10 +2265,296 @@ false,
 "Widget",
 {
 "class": "links.ButtonLink1",
+"name": "allowstore",
+"brief": "AllowStore responder",
+"fields": {
+"button_text": "AllowStore",
+"clear_error": false,
+"error_class": "",
+"force_ident": false,
+"get_field1": "",
+"get_field2": "",
+"hide": false,
+"link_ident": "home",
+"new_window": false,
+"show": true,
+"show_error": "",
+"widget_class": "ski_midbutton"
+}
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink1",
+"name": "allowstorekeyed",
+"brief": "AllowStoreKeyed responder",
+"fields": {
+"button_text": "AllowStoreKeyed",
+"clear_error": false,
+"error_class": "",
+"force_ident": false,
+"get_field1": "",
+"get_field2": "",
+"hide": false,
+"link_ident": "home",
+"new_window": false,
+"show": true,
+"show_error": "",
+"widget_class": "ski_midbutton"
+}
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink1",
+"name": "caseswitch",
+"brief": "CaseSwitch responder",
+"fields": {
+"button_text": "CaseSwitch",
+"clear_error": false,
+"error_class": "",
+"force_ident": false,
+"get_field1": "",
+"get_field2": "",
+"hide": false,
+"link_ident": "home",
+"new_window": false,
+"show": true,
+"show_error": "",
+"widget_class": "ski_midbutton"
+}
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink1",
+"name": "coloursubstitute",
+"brief": "ColourSubstitute responder",
+"fields": {
+"button_text": "ColourSubstitute",
+"clear_error": false,
+"error_class": "",
+"force_ident": false,
+"get_field1": "",
+"get_field2": "",
+"hide": false,
+"link_ident": "home",
+"new_window": false,
+"show": true,
+"show_error": "",
+"widget_class": "ski_midbutton"
+}
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink1",
+"name": "delcalldataitem",
+"brief": "DelCallDataItem responder",
+"fields": {
+"button_text": "DelCallDataItem",
+"clear_error": false,
+"error_class": "",
+"force_ident": false,
+"get_field1": "",
+"get_field2": "",
+"hide": false,
+"link_ident": "home",
+"new_window": false,
+"show": true,
+"show_error": "",
+"widget_class": "ski_midbutton"
+}
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink1",
+"name": "emptycalldatagoto",
+"brief": "EmptyCallDataGoto responder",
+"fields": {
+"button_text": "EmptyCallDataGoto",
+"clear_error": false,
+"error_class": "",
+"force_ident": false,
+"get_field1": "",
+"get_field2": "",
+"hide": false,
+"link_ident": "home",
+"new_window": false,
+"show": true,
+"show_error": "",
+"widget_class": "ski_midbutton"
+}
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink1",
+"name": "emptygoto",
+"brief": "EmptyGoto responder",
+"fields": {
+"button_text": "EmptyGoto",
+"clear_error": false,
+"error_class": "",
+"force_ident": false,
+"get_field1": "",
+"get_field2": "",
+"hide": false,
+"link_ident": "home",
+"new_window": false,
+"show": true,
+"show_error": "",
+"widget_class": "ski_midbutton"
+}
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink1",
+"name": "fieldstoresubmit",
+"brief": "FieldStoreSubmit responder",
+"fields": {
+"button_text": "FieldStoreSubmit",
+"clear_error": false,
+"error_class": "",
+"force_ident": false,
+"get_field1": "",
+"get_field2": "",
+"hide": false,
+"link_ident": "home",
+"new_window": false,
+"show": true,
+"show_error": "",
+"widget_class": "ski_midbutton"
+}
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink1",
+"name": "getdictionarydefaults",
+"brief": "GetDictionaryDefaults responder",
+"fields": {
+"button_text": "GetDictionaryDefaults",
+"clear_error": false,
+"error_class": "",
+"force_ident": false,
+"get_field1": "",
+"get_field2": "",
+"hide": false,
+"link_ident": "home",
+"new_window": false,
+"show": true,
+"show_error": "",
+"widget_class": "ski_midbutton"
+}
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink1",
+"name": "languagecookie",
+"brief": "LanguageCookie responder",
+"fields": {
+"button_text": "LanguageCookie",
+"clear_error": false,
+"error_class": "",
+"force_ident": false,
+"get_field1": "",
+"get_field2": "",
+"hide": false,
+"link_ident": "home",
+"new_window": false,
+"show": true,
+"show_error": "",
+"widget_class": "ski_midbutton"
+}
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink1",
+"name": "nooperation",
+"brief": "NoOperation responder",
+"fields": {
+"button_text": "NoOperation",
+"clear_error": false,
+"error_class": "",
+"force_ident": false,
+"get_field1": "",
+"get_field2": "",
+"hide": false,
+"link_ident": "home",
+"new_window": false,
+"show": true,
+"show_error": "",
+"widget_class": "ski_midbutton"
+}
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink1",
+"name": "pagedata",
+"brief": "PageData responder",
+"fields": {
+"button_text": "PageData",
+"clear_error": false,
+"error_class": "",
+"force_ident": false,
+"get_field1": "",
+"get_field2": "",
+"hide": false,
+"link_ident": "home",
+"new_window": false,
+"show": true,
+"show_error": "",
+"widget_class": "ski_midbutton"
+}
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink1",
 "name": "prettyformdata",
 "brief": "PrettyFormData responder",
 "fields": {
 "button_text": "PrettyFormData",
+"clear_error": false,
+"error_class": "",
+"force_ident": false,
+"get_field1": "",
+"get_field2": "",
+"hide": false,
+"link_ident": "home",
+"new_window": false,
+"show": true,
+"show_error": "",
+"widget_class": "ski_midbutton"
+}
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink1",
+"name": "setcookies",
+"brief": "SetCookies responder",
+"fields": {
+"button_text": "SetCookies",
 "clear_error": false,
 "error_class": "",
 "force_ident": false,
@@ -2286,10 +2617,10 @@ false,
 "Widget",
 {
 "class": "links.ButtonLink1",
-"name": "allowstorekeyed",
-"brief": "AllowStoreKeyed responder",
+"name": "submitcss",
+"brief": "SubmitCSS responder",
 "fields": {
-"button_text": "AllowStoreKeyed",
+"button_text": "SubmitCSS",
 "clear_error": false,
 "error_class": "",
 "force_ident": false,
@@ -2308,10 +2639,76 @@ false,
 "Widget",
 {
 "class": "links.ButtonLink1",
-"name": "allowstore",
-"brief": "AllowStore responder",
+"name": "submitdata",
+"brief": "SubmitData responder",
 "fields": {
-"button_text": "AllowStore",
+"button_text": "SubmitData",
+"clear_error": false,
+"error_class": "",
+"force_ident": false,
+"get_field1": "",
+"get_field2": "",
+"hide": false,
+"link_ident": "home",
+"new_window": false,
+"show": true,
+"show_error": "",
+"widget_class": "ski_midbutton"
+}
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink1",
+"name": "submititerator",
+"brief": "SubmitIterator responder",
+"fields": {
+"button_text": "SubmitIterator",
+"clear_error": false,
+"error_class": "",
+"force_ident": false,
+"get_field1": "",
+"get_field2": "",
+"hide": false,
+"link_ident": "home",
+"new_window": false,
+"show": true,
+"show_error": "",
+"widget_class": "ski_midbutton"
+}
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink1",
+"name": "submitjson",
+"brief": "SubmitJSON responder",
+"fields": {
+"button_text": "SubmitJSON",
+"clear_error": false,
+"error_class": "",
+"force_ident": false,
+"get_field1": "",
+"get_field2": "",
+"hide": false,
+"link_ident": "home",
+"new_window": false,
+"show": true,
+"show_error": "",
+"widget_class": "ski_midbutton"
+}
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink1",
+"name": "submitplaintext",
+"brief": "SubmitPlainText responder",
+"fields": {
+"button_text": "SubmitPlainText",
 "clear_error": false,
 "error_class": "",
 "force_ident": false,
