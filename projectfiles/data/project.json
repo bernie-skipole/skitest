@@ -3,7 +3,7 @@
 "default_language": "en",
 "brief": "Project to test the skipole framework",
 "version": "0.0.1",
-"skipole": "0.0.4",
+"skipole": "0.0.5",
 "subprojects": {
 "lib": "/lib/"
 },
@@ -2009,7 +2009,16 @@ false,
 "brief": "responders",
 "default_page_name": "index",
 "restricted": false,
+"folders": {
+"restricted": {
+"ident": 250000,
+"brief": "Holds responder tests restricted pages",
+"default_page_name": "index",
+"restricted": true,
 "folders": {},
+"pages": {}
+}
+},
 "pages": {
 "responders_list": {
 "ident": 200001,
@@ -3856,6 +3865,23 @@ false,
 ]
 }
 }
+},
+"validators": {
+"ident": 300000,
+"brief": "Holds validator tests",
+"default_page_name": "index",
+"restricted": false,
+"folders": {
+"restricted": {
+"ident": 350000,
+"brief": "Holds responders for validator tests",
+"default_page_name": "index",
+"restricted": true,
+"folders": {},
+"pages": {}
+}
+},
+"pages": {}
 },
 "widgets": {
 "ident": 3000,
@@ -6531,7 +6557,7 @@ false,
 },
 "tests": {
 "ident": 4000,
-"brief": "Holds test page responders",
+"brief": "Holds widget test responders",
 "default_page_name": "index",
 "restricted": false,
 "folders": {
@@ -6959,7 +6985,7 @@ false,
 },
 "table1button_test1": {
 "ident": 4102,
-"brief": "test",
+"brief": "test of JSON action on table1button",
 "RespondPage": {
 "class": "AllowStore",
 "original_args": {
@@ -6983,7 +7009,7 @@ false,
 },
 "table1button_test2": {
 "ident": 4103,
-"brief": "test",
+"brief": "test on table1button, page html refresh",
 "RespondPage": {
 "class": "AllowStore",
 "original_args": {
