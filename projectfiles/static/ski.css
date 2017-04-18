@@ -1,0 +1,136 @@
+@charset "UTF-8";
+
+.ski_container {
+margin-bottom : 10px;
+margin-left : auto;
+margin-right : auto;
+margin-top : 10px;
+max-width : 1250px;
+min-width : 400px;
+position : relative;
+width : 90%;}
+
+.ski_top {
+background : #69b585;
+margin-bottom : 20px;
+padding : 2px;
+width : 100%;}
+
+.ski_centre {
+float : right;
+margin-left : 1%;
+width : 78%;}
+
+.ski_left {
+background : #69b585;
+float : left;
+width : 20%;}
+
+.ski_midbutton {
+-moz-border-radius : 8;
+-webkit-border-radius : 8;
+background : green;
+border : solid blue 2px;
+border-radius : 8px;
+color : white;
+display : block;
+margin-bottom : 10px;
+margin-left : 30%;
+margin-right : auto;
+margin-top : 10px;
+padding : 4px 6px 6px 4px;
+text-align : center;
+text-decoration : none;
+width : 20%;}
+
+.ski_midbutton:hover {
+background : blue;
+border : solid black 2px;
+color : white;}
+
+.ski_leftbutton {
+-moz-border-radius : 8;
+-webkit-border-radius : 8;
+background : green;
+border : solid blue 2px;
+border-radius : 8px;
+color : white;
+display : block;
+margin-bottom : 10px;
+margin-left : 5%;
+margin-right : 5%;
+margin-top : 10px;
+padding : 4px 6px 6px 4px;
+text-align : center;
+text-decoration : none;}
+
+.ski_leftbutton:hover {
+background : blue;
+border : solid black 2px;
+color : white;}
+
+.ski_left_label {
+display : inline-block;
+font-weight : bold;
+margin-right : 1%;
+padding-bottom : 3px;
+padding-top : 3px;
+text-align : right;
+vertical-align : top;
+width : 29%;}
+
+.ski_errorcol {
+color : red;}
+
+.ski_no_bullets {
+list-style-type : none;}
+
+.ski_inline {
+display : inline-block;}
+
+.ski_input_errored {
+border : 2px solid red;}
+
+.ski_table {
+border-style : solid;
+border-width : 1px;
+margin-bottom : 10px;
+margin-left : 10%;
+margin-right : 10%;
+margin-top : 10px;
+width : auto;}
+
+.ski_odd {
+background-color : #9dbd50;
+margin : 2px;
+padding : 2px;}
+
+.ski_even {
+background-color : #9dbd70;
+margin : 2px;
+padding : 2px;}
+
+.ski_bottom10 {
+margin-bottom : 10px;}
+
+.ski_bottom20 {
+margin-bottom : 20px;}
+
+.ski_table_button {
+background : green;
+border-color : #9dbd7a;
+border-style : solid;
+border-width : 1px;
+color : #FFFFFF;
+padding : 1px 1px 1px 1px;
+text-decoration : none;}
+
+.ski_table_button:hover {
+background : #11216a;}
+
+.ski_table_button:visited {
+color : #FFFFFF;}
+
+.ski_table_header {
+background-color : #69b585;}
+
