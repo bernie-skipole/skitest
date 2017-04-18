@@ -3,7 +3,7 @@
 "default_language": "en",
 "brief": "Project to test the skipole framework",
 "version": "0.0.1",
-"skipole": "0.0.7",
+"skipole": "0.0.16",
 "subprojects": {
 "lib": "/lib/"
 },
@@ -56,6 +56,7 @@
 "ski_basic": "lib,ski_basic",
 "ski_checkbox": "lib,ski_checkbox",
 "ski_confirm": "lib,ski_confirm",
+"ski_css": 1004,
 "ski_debug_tools": "lib,ski_debug_tools",
 "ski_dropdown": "lib,ski_dropdown",
 "ski_error_messages": "lib,ski_error_messages",
@@ -76,12 +77,12 @@
 "ski_textarea": "lib,ski_textarea",
 "ski_upload": "lib,ski_upload",
 "skipole_js": "lib,skipole_js",
-"skitest_css": 1002,
 "table1button": 4101,
 "table1button_test1": 4102,
 "table1button_test2": 4103,
 "url_not_found": 500,
-"validate_error": 510
+"validate_error": 510,
+"w3_css": 1002
 },
 "sections": {
 "header": [
@@ -92,7 +93,7 @@
 "show": true,
 "hide_if_empty": false,
 "attribs": {
-"class": "ski_top"
+"class": "w3-container w3-teal"
 },
 "parts": [
 [
@@ -182,445 +183,22 @@ false,
 "restricted": false,
 "folders": {},
 "pages": {
-"skitest.css": {
-"ident": 1002,
-"brief": "CSS page for the skitest project",
-"CSS": {
-"enable_cache": true,
-"style": {
-"*": [
-[
-"font-size",
-"12px"
-],
-[
-"margin",
-"0"
-],
-[
-"padding",
-"0"
-]
-],
-"body": [
-[
-"background-color",
-"#9dbd7a"
-],
-[
-"color",
-"#000000"
-],
-[
-"font-family",
-"\"Arial Black\", Gadget, sans-serif"
-]
-],
-".ski_container": [
-[
-"margin-bottom",
-"10px"
-],
-[
-"margin-left",
-"auto"
-],
-[
-"margin-right",
-"auto"
-],
-[
-"margin-top",
-"10px"
-],
-[
-"max-width",
-"1250px"
-],
-[
-"min-width",
-"400px"
-],
-[
-"position",
-"relative"
-],
-[
-"width",
-"90%"
-]
-],
-".ski_top": [
-[
-"background",
-"#69b585"
-],
-[
-"margin-bottom",
-"20px"
-],
-[
-"width",
-"100%"
-],
-[
-"padding",
-"2px"
-]
-],
-".ski_centre": [
-[
-"float",
-"right"
-],
-[
-"margin-left",
-"1%"
-],
-[
-"width",
-"78%"
-]
-],
-".ski_left": [
-[
-"background",
-"#69b585"
-],
-[
-"float",
-"left"
-],
-[
-"width",
-"20%"
-]
-],
-".ski_midbutton": [
-[
-"-moz-border-radius",
-"8"
-],
-[
-"-webkit-border-radius",
-"8"
-],
-[
-"background",
-"green"
-],
-[
-"border",
-"solid blue 2px"
-],
-[
-"border-radius",
-"8px"
-],
-[
-"color",
-"white"
-],
-[
-"display",
-"block"
-],
-[
-"margin-bottom",
-"10px"
-],
-[
-"margin-left",
-"30%"
-],
-[
-"margin-right",
-"auto"
-],
-[
-"margin-top",
-"10px"
-],
-[
-"padding",
-"4px 6px 6px 4px"
-],
-[
-"text-align",
-"center"
-],
-[
-"text-decoration",
-"none"
-],
-[
-"width",
-"20%"
-]
-],
-".ski_midbutton:hover": [
-[
-"background",
-"blue"
-],
-[
-"border",
-"solid black 2px"
-],
-[
-"color",
-"white"
-]
-],
-".ski_leftbutton": [
-[
-"-moz-border-radius",
-"8"
-],
-[
-"-webkit-border-radius",
-"8"
-],
-[
-"background",
-"green"
-],
-[
-"border",
-"solid blue 2px"
-],
-[
-"border-radius",
-"8px"
-],
-[
-"color",
-"white"
-],
-[
-"display",
-"block"
-],
-[
-"margin-bottom",
-"10px"
-],
-[
-"margin-left",
-"5%"
-],
-[
-"margin-right",
-"5%"
-],
-[
-"margin-top",
-"10px"
-],
-[
-"padding",
-"4px 6px 6px 4px"
-],
-[
-"text-align",
-"center"
-],
-[
-"text-decoration",
-"none"
-]
-],
-".ski_leftbutton:hover": [
-[
-"background",
-"blue"
-],
-[
-"border",
-"solid black 2px"
-],
-[
-"color",
-"white"
-]
-],
-".ski_left_label": [
-[
-"display",
-"inline-block"
-],
-[
-"font-weight",
-"bold"
-],
-[
-"margin-right",
-"1%"
-],
-[
-"padding-bottom",
-"3px"
-],
-[
-"padding-top",
-"3px"
-],
-[
-"text-align",
-"right"
-],
-[
-"vertical-align",
-"top"
-],
-[
-"width",
-"29%"
-]
-],
-".ski_errorcol": [
-[
-"color",
-"red"
-]
-],
-".ski_no_bullets": [
-[
-"list-style-type",
-"none"
-]
-],
-".ski_inline": [
-[
-"display",
-"inline-block"
-]
-],
-".ski_input_errored": [
-[
-"border",
-"2px solid red"
-]
-],
-".table": [
-[
-"border-style",
-"solid"
-],
-[
-"border-width",
-"1px"
-],
-[
-"margin-left",
-"10%"
-],
-[
-"margin-right",
-"10%"
-],
-[
-"width",
-"auto"
-],
-[
-"margin-bottom",
-"10px"
-],
-[
-"margin-top",
-"10px"
-]
-],
-".odd": [
-[
-"background-color",
-"#9dbd50"
-],
-[
-"padding",
-"2px"
-],
-[
-"margin",
-"2px"
-]
-],
-".even": [
-[
-"background-color",
-"#9dbd70"
-],
-[
-"padding",
-"2px"
-],
-[
-"margin",
-"2px"
-]
-],
-".bottom10": [
-[
-"margin-bottom",
-"10px"
-]
-],
-".bottom20": [
-[
-"margin-bottom",
-"20px"
-]
-],
-".ski_table_button": [
-[
-"background",
-"green"
-],
-[
-"border-color",
-"#9dbd7a"
-],
-[
-"border-style",
-"solid"
-],
-[
-"border-width",
-"1px"
-],
-[
-"color",
-"#FFFFFF"
-],
-[
-"padding",
-"1px 1px 1px 1px"
-],
-[
-"text-decoration",
-"none"
-]
-],
-".ski_table_button:hover": [
-[
-"background",
-"#11216a"
-]
-],
-".ski_table_button:visited": [
-[
-"color",
-"#FFFFFF"
-]
-],
-".ski_table_header": [
-[
-"background-color",
-"#69b585"
-]
-]
+"ski.css": {
+"ident": 1004,
+"brief": "skipole css",
+"FilePage": {
+"filepath": "skitest/static/ski.css",
+"enable_cache": false,
+"mimetype": "text/css"
 }
+},
+"w3.css": {
+"ident": 1002,
+"brief": "From www.w3schools.com/w3css/",
+"FilePage": {
+"filepath": "skitest/static/w3.css",
+"enable_cache": false,
+"mimetype": "text/css"
 }
 }
 }
@@ -716,10 +294,23 @@ false,
 "ClosedPart",
 {
 "tag_name": "link",
-"brief": "css link to skitest_css",
+"brief": "css link to w3_css",
 "show": true,
 "attribs": {
-"href": "{skitest_css}",
+"href": "{w3_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to ski_css",
+"show": true,
+"attribs": {
+"href": "{ski_css}",
 "rel": "stylesheet",
 "type": "text/css"
 }
@@ -1202,10 +793,23 @@ false,
 "ClosedPart",
 {
 "tag_name": "link",
-"brief": "css link to skitest_css",
+"brief": "css link to w3_css",
 "show": true,
 "attribs": {
-"href": "{skitest_css}",
+"href": "{w3_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to ski_css",
+"show": true,
+"attribs": {
+"href": "{ski_css}",
 "rel": "stylesheet",
 "type": "text/css"
 }
@@ -1472,10 +1076,23 @@ false,
 "ClosedPart",
 {
 "tag_name": "link",
-"brief": "css link to skitest_css",
+"brief": "css link to w3_css",
 "show": true,
 "attribs": {
-"href": "{skitest_css}",
+"href": "{w3_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to ski_css",
+"show": true,
+"attribs": {
+"href": "{ski_css}",
 "rel": "stylesheet",
 "type": "text/css"
 }
@@ -1723,10 +1340,23 @@ false,
 "ClosedPart",
 {
 "tag_name": "link",
-"brief": "css link to skitest_css",
+"brief": "css link to w3_css",
 "show": true,
 "attribs": {
-"href": "{skitest_css}",
+"href": "{w3_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to ski_css",
+"show": true,
+"attribs": {
+"href": "{ski_css}",
 "rel": "stylesheet",
 "type": "text/css"
 }
@@ -2083,10 +1713,23 @@ false,
 "ClosedPart",
 {
 "tag_name": "link",
-"brief": "css link to skitest_css",
+"brief": "css link to w3_css",
 "show": true,
 "attribs": {
-"href": "{skitest_css}",
+"href": "{w3_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to ski_css",
+"show": true,
+"attribs": {
+"href": "{ski_css}",
 "rel": "stylesheet",
 "type": "text/css"
 }
@@ -2822,10 +2465,23 @@ false,
 "ClosedPart",
 {
 "tag_name": "link",
-"brief": "css link to skitest_css",
+"brief": "css link to w3_css",
 "show": true,
 "attribs": {
-"href": "{skitest_css}",
+"href": "{w3_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to ski_css",
+"show": true,
+"attribs": {
+"href": "{ski_css}",
 "rel": "stylesheet",
 "type": "text/css"
 }
@@ -3161,10 +2817,23 @@ false,
 "ClosedPart",
 {
 "tag_name": "link",
-"brief": "css link to simple_css",
+"brief": "css link to w3_css",
 "show": true,
 "attribs": {
-"href": "{simple_css}",
+"href": "{w3_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to ski_css",
+"show": true,
+"attribs": {
+"href": "{ski_css}",
 "rel": "stylesheet",
 "type": "text/css"
 }
@@ -3306,10 +2975,23 @@ false,
 "ClosedPart",
 {
 "tag_name": "link",
-"brief": "css link to simple_css",
+"brief": "css link to w3_css",
 "show": true,
 "attribs": {
-"href": "{simple_css}",
+"href": "{w3_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to ski_css",
+"show": true,
+"attribs": {
+"href": "{ski_css}",
 "rel": "stylesheet",
 "type": "text/css"
 }
@@ -3512,10 +3194,23 @@ false,
 "ClosedPart",
 {
 "tag_name": "link",
-"brief": "css link to simple_css",
+"brief": "css link to w3_css",
 "show": true,
 "attribs": {
-"href": "{simple_css}",
+"href": "{w3_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to ski_css",
+"show": true,
+"attribs": {
+"href": "{ski_css}",
 "rel": "stylesheet",
 "type": "text/css"
 }
@@ -3738,10 +3433,23 @@ false,
 "ClosedPart",
 {
 "tag_name": "link",
-"brief": "css link to simple_css",
+"brief": "css link to w3_css",
 "show": true,
 "attribs": {
-"href": "{simple_css}",
+"href": "{w3_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to ski_css",
+"show": true,
+"attribs": {
+"href": "{ski_css}",
 "rel": "stylesheet",
 "type": "text/css"
 }
@@ -3965,10 +3673,23 @@ false,
 "ClosedPart",
 {
 "tag_name": "link",
-"brief": "css link to skitest_css",
+"brief": "css link to w3_css",
 "show": true,
 "attribs": {
-"href": "{skitest_css}",
+"href": "{w3_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to ski_css",
+"show": true,
+"attribs": {
+"href": "{ski_css}",
 "rel": "stylesheet",
 "type": "text/css"
 }
@@ -4546,10 +4267,23 @@ false,
 "ClosedPart",
 {
 "tag_name": "link",
-"brief": "css link to skitest_css",
+"brief": "css link to w3_css",
 "show": true,
 "attribs": {
-"href": "{skitest_css}",
+"href": "{w3_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to ski_css",
+"show": true,
+"attribs": {
+"href": "{ski_css}",
 "rel": "stylesheet",
 "type": "text/css"
 }
@@ -4952,10 +4686,23 @@ false,
 "ClosedPart",
 {
 "tag_name": "link",
-"brief": "css link to skitest_css",
+"brief": "css link to w3_css",
 "show": true,
 "attribs": {
-"href": "{skitest_css}",
+"href": "{w3_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to ski_css",
+"show": true,
+"attribs": {
+"href": "{ski_css}",
 "rel": "stylesheet",
 "type": "text/css"
 }
@@ -5371,10 +5118,23 @@ false,
 "ClosedPart",
 {
 "tag_name": "link",
-"brief": "css link to skitest_css",
+"brief": "css link to w3_css",
 "show": true,
 "attribs": {
-"href": "{skitest_css}",
+"href": "{w3_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to ski_css",
+"show": true,
+"attribs": {
+"href": "{ski_css}",
 "rel": "stylesheet",
 "type": "text/css"
 }
@@ -5841,10 +5601,23 @@ false,
 "ClosedPart",
 {
 "tag_name": "link",
-"brief": "css link to skitest_css",
+"brief": "css link to w3_css",
 "show": true,
 "attribs": {
-"href": "{skitest_css}",
+"href": "{w3_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to ski_css",
+"show": true,
+"attribs": {
+"href": "{ski_css}",
 "rel": "stylesheet",
 "type": "text/css"
 }
@@ -6320,10 +6093,23 @@ false,
 "ClosedPart",
 {
 "tag_name": "link",
-"brief": "css link to skitest_css",
+"brief": "css link to w3_css",
 "show": true,
 "attribs": {
-"href": "{skitest_css}",
+"href": "{w3_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to ski_css",
+"show": true,
+"attribs": {
+"href": "{ski_css}",
 "rel": "stylesheet",
 "type": "text/css"
 }
@@ -7101,10 +6887,23 @@ false,
 "ClosedPart",
 {
 "tag_name": "link",
-"brief": "css link to skitest_css",
+"brief": "css link to w3_css",
 "show": true,
 "attribs": {
-"href": "{skitest_css}",
+"href": "{w3_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to ski_css",
+"show": true,
+"attribs": {
+"href": "{ski_css}",
 "rel": "stylesheet",
 "type": "text/css"
 }
@@ -7361,10 +7160,23 @@ false,
 "ClosedPart",
 {
 "tag_name": "link",
-"brief": "css link to skitest_css",
+"brief": "css link to w3_css",
 "show": true,
 "attribs": {
-"href": "{skitest_css}",
+"href": "{w3_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to ski_css",
+"show": true,
+"attribs": {
+"href": "{ski_css}",
 "rel": "stylesheet",
 "type": "text/css"
 }
@@ -7555,10 +7367,23 @@ false,
 "ClosedPart",
 {
 "tag_name": "link",
-"brief": "css link to skitest_css",
+"brief": "css link to w3_css",
 "show": true,
 "attribs": {
-"href": "{skitest_css}",
+"href": "{w3_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to ski_css",
+"show": true,
+"attribs": {
+"href": "{ski_css}",
 "rel": "stylesheet",
 "type": "text/css"
 }
@@ -7815,10 +7640,23 @@ false,
 "ClosedPart",
 {
 "tag_name": "link",
-"brief": "css link to skitest_css",
+"brief": "css link to w3_css",
 "show": true,
 "attribs": {
-"href": "{skitest_css}",
+"href": "{w3_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to ski_css",
+"show": true,
+"attribs": {
+"href": "{ski_css}",
 "rel": "stylesheet",
 "type": "text/css"
 }
@@ -8031,10 +7869,23 @@ false,
 "ClosedPart",
 {
 "tag_name": "link",
-"brief": "css link to skitest_css",
+"brief": "css link to w3_css",
 "show": true,
 "attribs": {
-"href": "{skitest_css}",
+"href": "{w3_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to ski_css",
+"show": true,
+"attribs": {
+"href": "{ski_css}",
 "rel": "stylesheet",
 "type": "text/css"
 }
@@ -8643,10 +8494,23 @@ false,
 "ClosedPart",
 {
 "tag_name": "link",
-"brief": "css link to skitest_css",
+"brief": "css link to w3_css",
 "show": true,
 "attribs": {
-"href": "{skitest_css}",
+"href": "{w3_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to ski_css",
+"show": true,
+"attribs": {
+"href": "{ski_css}",
 "rel": "stylesheet",
 "type": "text/css"
 }
@@ -8885,10 +8749,23 @@ false,
 "ClosedPart",
 {
 "tag_name": "link",
-"brief": "css link to simple_css",
+"brief": "css link to w3_css",
 "show": true,
 "attribs": {
-"href": "{simple_css}",
+"href": "{w3_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to ski_css",
+"show": true,
+"attribs": {
+"href": "{ski_css}",
 "rel": "stylesheet",
 "type": "text/css"
 }
