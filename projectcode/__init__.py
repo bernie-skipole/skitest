@@ -8,7 +8,7 @@ from base64 import b64decode
 from ...skilift import FailPage, GoTo, ValidateError, ServerError
 
 
-from . import widgets, login
+from . import widgets, login, responders
 
 ##############################################################################
 #
@@ -72,6 +72,20 @@ def submit_data(caller_ident, ident_list, submit_list, submit_dict, call_data, p
         except:
             raise FailPage("submit_list contains 'login', but function not recognised")
         return submitfunc(caller_ident, ident_list, submit_list, submit_dict, call_data, page_data, lang)
+
+    if submit_list and (submit_list[0] == 'responders'):
+        # expects submitlist to have contents such as ['responders', 'submitdata', 'test1']
+        # where package 'responders' contains module 'submitdata' containing function 'test1' to be run as the submit_data function
+        try:
+            respondersmod = getattr(responders, submit_list[1])
+        except:
+            raise FailPage("submit_list contains 'responders' but module not recognised")
+        try:
+            submitfunc = getattr(respondersmod, submit_list[2])
+        except:
+            raise FailPage("submit_list contains 'responders' and '%s', but function not recognised" % (submit_list[1],))
+        return submitfunc(caller_ident, ident_list, submit_list, submit_dict, call_data, page_data, lang)
+
 
     raise FailPage("submit_list string not recognised")
 

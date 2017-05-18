@@ -3,7 +3,7 @@
 "default_language": "en",
 "brief": "Project to test the skipole framework",
 "version": "0.0.1",
-"skipole": "0.0.16",
+"skipole": "0.0.20",
 "subprojects": {
 "lib": "/lib/"
 },
@@ -107,9 +107,11 @@
 "error_class": "",
 "para_class": "",
 "para_text": "Page header paragraph text",
+"pre_line": true,
 "show": true,
 "show_error": "",
-"widget_class": ""
+"widget_class": "",
+"widget_style": ""
 }
 }
 ],
@@ -124,7 +126,8 @@
 "hide": true,
 "show": true,
 "show_error": "",
-"widget_class": "ski_errorcol"
+"widget_class": "ski_errorcol",
+"widget_style": ""
 }
 }
 ]
@@ -164,7 +167,8 @@ false,
 "show": true,
 "show_error": "",
 "ul_class": "ski_no_bullets",
-"widget_class": ""
+"widget_class": "",
+"widget_style": ""
 }
 }
 ]
@@ -474,7 +478,8 @@ false,
 "right_label": "",
 "show": true,
 "show_error": "",
-"widget_class": ""
+"widget_class": "",
+"widget_style": ""
 },
 "container_0": [
 "ClosedWidget",
@@ -493,7 +498,8 @@ false,
 "set_input_errored": false,
 "show": true,
 "size": "10",
-"widget_class": ""
+"widget_class": "",
+"widget_style": ""
 }
 }
 ]
@@ -520,7 +526,8 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton"
+"widget_class": "ski_midbutton",
+"widget_style": ""
 }
 }
 ]
@@ -594,7 +601,8 @@ false,
 "right_label": "",
 "show": true,
 "show_error": "",
-"widget_class": ""
+"widget_class": "",
+"widget_style": ""
 },
 "container_0": [
 "ClosedWidget",
@@ -613,7 +621,8 @@ false,
 "set_input_errored": false,
 "show": true,
 "size": "10",
-"widget_class": ""
+"widget_class": "",
+"widget_style": ""
 }
 }
 ]
@@ -640,7 +649,8 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton"
+"widget_class": "ski_midbutton",
+"widget_style": ""
 }
 }
 ]
@@ -697,7 +707,8 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton"
+"widget_class": "ski_midbutton",
+"widget_style": ""
 }
 }
 ]
@@ -977,7 +988,8 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton"
+"widget_class": "ski_midbutton",
+"widget_style": ""
 }
 }
 ]
@@ -1260,7 +1272,8 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton"
+"widget_class": "ski_midbutton",
+"widget_style": ""
 }
 }
 ]
@@ -1462,7 +1475,8 @@ false,
 "fields": {
 "para_text": "",
 "show": true,
-"widget_class": "bottom20"
+"widget_class": "bottom20",
+"widget_style": ""
 }
 }
 ],
@@ -1645,8 +1659,37 @@ false,
 "brief": "Holds responder tests restricted pages",
 "default_page_name": "index",
 "restricted": true,
+"folders": {
+"submitcss": {
+"ident": 252100,
+"brief": "Tests of submitcss responder",
+"default_page_name": "index",
+"restricted": true,
 "folders": {},
 "pages": {}
+}
+},
+"pages": {}
+},
+"submitcss": {
+"ident": 202100,
+"brief": "Tests of submitcss responder",
+"default_page_name": "index",
+"restricted": false,
+"folders": {},
+"pages": {
+"blue.css": {
+"ident": 202102,
+"brief": "submitcss responder to return a blue background",
+"RespondPage": {
+"class": "SubmitCSS",
+"original_args": {
+"fail_ident": ""
+},
+"original_fields": {}
+}
+}
+}
 }
 },
 "pages": {
@@ -1865,7 +1908,8 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton"
+"widget_class": "ski_midbutton",
+"widget_style": ""
 }
 }
 ],
@@ -1887,7 +1931,8 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton"
+"widget_class": "ski_midbutton",
+"widget_style": ""
 }
 }
 ],
@@ -1909,7 +1954,8 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton"
+"widget_class": "ski_midbutton",
+"widget_style": ""
 }
 }
 ],
@@ -1931,7 +1977,8 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton"
+"widget_class": "ski_midbutton",
+"widget_style": ""
 }
 }
 ],
@@ -1953,7 +2000,8 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton"
+"widget_class": "ski_midbutton",
+"widget_style": ""
 }
 }
 ],
@@ -1975,7 +2023,8 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton"
+"widget_class": "ski_midbutton",
+"widget_style": ""
 }
 }
 ],
@@ -1997,7 +2046,8 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton"
+"widget_class": "ski_midbutton",
+"widget_style": ""
 }
 }
 ],
@@ -2019,7 +2069,8 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton"
+"widget_class": "ski_midbutton",
+"widget_style": ""
 }
 }
 ],
@@ -2041,7 +2092,8 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton"
+"widget_class": "ski_midbutton",
+"widget_style": ""
 }
 }
 ],
@@ -2063,7 +2115,8 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton"
+"widget_class": "ski_midbutton",
+"widget_style": ""
 }
 }
 ],
@@ -2085,7 +2138,8 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton"
+"widget_class": "ski_midbutton",
+"widget_style": ""
 }
 }
 ],
@@ -2107,7 +2161,8 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton"
+"widget_class": "ski_midbutton",
+"widget_style": ""
 }
 }
 ],
@@ -2129,7 +2184,8 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton"
+"widget_class": "ski_midbutton",
+"widget_style": ""
 }
 }
 ],
@@ -2151,7 +2207,31 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton"
+"widget_class": "ski_midbutton",
+"widget_style": ""
+}
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink1",
+"name": "mediaquery",
+"brief": "MediaQuery responder",
+"fields": {
+"button_text": "MediaQuery",
+"clear_error": false,
+"error_class": "",
+"force_ident": false,
+"get_field1": "",
+"get_field2": "",
+"hide": false,
+"link_ident": "home",
+"new_window": false,
+"show": true,
+"show_error": "",
+"widget_class": "ski_midbutton",
+"widget_style": ""
 }
 }
 ],
@@ -2173,7 +2253,8 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton"
+"widget_class": "ski_midbutton",
+"widget_style": ""
 }
 }
 ],
@@ -2195,7 +2276,8 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton"
+"widget_class": "ski_midbutton",
+"widget_style": ""
 }
 }
 ],
@@ -2217,7 +2299,8 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton"
+"widget_class": "ski_midbutton",
+"widget_style": ""
 }
 }
 ],
@@ -2239,7 +2322,8 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton"
+"widget_class": "ski_midbutton",
+"widget_style": ""
 }
 }
 ],
@@ -2261,7 +2345,8 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton"
+"widget_class": "ski_midbutton",
+"widget_style": ""
 }
 }
 ],
@@ -2283,7 +2368,8 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton"
+"widget_class": "ski_midbutton",
+"widget_style": ""
 }
 }
 ],
@@ -2305,7 +2391,8 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton"
+"widget_class": "ski_midbutton",
+"widget_style": ""
 }
 }
 ],
@@ -2327,7 +2414,8 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton"
+"widget_class": "ski_midbutton",
+"widget_style": ""
 }
 }
 ],
@@ -2349,7 +2437,8 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton"
+"widget_class": "ski_midbutton",
+"widget_style": ""
 }
 }
 ],
@@ -2371,7 +2460,8 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton"
+"widget_class": "ski_midbutton",
+"widget_style": ""
 }
 }
 ]
@@ -2609,7 +2699,8 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton"
+"widget_class": "ski_midbutton",
+"widget_style": ""
 }
 }
 ],
@@ -2631,7 +2722,8 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton"
+"widget_class": "ski_midbutton",
+"widget_style": ""
 }
 }
 ],
@@ -2653,7 +2745,8 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton"
+"widget_class": "ski_midbutton",
+"widget_style": ""
 }
 }
 ],
@@ -2675,7 +2768,8 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton"
+"widget_class": "ski_midbutton",
+"widget_style": ""
 }
 }
 ],
@@ -2697,7 +2791,8 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton"
+"widget_class": "ski_midbutton",
+"widget_style": ""
 }
 }
 ],
@@ -2719,7 +2814,8 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton"
+"widget_class": "ski_midbutton",
+"widget_style": ""
 }
 }
 ],
@@ -2904,7 +3000,8 @@ false,
 "text_replaceblock": "If this page does not redirect automatically, follow this link:",
 "textblock_ref": "",
 "url": "http://www.bbc.co.uk",
-"widget_class": ""
+"widget_class": "",
+"widget_style": ""
 }
 }
 ]
@@ -3077,8 +3174,13 @@ false,
 "hide": true,
 "show": true,
 "show_error": "No error message available",
-"widget_class": ""
-}
+"widget_class": "",
+"widget_style": ""
+},
+"container_0": [
+"Text",
+""
+]
 }
 ],
 [
@@ -3103,7 +3205,8 @@ false,
 "link_ident": "home",
 "new_window": false,
 "show": true,
-"widget_class": ""
+"widget_class": "",
+"widget_style": ""
 }
 }
 ]
@@ -3123,7 +3226,8 @@ false,
 "show": true,
 "show_error": "",
 "toptext": "Environmental variables for this call:",
-"widget_class": ""
+"widget_class": "",
+"widget_style": ""
 }
 }
 ]
@@ -3312,7 +3416,8 @@ false,
 "text_refnotfound": "",
 "text_replaceblock": "",
 "textblock_ref": "",
-"widget_class": ""
+"widget_class": "",
+"widget_style": ""
 },
 "set_names": {
 "text_replaceblock": "message_text"
@@ -3359,7 +3464,8 @@ false,
 "link_ident": "home",
 "new_window": false,
 "show": true,
-"widget_class": ""
+"widget_class": "",
+"widget_style": ""
 }
 }
 ]
@@ -3535,8 +3641,13 @@ false,
 "hide": true,
 "show": true,
 "show_error": "No error message available",
-"widget_class": ""
-}
+"widget_class": "",
+"widget_style": ""
+},
+"container_0": [
+"Text",
+""
+]
 }
 ],
 [
@@ -3561,7 +3672,8 @@ false,
 "link_ident": "home",
 "new_window": false,
 "show": true,
-"widget_class": ""
+"widget_class": "",
+"widget_style": ""
 }
 }
 ]
@@ -3842,7 +3954,8 @@ false,
 "right_label": "",
 "show": true,
 "show_error": "",
-"widget_class": ""
+"widget_class": "",
+"widget_style": ""
 },
 "container_0": [
 "Widget",
@@ -3862,7 +3975,8 @@ false,
 "right_label": "",
 "show": true,
 "show_error": "",
-"widget_class": ""
+"widget_class": "",
+"widget_style": ""
 }
 }
 ]
@@ -3900,9 +4014,11 @@ false,
 "error_class": "",
 "para_class": "",
 "para_text": "Form submission result: The checkbox is unticked.",
+"pre_line": true,
 "show": true,
 "show_error": "",
-"widget_class": ""
+"widget_class": "",
+"widget_style": ""
 }
 }
 ]
@@ -3959,7 +4075,8 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton"
+"widget_class": "ski_midbutton",
+"widget_style": ""
 }
 }
 ]
@@ -4016,7 +4133,8 @@ false,
 "link_ident": "no_javascript",
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton"
+"widget_class": "ski_midbutton",
+"widget_style": ""
 }
 }
 ]
@@ -4073,7 +4191,8 @@ false,
 "link_ident": "no_javascript",
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton"
+"widget_class": "ski_midbutton",
+"widget_style": ""
 }
 }
 ]
@@ -4130,7 +4249,8 @@ false,
 "link_ident": "no_javascript",
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton"
+"widget_class": "ski_midbutton",
+"widget_style": ""
 }
 }
 ]
@@ -4187,7 +4307,8 @@ false,
 "link_ident": "no_javascript",
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton"
+"widget_class": "ski_midbutton",
+"widget_style": ""
 }
 }
 ]
@@ -4436,7 +4557,8 @@ false,
 "right_label": "",
 "show": true,
 "show_error": "",
-"widget_class": ""
+"widget_class": "",
+"widget_style": ""
 },
 "container_0": [
 "Widget",
@@ -4452,7 +4574,8 @@ false,
 "right_class": "",
 "right_label": "",
 "show": true,
-"widget_class": ""
+"widget_class": "",
+"widget_style": ""
 }
 }
 ]
@@ -4490,9 +4613,11 @@ false,
 "error_class": "",
 "para_class": "",
 "para_text": "Form submission result: The checkbox is unticked.",
+"pre_line": true,
 "show": true,
 "show_error": "",
-"widget_class": ""
+"widget_class": "",
+"widget_style": ""
 }
 }
 ]
@@ -4549,7 +4674,8 @@ false,
 "link_ident": "no_javascript",
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton"
+"widget_class": "ski_midbutton",
+"widget_style": ""
 }
 }
 ]
@@ -4606,7 +4732,8 @@ false,
 "link_ident": "no_javascript",
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton"
+"widget_class": "ski_midbutton",
+"widget_style": ""
 }
 }
 ]
@@ -4855,7 +4982,8 @@ false,
 "right_label": "",
 "show": true,
 "show_error": "",
-"widget_class": ""
+"widget_class": "",
+"widget_style": ""
 },
 "container_0": [
 "Widget",
@@ -4875,7 +5003,8 @@ false,
 "show": true,
 "show_error": "",
 "size": "10",
-"widget_class": ""
+"widget_class": "",
+"widget_style": ""
 }
 }
 ]
@@ -4913,9 +5042,11 @@ false,
 "error_class": "",
 "para_class": "",
 "para_text": "Form submission result: The checkbox is unticked.",
+"pre_line": true,
 "show": true,
 "show_error": "",
-"widget_class": ""
+"widget_class": "",
+"widget_style": ""
 }
 }
 ]
@@ -4972,7 +5103,8 @@ false,
 "link_ident": "no_javascript",
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton"
+"widget_class": "ski_midbutton",
+"widget_style": ""
 }
 }
 ]
@@ -5029,7 +5161,8 @@ false,
 "link_ident": "no_javascript",
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton"
+"widget_class": "ski_midbutton",
+"widget_style": ""
 }
 }
 ]
@@ -5264,8 +5397,13 @@ false,
 "hide": true,
 "show": true,
 "show_error": "Default error message set on widget.",
-"widget_class": ""
-}
+"widget_class": "",
+"widget_style": ""
+},
+"container_0": [
+"Text",
+""
+]
 }
 ],
 [
@@ -5301,7 +5439,8 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton"
+"widget_class": "ski_midbutton",
+"widget_style": ""
 }
 }
 ],
@@ -5338,7 +5477,8 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton"
+"widget_class": "ski_midbutton",
+"widget_style": ""
 }
 }
 ],
@@ -5375,7 +5515,8 @@ false,
 "link_ident": "no_javascript",
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton"
+"widget_class": "ski_midbutton",
+"widget_style": ""
 }
 }
 ],
@@ -5412,7 +5553,8 @@ false,
 "link_ident": "no_javascript",
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton"
+"widget_class": "ski_midbutton",
+"widget_style": ""
 }
 }
 ],
@@ -5449,7 +5591,8 @@ false,
 "link_ident": "no_javascript",
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton"
+"widget_class": "ski_midbutton",
+"widget_style": ""
 }
 }
 ],
@@ -5487,9 +5630,10 @@ false,
 "hidden_field4": "",
 "hide": false,
 "input_accepted_class": "",
-"inputdiv_class": "",
+"input_class": "",
 "input_errored_class": "",
 "input_text": "",
+"inputdiv_class": "",
 "label": "Send text string:",
 "label_class": "ski_left_label",
 "maxlength": "",
@@ -5500,7 +5644,8 @@ false,
 "show": true,
 "show_error": "",
 "size": "",
-"widget_class": ""
+"widget_class": "",
+"widget_style": ""
 },
 "validators": {
 "input_text": [
@@ -5524,7 +5669,8 @@ false,
 "fields": {
 "para_text": "",
 "show": true,
-"widget_class": ""
+"widget_class": "",
+"widget_style": ""
 }
 }
 ]
@@ -5747,8 +5893,13 @@ false,
 "hide": true,
 "show": true,
 "show_error": "Default error message set on widget.",
-"widget_class": ""
-}
+"widget_class": "",
+"widget_style": ""
+},
+"container_0": [
+"Text",
+""
+]
 }
 ],
 [
@@ -5784,7 +5935,8 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton"
+"widget_class": "ski_midbutton",
+"widget_style": ""
 }
 }
 ],
@@ -5821,7 +5973,8 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton"
+"widget_class": "ski_midbutton",
+"widget_style": ""
 }
 }
 ],
@@ -5858,7 +6011,8 @@ false,
 "link_ident": "no_javascript",
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton"
+"widget_class": "ski_midbutton",
+"widget_style": ""
 }
 }
 ],
@@ -5895,7 +6049,8 @@ false,
 "link_ident": "no_javascript",
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton"
+"widget_class": "ski_midbutton",
+"widget_style": ""
 }
 }
 ],
@@ -5932,7 +6087,8 @@ false,
 "link_ident": "no_javascript",
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton"
+"widget_class": "ski_midbutton",
+"widget_style": ""
 }
 }
 ],
@@ -5970,9 +6126,10 @@ false,
 "hidden_field4": "",
 "hide": false,
 "input_accepted_class": "",
-"inputdiv_class": "",
+"input_class": "",
 "input_errored_class": "",
 "input_text": "",
+"inputdiv_class": "",
 "label": "Send text string:",
 "label_class": "ski_left_label",
 "maxlength": "",
@@ -5983,7 +6140,8 @@ false,
 "show": true,
 "show_error": "",
 "size": "",
-"widget_class": ""
+"widget_class": "",
+"widget_style": ""
 },
 "validators": {
 "input_text": [
@@ -6007,7 +6165,8 @@ false,
 "fields": {
 "para_text": "",
 "show": true,
-"widget_class": ""
+"widget_class": "",
+"widget_style": ""
 }
 }
 ]
@@ -6251,7 +6410,8 @@ false,
 "odd_class": "odd",
 "show": true,
 "title1": "text in table",
-"widget_class": "table"
+"widget_class": "table",
+"widget_style": ""
 }
 }
 ],
@@ -6279,7 +6439,8 @@ false,
 "fields": {
 "para_text": "This text will be replaced when a table button is pressed.",
 "show": true,
-"widget_class": ""
+"widget_class": "",
+"widget_style": ""
 }
 }
 ],
@@ -6322,7 +6483,8 @@ false,
 "odd_class": "odd",
 "show": true,
 "title1": "table 2 text",
-"widget_class": "table"
+"widget_class": "table",
+"widget_style": ""
 }
 }
 ]
@@ -7039,7 +7201,8 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton"
+"widget_class": "ski_midbutton",
+"widget_style": ""
 }
 }
 ],
@@ -7061,7 +7224,8 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton"
+"widget_class": "ski_midbutton",
+"widget_style": ""
 }
 }
 ],
@@ -7083,7 +7247,8 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton"
+"widget_class": "ski_midbutton",
+"widget_style": ""
 }
 }
 ]
@@ -7519,7 +7684,8 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton"
+"widget_class": "ski_midbutton",
+"widget_style": ""
 }
 }
 ],
@@ -7541,7 +7707,8 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton"
+"widget_class": "ski_midbutton",
+"widget_style": ""
 }
 }
 ],
@@ -7563,7 +7730,8 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton"
+"widget_class": "ski_midbutton",
+"widget_style": ""
 }
 }
 ]
@@ -7792,7 +7960,8 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton"
+"widget_class": "ski_midbutton",
+"widget_style": ""
 }
 }
 ]
@@ -8021,7 +8190,8 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton"
+"widget_class": "ski_midbutton",
+"widget_style": ""
 }
 }
 ],
@@ -8043,7 +8213,8 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton"
+"widget_class": "ski_midbutton",
+"widget_style": ""
 }
 }
 ],
@@ -8065,7 +8236,8 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton"
+"widget_class": "ski_midbutton",
+"widget_style": ""
 }
 }
 ],
@@ -8087,7 +8259,8 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton"
+"widget_class": "ski_midbutton",
+"widget_style": ""
 }
 }
 ],
@@ -8109,7 +8282,8 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton"
+"widget_class": "ski_midbutton",
+"widget_style": ""
 }
 }
 ],
@@ -8131,7 +8305,8 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton"
+"widget_class": "ski_midbutton",
+"widget_style": ""
 }
 }
 ],
@@ -8153,7 +8328,8 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton"
+"widget_class": "ski_midbutton",
+"widget_style": ""
 }
 }
 ],
@@ -8175,7 +8351,8 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton"
+"widget_class": "ski_midbutton",
+"widget_style": ""
 }
 }
 ],
@@ -8197,7 +8374,8 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton"
+"widget_class": "ski_midbutton",
+"widget_style": ""
 }
 }
 ],
@@ -8219,7 +8397,8 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton"
+"widget_class": "ski_midbutton",
+"widget_style": ""
 }
 }
 ],
@@ -8241,7 +8420,8 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton"
+"widget_class": "ski_midbutton",
+"widget_style": ""
 }
 }
 ],
@@ -8263,7 +8443,8 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton"
+"widget_class": "ski_midbutton",
+"widget_style": ""
 }
 }
 ],
@@ -8285,7 +8466,8 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton"
+"widget_class": "ski_midbutton",
+"widget_style": ""
 }
 }
 ],
@@ -8307,7 +8489,8 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton"
+"widget_class": "ski_midbutton",
+"widget_style": ""
 }
 }
 ],
@@ -8329,7 +8512,8 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton"
+"widget_class": "ski_midbutton",
+"widget_style": ""
 }
 }
 ],
@@ -8351,7 +8535,8 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton"
+"widget_class": "ski_midbutton",
+"widget_style": ""
 }
 }
 ],
@@ -8373,7 +8558,8 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton"
+"widget_class": "ski_midbutton",
+"widget_style": ""
 }
 }
 ],
@@ -8395,7 +8581,8 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton"
+"widget_class": "ski_midbutton",
+"widget_style": ""
 }
 }
 ],
@@ -8417,7 +8604,8 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton"
+"widget_class": "ski_midbutton",
+"widget_style": ""
 }
 }
 ]
@@ -8646,7 +8834,8 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton"
+"widget_class": "ski_midbutton",
+"widget_style": ""
 }
 }
 ]
@@ -8836,8 +9025,13 @@ false,
 "hide": true,
 "show": true,
 "show_error": "",
-"widget_class": ""
-}
+"widget_class": "",
+"widget_style": ""
+},
+"container_0": [
+"Text",
+""
+]
 }
 ],
 [
@@ -8883,7 +9077,8 @@ false,
 "link_ident": "home",
 "new_window": false,
 "show": true,
-"widget_class": ""
+"widget_class": "",
+"widget_style": ""
 }
 }
 ]
