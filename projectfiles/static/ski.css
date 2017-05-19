@@ -20,28 +20,6 @@ background : #69b585;
 float : left;
 width : 20%;}
 
-.ski_midbutton {
--moz-border-radius : 8;
--webkit-border-radius : 8;
-background : green;
-border : solid blue 2px;
-border-radius : 8px;
-color : white;
-display : block;
-margin-bottom : 10px;
-margin-left : 40%;
-margin-right : auto;
-margin-top : 10px;
-padding : 4px 6px 6px 4px;
-text-align : center;
-text-decoration : none;
-width : 20%;}
-
-.ski_midbutton:hover {
-background : blue;
-border : solid black 2px;
-color : white;}
-
 .ski_leftbutton {
 -moz-border-radius : 8;
 -webkit-border-radius : 8;
@@ -127,4 +105,52 @@ color : #FFFFFF;}
 
 .ski_table_header {
 background-color : #69b585;}
+
+@media (max-width: 960px) {
+    .ski_midbutton {
+    -moz-border-radius : 8;
+    -webkit-border-radius : 8;
+    background : green;
+    border : solid blue 2px;
+    border-radius : 8px;
+    color : white;
+    display : block;
+    margin-bottom : 10px;
+    margin-left : 25%;
+    margin-right : auto;
+    margin-top : 10px;
+    padding : 4px 6px 6px 4px;
+    text-align : center;
+    text-decoration : none;
+    width : 50%;}
+
+    .ski_midbutton:hover {
+    background : blue;
+    border : solid black 2px;
+    color : white;}
+}
+
+@media (min-width: 961px) {
+    .ski_midbutton {
+    -moz-border-radius : 8;
+    -webkit-border-radius : 8;
+    background : green;
+    border : solid blue 2px;
+    border-radius : 8px;
+    color : white;
+    display : block;
+    margin-bottom : 10px;
+    margin-left : 40%;
+    margin-right : auto;
+    margin-top : 10px;
+    padding : 4px 6px 6px 4px;
+    text-align : center;
+    text-decoration : none;
+    width : 20%;}
+
+    .ski_midbutton:hover {
+    background : blue;
+    border : solid black 2px;
+    color : white;}
+}
 
