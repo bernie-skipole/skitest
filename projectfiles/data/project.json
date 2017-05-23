@@ -4844,6 +4844,7 @@ false,
 "brief": "check1",
 "fields": {
 "checkbox": "check1",
+"checkbox_class": "",
 "checked": false,
 "clear_error": false,
 "div_class": "",
@@ -5447,6 +5448,7 @@ false,
 "brief": "check10",
 "fields": {
 "checkbox": "check10",
+"checkbox_class": "",
 "checked": false,
 "left_class": "ski_left_label",
 "left_label": "check10:",
@@ -5872,10 +5874,13 @@ false,
 "brief": "check20",
 "fields": {
 "checkbox": "check20",
+"checkbox_class": "",
 "checked": false,
 "clear_error": false,
 "error_class": "",
+"input_class": "",
 "input_text": "",
+"inputdiv_class": "",
 "label_class": "ski_left_label",
 "label_text": "check20:",
 "maxlength": "10",
@@ -6517,12 +6522,15 @@ false,
 "label_class": "ski_left_label",
 "maxlength": "",
 "new_window": false,
+"pattern": "",
 "required": false,
 "set_input_accepted": false,
 "set_input_errored": false,
 "show": true,
 "show_error": "",
 "size": "",
+"title": "",
+"type": "text",
 "widget_class": "",
 "widget_style": ""
 },
@@ -7013,12 +7021,15 @@ false,
 "label_class": "ski_left_label",
 "maxlength": "",
 "new_window": false,
+"pattern": "",
 "required": false,
 "set_input_accepted": false,
 "set_input_errored": false,
 "show": true,
 "show_error": "",
 "size": "",
+"title": "",
+"type": "text",
 "widget_class": "",
 "widget_style": ""
 },
@@ -8624,6 +8635,236 @@ false,
 }
 ]
 },
+"inputforms": {
+"ident": 3009,
+"brief": "links to inputforms widgets",
+"TemplatePage": {
+"show_backcol": false,
+"last_scroll": true,
+"lang": "en",
+"backcol": "#9dbd7a",
+"default_error_widget": [
+"header",
+"top_error"
+]
+},
+"head": [
+"Part",
+{
+"tag_name": "head",
+"brief": "The head section of the page",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"ClosedPart",
+{
+"tag_name": "meta",
+"brief": "The charset meta declaration",
+"show": true,
+"attribs": {
+"charset": "utf-8"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "meta",
+"brief": "The viewport meta declaration",
+"show": true,
+"attribs": {
+"content": "width=device-width, initial-scale=1",
+"name": "viewport"
+}
+}
+],
+[
+"Part",
+{
+"tag_name": "title",
+"brief": "The page title element",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Text",
+"Index"
+]
+]
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to w3_css",
+"show": true,
+"attribs": {
+"href": "{w3_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to ski_css",
+"show": true,
+"attribs": {
+"href": "{ski_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"Comment",
+{
+"text": "HTML5shiv - included as a TextBlock"
+}
+],
+[
+"TextBlock",
+{
+"textref": "html5shiv",
+"failmessage": "failed to read textblocks database with ref html5shiv",
+"show": true,
+"escape": false,
+"linebreaks": false
+}
+],
+[
+"Part",
+{
+"tag_name": "script",
+"brief": "script link to jquery_core",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"src": "{jquery_core}"
+},
+"parts": []
+}
+],
+[
+"Part",
+{
+"tag_name": "script",
+"brief": "script link to skipole_js",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"src": "{skipole_js}"
+},
+"parts": []
+}
+]
+]
+}
+],
+"body": [
+"Part",
+{
+"tag_name": "body",
+"brief": "The body section of the page",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "container",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "ski_container"
+},
+"parts": [
+[
+"SectionPlaceHolder",
+{
+"brief": "Page header",
+"section_name": "header",
+"placename": "header"
+}
+],
+[
+"SectionPlaceHolder",
+{
+"brief": "Left navigation panel",
+"section_name": "navigation",
+"placename": "navigation"
+}
+],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "centre",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "ski_centre"
+},
+"parts": [
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "Top description",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"TextBlock",
+{
+"textref": "page.3009.01",
+"failmessage": "TextBlock not found",
+"show": true,
+"escape": true,
+"linebreaks": true
+}
+]
+]
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink1",
+"name": "Table1_Button",
+"brief": "Link to Table1_Button widget test page",
+"fields": {
+"button_text": "Table1_Button",
+"clear_error": false,
+"error_class": "",
+"force_ident": false,
+"get_field1": "",
+"get_field2": "",
+"hide": false,
+"link_ident": "table1button",
+"new_window": false,
+"show": true,
+"show_error": "",
+"widget_class": "ski_midbutton",
+"widget_style": ""
+}
+}
+]
+]
+}
+]
+]
+}
+]
+]
+}
+]
+},
 "links": {
 "ident": 3007,
 "brief": "buttons to links widgets",
@@ -9249,7 +9490,7 @@ false,
 "get_field1": "",
 "get_field2": "",
 "hide": false,
-"link_ident": "home",
+"link_ident": 3009,
 "new_window": false,
 "show": true,
 "show_error": "",
