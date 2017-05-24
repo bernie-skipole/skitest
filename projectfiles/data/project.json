@@ -8831,29 +8831,6 @@ false,
 ]
 ]
 }
-],
-[
-"Widget",
-{
-"class": "links.ButtonLink1",
-"name": "Table1_Button",
-"brief": "Link to Table1_Button widget test page",
-"fields": {
-"button_text": "Table1_Button",
-"clear_error": false,
-"error_class": "",
-"force_ident": false,
-"get_field1": "",
-"get_field2": "",
-"hide": false,
-"link_ident": "table1button",
-"new_window": false,
-"show": true,
-"show_error": "",
-"widget_class": "ski_midbutton",
-"widget_style": ""
-}
-}
 ]
 ]
 }
