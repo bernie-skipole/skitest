@@ -82,7 +82,8 @@
 "table1button_test2": 4103,
 "url_not_found": 500,
 "validate_error": 510,
-"w3_css": 1002
+"w3_css": 1002,
+"w3_theme_ski": 1008
 },
 "sections": {
 "header": [
@@ -196,6 +197,15 @@ false,
 "mimetype": "text/css"
 }
 },
+"w3-theme-ski.css": {
+"ident": 1008,
+"brief": "color theme",
+"FilePage": {
+"filepath": "skitest/static/w3-theme-ski.css",
+"enable_cache": false,
+"mimetype": "text/css"
+}
+},
 "w3.css": {
 "ident": 1002,
 "brief": "From www.w3schools.com/w3css/",
@@ -302,6 +312,19 @@ false,
 "show": true,
 "attribs": {
 "href": "{w3_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to w3_theme_ski",
+"show": true,
+"attribs": {
+"href": "{w3_theme_ski}",
 "rel": "stylesheet",
 "type": "text/css"
 }
@@ -463,22 +486,22 @@ false,
 "fields": {
 "action": "login1",
 "action_json": "",
-"button_class": "",
+"button_class": "w3-button w3-theme-d4",
 "button_text": "Submit",
 "clear_error": false,
 "div_class": "",
-"error_class": "",
+"error_class": "w3-panel w3-red",
 "hidden_field1": "",
 "hidden_field2": "",
 "hidden_field3": "",
 "hidden_field4": "",
-"left_class": "",
+"left_class": "ski_left_label",
 "left_label": "",
 "right_class": "",
 "right_label": "",
 "show": true,
 "show_error": "",
-"widget_class": "",
+"widget_class": "w3-section",
 "widget_style": ""
 },
 "container_0": [
@@ -517,7 +540,7 @@ false,
 "fields": {
 "button_text": "Link to secure1",
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-button w3-block w3-theme-action",
 "force_ident": false,
 "get_field1": "",
 "get_field2": "",
@@ -526,7 +549,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton",
+"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
 "widget_style": ""
 }
 }
@@ -586,22 +609,22 @@ false,
 "fields": {
 "action": "login2",
 "action_json": "",
-"button_class": "",
+"button_class": "w3-button w3-theme-d4",
 "button_text": "Submit",
 "clear_error": false,
 "div_class": "",
-"error_class": "",
+"error_class": "w3-panel w3-red",
 "hidden_field1": "",
 "hidden_field2": "",
 "hidden_field3": "",
 "hidden_field4": "",
-"left_class": "",
+"left_class": "ski_left_label",
 "left_label": "",
 "right_class": "",
 "right_label": "",
 "show": true,
 "show_error": "",
-"widget_class": "",
+"widget_class": "w3-section",
 "widget_style": ""
 },
 "container_0": [
@@ -640,7 +663,7 @@ false,
 "fields": {
 "button_text": "Link to secure2",
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-button w3-block w3-theme-action",
 "force_ident": false,
 "get_field1": "",
 "get_field2": "",
@@ -649,7 +672,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton",
+"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
 "widget_style": ""
 }
 }
@@ -698,7 +721,7 @@ false,
 "fields": {
 "button_text": "Link to secure3",
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-button w3-block w3-theme-action",
 "force_ident": false,
 "get_field1": "",
 "get_field2": "",
@@ -707,7 +730,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton",
+"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
 "widget_style": ""
 }
 }
@@ -808,6 +831,19 @@ false,
 "show": true,
 "attribs": {
 "href": "{w3_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to w3_theme_ski",
+"show": true,
+"attribs": {
+"href": "{w3_theme_ski}",
 "rel": "stylesheet",
 "type": "text/css"
 }
@@ -979,7 +1015,7 @@ false,
 "fields": {
 "button_text": "Logout",
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-button w3-block w3-theme-action",
 "force_ident": false,
 "get_field1": "",
 "get_field2": "",
@@ -988,7 +1024,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton",
+"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
 "widget_style": ""
 }
 }
@@ -1092,6 +1128,19 @@ false,
 "show": true,
 "attribs": {
 "href": "{w3_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to w3_theme_ski",
+"show": true,
+"attribs": {
+"href": "{w3_theme_ski}",
 "rel": "stylesheet",
 "type": "text/css"
 }
@@ -1263,7 +1312,7 @@ false,
 "fields": {
 "button_text": "Logout",
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-button w3-block w3-theme-action",
 "force_ident": false,
 "get_field1": "",
 "get_field2": "",
@@ -1272,7 +1321,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton",
+"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
 "widget_style": ""
 }
 }
@@ -1357,6 +1406,19 @@ false,
 "show": true,
 "attribs": {
 "href": "{w3_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to w3_theme_ski",
+"show": true,
+"attribs": {
+"href": "{w3_theme_ski}",
 "rel": "stylesheet",
 "type": "text/css"
 }
@@ -1753,6 +1815,19 @@ false,
 "ClosedPart",
 {
 "tag_name": "link",
+"brief": "css link to w3_theme_ski",
+"show": true,
+"attribs": {
+"href": "{w3_theme_ski}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
 "brief": "css link to ski_css",
 "show": true,
 "attribs": {
@@ -1891,7 +1966,7 @@ false,
 "fields": {
 "button_text": "Home",
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-button w3-block w3-theme-action",
 "force_ident": false,
 "get_field1": "",
 "get_field2": "",
@@ -1900,7 +1975,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton",
+"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
 "widget_style": ""
 }
 }
@@ -1914,7 +1989,7 @@ false,
 "fields": {
 "button_text": "Responders",
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-button w3-block w3-theme-action",
 "force_ident": false,
 "get_field1": "",
 "get_field2": "",
@@ -1923,7 +1998,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton",
+"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
 "widget_style": ""
 }
 }
@@ -2030,6 +2105,19 @@ false,
 "show": true,
 "attribs": {
 "href": "{w3_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to w3_theme_ski",
+"show": true,
+"attribs": {
+"href": "{w3_theme_ski}",
 "rel": "stylesheet",
 "type": "text/css"
 }
@@ -2177,7 +2265,7 @@ false,
 "fields": {
 "button_text": "Home",
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-button w3-block w3-theme-action",
 "force_ident": false,
 "get_field1": "",
 "get_field2": "",
@@ -2186,7 +2274,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton",
+"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
 "widget_style": ""
 }
 }
@@ -2200,7 +2288,7 @@ false,
 "fields": {
 "button_text": "Responders",
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-button w3-block w3-theme-action",
 "force_ident": false,
 "get_field1": "",
 "get_field2": "",
@@ -2209,7 +2297,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton",
+"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
 "widget_style": ""
 }
 }
@@ -2223,7 +2311,7 @@ false,
 "fields": {
 "button_text": "Inverse",
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-button w3-block w3-theme-action",
 "force_ident": false,
 "get_field1": "",
 "get_field2": "",
@@ -2232,7 +2320,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton",
+"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
 "widget_style": ""
 }
 }
@@ -2330,6 +2418,19 @@ false,
 "show": true,
 "attribs": {
 "href": "{w3_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to w3_theme_ski",
+"show": true,
+"attribs": {
+"href": "{w3_theme_ski}",
 "rel": "stylesheet",
 "type": "text/css"
 }
@@ -2477,7 +2578,7 @@ false,
 "fields": {
 "button_text": "Home",
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-button w3-block w3-theme-action",
 "force_ident": false,
 "get_field1": "",
 "get_field2": "",
@@ -2486,7 +2587,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton",
+"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
 "widget_style": ""
 }
 }
@@ -2500,7 +2601,7 @@ false,
 "fields": {
 "button_text": "Responders",
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-button w3-block w3-theme-action",
 "force_ident": false,
 "get_field1": "",
 "get_field2": "",
@@ -2509,7 +2610,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton",
+"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
 "widget_style": ""
 }
 }
@@ -2523,7 +2624,7 @@ false,
 "fields": {
 "button_text": "Inverse",
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-button w3-block w3-theme-action",
 "force_ident": false,
 "get_field1": "",
 "get_field2": "",
@@ -2532,7 +2633,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton",
+"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
 "widget_style": ""
 }
 }
@@ -2618,6 +2719,19 @@ false,
 "show": true,
 "attribs": {
 "href": "{w3_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to w3_theme_ski",
+"show": true,
+"attribs": {
+"href": "{w3_theme_ski}",
 "rel": "stylesheet",
 "type": "text/css"
 }
@@ -2757,7 +2871,7 @@ false,
 "fields": {
 "button_text": "Accept",
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-button w3-block w3-theme-action",
 "force_ident": false,
 "get_field1": "",
 "get_field2": "",
@@ -2766,7 +2880,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton",
+"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
 "widget_style": ""
 }
 }
@@ -2780,7 +2894,7 @@ false,
 "fields": {
 "button_text": "AllowedAccept",
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-button w3-block w3-theme-action",
 "force_ident": false,
 "get_field1": "",
 "get_field2": "",
@@ -2789,7 +2903,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton",
+"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
 "widget_style": ""
 }
 }
@@ -2803,7 +2917,7 @@ false,
 "fields": {
 "button_text": "AllowedFields",
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-button w3-block w3-theme-action",
 "force_ident": false,
 "get_field1": "",
 "get_field2": "",
@@ -2812,7 +2926,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton",
+"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
 "widget_style": ""
 }
 }
@@ -2826,7 +2940,7 @@ false,
 "fields": {
 "button_text": "AllowStore",
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-button w3-block w3-theme-action",
 "force_ident": false,
 "get_field1": "",
 "get_field2": "",
@@ -2835,7 +2949,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton",
+"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
 "widget_style": ""
 }
 }
@@ -2849,7 +2963,7 @@ false,
 "fields": {
 "button_text": "AllowStoreKeyed",
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-button w3-block w3-theme-action",
 "force_ident": false,
 "get_field1": "",
 "get_field2": "",
@@ -2858,7 +2972,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton",
+"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
 "widget_style": ""
 }
 }
@@ -2872,7 +2986,7 @@ false,
 "fields": {
 "button_text": "CaseSwitch",
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-button w3-block w3-theme-action",
 "force_ident": false,
 "get_field1": "",
 "get_field2": "",
@@ -2881,7 +2995,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton",
+"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
 "widget_style": ""
 }
 }
@@ -2895,7 +3009,7 @@ false,
 "fields": {
 "button_text": "ColourSubstitute",
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-button w3-block w3-theme-action",
 "force_ident": false,
 "get_field1": "",
 "get_field2": "",
@@ -2904,7 +3018,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton",
+"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
 "widget_style": ""
 }
 }
@@ -2918,7 +3032,7 @@ false,
 "fields": {
 "button_text": "DelCallDataItem",
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-button w3-block w3-theme-action",
 "force_ident": false,
 "get_field1": "",
 "get_field2": "",
@@ -2927,7 +3041,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton",
+"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
 "widget_style": ""
 }
 }
@@ -2941,7 +3055,7 @@ false,
 "fields": {
 "button_text": "EmptyCallDataGoto",
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-button w3-block w3-theme-action",
 "force_ident": false,
 "get_field1": "",
 "get_field2": "",
@@ -2950,7 +3064,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton",
+"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
 "widget_style": ""
 }
 }
@@ -2964,7 +3078,7 @@ false,
 "fields": {
 "button_text": "EmptyGoto",
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-button w3-block w3-theme-action",
 "force_ident": false,
 "get_field1": "",
 "get_field2": "",
@@ -2973,7 +3087,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton",
+"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
 "widget_style": ""
 }
 }
@@ -2987,7 +3101,7 @@ false,
 "fields": {
 "button_text": "FieldStoreSubmit",
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-button w3-block w3-theme-action",
 "force_ident": false,
 "get_field1": "",
 "get_field2": "",
@@ -2996,7 +3110,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton",
+"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
 "widget_style": ""
 }
 }
@@ -3010,7 +3124,7 @@ false,
 "fields": {
 "button_text": "GetDictionaryDefaults",
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-button w3-block w3-theme-action",
 "force_ident": false,
 "get_field1": "",
 "get_field2": "",
@@ -3019,7 +3133,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton",
+"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
 "widget_style": ""
 }
 }
@@ -3033,7 +3147,7 @@ false,
 "fields": {
 "button_text": "LanguageCookie",
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-button w3-block w3-theme-action",
 "force_ident": false,
 "get_field1": "",
 "get_field2": "",
@@ -3042,7 +3156,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton",
+"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
 "widget_style": ""
 }
 }
@@ -3056,7 +3170,7 @@ false,
 "fields": {
 "button_text": "NoOperation",
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-button w3-block w3-theme-action",
 "force_ident": false,
 "get_field1": "",
 "get_field2": "",
@@ -3065,7 +3179,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton",
+"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
 "widget_style": ""
 }
 }
@@ -3079,7 +3193,7 @@ false,
 "fields": {
 "button_text": "MediaQuery",
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-button w3-block w3-theme-action",
 "force_ident": false,
 "get_field1": "",
 "get_field2": "",
@@ -3088,7 +3202,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton",
+"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
 "widget_style": ""
 }
 }
@@ -3102,7 +3216,7 @@ false,
 "fields": {
 "button_text": "PageData",
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-button w3-block w3-theme-action",
 "force_ident": false,
 "get_field1": "",
 "get_field2": "",
@@ -3111,7 +3225,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton",
+"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
 "widget_style": ""
 }
 }
@@ -3125,7 +3239,7 @@ false,
 "fields": {
 "button_text": "PrettyFormData",
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-button w3-block w3-theme-action",
 "force_ident": false,
 "get_field1": "",
 "get_field2": "",
@@ -3134,7 +3248,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton",
+"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
 "widget_style": ""
 }
 }
@@ -3148,7 +3262,7 @@ false,
 "fields": {
 "button_text": "SetCookies",
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-button w3-block w3-theme-action",
 "force_ident": false,
 "get_field1": "",
 "get_field2": "",
@@ -3157,7 +3271,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton",
+"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
 "widget_style": ""
 }
 }
@@ -3171,7 +3285,7 @@ false,
 "fields": {
 "button_text": "StoreData",
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-button w3-block w3-theme-action",
 "force_ident": false,
 "get_field1": "",
 "get_field2": "",
@@ -3180,7 +3294,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton",
+"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
 "widget_style": ""
 }
 }
@@ -3194,7 +3308,7 @@ false,
 "fields": {
 "button_text": "StoreDataKeyed",
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-button w3-block w3-theme-action",
 "force_ident": false,
 "get_field1": "",
 "get_field2": "",
@@ -3203,7 +3317,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton",
+"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
 "widget_style": ""
 }
 }
@@ -3217,7 +3331,7 @@ false,
 "fields": {
 "button_text": "SubmitCSS",
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-button w3-block w3-theme-action",
 "force_ident": false,
 "get_field1": "",
 "get_field2": "",
@@ -3226,7 +3340,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton",
+"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
 "widget_style": ""
 }
 }
@@ -3240,7 +3354,7 @@ false,
 "fields": {
 "button_text": "SubmitData",
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-button w3-block w3-theme-action",
 "force_ident": false,
 "get_field1": "",
 "get_field2": "",
@@ -3249,7 +3363,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton",
+"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
 "widget_style": ""
 }
 }
@@ -3263,7 +3377,7 @@ false,
 "fields": {
 "button_text": "SubmitIterator",
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-button w3-block w3-theme-action",
 "force_ident": false,
 "get_field1": "",
 "get_field2": "",
@@ -3272,7 +3386,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton",
+"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
 "widget_style": ""
 }
 }
@@ -3286,7 +3400,7 @@ false,
 "fields": {
 "button_text": "SubmitJSON",
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-button w3-block w3-theme-action",
 "force_ident": false,
 "get_field1": "",
 "get_field2": "",
@@ -3295,7 +3409,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton",
+"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
 "widget_style": ""
 }
 }
@@ -3309,7 +3423,7 @@ false,
 "fields": {
 "button_text": "SubmitPlainText",
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-button w3-block w3-theme-action",
 "force_ident": false,
 "get_field1": "",
 "get_field2": "",
@@ -3318,7 +3432,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton",
+"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
 "widget_style": ""
 }
 }
@@ -3426,6 +3540,19 @@ false,
 "ClosedPart",
 {
 "tag_name": "link",
+"brief": "css link to w3_theme_ski",
+"show": true,
+"attribs": {
+"href": "{w3_theme_ski}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
 "brief": "css link to ski_css",
 "show": true,
 "attribs": {
@@ -3488,7 +3615,7 @@ false,
 "show": true,
 "hide_if_empty": false,
 "attribs": {
-"class": "w3-grey"
+"class": "w3-theme-d1"
 },
 "parts": [
 [
@@ -3499,7 +3626,7 @@ false,
 "show": true,
 "hide_if_empty": false,
 "attribs": {
-"class": "ski_container w3-amber"
+"class": "w3-container"
 },
 "parts": [
 [
@@ -3518,7 +3645,7 @@ false,
 "show": true,
 "hide_if_empty": false,
 "attribs": {
-"class": "w3-container w3-section"
+"class": "w3-section"
 },
 "parts": [
 [
@@ -3543,6 +3670,17 @@ false,
 }
 ],
 [
+"Part",
+{
+"tag_name": "div",
+"brief": "Holds buttons",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"style": "margin-left:25%;width:50%;margin-right:auto;"
+},
+"parts": [
+[
 "Widget",
 {
 "class": "links.ButtonLink1",
@@ -3551,7 +3689,7 @@ false,
 "fields": {
 "button_text": "Widgets",
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-button w3-block w3-theme-action",
 "force_ident": false,
 "get_field1": "",
 "get_field2": "",
@@ -3560,7 +3698,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton",
+"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
 "widget_style": ""
 }
 }
@@ -3574,7 +3712,7 @@ false,
 "fields": {
 "button_text": "Validators",
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-button w3-block w3-theme-action",
 "force_ident": false,
 "get_field1": "",
 "get_field2": "",
@@ -3583,7 +3721,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton",
+"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
 "widget_style": ""
 }
 }
@@ -3597,7 +3735,7 @@ false,
 "fields": {
 "button_text": "Responders",
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-button w3-block w3-theme-action",
 "force_ident": false,
 "get_field1": "",
 "get_field2": "",
@@ -3606,7 +3744,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton",
+"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
 "widget_style": ""
 }
 }
@@ -3620,7 +3758,7 @@ false,
 "fields": {
 "button_text": "Validate Error Page",
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-button w3-block w3-theme-action",
 "force_ident": false,
 "get_field1": "",
 "get_field2": "",
@@ -3629,7 +3767,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton",
+"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
 "widget_style": ""
 }
 }
@@ -3643,7 +3781,7 @@ false,
 "fields": {
 "button_text": "Server Error Page",
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-button w3-block w3-theme-action",
 "force_ident": false,
 "get_field1": "",
 "get_field2": "",
@@ -3652,7 +3790,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton",
+"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
 "widget_style": ""
 }
 }
@@ -3666,7 +3804,7 @@ false,
 "fields": {
 "button_text": "Test Login",
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-button w3-block w3-theme-action",
 "force_ident": false,
 "get_field1": "",
 "get_field2": "",
@@ -3675,9 +3813,12 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton",
+"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
 "widget_style": ""
 }
+}
+]
+]
 }
 ],
 [
@@ -3778,6 +3919,19 @@ false,
 "show": true,
 "attribs": {
 "href": "{w3_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to w3_theme_ski",
+"show": true,
+"attribs": {
+"href": "{w3_theme_ski}",
 "rel": "stylesheet",
 "type": "text/css"
 }
@@ -3937,6 +4091,19 @@ false,
 "show": true,
 "attribs": {
 "href": "{w3_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to w3_theme_ski",
+"show": true,
+"attribs": {
+"href": "{w3_theme_ski}",
 "rel": "stylesheet",
 "type": "text/css"
 }
@@ -4163,6 +4330,19 @@ false,
 "show": true,
 "attribs": {
 "href": "{w3_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to w3_theme_ski",
+"show": true,
+"attribs": {
+"href": "{w3_theme_ski}",
 "rel": "stylesheet",
 "type": "text/css"
 }
@@ -4404,6 +4584,19 @@ false,
 "show": true,
 "attribs": {
 "href": "{w3_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to w3_theme_ski",
+"show": true,
+"attribs": {
+"href": "{w3_theme_ski}",
 "rel": "stylesheet",
 "type": "text/css"
 }
@@ -4656,6 +4849,19 @@ false,
 "ClosedPart",
 {
 "tag_name": "link",
+"brief": "css link to w3_theme_ski",
+"show": true,
+"attribs": {
+"href": "{w3_theme_ski}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
 "brief": "css link to ski_css",
 "show": true,
 "attribs": {
@@ -4797,11 +5003,11 @@ false,
 "fields": {
 "action": "check1test",
 "action_json": "",
-"button_class": "",
+"button_class": "w3-button w3-theme-d4",
 "button_text": "Submit",
 "clear_error": false,
 "div_class": "",
-"error_class": "",
+"error_class": "w3-panel w3-red",
 "hidden_field1": "",
 "hidden_field2": "",
 "hidden_field3": "",
@@ -4812,7 +5018,7 @@ false,
 "right_label": "",
 "show": true,
 "show_error": "",
-"widget_class": "",
+"widget_class": "w3-section",
 "widget_style": ""
 },
 "container_0": [
@@ -4823,18 +5029,18 @@ false,
 "brief": "check1",
 "fields": {
 "checkbox": "check1",
-"checkbox_class": "",
+"checkbox_class": "w3-check",
 "checked": false,
 "clear_error": false,
 "div_class": "",
-"error_class": "ski_errorcol",
+"error_class": "w3-panel w3-red",
 "left_class": "ski_left_label",
 "left_label": "check1:",
 "right_class": "",
 "right_label": "",
 "show": true,
 "show_error": "",
-"widget_class": "",
+"widget_class": "w3-section",
 "widget_style": ""
 }
 }
@@ -4870,13 +5076,13 @@ false,
 "brief": "Result of check1 test",
 "fields": {
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-red",
 "para_class": "",
 "para_text": "Form submission result: The checkbox is unticked.",
 "pre_line": true,
 "show": true,
 "show_error": "",
-"widget_class": "",
+"widget_class": "w3-section",
 "widget_style": ""
 }
 }
@@ -4925,7 +5131,7 @@ false,
 "fields": {
 "button_text": "Set Error",
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-button w3-block w3-theme-action",
 "force_ident": true,
 "get_field1": "",
 "get_field2": "",
@@ -4934,7 +5140,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton",
+"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
 "widget_style": ""
 }
 }
@@ -4984,7 +5190,7 @@ false,
 "button_text": "Set checked (JSON)",
 "button_wait_text": "Please wait...",
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-button w3-block w3-theme-action",
 "get_field1": "",
 "get_field2": "",
 "hide": false,
@@ -4992,7 +5198,7 @@ false,
 "link_ident": "no_javascript",
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton",
+"widget_class": "w3-button w3-block w3-theme-d4",
 "widget_style": ""
 }
 }
@@ -5042,7 +5248,7 @@ false,
 "button_text": "Set unchecked (JSON)",
 "button_wait_text": "Please wait...",
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-button w3-block w3-theme-action",
 "get_field1": "",
 "get_field2": "",
 "hide": false,
@@ -5050,7 +5256,7 @@ false,
 "link_ident": "no_javascript",
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton",
+"widget_class": "w3-button w3-block w3-theme-d4",
 "widget_style": ""
 }
 }
@@ -5100,7 +5306,7 @@ false,
 "button_text": "Set Error (JSON)",
 "button_wait_text": "Please wait...",
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-button w3-block w3-theme-action",
 "get_field1": "",
 "get_field2": "",
 "hide": false,
@@ -5108,7 +5314,7 @@ false,
 "link_ident": "no_javascript",
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton",
+"widget_class": "w3-button w3-block w3-theme-d4",
 "widget_style": ""
 }
 }
@@ -5158,7 +5364,7 @@ false,
 "button_text": "Clear Error (JSON)",
 "button_wait_text": "Please wait...",
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-button w3-block w3-theme-action",
 "get_field1": "",
 "get_field2": "",
 "hide": false,
@@ -5166,7 +5372,7 @@ false,
 "link_ident": "no_javascript",
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton",
+"widget_class": "w3-button w3-block w3-theme-d4",
 "widget_style": ""
 }
 }
@@ -5251,6 +5457,19 @@ false,
 "show": true,
 "attribs": {
 "href": "{w3_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to w3_theme_ski",
+"show": true,
+"attribs": {
+"href": "{w3_theme_ski}",
 "rel": "stylesheet",
 "type": "text/css"
 }
@@ -5401,22 +5620,22 @@ false,
 "fields": {
 "action": "check10test",
 "action_json": "",
-"button_class": "",
+"button_class": "w3-button w3-theme-d4",
 "button_text": "Submit",
 "clear_error": false,
 "div_class": "ski_inline",
-"error_class": "",
+"error_class": "w3-panel w3-red",
 "hidden_field1": "",
 "hidden_field2": "",
 "hidden_field3": "",
 "hidden_field4": "",
-"left_class": "",
+"left_class": "ski_left_label",
 "left_label": "",
 "right_class": "",
 "right_label": "",
 "show": true,
 "show_error": "",
-"widget_class": "",
+"widget_class": "w3-section",
 "widget_style": ""
 },
 "container_0": [
@@ -5427,7 +5646,7 @@ false,
 "brief": "check10",
 "fields": {
 "checkbox": "check10",
-"checkbox_class": "",
+"checkbox_class": "w3-check",
 "checked": false,
 "left_class": "ski_left_label",
 "left_label": "check10:",
@@ -5470,13 +5689,13 @@ false,
 "brief": "Result of check10 test",
 "fields": {
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-red",
 "para_class": "",
 "para_text": "Form submission result: The checkbox is unticked.",
 "pre_line": true,
 "show": true,
 "show_error": "",
-"widget_class": "",
+"widget_class": "w3-section",
 "widget_style": ""
 }
 }
@@ -5526,7 +5745,7 @@ false,
 "button_text": "Set checked (JSON)",
 "button_wait_text": "Please wait...",
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-button w3-block w3-theme-action",
 "get_field1": "",
 "get_field2": "",
 "hide": false,
@@ -5534,7 +5753,7 @@ false,
 "link_ident": "no_javascript",
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton",
+"widget_class": "w3-button w3-block w3-theme-d4",
 "widget_style": ""
 }
 }
@@ -5584,7 +5803,7 @@ false,
 "button_text": "Set unchecked (JSON)",
 "button_wait_text": "Please wait...",
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-button w3-block w3-theme-action",
 "get_field1": "",
 "get_field2": "",
 "hide": false,
@@ -5592,7 +5811,7 @@ false,
 "link_ident": "no_javascript",
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton",
+"widget_class": "w3-button w3-block w3-theme-d4",
 "widget_style": ""
 }
 }
@@ -5677,6 +5896,19 @@ false,
 "show": true,
 "attribs": {
 "href": "{w3_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to w3_theme_ski",
+"show": true,
+"attribs": {
+"href": "{w3_theme_ski}",
 "rel": "stylesheet",
 "type": "text/css"
 }
@@ -5827,11 +6059,11 @@ false,
 "fields": {
 "action": "check20test",
 "action_json": "",
-"button_class": "",
+"button_class": "w3-button w3-theme-d4",
 "button_text": "Submit",
 "clear_error": false,
 "div_class": "",
-"error_class": "",
+"error_class": "w3-panel w3-red",
 "hidden_field1": "",
 "hidden_field2": "",
 "hidden_field3": "",
@@ -5842,7 +6074,7 @@ false,
 "right_label": "",
 "show": true,
 "show_error": "",
-"widget_class": "",
+"widget_class": "w3-section",
 "widget_style": ""
 },
 "container_0": [
@@ -5853,11 +6085,11 @@ false,
 "brief": "check20",
 "fields": {
 "checkbox": "check20",
-"checkbox_class": "",
+"checkbox_class": "w3-check",
 "checked": false,
 "clear_error": false,
-"error_class": "",
-"input_class": "",
+"error_class": "w3-panel w3-red",
+"input_class": "ski_input",
 "input_text": "",
 "inputdiv_class": "",
 "label_class": "ski_left_label",
@@ -5866,7 +6098,7 @@ false,
 "show": true,
 "show_error": "",
 "size": "10",
-"widget_class": "",
+"widget_class": "w3-section",
 "widget_style": ""
 }
 }
@@ -5902,13 +6134,13 @@ false,
 "brief": "Result of check20 test",
 "fields": {
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-red",
 "para_class": "",
 "para_text": "Form submission result: The checkbox is unticked.",
 "pre_line": true,
 "show": true,
 "show_error": "",
-"widget_class": "",
+"widget_class": "w3-section",
 "widget_style": ""
 }
 }
@@ -5958,7 +6190,7 @@ false,
 "button_text": "Set checked (JSON)",
 "button_wait_text": "Please wait...",
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-button w3-block w3-theme-action",
 "get_field1": "",
 "get_field2": "",
 "hide": false,
@@ -5966,7 +6198,7 @@ false,
 "link_ident": "no_javascript",
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton",
+"widget_class": "w3-button w3-block w3-theme-d4",
 "widget_style": ""
 }
 }
@@ -6016,7 +6248,7 @@ false,
 "button_text": "Set unchecked (JSON)",
 "button_wait_text": "Please wait...",
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-button w3-block w3-theme-action",
 "get_field1": "",
 "get_field2": "",
 "hide": false,
@@ -6024,7 +6256,7 @@ false,
 "link_ident": "no_javascript",
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton",
+"widget_class": "w3-button w3-block w3-theme-d4",
 "widget_style": ""
 }
 }
@@ -6373,6 +6605,19 @@ false,
 "ClosedPart",
 {
 "tag_name": "link",
+"brief": "css link to w3_theme_ski",
+"show": true,
+"attribs": {
+"href": "{w3_theme_ski}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
 "brief": "css link to ski_css",
 "show": true,
 "attribs": {
@@ -6539,7 +6784,7 @@ false,
 "fields": {
 "button_text": "HTML Error",
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-button w3-block w3-theme-action",
 "force_ident": false,
 "get_field1": "",
 "get_field2": "",
@@ -6548,7 +6793,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton",
+"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
 "widget_style": ""
 }
 }
@@ -6577,7 +6822,7 @@ false,
 "fields": {
 "button_text": "Default Message",
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-button w3-block w3-theme-action",
 "force_ident": false,
 "get_field1": "",
 "get_field2": "",
@@ -6586,7 +6831,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton",
+"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
 "widget_style": ""
 }
 }
@@ -6616,7 +6861,7 @@ false,
 "button_text": "JSON Error",
 "button_wait_text": "Please wait...",
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-button w3-block w3-theme-action",
 "get_field1": "",
 "get_field2": "",
 "hide": false,
@@ -6624,7 +6869,7 @@ false,
 "link_ident": "no_javascript",
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton",
+"widget_class": "w3-button w3-block w3-theme-d4",
 "widget_style": ""
 }
 }
@@ -6654,7 +6899,7 @@ false,
 "button_text": "Default Message",
 "button_wait_text": "Please wait...",
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-button w3-block w3-theme-action",
 "get_field1": "",
 "get_field2": "",
 "hide": false,
@@ -6662,7 +6907,7 @@ false,
 "link_ident": "no_javascript",
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton",
+"widget_class": "w3-button w3-block w3-theme-d4",
 "widget_style": ""
 }
 }
@@ -6692,7 +6937,7 @@ false,
 "button_text": "JSON Clear",
 "button_wait_text": "Please wait...",
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-button w3-block w3-theme-action",
 "get_field1": "",
 "get_field2": "",
 "hide": false,
@@ -6700,7 +6945,7 @@ false,
 "link_ident": "no_javascript",
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton",
+"widget_class": "w3-button w3-block w3-theme-d4",
 "widget_style": ""
 }
 }
@@ -6729,20 +6974,20 @@ false,
 "fields": {
 "action": "errordiv_test6",
 "action_json": "",
-"button_class": "",
+"button_class": "w3-button w3-theme-d4 w3-margin-left",
 "button_text": "Submit",
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-panel w3-red",
 "hidden_field1": "",
 "hidden_field2": "",
 "hidden_field3": "",
 "hidden_field4": "",
 "hide": false,
-"input_accepted_class": "",
-"input_class": "",
-"input_errored_class": "",
+"input_accepted_class": "ski_input_accepted",
+"input_class": "ski_input",
+"input_errored_class": "ski_input_errored",
 "input_text": "",
-"inputdiv_class": "",
+"inputdiv_class": "w3-section",
 "label": "Send text string:",
 "label_class": "ski_left_label",
 "maxlength": "",
@@ -6756,7 +7001,7 @@ false,
 "size": "",
 "title": "",
 "type": "text",
-"widget_class": "",
+"widget_class": "w3-section",
 "widget_style": ""
 },
 "validators": {
@@ -6872,6 +7117,19 @@ false,
 "ClosedPart",
 {
 "tag_name": "link",
+"brief": "css link to w3_theme_ski",
+"show": true,
+"attribs": {
+"href": "{w3_theme_ski}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
 "brief": "css link to ski_css",
 "show": true,
 "attribs": {
@@ -7038,7 +7296,7 @@ false,
 "fields": {
 "button_text": "HTML Error",
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-button w3-block w3-theme-action",
 "force_ident": false,
 "get_field1": "",
 "get_field2": "",
@@ -7047,7 +7305,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton",
+"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
 "widget_style": ""
 }
 }
@@ -7076,7 +7334,7 @@ false,
 "fields": {
 "button_text": "Default Message",
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-button w3-block w3-theme-action",
 "force_ident": false,
 "get_field1": "",
 "get_field2": "",
@@ -7085,7 +7343,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton",
+"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
 "widget_style": ""
 }
 }
@@ -7115,7 +7373,7 @@ false,
 "button_text": "JSON Error",
 "button_wait_text": "Please wait...",
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-button w3-block w3-theme-action",
 "get_field1": "",
 "get_field2": "",
 "hide": false,
@@ -7123,7 +7381,7 @@ false,
 "link_ident": "no_javascript",
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton",
+"widget_class": "w3-button w3-block w3-theme-d4",
 "widget_style": ""
 }
 }
@@ -7153,7 +7411,7 @@ false,
 "button_text": "Default Message",
 "button_wait_text": "Please wait...",
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-button w3-block w3-theme-action",
 "get_field1": "",
 "get_field2": "",
 "hide": false,
@@ -7161,7 +7419,7 @@ false,
 "link_ident": "no_javascript",
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton",
+"widget_class": "w3-button w3-block w3-theme-d4",
 "widget_style": ""
 }
 }
@@ -7191,7 +7449,7 @@ false,
 "button_text": "JSON Clear",
 "button_wait_text": "Please wait...",
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-button w3-block w3-theme-action",
 "get_field1": "",
 "get_field2": "",
 "hide": false,
@@ -7199,7 +7457,7 @@ false,
 "link_ident": "no_javascript",
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton",
+"widget_class": "w3-button w3-block w3-theme-d4",
 "widget_style": ""
 }
 }
@@ -7228,20 +7486,20 @@ false,
 "fields": {
 "action": "errordiv_test6",
 "action_json": "",
-"button_class": "",
+"button_class": "w3-button w3-theme-d4 w3-margin-left",
 "button_text": "Submit",
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-panel w3-red",
 "hidden_field1": "",
 "hidden_field2": "",
 "hidden_field3": "",
 "hidden_field4": "",
 "hide": false,
-"input_accepted_class": "",
-"input_class": "",
-"input_errored_class": "",
+"input_accepted_class": "ski_input_accepted",
+"input_class": "ski_input",
+"input_errored_class": "ski_input_errored",
 "input_text": "",
-"inputdiv_class": "",
+"inputdiv_class": "w3-section",
 "label": "Send text string:",
 "label_class": "ski_left_label",
 "maxlength": "",
@@ -7255,7 +7513,7 @@ false,
 "size": "",
 "title": "",
 "type": "text",
-"widget_class": "",
+"widget_class": "w3-section",
 "widget_style": ""
 },
 "validators": {
@@ -7534,6 +7792,19 @@ false,
 "ClosedPart",
 {
 "tag_name": "link",
+"brief": "css link to w3_theme_ski",
+"show": true,
+"attribs": {
+"href": "{w3_theme_ski}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
 "brief": "css link to ski_css",
 "show": true,
 "attribs": {
@@ -7671,15 +7942,15 @@ false,
 ]
 ],
 "even_class": "even",
-"header_class": "ski_table_header",
+"header_class": "w3-theme-d3",
 "hide": false,
 "json_ident": "table1button_test1",
 "link_ident": "no_javascript",
 "maximize_text_col": true,
-"odd_class": "odd",
+"odd_class": "w3-theme-d2",
 "show": true,
 "title1": "text in table",
-"widget_class": "table",
+"widget_class": "w3-table w3-theme-d1 w3-border w3-bordered",
 "widget_style": ""
 }
 }
@@ -7744,15 +8015,15 @@ false,
 ]
 ],
 "even_class": "even",
-"header_class": "ski_table_header",
+"header_class": "w3-theme-d3",
 "hide": false,
 "json_ident": "",
 "link_ident": "table1button_test2",
 "maximize_text_col": true,
-"odd_class": "odd",
+"odd_class": "w3-theme-d2",
 "show": true,
 "title1": "table 2 text",
-"widget_class": "table",
+"widget_class": "w3-table w3-theme-d1 w3-border w3-bordered",
 "widget_style": ""
 }
 }
@@ -7919,6 +8190,19 @@ false,
 "ClosedPart",
 {
 "tag_name": "link",
+"brief": "css link to w3_theme_ski",
+"show": true,
+"attribs": {
+"href": "{w3_theme_ski}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
 "brief": "css link to ski_css",
 "show": true,
 "attribs": {
@@ -8049,7 +8333,7 @@ false,
 "fields": {
 "button_text": "CheckBox1",
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-button w3-block w3-theme-action",
 "force_ident": false,
 "get_field1": "",
 "get_field2": "",
@@ -8058,7 +8342,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton",
+"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
 "widget_style": ""
 }
 }
@@ -8072,7 +8356,7 @@ false,
 "fields": {
 "button_text": "CheckBox2",
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-button w3-block w3-theme-action",
 "force_ident": false,
 "get_field1": "",
 "get_field2": "",
@@ -8081,7 +8365,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton",
+"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
 "widget_style": ""
 }
 }
@@ -8095,7 +8379,7 @@ false,
 "fields": {
 "button_text": "CheckedText",
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-button w3-block w3-theme-action",
 "force_ident": false,
 "get_field1": "",
 "get_field2": "",
@@ -8104,7 +8388,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton",
+"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
 "widget_style": ""
 }
 }
@@ -8186,6 +8470,19 @@ false,
 "show": true,
 "attribs": {
 "href": "{w3_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to w3_theme_ski",
+"show": true,
+"attribs": {
+"href": "{w3_theme_ski}",
 "rel": "stylesheet",
 "type": "text/css"
 }
@@ -8402,6 +8699,19 @@ false,
 "ClosedPart",
 {
 "tag_name": "link",
+"brief": "css link to w3_theme_ski",
+"show": true,
+"attribs": {
+"href": "{w3_theme_ski}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
 "brief": "css link to ski_css",
 "show": true,
 "attribs": {
@@ -8532,7 +8842,7 @@ false,
 "fields": {
 "button_text": "ErrorDiv",
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-button w3-block w3-theme-action",
 "force_ident": false,
 "get_field1": "",
 "get_field2": "",
@@ -8541,7 +8851,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton",
+"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
 "widget_style": ""
 }
 }
@@ -8555,7 +8865,7 @@ false,
 "fields": {
 "button_text": "ErrorPara",
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-button w3-block w3-theme-action",
 "force_ident": false,
 "get_field1": "",
 "get_field2": "",
@@ -8564,7 +8874,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton",
+"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
 "widget_style": ""
 }
 }
@@ -8578,7 +8888,7 @@ false,
 "fields": {
 "button_text": "ErrorClear1",
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-button w3-block w3-theme-action",
 "force_ident": false,
 "get_field1": "",
 "get_field2": "",
@@ -8587,7 +8897,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton",
+"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
 "widget_style": ""
 }
 }
@@ -8669,6 +8979,19 @@ false,
 "show": true,
 "attribs": {
 "href": "{w3_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to w3_theme_ski",
+"show": true,
+"attribs": {
+"href": "{w3_theme_ski}",
 "rel": "stylesheet",
 "type": "text/css"
 }
@@ -8885,6 +9208,19 @@ false,
 "ClosedPart",
 {
 "tag_name": "link",
+"brief": "css link to w3_theme_ski",
+"show": true,
+"attribs": {
+"href": "{w3_theme_ski}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
 "brief": "css link to ski_css",
 "show": true,
 "attribs": {
@@ -9092,6 +9428,19 @@ false,
 "ClosedPart",
 {
 "tag_name": "link",
+"brief": "css link to w3_theme_ski",
+"show": true,
+"attribs": {
+"href": "{w3_theme_ski}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
 "brief": "css link to ski_css",
 "show": true,
 "attribs": {
@@ -9222,7 +9571,7 @@ false,
 "fields": {
 "button_text": "Table1_Button",
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-button w3-block w3-theme-action",
 "force_ident": false,
 "get_field1": "",
 "get_field2": "",
@@ -9231,7 +9580,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton",
+"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
 "widget_style": ""
 }
 }
@@ -9313,6 +9662,19 @@ false,
 "show": true,
 "attribs": {
 "href": "{w3_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to w3_theme_ski",
+"show": true,
+"attribs": {
+"href": "{w3_theme_ski}",
 "rel": "stylesheet",
 "type": "text/css"
 }
@@ -9452,7 +9814,7 @@ false,
 "fields": {
 "button_text": "checkbox",
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-button w3-block w3-theme-action",
 "force_ident": false,
 "get_field1": "",
 "get_field2": "",
@@ -9461,7 +9823,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton",
+"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
 "widget_style": ""
 }
 }
@@ -9475,7 +9837,7 @@ false,
 "fields": {
 "button_text": "confirm",
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-button w3-block w3-theme-action",
 "force_ident": false,
 "get_field1": "",
 "get_field2": "",
@@ -9484,7 +9846,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton",
+"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
 "widget_style": ""
 }
 }
@@ -9498,7 +9860,7 @@ false,
 "fields": {
 "button_text": "debug_tools",
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-button w3-block w3-theme-action",
 "force_ident": false,
 "get_field1": "",
 "get_field2": "",
@@ -9507,7 +9869,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton",
+"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
 "widget_style": ""
 }
 }
@@ -9521,7 +9883,7 @@ false,
 "fields": {
 "button_text": "dropdown",
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-button w3-block w3-theme-action",
 "force_ident": false,
 "get_field1": "",
 "get_field2": "",
@@ -9530,7 +9892,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton",
+"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
 "widget_style": ""
 }
 }
@@ -9544,7 +9906,7 @@ false,
 "fields": {
 "button_text": "error_messages",
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-button w3-block w3-theme-action",
 "force_ident": false,
 "get_field1": "",
 "get_field2": "",
@@ -9553,7 +9915,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton",
+"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
 "widget_style": ""
 }
 }
@@ -9567,7 +9929,7 @@ false,
 "fields": {
 "button_text": "footers",
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-button w3-block w3-theme-action",
 "force_ident": false,
 "get_field1": "",
 "get_field2": "",
@@ -9576,7 +9938,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton",
+"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
 "widget_style": ""
 }
 }
@@ -9590,7 +9952,7 @@ false,
 "fields": {
 "button_text": "headers",
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-button w3-block w3-theme-action",
 "force_ident": false,
 "get_field1": "",
 "get_field2": "",
@@ -9599,7 +9961,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton",
+"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
 "widget_style": ""
 }
 }
@@ -9613,7 +9975,7 @@ false,
 "fields": {
 "button_text": "info",
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-button w3-block w3-theme-action",
 "force_ident": false,
 "get_field1": "",
 "get_field2": "",
@@ -9622,7 +9984,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton",
+"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
 "widget_style": ""
 }
 }
@@ -9636,7 +9998,7 @@ false,
 "fields": {
 "button_text": "inputforms",
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-button w3-block w3-theme-action",
 "force_ident": false,
 "get_field1": "",
 "get_field2": "",
@@ -9645,7 +10007,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton",
+"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
 "widget_style": ""
 }
 }
@@ -9659,7 +10021,7 @@ false,
 "fields": {
 "button_text": "inputtables",
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-button w3-block w3-theme-action",
 "force_ident": false,
 "get_field1": "",
 "get_field2": "",
@@ -9668,7 +10030,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton",
+"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
 "widget_style": ""
 }
 }
@@ -9682,7 +10044,7 @@ false,
 "fields": {
 "button_text": "inputtext",
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-button w3-block w3-theme-action",
 "force_ident": false,
 "get_field1": "",
 "get_field2": "",
@@ -9691,7 +10053,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton",
+"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
 "widget_style": ""
 }
 }
@@ -9705,7 +10067,7 @@ false,
 "fields": {
 "button_text": "links",
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-button w3-block w3-theme-action",
 "force_ident": false,
 "get_field1": "",
 "get_field2": "",
@@ -9714,7 +10076,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton",
+"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
 "widget_style": ""
 }
 }
@@ -9728,7 +10090,7 @@ false,
 "fields": {
 "button_text": "paras",
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-button w3-block w3-theme-action",
 "force_ident": false,
 "get_field1": "",
 "get_field2": "",
@@ -9737,7 +10099,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton",
+"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
 "widget_style": ""
 }
 }
@@ -9751,7 +10113,7 @@ false,
 "fields": {
 "button_text": "radio",
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-button w3-block w3-theme-action",
 "force_ident": false,
 "get_field1": "",
 "get_field2": "",
@@ -9760,7 +10122,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton",
+"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
 "widget_style": ""
 }
 }
@@ -9774,7 +10136,7 @@ false,
 "fields": {
 "button_text": "svgarrows",
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-button w3-block w3-theme-action",
 "force_ident": false,
 "get_field1": "",
 "get_field2": "",
@@ -9783,7 +10145,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton",
+"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
 "widget_style": ""
 }
 }
@@ -9797,7 +10159,7 @@ false,
 "fields": {
 "button_text": "svgbasics",
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-button w3-block w3-theme-action",
 "force_ident": false,
 "get_field1": "",
 "get_field2": "",
@@ -9806,7 +10168,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton",
+"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
 "widget_style": ""
 }
 }
@@ -9820,7 +10182,7 @@ false,
 "fields": {
 "button_text": "tables",
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-button w3-block w3-theme-action",
 "force_ident": false,
 "get_field1": "",
 "get_field2": "",
@@ -9829,7 +10191,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton",
+"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
 "widget_style": ""
 }
 }
@@ -9843,7 +10205,7 @@ false,
 "fields": {
 "button_text": "textarea",
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-button w3-block w3-theme-action",
 "force_ident": false,
 "get_field1": "",
 "get_field2": "",
@@ -9852,7 +10214,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton",
+"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
 "widget_style": ""
 }
 }
@@ -9866,7 +10228,7 @@ false,
 "fields": {
 "button_text": "upload",
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-button w3-block w3-theme-action",
 "force_ident": false,
 "get_field1": "",
 "get_field2": "",
@@ -9875,7 +10237,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton",
+"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
 "widget_style": ""
 }
 }
@@ -9957,6 +10319,19 @@ false,
 "show": true,
 "attribs": {
 "href": "{w3_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to w3_theme_ski",
+"show": true,
+"attribs": {
+"href": "{w3_theme_ski}",
 "rel": "stylesheet",
 "type": "text/css"
 }
@@ -10096,7 +10471,7 @@ false,
 "fields": {
 "button_text": "ParaText",
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-button w3-block w3-theme-action",
 "force_ident": false,
 "get_field1": "",
 "get_field2": "",
@@ -10105,7 +10480,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "ski_midbutton",
+"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
 "widget_style": ""
 }
 }
@@ -10213,6 +10588,19 @@ false,
 "show": true,
 "attribs": {
 "href": "{w3_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to w3_theme_ski",
+"show": true,
+"attribs": {
+"href": "{w3_theme_ski}",
 "rel": "stylesheet",
 "type": "text/css"
 }

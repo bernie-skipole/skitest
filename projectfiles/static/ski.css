@@ -1,45 +1,115 @@
-@charset "UTF-8";
+/**************************
 
-.ski_container {
-margin-bottom : 10px;
-margin-left : auto;
-margin-right : auto;
-margin-top : 10px;
-max-width : 1250px;
-min-width : 400px;
-position : relative;
-width : 90%;}
+Ident:skiadmin,20006
+
+This CSS page is depracated and
+will eventually be removed
+during skiadmin refactoring
+
+**************************/
+
+
+.ski_input {
+padding:8px;
+border:none;
+border-bottom:1px solid #ccc;
+}
 
 .ski_centre {
 float : right;
 margin-left : 1%;
 width : 78%;}
 
-.ski_left {
-background : #69b585;
-float : left;
-width : 20%;}
+.ski_no_bullets {
+list-style-type : none;}
 
-.ski_leftbutton {
--moz-border-radius : 8;
--webkit-border-radius : 8;
-background : green;
-border : solid blue 2px;
-border-radius : 8px;
-color : white;
-display : block;
+.ski_centre p {
+margin-bottom : 4px;
+margin-top : 4px;}
+
+.ski_palette {
 margin-bottom : 10px;
-margin-left : 5%;
-margin-right : 5%;
+margin-left : auto;
+margin-right : auto;
 margin-top : 10px;
-padding : 4px 6px 6px 4px;
 text-align : center;
-text-decoration : none;}
+width : 30%;}
 
-.ski_leftbutton:hover {
-background : blue;
-border : solid black 2px;
-color : white;}
+
+.ski_mid_button {
+margin-bottom : 10px;
+margin-left : 30%;
+margin-right : auto;
+margin-top : 10px;
+width : 30%;}
+
+.ski_top_marg10px {
+margin-top : 10px;}
+
+.ski_wide_80 {
+margin-left : auto;
+margin-right : auto;
+width : 80%;}
+
+.ski_wide_90 {
+margin-left : auto;
+margin-right : auto;
+width : 90%;}
+
+.ski_errorcol {
+color : #FF0000;
+padding : 3px 6px 3px 25%;}
+
+.ski_okcol {
+color : #00FF00;}
+
+.ski_padding10 {
+padding : 10px;}
+
+.ski_padding_top_20 {
+padding-top : 20px;}
+
+.ski_floatright {
+float : right;}
+
+.ski_floatleft {
+float : left;}
+
+.ski_top1 {
+margin-top : 1%;}
+
+.ski_top2 {
+margin-top : 2%;}
+
+.ski_top4 {
+margin-top : 4%;}
+
+.ski_inline {
+display : inline-block;}
+
+.ski_table {
+border-style : solid;
+border-width : 1px;
+width : 100%;}
+
+.ski_widetable {
+border-collapse : collapse;
+border-spacing : 0;
+margin-bottom : 10px;
+margin-top : 10px;
+width : 100%;}
+
+.ski_table10 {
+border-collapse : collapse;
+border-spacing : 0;
+left : 10%;
+position : relative;}
+
+.ski_table20 {
+border-collapse : collapse;
+border-spacing : 0;
+left : 20%;
+position : relative;}
 
 .ski_left_label {
 display : inline-block;
@@ -48,109 +118,184 @@ margin-right : 1%;
 padding-bottom : 3px;
 padding-top : 3px;
 text-align : right;
-vertical-align : top;
 width : 29%;}
 
-.ski_errorcol {
-color : red;}
+.ski_right_label {
+display : inline-block;
+font-weight : bold;
+margin-left : 1%;
+padding-bottom : 3px;
+padding-top : 3px;
+text-align : left;}
 
-.ski_no_bullets {
-list-style-type : none;}
+.ski_left_marg_30_percent {
+margin-left : 30%;}
 
-.ski_inline {
-display : inline-block;}
-
-.ski_input_errored {
-border : 2px solid red;}
-
-.ski_table {
-border-style : solid;
-border-width : 1px;
+.ski_top_bot_marg_10px {
 margin-bottom : 10px;
-margin-left : 10%;
-margin-right : 10%;
-margin-top : 10px;
-width : auto;}
+margin-top : 10px;}
 
-.ski_odd {
-background-color : #9dbd50;
-margin : 2px;
-padding : 2px;}
+.ski_top_bot_pad_20px {
+padding-bottom : 20px;
+padding-top : 20px;}
 
-.ski_even {
-background-color : #9dbd70;
-margin : 2px;
-padding : 2px;}
-
-.ski_bottom10 {
-margin-bottom : 10px;}
-
-.ski_bottom20 {
-margin-bottom : 20px;}
-
-.ski_table_button {
-background : green;
-border-color : #9dbd7a;
-border-style : solid;
-border-width : 1px;
-color : #FFFFFF;
-padding : 1px 1px 1px 1px;
-text-decoration : none;}
-
-.ski_table_button:hover {
-background : #11216a;}
-
-.ski_table_button:visited {
-color : #FFFFFF;}
+.ski_table_even {
+background-color : #b3b3b3;}
 
 .ski_table_header {
-background-color : #69b585;}
+background-color : #a2a2a2;}
 
-@media (max-width: 960px) {
-    .ski_midbutton {
-    -moz-border-radius : 8;
-    -webkit-border-radius : 8;
-    background : green;
-    border : solid blue 2px;
-    border-radius : 8px;
-    color : white;
-    display : block;
-    margin-bottom : 10px;
-    margin-left : 25%;
-    margin-right : auto;
-    margin-top : 10px;
-    padding : 4px 6px 6px 4px;
-    text-align : center;
-    text-decoration : none;
-    width : 50%;}
+.ski_table_odd {
+background-color : #a9a9a9;}
 
-    .ski_midbutton:hover {
-    background : blue;
-    border : solid black 2px;
-    color : white;}
-}
+.ski_linkbox {
+background-color : #a2a2a2;
+border-color : #000000;
+border-style : solid;
+border-width : 2px;
+color : #000000;
+display : inline-block;
+margin : 0px;
+padding : 4px;
+vertical-align : top;}
 
-@media (min-width: 961px) {
-    .ski_midbutton {
-    -moz-border-radius : 8;
-    -webkit-border-radius : 8;
-    background : green;
-    border : solid blue 2px;
-    border-radius : 8px;
-    color : white;
-    display : block;
-    margin-bottom : 10px;
-    margin-left : 35%;
-    margin-right : auto;
-    margin-top : 10px;
-    padding : 4px 6px 6px 4px;
-    text-align : center;
-    text-decoration : none;
-    width : 30%;}
 
-    .ski_midbutton:hover {
-    background : blue;
-    border : solid black 2px;
-    color : white;}
-}
+a.ski_shrinkbutton {
+-moz-border-radius : 8;
+-webkit-border-radius : 8;
+background : #a2a2a2;
+border : solid #000000 2px;
+border-radius : 8px;
+color : #000000;
+padding : 4px 6px 6px 4px;
+text-decoration : none;}
+
+a.ski_shrinkbutton:hover {
+background : #959595;
+border : solid #000000 2px;
+color : #000000;
+text-decoration : none;}
+
+a.ski_shrinkbutton:visited {
+color : #000000;}
+
+a.ski_errorshrinkbutton:hover {
+background : #AA0000;
+border : solid #000000 2px;
+color : #000000;
+text-decoration : none;}
+
+.ski_hidden {
+display : none;}
+
+.ski_table_button {
+-moz-border-radius : 8;
+-webkit-border-radius : 8;
+background : #a2a2a2;
+border : solid #000000 2px;
+border-radius : 8px;
+color : #000000;
+padding : 4px 6px 6px 4px;
+text-align : center;
+width : 100%;}
+
+.ski_table_button:hover {
+background : #959595;
+border : solid #000000 2px;
+color : #000000;}
+
+.ski_table_button:visited {
+color : #000000;}
+
+.ski_submit_button {
+-moz-border-radius : 8;
+-webkit-border-radius : 8;
+background : #a2a2a2;
+border : solid #000000 2px;
+border-radius : 8px;
+color : #000000;
+padding : 4px 6px 6px 4px;
+text-align : center;}
+
+.ski_submit_button:hover {
+background : #959595;
+border : solid #000000 2px;
+color : #000000;}
+
+.ski_submit_button:visited {
+color : #000000;}
+
+
+input[type=text].ski_input_accepted {
+box-shadow : 0 0 0 2px green;}
+
+input[type=text].ski_input_errored {
+box-shadow : 0 0 0 2px red;}
+
+.ski_confirm {
+background-color : #b1b1b1;
+border : solid 2px #000000;
+left : 30%;
+padding : 10px;
+position : fixed;
+top : 15%;
+width : 40%;
+z-index : 2000;}
+
+.ski_confirm_butt1 {
+-moz-border-radius : 8;
+-webkit-border-radius : 8;
+background : #a2a2a2;
+border : solid #000000 2px;
+border-radius : 8px;
+color : #000000;
+display : block;
+padding : 4px 6px 6px 4px;
+text-align : center;
+text-decoration : none;
+width : 30%;}
+
+.ski_confirm_butt1:hover {
+background : #959595;
+border : solid #000000 2px;
+color : #000000;}
+
+.ski_confirm_butt2 {
+-moz-border-radius : 8;
+-webkit-border-radius : 8;
+background : #a2a2a2;
+border : solid #000000 2px;
+border-radius : 8px;
+color : #000000;
+display : block;
+padding : 4px 6px 6px 4px;
+position : absolute;
+right : 0px;
+text-align : center;
+text-decoration : none;
+top : 0px;
+width : 30%;}
+
+.ski_confirm_butt2:hover {
+background : #959595;
+border : solid #000000 2px;
+color : #000000;}
+
+.ski_confirm_buttondiv {
+position : relative;
+width : 100%;}
+
+.ski_confirm_para {
+margin-bottom : 10px;
+text-align : center;}
+
+.ski__confirm_background {
+background : rgba(0,0,0,0.5);
+bottom : 0;
+left : 0;
+opacity : 1;
+position : fixed;
+right : 0;
+top : 0;
+z-index : 1999;}
 
