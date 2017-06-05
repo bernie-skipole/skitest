@@ -141,7 +141,11 @@ def end_call(page_ident, page_type, call_data, page_data, proj_data, lang):
         page_data['header', 'headpara', 'para_text']  = _HEADER_TEXT[page_num]
     if page_num in _NAV_BUTTONS:
         page_data['navigation', 'navbuttons', 'nav_links'] = _NAV_BUTTONS[page_num]
+    if 'status' in call_data:
+        page_data['foot','foot_status','footer_text'] = call_data['status']
+
     # set secure1 cookie
     if 'session' in call_data:
         return call_data['session']
+
 

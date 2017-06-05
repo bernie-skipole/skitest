@@ -1,13 +1,3 @@
-/**************************
-
-Ident:skiadmin,20006
-
-This CSS page is depracated and
-will eventually be removed
-during skiadmin refactoring
-
-**************************/
-
 
 .ski_input {
 padding:8px;
@@ -15,26 +5,8 @@ border:none;
 border-bottom:1px solid #ccc;
 }
 
-.ski_centre {
-float : right;
-margin-left : 1%;
-width : 78%;}
-
 .ski_no_bullets {
 list-style-type : none;}
-
-.ski_centre p {
-margin-bottom : 4px;
-margin-top : 4px;}
-
-.ski_palette {
-margin-bottom : 10px;
-margin-left : auto;
-margin-right : auto;
-margin-top : 10px;
-text-align : center;
-width : 30%;}
-
 
 .ski_mid_button {
 margin-bottom : 10px;
@@ -51,65 +23,8 @@ margin-left : auto;
 margin-right : auto;
 width : 80%;}
 
-.ski_wide_90 {
-margin-left : auto;
-margin-right : auto;
-width : 90%;}
-
-.ski_errorcol {
-color : #FF0000;
-padding : 3px 6px 3px 25%;}
-
-.ski_okcol {
-color : #00FF00;}
-
-.ski_padding10 {
-padding : 10px;}
-
-.ski_padding_top_20 {
-padding-top : 20px;}
-
-.ski_floatright {
-float : right;}
-
-.ski_floatleft {
-float : left;}
-
-.ski_top1 {
-margin-top : 1%;}
-
-.ski_top2 {
-margin-top : 2%;}
-
-.ski_top4 {
-margin-top : 4%;}
-
 .ski_inline {
 display : inline-block;}
-
-.ski_table {
-border-style : solid;
-border-width : 1px;
-width : 100%;}
-
-.ski_widetable {
-border-collapse : collapse;
-border-spacing : 0;
-margin-bottom : 10px;
-margin-top : 10px;
-width : 100%;}
-
-.ski_table10 {
-border-collapse : collapse;
-border-spacing : 0;
-left : 10%;
-position : relative;}
-
-.ski_table20 {
-border-collapse : collapse;
-border-spacing : 0;
-left : 20%;
-position : relative;}
 
 .ski_left_label {
 display : inline-block;
@@ -134,97 +49,6 @@ margin-left : 30%;}
 .ski_top_bot_marg_10px {
 margin-bottom : 10px;
 margin-top : 10px;}
-
-.ski_top_bot_pad_20px {
-padding-bottom : 20px;
-padding-top : 20px;}
-
-.ski_table_even {
-background-color : #b3b3b3;}
-
-.ski_table_header {
-background-color : #a2a2a2;}
-
-.ski_table_odd {
-background-color : #a9a9a9;}
-
-.ski_linkbox {
-background-color : #a2a2a2;
-border-color : #000000;
-border-style : solid;
-border-width : 2px;
-color : #000000;
-display : inline-block;
-margin : 0px;
-padding : 4px;
-vertical-align : top;}
-
-
-a.ski_shrinkbutton {
--moz-border-radius : 8;
--webkit-border-radius : 8;
-background : #a2a2a2;
-border : solid #000000 2px;
-border-radius : 8px;
-color : #000000;
-padding : 4px 6px 6px 4px;
-text-decoration : none;}
-
-a.ski_shrinkbutton:hover {
-background : #959595;
-border : solid #000000 2px;
-color : #000000;
-text-decoration : none;}
-
-a.ski_shrinkbutton:visited {
-color : #000000;}
-
-a.ski_errorshrinkbutton:hover {
-background : #AA0000;
-border : solid #000000 2px;
-color : #000000;
-text-decoration : none;}
-
-.ski_hidden {
-display : none;}
-
-.ski_table_button {
--moz-border-radius : 8;
--webkit-border-radius : 8;
-background : #a2a2a2;
-border : solid #000000 2px;
-border-radius : 8px;
-color : #000000;
-padding : 4px 6px 6px 4px;
-text-align : center;
-width : 100%;}
-
-.ski_table_button:hover {
-background : #959595;
-border : solid #000000 2px;
-color : #000000;}
-
-.ski_table_button:visited {
-color : #000000;}
-
-.ski_submit_button {
--moz-border-radius : 8;
--webkit-border-radius : 8;
-background : #a2a2a2;
-border : solid #000000 2px;
-border-radius : 8px;
-color : #000000;
-padding : 4px 6px 6px 4px;
-text-align : center;}
-
-.ski_submit_button:hover {
-background : #959595;
-border : solid #000000 2px;
-color : #000000;}
-
-.ski_submit_button:visited {
-color : #000000;}
-
 
 input[type=text].ski_input_accepted {
 box-shadow : 0 0 0 2px green;}
@@ -288,14 +112,4 @@ width : 100%;}
 .ski_confirm_para {
 margin-bottom : 10px;
 text-align : center;}
-
-.ski__confirm_background {
-background : rgba(0,0,0,0.5);
-bottom : 0;
-left : 0;
-opacity : 1;
-position : fixed;
-right : 0;
-top : 0;
-z-index : 1999;}
 

@@ -82,7 +82,10 @@
 "input_accepted_class": "ski_input_accepted",
 "input_errored_class": "ski_input_errored",
 "error_class": "w3-panel w3-red",
-"outer_class": "w3-section"
+"outer_class": "w3-section",
+"widget_class": "w3-section",
+"buttondiv_class": "w3-section",
+"inputdiv_class": "w3-section"
 },
 "TextInput1": {
 "widget_class": "ski_input"
@@ -124,7 +127,17 @@
 },
 "ButtonLink1": {
 "error_class": "w3-button w3-block w3-theme-action",
-"widget_class": "w3-button w3-block w3-theme-d4 w3-margin"
+"widget_class": "w3-button w3-block w3-theme-d4"
+},
+"LinkTextBlockTable1": {
+"widget_class": "w3-table w3-theme-d1 w3-border w3-bordered",
+"odd_class": "w3-theme-d2",
+"header_class": "w3-theme-d3"
+},
+"LinkTextBlockTable2": {
+"widget_class": "w3-table w3-theme-d1 w3-border w3-bordered",
+"header_class": "w3-theme-d3",
+"odd_class": "w3-theme-d2"
 }
 },
 "inputtables": {
@@ -148,6 +161,9 @@
 },
 "SubmitButton2": {
 "widget_class": "w3-button w3-theme-d4 w3-margin-left"
+},
+"SubmitButton1": {
+"widget_class": "w3-button w3-theme-d4"
 }
 },
 "textarea": {
@@ -171,6 +187,13 @@
 "submitinputdiv_class": "w3-section",
 "error_class": "w3-panel w3-red",
 "submitbutton_class": "w3-button w3-theme-d4",
+"filebutton_class": "w3-button w3-theme-d4",
+"widget_class": "w3-section"
+},
+"UploadFile1": {
+"error_class": "w3-panel w3-red",
+"widget_class": "w3-section",
+"label_class": "ski_left_label",
 "filebutton_class": "w3-button w3-theme-d4"
 }
 },
@@ -201,6 +224,28 @@
 "CheckInputs": {
 "checkbox_class": "w3-check",
 "error_class": "w3-panel w3-red"
+}
+},
+"tables": {
+"TextBlockTable2": {
+"header_class": "w3-theme-d3",
+"odd_class": "w3-theme-d2",
+"widget_class": "w3-table w3-theme-d1 w3-border w3-bordered"
+},
+"ButtonTextBlockTable1": {
+"button_class": "w3-button w3-padding-small w3-small w3-theme-dark",
+"error_class": "w3-panel w3-red",
+"header_class": "w3-theme-d3",
+"odd_class": "w3-theme-d2",
+"table_class": "w3-table w3-theme-d1 w3-border w3-bordered",
+"widget_class": "w3-section"
+}
+},
+"debug_tools": {
+"ShowCallData": {
+"error_class": "w3-panel w3-red",
+"para_class": "w3-section",
+"widget_class": "w3-section"
 }
 }
 },
