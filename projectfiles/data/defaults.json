@@ -248,41 +248,5 @@
 "widget_class": "w3-section"
 }
 }
-},
-"colours": {
-"w3_hover_theme_hover_color": "#ffffff",
-"w3_theme_l3_color": "#254a1c",
-"w3_theme_l3_background_color": "#fbf7fc",
-"w3_text_theme_color": "#3f7bc0",
-"w3_theme_color": "#ffffff",
-"w3_theme_d1_color": "#ffffff",
-"w3_border_theme_color": "#3f7bc0",
-"w3_theme_dark_background_color": "#471c57",
-"w3_theme_l5_color": "#000000",
-"w3_hover_text_theme_color": "#afc03f",
-"w3_theme_d4_background_color": "#1c0b22",
-"w3_theme_d5_color": "#bee7b1",
-"w3_theme_l1_color": "#274d19",
-"w3_theme_d4_color": "#c0e6b2",
-"w3_theme_action_background_color": "#240e2c",
-"w3_theme_d1_background_color": "#5f2673",
-"w3_theme_dark_color": "#ffffff",
-"w3_theme_d2_background_color": "#3f194d",
-"w3_theme_d5_background_color": "#130717",
-"w3_hover_border_theme_hover_color": "#afc03f",
-"w3_theme_background_color": "#8e39ad",
-"w3_theme_l5_background_color": "#fffeff",
-"w3_theme_l2_color": "#274c1a",
-"w3_hover_theme_hover_background_color": "#c03f48",
-"w3_theme_d3_background_color": "#2a1133",
-"w3_theme_light_background_color": "#c996dc",
-"w3_theme_d2_color": "#c0e6b2",
-"w3_theme_light_color": "#000000",
-"w3_theme_l4_background_color": "#fefcfe",
-"w3_theme_l1_background_color": "#dbb9e8",
-"w3_theme_d3_color": "#c0e6b2",
-"w3_theme_l2_background_color": "#f3e8f7",
-"w3_theme_action_color": "#c0e6b2",
-"w3_theme_l4_color": "#000000"
 }
 }

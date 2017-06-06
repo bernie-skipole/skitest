@@ -146,7 +146,7 @@
 "show": true,
 "hide_if_empty": false,
 "attribs": {
-"class": "w3-container w3-teal"
+"class": "w3-container w3-theme-d1"
 },
 "parts": [
 [
@@ -395,22 +395,6 @@ false,
 "rel": "stylesheet",
 "type": "text/css"
 }
-}
-],
-[
-"Comment",
-{
-"text": "HTML5shiv - included as a TextBlock"
-}
-],
-[
-"TextBlock",
-{
-"textref": "html5shiv",
-"failmessage": "failed to read textblocks database with ref html5shiv",
-"show": true,
-"escape": false,
-"linebreaks": false
 }
 ],
 [
@@ -919,22 +903,6 @@ false,
 }
 ],
 [
-"Comment",
-{
-"text": "HTML5shiv - included as a TextBlock"
-}
-],
-[
-"TextBlock",
-{
-"textref": "html5shiv",
-"failmessage": "failed to read textblocks database with ref html5shiv",
-"show": true,
-"escape": false,
-"linebreaks": false
-}
-],
-[
 "Part",
 {
 "tag_name": "script",
@@ -1216,22 +1184,6 @@ false,
 }
 ],
 [
-"Comment",
-{
-"text": "HTML5shiv - included as a TextBlock"
-}
-],
-[
-"TextBlock",
-{
-"textref": "html5shiv",
-"failmessage": "failed to read textblocks database with ref html5shiv",
-"show": true,
-"escape": false,
-"linebreaks": false
-}
-],
-[
 "Part",
 {
 "tag_name": "script",
@@ -1491,22 +1443,6 @@ false,
 "rel": "stylesheet",
 "type": "text/css"
 }
-}
-],
-[
-"Comment",
-{
-"text": "HTML5shiv - included as a TextBlock"
-}
-],
-[
-"TextBlock",
-{
-"textref": "html5shiv",
-"failmessage": "failed to read textblocks database with ref html5shiv",
-"show": true,
-"escape": false,
-"linebreaks": false
 }
 ],
 [
@@ -2807,22 +2743,6 @@ false,
 }
 ],
 [
-"Comment",
-{
-"text": "HTML5shiv - included as a TextBlock"
-}
-],
-[
-"TextBlock",
-{
-"textref": "html5shiv",
-"failmessage": "failed to read textblocks database with ref html5shiv",
-"show": true,
-"escape": false,
-"linebreaks": false
-}
-],
-[
 "Part",
 {
 "tag_name": "script",
@@ -2858,6 +2778,9 @@ false,
 "brief": "The body section of the page",
 "show": true,
 "hide_if_empty": false,
+"attribs": {
+"class": "w3-theme"
+},
 "parts": [
 [
 "Part",
@@ -2867,7 +2790,7 @@ false,
 "show": true,
 "hide_if_empty": false,
 "attribs": {
-"class": "ski_container"
+"class": "w3-container"
 },
 "parts": [
 [
@@ -2894,7 +2817,8 @@ false,
 "show": true,
 "hide_if_empty": false,
 "attribs": {
-"class": "ski_centre"
+"class": "w3-section",
+"style": "margin-left:25%"
 },
 "parts": [
 [
@@ -3619,22 +3543,6 @@ false,
 }
 ],
 [
-"Comment",
-{
-"text": "HTML5shiv - included as a TextBlock"
-}
-],
-[
-"TextBlock",
-{
-"textref": "html5shiv",
-"failmessage": "failed to read textblocks database with ref html5shiv",
-"show": true,
-"escape": false,
-"linebreaks": false
-}
-],
-[
 "Part",
 {
 "tag_name": "script",
@@ -3671,7 +3579,7 @@ false,
 "show": true,
 "hide_if_empty": false,
 "attribs": {
-"class": "w3-theme-d1"
+"class": "w3-theme"
 },
 "parts": [
 [
@@ -4015,22 +3923,6 @@ false,
 }
 ],
 [
-"Comment",
-{
-"text": "HTML5shiv - included as a TextBlock"
-}
-],
-[
-"TextBlock",
-{
-"textref": "html5shiv",
-"failmessage": "failed to read textblocks database with ref html5shiv",
-"show": true,
-"escape": false,
-"linebreaks": false
-}
-],
-[
 "Part",
 {
 "tag_name": "script",
@@ -4184,22 +4076,6 @@ false,
 "rel": "stylesheet",
 "type": "text/css"
 }
-}
-],
-[
-"Comment",
-{
-"text": "HTML5shiv - included as a TextBlock"
-}
-],
-[
-"TextBlock",
-{
-"textref": "html5shiv",
-"failmessage": "failed to read textblocks database with ref html5shiv",
-"show": true,
-"escape": false,
-"linebreaks": false
 }
 ],
 [
@@ -4423,22 +4299,6 @@ false,
 "rel": "stylesheet",
 "type": "text/css"
 }
-}
-],
-[
-"Comment",
-{
-"text": "HTML5shiv - included as a TextBlock"
-}
-],
-[
-"TextBlock",
-{
-"textref": "html5shiv",
-"failmessage": "failed to read textblocks database with ref html5shiv",
-"show": true,
-"escape": false,
-"linebreaks": false
 }
 ],
 [
@@ -4677,22 +4537,6 @@ false,
 "rel": "stylesheet",
 "type": "text/css"
 }
-}
-],
-[
-"Comment",
-{
-"text": "HTML5shiv - included as a TextBlock"
-}
-],
-[
-"TextBlock",
-{
-"textref": "html5shiv",
-"failmessage": "failed to read textblocks database with ref html5shiv",
-"show": true,
-"escape": false,
-"linebreaks": false
 }
 ],
 [
@@ -4936,22 +4780,6 @@ false,
 }
 ],
 [
-"Comment",
-{
-"text": "HTML5shiv - included as a TextBlock"
-}
-],
-[
-"TextBlock",
-{
-"textref": "html5shiv",
-"failmessage": "failed to read textblocks database with ref html5shiv",
-"show": true,
-"escape": false,
-"linebreaks": false
-}
-],
-[
 "Part",
 {
 "tag_name": "script",
@@ -4988,7 +4816,7 @@ false,
 "show": true,
 "hide_if_empty": false,
 "attribs": {
-"class": "w3-theme-d1"
+"class": "w3-theme"
 },
 "parts": [
 [
@@ -5552,22 +5380,6 @@ false,
 }
 ],
 [
-"Comment",
-{
-"text": "HTML5shiv - included as a TextBlock"
-}
-],
-[
-"TextBlock",
-{
-"textref": "html5shiv",
-"failmessage": "failed to read textblocks database with ref html5shiv",
-"show": true,
-"escape": false,
-"linebreaks": false
-}
-],
-[
 "Part",
 {
 "tag_name": "script",
@@ -5603,6 +5415,9 @@ false,
 "brief": "The body section of the page",
 "show": true,
 "hide_if_empty": false,
+"attribs": {
+"class": "w3-theme"
+},
 "parts": [
 [
 "Part",
@@ -5612,7 +5427,7 @@ false,
 "show": true,
 "hide_if_empty": false,
 "attribs": {
-"class": "ski_container"
+"class": "w3-container"
 },
 "parts": [
 [
@@ -5639,7 +5454,8 @@ false,
 "show": true,
 "hide_if_empty": false,
 "attribs": {
-"class": "ski_centre"
+"class": "w3-section",
+"style": "margin-left:25%"
 },
 "parts": [
 [
@@ -5770,17 +5586,6 @@ false,
 [
 "Part",
 {
-"tag_name": "div",
-"brief": "check11",
-"show": true,
-"hide_if_empty": false,
-"attribs": {
-"class": "odd"
-},
-"parts": [
-[
-"Part",
-{
 "tag_name": "p",
 "brief": "JSON check description",
 "show": true,
@@ -5799,6 +5604,17 @@ false,
 ]
 }
 ],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "Holds button",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"style": "margin-left:15%;width:50%;margin-right:auto;"
+},
+"parts": [
 [
 "Widget",
 {
@@ -5828,17 +5644,6 @@ false,
 [
 "Part",
 {
-"tag_name": "div",
-"brief": "check12",
-"show": true,
-"hide_if_empty": false,
-"attribs": {
-"class": "even"
-},
-"parts": [
-[
-"Part",
-{
 "tag_name": "p",
 "brief": "JSON uncheck description",
 "show": true,
@@ -5857,6 +5662,17 @@ false,
 ]
 }
 ],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "Holds button",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"style": "margin-left:15%;width:50%;margin-right:auto;"
+},
+"parts": [
 [
 "Widget",
 {
@@ -5881,6 +5697,14 @@ false,
 }
 ]
 ]
+}
+],
+[
+"SectionPlaceHolder",
+{
+"brief": "section footer with alias foot",
+"section_name": "footer",
+"placename": "foot"
 }
 ]
 ]
@@ -5992,22 +5816,6 @@ false,
 }
 ],
 [
-"Comment",
-{
-"text": "HTML5shiv - included as a TextBlock"
-}
-],
-[
-"TextBlock",
-{
-"textref": "html5shiv",
-"failmessage": "failed to read textblocks database with ref html5shiv",
-"show": true,
-"escape": false,
-"linebreaks": false
-}
-],
-[
 "Part",
 {
 "tag_name": "script",
@@ -6043,6 +5851,9 @@ false,
 "brief": "The body section of the page",
 "show": true,
 "hide_if_empty": false,
+"attribs": {
+"class": "w3-theme"
+},
 "parts": [
 [
 "Part",
@@ -6052,7 +5863,7 @@ false,
 "show": true,
 "hide_if_empty": false,
 "attribs": {
-"class": "ski_container"
+"class": "w3-container"
 },
 "parts": [
 [
@@ -6079,7 +5890,8 @@ false,
 "show": true,
 "hide_if_empty": false,
 "attribs": {
-"class": "ski_centre"
+"class": "w3-section",
+"style": "margin-left:25%"
 },
 "parts": [
 [
@@ -6216,17 +6028,6 @@ false,
 [
 "Part",
 {
-"tag_name": "div",
-"brief": "check21",
-"show": true,
-"hide_if_empty": false,
-"attribs": {
-"class": "odd"
-},
-"parts": [
-[
-"Part",
-{
 "tag_name": "p",
 "brief": "JSON check description",
 "show": true,
@@ -6245,6 +6046,17 @@ false,
 ]
 }
 ],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "Holds button",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"style": "margin-left:15%;width:50%;margin-right:auto;"
+},
+"parts": [
 [
 "Widget",
 {
@@ -6274,17 +6086,6 @@ false,
 [
 "Part",
 {
-"tag_name": "div",
-"brief": "check22",
-"show": true,
-"hide_if_empty": false,
-"attribs": {
-"class": "even"
-},
-"parts": [
-[
-"Part",
-{
 "tag_name": "p",
 "brief": "JSON uncheck description",
 "show": true,
@@ -6303,6 +6104,17 @@ false,
 ]
 }
 ],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "Holds button",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"style": "margin-left:15%;width:50%;margin-right:auto;"
+},
+"parts": [
 [
 "Widget",
 {
@@ -6327,6 +6139,14 @@ false,
 }
 ]
 ]
+}
+],
+[
+"SectionPlaceHolder",
+{
+"brief": "section footer with alias foot",
+"section_name": "footer",
+"placename": "foot"
 }
 ]
 ]
@@ -6690,22 +6510,6 @@ false,
 "rel": "stylesheet",
 "type": "text/css"
 }
-}
-],
-[
-"Comment",
-{
-"text": "HTML5shiv - included as a TextBlock"
-}
-],
-[
-"TextBlock",
-{
-"textref": "html5shiv",
-"failmessage": "failed to read textblocks database with ref html5shiv",
-"show": true,
-"escape": false,
-"linebreaks": false
 }
 ],
 [
@@ -7202,22 +7006,6 @@ false,
 "rel": "stylesheet",
 "type": "text/css"
 }
-}
-],
-[
-"Comment",
-{
-"text": "HTML5shiv - included as a TextBlock"
-}
-],
-[
-"TextBlock",
-{
-"textref": "html5shiv",
-"failmessage": "failed to read textblocks database with ref html5shiv",
-"show": true,
-"escape": false,
-"linebreaks": false
 }
 ],
 [
@@ -7880,22 +7668,6 @@ false,
 }
 ],
 [
-"Comment",
-{
-"text": "HTML5shiv - included as a TextBlock"
-}
-],
-[
-"TextBlock",
-{
-"textref": "html5shiv",
-"failmessage": "failed to read textblocks database with ref html5shiv",
-"show": true,
-"escape": false,
-"linebreaks": false
-}
-],
-[
 "Part",
 {
 "tag_name": "script",
@@ -8278,22 +8050,6 @@ false,
 }
 ],
 [
-"Comment",
-{
-"text": "HTML5shiv - included as a TextBlock"
-}
-],
-[
-"TextBlock",
-{
-"textref": "html5shiv",
-"failmessage": "failed to read textblocks database with ref html5shiv",
-"show": true,
-"escape": false,
-"linebreaks": false
-}
-],
-[
 "Part",
 {
 "tag_name": "script",
@@ -8330,7 +8086,7 @@ false,
 "show": true,
 "hide_if_empty": false,
 "attribs": {
-"class": "w3-theme-d1"
+"class": "w3-theme"
 },
 "parts": [
 [
@@ -8593,22 +8349,6 @@ false,
 }
 ],
 [
-"Comment",
-{
-"text": "HTML5shiv - included as a TextBlock"
-}
-],
-[
-"TextBlock",
-{
-"textref": "html5shiv",
-"failmessage": "failed to read textblocks database with ref html5shiv",
-"show": true,
-"escape": false,
-"linebreaks": false
-}
-],
-[
 "Part",
 {
 "tag_name": "script",
@@ -8835,22 +8575,6 @@ false,
 "rel": "stylesheet",
 "type": "text/css"
 }
-}
-],
-[
-"Comment",
-{
-"text": "HTML5shiv - included as a TextBlock"
-}
-],
-[
-"TextBlock",
-{
-"textref": "html5shiv",
-"failmessage": "failed to read textblocks database with ref html5shiv",
-"show": true,
-"escape": false,
-"linebreaks": false
 }
 ],
 [
@@ -9127,22 +8851,6 @@ false,
 }
 ],
 [
-"Comment",
-{
-"text": "HTML5shiv - included as a TextBlock"
-}
-],
-[
-"TextBlock",
-{
-"textref": "html5shiv",
-"failmessage": "failed to read textblocks database with ref html5shiv",
-"show": true,
-"escape": false,
-"linebreaks": false
-}
-],
-[
 "Part",
 {
 "tag_name": "script",
@@ -9347,22 +9055,6 @@ false,
 }
 ],
 [
-"Comment",
-{
-"text": "HTML5shiv - included as a TextBlock"
-}
-],
-[
-"TextBlock",
-{
-"textref": "html5shiv",
-"failmessage": "failed to read textblocks database with ref html5shiv",
-"show": true,
-"escape": false,
-"linebreaks": false
-}
-],
-[
 "Part",
 {
 "tag_name": "script",
@@ -9564,22 +9256,6 @@ false,
 "rel": "stylesheet",
 "type": "text/css"
 }
-}
-],
-[
-"Comment",
-{
-"text": "HTML5shiv - included as a TextBlock"
-}
-],
-[
-"TextBlock",
-{
-"textref": "html5shiv",
-"failmessage": "failed to read textblocks database with ref html5shiv",
-"show": true,
-"escape": false,
-"linebreaks": false
 }
 ],
 [
@@ -9810,22 +9486,6 @@ false,
 }
 ],
 [
-"Comment",
-{
-"text": "HTML5shiv - included as a TextBlock"
-}
-],
-[
-"TextBlock",
-{
-"textref": "html5shiv",
-"failmessage": "failed to read textblocks database with ref html5shiv",
-"show": true,
-"escape": false,
-"linebreaks": false
-}
-],
-[
 "Part",
 {
 "tag_name": "script",
@@ -9862,7 +9522,7 @@ false,
 "show": true,
 "hide_if_empty": false,
 "attribs": {
-"class": "w3-theme-d1"
+"class": "w3-theme"
 },
 "parts": [
 [
@@ -10493,22 +10153,6 @@ false,
 }
 ],
 [
-"Comment",
-{
-"text": "HTML5shiv - included as a TextBlock"
-}
-],
-[
-"TextBlock",
-{
-"textref": "html5shiv",
-"failmessage": "failed to read textblocks database with ref html5shiv",
-"show": true,
-"escape": false,
-"linebreaks": false
-}
-],
-[
 "Part",
 {
 "tag_name": "script",
@@ -10759,22 +10403,6 @@ false,
 "rel": "stylesheet",
 "type": "text/css"
 }
-}
-],
-[
-"Comment",
-{
-"text": "HTML5shiv - included as a TextBlock"
-}
-],
-[
-"TextBlock",
-{
-"textref": "html5shiv",
-"failmessage": "failed to read textblocks database with ref html5shiv",
-"show": true,
-"escape": false,
-"linebreaks": false
 }
 ],
 [
