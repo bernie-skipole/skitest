@@ -3,7 +3,7 @@
 "default_language": "en",
 "brief": "Project to test the skipole framework",
 "version": "0.0.1",
-"skipole": "0.0.21",
+"skipole": "0.0.22",
 "subprojects": {
 "lib": "/lib/"
 },
@@ -129,6 +129,7 @@
 "paradiv_class": "",
 "show": true,
 "show_error": "",
+"table_class": "w3-table w3-bordered",
 "toptext": "",
 "widget_class": "",
 "widget_style": ""
@@ -7275,6 +7276,9 @@ false,
 "brief": "The body section of the page",
 "show": true,
 "hide_if_empty": false,
+"attribs": {
+"class": "w3-theme"
+},
 "parts": [
 [
 "Part",
@@ -7284,7 +7288,7 @@ false,
 "show": true,
 "hide_if_empty": false,
 "attribs": {
-"class": "ski_container"
+"class": "w3-container"
 },
 "parts": [
 [
@@ -7311,7 +7315,8 @@ false,
 "show": true,
 "hide_if_empty": false,
 "attribs": {
-"class": "ski_centre"
+"class": "w3-section",
+"style": "margin-left:25%"
 },
 "parts": [
 [
@@ -7325,7 +7330,7 @@ false,
 [
 "TextBlock",
 {
-"textref": "page.14201.01",
+"textref": "page.14210.01",
 "failmessage": "TextBlock not found",
 "show": true,
 "escape": true,
@@ -7343,7 +7348,7 @@ false,
 "brief": "ErrorDiv used for testing",
 "fields": {
 "clear_error": false,
-"error_class": "ski_errorcol",
+"error_class": "w3-panel w3-red",
 "hide": true,
 "show": true,
 "show_error": "Default error message set on widget.",
@@ -7372,6 +7377,17 @@ false,
 }
 ],
 [
+"Part",
+{
+"tag_name": "div",
+"brief": "Holds buttons",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"style": "margin-left:15%;width:50%;margin-right:auto;"
+},
+"parts": [
+[
 "Widget",
 {
 "class": "links.ButtonLink1",
@@ -7389,9 +7405,12 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
+"widget_class": "w3-button w3-block w3-theme-d4",
 "widget_style": ""
 }
+}
+]
+]
 }
 ],
 [
@@ -7410,6 +7429,17 @@ false,
 }
 ],
 [
+"Part",
+{
+"tag_name": "div",
+"brief": "Holds buttons",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"style": "margin-left:15%;width:50%;margin-right:auto;"
+},
+"parts": [
+[
 "Widget",
 {
 "class": "links.ButtonLink1",
@@ -7427,9 +7457,12 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
+"widget_class": "w3-button w3-block w3-theme-d4",
 "widget_style": ""
 }
+}
+]
+]
 }
 ],
 [
@@ -7447,6 +7480,17 @@ false,
 ]
 }
 ],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "Holds buttons",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"style": "margin-left:15%;width:50%;margin-right:auto;"
+},
+"parts": [
 [
 "Widget",
 {
@@ -7469,6 +7513,9 @@ false,
 "widget_style": ""
 }
 }
+]
+]
+}
 ],
 [
 "Part",
@@ -7485,6 +7532,17 @@ false,
 ]
 }
 ],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "Holds buttons",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"style": "margin-left:15%;width:50%;margin-right:auto;"
+},
+"parts": [
 [
 "Widget",
 {
@@ -7507,6 +7565,9 @@ false,
 "widget_style": ""
 }
 }
+]
+]
+}
 ],
 [
 "Part",
@@ -7523,6 +7584,17 @@ false,
 ]
 }
 ],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "Holds buttons",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"style": "margin-left:15%;width:50%;margin-right:auto;"
+},
+"parts": [
 [
 "Widget",
 {
@@ -7544,6 +7616,9 @@ false,
 "widget_class": "w3-button w3-block w3-theme-d4",
 "widget_style": ""
 }
+}
+]
+]
 }
 ],
 [
@@ -7625,6 +7700,14 @@ false,
 "widget_class": "",
 "widget_style": ""
 }
+}
+],
+[
+"SectionPlaceHolder",
+{
+"brief": "section footer with alias foot",
+"section_name": "footer",
+"placename": "foot"
 }
 ]
 ]

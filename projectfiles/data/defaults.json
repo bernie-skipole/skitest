@@ -246,6 +246,9 @@
 "error_class": "w3-panel w3-red",
 "para_class": "w3-section",
 "widget_class": "w3-section"
+},
+"ShowResponders": {
+"table_class": "w3-table w3-bordered"
 }
 },
 "error_messages": {
