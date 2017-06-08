@@ -254,6 +254,9 @@
 "error_messages": {
 "ErrorDiv": {
 "error_class": "w3-panel w3-red"
+},
+"ErrorPara": {
+"widget_class": "w3-red"
 }
 }
 }
