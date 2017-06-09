@@ -257,6 +257,12 @@
 },
 "ErrorPara": {
 "widget_class": "w3-red"
+},
+"ErrorClear1": {
+"boxdiv_class": "w3-modal-content w3-red",
+"widget_class": "w3-modal",
+"error_class": "w3-panel",
+"buttondiv_class": "w3-panel"
 }
 }
 }

@@ -41,3 +41,11 @@ def errorpara_test6(caller_ident, ident_list, submit_list, submit_dict, call_dat
     else:
         page_data['resulttext','para_text'] = "No text received."
 
+
+def errorclear1_test1(caller_ident, ident_list, submit_list, submit_dict, call_data, page_data, lang):
+    """Raises an error for errorclear1"""
+    raise FailPage(message="test1 error message", displaywidgetname="testerrorclear1")
+
+
+
+

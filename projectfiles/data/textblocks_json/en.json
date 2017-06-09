@@ -29,6 +29,7 @@
   "page.14101.01": "A table of a single text column, followed by a button link column.\r\nThere is a header and title over the text column, the button link can have one get field.",
   "page.14201.01": "An ErrorDiv widget is set below this paragraph, normally invisible until an error condition is raised, at which point it will show the error message.",
   "page.14210.01": "An ErrorPara widget is set below this paragraph, normally invisible until an error condition is raised, at which point it will show the error message.",
+  "page.14220.01": "A div - normally used for modal background containing a div with a paragraph of error text and a clear button with three optional get fields.\r\nThe 'clear' button hides the widget without making a call if javascript is available. If not, then the link is called.",
   "page.200001.01": "Responders are pages which receive a call, and then manipulates the received data in some way, including calling your submit_data function to populate the page_data dictionary.\r\n\r\nThe responder then generally passes the call to a final template page which is returned to the client browser.\r\n\r\nThe following buttons link to tests for each responder type.",
   "page.3001.01": "Widgets are defined in modules - use the buttons below to the module required.",
   "page.3002.01": "These are the widgets in the checkbox module.",
