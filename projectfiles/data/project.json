@@ -44,6 +44,7 @@
 "errorpara_test6": 4217,
 "general_json": 570,
 "home": 1,
+"info": 3011,
 "jquery_core": "lib,jquery_core",
 "links": 3007,
 "login": 100,
@@ -60,6 +61,7 @@
 "secure2": 100004,
 "secure3": 100007,
 "server_error": 520,
+"servertimestamp": 4301,
 "ski_basic": "lib,ski_basic",
 "ski_checkbox": "lib,ski_checkbox",
 "ski_confirm": "lib,ski_confirm",
@@ -4827,13 +4829,13 @@ false,
 "folders": {
 "checkbox": {
 "ident": 4001,
-"brief": "folder holding checkbox responders",
+"brief": "checkbox module tests",
 "default_page_name": "index",
 "restricted": false,
 "folders": {
 "restricted": {
 "ident": 14001,
-"brief": "Restricted folder for checkbox tests",
+"brief": "Restricted folder for checkbox templates",
 "default_page_name": "index",
 "restricted": true,
 "folders": {},
@@ -6566,9 +6568,9 @@ false,
 "folders": {
 "restricted": {
 "ident": 14200,
-"brief": "folder holding restricted error_messages templates",
+"brief": "Restricted folder for error_messages templates",
 "default_page_name": "index",
-"restricted": false,
+"restricted": true,
 "folders": {},
 "pages": {
 "errorclear1": {
@@ -6787,7 +6789,7 @@ false,
 "get_field2": "",
 "get_field3": "",
 "hide": true,
-"link_ident": 14220,
+"link_ident": 4220,
 "show": true,
 "show_error": "",
 "widget_class": "w3-modal",
@@ -8279,9 +8281,317 @@ false,
 }
 }
 },
+"info": {
+"ident": 4300,
+"brief": "info module tests",
+"default_page_name": "index",
+"restricted": false,
+"folders": {
+"restricted": {
+"ident": 14300,
+"brief": "Restricted folder for info templates",
+"default_page_name": "index",
+"restricted": true,
+"folders": {},
+"pages": {
+"servertimestamp": {
+"ident": 14301,
+"brief": "ServerTimeStamp template page",
+"TemplatePage": {
+"show_backcol": false,
+"last_scroll": true,
+"lang": "en",
+"backcol": "#9dbd7a",
+"default_error_widget": [
+"header",
+"top_error"
+]
+},
+"head": [
+"Part",
+{
+"tag_name": "head",
+"brief": "The head section of the page",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"ClosedPart",
+{
+"tag_name": "meta",
+"brief": "The charset meta declaration",
+"show": true,
+"attribs": {
+"charset": "utf-8"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "meta",
+"brief": "The viewport meta declaration",
+"show": true,
+"attribs": {
+"content": "width=device-width, initial-scale=1",
+"name": "viewport"
+}
+}
+],
+[
+"Part",
+{
+"tag_name": "title",
+"brief": "The page title element",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Text",
+"ServerTimeStamp"
+]
+]
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to w3_css",
+"show": true,
+"attribs": {
+"href": "{w3_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to w3_theme_ski",
+"show": true,
+"attribs": {
+"href": "{w3_theme_ski}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to ski_css",
+"show": true,
+"attribs": {
+"href": "{ski_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"Part",
+{
+"tag_name": "script",
+"brief": "script link to jquery_core",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"src": "{jquery_core}"
+},
+"parts": []
+}
+],
+[
+"Part",
+{
+"tag_name": "script",
+"brief": "script link to skipole_js",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"src": "{skipole_js}"
+},
+"parts": []
+}
+]
+]
+}
+],
+"body": [
+"Part",
+{
+"tag_name": "body",
+"brief": "The body section of the page",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "w3-theme"
+},
+"parts": [
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "container",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "w3-container"
+},
+"parts": [
+[
+"SectionPlaceHolder",
+{
+"brief": "Page header",
+"section_name": "header",
+"placename": "header"
+}
+],
+[
+"SectionPlaceHolder",
+{
+"brief": "Left navigation panel",
+"section_name": "navigation",
+"placename": "navigation"
+}
+],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "centre",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "w3-section",
+"style": "margin-left:25%"
+},
+"parts": [
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "Top description",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"TextBlock",
+{
+"textref": "page.14301.01",
+"failmessage": "TextBlock not found",
+"show": true,
+"escape": true,
+"linebreaks": true
+}
+]
+]
+}
+],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "Div to hold the servertimestamp widget",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "Paragraph holding text and widget",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Text",
+"The time is"
+],
+[
+"HTMLSymbol",
+{
+"text": "&nbsp;"
+}
+],
+[
+"Widget",
+{
+"class": "info.ServerTimeStamp",
+"name": "servertimestamp",
+"brief": "The ServerTimeStamp widget",
+"fields": {
+"clear_error": false,
+"error_class": "",
+"show": true,
+"show_error": "",
+"timestamp": "",
+"widget_class": "",
+"widget_style": ""
+}
+}
+]
+]
+}
+]
+]
+}
+],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "Holds buttons",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"style": "margin-left:15%;width:50%;margin-right:auto;"
+},
+"parts": []
+}
+],
+[
+"SectionPlaceHolder",
+{
+"brief": "section footer with alias foot",
+"section_name": "footer",
+"placename": "foot"
+}
+]
+]
+}
+]
+]
+}
+]
+]
+}
+]
+}
+}
+}
+},
+"pages": {
+"servertimestamp": {
+"ident": 4301,
+"brief": "responder to servertimestamp template",
+"RespondPage": {
+"class": "NoOperation",
+"original_args": {
+"target_ident": 14301
+},
+"original_fields": {}
+}
+}
+}
+},
 "links": {
 "ident": 4100,
-"brief": "folder holding links responders",
+"brief": "links module tests",
 "default_page_name": "index",
 "restricted": false,
 "folders": {
@@ -9555,6 +9865,305 @@ false,
 }
 ]
 },
+"info": {
+"ident": 3011,
+"brief": "links to info widgets",
+"TemplatePage": {
+"show_backcol": false,
+"last_scroll": true,
+"lang": "en",
+"backcol": "#9dbd7a",
+"default_error_widget": [
+"header",
+"top_error"
+]
+},
+"head": [
+"Part",
+{
+"tag_name": "head",
+"brief": "The head section of the page",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"ClosedPart",
+{
+"tag_name": "meta",
+"brief": "The charset meta declaration",
+"show": true,
+"attribs": {
+"charset": "utf-8"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "meta",
+"brief": "The viewport meta declaration",
+"show": true,
+"attribs": {
+"content": "width=device-width, initial-scale=1",
+"name": "viewport"
+}
+}
+],
+[
+"Part",
+{
+"tag_name": "title",
+"brief": "The page title element",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Text",
+"Info"
+]
+]
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to w3_css",
+"show": true,
+"attribs": {
+"href": "{w3_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to w3_theme_ski",
+"show": true,
+"attribs": {
+"href": "{w3_theme_ski}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to ski_css",
+"show": true,
+"attribs": {
+"href": "{ski_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"Part",
+{
+"tag_name": "script",
+"brief": "script link to jquery_core",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"src": "{jquery_core}"
+},
+"parts": []
+}
+],
+[
+"Part",
+{
+"tag_name": "script",
+"brief": "script link to skipole_js",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"src": "{skipole_js}"
+},
+"parts": []
+}
+]
+]
+}
+],
+"body": [
+"Part",
+{
+"tag_name": "body",
+"brief": "The body section of the page",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "w3-theme"
+},
+"parts": [
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "container",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "w3-container"
+},
+"parts": [
+[
+"SectionPlaceHolder",
+{
+"brief": "Page header",
+"section_name": "header",
+"placename": "header"
+}
+],
+[
+"SectionPlaceHolder",
+{
+"brief": "Left navigation panel",
+"section_name": "navigation",
+"placename": "navigation"
+}
+],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "centre",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "w3-section",
+"style": "margin-left:25%"
+},
+"parts": [
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "Top description",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"TextBlock",
+{
+"textref": "page.3011.01",
+"failmessage": "TextBlock not found",
+"show": true,
+"escape": true,
+"linebreaks": true
+}
+]
+]
+}
+],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "Holds buttons",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"style": "margin-left:15%;width:50%;margin-right:auto;"
+},
+"parts": [
+[
+"Widget",
+{
+"class": "links.ButtonLink1",
+"name": "servertimestamp",
+"brief": "Links to ServerTimeStamp test page",
+"fields": {
+"button_text": "ServerTimeStamp",
+"clear_error": false,
+"error_class": "w3-button w3-block w3-theme-action w3-margin",
+"force_ident": false,
+"get_field1": "",
+"get_field2": "",
+"hide": false,
+"link_ident": "servertimestamp",
+"new_window": false,
+"show": true,
+"show_error": "",
+"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
+"widget_style": ""
+}
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink1",
+"name": "pageident",
+"brief": "links to PageIdent test page",
+"fields": {
+"button_text": "PageIdent",
+"clear_error": false,
+"error_class": "w3-button w3-block w3-theme-action w3-margin",
+"force_ident": false,
+"get_field1": "",
+"get_field2": "",
+"hide": false,
+"link_ident": "home",
+"new_window": false,
+"show": true,
+"show_error": "",
+"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
+"widget_style": ""
+}
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink1",
+"name": "redirector",
+"brief": "links to Redirector test page",
+"fields": {
+"button_text": "Redirector",
+"clear_error": false,
+"error_class": "w3-button w3-block w3-theme-action w3-margin",
+"force_ident": false,
+"get_field1": "",
+"get_field2": "",
+"hide": false,
+"link_ident": "home",
+"new_window": false,
+"show": true,
+"show_error": "",
+"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
+"widget_style": ""
+}
+}
+]
+]
+}
+],
+[
+"SectionPlaceHolder",
+{
+"brief": "section footer with alias foot",
+"section_name": "footer",
+"placename": "foot"
+}
+]
+]
+}
+]
+]
+}
+]
+]
+}
+]
+},
 "inputforms": {
 "ident": 3009,
 "brief": "links to inputforms widgets",
@@ -9689,6 +10298,9 @@ false,
 "brief": "The body section of the page",
 "show": true,
 "hide_if_empty": false,
+"attribs": {
+"class": "w3-theme"
+},
 "parts": [
 [
 "Part",
@@ -9698,7 +10310,7 @@ false,
 "show": true,
 "hide_if_empty": false,
 "attribs": {
-"class": "ski_container"
+"class": "w3-container"
 },
 "parts": [
 [
@@ -9725,7 +10337,8 @@ false,
 "show": true,
 "hide_if_empty": false,
 "attribs": {
-"class": "ski_centre"
+"class": "w3-section",
+"style": "margin-left:25%"
 },
 "parts": [
 [
@@ -9747,6 +10360,14 @@ false,
 }
 ]
 ]
+}
+],
+[
+"SectionPlaceHolder",
+{
+"brief": "section footer with alias foot",
+"section_name": "footer",
+"placename": "foot"
 }
 ]
 ]
@@ -10612,7 +11233,7 @@ false,
 "get_field1": "",
 "get_field2": "",
 "hide": false,
-"link_ident": "home",
+"link_ident": "info",
 "new_window": false,
 "show": true,
 "show_error": "",
