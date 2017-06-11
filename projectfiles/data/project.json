@@ -28,6 +28,7 @@
 "error_messages": 3008,
 "errorclear1": 4220,
 "errorclear1_test1": 4221,
+"errorclear1_test2": 4222,
 "errordiv": 4201,
 "errordiv_test1": 4202,
 "errordiv_test2": 4203,
@@ -6790,8 +6791,10 @@ false,
 "get_field3": "",
 "hide": true,
 "link_ident": 4220,
+"para_text": "Default para_text",
+"pre_line": true,
 "show": true,
-"show_error": "",
+"show_error": "Default error message",
 "widget_class": "w3-modal",
 "widget_style": ""
 }
@@ -6815,9 +6818,9 @@ false,
 "name": "errorclear1_test1",
 "brief": "Link requests error to show errorclear1 box",
 "fields": {
-"button_text": "Show Error",
+"button_text": "Raise Error (HTML)",
 "clear_error": false,
-"error_class": "w3-button w3-block w3-theme-action",
+"error_class": "w3-button w3-block w3-theme-action w3-margin",
 "force_ident": false,
 "get_field1": "",
 "get_field2": "",
@@ -6826,7 +6829,30 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "w3-button w3-block w3-theme-d4",
+"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
+"widget_style": ""
+}
+}
+],
+[
+"Widget",
+{
+"class": "links.JSONButtonLink",
+"name": "errorclear1_test2",
+"brief": "Link requests error to raise errorclear1 box by JSON",
+"fields": {
+"button_text": "Raise Error (JSON)",
+"button_wait_text": "Please wait...",
+"clear_error": false,
+"error_class": "w3-button w3-block w3-theme-action w3-margin",
+"get_field1": "",
+"get_field2": "",
+"hide": false,
+"json_ident": "errorclear1_test2",
+"link_ident": "no_javascript",
+"show": true,
+"show_error": "",
+"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
 "widget_style": ""
 }
 }
@@ -8020,7 +8046,7 @@ false,
 },
 "errorclear1_test1": {
 "ident": 4221,
-"brief": "Raises error to show errorclear1",
+"brief": "Link to raise an error via HTML",
 "RespondPage": {
 "class": "SubmitData",
 "original_args": {
@@ -8031,6 +8057,23 @@ false,
 "errorclear1_test1"
 ],
 "target_ident": 14220
+},
+"original_fields": {}
+}
+},
+"errorclear1_test2": {
+"ident": 4222,
+"brief": "Link to raise an error via JSON",
+"RespondPage": {
+"class": "SubmitData",
+"original_args": {
+"fail_ident": "general_json",
+"submit_list": [
+"widgets",
+"error_messages",
+"errorclear1_test1"
+],
+"target_ident": "general_json"
 },
 "original_fields": {}
 }

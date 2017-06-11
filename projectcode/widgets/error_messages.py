@@ -44,7 +44,7 @@ def errorpara_test6(caller_ident, ident_list, submit_list, submit_dict, call_dat
 
 def errorclear1_test1(caller_ident, ident_list, submit_list, submit_dict, call_data, page_data, lang):
     """Raises an error for errorclear1"""
-    raise FailPage(message="test1 error message", displaywidgetname="testerrorclear1")
+    raise FailPage(message="Error message sent by Responder", displaywidgetname="testerrorclear1")
 
 
 
