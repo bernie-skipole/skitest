@@ -29,6 +29,8 @@
 "errorclear1": 4220,
 "errorclear1_test1": 4221,
 "errorclear1_test2": 4222,
+"errorclear1_test3": 4223,
+"errorclear1_test4": 4224,
 "errordiv": 4201,
 "errordiv_test1": 4202,
 "errordiv_test2": 4203,
@@ -6856,6 +6858,52 @@ false,
 "widget_style": ""
 }
 }
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink1",
+"name": "errorclear1_test3",
+"brief": "Link to show errorclear1 box",
+"fields": {
+"button_text": "Show ErrorClear1 (HTML)",
+"clear_error": false,
+"error_class": "w3-button w3-block w3-theme-action w3-margin",
+"force_ident": false,
+"get_field1": "",
+"get_field2": "",
+"hide": false,
+"link_ident": "errorclear1_test3",
+"new_window": false,
+"show": true,
+"show_error": "",
+"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
+"widget_style": ""
+}
+}
+],
+[
+"Widget",
+{
+"class": "links.JSONButtonLink",
+"name": "errorclear1_test4",
+"brief": "Link shows errorclear1 box by JSON",
+"fields": {
+"button_text": "Show ErrorClear1 (JSON)",
+"button_wait_text": "Please wait...",
+"clear_error": false,
+"error_class": "w3-button w3-block w3-theme-action w3-margin",
+"get_field1": "",
+"get_field2": "",
+"hide": false,
+"json_ident": "errorclear1_test4",
+"link_ident": "no_javascript",
+"show": true,
+"show_error": "",
+"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
+"widget_style": ""
+}
+}
 ]
 ]
 }
@@ -8072,6 +8120,40 @@ false,
 "widgets",
 "error_messages",
 "errorclear1_test1"
+],
+"target_ident": "general_json"
+},
+"original_fields": {}
+}
+},
+"errorclear1_test3": {
+"ident": 4223,
+"brief": "Link to show errorclear1 via HTML",
+"RespondPage": {
+"class": "SubmitData",
+"original_args": {
+"fail_ident": 14220,
+"submit_list": [
+"widgets",
+"error_messages",
+"errorclear1_test3"
+],
+"target_ident": 14220
+},
+"original_fields": {}
+}
+},
+"errorclear1_test4": {
+"ident": 4224,
+"brief": "Link to show errorclear1 via JSON",
+"RespondPage": {
+"class": "SubmitData",
+"original_args": {
+"fail_ident": "general_json",
+"submit_list": [
+"widgets",
+"error_messages",
+"errorclear1_test3"
 ],
 "target_ident": "general_json"
 },

@@ -46,6 +46,12 @@ def errorclear1_test1(caller_ident, ident_list, submit_list, submit_dict, call_d
     """Raises an error for errorclear1"""
     raise FailPage(message="Error message sent by Responder", displaywidgetname="testerrorclear1")
 
+def errorclear1_test3(caller_ident, ident_list, submit_list, submit_dict, call_data, page_data, lang):
+    """Displays text for errorclear1"""
+    page_data["testerrorclear1", "hide"] = False
+    page_data["testerrorclear1", "para_text"] = "This text is sent by responder\nIt is not an error message."
+
+
 
 
 
