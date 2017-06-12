@@ -8635,7 +8635,7 @@ false,
 "parts": [
 [
 "Text",
-"The time is"
+"The server UTC time is"
 ],
 [
 "HTMLSymbol",
@@ -8648,13 +8648,64 @@ false,
 {
 "class": "info.ServerTimeStamp",
 "name": "servertimestamp",
-"brief": "The ServerTimeStamp widget",
+"brief": "ServerTimeStamp with UTC set",
 "fields": {
 "clear_error": false,
 "error_class": "",
 "show": true,
 "show_error": "",
 "timestamp": "",
+"utc": true,
+"widget_class": "",
+"widget_style": ""
+}
+}
+]
+]
+}
+]
+]
+}
+],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "Div to hold the servertimestamp widget",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "Paragraph holding text and widget",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Text",
+"The server Local time is"
+],
+[
+"HTMLSymbol",
+{
+"text": "&nbsp;"
+}
+],
+[
+"Widget",
+{
+"class": "info.ServerTimeStamp",
+"name": "servertimestamp2",
+"brief": "ServerTimeStamp UTC unset",
+"fields": {
+"clear_error": false,
+"error_class": "",
+"show": true,
+"show_error": "",
+"timestamp": "",
+"utc": false,
 "widget_class": "",
 "widget_style": ""
 }
