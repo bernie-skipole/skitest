@@ -2,7 +2,7 @@
 "backcol": "#8e39ad",
 "css_links": [
 "w3_css",
-"w3_theme_ski",
+"w3_theme_ski_css",
 "ski_css"
 ],
 "js_links": [
@@ -24,7 +24,8 @@
 "widget_class": "w3-section"
 },
 "ShowPara1": {
-"error_class": "w3-panel w3-red"
+"error_class": "w3-panel w3-red",
+"widget_class": "w3-section"
 }
 },
 "headers": {
@@ -96,6 +97,13 @@
 "error_class": "w3-panel w3-red",
 "input_class1": "ski_input",
 "input_class2": "ski_input  w3-margin-left"
+},
+"Password2": {
+"error_class": "w3-panel w3-red",
+"input_accepted_class": "ski_input_accepted",
+"input_errored_class": "ski_input_errored",
+"widget_class": "w3-section",
+"input_class": "ski_input"
 }
 },
 "links": {
@@ -138,6 +146,12 @@
 "widget_class": "w3-table w3-theme-d1 w3-border w3-bordered",
 "header_class": "w3-theme-d3",
 "odd_class": "w3-theme-d2"
+},
+"ButtonLink2": {
+"button_class": "w3-button w3-block w3-theme-l1 w3-border",
+"buttondiv_class": "ski_mid_button",
+"error_class": "w3-panel w3-red",
+"widget_class": "w3-section"
 }
 },
 "inputtables": {
@@ -204,13 +218,19 @@
 "RadioButton1": {
 "error_class": "w3-panel w3-red",
 "widget_class": "w3-section"
+},
+"BooleanRadio": {
+"widget_class": "w3-section",
+"left_class1": "ski_left_label",
+"left_class2": "ski_left_label"
 }
 },
 "checkbox": {
 "CheckBox1": {
 "widget_class": "w3-section",
 "error_class": "w3-panel w3-red",
-"checkbox_class": "w3-check"
+"checkbox_class": "w3-check",
+"left_class": "ski_left_label"
 },
 "CheckedText": {
 "widget_class": "w3-section",
@@ -239,6 +259,11 @@
 "odd_class": "w3-theme-d2",
 "table_class": "w3-table w3-theme-d1 w3-border w3-bordered",
 "widget_class": "w3-section"
+},
+"TwoColTable1": {
+"widget_class": "w3-table w3-bordered w3-centered",
+"odd_class": "w3-theme-d1",
+"header_class": "w3-theme-d2"
 }
 },
 "debug_tools": {

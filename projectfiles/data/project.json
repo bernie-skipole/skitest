@@ -95,7 +95,7 @@
 "url_not_found": 500,
 "validate_error": 510,
 "w3_css": 1002,
-"w3_theme_ski": 1008
+"w3_theme_ski_css": 1008
 },
 "sections": {
 "footer": [
@@ -388,10 +388,10 @@ false,
 "ClosedPart",
 {
 "tag_name": "link",
-"brief": "css link to w3_theme_ski",
+"brief": "css link to w3_theme_ski_css",
 "show": true,
 "attribs": {
-"href": "{w3_theme_ski}",
+"href": "{w3_theme_ski_css}",
 "rel": "stylesheet",
 "type": "text/css"
 }
@@ -947,10 +947,10 @@ false,
 "ClosedPart",
 {
 "tag_name": "link",
-"brief": "css link to w3_theme_ski",
+"brief": "css link to w3_theme_ski_css",
 "show": true,
 "attribs": {
-"href": "{w3_theme_ski}",
+"href": "{w3_theme_ski_css}",
 "rel": "stylesheet",
 "type": "text/css"
 }
@@ -1254,10 +1254,10 @@ false,
 "ClosedPart",
 {
 "tag_name": "link",
-"brief": "css link to w3_theme_ski",
+"brief": "css link to w3_theme_ski_css",
 "show": true,
 "attribs": {
-"href": "{w3_theme_ski}",
+"href": "{w3_theme_ski_css}",
 "rel": "stylesheet",
 "type": "text/css"
 }
@@ -1542,10 +1542,10 @@ false,
 "ClosedPart",
 {
 "tag_name": "link",
-"brief": "css link to w3_theme_ski",
+"brief": "css link to w3_theme_ski_css",
 "show": true,
 "attribs": {
-"href": "{w3_theme_ski}",
+"href": "{w3_theme_ski_css}",
 "rel": "stylesheet",
 "type": "text/css"
 }
@@ -1938,10 +1938,10 @@ false,
 "ClosedPart",
 {
 "tag_name": "link",
-"brief": "css link to w3_theme_ski",
+"brief": "css link to w3_theme_ski_css",
 "show": true,
 "attribs": {
-"href": "{w3_theme_ski}",
+"href": "{w3_theme_ski_css}",
 "rel": "stylesheet",
 "type": "text/css"
 }
@@ -2246,10 +2246,10 @@ false,
 "ClosedPart",
 {
 "tag_name": "link",
-"brief": "css link to w3_theme_ski",
+"brief": "css link to w3_theme_ski_css",
 "show": true,
 "attribs": {
-"href": "{w3_theme_ski}",
+"href": "{w3_theme_ski_css}",
 "rel": "stylesheet",
 "type": "text/css"
 }
@@ -2559,10 +2559,10 @@ false,
 "ClosedPart",
 {
 "tag_name": "link",
-"brief": "css link to w3_theme_ski",
+"brief": "css link to w3_theme_ski_css",
 "show": true,
 "attribs": {
-"href": "{w3_theme_ski}",
+"href": "{w3_theme_ski_css}",
 "rel": "stylesheet",
 "type": "text/css"
 }
@@ -2860,10 +2860,10 @@ false,
 "ClosedPart",
 {
 "tag_name": "link",
-"brief": "css link to w3_theme_ski",
+"brief": "css link to w3_theme_ski_css",
 "show": true,
 "attribs": {
-"href": "{w3_theme_ski}",
+"href": "{w3_theme_ski_css}",
 "rel": "stylesheet",
 "type": "text/css"
 }
@@ -3682,10 +3682,10 @@ false,
 "ClosedPart",
 {
 "tag_name": "link",
-"brief": "css link to w3_theme_ski",
+"brief": "css link to w3_theme_ski_css",
 "show": true,
 "attribs": {
-"href": "{w3_theme_ski}",
+"href": "{w3_theme_ski_css}",
 "rel": "stylesheet",
 "type": "text/css"
 }
@@ -4062,10 +4062,10 @@ false,
 "ClosedPart",
 {
 "tag_name": "link",
-"brief": "css link to w3_theme_ski",
+"brief": "css link to w3_theme_ski_css",
 "show": true,
 "attribs": {
-"href": "{w3_theme_ski}",
+"href": "{w3_theme_ski_css}",
 "rel": "stylesheet",
 "type": "text/css"
 }
@@ -4218,10 +4218,10 @@ false,
 "ClosedPart",
 {
 "tag_name": "link",
-"brief": "css link to w3_theme_ski",
+"brief": "css link to w3_theme_ski_css",
 "show": true,
 "attribs": {
-"href": "{w3_theme_ski}",
+"href": "{w3_theme_ski_css}",
 "rel": "stylesheet",
 "type": "text/css"
 }
@@ -4441,10 +4441,10 @@ false,
 "ClosedPart",
 {
 "tag_name": "link",
-"brief": "css link to w3_theme_ski",
+"brief": "css link to w3_theme_ski_css",
 "show": true,
 "attribs": {
-"href": "{w3_theme_ski}",
+"href": "{w3_theme_ski_css}",
 "rel": "stylesheet",
 "type": "text/css"
 }
@@ -4679,10 +4679,10 @@ false,
 "ClosedPart",
 {
 "tag_name": "link",
-"brief": "css link to w3_theme_ski",
+"brief": "css link to w3_theme_ski_css",
 "show": true,
 "attribs": {
-"href": "{w3_theme_ski}",
+"href": "{w3_theme_ski_css}",
 "rel": "stylesheet",
 "type": "text/css"
 }
@@ -4919,10 +4919,10 @@ false,
 "ClosedPart",
 {
 "tag_name": "link",
-"brief": "css link to w3_theme_ski",
+"brief": "css link to w3_theme_ski_css",
 "show": true,
 "attribs": {
-"href": "{w3_theme_ski}",
+"href": "{w3_theme_ski_css}",
 "rel": "stylesheet",
 "type": "text/css"
 }
@@ -5519,10 +5519,10 @@ false,
 "ClosedPart",
 {
 "tag_name": "link",
-"brief": "css link to w3_theme_ski",
+"brief": "css link to w3_theme_ski_css",
 "show": true,
 "attribs": {
-"href": "{w3_theme_ski}",
+"href": "{w3_theme_ski_css}",
 "rel": "stylesheet",
 "type": "text/css"
 }
@@ -5955,10 +5955,10 @@ false,
 "ClosedPart",
 {
 "tag_name": "link",
-"brief": "css link to w3_theme_ski",
+"brief": "css link to w3_theme_ski_css",
 "show": true,
 "attribs": {
-"href": "{w3_theme_ski}",
+"href": "{w3_theme_ski_css}",
 "rel": "stylesheet",
 "type": "text/css"
 }
@@ -6652,10 +6652,10 @@ false,
 "ClosedPart",
 {
 "tag_name": "link",
-"brief": "css link to w3_theme_ski",
+"brief": "css link to w3_theme_ski_css",
 "show": true,
 "attribs": {
-"href": "{w3_theme_ski}",
+"href": "{w3_theme_ski_css}",
 "rel": "stylesheet",
 "type": "text/css"
 }
@@ -7002,10 +7002,10 @@ false,
 "ClosedPart",
 {
 "tag_name": "link",
-"brief": "css link to w3_theme_ski",
+"brief": "css link to w3_theme_ski_css",
 "show": true,
 "attribs": {
-"href": "{w3_theme_ski}",
+"href": "{w3_theme_ski_css}",
 "rel": "stylesheet",
 "type": "text/css"
 }
@@ -7580,10 +7580,10 @@ false,
 "ClosedPart",
 {
 "tag_name": "link",
-"brief": "css link to w3_theme_ski",
+"brief": "css link to w3_theme_ski_css",
 "show": true,
 "attribs": {
-"href": "{w3_theme_ski}",
+"href": "{w3_theme_ski_css}",
 "rel": "stylesheet",
 "type": "text/css"
 }
@@ -8495,10 +8495,10 @@ false,
 "ClosedPart",
 {
 "tag_name": "link",
-"brief": "css link to w3_theme_ski",
+"brief": "css link to w3_theme_ski_css",
 "show": true,
 "attribs": {
-"href": "{w3_theme_ski}",
+"href": "{w3_theme_ski_css}",
 "rel": "stylesheet",
 "type": "text/css"
 }
@@ -8854,10 +8854,10 @@ false,
 "ClosedPart",
 {
 "tag_name": "link",
-"brief": "css link to w3_theme_ski",
+"brief": "css link to w3_theme_ski_css",
 "show": true,
 "attribs": {
-"href": "{w3_theme_ski}",
+"href": "{w3_theme_ski_css}",
 "rel": "stylesheet",
 "type": "text/css"
 }
@@ -9290,10 +9290,10 @@ false,
 "ClosedPart",
 {
 "tag_name": "link",
-"brief": "css link to w3_theme_ski",
+"brief": "css link to w3_theme_ski_css",
 "show": true,
 "attribs": {
-"href": "{w3_theme_ski}",
+"href": "{w3_theme_ski_css}",
 "rel": "stylesheet",
 "type": "text/css"
 }
@@ -9589,10 +9589,10 @@ false,
 "ClosedPart",
 {
 "tag_name": "link",
-"brief": "css link to w3_theme_ski",
+"brief": "css link to w3_theme_ski_css",
 "show": true,
 "attribs": {
-"href": "{w3_theme_ski}",
+"href": "{w3_theme_ski_css}",
 "rel": "stylesheet",
 "type": "text/css"
 }
@@ -9818,10 +9818,10 @@ false,
 "ClosedPart",
 {
 "tag_name": "link",
-"brief": "css link to w3_theme_ski",
+"brief": "css link to w3_theme_ski_css",
 "show": true,
 "attribs": {
-"href": "{w3_theme_ski}",
+"href": "{w3_theme_ski_css}",
 "rel": "stylesheet",
 "type": "text/css"
 }
@@ -10117,10 +10117,10 @@ false,
 "ClosedPart",
 {
 "tag_name": "link",
-"brief": "css link to w3_theme_ski",
+"brief": "css link to w3_theme_ski_css",
 "show": true,
 "attribs": {
-"href": "{w3_theme_ski}",
+"href": "{w3_theme_ski_css}",
 "rel": "stylesheet",
 "type": "text/css"
 }
@@ -10416,10 +10416,10 @@ false,
 "ClosedPart",
 {
 "tag_name": "link",
-"brief": "css link to w3_theme_ski",
+"brief": "css link to w3_theme_ski_css",
 "show": true,
 "attribs": {
-"href": "{w3_theme_ski}",
+"href": "{w3_theme_ski_css}",
 "rel": "stylesheet",
 "type": "text/css"
 }
@@ -10632,10 +10632,10 @@ false,
 "ClosedPart",
 {
 "tag_name": "link",
-"brief": "css link to w3_theme_ski",
+"brief": "css link to w3_theme_ski_css",
 "show": true,
 "attribs": {
-"href": "{w3_theme_ski}",
+"href": "{w3_theme_ski_css}",
 "rel": "stylesheet",
 "type": "text/css"
 }
@@ -10848,10 +10848,10 @@ false,
 "ClosedPart",
 {
 "tag_name": "link",
-"brief": "css link to w3_theme_ski",
+"brief": "css link to w3_theme_ski_css",
 "show": true,
 "attribs": {
-"href": "{w3_theme_ski}",
+"href": "{w3_theme_ski_css}",
 "rel": "stylesheet",
 "type": "text/css"
 }
@@ -11101,10 +11101,10 @@ false,
 "ClosedPart",
 {
 "tag_name": "link",
-"brief": "css link to w3_theme_ski",
+"brief": "css link to w3_theme_ski_css",
 "show": true,
 "attribs": {
-"href": "{w3_theme_ski}",
+"href": "{w3_theme_ski_css}",
 "rel": "stylesheet",
 "type": "text/css"
 }
@@ -11768,10 +11768,10 @@ false,
 "ClosedPart",
 {
 "tag_name": "link",
-"brief": "css link to w3_theme_ski",
+"brief": "css link to w3_theme_ski_css",
 "show": true,
 "attribs": {
-"href": "{w3_theme_ski}",
+"href": "{w3_theme_ski_css}",
 "rel": "stylesheet",
 "type": "text/css"
 }
@@ -12047,10 +12047,10 @@ false,
 "ClosedPart",
 {
 "tag_name": "link",
-"brief": "css link to w3_theme_ski",
+"brief": "css link to w3_theme_ski_css",
 "show": true,
 "attribs": {
-"href": "{w3_theme_ski}",
+"href": "{w3_theme_ski_css}",
 "rel": "stylesheet",
 "type": "text/css"
 }
