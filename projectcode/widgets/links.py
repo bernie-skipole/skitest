@@ -1,4 +1,4 @@
-from ....skilift import FailPage, GoTo, ValidateError, ServerError
+from ... import FailPage, GoTo, ValidateError, ServerError
 
 def table1button(caller_ident, ident_list, submit_list, submit_dict, call_data, page_data, lang):
     """Populates Table1_Button test page"""

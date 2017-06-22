@@ -5,7 +5,7 @@ This package will be called by the Skipole framework to access your data.
 # this import used by basic authentication
 from base64 import b64decode
 
-from ...skilift import FailPage, GoTo, ValidateError, ServerError
+from .. import FailPage, GoTo, ValidateError, ServerError
 
 
 from . import widgets, login, responders

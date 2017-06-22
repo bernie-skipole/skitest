@@ -1,4 +1,4 @@
-from ....skilift import FailPage, GoTo, ValidateError, ServerError
+from ... import FailPage, GoTo, ValidateError, ServerError
 
 def check1(caller_ident, ident_list, submit_list, submit_dict, call_data, page_data, lang):
     """Tests CheckBox1 when submitted in a form"""
@@ -12,12 +12,12 @@ def check1(caller_ident, ident_list, submit_list, submit_dict, call_data, page_d
 
 def check2(caller_ident, ident_list, submit_list, submit_dict, call_data, page_data, lang):
     """Raises an error in CheckBox1"""
-    raise FailPage(message="Test error raised", displaywidgetname='check1')
+    raise FailPage(message="Test error raised", widget='check1')
 
 
 def check5(caller_ident, ident_list, submit_list, submit_dict, call_data, page_data, lang):
     """Raises an error in CheckBox1 by JSON"""
-    raise FailPage(message="Test error raised", displaywidgetname='check1')
+    raise FailPage(message="Test error raised", widget='check1')
 
 
 def check10(caller_ident, ident_list, submit_list, submit_dict, call_data, page_data, lang):
