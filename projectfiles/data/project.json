@@ -3,11 +3,12 @@
 "default_language": "en",
 "brief": "Project to test the skipole framework",
 "version": "0.0.1",
-"skipole": "0.0.22",
+"skipole": "0.0.24",
 "subprojects": {
 "lib": "/lib/"
 },
 "specialpages": {
+"alertclear1": 4401,
 "check10test": 4011,
 "check11test": 4012,
 "check12test": 4013,
@@ -6563,6 +6564,338 @@ false,
 }
 }
 },
+"confirm": {
+"ident": 4400,
+"brief": "confirm module tests",
+"default_page_name": "index",
+"restricted": false,
+"folders": {
+"restricted": {
+"ident": 14400,
+"brief": "Restricted folder for confirm templates",
+"default_page_name": "index",
+"restricted": true,
+"folders": {},
+"pages": {
+"alertclear1": {
+"ident": 14401,
+"brief": "template for alertclear1",
+"TemplatePage": {
+"show_backcol": false,
+"last_scroll": true,
+"lang": "en",
+"backcol": "#9dbd7a",
+"default_error_widget": [
+"",
+"testerrordiv"
+]
+},
+"head": [
+"Part",
+{
+"tag_name": "head",
+"brief": "The head section of the page",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"ClosedPart",
+{
+"tag_name": "meta",
+"brief": "The charset meta declaration",
+"show": true,
+"attribs": {
+"charset": "utf-8"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "meta",
+"brief": "The viewport meta declaration",
+"show": true,
+"attribs": {
+"content": "width=device-width, initial-scale=1",
+"name": "viewport"
+}
+}
+],
+[
+"Part",
+{
+"tag_name": "title",
+"brief": "The page title element",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Text",
+"Index"
+]
+]
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to w3_css",
+"show": true,
+"attribs": {
+"href": "{w3_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to w3_theme_ski_css",
+"show": true,
+"attribs": {
+"href": "{w3_theme_ski_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to ski_css",
+"show": true,
+"attribs": {
+"href": "{ski_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"Part",
+{
+"tag_name": "script",
+"brief": "script link to jquery_core",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"src": "{jquery_core}"
+},
+"parts": []
+}
+],
+[
+"Part",
+{
+"tag_name": "script",
+"brief": "script link to skipole_js",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"src": "{skipole_js}"
+},
+"parts": []
+}
+]
+]
+}
+],
+"body": [
+"Part",
+{
+"tag_name": "body",
+"brief": "The body section of the page",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "w3-theme"
+},
+"parts": [
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "container",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "w3-container"
+},
+"parts": [
+[
+"SectionPlaceHolder",
+{
+"brief": "Page header",
+"section_name": "header",
+"placename": "header"
+}
+],
+[
+"SectionPlaceHolder",
+{
+"brief": "Left navigation panel",
+"section_name": "navigation",
+"placename": "navigation"
+}
+],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "centre",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "w3-section",
+"style": "margin-left:25%"
+},
+"parts": [
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "Top description",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"TextBlock",
+{
+"textref": "page.14401.01",
+"failmessage": "TextBlock not found",
+"show": true,
+"escape": true,
+"linebreaks": true
+}
+]
+]
+}
+],
+[
+"Widget",
+{
+"class": "confirm.AlertClear1",
+"name": "alertclear1",
+"brief": "Widget being tested",
+"fields": {
+"boxdiv_class": "w3-modal-content w3-panel w3-theme-d3",
+"button_class": "w3-bar-item w3-button w3-right w3-theme-l2",
+"buttondiv_class": "w3-bar",
+"buttondiv_style": "",
+"clear_error": false,
+"error_class": "w3-panel w3-red",
+"get_field1": "",
+"get_field2": "",
+"get_field3": "",
+"hide": true,
+"inner_class": "w3-theme-d3",
+"link_ident": "home",
+"para_text": "Default text message",
+"pre_line": true,
+"show": true,
+"show_error": "Default error message",
+"widget_class": "w3-modal",
+"widget_style": ""
+}
+}
+],
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "New Tag",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Text",
+"Displayes alertclear1 widget with an html call."
+]
+]
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink2",
+"name": "html_alertclear1",
+"brief": "Creates an alert with an html call",
+"fields": {
+"button_class": "w3-button w3-block w3-theme-l1 w3-border",
+"button_text": "HTML call",
+"button_wait_text": "Please wait...",
+"buttondiv_class": "ski_mid_button",
+"buttondiv_style": "",
+"clear_error": false,
+"error_class": "w3-panel w3-red",
+"get_field1": "",
+"get_field2": "",
+"hide": false,
+"json_ident": "",
+"link_ident": 4402,
+"show": true,
+"show_error": "",
+"widget_class": "w3-section",
+"widget_style": ""
+}
+}
+],
+[
+"SectionPlaceHolder",
+{
+"brief": "section footer with alias foot",
+"section_name": "footer",
+"placename": "foot"
+}
+]
+]
+}
+]
+]
+}
+]
+]
+}
+]
+}
+}
+}
+},
+"pages": {
+"alertclear1": {
+"ident": 4401,
+"brief": "Responder for alertclear1 tests",
+"RespondPage": {
+"class": "NoOperation",
+"original_args": {
+"target_ident": 14401
+},
+"original_fields": {}
+}
+},
+"alertclear1_test1": {
+"ident": 4402,
+"brief": "Calls submit_data to show alertclear1",
+"RespondPage": {
+"class": "SubmitData",
+"original_args": {
+"fail_ident": 14401,
+"submit_list": [
+"widgets",
+"confirm",
+"alertclear1_test1"
+],
+"target_ident": 14401
+},
+"original_fields": {}
+}
+}
+}
+},
 "error_messages": {
 "ident": 4200,
 "brief": "folder holding links responders",
@@ -9721,7 +10054,77 @@ false,
 "attribs": {
 "style": "margin-left:15%;width:50%;margin-right:auto;"
 },
-"parts": []
+"parts": [
+[
+"Widget",
+{
+"class": "links.ButtonLink1",
+"name": "ConfirmBox1",
+"brief": "Link to ConfirmBox1 widget test page",
+"fields": {
+"button_text": "ConfirmBox1",
+"clear_error": false,
+"error_class": "w3-button w3-block w3-theme-action",
+"force_ident": false,
+"get_field1": "",
+"get_field2": "",
+"hide": false,
+"link_ident": "home",
+"new_window": false,
+"show": true,
+"show_error": "",
+"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
+"widget_style": ""
+}
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink1",
+"name": "ConfirmBox2",
+"brief": "Link to ConfirmBox2 widget test page",
+"fields": {
+"button_text": "ConfirmBox2",
+"clear_error": false,
+"error_class": "w3-button w3-block w3-theme-action",
+"force_ident": false,
+"get_field1": "",
+"get_field2": "",
+"hide": false,
+"link_ident": "home",
+"new_window": false,
+"show": true,
+"show_error": "",
+"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
+"widget_style": ""
+}
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink1",
+"name": "AlertClear1",
+"brief": "Link to AlertClear1 widget test page",
+"fields": {
+"button_text": "AlertClear1",
+"clear_error": false,
+"error_class": "w3-button w3-block w3-theme-action",
+"force_ident": false,
+"get_field1": "",
+"get_field2": "",
+"hide": false,
+"link_ident": "alertclear1",
+"new_window": false,
+"show": true,
+"show_error": "",
+"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
+"widget_style": ""
+}
+}
+]
+]
 }
 ],
 [

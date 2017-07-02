@@ -1,1 +1,1 @@
-from . import checkbox, links, error_messages
+from . import checkbox, links, error_messages, confirm

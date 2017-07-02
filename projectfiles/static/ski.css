@@ -113,3 +113,9 @@ width : 100%;}
 margin-bottom : 10px;
 text-align : center;}
 
+img.ski_centre {
+display: block;
+margin: auto;
+width: 60%;
+}
+

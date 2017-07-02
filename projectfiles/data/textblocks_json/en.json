@@ -31,6 +31,7 @@
   "page.14210.01": "An ErrorPara widget is set below this paragraph, normally invisible until an error condition is raised, at which point it will show the error message.",
   "page.14220.01": "A div - normally used for modal background containing a div with a paragraph of error text and a clear button with three optional get fields.\r\nThe 'clear' button hides the widget without making a call if javascript is available. If not, then the link is called.",
   "page.14301.01": "A widget containing the current server time. Consists of a span with time stamp, if an error is raised, the span class becomes the error_class and the span text changes to the error message.",
+  "page.14401.01": "A widget containing a paragraph and close button, on the button being pressed, closes without calling the link - but the link is called if javascript disabled. The text changes to the error message on error, and inner div class changes to error_class on error.",
   "page.200001.01": "Responders are pages which receive a call, and then manipulates the received data in some way, including calling your submit_data function to populate the page_data dictionary.\r\n\r\nThe responder then generally passes the call to a final template page which is returned to the client browser.\r\n\r\nThe following buttons link to tests for each responder type.",
   "page.3001.01": "Widgets are defined in modules - use the buttons below to the module required.",
   "page.3002.01": "These are the widgets in the checkbox module.",
