@@ -3810,22 +3810,25 @@ false,
 [
 "Widget",
 {
-"class": "links.ButtonLink1",
+"class": "links.ButtonLink2",
 "name": "to_widgets",
 "brief": "To widgets test page",
 "fields": {
+"button_class": "w3-button w3-block w3-theme-l1 w3-border",
 "button_text": "Widgets",
+"button_wait_text": "Please wait...",
+"buttondiv_class": "ski_mid_button",
+"buttondiv_style": "",
 "clear_error": false,
-"error_class": "w3-button w3-block w3-theme-action",
-"force_ident": false,
+"error_class": "w3-panel w3-red",
 "get_field1": "",
 "get_field2": "",
 "hide": false,
+"json_ident": "",
 "link_ident": "modules",
-"new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
+"widget_class": "w3-section",
 "widget_style": ""
 }
 }
@@ -3833,22 +3836,25 @@ false,
 [
 "Widget",
 {
-"class": "links.ButtonLink1",
+"class": "links.ButtonLink2",
 "name": "to_validators",
 "brief": "To validators test page",
 "fields": {
+"button_class": "w3-button w3-block w3-theme-l1 w3-border",
 "button_text": "Validators",
+"button_wait_text": "Please wait...",
+"buttondiv_class": "ski_mid_button",
+"buttondiv_style": "",
 "clear_error": false,
-"error_class": "w3-button w3-block w3-theme-action",
-"force_ident": false,
+"error_class": "w3-panel w3-red",
 "get_field1": "",
 "get_field2": "",
 "hide": false,
+"json_ident": "",
 "link_ident": "home",
-"new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
+"widget_class": "w3-section",
 "widget_style": ""
 }
 }
@@ -3856,22 +3862,25 @@ false,
 [
 "Widget",
 {
-"class": "links.ButtonLink1",
+"class": "links.ButtonLink2",
 "name": "to_responders",
 "brief": "To responders test page",
 "fields": {
+"button_class": "w3-button w3-block w3-theme-l1 w3-border",
 "button_text": "Responders",
+"button_wait_text": "Please wait...",
+"buttondiv_class": "ski_mid_button",
+"buttondiv_style": "",
 "clear_error": false,
-"error_class": "w3-button w3-block w3-theme-action",
-"force_ident": false,
+"error_class": "w3-panel w3-red",
 "get_field1": "",
 "get_field2": "",
 "hide": false,
+"json_ident": "",
 "link_ident": "responders_list",
-"new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
+"widget_class": "w3-section",
 "widget_style": ""
 }
 }
@@ -3879,22 +3888,25 @@ false,
 [
 "Widget",
 {
-"class": "links.ButtonLink1",
+"class": "links.ButtonLink2",
 "name": "show_validate_error",
 "brief": "Displays the validate error page",
 "fields": {
+"button_class": "w3-button w3-block w3-theme-l1 w3-border",
 "button_text": "Validate Error Page",
+"button_wait_text": "Please wait...",
+"buttondiv_class": "ski_mid_button",
+"buttondiv_style": "",
 "clear_error": false,
-"error_class": "w3-button w3-block w3-theme-action",
-"force_ident": false,
+"error_class": "w3-panel w3-red",
 "get_field1": "",
 "get_field2": "",
 "hide": false,
+"json_ident": "",
 "link_ident": 550,
-"new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
+"widget_class": "w3-section",
 "widget_style": ""
 }
 }
@@ -3902,22 +3914,25 @@ false,
 [
 "Widget",
 {
-"class": "links.ButtonLink1",
+"class": "links.ButtonLink2",
 "name": "show_server_error",
 "brief": "Displays the server error page",
 "fields": {
+"button_class": "w3-button w3-block w3-theme-l1 w3-border",
 "button_text": "Server Error Page",
+"button_wait_text": "Please wait...",
+"buttondiv_class": "ski_mid_button",
+"buttondiv_style": "",
 "clear_error": false,
-"error_class": "w3-button w3-block w3-theme-action",
-"force_ident": false,
+"error_class": "w3-panel w3-red",
 "get_field1": "",
 "get_field2": "",
 "hide": false,
+"json_ident": "",
 "link_ident": 560,
-"new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
+"widget_class": "w3-section",
 "widget_style": ""
 }
 }
@@ -3925,22 +3940,25 @@ false,
 [
 "Widget",
 {
-"class": "links.ButtonLink1",
+"class": "links.ButtonLink2",
 "name": "to_login",
 "brief": "To login page",
 "fields": {
+"button_class": "w3-button w3-block w3-theme-l1 w3-border",
 "button_text": "Test Login",
+"button_wait_text": "Please wait...",
+"buttondiv_class": "ski_mid_button",
+"buttondiv_style": "",
 "clear_error": false,
-"error_class": "w3-button w3-block w3-theme-action",
-"force_ident": false,
+"error_class": "w3-panel w3-red",
 "get_field1": "",
 "get_field2": "",
 "hide": false,
+"json_ident": "",
 "link_ident": "login",
-"new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
+"widget_class": "w3-section",
 "widget_style": ""
 }
 }
@@ -6813,7 +6831,7 @@ false,
 "parts": [
 [
 "Text",
-"Displayes alertclear1 widget with an html call."
+"Displayes alertclear1 widget with a call that returns a full HTML page, with the alertclear1 widget set with text and hide False."
 ]
 ]
 }
@@ -6837,6 +6855,114 @@ false,
 "hide": false,
 "json_ident": "",
 "link_ident": 4402,
+"show": true,
+"show_error": "",
+"widget_class": "w3-section",
+"widget_style": ""
+}
+}
+],
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "New Tag",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Text",
+"Displayes alertclear1 widget with a call that returns a JSON file, with the alertclear1 widget set with text and hide False."
+]
+]
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink2",
+"name": "json_alertclear1",
+"brief": "Creates an alert with an html call",
+"fields": {
+"button_class": "w3-button w3-block w3-theme-l1 w3-border",
+"button_text": "JSON call",
+"button_wait_text": "Please wait...",
+"buttondiv_class": "ski_mid_button",
+"buttondiv_style": "",
+"clear_error": false,
+"error_class": "w3-panel w3-red",
+"get_field1": "",
+"get_field2": "",
+"hide": false,
+"json_ident": 4403,
+"link_ident": "no_javascript",
+"show": true,
+"show_error": "",
+"widget_class": "w3-section",
+"widget_style": ""
+}
+}
+],
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "New Tag",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Text",
+"And the following buttons raise errors on the widget."
+]
+]
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink2",
+"name": "html_error_alertclear1",
+"brief": "Creates an error alert with an html call",
+"fields": {
+"button_class": "w3-button w3-block w3-theme-l1 w3-border",
+"button_text": "HTML Error call",
+"button_wait_text": "Please wait...",
+"buttondiv_class": "ski_mid_button",
+"buttondiv_style": "",
+"clear_error": false,
+"error_class": "w3-panel w3-red",
+"get_field1": "",
+"get_field2": "",
+"hide": false,
+"json_ident": "",
+"link_ident": 4404,
+"show": true,
+"show_error": "",
+"widget_class": "w3-section",
+"widget_style": ""
+}
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink2",
+"name": "json_error_alertclear1",
+"brief": "Creates an error alert with an html call",
+"fields": {
+"button_class": "w3-button w3-block w3-theme-l1 w3-border",
+"button_text": "JSON Error call",
+"button_wait_text": "Please wait...",
+"buttondiv_class": "ski_mid_button",
+"buttondiv_style": "",
+"clear_error": false,
+"error_class": "w3-panel w3-red",
+"get_field1": "",
+"get_field2": "",
+"hide": false,
+"json_ident": 4405,
+"link_ident": "no_javascript",
 "show": true,
 "show_error": "",
 "widget_class": "w3-section",
@@ -6890,6 +7016,57 @@ false,
 "alertclear1_test1"
 ],
 "target_ident": 14401
+},
+"original_fields": {}
+}
+},
+"alertclear1_test2": {
+"ident": 4403,
+"brief": "Requests a JSON page to show alertclear1",
+"RespondPage": {
+"class": "SubmitData",
+"original_args": {
+"fail_ident": "general_json",
+"submit_list": [
+"widgets",
+"confirm",
+"alertclear1_test2"
+],
+"target_ident": "general_json"
+},
+"original_fields": {}
+}
+},
+"alertclear1_test3": {
+"ident": 4404,
+"brief": "Calls submit_data to raise an error on alertclear1",
+"RespondPage": {
+"class": "SubmitData",
+"original_args": {
+"fail_ident": 14401,
+"submit_list": [
+"widgets",
+"confirm",
+"alertclear1_test3"
+],
+"target_ident": 14401
+},
+"original_fields": {}
+}
+},
+"alertclear1_test4": {
+"ident": 4405,
+"brief": "Requests a JSON page to raise an error on alertclear1",
+"RespondPage": {
+"class": "SubmitData",
+"original_args": {
+"fail_ident": "general_json",
+"submit_list": [
+"widgets",
+"confirm",
+"alertclear1_test4"
+],
+"target_ident": "general_json"
 },
 "original_fields": {}
 }
@@ -10058,22 +10235,25 @@ false,
 [
 "Widget",
 {
-"class": "links.ButtonLink1",
+"class": "links.ButtonLink2",
 "name": "ConfirmBox1",
 "brief": "Link to ConfirmBox1 widget test page",
 "fields": {
+"button_class": "w3-button w3-block w3-theme-l1 w3-border",
 "button_text": "ConfirmBox1",
+"button_wait_text": "Please wait...",
+"buttondiv_class": "ski_mid_button",
+"buttondiv_style": "",
 "clear_error": false,
-"error_class": "w3-button w3-block w3-theme-action",
-"force_ident": false,
+"error_class": "w3-panel w3-red",
 "get_field1": "",
 "get_field2": "",
 "hide": false,
+"json_ident": "",
 "link_ident": "home",
-"new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
+"widget_class": "w3-section",
 "widget_style": ""
 }
 }
@@ -10081,22 +10261,25 @@ false,
 [
 "Widget",
 {
-"class": "links.ButtonLink1",
+"class": "links.ButtonLink2",
 "name": "ConfirmBox2",
 "brief": "Link to ConfirmBox2 widget test page",
 "fields": {
+"button_class": "w3-button w3-block w3-theme-l1 w3-border",
 "button_text": "ConfirmBox2",
+"button_wait_text": "Please wait...",
+"buttondiv_class": "ski_mid_button",
+"buttondiv_style": "",
 "clear_error": false,
-"error_class": "w3-button w3-block w3-theme-action",
-"force_ident": false,
+"error_class": "w3-panel w3-red",
 "get_field1": "",
 "get_field2": "",
 "hide": false,
+"json_ident": "",
 "link_ident": "home",
-"new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
+"widget_class": "w3-section",
 "widget_style": ""
 }
 }
@@ -10104,22 +10287,25 @@ false,
 [
 "Widget",
 {
-"class": "links.ButtonLink1",
+"class": "links.ButtonLink2",
 "name": "AlertClear1",
 "brief": "Link to AlertClear1 widget test page",
 "fields": {
+"button_class": "w3-button w3-block w3-theme-l1 w3-border",
 "button_text": "AlertClear1",
+"button_wait_text": "Please wait...",
+"buttondiv_class": "ski_mid_button",
+"buttondiv_style": "",
 "clear_error": false,
-"error_class": "w3-button w3-block w3-theme-action",
-"force_ident": false,
+"error_class": "w3-panel w3-red",
 "get_field1": "",
 "get_field2": "",
 "hide": false,
+"json_ident": "",
 "link_ident": "alertclear1",
-"new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
+"widget_class": "w3-section",
 "widget_style": ""
 }
 }

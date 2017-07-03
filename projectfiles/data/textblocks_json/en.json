@@ -1,7 +1,7 @@
 {
   "html5shiv": "<!--[if lt IE 9]>\r\n<script src=\"//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js\"></script>\r\n<![endif]-->",
   "index01": "This project holds tests for the skipole web framework. Each widget, validator and responder has its own page. Follow the buttons below to each area of tests.",
-  "index02": "The buttons above consist of links.ButtonLink1 widgets.",
+  "index02": "The list below shows responders called to reach this page.",
   "no_javascript_text": "JAVASCRIPT FAILURE\r\n\r\nThis page is shown because the script on the previous page has failed to run.\r\n\r\nThis could be due to either a failure in the script, or your browser has javascript disabled.",
   "page.100101.01": "Access to the 'secure1' page should only be allowed once you have input the password 'password1'.\r\n\r\nFirst check that you cannot access the secure1 page, then check that an invalid password fails. Then try 'password1' - and you should be taken directly to secure1. This should set a session cookie into your browser.\r\n\r\nThen test that you can subsequently go to the secure1 page without the password, until your browser is closed, and the cookie is lost, or until you have used the logout function in secure1.",
   "page.100101.02": "Similarly, access to the 'secure2' page should only be allowed once you have input the password 'password2' below.\r\n\r\nHowever in this case, rather than a session cookie, a cookie with a one minute expiry time is used instead, so even if the browser is shut down, and re-started, access will still be available to a logged on user if no more than one minute has elapsed.",
