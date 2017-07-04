@@ -32,6 +32,10 @@
 "errorclear1_test2": 4222,
 "errorclear1_test3": 4223,
 "errorclear1_test4": 4224,
+"errorclear2": 4230,
+"errorclear2_test1": 4231,
+"errorclear2_test2": 4232,
+"errorclear2_test3": 4233,
 "errordiv": 4201,
 "errordiv_test1": 4202,
 "errordiv_test2": 4203,
@@ -7436,6 +7440,340 @@ false,
 }
 ]
 },
+"errorclear2": {
+"ident": 14230,
+"brief": "tests for errorclear2 widget",
+"TemplatePage": {
+"show_backcol": false,
+"last_scroll": true,
+"lang": "en",
+"backcol": "#9dbd7a",
+"default_error_widget": [
+"header",
+"top_error"
+]
+},
+"head": [
+"Part",
+{
+"tag_name": "head",
+"brief": "The head section of the page",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"ClosedPart",
+{
+"tag_name": "meta",
+"brief": "The charset meta declaration",
+"show": true,
+"attribs": {
+"charset": "utf-8"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "meta",
+"brief": "The viewport meta declaration",
+"show": true,
+"attribs": {
+"content": "width=device-width, initial-scale=1",
+"name": "viewport"
+}
+}
+],
+[
+"Part",
+{
+"tag_name": "title",
+"brief": "The page title element",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Text",
+"ErrorClear1"
+]
+]
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to w3_css",
+"show": true,
+"attribs": {
+"href": "{w3_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to w3_theme_ski_css",
+"show": true,
+"attribs": {
+"href": "{w3_theme_ski_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to ski_css",
+"show": true,
+"attribs": {
+"href": "{ski_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"Part",
+{
+"tag_name": "script",
+"brief": "script link to jquery_core",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"src": "{jquery_core}"
+},
+"parts": []
+}
+],
+[
+"Part",
+{
+"tag_name": "script",
+"brief": "script link to skipole_js",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"src": "{skipole_js}"
+},
+"parts": []
+}
+]
+]
+}
+],
+"body": [
+"Part",
+{
+"tag_name": "body",
+"brief": "The body section of the page",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "w3-theme"
+},
+"parts": [
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "container",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "w3-container"
+},
+"parts": [
+[
+"SectionPlaceHolder",
+{
+"brief": "Page header",
+"section_name": "header",
+"placename": "header"
+}
+],
+[
+"SectionPlaceHolder",
+{
+"brief": "Left navigation panel",
+"section_name": "navigation",
+"placename": "navigation"
+}
+],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "centre",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "w3-section",
+"style": "margin-left:25%"
+},
+"parts": [
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "Top description",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"TextBlock",
+{
+"textref": "page.14230.01",
+"failmessage": "TextBlock not found",
+"show": true,
+"escape": true,
+"linebreaks": true
+}
+],
+[
+"Widget",
+{
+"class": "error_messages.ErrorClear2",
+"name": "testerrorclear2",
+"brief": "ErrorClear2 widget",
+"fields": {
+"boxdiv_class": "",
+"button_class": "w3-bar-item w3-button w3-right w3-theme-l2",
+"buttondiv_class": "w3-bar",
+"buttondiv_style": "",
+"clear_error": false,
+"error_class": "w3-panel w3-red  w3-center",
+"get_field1": "",
+"get_field2": "",
+"get_field3": "",
+"hide": true,
+"link_ident": "no_javascript",
+"pre_line": true,
+"show": true,
+"show_error": "Default error message",
+"widget_class": "w3-panel w3-theme-action",
+"widget_style": ""
+}
+}
+]
+]
+}
+],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "section space",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "w3-section"
+},
+"parts": [
+[
+"Widget",
+{
+"class": "links.ButtonLink2",
+"name": "errorclear2_test1",
+"brief": "Link requests error to show errorclear2 box",
+"fields": {
+"button_class": "w3-button w3-block w3-theme-l1 w3-border",
+"button_text": "Raise Error (HTML)",
+"button_wait_text": "Please wait...",
+"buttondiv_class": "ski_mid_button",
+"buttondiv_style": "",
+"clear_error": false,
+"error_class": "w3-panel w3-red",
+"get_field1": "",
+"get_field2": "",
+"hide": false,
+"json_ident": "",
+"link_ident": "errorclear2_test1",
+"show": true,
+"show_error": "",
+"widget_class": "w3-section",
+"widget_style": ""
+}
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink2",
+"name": "errorclear2_test2",
+"brief": "Link requests error to raise errorclear2 box by JSON",
+"fields": {
+"button_class": "w3-button w3-block w3-theme-l1 w3-border",
+"button_text": "Raise Error (JSON)",
+"button_wait_text": "Please wait...",
+"buttondiv_class": "ski_mid_button",
+"buttondiv_style": "",
+"clear_error": false,
+"error_class": "w3-panel w3-red",
+"get_field1": "",
+"get_field2": "",
+"hide": false,
+"json_ident": "errorclear2_test2",
+"link_ident": "no_javascript",
+"show": true,
+"show_error": "",
+"widget_class": "w3-section",
+"widget_style": ""
+}
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink2",
+"name": "errorclear2_test3",
+"brief": "Link requests error to show errorclear2 box with default error",
+"fields": {
+"button_class": "w3-button w3-block w3-theme-l1 w3-border",
+"button_text": "Default Error (HTML)",
+"button_wait_text": "Please wait...",
+"buttondiv_class": "ski_mid_button",
+"buttondiv_style": "",
+"clear_error": false,
+"error_class": "w3-panel w3-red",
+"get_field1": "",
+"get_field2": "",
+"hide": false,
+"json_ident": "",
+"link_ident": "errorclear2_test3",
+"show": true,
+"show_error": "",
+"widget_class": "w3-section",
+"widget_style": ""
+}
+}
+]
+]
+}
+],
+[
+"SectionPlaceHolder",
+{
+"brief": "section footer with alias foot",
+"section_name": "footer",
+"placename": "foot"
+}
+]
+]
+}
+]
+]
+}
+]
+]
+}
+]
+},
 "errordiv": {
 "ident": 14201,
 "brief": "tests for errordiv widget",
@@ -8608,7 +8946,7 @@ false,
 "RespondPage": {
 "class": "SubmitData",
 "original_args": {
-"fail_ident": 14220,
+"fail_ident": 4220,
 "submit_list": [
 "widgets",
 "error_messages",
@@ -8642,7 +8980,7 @@ false,
 "RespondPage": {
 "class": "SubmitData",
 "original_args": {
-"fail_ident": 14220,
+"fail_ident": 4220,
 "submit_list": [
 "widgets",
 "error_messages",
@@ -8666,6 +9004,68 @@ false,
 "errorclear1_test3"
 ],
 "target_ident": "general_json"
+},
+"original_fields": {}
+}
+},
+"errorclear2": {
+"ident": 4230,
+"brief": "Responder for widget errorclear2 page",
+"RespondPage": {
+"class": "NoOperation",
+"original_args": {
+"target_ident": 14230
+},
+"original_fields": {}
+}
+},
+"errorclear2_test1": {
+"ident": 4231,
+"brief": "Link to raise an error via HTML",
+"RespondPage": {
+"class": "SubmitData",
+"original_args": {
+"fail_ident": 4230,
+"submit_list": [
+"widgets",
+"error_messages",
+"errorclear2_test1"
+],
+"target_ident": 14220
+},
+"original_fields": {}
+}
+},
+"errorclear2_test2": {
+"ident": 4232,
+"brief": "Link to raise an error via JSON",
+"RespondPage": {
+"class": "SubmitData",
+"original_args": {
+"fail_ident": "general_json",
+"submit_list": [
+"widgets",
+"error_messages",
+"errorclear2_test2"
+],
+"target_ident": "general_json"
+},
+"original_fields": {}
+}
+},
+"errorclear2_test3": {
+"ident": 4233,
+"brief": "Link to raise an error via HTML",
+"RespondPage": {
+"class": "SubmitData",
+"original_args": {
+"fail_ident": 4230,
+"submit_list": [
+"widgets",
+"error_messages",
+"errorclear2_test3"
+],
+"target_ident": 14220
 },
 "original_fields": {}
 }
@@ -10611,6 +11011,32 @@ false,
 "hide": false,
 "json_ident": "",
 "link_ident": "errorclear1",
+"show": true,
+"show_error": "",
+"widget_class": "w3-section",
+"widget_style": ""
+}
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink2",
+"name": "ErrorClear2",
+"brief": "Link to ErrorClear2 widget test page",
+"fields": {
+"button_class": "w3-button w3-block w3-theme-l1 w3-border",
+"button_text": "ErrorClear2",
+"button_wait_text": "Please wait...",
+"buttondiv_class": "ski_mid_button",
+"buttondiv_style": "",
+"clear_error": false,
+"error_class": "w3-panel w3-red",
+"get_field1": "",
+"get_field2": "",
+"hide": false,
+"json_ident": "",
+"link_ident": "errorclear2",
 "show": true,
 "show_error": "",
 "widget_class": "w3-section",

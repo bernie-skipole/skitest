@@ -51,6 +51,18 @@ def errorclear1_test3(caller_ident, ident_list, submit_list, submit_dict, call_d
     page_data["testerrorclear1", "hide"] = False
     page_data["testerrorclear1", "para_text"] = "This text is sent by responder\nIt is not an error message."
 
+def errorclear2_test1(caller_ident, ident_list, submit_list, submit_dict, call_data, page_data, lang):
+    """Raises an error for errorclear2"""
+    raise FailPage(message="Error message sent by Responder and HTML page refresh", widget="testerrorclear2")
+
+def errorclear2_test2(caller_ident, ident_list, submit_list, submit_dict, call_data, page_data, lang):
+    """Raises an error for errorclear2"""
+    raise FailPage(message="Error message sent by Responder via JSON file", widget="testerrorclear2")
+
+def errorclear2_test3(caller_ident, ident_list, submit_list, submit_dict, call_data, page_data, lang):
+    """Raises default error message for errorclear2"""
+    raise FailPage(widget="testerrorclear2")
+
 
 
 
