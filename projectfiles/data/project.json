@@ -10533,32 +10533,35 @@ false,
 "Part",
 {
 "tag_name": "div",
-"brief": "Holds buttons",
+"brief": "section space",
 "show": true,
 "hide_if_empty": false,
 "attribs": {
-"style": "margin-left:15%;width:50%;margin-right:auto;"
+"class": "w3-section"
 },
 "parts": [
 [
 "Widget",
 {
-"class": "links.ButtonLink1",
+"class": "links.ButtonLink2",
 "name": "ErrorDiv",
 "brief": "Link to ErrorDiv widget test page",
 "fields": {
+"button_class": "w3-button w3-block w3-theme-l1 w3-border",
 "button_text": "ErrorDiv",
+"button_wait_text": "Please wait...",
+"buttondiv_class": "ski_mid_button",
+"buttondiv_style": "",
 "clear_error": false,
-"error_class": "w3-button w3-block w3-theme-action",
-"force_ident": false,
+"error_class": "w3-panel w3-red",
 "get_field1": "",
 "get_field2": "",
 "hide": false,
+"json_ident": "",
 "link_ident": "errordiv",
-"new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
+"widget_class": "w3-section",
 "widget_style": ""
 }
 }
@@ -10566,22 +10569,25 @@ false,
 [
 "Widget",
 {
-"class": "links.ButtonLink1",
+"class": "links.ButtonLink2",
 "name": "ErrorPara",
 "brief": "Link to ErrorPara widget test page",
 "fields": {
+"button_class": "w3-button w3-block w3-theme-l1 w3-border",
 "button_text": "ErrorPara",
+"button_wait_text": "Please wait...",
+"buttondiv_class": "ski_mid_button",
+"buttondiv_style": "",
 "clear_error": false,
-"error_class": "w3-button w3-block w3-theme-action",
-"force_ident": false,
+"error_class": "w3-panel w3-red",
 "get_field1": "",
 "get_field2": "",
 "hide": false,
+"json_ident": "",
 "link_ident": "errorpara",
-"new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
+"widget_class": "w3-section",
 "widget_style": ""
 }
 }
@@ -10589,22 +10595,25 @@ false,
 [
 "Widget",
 {
-"class": "links.ButtonLink1",
+"class": "links.ButtonLink2",
 "name": "ErrorClear1",
 "brief": "Link to ErrorClear1 widget test page",
 "fields": {
+"button_class": "w3-button w3-block w3-theme-l1 w3-border",
 "button_text": "ErrorClear1",
+"button_wait_text": "Please wait...",
+"buttondiv_class": "ski_mid_button",
+"buttondiv_style": "",
 "clear_error": false,
-"error_class": "w3-button w3-block w3-theme-action",
-"force_ident": false,
+"error_class": "w3-panel w3-red",
 "get_field1": "",
 "get_field2": "",
 "hide": false,
+"json_ident": "",
 "link_ident": "errorclear1",
-"new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
+"widget_class": "w3-section",
 "widget_style": ""
 }
 }
