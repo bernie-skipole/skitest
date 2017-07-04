@@ -17,7 +17,8 @@
 "widget_class": "w3-section"
 },
 "ShowPara2": {
-"close_class": "w3-button w3-round w3-theme-l1 w3-right"
+"close_class": "w3-button w3-round w3-theme-l1 w3-right",
+"widget_class": "w3-panel w3-theme-action w3-center"
 },
 "DivPara": {
 "error_class": "w3-red",
