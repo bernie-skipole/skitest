@@ -3,9 +3,9 @@
 "default_language": "en",
 "brief": "Project to test the skipole framework",
 "version": "0.0.1",
-"skipole": "0.0.24",
+"skipole": "0.0.25",
 "subprojects": {
-"lib": "/lib/"
+"lib": {"path":"/lib/"}
 },
 "specialpages": {
 "alertclear1": 4401,
@@ -6815,6 +6815,7 @@ false,
 "get_field3": "",
 "hide": true,
 "inner_class": "w3-theme-d3",
+"inner_style": "",
 "link_ident": "home",
 "para_text": "Default text message",
 "pre_line": true,

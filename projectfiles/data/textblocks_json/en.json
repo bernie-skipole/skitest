@@ -1,5 +1,4 @@
 {
-  "html5shiv": "<!--[if lt IE 9]>\r\n<script src=\"//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js\"></script>\r\n<![endif]-->",
   "index01": "This project holds tests for the skipole web framework. Each widget, validator and responder has its own page. Follow the buttons below to each area of tests.",
   "index02": "The list below shows responders called to reach this page.",
   "no_javascript_text": "JAVASCRIPT FAILURE\r\n\r\nThis page is shown because the script on the previous page has failed to run.\r\n\r\nThis could be due to either a failure in the script, or your browser has javascript disabled.",
