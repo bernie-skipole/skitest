@@ -296,10 +296,11 @@
 },
 "ErrorClear2": {
 "close_class": "w3-button w3-round w3-theme-l1 w3-right",
-"widget_class": "w3-panel w3-theme-action",
-"error_class": "w3-panel w3-red  w3-center",
+"widget_class": "w3-modal",
+"error_class": "w3-panel w3-center",
 "button_class": "w3-bar-item w3-button w3-right w3-theme-l2",
-"buttondiv_class": "w3-bar"
+"buttondiv_class": "w3-bar",
+"boxdiv_class": "w3-modal-content w3-red"
 }
 },
 "logins": {

@@ -8323,6 +8323,9 @@ false,
 "escape": true,
 "linebreaks": true
 }
+]
+]
+}
 ],
 [
 "Widget",
@@ -8331,12 +8334,12 @@ false,
 "name": "testerrorclear2",
 "brief": "ErrorClear2 widget",
 "fields": {
-"boxdiv_class": "",
+"boxdiv_class": "w3-modal-content w3-red",
 "button_class": "w3-bar-item w3-button w3-right w3-theme-l2",
 "buttondiv_class": "w3-bar",
 "buttondiv_style": "",
 "clear_error": false,
-"error_class": "w3-panel w3-red  w3-center",
+"error_class": "w3-panel w3-center",
 "get_field1": "",
 "get_field2": "",
 "get_field3": "",
@@ -8345,12 +8348,9 @@ false,
 "pre_line": true,
 "show": true,
 "show_error": "Default error message",
-"widget_class": "w3-panel w3-theme-action",
+"widget_class": "w3-modal",
 "widget_style": ""
 }
-}
-]
-]
 }
 ],
 [
