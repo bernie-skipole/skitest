@@ -328,6 +328,15 @@
 "inner_class": "w3-panel w3-theme-d4",
 "button_class": "w3-bar-item w3-button w3-right w3-theme-l2",
 "buttondiv_class": "w3-bar"
+},
+"ConfirmBox1": {
+"widget_class": "w3-modal",
+"paradiv_class": "w3-panel",
+"button1_class": "w3-button w3-round w3-theme-d4",
+"button1_style": "margin-left:20%",
+"button2_class": "w3-button w3-round w3-theme-d4",
+"button2_style": "margin-right:20%",
+"buttondiv_class": "w3-bar"
 }
 }
 }

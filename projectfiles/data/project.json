@@ -3,9 +3,11 @@
 "default_language": "en",
 "brief": "Project to test the skipole framework",
 "version": "0.0.1",
-"skipole": "0.0.25",
+"skipole": "0.0.32",
 "subprojects": {
-"lib": {"path":"/lib/"}
+"lib": {
+"path": "/lib/"
+}
 },
 "specialpages": {
 "alertclear1": 4401,
@@ -26,6 +28,8 @@
 "checkbox2": 4010,
 "checkedtext": 4020,
 "confirm": 3003,
+"confirmbox1": 4410,
+"confirmbox2": 4420,
 "error_messages": 3008,
 "errorclear1": 4220,
 "errorclear1_test1": 4221,
@@ -6992,6 +6996,668 @@ false,
 ]
 }
 ]
+},
+"confirmbox1": {
+"ident": 14410,
+"brief": "template for confirmbox1",
+"TemplatePage": {
+"show_backcol": false,
+"last_scroll": true,
+"lang": "en",
+"backcol": "#9dbd7a",
+"default_error_widget": [
+"",
+"testerrordiv"
+]
+},
+"head": [
+"Part",
+{
+"tag_name": "head",
+"brief": "The head section of the page",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"ClosedPart",
+{
+"tag_name": "meta",
+"brief": "The charset meta declaration",
+"show": true,
+"attribs": {
+"charset": "utf-8"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "meta",
+"brief": "The viewport meta declaration",
+"show": true,
+"attribs": {
+"content": "width=device-width, initial-scale=1",
+"name": "viewport"
+}
+}
+],
+[
+"Part",
+{
+"tag_name": "title",
+"brief": "The page title element",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Text",
+"ConfirmBox1"
+]
+]
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to w3_css",
+"show": true,
+"attribs": {
+"href": "{w3_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to w3_theme_ski_css",
+"show": true,
+"attribs": {
+"href": "{w3_theme_ski_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to ski_css",
+"show": true,
+"attribs": {
+"href": "{ski_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"Part",
+{
+"tag_name": "script",
+"brief": "script link to jquery_core",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"src": "{jquery_core}"
+},
+"parts": []
+}
+],
+[
+"Part",
+{
+"tag_name": "script",
+"brief": "script link to skipole_js",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"src": "{skipole_js}"
+},
+"parts": []
+}
+]
+]
+}
+],
+"body": [
+"Part",
+{
+"tag_name": "body",
+"brief": "The body section of the page",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "w3-theme"
+},
+"parts": [
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "container",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "w3-container"
+},
+"parts": [
+[
+"SectionPlaceHolder",
+{
+"brief": "Page header",
+"section_name": "header",
+"placename": "header"
+}
+],
+[
+"SectionPlaceHolder",
+{
+"brief": "Left navigation panel",
+"section_name": "navigation",
+"placename": "navigation"
+}
+],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "centre",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "w3-section",
+"style": "margin-left:25%"
+},
+"parts": [
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "Top description",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"TextBlock",
+{
+"textref": "page.14410.01",
+"failmessage": "TextBlock not found",
+"show": true,
+"escape": true,
+"linebreaks": true
+}
+]
+]
+}
+],
+[
+"Widget",
+{
+"class": "confirm.ConfirmBox1",
+"name": "confirmbox1",
+"brief": "Widget being tested",
+"fields": {
+"boxdiv_class": "w3-modal-content w3-panel w3-theme-l1",
+"button1_class": "w3-button w3-round w3-theme-d4",
+"button1_style": "margin-left:20%",
+"button2_class": "w3-button w3-round w3-theme-d4",
+"button2_style": "margin-right:20%",
+"button_text1": "Cancel",
+"button_text2": "Confirm",
+"buttondiv_class": "w3-bar",
+"get_field1_1": "",
+"get_field1_2": "",
+"get_field1_3": "",
+"get_field2_1": "",
+"get_field2_2": "",
+"get_field2_3": "",
+"hide": true,
+"link_ident1": "",
+"link_ident2": "",
+"para_class": "",
+"para_text": "",
+"paradiv_class": "w3-panel",
+"show": true,
+"widget_class": "w3-modal",
+"widget_style": ""
+}
+}
+],
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "New Tag",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Text",
+"Displayes ConfirmBox1 widget with a call that returns a full HTML page, with the ConfirmBox1 widget set with text and hide False."
+]
+]
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink2",
+"name": "html_confirmbox1",
+"brief": "Creates an alert with an html call",
+"fields": {
+"button_class": "w3-button w3-block w3-theme-l1 w3-border",
+"button_text": "HTML call",
+"button_wait_text": "Please wait...",
+"buttondiv_class": "ski_mid_button",
+"buttondiv_style": "",
+"clear_error": false,
+"error_class": "w3-panel w3-red",
+"get_field1": "",
+"get_field2": "",
+"hide": false,
+"json_ident": "",
+"link_ident": 4402,
+"show": true,
+"show_error": "",
+"widget_class": "w3-section",
+"widget_style": ""
+}
+}
+],
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "New Tag",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Text",
+"Displayes ConfirmBox1 widget with a call that returns a JSON file, with the ConfirmBox1 widget set with text and hide False."
+]
+]
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink2",
+"name": "json_confirmbox1",
+"brief": "Creates an alert with an html call",
+"fields": {
+"button_class": "w3-button w3-block w3-theme-l1 w3-border",
+"button_text": "JSON call",
+"button_wait_text": "Please wait...",
+"buttondiv_class": "ski_mid_button",
+"buttondiv_style": "",
+"clear_error": false,
+"error_class": "w3-panel w3-red",
+"get_field1": "",
+"get_field2": "",
+"hide": false,
+"json_ident": 4403,
+"link_ident": "no_javascript",
+"show": true,
+"show_error": "",
+"widget_class": "w3-section",
+"widget_style": ""
+}
+}
+],
+[
+"SectionPlaceHolder",
+{
+"brief": "section footer with alias foot",
+"section_name": "footer",
+"placename": "foot"
+}
+]
+]
+}
+]
+]
+}
+]
+]
+}
+]
+},
+"confirmbox2": {
+"ident": 14420,
+"brief": "template for confirmbox2",
+"TemplatePage": {
+"show_backcol": false,
+"last_scroll": true,
+"lang": "en",
+"backcol": "#9dbd7a",
+"default_error_widget": [
+"",
+"testerrordiv"
+]
+},
+"head": [
+"Part",
+{
+"tag_name": "head",
+"brief": "The head section of the page",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"ClosedPart",
+{
+"tag_name": "meta",
+"brief": "The charset meta declaration",
+"show": true,
+"attribs": {
+"charset": "utf-8"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "meta",
+"brief": "The viewport meta declaration",
+"show": true,
+"attribs": {
+"content": "width=device-width, initial-scale=1",
+"name": "viewport"
+}
+}
+],
+[
+"Part",
+{
+"tag_name": "title",
+"brief": "The page title element",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Text",
+"ConfirmBox2"
+]
+]
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to w3_css",
+"show": true,
+"attribs": {
+"href": "{w3_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to w3_theme_ski_css",
+"show": true,
+"attribs": {
+"href": "{w3_theme_ski_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to ski_css",
+"show": true,
+"attribs": {
+"href": "{ski_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"Part",
+{
+"tag_name": "script",
+"brief": "script link to jquery_core",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"src": "{jquery_core}"
+},
+"parts": []
+}
+],
+[
+"Part",
+{
+"tag_name": "script",
+"brief": "script link to skipole_js",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"src": "{skipole_js}"
+},
+"parts": []
+}
+]
+]
+}
+],
+"body": [
+"Part",
+{
+"tag_name": "body",
+"brief": "The body section of the page",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "w3-theme"
+},
+"parts": [
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "container",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "w3-container"
+},
+"parts": [
+[
+"SectionPlaceHolder",
+{
+"brief": "Page header",
+"section_name": "header",
+"placename": "header"
+}
+],
+[
+"SectionPlaceHolder",
+{
+"brief": "Left navigation panel",
+"section_name": "navigation",
+"placename": "navigation"
+}
+],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "centre",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "w3-section",
+"style": "margin-left:25%"
+},
+"parts": [
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "Top description",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"TextBlock",
+{
+"textref": "page.14420.01",
+"failmessage": "TextBlock not found",
+"show": true,
+"escape": true,
+"linebreaks": true
+}
+]
+]
+}
+],
+[
+"Widget",
+{
+"class": "confirm.ConfirmBox2",
+"name": "confirmbox2",
+"brief": "Widget being tested",
+"fields": {
+"boxdiv_class": "w3-modal-content w3-panel w3-theme-l1",
+"button1_class": "w3-button w3-round w3-theme-d4",
+"button1_style": "margin-left:20%",
+"button2_class": "w3-button w3-round w3-theme-d4",
+"button2_style": "margin-right:20%",
+"button_text1": "Cancel",
+"button_text2": "Confirm",
+"buttondiv_class": "w3-bar",
+"get_field1_1": "",
+"get_field1_2": "",
+"get_field1_3": "",
+"get_field2_1": "",
+"get_field2_2": "",
+"get_field2_3": "",
+"hide": true,
+"link_ident1": "",
+"link_ident2": "",
+"para_class": "",
+"para_text": "",
+"paradiv_class": "w3-panel",
+"show": true,
+"widget_class": "w3-modal",
+"widget_style": ""
+}
+}
+],
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "New Tag",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Text",
+"Displayes ConfirmBox2 widget with a call that returns a full HTML page, with the ConfirmBox2 widget set with text and hide False."
+]
+]
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink2",
+"name": "html_confirmbox2",
+"brief": "Creates an alert with an html call",
+"fields": {
+"button_class": "w3-button w3-block w3-theme-l1 w3-border",
+"button_text": "HTML call",
+"button_wait_text": "Please wait...",
+"buttondiv_class": "ski_mid_button",
+"buttondiv_style": "",
+"clear_error": false,
+"error_class": "w3-panel w3-red",
+"get_field1": "",
+"get_field2": "",
+"hide": false,
+"json_ident": "",
+"link_ident": 4402,
+"show": true,
+"show_error": "",
+"widget_class": "w3-section",
+"widget_style": ""
+}
+}
+],
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "New Tag",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Text",
+"Displayes ConfirmBox2 widget with a call that returns a JSON file, with the ConfirmBox2 widget set with text and hide False."
+]
+]
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink2",
+"name": "json_confirmbox2",
+"brief": "Creates an alert with an html call",
+"fields": {
+"button_class": "w3-button w3-block w3-theme-l1 w3-border",
+"button_text": "JSON call",
+"button_wait_text": "Please wait...",
+"buttondiv_class": "ski_mid_button",
+"buttondiv_style": "",
+"clear_error": false,
+"error_class": "w3-panel w3-red",
+"get_field1": "",
+"get_field2": "",
+"hide": false,
+"json_ident": 4403,
+"link_ident": "no_javascript",
+"show": true,
+"show_error": "",
+"widget_class": "w3-section",
+"widget_style": ""
+}
+}
+],
+[
+"SectionPlaceHolder",
+{
+"brief": "section footer with alias foot",
+"section_name": "footer",
+"placename": "foot"
+}
+]
+]
+}
+]
+]
+}
+]
+]
+}
+]
 }
 }
 }
@@ -7072,6 +7738,28 @@ false,
 "alertclear1_test4"
 ],
 "target_ident": "general_json"
+},
+"original_fields": {}
+}
+},
+"confirmbox1": {
+"ident": 4410,
+"brief": "Responder for confirmbox1 tests",
+"RespondPage": {
+"class": "NoOperation",
+"original_args": {
+"target_ident": 14410
+},
+"original_fields": {}
+}
+},
+"confirmbox2": {
+"ident": 4420,
+"brief": "Responder for confirmbox2 tests",
+"RespondPage": {
+"class": "NoOperation",
+"original_args": {
+"target_ident": 14420
 },
 "original_fields": {}
 }
@@ -10651,7 +11339,7 @@ false,
 "get_field2": "",
 "hide": false,
 "json_ident": "",
-"link_ident": "home",
+"link_ident": "confirmbox1",
 "show": true,
 "show_error": "",
 "widget_class": "w3-section",
@@ -10677,7 +11365,7 @@ false,
 "get_field2": "",
 "hide": false,
 "json_ident": "",
-"link_ident": "home",
+"link_ident": "confirmbox2",
 "show": true,
 "show_error": "",
 "widget_class": "w3-section",
