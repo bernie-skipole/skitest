@@ -7204,9 +7204,9 @@ false,
 "fields": {
 "boxdiv_class": "w3-modal-content w3-panel w3-theme-l1",
 "button1_class": "w3-button w3-round w3-theme-d4",
-"button1_style": "margin-left:20%",
+"button1_style": "margin-left:20%;margin-right:5px;",
 "button2_class": "w3-button w3-round w3-theme-d4",
-"button2_style": "margin-right:20%",
+"button2_style": "",
 "button_text1": "Clear by JSON",
 "button_text2": "Clear by HTML",
 "buttondiv_class": "w3-bar",
@@ -7303,7 +7303,7 @@ false,
 "get_field1": "",
 "get_field2": "",
 "hide": false,
-"json_ident": 4403,
+"json_ident": 4412,
 "link_ident": "no_javascript",
 "show": true,
 "show_error": "",
@@ -7768,6 +7768,23 @@ false,
 "confirmbox1_test1"
 ],
 "target_ident": 14410
+},
+"original_fields": {}
+}
+},
+"confirmbox1_test2": {
+"ident": 4412,
+"brief": "Calls JSON submit_data to show confirmbox1",
+"RespondPage": {
+"class": "SubmitData",
+"original_args": {
+"fail_ident": "general_json",
+"submit_list": [
+"widgets",
+"confirm",
+"confirmbox1_test2"
+],
+"target_ident": "general_json"
 },
 "original_fields": {}
 }
