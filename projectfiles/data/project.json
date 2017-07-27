@@ -7207,8 +7207,8 @@ false,
 "button1_style": "margin-left:20%",
 "button2_class": "w3-button w3-round w3-theme-d4",
 "button2_style": "margin-right:20%",
-"button_text1": "Cancel",
-"button_text2": "Confirm",
+"button_text1": "Clear by JSON",
+"button_text2": "Clear by HTML",
 "buttondiv_class": "w3-bar",
 "get_field1_1": "",
 "get_field1_2": "",
@@ -7217,8 +7217,10 @@ false,
 "get_field2_2": "",
 "get_field2_3": "",
 "hide": true,
-"link_ident1": "",
-"link_ident2": "",
+"json_ident1": 4413,
+"json_ident2": "",
+"link_ident1": "no_javascript",
+"link_ident2": 4414,
 "para_class": "",
 "para_text": "",
 "paradiv_class": "w3-panel",
@@ -7261,7 +7263,7 @@ false,
 "get_field2": "",
 "hide": false,
 "json_ident": "",
-"link_ident": 4402,
+"link_ident": 4411,
 "show": true,
 "show_error": "",
 "widget_class": "w3-section",
@@ -7748,6 +7750,57 @@ false,
 "RespondPage": {
 "class": "NoOperation",
 "original_args": {
+"target_ident": 14410
+},
+"original_fields": {}
+}
+},
+"confirmbox1_test1": {
+"ident": 4411,
+"brief": "Calls submit_data to show confirmbox1",
+"RespondPage": {
+"class": "SubmitData",
+"original_args": {
+"fail_ident": 14410,
+"submit_list": [
+"widgets",
+"confirm",
+"confirmbox1_test1"
+],
+"target_ident": 14410
+},
+"original_fields": {}
+}
+},
+"confirmbox1_test3": {
+"ident": 4413,
+"brief": "confirmbox1 cleared by JSON call",
+"RespondPage": {
+"class": "SubmitData",
+"original_args": {
+"fail_ident": "general_json",
+"submit_list": [
+"widgets",
+"confirm",
+"confirmbox1_test3"
+],
+"target_ident": "general_json"
+},
+"original_fields": {}
+}
+},
+"confirmbox1_test4": {
+"ident": 4414,
+"brief": "Hide confirmbox1 with html call",
+"RespondPage": {
+"class": "SubmitData",
+"original_args": {
+"fail_ident": 14410,
+"submit_list": [
+"widgets",
+"confirm",
+"confirmbox1_test4"
+],
 "target_ident": 14410
 },
 "original_fields": {}
