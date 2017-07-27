@@ -297,10 +297,10 @@
 "ErrorClear2": {
 "close_class": "w3-button w3-round w3-theme-l1 w3-right",
 "widget_class": "w3-modal",
-"error_class": "w3-panel w3-center",
+"error_class": "w3-panel w3-center w3-red",
 "button_class": "w3-bar-item w3-button w3-right w3-theme-l2",
 "buttondiv_class": "w3-bar",
-"boxdiv_class": "w3-modal-content w3-red"
+"boxdiv_class": "w3-modal-content w3-panel w3-theme-d3"
 }
 },
 "logins": {
