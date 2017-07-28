@@ -7204,7 +7204,7 @@ false,
 "fields": {
 "boxdiv_class": "w3-modal-content w3-panel w3-theme-l1",
 "button1_class": "w3-button w3-round w3-theme-d4",
-"button1_style": "margin-left:20%;margin-right:5px;",
+"button1_style": "margin-left:20%;margin-right:10px;",
 "button2_class": "w3-button w3-round w3-theme-d4",
 "button2_style": "",
 "button_text1": "Clear by JSON",
@@ -7537,9 +7537,9 @@ false,
 "fields": {
 "boxdiv_class": "w3-modal-content w3-panel w3-theme-l1",
 "button1_class": "w3-button w3-round w3-theme-d4",
-"button1_style": "margin-left:20%",
+"button1_style": "margin-left:20%;margin-right:10px;",
 "button2_class": "w3-button w3-round w3-theme-d4",
-"button2_style": "margin-right:20%",
+"button2_style": "",
 "button_text1": "Cancel",
 "button_text2": "Confirm",
 "buttondiv_class": "w3-bar",
@@ -7550,8 +7550,8 @@ false,
 "get_field2_2": "",
 "get_field2_3": "",
 "hide": true,
-"link_ident1": "",
-"link_ident2": "",
+"link_ident1": "no_javascript",
+"link_ident2": 4420,
 "para_class": "",
 "para_text": "",
 "paradiv_class": "w3-panel",
@@ -7594,7 +7594,7 @@ false,
 "get_field2": "",
 "hide": false,
 "json_ident": "",
-"link_ident": 4402,
+"link_ident": 4421,
 "show": true,
 "show_error": "",
 "widget_class": "w3-section",
@@ -7634,7 +7634,7 @@ false,
 "get_field1": "",
 "get_field2": "",
 "hide": false,
-"json_ident": 4403,
+"json_ident": 4422,
 "link_ident": "no_javascript",
 "show": true,
 "show_error": "",
@@ -7830,6 +7830,40 @@ false,
 "class": "NoOperation",
 "original_args": {
 "target_ident": 14420
+},
+"original_fields": {}
+}
+},
+"confirmbox2_test1": {
+"ident": 4421,
+"brief": "Calls submit_data to show confirmbox2",
+"RespondPage": {
+"class": "SubmitData",
+"original_args": {
+"fail_ident": 14420,
+"submit_list": [
+"widgets",
+"confirm",
+"confirmbox2_test1"
+],
+"target_ident": 14420
+},
+"original_fields": {}
+}
+},
+"confirmbox2_test2": {
+"ident": 4422,
+"brief": "Calls JSON submit_data to show confirmbox2",
+"RespondPage": {
+"class": "SubmitData",
+"original_args": {
+"fail_ident": "general_json",
+"submit_list": [
+"widgets",
+"confirm",
+"confirmbox2_test2"
+],
+"target_ident": "general_json"
 },
 "original_fields": {}
 }

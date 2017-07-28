@@ -320,8 +320,8 @@
 "button1_class": "w3-button w3-round w3-theme-d4",
 "button2_class": "w3-button w3-round w3-theme-d4",
 "paradiv_class": "w3-panel",
-"button2_style": "margin-right:20%",
-"button1_style": "margin-left:20%"
+"button2_style": "",
+"button1_style": "margin-left:20%;margin-right:10px;"
 },
 "AlertClear1": {
 "widget_class": "w3-modal",
@@ -334,7 +334,7 @@
 "widget_class": "w3-modal",
 "paradiv_class": "w3-panel",
 "button1_class": "w3-button w3-round w3-theme-d4",
-"button1_style": "margin-left:20%;margin-right:5px;",
+"button1_style": "margin-left:20%;margin-right:10px;",
 "button2_class": "w3-button w3-round w3-theme-d4",
 "button2_style": "",
 "buttondiv_class": "w3-bar"
