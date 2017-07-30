@@ -3975,27 +3975,6 @@ false,
 }
 ],
 [
-"Part",
-{
-"tag_name": "p",
-"brief": "bottom description",
-"show": true,
-"hide_if_empty": false,
-"parts": [
-[
-"TextBlock",
-{
-"textref": "index02",
-"failmessage": "TextBlock not found",
-"show": true,
-"escape": true,
-"linebreaks": true
-}
-]
-]
-}
-],
-[
 "SectionPlaceHolder",
 {
 "brief": "section footer with alias foot",
@@ -7870,6 +7849,32 @@ false,
 }
 }
 },
+"debug_tools": {
+"ident": 4500,
+"brief": "Tests for debug tools",
+"default_page_name": "index",
+"restricted": false,
+"folders": {},
+"pages": {
+"debug_toggle": {
+"ident": 4501,
+"brief": "Toggles debug mode",
+"RespondPage": {
+"class": "SubmitData",
+"original_args": {
+"fail_ident": 3012,
+"submit_list": [
+"widgets",
+"debug_tools",
+"toggle_debug_mode"
+],
+"target_ident": 3012
+},
+"original_fields": {}
+}
+}
+}
+},
 "error_messages": {
 "ident": 4200,
 "brief": "folder holding links responders",
@@ -11578,7 +11583,7 @@ false,
 "parts": [
 [
 "Text",
-"Info"
+"Debug Tools"
 ]
 ]
 }
@@ -11718,6 +11723,113 @@ false,
 "escape": true,
 "linebreaks": true
 }
+]
+]
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink2",
+"name": "toggledebug",
+"brief": "Toggles debug mode",
+"fields": {
+"button_class": "w3-button w3-block w3-theme-l1 w3-border",
+"button_text": "Toggle debug mode",
+"button_wait_text": "Please wait...",
+"buttondiv_class": "ski_mid_button",
+"buttondiv_style": "",
+"clear_error": false,
+"error_class": "w3-panel w3-red",
+"get_field1": "",
+"get_field2": "",
+"hide": false,
+"json_ident": "",
+"link_ident": 4501,
+"show": true,
+"show_error": "",
+"widget_class": "w3-section",
+"widget_style": ""
+}
+}
+],
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "About ShowEnviron",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Text",
+"ShowEnviron shows the environ dictionary."
+]
+]
+}
+],
+[
+"Widget",
+{
+"class": "debug_tools.ShowEnviron",
+"name": "showsenviron",
+"brief": "Shows the environ dictionary",
+"fields": {
+"clear_error": false,
+"error_class": "",
+"para_class": "",
+"show": true,
+"show_error": "",
+"toptext": "",
+"widget_class": "",
+"widget_style": ""
+}
+}
+],
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "About ShowCallData",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Text",
+"ShowCallData shows the call_data dictionary."
+]
+]
+}
+],
+[
+"Widget",
+{
+"class": "debug_tools.ShowCallData",
+"name": "showscalldata",
+"brief": "Shows the call_data dictionary",
+"fields": {
+"clear_error": false,
+"error_class": "w3-panel w3-red",
+"para_class": "w3-section",
+"show": true,
+"show_error": "",
+"toptext": "",
+"widget_class": "w3-section",
+"widget_style": ""
+}
+}
+],
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "About ShowResponders",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Text",
+"ShowResponders shows the idents of responder pages called to display the current page."
 ]
 ]
 }
