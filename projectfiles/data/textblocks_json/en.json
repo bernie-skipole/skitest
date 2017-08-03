@@ -29,7 +29,7 @@
   "page.14210.01": "An ErrorPara widget is set below this paragraph, normally invisible until an error condition is raised, at which point it will show the error message.",
   "page.14220.01": "A div - normally used for modal background containing a div with a paragraph of error text and a clear button with three optional get fields.\r\nThe 'clear' button hides the widget without making a call if javascript is available. If not, then the link is called.",
   "page.14230.01": "A div - could be used for modal background containing a div with a paragraph of error text and an X close button with three optional get fields.\r\nThe 'X' button hides the widget without making a call if javascript is available. If not, then the link is called.",
-  "page.14301.01": "A widget containing the current server time. Consists of a span with time stamp, if an error is raised, the span class becomes the error_class and the span text changes to the error message.",
+  "page.14301.01": "A widget containing the current server time. Consists of a span with time stamp.",
   "page.14401.01": "A widget of div's containing a paragraph and close button, on the button being pressed, closes without calling the link - but the link is called if javascript disabled. The text changes to the error message on error, and inner div class changes to error_class on error.",
   "page.14410.01": "ConfirmBox1: A widget of div's containing a paragraph and two link buttons, The links have options to call either JSON or HTML pages.",
   "page.14420.01": "ConfirmBox2: A widget of div's containing a paragraph and two link buttons, The first link auto closes the call if the client has javascript enabled, otherwise it makes the call. The second link targets a html page.",

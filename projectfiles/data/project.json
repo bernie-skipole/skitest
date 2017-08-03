@@ -3,7 +3,7 @@
 "default_language": "en",
 "brief": "Project to test the skipole framework",
 "version": "0.0.1",
-"skipole": "0.0.32",
+"skipole": "0.0.33",
 "subprojects": {
 "lib": {
 "path": "/lib/"
@@ -101,7 +101,7 @@
 "table1button": 4101,
 "table1button_test1": 4102,
 "table1button_test2": 4103,
-"url_not_found": 500,
+"url_not_found": 580,
 "validate_error": 510,
 "w3_css": 1002,
 "w3_theme_ski_css": 1008
@@ -4372,7 +4372,7 @@ false,
 ]
 },
 "url_not_found": {
-"ident": 500,
+"ident": 580,
 "brief": "The url not found error page",
 "TemplatePage": {
 "show_backcol": false,
@@ -10358,10 +10358,7 @@ false,
 "name": "servertimestamp",
 "brief": "ServerTimeStamp with UTC set",
 "fields": {
-"clear_error": false,
-"error_class": "",
 "show": true,
-"show_error": "",
 "timestamp": "",
 "utc": true,
 "widget_class": "",
@@ -10408,10 +10405,7 @@ false,
 "name": "servertimestamp2",
 "brief": "ServerTimeStamp UTC unset",
 "fields": {
-"clear_error": false,
-"error_class": "",
 "show": true,
-"show_error": "",
 "timestamp": "",
 "utc": false,
 "widget_class": "",
