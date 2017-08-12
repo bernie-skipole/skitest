@@ -64,7 +64,8 @@
 "button_class": "w3-button w3-theme-d4 w3-margin-left",
 "input_class": "ski_input",
 "inputdiv_class": "w3-section",
-"widget_class": "w3-section"
+"widget_class": "w3-section",
+"inputandbutton_class": "ski_nowrap"
 },
 "TextInput4": {
 "label_class": "ski_left_label",

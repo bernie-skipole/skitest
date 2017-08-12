@@ -113,9 +113,11 @@ width : 100%;}
 margin-bottom : 10px;
 text-align : center;}
 
-img.ski_centre {
-display: block;
-margin: auto;
-width: 60%;
+.ski_nowrap {
+white-space: nowrap;}
+
+@media (max-width:768px){
+ .ski_nowrap {
+ white-space: normal;}
 }
 
