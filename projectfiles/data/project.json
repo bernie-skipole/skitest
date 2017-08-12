@@ -10469,6 +10469,21 @@ false,
 }
 }
 },
+"inputtext": {
+"ident": 4600,
+"brief": "Tests for inputtext widgets",
+"restricted": false,
+"folders": {
+"restricted": {
+"ident": 14600,
+"brief": "Restricted folder for inputtext tests",
+"restricted": true,
+"folders": {},
+"pages": {}
+}
+},
+"pages": {}
+},
 "links": {
 "ident": 4100,
 "brief": "links module tests",
@@ -13800,32 +13815,6 @@ false,
 "Widget",
 {
 "class": "links.ButtonLink2",
-"name": "Password1",
-"brief": "Link to Password1 widget test page",
-"fields": {
-"button_class": "w3-button w3-block w3-theme-l1 w3-border",
-"button_text": "Password1",
-"button_wait_text": "Please wait...",
-"buttondiv_class": "ski_mid_button",
-"buttondiv_style": "",
-"clear_error": false,
-"error_class": "w3-panel w3-red",
-"get_field1": "",
-"get_field2": "",
-"hide": false,
-"json_ident": "",
-"link_ident": "home",
-"show": true,
-"show_error": "",
-"widget_class": "w3-section",
-"widget_style": ""
-}
-}
-],
-[
-"Widget",
-{
-"class": "links.ButtonLink2",
 "name": "TextInput2",
 "brief": "Link to TextInput2 widget test page",
 "fields": {
@@ -13852,11 +13841,193 @@ false,
 "Widget",
 {
 "class": "links.ButtonLink2",
+"name": "TextInput3",
+"brief": "Link to TextInput3 widget test page",
+"fields": {
+"button_class": "w3-button w3-block w3-theme-l1 w3-border",
+"button_text": "TextInput3",
+"button_wait_text": "Please wait...",
+"buttondiv_class": "ski_mid_button",
+"buttondiv_style": "",
+"clear_error": false,
+"error_class": "w3-panel w3-red",
+"get_field1": "",
+"get_field2": "",
+"hide": false,
+"json_ident": "",
+"link_ident": "home",
+"show": true,
+"show_error": "",
+"widget_class": "w3-section",
+"widget_style": ""
+}
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink2",
+"name": "TextInput4",
+"brief": "Link to TextInput4 widget test page",
+"fields": {
+"button_class": "w3-button w3-block w3-theme-l1 w3-border",
+"button_text": "TextInput4",
+"button_wait_text": "Please wait...",
+"buttondiv_class": "ski_mid_button",
+"buttondiv_style": "",
+"clear_error": false,
+"error_class": "w3-panel w3-red",
+"get_field1": "",
+"get_field2": "",
+"hide": false,
+"json_ident": "",
+"link_ident": "home",
+"show": true,
+"show_error": "",
+"widget_class": "w3-section",
+"widget_style": ""
+}
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink2",
+"name": "Password1",
+"brief": "Link to Password1 widget test page",
+"fields": {
+"button_class": "w3-button w3-block w3-theme-l1 w3-border",
+"button_text": "Password1",
+"button_wait_text": "Please wait...",
+"buttondiv_class": "ski_mid_button",
+"buttondiv_style": "",
+"clear_error": false,
+"error_class": "w3-panel w3-red",
+"get_field1": "",
+"get_field2": "",
+"hide": false,
+"json_ident": "",
+"link_ident": "home",
+"show": true,
+"show_error": "",
+"widget_class": "w3-section",
+"widget_style": ""
+}
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink2",
 "name": "Password2",
 "brief": "Link to Password2 widget test page",
 "fields": {
 "button_class": "w3-button w3-block w3-theme-l1 w3-border",
 "button_text": "Password2",
+"button_wait_text": "Please wait...",
+"buttondiv_class": "ski_mid_button",
+"buttondiv_style": "",
+"clear_error": false,
+"error_class": "w3-panel w3-red",
+"get_field1": "",
+"get_field2": "",
+"hide": false,
+"json_ident": "",
+"link_ident": "home",
+"show": true,
+"show_error": "",
+"widget_class": "w3-section",
+"widget_style": ""
+}
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink2",
+"name": "SubmitTextInput1",
+"brief": "Link to SubmitTextInput1 widget test page",
+"fields": {
+"button_class": "w3-button w3-block w3-theme-l1 w3-border",
+"button_text": "SubmitTextInput1",
+"button_wait_text": "Please wait...",
+"buttondiv_class": "ski_mid_button",
+"buttondiv_style": "",
+"clear_error": false,
+"error_class": "w3-panel w3-red",
+"get_field1": "",
+"get_field2": "",
+"hide": false,
+"json_ident": "",
+"link_ident": "home",
+"show": true,
+"show_error": "",
+"widget_class": "w3-section",
+"widget_style": ""
+}
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink2",
+"name": "SubmitTextInput3",
+"brief": "Link to SubmitTextInput3 widget test page",
+"fields": {
+"button_class": "w3-button w3-block w3-theme-l1 w3-border",
+"button_text": "SubmitTextInput3",
+"button_wait_text": "Please wait...",
+"buttondiv_class": "ski_mid_button",
+"buttondiv_style": "",
+"clear_error": false,
+"error_class": "w3-panel w3-red",
+"get_field1": "",
+"get_field2": "",
+"hide": false,
+"json_ident": "",
+"link_ident": "home",
+"show": true,
+"show_error": "",
+"widget_class": "w3-section",
+"widget_style": ""
+}
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink2",
+"name": "TwoInputsSubmit1",
+"brief": "Link to TwoInputsSubmit1 widget test page",
+"fields": {
+"button_class": "w3-button w3-block w3-theme-l1 w3-border",
+"button_text": "TwoInputsSubmit1",
+"button_wait_text": "Please wait...",
+"buttondiv_class": "ski_mid_button",
+"buttondiv_style": "",
+"clear_error": false,
+"error_class": "w3-panel w3-red",
+"get_field1": "",
+"get_field2": "",
+"hide": false,
+"json_ident": "",
+"link_ident": "home",
+"show": true,
+"show_error": "",
+"widget_class": "w3-section",
+"widget_style": ""
+}
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink2",
+"name": "SubmitDict1",
+"brief": "Link to SubmitDict1 widget test page",
+"fields": {
+"button_class": "w3-button w3-block w3-theme-l1 w3-border",
+"button_text": "SubmitDict1",
 "button_wait_text": "Please wait...",
 "buttondiv_class": "ski_mid_button",
 "buttondiv_style": "",
