@@ -68,8 +68,10 @@
 "inputandbutton_class": "ski_nowrap"
 },
 "TextInput4": {
-"label_class": "ski_left_label",
-"input_class": "ski_input"
+"label_class": "",
+"input_class": "ski_input",
+"inputdiv_class": "ski_left_marg_30_percent",
+"labeldiv_class": "ski_left_marg_30_percent"
 },
 "TextInput2": {
 "label_class": "ski_left_label",

@@ -35,6 +35,8 @@
   "page.14420.01": "ConfirmBox2: A widget of div's containing a paragraph and two link buttons, The first link auto closes the call if the client has javascript enabled, otherwise it makes the call. The second link targets a html page.",
   "page.14601.01": "TextInput1: An input field only, needs to be contained within a form.",
   "page.14610.01": "TextInput2: A div containing a hidden error paragraph with a text input field (no form or submit button). A label to the left of the input field can have a class and text set",
+  "page.14620.01": "TextInput3: A div containing a text input field (no form or submit button) with a left and right label.",
+  "page.14630.01": "TextInput4: A div containing a div with label and a div with a text input field (no form or submit button).",
   "page.200001.01": "Responders are pages which receive a call, and then manipulates the received data in some way, including calling your submit_data function to populate the page_data dictionary.\r\n\r\nThe responder then generally passes the call to a final template page which is returned to the client browser.\r\n\r\nThe following buttons link to tests for each responder type.",
   "page.3001.01": "Widgets are defined in modules - use the buttons below to the module required.",
   "page.3002.01": "These are the widgets in the checkbox module.",
