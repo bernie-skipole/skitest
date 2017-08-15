@@ -10483,6 +10483,609 @@ false,
 "restricted": true,
 "folders": {},
 "pages": {
+"password1": {
+"ident": 14640,
+"brief": "Template for password1 tests",
+"TemplatePage": {
+"show_backcol": false,
+"last_scroll": true,
+"lang": "en",
+"backcol": "#9dbd7a",
+"default_error_widget": [
+"header",
+"top_error"
+]
+},
+"head": [
+"Part",
+{
+"tag_name": "head",
+"brief": "The head section of the page",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"ClosedPart",
+{
+"tag_name": "meta",
+"brief": "The charset meta declaration",
+"show": true,
+"attribs": {
+"charset": "utf-8"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "meta",
+"brief": "The viewport meta declaration",
+"show": true,
+"attribs": {
+"content": "width=device-width, initial-scale=1",
+"name": "viewport"
+}
+}
+],
+[
+"Part",
+{
+"tag_name": "title",
+"brief": "The page title element",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Text",
+"Password1"
+]
+]
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to w3_css",
+"show": true,
+"attribs": {
+"href": "{w3_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to w3_theme_ski_css",
+"show": true,
+"attribs": {
+"href": "{w3_theme_ski_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to ski_css",
+"show": true,
+"attribs": {
+"href": "{ski_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"Part",
+{
+"tag_name": "script",
+"brief": "script link to jquery_core",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"src": "{jquery_core}"
+},
+"parts": []
+}
+],
+[
+"Part",
+{
+"tag_name": "script",
+"brief": "script link to skipole_js",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"src": "{skipole_js}"
+},
+"parts": []
+}
+]
+]
+}
+],
+"body": [
+"Part",
+{
+"tag_name": "body",
+"brief": "The body section of the page",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "w3-theme"
+},
+"parts": [
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "container",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "w3-container"
+},
+"parts": [
+[
+"SectionPlaceHolder",
+{
+"brief": "Page header",
+"section_name": "header",
+"placename": "header"
+}
+],
+[
+"SectionPlaceHolder",
+{
+"brief": "Left navigation panel",
+"section_name": "navigation",
+"placename": "navigation"
+}
+],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "centre",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "w3-section",
+"style": "margin-left:25%"
+},
+"parts": [
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "Top description",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"TextBlock",
+{
+"textref": "page.14640.01",
+"failmessage": "TextBlock not found",
+"show": true,
+"escape": true,
+"linebreaks": true
+}
+]
+]
+}
+],
+[
+"Widget",
+{
+"class": "paras.ParaText",
+"name": "result",
+"brief": "Result paragraph",
+"fields": {
+"para_text": "Result text appears here.",
+"show": true,
+"widget_class": "",
+"widget_style": ""
+}
+}
+],
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "Password1 set in a form",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Text",
+"Password1 set in a form."
+]
+]
+}
+],
+[
+"Widget",
+{
+"class": "inputforms.SubmitForm1",
+"name": "test1",
+"brief": "submitform1 widget containing password1",
+"fields": {
+"action": 4641,
+"action_json": "",
+"button_class": "w3-button w3-theme-d4",
+"button_text": "Submit",
+"clear_error": false,
+"div_class": "",
+"enctype": "",
+"error_class": "w3-panel w3-red",
+"hidden_field1": "",
+"hidden_field2": "",
+"hidden_field3": "",
+"hidden_field4": "",
+"left_class": "ski_left_label",
+"left_label": "",
+"right_class": "",
+"right_label": "",
+"show": true,
+"show_error": "",
+"widget_class": "w3-section",
+"widget_style": ""
+},
+"container_0": [
+"ClosedWidget",
+{
+"class": "inputtext.Password1",
+"name": "password1_test1",
+"brief": "password1 widget",
+"fields": {
+"disabled": false,
+"input_accepted_class": "",
+"input_errored_class": "",
+"input_text": "",
+"maxlength": "",
+"required": false,
+"set_input_accepted": false,
+"set_input_errored": false,
+"show": true,
+"size": "",
+"widget_class": "",
+"widget_style": ""
+}
+}
+]
+}
+],
+[
+"SectionPlaceHolder",
+{
+"brief": "section footer with alias foot",
+"section_name": "footer",
+"placename": "foot"
+}
+]
+]
+}
+]
+]
+}
+]
+]
+}
+]
+},
+"password2": {
+"ident": 14650,
+"brief": "Template for password2 tests",
+"TemplatePage": {
+"show_backcol": false,
+"last_scroll": true,
+"lang": "en",
+"backcol": "#9dbd7a",
+"default_error_widget": [
+"header",
+"top_error"
+]
+},
+"head": [
+"Part",
+{
+"tag_name": "head",
+"brief": "The head section of the page",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"ClosedPart",
+{
+"tag_name": "meta",
+"brief": "The charset meta declaration",
+"show": true,
+"attribs": {
+"charset": "utf-8"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "meta",
+"brief": "The viewport meta declaration",
+"show": true,
+"attribs": {
+"content": "width=device-width, initial-scale=1",
+"name": "viewport"
+}
+}
+],
+[
+"Part",
+{
+"tag_name": "title",
+"brief": "The page title element",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Text",
+"Password2"
+]
+]
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to w3_css",
+"show": true,
+"attribs": {
+"href": "{w3_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to w3_theme_ski_css",
+"show": true,
+"attribs": {
+"href": "{w3_theme_ski_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to ski_css",
+"show": true,
+"attribs": {
+"href": "{ski_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"Part",
+{
+"tag_name": "script",
+"brief": "script link to jquery_core",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"src": "{jquery_core}"
+},
+"parts": []
+}
+],
+[
+"Part",
+{
+"tag_name": "script",
+"brief": "script link to skipole_js",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"src": "{skipole_js}"
+},
+"parts": []
+}
+]
+]
+}
+],
+"body": [
+"Part",
+{
+"tag_name": "body",
+"brief": "The body section of the page",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "w3-theme"
+},
+"parts": [
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "container",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "w3-container"
+},
+"parts": [
+[
+"SectionPlaceHolder",
+{
+"brief": "Page header",
+"section_name": "header",
+"placename": "header"
+}
+],
+[
+"SectionPlaceHolder",
+{
+"brief": "Left navigation panel",
+"section_name": "navigation",
+"placename": "navigation"
+}
+],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "centre",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "w3-section",
+"style": "margin-left:25%"
+},
+"parts": [
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "Top description",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"TextBlock",
+{
+"textref": "page.14650.01",
+"failmessage": "TextBlock not found",
+"show": true,
+"escape": true,
+"linebreaks": true
+}
+]
+]
+}
+],
+[
+"Widget",
+{
+"class": "paras.ParaText",
+"name": "result",
+"brief": "Result paragraph",
+"fields": {
+"para_text": "Result text appears here.",
+"show": true,
+"widget_class": "",
+"widget_style": ""
+}
+}
+],
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "Password2 set in a form",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Text",
+"Password2 set in a form."
+]
+]
+}
+],
+[
+"Widget",
+{
+"class": "inputforms.SubmitForm1",
+"name": "test1",
+"brief": "submitform1 widget containing password2",
+"fields": {
+"action": 4651,
+"action_json": "",
+"button_class": "w3-button w3-theme-d4",
+"button_text": "Submit",
+"clear_error": false,
+"div_class": "",
+"enctype": "",
+"error_class": "w3-panel w3-red",
+"hidden_field1": "",
+"hidden_field2": "",
+"hidden_field3": "",
+"hidden_field4": "",
+"left_class": "ski_left_label",
+"left_label": "Press to submit:",
+"right_class": "",
+"right_label": "",
+"show": true,
+"show_error": "",
+"widget_class": "w3-section",
+"widget_style": ""
+},
+"container_0": [
+"Widget",
+{
+"class": "inputtext.Password2",
+"name": "password2_test1",
+"brief": "password2 widget",
+"fields": {
+"clear_error": false,
+"disabled": false,
+"error_class": "w3-panel w3-red",
+"input_accepted_class": "ski_input_accepted",
+"input_class": "ski_input",
+"input_disabled_class": "",
+"input_errored_class": "ski_input_errored",
+"input_text": "",
+"inputdiv_class": "",
+"label": "Input a password:",
+"label_class": "ski_left_label",
+"maxlength": "",
+"redstar": false,
+"required": false,
+"set_input_accepted": false,
+"set_input_errored": false,
+"show": true,
+"show_error": "",
+"size": "",
+"widget_class": "w3-section",
+"widget_style": ""
+}
+}
+]
+}
+],
+[
+"SectionPlaceHolder",
+{
+"brief": "section footer with alias foot",
+"section_name": "footer",
+"placename": "foot"
+}
+]
+]
+}
+]
+]
+}
+]
+]
+}
+]
+},
 "textinput1": {
 "ident": 14601,
 "brief": "Template for textinput1 tests",
@@ -11708,6 +12311,80 @@ false,
 }
 },
 "pages": {
+"password1": {
+"ident": 4640,
+"brief": "Responder for password1 tests",
+"RespondPage": {
+"class": "NoOperation",
+"original_args": {
+"target_ident": 14640
+},
+"original_fields": {}
+}
+},
+"password1_test1": {
+"ident": 4641,
+"brief": "Responder for password1_test1",
+"RespondPage": {
+"class": "AllowStore",
+"original_args": {
+"allowed_callers": [
+14640
+],
+"alternate_ident": "home",
+"fail_ident": 4640,
+"submit_list": [
+"widgets",
+"inputtext",
+"password1_test1"
+],
+"submit_option": true,
+"target_ident": 4640,
+"validate_fail_ident": null,
+"validate_option": false
+},
+"original_fields": {
+"password1_test1:input_text": ""
+}
+}
+},
+"password2": {
+"ident": 4650,
+"brief": "Responder for password2 tests",
+"RespondPage": {
+"class": "NoOperation",
+"original_args": {
+"target_ident": 14650
+},
+"original_fields": {}
+}
+},
+"password2_test1": {
+"ident": 4651,
+"brief": "Responder for password2_test1",
+"RespondPage": {
+"class": "AllowStore",
+"original_args": {
+"allowed_callers": [
+14650
+],
+"alternate_ident": "home",
+"fail_ident": 4650,
+"submit_list": [
+"widgets",
+"inputtext",
+"password2_test1"
+],
+"submit_option": true,
+"target_ident": 4650,
+"validate_fail_ident": null,
+"validate_option": false
+},
+"original_fields": {
+"password2_test1:input_text": ""
+}
+}
+},
 "textinput1": {
 "ident": 4601,
 "brief": "Responder for textinput1 tests",
@@ -15281,7 +15958,7 @@ false,
 "get_field2": "",
 "hide": false,
 "json_ident": "",
-"link_ident": "home",
+"link_ident": 4640,
 "show": true,
 "show_error": "",
 "widget_class": "w3-section",
@@ -15307,7 +15984,7 @@ false,
 "get_field2": "",
 "hide": false,
 "json_ident": "",
-"link_ident": "home",
+"link_ident": 4650,
 "show": true,
 "show_error": "",
 "widget_class": "w3-section",
