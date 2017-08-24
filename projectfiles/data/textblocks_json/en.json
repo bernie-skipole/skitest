@@ -39,6 +39,7 @@
   "page.14630.01": "TextInput4: A div containing a div with label and a div with a text input field (no form or submit button).",
   "page.14640.01": "Password1: A password input field only (no form, label or submit button), to be embedded in a form.",
   "page.14650.01": "Password2: A div containing a hidden error paragraph and password input field (no form or submit button). A label to the left of the field can have a class and text set.",
+  "page.14660.01": "SubmitTextInput1: A form with error paragraph, input text field and four hidden fields.",
   "page.200001.01": "Responders are pages which receive a call, and then manipulates the received data in some way, including calling your submit_data function to populate the page_data dictionary.\r\n\r\nThe responder then generally passes the call to a final template page which is returned to the client browser.\r\n\r\nThe following buttons link to tests for each responder type.",
   "page.3001.01": "Widgets are defined in modules - use the buttons below to the module required.",
   "page.3002.01": "These are the widgets in the checkbox module.",
