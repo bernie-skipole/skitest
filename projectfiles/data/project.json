@@ -11309,6 +11309,9 @@ false,
 [
 "Text",
 "This is a SubmitTextInput1 form:"
+]
+]
+}
 ],
 [
 "Widget",
@@ -11317,7 +11320,7 @@ false,
 "name": "submittextinput1_test1",
 "brief": "submittextinput1 widget",
 "fields": {
-"action": "home",
+"action": 4661,
 "action_json": "",
 "button_class": "w3-button w3-theme-d4 w3-margin-left",
 "button_text": "Submit",
@@ -11350,9 +11353,6 @@ false,
 "widget_class": "w3-section",
 "widget_style": ""
 }
-}
-]
-]
 }
 ],
 [
@@ -12681,6 +12681,32 @@ false,
 "target_ident": 14660
 },
 "original_fields": {}
+}
+},
+"submittextinput1_test1": {
+"ident": 4661,
+"brief": "Responder for submittextinput1_test1",
+"RespondPage": {
+"class": "AllowStore",
+"original_args": {
+"allowed_callers": [
+14660
+],
+"alternate_ident": "home",
+"fail_ident": 4660,
+"submit_list": [
+"widgets",
+"inputtext",
+"submittextinput1_test1"
+],
+"submit_option": true,
+"target_ident": 4660,
+"validate_fail_ident": null,
+"validate_option": false
+},
+"original_fields": {
+"submittextinput1_test1:input_text": ""
+}
 }
 },
 "textinput1": {

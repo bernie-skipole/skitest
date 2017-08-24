@@ -32,6 +32,11 @@ def password2_test1(caller_ident, ident_list, submit_list, submit_dict, call_dat
     if ('password2_test1','input_text') in call_data:
         page_data['result','para_text'] = call_data['password2_test1','input_text']
 
+def submittextinput1_test1(caller_ident, ident_list, submit_list, submit_dict, call_data, page_data, lang):
+    """Takes input from submittextinput1 widget"""
+    if ('submittextinput1_test1','input_text') in call_data:
+        page_data['result','para_text'] = call_data['submittextinput1_test1','input_text']
+
 
 
 
