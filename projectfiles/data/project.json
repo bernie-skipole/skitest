@@ -11631,19 +11631,45 @@ false,
 "maxlength": "",
 "new_window": false,
 "outer_class": "w3-section",
-"para_text": "",
+"para_text": "This paragraph can be shown or hidden via JSON call.",
 "pattern": "",
 "required": false,
 "set_input_accepted": false,
 "set_input_errored": false,
 "show": true,
 "show_error": "",
-"show_para1": true,
+"show_para1": false,
 "show_para2": true,
 "size": "",
 "textblock_ref": "",
 "title": "",
 "type": "text",
+"widget_class": "w3-section",
+"widget_style": ""
+}
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink2",
+"name": "showpara1",
+"brief": "Requests JSON file to show para 1",
+"fields": {
+"button_class": "w3-button w3-block w3-theme-l1 w3-border",
+"button_text": "Show para 1",
+"button_wait_text": "Please wait...",
+"buttondiv_class": "ski_mid_button",
+"buttondiv_style": "",
+"clear_error": false,
+"error_class": "w3-panel w3-red",
+"get_field1": "",
+"get_field2": "",
+"hide": false,
+"json_ident": 4672,
+"link_ident": "no_javascript",
+"show": true,
+"show_error": "",
 "widget_class": "w3-section",
 "widget_style": ""
 }
@@ -13038,6 +13064,23 @@ false,
 "original_fields": {
 "submittextinput3_test1:input_text": ""
 }
+}
+},
+"submittextinput3_test2": {
+"ident": 4672,
+"brief": "Responder for submittextinput3_test2",
+"RespondPage": {
+"class": "SubmitData",
+"original_args": {
+"fail_ident": "general_json",
+"submit_list": [
+"widgets",
+"inputtext",
+"submittextinput3_test2"
+],
+"target_ident": "general_json"
+},
+"original_fields": {}
 }
 },
 "textinput1": {

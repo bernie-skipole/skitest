@@ -43,3 +43,11 @@ def submittextinput3_test1(caller_ident, ident_list, submit_list, submit_dict, c
     if ('submittextinput3_test1','input_text') in call_data:
         page_data['result','para_text'] = call_data['submittextinput3_test1','input_text']
 
+def submittextinput3_test2(caller_ident, ident_list, submit_list, submit_dict, call_data, page_data, lang):
+    """Displays first paragraph of submittextinput3 widget"""
+    page_data['submittextinput3_test1','show_para1'] = True
+
+def submittextinput3_test3(caller_ident, ident_list, submit_list, submit_dict, call_data, page_data, lang):
+    """Hides first paragraph of submittextinput3 widget"""
+    page_data['submittextinput3_test1','show_para1'] = False
+
