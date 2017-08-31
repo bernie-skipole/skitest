@@ -41,6 +41,7 @@
   "page.14650.01": "Password2: A div containing a hidden error paragraph and password input field (no form or submit button). A label to the left of the field can have a class and text set.",
   "page.14660.01": "SubmitTextInput1: A form with error paragraph, input text field and four hidden fields.",
   "page.14670.01": "SubmitTextInput3: A form with error paragraph, two further paragraphs, one with text, one with a TextBlock, an input text field and four hidden fields. The submit button and label follows the input field in its own div.",
+  "page.14670.02": "This text is set into textblock page.14670.02, it will only be displayed by the SubmitTextInput3 widget if show_para2 is set to True.",
   "page.200001.01": "Responders are pages which receive a call, and then manipulates the received data in some way, including calling your submit_data function to populate the page_data dictionary.\r\n\r\nThe responder then generally passes the call to a final template page which is returned to the client browser.\r\n\r\nThe following buttons link to tests for each responder type.",
   "page.3001.01": "Widgets are defined in modules - use the buttons below to the module required.",
   "page.3002.01": "These are the widgets in the checkbox module.",

@@ -11639,14 +11639,29 @@ false,
 "show": true,
 "show_error": "",
 "show_para1": false,
-"show_para2": true,
+"show_para2": false,
 "size": "",
-"textblock_ref": "",
+"textblock_ref": "page.14670.02",
 "title": "",
 "type": "text",
 "widget_class": "w3-section",
 "widget_style": ""
 }
+}
+],
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "About test links",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Text",
+"These button links request JSON files to show or hide the two paragraphs of the SubmitTextInput3 widget."
+]
+]
 }
 ],
 [
@@ -11670,6 +11685,141 @@ false,
 "link_ident": "no_javascript",
 "show": true,
 "show_error": "",
+"widget_class": "w3-section",
+"widget_style": ""
+}
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink2",
+"name": "hidepara1",
+"brief": "Requests JSON file to hide para 1",
+"fields": {
+"button_class": "w3-button w3-block w3-theme-l1 w3-border",
+"button_text": "Hide para 1",
+"button_wait_text": "Please wait...",
+"buttondiv_class": "ski_mid_button",
+"buttondiv_style": "",
+"clear_error": false,
+"error_class": "w3-panel w3-red",
+"get_field1": "",
+"get_field2": "",
+"hide": false,
+"json_ident": 4673,
+"link_ident": "no_javascript",
+"show": true,
+"show_error": "",
+"widget_class": "w3-section",
+"widget_style": ""
+}
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink2",
+"name": "showpara2",
+"brief": "Requests JSON file to show para 2",
+"fields": {
+"button_class": "w3-button w3-block w3-theme-l1 w3-border",
+"button_text": "Show para 2",
+"button_wait_text": "Please wait...",
+"buttondiv_class": "ski_mid_button",
+"buttondiv_style": "",
+"clear_error": false,
+"error_class": "w3-panel w3-red",
+"get_field1": "",
+"get_field2": "",
+"hide": false,
+"json_ident": 4674,
+"link_ident": "no_javascript",
+"show": true,
+"show_error": "",
+"widget_class": "w3-section",
+"widget_style": ""
+}
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink2",
+"name": "hidepara2",
+"brief": "Requests JSON file to hide para 2",
+"fields": {
+"button_class": "w3-button w3-block w3-theme-l1 w3-border",
+"button_text": "Hide para 2",
+"button_wait_text": "Please wait...",
+"buttondiv_class": "ski_mid_button",
+"buttondiv_style": "",
+"clear_error": false,
+"error_class": "w3-panel w3-red",
+"get_field1": "",
+"get_field2": "",
+"hide": false,
+"json_ident": 4675,
+"link_ident": "no_javascript",
+"show": true,
+"show_error": "",
+"widget_class": "w3-section",
+"widget_style": ""
+}
+}
+],
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "About submittextinput3_test6",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Text",
+"This is a SubmitTextInput1 widget which is requesting a JSON file to set the text input here into the above SubmitTextInput3 widget's paragraph 1, and to show para1."
+]
+]
+}
+],
+[
+"Widget",
+{
+"class": "inputtext.SubmitTextInput1",
+"name": "submittextinput3_test6",
+"brief": "submittextinput1 widget",
+"fields": {
+"action": "no_javascript",
+"action_json": 4676,
+"button_class": "w3-button w3-theme-d4 w3-margin-left",
+"button_text": "Submit",
+"clear_error": false,
+"error_class": "w3-panel w3-red",
+"hidden_field1": "",
+"hidden_field2": "",
+"hidden_field3": "",
+"hidden_field4": "",
+"hide": false,
+"input_accepted_class": "ski_input_accepted",
+"input_class": "ski_input",
+"input_errored_class": "ski_input_errored",
+"input_text": "",
+"inputandbutton_class": "ski_nowrap",
+"inputdiv_class": "w3-section",
+"label": "Set paragraph 1 text:",
+"label_class": "ski_left_label",
+"maxlength": "",
+"new_window": false,
+"pattern": "",
+"required": false,
+"set_input_accepted": false,
+"set_input_errored": false,
+"show": true,
+"show_error": "",
+"size": "",
+"title": "",
+"type": "text",
 "widget_class": "w3-section",
 "widget_style": ""
 }
@@ -12994,7 +13144,7 @@ false,
 },
 "submittextinput1": {
 "ident": 4660,
-"brief": "Responder for submittextinput1 tests",
+"brief": "Responder submittextinput1 tests",
 "RespondPage": {
 "class": "NoOperation",
 "original_args": {
@@ -13005,7 +13155,7 @@ false,
 },
 "submittextinput1_test1": {
 "ident": 4661,
-"brief": "Responder for submittextinput1_test1",
+"brief": "Responder submittextinput1_test1",
 "RespondPage": {
 "class": "AllowStore",
 "original_args": {
@@ -13031,7 +13181,7 @@ false,
 },
 "submittextinput3": {
 "ident": 4670,
-"brief": "Responder for submittextinput3 test",
+"brief": "Responder submittextinput3 tests",
 "RespondPage": {
 "class": "NoOperation",
 "original_args": {
@@ -13042,7 +13192,7 @@ false,
 },
 "submittextinput3_test1": {
 "ident": 4671,
-"brief": "Responder for submittextinput3_test1",
+"brief": "Responder submittextinput3_test1",
 "RespondPage": {
 "class": "AllowStore",
 "original_args": {
@@ -13068,7 +13218,7 @@ false,
 },
 "submittextinput3_test2": {
 "ident": 4672,
-"brief": "Responder for submittextinput3_test2",
+"brief": "Responder submittextinput3_test2",
 "RespondPage": {
 "class": "SubmitData",
 "original_args": {
@@ -13081,6 +13231,83 @@ false,
 "target_ident": "general_json"
 },
 "original_fields": {}
+}
+},
+"submittextinput3_test3": {
+"ident": 4673,
+"brief": "Responder submittextinput3_test3",
+"RespondPage": {
+"class": "SubmitData",
+"original_args": {
+"fail_ident": "general_json",
+"submit_list": [
+"widgets",
+"inputtext",
+"submittextinput3_test3"
+],
+"target_ident": "general_json"
+},
+"original_fields": {}
+}
+},
+"submittextinput3_test4": {
+"ident": 4674,
+"brief": "Responder submittextinput3_test4",
+"RespondPage": {
+"class": "SubmitData",
+"original_args": {
+"fail_ident": "general_json",
+"submit_list": [
+"widgets",
+"inputtext",
+"submittextinput3_test4"
+],
+"target_ident": "general_json"
+},
+"original_fields": {}
+}
+},
+"submittextinput3_test5": {
+"ident": 4675,
+"brief": "Responder submittextinput3_test5",
+"RespondPage": {
+"class": "SubmitData",
+"original_args": {
+"fail_ident": "general_json",
+"submit_list": [
+"widgets",
+"inputtext",
+"submittextinput3_test5"
+],
+"target_ident": "general_json"
+},
+"original_fields": {}
+}
+},
+"submittextinput3_test6": {
+"ident": 4676,
+"brief": "Responder submittextinput3_test6",
+"RespondPage": {
+"class": "AllowStore",
+"original_args": {
+"allowed_callers": [
+14670
+],
+"alternate_ident": "home",
+"fail_ident": "general_json",
+"submit_list": [
+"widgets",
+"inputtext",
+"submittextinput3_test6"
+],
+"submit_option": true,
+"target_ident": "general_json",
+"validate_fail_ident": null,
+"validate_option": false
+},
+"original_fields": {
+"submittextinput3_test6:input_text": ""
+}
 }
 },
 "textinput1": {
