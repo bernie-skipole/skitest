@@ -91,7 +91,9 @@
 "outer_class": "w3-section",
 "widget_class": "w3-section",
 "buttondiv_class": "w3-section",
-"inputdiv_class": "w3-section"
+"inputdiv_class": "w3-section",
+"label_class": "ski_left_label",
+"button_label_class": "ski_left_label"
 },
 "TextInput1": {
 "widget_class": "ski_input"

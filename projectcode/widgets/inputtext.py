@@ -38,6 +38,8 @@ def submittextinput1_test1(caller_ident, ident_list, submit_list, submit_dict, c
         page_data['result','para_text'] = call_data['submittextinput1_test1','input_text']
 
 
-
-
+def submittextinput3_test1(caller_ident, ident_list, submit_list, submit_dict, call_data, page_data, lang):
+    """Takes input from submittextinput3 widget"""
+    if ('submittextinput3_test1','input_text') in call_data:
+        page_data['result','para_text'] = call_data['submittextinput3_test1','input_text']
 
