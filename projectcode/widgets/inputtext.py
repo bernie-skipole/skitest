@@ -1,3 +1,6 @@
+
+from collections import OrderedDict
+
 from ... import FailPage, GoTo, ValidateError, ServerError
 from .... import skilift
 
@@ -84,5 +87,10 @@ def twoinputssubmit1_test1(caller_ident, ident_list, submit_list, submit_dict, c
         page_data['result','para_text'] = text2
     else:
         page_data['result','para_text'] = "Nothing received"
+
+
+def fill_submitdict1(caller_ident, ident_list, submit_list, submit_dict, call_data, page_data, lang):
+    """Fills in the submitdict1 page"""
+    page_data['submitdict1_test1', 'input_dict'] = OrderedDict([('one',''), ('two',''), ('three','')])
 
 

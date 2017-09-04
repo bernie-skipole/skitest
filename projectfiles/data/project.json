@@ -11086,6 +11086,275 @@ false,
 }
 ]
 },
+"submitdict1": {
+"ident": 14690,
+"brief": "Template for submitdict1 tests",
+"TemplatePage": {
+"show_backcol": false,
+"last_scroll": true,
+"lang": "en",
+"backcol": "#9dbd7a",
+"default_error_widget": [
+"header",
+"top_error"
+]
+},
+"head": [
+"Part",
+{
+"tag_name": "head",
+"brief": "The head section of the page",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"ClosedPart",
+{
+"tag_name": "meta",
+"brief": "The charset meta declaration",
+"show": true,
+"attribs": {
+"charset": "utf-8"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "meta",
+"brief": "The viewport meta declaration",
+"show": true,
+"attribs": {
+"content": "width=device-width, initial-scale=1",
+"name": "viewport"
+}
+}
+],
+[
+"Part",
+{
+"tag_name": "title",
+"brief": "The page title element",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Text",
+"SubmitDict1"
+]
+]
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to w3_css",
+"show": true,
+"attribs": {
+"href": "{w3_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to w3_theme_ski_css",
+"show": true,
+"attribs": {
+"href": "{w3_theme_ski_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to ski_css",
+"show": true,
+"attribs": {
+"href": "{ski_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"Part",
+{
+"tag_name": "script",
+"brief": "script link to jquery_core",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"src": "{jquery_core}"
+},
+"parts": []
+}
+],
+[
+"Part",
+{
+"tag_name": "script",
+"brief": "script link to skipole_js",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"src": "{skipole_js}"
+},
+"parts": []
+}
+]
+]
+}
+],
+"body": [
+"Part",
+{
+"tag_name": "body",
+"brief": "The body section of the page",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "w3-theme"
+},
+"parts": [
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "container",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "w3-container"
+},
+"parts": [
+[
+"SectionPlaceHolder",
+{
+"brief": "Page header",
+"section_name": "header",
+"placename": "header"
+}
+],
+[
+"SectionPlaceHolder",
+{
+"brief": "Left navigation panel",
+"section_name": "navigation",
+"placename": "navigation"
+}
+],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "centre",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "w3-section",
+"style": "margin-left:25%"
+},
+"parts": [
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "Top description",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"TextBlock",
+{
+"textref": "page.14690.01",
+"failmessage": "TextBlock not found",
+"show": true,
+"escape": true,
+"linebreaks": true
+}
+]
+]
+}
+],
+[
+"Widget",
+{
+"class": "paras.ParaText",
+"name": "result",
+"brief": "Result paragraph",
+"fields": {
+"para_text": "Result text appears here.",
+"show": true,
+"widget_class": "",
+"widget_style": ""
+}
+}
+],
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "SubmitDict1",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Text",
+"This is a SubmitDict1 form, with keys 'one, 'two', 'three' and values you can insert here:"
+]
+]
+}
+],
+[
+"Widget",
+{
+"class": "inputtext.SubmitDict1",
+"name": "submitdict1_test1",
+"brief": "A SubmitDict1 widget",
+"fields": {
+"action": "home",
+"button_class": "",
+"button_text": "Submit",
+"hidden_field1": "",
+"hidden_field2": "",
+"hidden_field3": "",
+"hidden_field4": "",
+"input_class": "",
+"input_dict": {},
+"li_class": "",
+"show": true,
+"ul_class": "",
+"widget_class": "",
+"widget_style": ""
+}
+}
+],
+[
+"SectionPlaceHolder",
+{
+"brief": "section footer with alias foot",
+"section_name": "footer",
+"placename": "foot"
+}
+]
+]
+}
+]
+]
+}
+]
+]
+}
+]
+},
 "submittextinput1": {
 "ident": 14660,
 "brief": "Template for submittextinput1 tests",
@@ -13436,6 +13705,23 @@ false,
 "original_fields": {
 "password2_test1:input_text": ""
 }
+}
+},
+"submitdict1": {
+"ident": 4690,
+"brief": "Responder for SubmitDict1",
+"RespondPage": {
+"class": "SubmitData",
+"original_args": {
+"fail_ident": "home",
+"submit_list": [
+"widgets",
+"inputtext",
+"fill_submitdict1"
+],
+"target_ident": 14690
+},
+"original_fields": {}
 }
 },
 "submittextinput1": {
@@ -17347,7 +17633,7 @@ false,
 "get_field2": "",
 "hide": false,
 "json_ident": "",
-"link_ident": "home",
+"link_ident": 4690,
 "show": true,
 "show_error": "",
 "widget_class": "w3-section",
