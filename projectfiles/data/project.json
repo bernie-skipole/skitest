@@ -13287,6 +13287,9 @@ false,
 [
 "Text",
 "This is a TwoInputsSubmit1 form:"
+]
+]
+}
 ],
 [
 "Widget",
@@ -13295,7 +13298,7 @@ false,
 "name": "twoinputssubmit1_test1",
 "brief": "form holding twoinputssubmit1 widget",
 "fields": {
-"action": "home",
+"action": 4681,
 "action_json": "",
 "button_class": "w3-button w3-theme-d4 w3-margin-left",
 "button_text": "Submit",
@@ -13337,9 +13340,6 @@ false,
 "widget_class": "w3-section",
 "widget_style": ""
 }
-}
-]
-]
 }
 ],
 [
@@ -13763,6 +13763,33 @@ false,
 "target_ident": 14680
 },
 "original_fields": {}
+}
+},
+"twoinputssubmit1_test1": {
+"ident": 4681,
+"brief": "responder for twoinputssubmit1_test1",
+"RespondPage": {
+"class": "AllowStore",
+"original_args": {
+"allowed_callers": [
+14680
+],
+"alternate_ident": "home",
+"fail_ident": 4680,
+"submit_list": [
+"widgets",
+"inputtext",
+"twoinputssubmit1_test1"
+],
+"submit_option": true,
+"target_ident": 4680,
+"validate_fail_ident": null,
+"validate_option": false
+},
+"original_fields": {
+"twoinputssubmit1_test1:input_text1": "",
+"twoinputssubmit1_test1:input_text2": ""
+}
 }
 }
 }
