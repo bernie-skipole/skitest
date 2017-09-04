@@ -131,6 +131,7 @@ _HEADER_TEXT = { 2001 : "Skipole tests.",
                 14650:"Tests for the Password2 widget.",
                 14660:"Tests for the SubmitTextInput1 widget.",
                 14670:"Tests for the SubmitTextInput3 widget.",
+                14680:"Tests for the TwoInputsSubmit1 widget.",
                100101:"Tests using a cookie to login",
                100102:"Secure 1 page",
                100104:"Secure 2 page",
@@ -177,6 +178,7 @@ _NAV_BUTTONS = {  3001:[['home','Home', False, '']],
                  14650:[['home','Home', False, ''], ['modules', 'Modules', False, ''],['inputtext', 'inputtext', False, '']],
                  14660:[['home','Home', False, ''], ['modules', 'Modules', False, ''],['inputtext', 'inputtext', False, '']],
                  14670:[['home','Home', False, ''], ['modules', 'Modules', False, ''],['inputtext', 'inputtext', False, '']],
+                 14680:[['home','Home', False, ''], ['modules', 'Modules', False, ''],['inputtext', 'inputtext', False, '']],
                 100101:[['home','Home', False, '']],
                 100102:[['home','Home', False, ''], ['login','Test Login', False, '']],
                 100104:[['home','Home', False, ''], ['login','Test Login', False, '']],
@@ -189,10 +191,13 @@ def end_call(page_ident, page_type, call_data, page_data, proj_data, lang):
     if page_type != "TemplatePage":
         return
     page_num = page_ident[1]
+    # Insert header text into the template page
     if page_num in _HEADER_TEXT:
         page_data['header', 'headpara', 'para_text']  = _HEADER_TEXT[page_num]
+    # Insert navigation links into the template page
     if page_num in _NAV_BUTTONS:
         page_data['navigation', 'navbuttons', 'nav_links'] = _NAV_BUTTONS[page_num]
+    # Insert a status message into the footer if call_data['status'] is given
     if 'status' in call_data:
         page_data['foot','foot_status','footer_text'] = call_data['status']
 

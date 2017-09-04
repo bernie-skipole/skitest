@@ -103,7 +103,8 @@
 "widget_class": "w3-section",
 "error_class": "w3-panel w3-red",
 "input_class1": "ski_input",
-"input_class2": "ski_input  w3-margin-left"
+"input_class2": "ski_input  w3-margin-left",
+"label_class": "ski_left_label"
 },
 "Password2": {
 "error_class": "w3-panel w3-red",
