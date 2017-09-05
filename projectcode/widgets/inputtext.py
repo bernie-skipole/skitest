@@ -94,3 +94,12 @@ def fill_submitdict1(caller_ident, ident_list, submit_list, submit_dict, call_da
     page_data['submitdict1_test1', 'input_dict'] = OrderedDict([('one',''), ('two',''), ('three','')])
 
 
+def submitdict1_test1(caller_ident, ident_list, submit_list, submit_dict, call_data, page_data, lang):
+    """Takes input from SubmitDict1 widget"""
+    if ('submitdict1_test1','input_dict') in call_data:
+        page_data['result','para_text'] = str(call_data['submitdict1_test1','input_dict'])
+    else:
+        page_data['result','para_text'] = "Nothing received"
+
+
+

@@ -113,6 +113,13 @@
 "widget_class": "w3-section",
 "input_class": "ski_input",
 "label_class": "ski_left_label"
+},
+"SubmitDict1": {
+"button_class": "w3-button w3-theme-d4 w3-margin-left",
+"ul_class": "w3-center",
+"ul_style": "list-style-type: none;",
+"inputdiv_class": "w3-center",
+"widget_style": "width:30%"
 }
 },
 "links": {

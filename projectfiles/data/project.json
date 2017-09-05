@@ -3,7 +3,7 @@
 "default_language": "en",
 "brief": "Project to test the skipole framework",
 "version": "0.0.1",
-"skipole": "0.0.35",
+"skipole": "0.0.34",
 "subprojects": {
 "lib": {
 "path": "/lib/"
@@ -11320,20 +11320,24 @@ false,
 "name": "submitdict1_test1",
 "brief": "A SubmitDict1 widget",
 "fields": {
-"action": "home",
-"button_class": "",
+"action": 4691,
+"button_class": "w3-button w3-theme-d4 w3-margin-left",
 "button_text": "Submit",
 "hidden_field1": "",
 "hidden_field2": "",
 "hidden_field3": "",
 "hidden_field4": "",
-"input_class": "",
+"input_class": "ski_input",
 "input_dict": {},
+"inputdiv_class": "w3-center",
+"inputdiv_style": "",
 "li_class": "",
+"li_style": "",
 "show": true,
-"ul_class": "",
+"ul_class": "w3-center",
+"ul_style": "list-style-type: none;",
 "widget_class": "",
-"widget_style": ""
+"widget_style": "width:30%"
 }
 }
 ],
@@ -13722,6 +13726,32 @@ false,
 "target_ident": 14690
 },
 "original_fields": {}
+}
+},
+"submitdict1_test1": {
+"ident": 4691,
+"brief": "Responder for submitdict1_test1",
+"RespondPage": {
+"class": "AllowStore",
+"original_args": {
+"allowed_callers": [
+14690
+],
+"alternate_ident": "home",
+"fail_ident": 4690,
+"submit_list": [
+"widgets",
+"inputtext",
+"submitdict1_test1"
+],
+"submit_option": true,
+"target_ident": 4690,
+"validate_fail_ident": null,
+"validate_option": false
+},
+"original_fields": {
+"submitdict1_test1:input_dict": ""
+}
 }
 },
 "submittextinput1": {
