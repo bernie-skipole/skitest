@@ -72,13 +72,10 @@ def secure2_logout(caller_ident, ident_list, submit_list, submit_dict, call_data
 
 def request_login3(caller_ident, ident_list, submit_list, submit_dict, call_data, page_data, lang):
     """Set up the basic authentication"""
-    failtext = 'Please Authenticate\n'
     page_data['headers'] = [
-            ('content-type', 'text/plain'),
-            ('content-length', str(len(failtext))),
+            ('content-type', 'text/html'),
             ('WWW-Authenticate', 'Basic realm="secure3"')]
     page_data['status'] = '401 Unauthorized'
-    return failtext
 
 
 def setup_secure3(caller_ident, ident_list, submit_list, submit_dict, call_data, page_data, lang):

@@ -3,7 +3,7 @@
 "default_language": "en",
 "brief": "Project to test the skipole framework",
 "version": "0.0.1",
-"skipole": "0.0.34",
+"skipole": "0.0.35",
 "subprojects": {
 "lib": {
 "path": "/lib/"
@@ -202,7 +202,7 @@
 "hide": true,
 "show": true,
 "show_error": "",
-"widget_class": "ski_errorcol",
+"widget_class": "w3-red",
 "widget_style": ""
 }
 }
@@ -309,15 +309,16 @@ false,
 "pages": {
 "login3": {
 "ident": 100107,
-"brief": "Requests basic authentication",
+"brief": "Submits data",
 "RespondPage": {
-"class": "SubmitPlainText",
+"class": "SubmitData",
 "original_args": {
-"fail_ident": "home",
+"fail_ident": 100,
 "submit_list": [
 "login",
 "request_login3"
-]
+],
+"target_ident": 100
 },
 "original_fields": {}
 }
@@ -626,7 +627,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
+"widget_class": "w3-button w3-block w3-theme-d4",
 "widget_style": ""
 }
 }
@@ -764,7 +765,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
+"widget_class": "w3-button w3-block w3-theme-d4",
 "widget_style": ""
 }
 }
@@ -836,7 +837,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
+"widget_class": "w3-button w3-block w3-theme-d4",
 "widget_style": ""
 }
 }
@@ -1143,7 +1144,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
+"widget_class": "w3-button w3-block w3-theme-d4",
 "widget_style": ""
 }
 }
@@ -1450,7 +1451,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
+"widget_class": "w3-button w3-block w3-theme-d4",
 "widget_style": ""
 }
 }
@@ -2109,7 +2110,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
+"widget_class": "w3-button w3-block w3-theme-d4",
 "widget_style": ""
 }
 }
@@ -2132,7 +2133,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
+"widget_class": "w3-button w3-block w3-theme-d4",
 "widget_style": ""
 }
 }
@@ -2416,7 +2417,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
+"widget_class": "w3-button w3-block w3-theme-d4",
 "widget_style": ""
 }
 }
@@ -2439,7 +2440,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
+"widget_class": "w3-button w3-block w3-theme-d4",
 "widget_style": ""
 }
 }
@@ -2462,7 +2463,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
+"widget_class": "w3-button w3-block w3-theme-d4",
 "widget_style": ""
 }
 }
@@ -2729,7 +2730,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
+"widget_class": "w3-button w3-block w3-theme-d4",
 "widget_style": ""
 }
 }
@@ -2752,7 +2753,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
+"widget_class": "w3-button w3-block w3-theme-d4",
 "widget_style": ""
 }
 }
@@ -2775,7 +2776,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
+"widget_class": "w3-button w3-block w3-theme-d4",
 "widget_style": ""
 }
 }
@@ -3021,7 +3022,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
+"widget_class": "w3-button w3-block w3-theme-d4",
 "widget_style": ""
 }
 }
@@ -3044,7 +3045,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
+"widget_class": "w3-button w3-block w3-theme-d4",
 "widget_style": ""
 }
 }
@@ -3067,7 +3068,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
+"widget_class": "w3-button w3-block w3-theme-d4",
 "widget_style": ""
 }
 }
@@ -3090,7 +3091,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
+"widget_class": "w3-button w3-block w3-theme-d4",
 "widget_style": ""
 }
 }
@@ -3113,7 +3114,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
+"widget_class": "w3-button w3-block w3-theme-d4",
 "widget_style": ""
 }
 }
@@ -3136,7 +3137,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
+"widget_class": "w3-button w3-block w3-theme-d4",
 "widget_style": ""
 }
 }
@@ -3159,7 +3160,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
+"widget_class": "w3-button w3-block w3-theme-d4",
 "widget_style": ""
 }
 }
@@ -3182,7 +3183,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
+"widget_class": "w3-button w3-block w3-theme-d4",
 "widget_style": ""
 }
 }
@@ -3205,7 +3206,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
+"widget_class": "w3-button w3-block w3-theme-d4",
 "widget_style": ""
 }
 }
@@ -3228,7 +3229,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
+"widget_class": "w3-button w3-block w3-theme-d4",
 "widget_style": ""
 }
 }
@@ -3251,7 +3252,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
+"widget_class": "w3-button w3-block w3-theme-d4",
 "widget_style": ""
 }
 }
@@ -3274,7 +3275,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
+"widget_class": "w3-button w3-block w3-theme-d4",
 "widget_style": ""
 }
 }
@@ -3297,7 +3298,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
+"widget_class": "w3-button w3-block w3-theme-d4",
 "widget_style": ""
 }
 }
@@ -3320,7 +3321,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
+"widget_class": "w3-button w3-block w3-theme-d4",
 "widget_style": ""
 }
 }
@@ -3343,7 +3344,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
+"widget_class": "w3-button w3-block w3-theme-d4",
 "widget_style": ""
 }
 }
@@ -3366,7 +3367,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
+"widget_class": "w3-button w3-block w3-theme-d4",
 "widget_style": ""
 }
 }
@@ -3389,7 +3390,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
+"widget_class": "w3-button w3-block w3-theme-d4",
 "widget_style": ""
 }
 }
@@ -3412,7 +3413,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
+"widget_class": "w3-button w3-block w3-theme-d4",
 "widget_style": ""
 }
 }
@@ -3435,7 +3436,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
+"widget_class": "w3-button w3-block w3-theme-d4",
 "widget_style": ""
 }
 }
@@ -3458,7 +3459,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
+"widget_class": "w3-button w3-block w3-theme-d4",
 "widget_style": ""
 }
 }
@@ -3481,7 +3482,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
+"widget_class": "w3-button w3-block w3-theme-d4",
 "widget_style": ""
 }
 }
@@ -3504,7 +3505,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
+"widget_class": "w3-button w3-block w3-theme-d4",
 "widget_style": ""
 }
 }
@@ -3527,7 +3528,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
+"widget_class": "w3-button w3-block w3-theme-d4",
 "widget_style": ""
 }
 }
@@ -3550,7 +3551,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
+"widget_class": "w3-button w3-block w3-theme-d4",
 "widget_style": ""
 }
 }
@@ -3573,7 +3574,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
+"widget_class": "w3-button w3-block w3-theme-d4",
 "widget_style": ""
 }
 }
@@ -3812,9 +3813,6 @@ false,
 "brief": "Holds buttons",
 "show": true,
 "hide_if_empty": false,
-"attribs": {
-"style": "margin-left:25%;width:50%;margin-right:auto;"
-},
 "parts": [
 [
 "Widget",
@@ -4307,7 +4305,7 @@ false,
 "brief": "Shows the error message",
 "fields": {
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-panel w3-red",
 "hide": true,
 "show": true,
 "show_error": "No error message available",
@@ -4768,7 +4766,7 @@ false,
 "brief": "Shows the error message",
 "fields": {
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-panel w3-red",
 "hide": true,
 "show": true,
 "show_error": "No error message available",
@@ -6788,7 +6786,7 @@ false,
 "name": "alertclear1",
 "brief": "Widget being tested",
 "fields": {
-"boxdiv_class": "w3-modal-content w3-panel w3-theme-d3",
+"boxdiv_class": "w3-modal-content w3-panel w3-theme-d4",
 "button_class": "w3-bar-item w3-button w3-right w3-theme-l2",
 "buttondiv_class": "w3-bar",
 "buttondiv_style": "",
@@ -6798,7 +6796,7 @@ false,
 "get_field2": "",
 "get_field3": "",
 "hide": true,
-"inner_class": "w3-theme-d3",
+"inner_class": "w3-panel w3-theme-d4",
 "inner_style": "",
 "link_ident": "home",
 "para_text": "Default text message",
@@ -8135,7 +8133,7 @@ false,
 "fields": {
 "button_text": "Raise Error (HTML)",
 "clear_error": false,
-"error_class": "w3-button w3-block w3-theme-action w3-margin",
+"error_class": "w3-button w3-block w3-theme-action",
 "force_ident": false,
 "get_field1": "",
 "get_field2": "",
@@ -8144,7 +8142,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
+"widget_class": "w3-button w3-block w3-theme-d4",
 "widget_style": ""
 }
 }
@@ -8159,7 +8157,7 @@ false,
 "button_text": "Raise Error (JSON)",
 "button_wait_text": "Please wait...",
 "clear_error": false,
-"error_class": "w3-button w3-block w3-theme-action w3-margin",
+"error_class": "w3-button w3-block w3-theme-action",
 "get_field1": "",
 "get_field2": "",
 "hide": false,
@@ -8167,7 +8165,7 @@ false,
 "link_ident": "no_javascript",
 "show": true,
 "show_error": "",
-"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
+"widget_class": "w3-button w3-block w3-theme-d4",
 "widget_style": ""
 }
 }
@@ -8181,7 +8179,7 @@ false,
 "fields": {
 "button_text": "Show ErrorClear1 (HTML)",
 "clear_error": false,
-"error_class": "w3-button w3-block w3-theme-action w3-margin",
+"error_class": "w3-button w3-block w3-theme-action",
 "force_ident": false,
 "get_field1": "",
 "get_field2": "",
@@ -8190,7 +8188,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
+"widget_class": "w3-button w3-block w3-theme-d4",
 "widget_style": ""
 }
 }
@@ -8205,7 +8203,7 @@ false,
 "button_text": "Show ErrorClear1 (JSON)",
 "button_wait_text": "Please wait...",
 "clear_error": false,
-"error_class": "w3-button w3-block w3-theme-action w3-margin",
+"error_class": "w3-button w3-block w3-theme-action",
 "get_field1": "",
 "get_field2": "",
 "hide": false,
@@ -8213,7 +8211,7 @@ false,
 "link_ident": "no_javascript",
 "show": true,
 "show_error": "",
-"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
+"widget_class": "w3-button w3-block w3-theme-d4",
 "widget_style": ""
 }
 }
@@ -9089,7 +9087,7 @@ false,
 "input_class": "ski_input",
 "input_errored_class": "ski_input_errored",
 "input_text": "",
-"inputandbutton_class": "",
+"inputandbutton_class": "ski_nowrap",
 "inputdiv_class": "w3-section",
 "label": "Send text string:",
 "label_class": "ski_left_label",
@@ -10464,6 +10462,35 @@ false,
 "class": "NoOperation",
 "original_args": {
 "target_ident": 14301
+},
+"original_fields": {}
+}
+}
+}
+},
+"inputforms": {
+"ident": 4700,
+"brief": "Tests for inputtext widgets",
+"default_page_name": "index",
+"restricted": false,
+"folders": {
+"restricted": {
+"ident": 14700,
+"brief": "Restricted folder for inputforms templates",
+"default_page_name": "index",
+"restricted": false,
+"folders": {},
+"pages": {}
+}
+},
+"pages": {
+"hiddenfield": {
+"ident": 4701,
+"brief": "Responder for Hiddenfield",
+"RespondPage": {
+"class": "NoOperation",
+"original_args": {
+"target_ident": 14701
 },
 "original_fields": {}
 }
@@ -14786,7 +14813,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
+"widget_class": "w3-button w3-block w3-theme-d4",
 "widget_style": ""
 }
 }
@@ -14809,7 +14836,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
+"widget_class": "w3-button w3-block w3-theme-d4",
 "widget_style": ""
 }
 }
@@ -14832,7 +14859,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
+"widget_class": "w3-button w3-block w3-theme-d4",
 "widget_style": ""
 }
 }
@@ -15063,9 +15090,6 @@ false,
 "brief": "Holds buttons",
 "show": true,
 "hide_if_empty": false,
-"attribs": {
-"style": "margin-left:15%;width:50%;margin-right:auto;"
-},
 "parts": [
 [
 "Widget",
@@ -16689,7 +16713,7 @@ false,
 "fields": {
 "button_text": "ServerTimeStamp",
 "clear_error": false,
-"error_class": "w3-button w3-block w3-theme-action w3-margin",
+"error_class": "w3-button w3-block w3-theme-action",
 "force_ident": false,
 "get_field1": "",
 "get_field2": "",
@@ -16698,7 +16722,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
+"widget_class": "w3-button w3-block w3-theme-d4",
 "widget_style": ""
 }
 }
@@ -16712,7 +16736,7 @@ false,
 "fields": {
 "button_text": "PageIdent",
 "clear_error": false,
-"error_class": "w3-button w3-block w3-theme-action w3-margin",
+"error_class": "w3-button w3-block w3-theme-action",
 "force_ident": false,
 "get_field1": "",
 "get_field2": "",
@@ -16721,7 +16745,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
+"widget_class": "w3-button w3-block w3-theme-d4",
 "widget_style": ""
 }
 }
@@ -16735,7 +16759,7 @@ false,
 "fields": {
 "button_text": "Redirector",
 "clear_error": false,
-"error_class": "w3-button w3-block w3-theme-action w3-margin",
+"error_class": "w3-button w3-block w3-theme-action",
 "force_ident": false,
 "get_field1": "",
 "get_field2": "",
@@ -16744,7 +16768,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
+"widget_class": "w3-button w3-block w3-theme-d4",
 "widget_style": ""
 }
 }
@@ -16963,6 +16987,147 @@ false,
 "show": true,
 "escape": true,
 "linebreaks": true
+}
+]
+]
+}
+],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "Links to widget tests",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Widget",
+{
+"class": "links.ButtonLink2",
+"name": "hiddenfield",
+"brief": "link to HiddenField tests",
+"fields": {
+"button_class": "w3-button w3-block w3-theme-l1 w3-border",
+"button_text": "HiddenField",
+"button_wait_text": "Please wait...",
+"buttondiv_class": "ski_mid_button",
+"buttondiv_style": "",
+"clear_error": false,
+"error_class": "w3-panel w3-red",
+"get_field1": "",
+"get_field2": "",
+"hide": false,
+"json_ident": "",
+"link_ident": "home",
+"show": true,
+"show_error": "",
+"widget_class": "w3-section",
+"widget_style": ""
+}
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink2",
+"name": "submitbutton1",
+"brief": "link to SubmitButton1 tests",
+"fields": {
+"button_class": "w3-button w3-block w3-theme-l1 w3-border",
+"button_text": "SubmitButton1",
+"button_wait_text": "Please wait...",
+"buttondiv_class": "ski_mid_button",
+"buttondiv_style": "",
+"clear_error": false,
+"error_class": "w3-panel w3-red",
+"get_field1": "",
+"get_field2": "",
+"hide": false,
+"json_ident": "",
+"link_ident": "home",
+"show": true,
+"show_error": "",
+"widget_class": "w3-section",
+"widget_style": ""
+}
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink2",
+"name": "submitbutton2",
+"brief": "link to SubmitButton2 tests",
+"fields": {
+"button_class": "w3-button w3-block w3-theme-l1 w3-border",
+"button_text": "SubmitButton2",
+"button_wait_text": "Please wait...",
+"buttondiv_class": "ski_mid_button",
+"buttondiv_style": "",
+"clear_error": false,
+"error_class": "w3-panel w3-red",
+"get_field1": "",
+"get_field2": "",
+"hide": false,
+"json_ident": "",
+"link_ident": "home",
+"show": true,
+"show_error": "",
+"widget_class": "w3-section",
+"widget_style": ""
+}
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink2",
+"name": "form1",
+"brief": "link to Form1 tests",
+"fields": {
+"button_class": "w3-button w3-block w3-theme-l1 w3-border",
+"button_text": "Form1",
+"button_wait_text": "Please wait...",
+"buttondiv_class": "ski_mid_button",
+"buttondiv_style": "",
+"clear_error": false,
+"error_class": "w3-panel w3-red",
+"get_field1": "",
+"get_field2": "",
+"hide": false,
+"json_ident": "",
+"link_ident": "home",
+"show": true,
+"show_error": "",
+"widget_class": "w3-section",
+"widget_style": ""
+}
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink2",
+"name": "submitform1",
+"brief": "link to SubmitForm1 tests",
+"fields": {
+"button_class": "w3-button w3-block w3-theme-l1 w3-border",
+"button_text": "SubmitForm1",
+"button_wait_text": "Please wait...",
+"buttondiv_class": "ski_mid_button",
+"buttondiv_style": "",
+"clear_error": false,
+"error_class": "w3-panel w3-red",
+"get_field1": "",
+"get_field2": "",
+"hide": false,
+"json_ident": "",
+"link_ident": "home",
+"show": true,
+"show_error": "",
+"widget_class": "w3-section",
+"widget_style": ""
+}
 }
 ]
 ]
@@ -17919,7 +18084,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
+"widget_class": "w3-button w3-block w3-theme-d4",
 "widget_style": ""
 }
 }
@@ -18150,29 +18315,29 @@ false,
 "brief": "Holds buttons",
 "show": true,
 "hide_if_empty": false,
-"attribs": {
-"style": "margin-left:15%;width:50%;margin-right:auto;"
-},
 "parts": [
 [
 "Widget",
 {
-"class": "links.ButtonLink1",
+"class": "links.ButtonLink2",
 "name": "checkbox",
 "brief": "Link to checkbox widgets",
 "fields": {
+"button_class": "w3-button w3-block w3-theme-l1 w3-border",
 "button_text": "checkbox",
+"button_wait_text": "Please wait...",
+"buttondiv_class": "ski_mid_button",
+"buttondiv_style": "",
 "clear_error": false,
-"error_class": "w3-button w3-block w3-theme-action",
-"force_ident": false,
+"error_class": "w3-panel w3-red",
 "get_field1": "",
 "get_field2": "",
 "hide": false,
+"json_ident": "",
 "link_ident": "checkbox",
-"new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
+"widget_class": "w3-section",
 "widget_style": ""
 }
 }
@@ -18180,22 +18345,25 @@ false,
 [
 "Widget",
 {
-"class": "links.ButtonLink1",
+"class": "links.ButtonLink2",
 "name": "confirm",
 "brief": "Link to confirm widgets",
 "fields": {
+"button_class": "w3-button w3-block w3-theme-l1 w3-border",
 "button_text": "confirm",
+"button_wait_text": "Please wait...",
+"buttondiv_class": "ski_mid_button",
+"buttondiv_style": "",
 "clear_error": false,
-"error_class": "w3-button w3-block w3-theme-action",
-"force_ident": false,
+"error_class": "w3-panel w3-red",
 "get_field1": "",
 "get_field2": "",
 "hide": false,
+"json_ident": "",
 "link_ident": "confirm",
-"new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
+"widget_class": "w3-section",
 "widget_style": ""
 }
 }
@@ -18203,22 +18371,25 @@ false,
 [
 "Widget",
 {
-"class": "links.ButtonLink1",
+"class": "links.ButtonLink2",
 "name": "debug_tools",
 "brief": "Link to debug_tools",
 "fields": {
+"button_class": "w3-button w3-block w3-theme-l1 w3-border",
 "button_text": "debug_tools",
+"button_wait_text": "Please wait...",
+"buttondiv_class": "ski_mid_button",
+"buttondiv_style": "",
 "clear_error": false,
-"error_class": "w3-button w3-block w3-theme-action",
-"force_ident": false,
+"error_class": "w3-panel w3-red",
 "get_field1": "",
 "get_field2": "",
 "hide": false,
+"json_ident": "",
 "link_ident": 3012,
-"new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
+"widget_class": "w3-section",
 "widget_style": ""
 }
 }
@@ -18226,22 +18397,25 @@ false,
 [
 "Widget",
 {
-"class": "links.ButtonLink1",
+"class": "links.ButtonLink2",
 "name": "dropdown",
 "brief": "Link to dropdown",
 "fields": {
+"button_class": "w3-button w3-block w3-theme-l1 w3-border",
 "button_text": "dropdown",
+"button_wait_text": "Please wait...",
+"buttondiv_class": "ski_mid_button",
+"buttondiv_style": "",
 "clear_error": false,
-"error_class": "w3-button w3-block w3-theme-action",
-"force_ident": false,
+"error_class": "w3-panel w3-red",
 "get_field1": "",
 "get_field2": "",
 "hide": false,
+"json_ident": "",
 "link_ident": 3013,
-"new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
+"widget_class": "w3-section",
 "widget_style": ""
 }
 }
@@ -18249,22 +18423,25 @@ false,
 [
 "Widget",
 {
-"class": "links.ButtonLink1",
+"class": "links.ButtonLink2",
 "name": "error_messages",
 "brief": "Link to error_messages",
 "fields": {
+"button_class": "w3-button w3-block w3-theme-l1 w3-border",
 "button_text": "error_messages",
+"button_wait_text": "Please wait...",
+"buttondiv_class": "ski_mid_button",
+"buttondiv_style": "",
 "clear_error": false,
-"error_class": "w3-button w3-block w3-theme-action",
-"force_ident": false,
+"error_class": "w3-panel w3-red",
 "get_field1": "",
 "get_field2": "",
 "hide": false,
+"json_ident": "",
 "link_ident": "error_messages",
-"new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
+"widget_class": "w3-section",
 "widget_style": ""
 }
 }
@@ -18272,22 +18449,25 @@ false,
 [
 "Widget",
 {
-"class": "links.ButtonLink1",
+"class": "links.ButtonLink2",
 "name": "footers",
 "brief": "Link to footers",
 "fields": {
+"button_class": "w3-button w3-block w3-theme-l1 w3-border",
 "button_text": "footers",
+"button_wait_text": "Please wait...",
+"buttondiv_class": "ski_mid_button",
+"buttondiv_style": "",
 "clear_error": false,
-"error_class": "w3-button w3-block w3-theme-action",
-"force_ident": false,
+"error_class": "w3-panel w3-red",
 "get_field1": "",
 "get_field2": "",
 "hide": false,
+"json_ident": "",
 "link_ident": 3014,
-"new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
+"widget_class": "w3-section",
 "widget_style": ""
 }
 }
@@ -18295,22 +18475,25 @@ false,
 [
 "Widget",
 {
-"class": "links.ButtonLink1",
+"class": "links.ButtonLink2",
 "name": "headers",
 "brief": "Link to headers",
 "fields": {
+"button_class": "w3-button w3-block w3-theme-l1 w3-border",
 "button_text": "headers",
+"button_wait_text": "Please wait...",
+"buttondiv_class": "ski_mid_button",
+"buttondiv_style": "",
 "clear_error": false,
-"error_class": "w3-button w3-block w3-theme-action",
-"force_ident": false,
+"error_class": "w3-panel w3-red",
 "get_field1": "",
 "get_field2": "",
 "hide": false,
+"json_ident": "",
 "link_ident": 3015,
-"new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
+"widget_class": "w3-section",
 "widget_style": ""
 }
 }
@@ -18318,22 +18501,25 @@ false,
 [
 "Widget",
 {
-"class": "links.ButtonLink1",
+"class": "links.ButtonLink2",
 "name": "info",
 "brief": "Link to info",
 "fields": {
+"button_class": "w3-button w3-block w3-theme-l1 w3-border",
 "button_text": "info",
+"button_wait_text": "Please wait...",
+"buttondiv_class": "ski_mid_button",
+"buttondiv_style": "",
 "clear_error": false,
-"error_class": "w3-button w3-block w3-theme-action",
-"force_ident": false,
+"error_class": "w3-panel w3-red",
 "get_field1": "",
 "get_field2": "",
 "hide": false,
+"json_ident": "",
 "link_ident": "info",
-"new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
+"widget_class": "w3-section",
 "widget_style": ""
 }
 }
@@ -18341,22 +18527,25 @@ false,
 [
 "Widget",
 {
-"class": "links.ButtonLink1",
+"class": "links.ButtonLink2",
 "name": "inputforms",
 "brief": "Link to inputforms",
 "fields": {
+"button_class": "w3-button w3-block w3-theme-l1 w3-border",
 "button_text": "inputforms",
+"button_wait_text": "Please wait...",
+"buttondiv_class": "ski_mid_button",
+"buttondiv_style": "",
 "clear_error": false,
-"error_class": "w3-button w3-block w3-theme-action",
-"force_ident": false,
+"error_class": "w3-panel w3-red",
 "get_field1": "",
 "get_field2": "",
 "hide": false,
+"json_ident": "",
 "link_ident": 3009,
-"new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
+"widget_class": "w3-section",
 "widget_style": ""
 }
 }
@@ -18364,22 +18553,25 @@ false,
 [
 "Widget",
 {
-"class": "links.ButtonLink1",
+"class": "links.ButtonLink2",
 "name": "inputtables",
 "brief": "Link to inputtables",
 "fields": {
+"button_class": "w3-button w3-block w3-theme-l1 w3-border",
 "button_text": "inputtables",
+"button_wait_text": "Please wait...",
+"buttondiv_class": "ski_mid_button",
+"buttondiv_style": "",
 "clear_error": false,
-"error_class": "w3-button w3-block w3-theme-action",
-"force_ident": false,
+"error_class": "w3-panel w3-red",
 "get_field1": "",
 "get_field2": "",
 "hide": false,
+"json_ident": "",
 "link_ident": 3016,
-"new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
+"widget_class": "w3-section",
 "widget_style": ""
 }
 }
@@ -18387,22 +18579,25 @@ false,
 [
 "Widget",
 {
-"class": "links.ButtonLink1",
+"class": "links.ButtonLink2",
 "name": "inputtext",
 "brief": "Link to inputtext",
 "fields": {
+"button_class": "w3-button w3-block w3-theme-l1 w3-border",
 "button_text": "inputtext",
+"button_wait_text": "Please wait...",
+"buttondiv_class": "ski_mid_button",
+"buttondiv_style": "",
 "clear_error": false,
-"error_class": "w3-button w3-block w3-theme-action",
-"force_ident": false,
+"error_class": "w3-panel w3-red",
 "get_field1": "",
 "get_field2": "",
 "hide": false,
+"json_ident": "",
 "link_ident": 3010,
-"new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
+"widget_class": "w3-section",
 "widget_style": ""
 }
 }
@@ -18410,22 +18605,25 @@ false,
 [
 "Widget",
 {
-"class": "links.ButtonLink1",
+"class": "links.ButtonLink2",
 "name": "links",
 "brief": "Link to links",
 "fields": {
+"button_class": "w3-button w3-block w3-theme-l1 w3-border",
 "button_text": "links",
+"button_wait_text": "Please wait...",
+"buttondiv_class": "ski_mid_button",
+"buttondiv_style": "",
 "clear_error": false,
-"error_class": "w3-button w3-block w3-theme-action",
-"force_ident": false,
+"error_class": "w3-panel w3-red",
 "get_field1": "",
 "get_field2": "",
 "hide": false,
+"json_ident": "",
 "link_ident": "links",
-"new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
+"widget_class": "w3-section",
 "widget_style": ""
 }
 }
@@ -18433,22 +18631,25 @@ false,
 [
 "Widget",
 {
-"class": "links.ButtonLink1",
+"class": "links.ButtonLink2",
 "name": "paras",
 "brief": "Link to paras",
 "fields": {
+"button_class": "w3-button w3-block w3-theme-l1 w3-border",
 "button_text": "paras",
+"button_wait_text": "Please wait...",
+"buttondiv_class": "ski_mid_button",
+"buttondiv_style": "",
 "clear_error": false,
-"error_class": "w3-button w3-block w3-theme-action",
-"force_ident": false,
+"error_class": "w3-panel w3-red",
 "get_field1": "",
 "get_field2": "",
 "hide": false,
+"json_ident": "",
 "link_ident": "paras",
-"new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
+"widget_class": "w3-section",
 "widget_style": ""
 }
 }
@@ -18456,22 +18657,25 @@ false,
 [
 "Widget",
 {
-"class": "links.ButtonLink1",
+"class": "links.ButtonLink2",
 "name": "radio",
 "brief": "Link to radio",
 "fields": {
+"button_class": "w3-button w3-block w3-theme-l1 w3-border",
 "button_text": "radio",
+"button_wait_text": "Please wait...",
+"buttondiv_class": "ski_mid_button",
+"buttondiv_style": "",
 "clear_error": false,
-"error_class": "w3-button w3-block w3-theme-action",
-"force_ident": false,
+"error_class": "w3-panel w3-red",
 "get_field1": "",
 "get_field2": "",
 "hide": false,
+"json_ident": "",
 "link_ident": 3017,
-"new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
+"widget_class": "w3-section",
 "widget_style": ""
 }
 }
@@ -18479,22 +18683,25 @@ false,
 [
 "Widget",
 {
-"class": "links.ButtonLink1",
+"class": "links.ButtonLink2",
 "name": "svgarrows",
 "brief": "Link to svgarrows",
 "fields": {
+"button_class": "w3-button w3-block w3-theme-l1 w3-border",
 "button_text": "svgarrows",
+"button_wait_text": "Please wait...",
+"buttondiv_class": "ski_mid_button",
+"buttondiv_style": "",
 "clear_error": false,
-"error_class": "w3-button w3-block w3-theme-action",
-"force_ident": false,
+"error_class": "w3-panel w3-red",
 "get_field1": "",
 "get_field2": "",
 "hide": false,
+"json_ident": "",
 "link_ident": 3018,
-"new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
+"widget_class": "w3-section",
 "widget_style": ""
 }
 }
@@ -18502,22 +18709,25 @@ false,
 [
 "Widget",
 {
-"class": "links.ButtonLink1",
+"class": "links.ButtonLink2",
 "name": "svgbasics",
 "brief": "Link to svgbasics",
 "fields": {
+"button_class": "w3-button w3-block w3-theme-l1 w3-border",
 "button_text": "svgbasics",
+"button_wait_text": "Please wait...",
+"buttondiv_class": "ski_mid_button",
+"buttondiv_style": "",
 "clear_error": false,
-"error_class": "w3-button w3-block w3-theme-action",
-"force_ident": false,
+"error_class": "w3-panel w3-red",
 "get_field1": "",
 "get_field2": "",
 "hide": false,
+"json_ident": "",
 "link_ident": 3019,
-"new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
+"widget_class": "w3-section",
 "widget_style": ""
 }
 }
@@ -18525,22 +18735,25 @@ false,
 [
 "Widget",
 {
-"class": "links.ButtonLink1",
+"class": "links.ButtonLink2",
 "name": "tables",
 "brief": "Link to tables",
 "fields": {
+"button_class": "w3-button w3-block w3-theme-l1 w3-border",
 "button_text": "tables",
+"button_wait_text": "Please wait...",
+"buttondiv_class": "ski_mid_button",
+"buttondiv_style": "",
 "clear_error": false,
-"error_class": "w3-button w3-block w3-theme-action",
-"force_ident": false,
+"error_class": "w3-panel w3-red",
 "get_field1": "",
 "get_field2": "",
 "hide": false,
+"json_ident": "",
 "link_ident": 3020,
-"new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
+"widget_class": "w3-section",
 "widget_style": ""
 }
 }
@@ -18548,22 +18761,25 @@ false,
 [
 "Widget",
 {
-"class": "links.ButtonLink1",
+"class": "links.ButtonLink2",
 "name": "textarea",
 "brief": "Link to textarea",
 "fields": {
+"button_class": "w3-button w3-block w3-theme-l1 w3-border",
 "button_text": "textarea",
+"button_wait_text": "Please wait...",
+"buttondiv_class": "ski_mid_button",
+"buttondiv_style": "",
 "clear_error": false,
-"error_class": "w3-button w3-block w3-theme-action",
-"force_ident": false,
+"error_class": "w3-panel w3-red",
 "get_field1": "",
 "get_field2": "",
 "hide": false,
+"json_ident": "",
 "link_ident": 3021,
-"new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
+"widget_class": "w3-section",
 "widget_style": ""
 }
 }
@@ -18571,22 +18787,25 @@ false,
 [
 "Widget",
 {
-"class": "links.ButtonLink1",
+"class": "links.ButtonLink2",
 "name": "upload",
 "brief": "Link to upload",
 "fields": {
+"button_class": "w3-button w3-block w3-theme-l1 w3-border",
 "button_text": "upload",
+"button_wait_text": "Please wait...",
+"buttondiv_class": "ski_mid_button",
+"buttondiv_style": "",
 "clear_error": false,
-"error_class": "w3-button w3-block w3-theme-action",
-"force_ident": false,
+"error_class": "w3-panel w3-red",
 "get_field1": "",
 "get_field2": "",
 "hide": false,
+"json_ident": "",
 "link_ident": 3022,
-"new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
+"widget_class": "w3-section",
 "widget_style": ""
 }
 }
@@ -18839,7 +19058,7 @@ false,
 "new_window": false,
 "show": true,
 "show_error": "",
-"widget_class": "w3-button w3-block w3-theme-d4 w3-margin",
+"widget_class": "w3-button w3-block w3-theme-d4",
 "widget_style": ""
 }
 }
@@ -20330,7 +20549,7 @@ false,
 "brief": "ErrorDiv",
 "fields": {
 "clear_error": false,
-"error_class": "ski_errorcol",
+"error_class": "w3-panel w3-red",
 "hide": true,
 "show": true,
 "show_error": "",
