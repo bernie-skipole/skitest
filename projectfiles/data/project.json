@@ -3,7 +3,7 @@
 "default_language": "en",
 "brief": "Project to test the skipole framework",
 "version": "0.0.1",
-"skipole": "0.0.37",
+"skipole": "0.0.39",
 "subprojects": {
 "lib": {
 "path": "/lib/"
@@ -528,7 +528,8 @@ false,
 "failmessage": "TextBlock not found",
 "show": true,
 "escape": true,
-"linebreaks": true
+"linebreaks": true,
+"decode": false
 }
 ]
 ]
@@ -666,7 +667,8 @@ false,
 "failmessage": "TextBlock not found",
 "show": true,
 "escape": true,
-"linebreaks": true
+"linebreaks": true,
+"decode": false
 }
 ]
 ]
@@ -804,7 +806,8 @@ false,
 "failmessage": "TextBlock not found",
 "show": true,
 "escape": true,
-"linebreaks": true
+"linebreaks": true,
+"decode": false
 }
 ]
 ]
@@ -1078,7 +1081,8 @@ false,
 "failmessage": "TextBlock not found",
 "show": true,
 "escape": true,
-"linebreaks": true
+"linebreaks": true,
+"decode": false
 }
 ]
 ]
@@ -1110,7 +1114,8 @@ false,
 "failmessage": "TextBlock not found",
 "show": true,
 "escape": true,
-"linebreaks": true
+"linebreaks": true,
+"decode": false
 }
 ]
 ]
@@ -1387,7 +1392,8 @@ false,
 "failmessage": "TextBlock not found",
 "show": true,
 "escape": true,
-"linebreaks": true
+"linebreaks": true,
+"decode": false
 }
 ]
 ]
@@ -1419,7 +1425,8 @@ false,
 "failmessage": "TextBlock not found",
 "show": true,
 "escape": true,
-"linebreaks": true
+"linebreaks": true,
+"decode": false
 }
 ]
 ]
@@ -1691,7 +1698,8 @@ false,
 "failmessage": "TextBlock not found",
 "show": true,
 "escape": true,
-"linebreaks": true
+"linebreaks": true,
+"decode": false
 }
 ]
 ]
@@ -2007,7 +2015,8 @@ false,
 "failmessage": "failed to read textblocks with ref html5shiv",
 "show": true,
 "escape": false,
-"linebreaks": false
+"linebreaks": false,
+"decode": false
 }
 ],
 [
@@ -2317,7 +2326,8 @@ false,
 "failmessage": "failed to read textblocks with ref html5shiv",
 "show": true,
 "escape": false,
-"linebreaks": false
+"linebreaks": false,
+"decode": false
 }
 ],
 [
@@ -2632,7 +2642,8 @@ false,
 "failmessage": "failed to read textblocks with ref html5shiv",
 "show": true,
 "escape": false,
-"linebreaks": false
+"linebreaks": false,
+"decode": false
 }
 ],
 [
@@ -3003,7 +3014,8 @@ false,
 "failmessage": "TextBlock not found",
 "show": true,
 "escape": true,
-"linebreaks": true
+"linebreaks": true,
+"decode": false
 }
 ]
 ]
@@ -3818,7 +3830,8 @@ false,
 "failmessage": "TextBlock not found",
 "show": true,
 "escape": true,
-"linebreaks": true
+"linebreaks": true,
+"decode": false
 }
 ]
 ]
@@ -4563,9 +4576,8 @@ false,
 "brief": "TextBlockPara",
 "fields": {
 "clear_error": false,
-"error_class": "errorcol",
+"error_class": "w3-panel w3-red",
 "linebreaks": true,
-"project_ident": "",
 "replace_strings": [],
 "show": true,
 "show_error": "",
@@ -5068,7 +5080,8 @@ false,
 "failmessage": "TextBlock not found",
 "show": true,
 "escape": true,
-"linebreaks": true
+"linebreaks": true,
+"decode": false
 }
 ]
 ]
@@ -5143,7 +5156,8 @@ false,
 "failmessage": "TextBlock not found",
 "show": true,
 "escape": true,
-"linebreaks": true
+"linebreaks": true,
+"decode": false
 }
 ]
 ]
@@ -5183,7 +5197,8 @@ false,
 "failmessage": "TextBlock not found",
 "show": true,
 "escape": true,
-"linebreaks": true
+"linebreaks": true,
+"decode": false
 }
 ]
 ]
@@ -5241,7 +5256,8 @@ false,
 "failmessage": "TextBlock not found",
 "show": true,
 "escape": true,
-"linebreaks": true
+"linebreaks": true,
+"decode": false
 }
 ]
 ]
@@ -5299,7 +5315,8 @@ false,
 "failmessage": "TextBlock not found",
 "show": true,
 "escape": true,
-"linebreaks": true
+"linebreaks": true,
+"decode": false
 }
 ]
 ]
@@ -5357,7 +5374,8 @@ false,
 "failmessage": "TextBlock not found",
 "show": true,
 "escape": true,
-"linebreaks": true
+"linebreaks": true,
+"decode": false
 }
 ]
 ]
@@ -5415,7 +5433,8 @@ false,
 "failmessage": "TextBlock not found",
 "show": true,
 "escape": true,
-"linebreaks": true
+"linebreaks": true,
+"decode": false
 }
 ]
 ]
@@ -5670,7 +5689,8 @@ false,
 "failmessage": "TextBlock not found",
 "show": true,
 "escape": true,
-"linebreaks": true
+"linebreaks": true,
+"decode": false
 }
 ]
 ]
@@ -5752,7 +5772,8 @@ false,
 "failmessage": "TextBlock not found",
 "show": true,
 "escape": true,
-"linebreaks": true
+"linebreaks": true,
+"decode": false
 }
 ]
 ]
@@ -5795,7 +5816,8 @@ false,
 "failmessage": "TextBlock not found",
 "show": true,
 "escape": true,
-"linebreaks": true
+"linebreaks": true,
+"decode": false
 }
 ]
 ]
@@ -5853,7 +5875,8 @@ false,
 "failmessage": "TextBlock not found",
 "show": true,
 "escape": true,
-"linebreaks": true
+"linebreaks": true,
+"decode": false
 }
 ]
 ]
@@ -6108,7 +6131,8 @@ false,
 "failmessage": "TextBlock not found",
 "show": true,
 "escape": true,
-"linebreaks": true
+"linebreaks": true,
+"decode": false
 }
 ]
 ]
@@ -6196,7 +6220,8 @@ false,
 "failmessage": "TextBlock not found",
 "show": true,
 "escape": true,
-"linebreaks": true
+"linebreaks": true,
+"decode": false
 }
 ]
 ]
@@ -6239,7 +6264,8 @@ false,
 "failmessage": "TextBlock not found",
 "show": true,
 "escape": true,
-"linebreaks": true
+"linebreaks": true,
+"decode": false
 }
 ]
 ]
@@ -6297,7 +6323,8 @@ false,
 "failmessage": "TextBlock not found",
 "show": true,
 "escape": true,
-"linebreaks": true
+"linebreaks": true,
+"decode": false
 }
 ]
 ]
@@ -6807,7 +6834,8 @@ false,
 "failmessage": "TextBlock not found",
 "show": true,
 "escape": true,
-"linebreaks": true
+"linebreaks": true,
+"decode": false
 }
 ]
 ]
@@ -7203,7 +7231,8 @@ false,
 "failmessage": "TextBlock not found",
 "show": true,
 "escape": true,
-"linebreaks": true
+"linebreaks": true,
+"decode": false
 }
 ]
 ]
@@ -7538,7 +7567,8 @@ false,
 "failmessage": "TextBlock not found",
 "show": true,
 "escape": true,
-"linebreaks": true
+"linebreaks": true,
+"decode": false
 }
 ]
 ]
@@ -8119,7 +8149,8 @@ false,
 "failmessage": "TextBlock not found",
 "show": true,
 "escape": true,
-"linebreaks": true
+"linebreaks": true,
+"decode": false
 }
 ]
 ]
@@ -8471,7 +8502,8 @@ false,
 "failmessage": "TextBlock not found",
 "show": true,
 "escape": true,
-"linebreaks": true
+"linebreaks": true,
+"decode": false
 }
 ]
 ]
@@ -8807,7 +8839,8 @@ false,
 "failmessage": "TextBlock not found",
 "show": true,
 "escape": true,
-"linebreaks": true
+"linebreaks": true,
+"decode": false
 }
 ]
 ]
@@ -9388,7 +9421,8 @@ false,
 "failmessage": "TextBlock not found",
 "show": true,
 "escape": true,
-"linebreaks": true
+"linebreaks": true,
+"decode": false
 }
 ]
 ]
@@ -10368,7 +10402,8 @@ false,
 "failmessage": "TextBlock not found",
 "show": true,
 "escape": true,
-"linebreaks": true
+"linebreaks": true,
+"decode": false
 }
 ]
 ]
@@ -10752,7 +10787,8 @@ false,
 "failmessage": "TextBlock not found",
 "show": true,
 "escape": true,
-"linebreaks": true
+"linebreaks": true,
+"decode": false
 }
 ]
 ]
@@ -11051,7 +11087,8 @@ false,
 "failmessage": "TextBlock not found",
 "show": true,
 "escape": true,
-"linebreaks": true
+"linebreaks": true,
+"decode": false
 }
 ]
 ]
@@ -11359,7 +11396,8 @@ false,
 "failmessage": "TextBlock not found",
 "show": true,
 "escape": true,
-"linebreaks": true
+"linebreaks": true,
+"decode": false
 }
 ]
 ]
@@ -11634,7 +11672,8 @@ false,
 "failmessage": "TextBlock not found",
 "show": true,
 "escape": true,
-"linebreaks": true
+"linebreaks": true,
+"decode": false
 }
 ]
 ]
@@ -11923,7 +11962,8 @@ false,
 "failmessage": "TextBlock not found",
 "show": true,
 "escape": true,
-"linebreaks": true
+"linebreaks": true,
+"decode": false
 }
 ]
 ]
@@ -12395,7 +12435,8 @@ false,
 "failmessage": "TextBlock not found",
 "show": true,
 "escape": true,
-"linebreaks": true
+"linebreaks": true,
+"decode": false
 }
 ]
 ]
@@ -12697,7 +12738,8 @@ false,
 "failmessage": "TextBlock not found",
 "show": true,
 "escape": true,
-"linebreaks": true
+"linebreaks": true,
+"decode": false
 }
 ]
 ]
@@ -13008,7 +13050,8 @@ false,
 "failmessage": "TextBlock not found",
 "show": true,
 "escape": true,
-"linebreaks": true
+"linebreaks": true,
+"decode": false
 }
 ]
 ]
@@ -13315,7 +13358,8 @@ false,
 "failmessage": "TextBlock not found",
 "show": true,
 "escape": true,
-"linebreaks": true
+"linebreaks": true,
+"decode": false
 }
 ]
 ]
@@ -13624,7 +13668,8 @@ false,
 "failmessage": "TextBlock not found",
 "show": true,
 "escape": true,
-"linebreaks": true
+"linebreaks": true,
+"decode": false
 }
 ]
 ]
@@ -14412,7 +14457,8 @@ false,
 "failmessage": "TextBlock not found",
 "show": true,
 "escape": true,
-"linebreaks": true
+"linebreaks": true,
+"decode": false
 }
 ]
 ]
@@ -14850,7 +14896,8 @@ false,
 "failmessage": "TextBlock not found",
 "show": true,
 "escape": true,
-"linebreaks": true
+"linebreaks": true,
+"decode": false
 }
 ]
 ]
@@ -15151,7 +15198,8 @@ false,
 "failmessage": "TextBlock not found",
 "show": true,
 "escape": true,
-"linebreaks": true
+"linebreaks": true,
+"decode": false
 }
 ]
 ]
@@ -15458,7 +15506,8 @@ false,
 "failmessage": "TextBlock not found",
 "show": true,
 "escape": true,
-"linebreaks": true
+"linebreaks": true,
+"decode": false
 }
 ]
 ]
@@ -15783,7 +15832,8 @@ false,
 "failmessage": "TextBlock not found",
 "show": true,
 "escape": true,
-"linebreaks": true
+"linebreaks": true,
+"decode": false
 }
 ]
 ]
@@ -16001,7 +16051,8 @@ false,
 "failmessage": "TextBlock not found",
 "show": true,
 "escape": true,
-"linebreaks": true
+"linebreaks": true,
+"decode": false
 }
 ]
 ]
@@ -16337,7 +16388,8 @@ false,
 "failmessage": "TextBlock not found",
 "show": true,
 "escape": true,
-"linebreaks": true
+"linebreaks": true,
+"decode": false
 }
 ]
 ]
@@ -16555,7 +16607,8 @@ false,
 "failmessage": "TextBlock not found",
 "show": true,
 "escape": true,
-"linebreaks": true
+"linebreaks": true,
+"decode": false
 }
 ]
 ]
@@ -16773,7 +16826,8 @@ false,
 "failmessage": "TextBlock not found",
 "show": true,
 "escape": true,
-"linebreaks": true
+"linebreaks": true,
+"decode": false
 }
 ]
 ]
@@ -17074,7 +17128,8 @@ false,
 "failmessage": "TextBlock not found",
 "show": true,
 "escape": true,
-"linebreaks": true
+"linebreaks": true,
+"decode": false
 }
 ]
 ]
@@ -17433,7 +17488,8 @@ false,
 "failmessage": "TextBlock not found",
 "show": true,
 "escape": true,
-"linebreaks": true
+"linebreaks": true,
+"decode": false
 }
 ]
 ]
@@ -17651,7 +17707,8 @@ false,
 "failmessage": "TextBlock not found",
 "show": true,
 "escape": true,
-"linebreaks": true
+"linebreaks": true,
+"decode": false
 }
 ]
 ]
@@ -18143,7 +18200,8 @@ false,
 "failmessage": "TextBlock not found",
 "show": true,
 "escape": true,
-"linebreaks": true
+"linebreaks": true,
+"decode": false
 }
 ]
 ]
@@ -18398,7 +18456,8 @@ false,
 "failmessage": "TextBlock not found",
 "show": true,
 "escape": true,
-"linebreaks": true
+"linebreaks": true,
+"decode": false
 }
 ]
 ]
@@ -19121,7 +19180,8 @@ false,
 "failmessage": "TextBlock not found",
 "show": true,
 "escape": true,
-"linebreaks": true
+"linebreaks": true,
+"decode": false
 }
 ]
 ]
@@ -19376,7 +19436,8 @@ false,
 "failmessage": "TextBlock not found",
 "show": true,
 "escape": true,
-"linebreaks": true
+"linebreaks": true,
+"decode": false
 }
 ]
 ]
@@ -19594,7 +19655,8 @@ false,
 "failmessage": "TextBlock not found",
 "show": true,
 "escape": true,
-"linebreaks": true
+"linebreaks": true,
+"decode": false
 }
 ]
 ]
@@ -19812,7 +19874,8 @@ false,
 "failmessage": "TextBlock not found",
 "show": true,
 "escape": true,
-"linebreaks": true
+"linebreaks": true,
+"decode": false
 }
 ]
 ]
@@ -20030,7 +20093,8 @@ false,
 "failmessage": "TextBlock not found",
 "show": true,
 "escape": true,
-"linebreaks": true
+"linebreaks": true,
+"decode": false
 }
 ]
 ]
@@ -20248,7 +20312,8 @@ false,
 "failmessage": "TextBlock not found",
 "show": true,
 "escape": true,
-"linebreaks": true
+"linebreaks": true,
+"decode": false
 }
 ]
 ]
@@ -20466,7 +20531,8 @@ false,
 "failmessage": "TextBlock not found",
 "show": true,
 "escape": true,
-"linebreaks": true
+"linebreaks": true,
+"decode": false
 }
 ]
 ]
@@ -20689,7 +20755,8 @@ false,
 "failmessage": "Javascript failure - This page requires javascript to be enabled in your browser.",
 "show": true,
 "escape": true,
-"linebreaks": true
+"linebreaks": true,
+"decode": false
 }
 ]
 ]

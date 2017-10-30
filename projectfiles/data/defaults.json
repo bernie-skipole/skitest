@@ -1,5 +1,5 @@
 {
-"backcol": "#8e39ad",
+"backcol": "#fbf892",
 "css_links": [
 "w3_css",
 "w3_theme_ski_css",
@@ -27,6 +27,9 @@
 "ShowPara1": {
 "error_class": "w3-panel w3-red",
 "widget_class": "w3-section"
+},
+"TextBlockPara": {
+"error_class": "w3-panel w3-red"
 }
 },
 "headers": {
