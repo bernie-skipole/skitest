@@ -137,7 +137,10 @@ _HEADER_TEXT = { 2001 : "Skipole tests.",
                100102:"Secure 1 page",
                100104:"Secure 2 page",
                100106:"Secure 3 page",
-               200001:"Responders"}
+               200001:"Responders",
+               300001:"Validators",
+               300002:"zz"
+               }
 
 _NAV_BUTTONS = {  3001:[['home','Home', False, '']],
                   3002:[['home','Home', False, ''], ['modules', 'Modules', False, '']],
@@ -185,7 +188,10 @@ _NAV_BUTTONS = {  3001:[['home','Home', False, '']],
                 100102:[['home','Home', False, ''], ['login','Test Login', False, '']],
                 100104:[['home','Home', False, ''], ['login','Test Login', False, '']],
                 100106:[['home','Home', False, ''], ['login','Test Login', False, '']],
-                200001:[['home','Home', False, '']]}
+                200001:[['home','Home', False, '']],
+                300001:[['home','Home', False, '']],
+                300002:[['home','Home', False, ''], ['valtests','Validators', False, '']]
+                }
 
 def end_call(page_ident, page_type, call_data, page_data, proj_data, lang):
     """This function is called at the end of a call prior to filling the returned page with page_data,

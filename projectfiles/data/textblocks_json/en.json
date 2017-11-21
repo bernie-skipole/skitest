@@ -45,6 +45,7 @@
   "page.14680.01": "TwoInputsSubmit1: A form with error paragraph, two input text fields, submit button and four hidden fields.",
   "page.14690.01": "SubmitDict1: A  form with a list of input fields followed by a single submit button to allow a client to input a dictionary.\r\nThe widget 'input_dict' field is used with an ordered dictionary of keys:values, the keys are embedded in the field names, the values are input text values. On submission input_dict returned is a dictionary with the same keys, and values filled in from the form.",
   "page.200001.01": "Responders are pages which receive a call, and then manipulates the received data in some way, including calling your submit_data function to populate the page_data dictionary.\r\n\r\nThe responder then generally passes the call to a final template page which is returned to the client browser.\r\n\r\nThe following buttons link to tests for each responder type.",
+  "page.300001.01": "Validators test user input. The links on this page are to input fields, in which validators are used to check various inputs, to confirm they are working correctly.\r\nGenerally a validator works both on the client with javascript, and at the server with Python. You should run the tests with javascript both enabled and disabled on your client browser.",
   "page.3001.01": "Widgets are defined in modules - use the buttons below to the module required.",
   "page.3002.01": "These are the widgets in the checkbox module.",
   "page.3003.01": "These are the widgets in the confirm module.",
