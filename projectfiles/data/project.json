@@ -3,7 +3,7 @@
 "default_language": "en",
 "brief": "Project to test the skipole framework",
 "version": "0.0.1",
-"skipole": "0.0.41",
+"skipole": "0.0.42",
 "subprojects": {
 "lib": {
 "path": "/lib/"
@@ -4861,6 +4861,352 @@ false,
 "restricted": false,
 "folders": {},
 "pages": {
+"allowedvaluesonly": {
+"ident": 300002,
+"brief": "test AllowedValuesOnly validator",
+"TemplatePage": {
+"show_backcol": false,
+"last_scroll": true,
+"interval": 0,
+"interval_target": null,
+"lang": "en",
+"backcol": "#9dbd7a",
+"default_error_widget": [
+"header",
+"top_error"
+]
+},
+"head": [
+"Part",
+{
+"tag_name": "head",
+"brief": "The head section of the page",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"ClosedPart",
+{
+"tag_name": "meta",
+"brief": "The charset meta declaration",
+"show": true,
+"attribs": {
+"charset": "utf-8"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "meta",
+"brief": "The viewport meta declaration",
+"show": true,
+"attribs": {
+"content": "width=device-width, initial-scale=1",
+"name": "viewport"
+}
+}
+],
+[
+"Part",
+{
+"tag_name": "title",
+"brief": "The page title element",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Text",
+"Index"
+]
+]
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to w3_css",
+"show": true,
+"attribs": {
+"href": "{w3_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to w3_theme_ski_css",
+"show": true,
+"attribs": {
+"href": "{w3_theme_ski_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to ski_css",
+"show": true,
+"attribs": {
+"href": "{ski_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"Part",
+{
+"tag_name": "script",
+"brief": "script link to jquery_core",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"src": "{jquery_core}"
+},
+"parts": []
+}
+],
+[
+"Part",
+{
+"tag_name": "script",
+"brief": "script link to skipole_js",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"src": "{skipole_js}"
+},
+"parts": []
+}
+]
+]
+}
+],
+"body": [
+"Part",
+{
+"tag_name": "body",
+"brief": "The body section of the page",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "w3-theme"
+},
+"parts": [
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "container",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "w3-container"
+},
+"parts": [
+[
+"SectionPlaceHolder",
+{
+"brief": "Page header",
+"section_name": "header",
+"placename": "header"
+}
+],
+[
+"SectionPlaceHolder",
+{
+"brief": "Left navigation panel",
+"section_name": "navigation",
+"placename": "navigation"
+}
+],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "centre",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "w3-section",
+"style": "margin-left:25%"
+},
+"parts": [
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "Top description",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"TextBlock",
+{
+"textref": "page.300002.01",
+"failmessage": "TextBlock not found",
+"show": true,
+"escape": true,
+"linebreaks": true,
+"decode": false
+}
+]
+]
+}
+],
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "Test1",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Text",
+"Test1: Validation errors are set to the test1 widget."
+]
+]
+}
+],
+[
+"Widget",
+{
+"class": "paras.ParaText",
+"name": "result_test1",
+"brief": "Result paragraph",
+"fields": {
+"para_text": "test1 results appears here. Errors in a dev below.",
+"show": true,
+"widget_class": "",
+"widget_style": ""
+}
+}
+],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "Holds buttons",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Widget",
+{
+"class": "inputtext.SubmitTextInput1",
+"name": "test1",
+"brief": "submittextinput1 widget",
+"fields": {
+"action": 310001,
+"action_json": "",
+"button_class": "w3-button w3-theme-d4 w3-margin-left",
+"button_text": "Submit",
+"clear_error": false,
+"error_class": "w3-panel w3-red",
+"hidden_field1": "",
+"hidden_field2": "",
+"hidden_field3": "",
+"hidden_field4": "",
+"hide": false,
+"input_accepted_class": "ski_input_accepted",
+"input_class": "ski_input",
+"input_errored_class": "ski_input_errored",
+"input_text": "",
+"inputandbutton_class": "ski_nowrap",
+"inputdiv_class": "w3-section",
+"label": "Set text to send:",
+"label_class": "ski_left_label",
+"maxlength": "",
+"new_window": false,
+"pattern": "",
+"required": false,
+"set_input_accepted": false,
+"set_input_errored": false,
+"show": true,
+"show_error": "",
+"size": "",
+"title": "",
+"type": "text",
+"widget_class": "w3-section",
+"widget_style": ""
+},
+"validators": {
+"input_text": [
+{
+"class": "basic.AllowedValuesOnly",
+"message": "Invalid input, should be one, two or three",
+"displaywidget": [
+"",
+"test1",
+"",
+""
+],
+"allowed_values": [
+"one",
+"two",
+"three"
+]
+}
+]
+}
+}
+]
+]
+}
+],
+[
+"SectionPlaceHolder",
+{
+"brief": "section footer with alias foot",
+"section_name": "footer",
+"placename": "foot"
+}
+]
+]
+}
+]
+]
+}
+]
+]
+}
+]
+},
+"allowedvaluesonly_test1": {
+"ident": 310001,
+"brief": "allowedvaluesonly test1 responder",
+"RespondPage": {
+"class": "AllowStore",
+"original_args": {
+"allowed_callers": [
+300002
+],
+"alternate_ident": "home",
+"fail_ident": 300002,
+"submit_list": [
+"validators",
+"allowedvaluesonly",
+"test1"
+],
+"submit_option": true,
+"target_ident": 300002,
+"validate_fail_ident": 300002,
+"validate_option": true
+},
+"original_fields": {
+"test1:input_text": ""
+}
+}
+},
 "tests": {
 "ident": 300001,
 "brief": "Links to validate tests",
@@ -5074,11 +5420,11 @@ false,
 "Widget",
 {
 "class": "links.ButtonLink2",
-"name": "zz",
-"brief": "Link to zz test",
+"name": "allowedvaluesonly",
+"brief": "Link to allowedvaluesonly tests",
 "fields": {
 "button_class": "w3-button w3-block w3-theme-l1 w3-border",
-"button_text": "zz",
+"button_text": "AllowedValuesOnly",
 "button_wait_text": "Please wait...",
 "buttondiv_class": "ski_mid_button",
 "buttondiv_style": "",
@@ -5091,292 +5437,6 @@ false,
 "link_ident": 300002,
 "show": true,
 "show_error": "",
-"widget_class": "w3-section",
-"widget_style": ""
-}
-}
-]
-]
-}
-],
-[
-"SectionPlaceHolder",
-{
-"brief": "section footer with alias foot",
-"section_name": "footer",
-"placename": "foot"
-}
-]
-]
-}
-]
-]
-}
-]
-]
-}
-]
-},
-"zz": {
-"ident": 300002,
-"brief": "test zz",
-"TemplatePage": {
-"show_backcol": false,
-"last_scroll": true,
-"interval": 0,
-"interval_target": null,
-"lang": "en",
-"backcol": "#9dbd7a",
-"default_error_widget": [
-"header",
-"top_error"
-]
-},
-"head": [
-"Part",
-{
-"tag_name": "head",
-"brief": "The head section of the page",
-"show": true,
-"hide_if_empty": false,
-"parts": [
-[
-"ClosedPart",
-{
-"tag_name": "meta",
-"brief": "The charset meta declaration",
-"show": true,
-"attribs": {
-"charset": "utf-8"
-}
-}
-],
-[
-"ClosedPart",
-{
-"tag_name": "meta",
-"brief": "The viewport meta declaration",
-"show": true,
-"attribs": {
-"content": "width=device-width, initial-scale=1",
-"name": "viewport"
-}
-}
-],
-[
-"Part",
-{
-"tag_name": "title",
-"brief": "The page title element",
-"show": true,
-"hide_if_empty": false,
-"parts": [
-[
-"Text",
-"Index"
-]
-]
-}
-],
-[
-"ClosedPart",
-{
-"tag_name": "link",
-"brief": "css link to w3_css",
-"show": true,
-"attribs": {
-"href": "{w3_css}",
-"rel": "stylesheet",
-"type": "text/css"
-}
-}
-],
-[
-"ClosedPart",
-{
-"tag_name": "link",
-"brief": "css link to w3_theme_ski_css",
-"show": true,
-"attribs": {
-"href": "{w3_theme_ski_css}",
-"rel": "stylesheet",
-"type": "text/css"
-}
-}
-],
-[
-"ClosedPart",
-{
-"tag_name": "link",
-"brief": "css link to ski_css",
-"show": true,
-"attribs": {
-"href": "{ski_css}",
-"rel": "stylesheet",
-"type": "text/css"
-}
-}
-],
-[
-"Part",
-{
-"tag_name": "script",
-"brief": "script link to jquery_core",
-"show": true,
-"hide_if_empty": false,
-"attribs": {
-"src": "{jquery_core}"
-},
-"parts": []
-}
-],
-[
-"Part",
-{
-"tag_name": "script",
-"brief": "script link to skipole_js",
-"show": true,
-"hide_if_empty": false,
-"attribs": {
-"src": "{skipole_js}"
-},
-"parts": []
-}
-]
-]
-}
-],
-"body": [
-"Part",
-{
-"tag_name": "body",
-"brief": "The body section of the page",
-"show": true,
-"hide_if_empty": false,
-"attribs": {
-"class": "w3-theme"
-},
-"parts": [
-[
-"Part",
-{
-"tag_name": "div",
-"brief": "container",
-"show": true,
-"hide_if_empty": false,
-"attribs": {
-"class": "w3-container"
-},
-"parts": [
-[
-"SectionPlaceHolder",
-{
-"brief": "Page header",
-"section_name": "header",
-"placename": "header"
-}
-],
-[
-"SectionPlaceHolder",
-{
-"brief": "Left navigation panel",
-"section_name": "navigation",
-"placename": "navigation"
-}
-],
-[
-"Part",
-{
-"tag_name": "div",
-"brief": "centre",
-"show": true,
-"hide_if_empty": false,
-"attribs": {
-"class": "w3-section",
-"style": "margin-left:25%"
-},
-"parts": [
-[
-"Part",
-{
-"tag_name": "p",
-"brief": "Top description",
-"show": true,
-"hide_if_empty": false,
-"parts": [
-[
-"TextBlock",
-{
-"textref": "page.300002.01",
-"failmessage": "TextBlock not found",
-"show": true,
-"escape": true,
-"linebreaks": true,
-"decode": false
-}
-]
-]
-}
-],
-[
-"Widget",
-{
-"class": "paras.ParaText",
-"name": "result",
-"brief": "Result paragraph",
-"fields": {
-"para_text": "Result text appears here.",
-"show": true,
-"widget_class": "",
-"widget_style": ""
-}
-}
-],
-[
-"Part",
-{
-"tag_name": "div",
-"brief": "Holds buttons",
-"show": true,
-"hide_if_empty": false,
-"parts": [
-[
-"Widget",
-{
-"class": "inputtext.SubmitTextInput1",
-"name": "submittextinput1_test",
-"brief": "submittextinput1 widget",
-"fields": {
-"action": 4661,
-"action_json": "",
-"button_class": "w3-button w3-theme-d4 w3-margin-left",
-"button_text": "Submit",
-"clear_error": false,
-"error_class": "w3-panel w3-red",
-"hidden_field1": "",
-"hidden_field2": "",
-"hidden_field3": "",
-"hidden_field4": "",
-"hide": false,
-"input_accepted_class": "ski_input_accepted",
-"input_class": "ski_input",
-"input_errored_class": "ski_input_errored",
-"input_text": "",
-"inputandbutton_class": "ski_nowrap",
-"inputdiv_class": "w3-section",
-"label": "Set text to send:",
-"label_class": "ski_left_label",
-"maxlength": "",
-"new_window": false,
-"pattern": "",
-"required": false,
-"set_input_accepted": false,
-"set_input_errored": false,
-"show": true,
-"show_error": "",
-"size": "",
-"title": "",
-"type": "text",
 "widget_class": "w3-section",
 "widget_style": ""
 }

@@ -8,7 +8,7 @@ from base64 import b64decode
 from .. import FailPage, GoTo, ValidateError, ServerError
 
 
-from . import widgets, login, responders
+from . import widgets, login, responders, validators
 
 ##############################################################################
 #
@@ -86,6 +86,19 @@ def submit_data(caller_ident, ident_list, submit_list, submit_dict, call_data, p
             raise FailPage("submit_list contains 'responders' and '%s', but function not recognised" % (submit_list[1],))
         return submitfunc(caller_ident, ident_list, submit_list, submit_dict, call_data, page_data, lang)
 
+    if submit_list and (submit_list[0] == 'validators'):
+        # expects submitlist to have contents such as ['validators', 'allowedvaluesonly', 'test1']
+        # where package 'validators' contains module 'allowedvaluesonly' containing function 'test1'
+        try:
+            validatorsmod = getattr(validators, submit_list[1])
+        except:
+            raise FailPage("submit_list contains 'validators' but module not recognised")
+        try:
+            submitfunc = getattr(validatorsmod, submit_list[2])
+        except:
+            raise FailPage("submit_list contains 'validators' and '%s', but function not recognised" % (submit_list[1],))
+        return submitfunc(caller_ident, ident_list, submit_list, submit_dict, call_data, page_data, lang)
+
 
     raise FailPage("submit_list string not recognised")
 
@@ -139,7 +152,7 @@ _HEADER_TEXT = { 2001 : "Skipole tests.",
                100106:"Secure 3 page",
                200001:"Responders",
                300001:"Validators",
-               300002:"zz"
+               300002:"Tests for the AllowedValuesOnly Validator"
                }
 
 _NAV_BUTTONS = {  3001:[['home','Home', False, '']],
