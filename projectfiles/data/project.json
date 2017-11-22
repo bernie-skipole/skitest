@@ -4859,7 +4859,68 @@ false,
 "brief": "Holds validator tests",
 "default_page_name": "index",
 "restricted": false,
+"folders": {
+"restricted": {
+"ident": 310000,
+"brief": "Responders called on failure",
+"default_page_name": "index",
+"restricted": true,
 "folders": {},
+"pages": {
+"allowedvaluesonly_test2": {
+"ident": 310003,
+"brief": "Displays red border on form input field",
+"RespondPage": {
+"class": "SubmitData",
+"original_args": {
+"fail_ident": 300002,
+"submit_list": [
+"validators",
+"allowedvaluesonly",
+"test2fail"
+],
+"target_ident": 300002
+},
+"original_fields": {}
+}
+},
+"allowedvaluesonly_test3": {
+"ident": 310005,
+"brief": "Displays red border on form input field",
+"RespondPage": {
+"class": "SubmitData",
+"original_args": {
+"fail_ident": 300002,
+"submit_list": [
+"validators",
+"allowedvaluesonly",
+"test3fail"
+],
+"target_ident": 300002
+},
+"original_fields": {}
+}
+},
+"allowedvaluesonly_test5": {
+"ident": 310008,
+"brief": "Displays red border on form input field",
+"RespondPage": {
+"class": "SubmitData",
+"original_args": {
+"fail_ident": 300002,
+"submit_list": [
+"validators",
+"allowedvaluesonly",
+"test5fail"
+],
+"target_ident": 300002
+},
+"original_fields": {}
+}
+}
+}
+}
+},
 "pages": {
 "allowedvaluesonly": {
 "ident": 300002,
@@ -5065,8 +5126,24 @@ false,
 [
 "Part",
 {
-"tag_name": "p",
+"tag_name": "div",
 "brief": "Test1",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"ClosedPart",
+{
+"tag_name": "hr",
+"brief": "Horizontal rule",
+"show": true
+}
+],
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "Description",
 "show": true,
 "hide_if_empty": false,
 "parts": [
@@ -5095,7 +5172,7 @@ false,
 "Part",
 {
 "tag_name": "div",
-"brief": "Holds buttons",
+"brief": "Holds form to be validated",
 "show": true,
 "hide_if_empty": false,
 "parts": [
@@ -5162,6 +5239,512 @@ false,
 ]
 ]
 }
+]
+]
+}
+],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "Test2",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"ClosedPart",
+{
+"tag_name": "hr",
+"brief": "Horizontal rule",
+"show": true
+}
+],
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "Description",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Text",
+"Test2: Validation errors are set to the header,top_error widget."
+]
+]
+}
+],
+[
+"Widget",
+{
+"class": "paras.ParaText",
+"name": "result_test2",
+"brief": "Result paragraph",
+"fields": {
+"para_text": "test2 results appears here.",
+"show": true,
+"widget_class": "",
+"widget_style": ""
+}
+}
+],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "Holds form to be validated",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Widget",
+{
+"class": "inputtext.SubmitTextInput1",
+"name": "test2",
+"brief": "submittextinput1 widget",
+"fields": {
+"action": 310002,
+"action_json": "",
+"button_class": "w3-button w3-theme-d4 w3-margin-left",
+"button_text": "Submit",
+"clear_error": false,
+"error_class": "w3-panel w3-red",
+"hidden_field1": "",
+"hidden_field2": "",
+"hidden_field3": "",
+"hidden_field4": "",
+"hide": false,
+"input_accepted_class": "ski_input_accepted",
+"input_class": "ski_input",
+"input_errored_class": "ski_input_errored",
+"input_text": "",
+"inputandbutton_class": "ski_nowrap",
+"inputdiv_class": "w3-section",
+"label": "Set text to send:",
+"label_class": "ski_left_label",
+"maxlength": "",
+"new_window": false,
+"pattern": "",
+"required": false,
+"set_input_accepted": false,
+"set_input_errored": false,
+"show": true,
+"show_error": "",
+"size": "",
+"title": "",
+"type": "text",
+"widget_class": "w3-section",
+"widget_style": ""
+},
+"validators": {
+"input_text": [
+{
+"class": "basic.AllowedValuesOnly",
+"message": "Invalid input, should be one, two or three",
+"displaywidget": [
+"header",
+"top_error",
+"",
+""
+],
+"allowed_values": [
+"one",
+"two",
+"three"
+]
+}
+]
+}
+}
+]
+]
+}
+]
+]
+}
+],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "Test3",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"ClosedPart",
+{
+"tag_name": "hr",
+"brief": "Horizontal rule",
+"show": true
+}
+],
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "Description",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Text",
+"Test3: Validation errors are set without a display widget."
+]
+]
+}
+],
+[
+"Widget",
+{
+"class": "paras.ParaText",
+"name": "result_test3",
+"brief": "Result paragraph",
+"fields": {
+"para_text": "test3 results appears here.",
+"show": true,
+"widget_class": "",
+"widget_style": ""
+}
+}
+],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "Holds form to be validated",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Widget",
+{
+"class": "inputtext.SubmitTextInput1",
+"name": "test3",
+"brief": "submittextinput1 widget",
+"fields": {
+"action": 310004,
+"action_json": "",
+"button_class": "w3-button w3-theme-d4 w3-margin-left",
+"button_text": "Submit",
+"clear_error": false,
+"error_class": "w3-panel w3-red",
+"hidden_field1": "",
+"hidden_field2": "",
+"hidden_field3": "",
+"hidden_field4": "",
+"hide": false,
+"input_accepted_class": "ski_input_accepted",
+"input_class": "ski_input",
+"input_errored_class": "ski_input_errored",
+"input_text": "",
+"inputandbutton_class": "ski_nowrap",
+"inputdiv_class": "w3-section",
+"label": "Set text to send:",
+"label_class": "ski_left_label",
+"maxlength": "",
+"new_window": false,
+"pattern": "",
+"required": false,
+"set_input_accepted": false,
+"set_input_errored": false,
+"show": true,
+"show_error": "",
+"size": "",
+"title": "",
+"type": "text",
+"widget_class": "w3-section",
+"widget_style": ""
+},
+"validators": {
+"input_text": [
+{
+"class": "basic.AllowedValuesOnly",
+"message": "Invalid input, should be one, two or three",
+"allowed_values": [
+"one",
+"two",
+"three"
+]
+}
+]
+}
+}
+]
+]
+}
+]
+]
+}
+],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "Test4",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"ClosedPart",
+{
+"tag_name": "hr",
+"brief": "Horizontal rule",
+"show": true
+}
+],
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "Description",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Text",
+"Test4: Validation errors are set to test4 widget, but no message."
+]
+]
+}
+],
+[
+"Widget",
+{
+"class": "paras.ParaText",
+"name": "result_test4",
+"brief": "Result paragraph",
+"fields": {
+"para_text": "test4 results appears here.",
+"show": true,
+"widget_class": "",
+"widget_style": ""
+}
+}
+],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "Holds form to be validated",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Widget",
+{
+"class": "inputtext.SubmitTextInput1",
+"name": "test4",
+"brief": "submittextinput1 widget",
+"fields": {
+"action": 310006,
+"action_json": "",
+"button_class": "w3-button w3-theme-d4 w3-margin-left",
+"button_text": "Submit",
+"clear_error": false,
+"error_class": "w3-panel w3-red",
+"hidden_field1": "",
+"hidden_field2": "",
+"hidden_field3": "",
+"hidden_field4": "",
+"hide": false,
+"input_accepted_class": "ski_input_accepted",
+"input_class": "ski_input",
+"input_errored_class": "ski_input_errored",
+"input_text": "",
+"inputandbutton_class": "ski_nowrap",
+"inputdiv_class": "w3-section",
+"label": "Set text to send:",
+"label_class": "ski_left_label",
+"maxlength": "",
+"new_window": false,
+"pattern": "",
+"required": false,
+"set_input_accepted": false,
+"set_input_errored": false,
+"show": true,
+"show_error": "Error on widget test4",
+"size": "",
+"title": "",
+"type": "text",
+"widget_class": "w3-section",
+"widget_style": ""
+},
+"validators": {
+"input_text": [
+{
+"class": "basic.AllowedValuesOnly",
+"displaywidget": [
+"",
+"test4",
+"",
+""
+],
+"allowed_values": [
+"one",
+"two",
+"three"
+]
+}
+]
+}
+}
+]
+]
+}
+]
+]
+}
+],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "Test5",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"ClosedPart",
+{
+"tag_name": "hr",
+"brief": "Horizontal rule",
+"show": true
+}
+],
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "Description",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Text",
+"Test5: Validation errors are set to the test5_error widget, widgets have field name changes."
+]
+]
+}
+],
+[
+"Widget",
+{
+"class": "error_messages.ErrorClear2",
+"name": "test5_error",
+"brief": "Displays the error text for test 5",
+"fields": {
+"boxdiv_class": "w3-modal-content w3-panel w3-theme-d3",
+"button_class": "w3-bar-item w3-button w3-right w3-theme-l2",
+"buttondiv_class": "w3-bar",
+"buttondiv_style": "",
+"clear_error": false,
+"error_class": "w3-panel w3-center w3-red",
+"get_field1": "",
+"get_field2": "",
+"get_field3": "",
+"hide": true,
+"link_ident": 300002,
+"pre_line": true,
+"show": true,
+"show_error": "",
+"widget_class": "w3-modal",
+"widget_style": ""
+}
+}
+],
+[
+"Widget",
+{
+"class": "paras.ParaText",
+"name": "result_test5",
+"brief": "Result paragraph",
+"fields": {
+"para_text": "test5 results appears here.",
+"show": true,
+"widget_class": "",
+"widget_style": ""
+}
+}
+],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "Holds form to be validated",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Widget",
+{
+"class": "inputtext.SubmitTextInput1",
+"name": "test5",
+"brief": "submittextinput1 widget",
+"fields": {
+"action": 310007,
+"action_json": "",
+"button_class": "w3-button w3-theme-d4 w3-margin-left",
+"button_text": "Submit",
+"clear_error": false,
+"error_class": "w3-panel w3-red",
+"hidden_field1": "",
+"hidden_field2": "",
+"hidden_field3": "",
+"hidden_field4": "",
+"hide": false,
+"input_accepted_class": "ski_input_accepted",
+"input_class": "ski_input",
+"input_errored_class": "ski_input_errored",
+"input_text": "",
+"inputandbutton_class": "ski_nowrap",
+"inputdiv_class": "w3-section",
+"label": "Set text to send:",
+"label_class": "ski_left_label",
+"maxlength": "",
+"new_window": false,
+"pattern": "",
+"required": false,
+"set_input_accepted": false,
+"set_input_errored": false,
+"show": true,
+"show_error": "",
+"size": "",
+"title": "",
+"type": "text",
+"widget_class": "w3-section",
+"widget_style": ""
+},
+"set_names": {
+"input_text": "test5input",
+"set_input_errored": "set_errored"
+},
+"validators": {
+"test5input": [
+{
+"class": "basic.AllowedValuesOnly",
+"message": "Invalid input, should be one, two or three",
+"displaywidget": [
+"",
+"test5_error",
+"",
+""
+],
+"allowed_values": [
+"one",
+"two",
+"three"
+]
+}
+]
+}
+}
+]
+]
+}
+]
+]
+}
 ],
 [
 "SectionPlaceHolder",
@@ -5204,6 +5787,110 @@ false,
 },
 "original_fields": {
 "test1:input_text": ""
+}
+}
+},
+"allowedvaluesonly_test2": {
+"ident": 310002,
+"brief": "allowedvaluesonly test2 responder",
+"RespondPage": {
+"class": "AllowStore",
+"original_args": {
+"allowed_callers": [
+300002
+],
+"alternate_ident": "home",
+"fail_ident": 300002,
+"submit_list": [
+"validators",
+"allowedvaluesonly",
+"test2"
+],
+"submit_option": true,
+"target_ident": 300002,
+"validate_fail_ident": 310003,
+"validate_option": true
+},
+"original_fields": {
+"test2:input_text": ""
+}
+}
+},
+"allowedvaluesonly_test3": {
+"ident": 310004,
+"brief": "allowedvaluesonly test3 responder",
+"RespondPage": {
+"class": "AllowStore",
+"original_args": {
+"allowed_callers": [
+300002
+],
+"alternate_ident": "home",
+"fail_ident": 300002,
+"submit_list": [
+"validators",
+"allowedvaluesonly",
+"test3"
+],
+"submit_option": true,
+"target_ident": 300002,
+"validate_fail_ident": 310005,
+"validate_option": true
+},
+"original_fields": {
+"test3:input_text": ""
+}
+}
+},
+"allowedvaluesonly_test4": {
+"ident": 310006,
+"brief": "allowedvaluesonly test4 responder",
+"RespondPage": {
+"class": "AllowStore",
+"original_args": {
+"allowed_callers": [
+300002
+],
+"alternate_ident": "home",
+"fail_ident": 300002,
+"submit_list": [
+"validators",
+"allowedvaluesonly",
+"test4"
+],
+"submit_option": true,
+"target_ident": 300002,
+"validate_fail_ident": 300002,
+"validate_option": true
+},
+"original_fields": {
+"test4:input_text": ""
+}
+}
+},
+"allowedvaluesonly_test5": {
+"ident": 310007,
+"brief": "allowedvaluesonly test5 responder",
+"RespondPage": {
+"class": "AllowStore",
+"original_args": {
+"allowed_callers": [
+300002
+],
+"alternate_ident": "home",
+"fail_ident": 300002,
+"submit_list": [
+"validators",
+"allowedvaluesonly",
+"test5"
+],
+"submit_option": true,
+"target_ident": 300002,
+"validate_fail_ident": 310008,
+"validate_option": true
+},
+"original_fields": {
+"test5:test5input": ""
 }
 }
 },
