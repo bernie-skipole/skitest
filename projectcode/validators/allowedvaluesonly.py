@@ -12,7 +12,6 @@ def test2(caller_ident, ident_list, submit_list, submit_dict, call_data, page_da
 
 def test2fail(caller_ident, ident_list, submit_list, submit_dict, call_data, page_data, lang):
     """Failed test, show red border"""
-    print(submit_dict)
     page_data['test2', 'set_input_errored'] = True
 
 
@@ -24,7 +23,6 @@ def test3(caller_ident, ident_list, submit_list, submit_dict, call_data, page_da
 
 def test3fail(caller_ident, ident_list, submit_list, submit_dict, call_data, page_data, lang):
     """Failed test, show red border"""
-    print(submit_dict)
     page_data['test3', 'set_input_errored'] = True
 
 
@@ -42,6 +40,16 @@ def test5(caller_ident, ident_list, submit_list, submit_dict, call_data, page_da
 
 def test5fail(caller_ident, ident_list, submit_list, submit_dict, call_data, page_data, lang):
     """Failed test, show red border"""
-    print(submit_dict)
     page_data['test5', 'set_errored'] = True
+
+
+def test6(caller_ident, ident_list, submit_list, submit_dict, call_data, page_data, lang):
+    """Allowed values only submitted"""
+    if call_data['test6','test6','test6input']:
+        page_data['test6', 'result_test6', 'para_text'] = call_data['test6','test6','test6input']
+
+
+def test6fail(caller_ident, ident_list, submit_list, submit_dict, call_data, page_data, lang):
+    """Failed test, show red border"""
+    page_data['test6', 'test6', 'set_errored'] = True
 
