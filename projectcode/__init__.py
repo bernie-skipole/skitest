@@ -119,7 +119,7 @@ _HEADER_TEXT = { 2001 : "Skipole tests.",
                  3015: "The headers module",
                  3016: "The inputtables module",
                  3017: "The radio module",
-                 3018: "The svgarrows module",
+                 3018: "The svgmeters module",
                  3019: "The svgbasics module",
                  3020: "The tables module",
                  3021: "The textarea module",
@@ -151,8 +151,9 @@ _HEADER_TEXT = { 2001 : "Skipole tests.",
                100104:"Secure 2 page",
                100106:"Secure 3 page",
                200001:"Responders",
-               300001:"Validators",
-               300002:"Tests for the AllowedValuesOnly Validator"
+               300001:"Validator Modules",
+               300002:"Basic Validators",
+               300003:"Tests for the AllowedValuesOnly Validator"
                }
 
 _NAV_BUTTONS = {  3001:[['home','Home', False, '']],
@@ -203,7 +204,8 @@ _NAV_BUTTONS = {  3001:[['home','Home', False, '']],
                 100106:[['home','Home', False, ''], ['login','Test Login', False, '']],
                 200001:[['home','Home', False, '']],
                 300001:[['home','Home', False, '']],
-                300002:[['home','Home', False, ''], ['valtests','Validators', False, '']]
+                300002:[['home','Home', False, ''], ['valtests','Modules', False, '']],
+                300003:[['home','Home', False, ''], ['valtests','Modules', False, ''], ['basictests','Basic', False, '']]
                 }
 
 def end_call(page_ident, page_type, call_data, page_data, proj_data, lang):
