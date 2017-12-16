@@ -3,7 +3,7 @@
 "default_language": "en",
 "brief": "Project to test the skipole framework",
 "version": "0.0.1",
-"skipole": "0.0.43",
+"skipole": "0.0.47",
 "subprojects": {
 "lib": {
 "path": "/lib/"
