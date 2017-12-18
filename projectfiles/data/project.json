@@ -16687,17 +16687,6 @@ false,
 }
 ],
 [
-"Part",
-{
-"tag_name": "div",
-"brief": "Holds test blocks",
-"show": true,
-"hide_if_empty": false,
-"attribs": {
-"style": "margin-left:15%;width:50%;margin-right:auto;"
-},
-"parts": [
-[
 "Widget",
 {
 "class": "paras.TagBlock",
@@ -16711,11 +16700,26 @@ false,
 "show": true,
 "tag": "div",
 "widget_class": "",
-"widget_style": "color:red;"
+"widget_style": "color:red;margin-left:15%;width:10%;margin-right:auto;background-color:grey;text-align: center;"
 },
 "container_0": [
 "Text",
 "RED"
+]
+}
+],
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "New Tag",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Text",
+"Drag BLUE to RED"
+]
 ]
 }
 ],
@@ -16733,14 +16737,11 @@ false,
 "show": true,
 "tag": "div",
 "widget_class": "",
-"widget_style": "color:blue;"
+"widget_style": "color:blue;cursor:move;margin-left:15%;width:10%;margin-right:auto;background-color:grey;text-align: center;"
 },
 "container_0": [
 "Text",
 "BLUE"
-]
-}
-]
 ]
 }
 ],
