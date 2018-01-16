@@ -16515,6 +16515,22 @@ false,
 }
 }
 },
+"lists": {
+"ident": 5000,
+"brief": "lists module tests",
+"default_page_name": "index",
+"restricted": false,
+"folders": {
+"restricted": {
+"ident": 15000,
+"brief": "Restricted folder for lists tests",
+"restricted": true,
+"folders": {},
+"pages": {}
+}
+},
+"pages": {}
+},
 "paras": {
 "ident": 4800,
 "brief": "paras module tests",
@@ -20615,6 +20631,43 @@ false,
 "escape": true,
 "linebreaks": true,
 "decode": false
+}
+]
+]
+}
+],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "Holds buttons",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Widget",
+{
+"class": "links.ButtonLink2",
+"name": "UList1",
+"brief": "Link to UList1 widget test page",
+"fields": {
+"button_class": "w3-button w3-block w3-theme-l1 w3-border",
+"button_text": "UList1",
+"button_wait_text": "Please wait...",
+"buttondiv_class": "ski_mid_button",
+"buttondiv_style": "",
+"clear_error": false,
+"error_class": "w3-panel w3-red",
+"get_field1": "",
+"get_field2": "",
+"hide": false,
+"json_ident": "",
+"link_ident": "home",
+"show": true,
+"show_error": "",
+"widget_class": "w3-section",
+"widget_style": ""
+}
 }
 ]
 ]
