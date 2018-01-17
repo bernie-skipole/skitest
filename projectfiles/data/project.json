@@ -16736,7 +16736,24 @@ false,
 "brief": "div holding an ulist1 widget",
 "show": true,
 "hide_if_empty": false,
-"parts": []
+"parts": [
+[
+"Widget",
+{
+"class": "lists.UList1",
+"name": "ulist1",
+"brief": "ulist1 to be tested",
+"fields": {
+"contents": [],
+"even_class": "",
+"odd_class": "",
+"show": true,
+"widget_class": "",
+"widget_style": ""
+}
+}
+]
+]
 }
 ],
 [
@@ -16749,7 +16766,31 @@ false,
 "attribs": {
 "style": "margin-left:15%;width:50%;margin-right:auto;"
 },
-"parts": []
+"parts": [
+[
+"Widget",
+{
+"class": "links.JSONButtonLink",
+"name": "ulist1jsontest",
+"brief": "sets ulist1 contents by JSON",
+"fields": {
+"button_text": "Set new contents by JSON",
+"button_wait_text": "Please wait...",
+"clear_error": false,
+"error_class": "w3-button w3-block w3-theme-action",
+"get_field1": "",
+"get_field2": "",
+"hide": false,
+"json_ident": 5002,
+"link_ident": "no_javascript",
+"show": true,
+"show_error": "",
+"widget_class": "w3-button w3-block w3-theme-d4",
+"widget_style": ""
+}
+}
+]
+]
 }
 ],
 [
@@ -16778,9 +16819,32 @@ false,
 "ident": 5001,
 "brief": "Responder for ulist1 template",
 "RespondPage": {
-"class": "NoOperation",
+"class": "SubmitData",
 "original_args": {
+"fail_ident": "home",
+"submit_list": [
+"widgets",
+"lists",
+"populate_ulist1"
+],
 "target_ident": 15001
+},
+"original_fields": {}
+}
+},
+"ulist1_test1": {
+"ident": 5002,
+"brief": "Sets ulist1 contents by JSON",
+"RespondPage": {
+"class": "SubmitData",
+"original_args": {
+"fail_ident": "general_json",
+"submit_list": [
+"widgets",
+"lists",
+"set_by_json"
+],
+"target_ident": "general_json"
 },
 "original_fields": {}
 }
