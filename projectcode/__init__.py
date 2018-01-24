@@ -31,10 +31,17 @@ def start_call(environ, path, project, called_ident, caller_ident, received_cook
     if not called_ident:
         # return unknown url
         return None, {}, {}, lang
+
+    # These are sub-project tests
+    if called_ident[1] == 400002:
+        return "lib,general_json", {}, {}, lang
+    if called_ident[1] == 400003:
+        return "http://www.bbc.co.uk", {}, {}, lang
+
     call_data = {'project':project, 'received_cookies':received_cookies}
     page_data = {}
     # for basic auth, if access to secure3 via 100007 does not have password, return 100107 instead
-    if (called_ident[1] == 100007):
+    if called_ident[1] == 100007:
         # check user allowed to go to secure page 3
         auth = environ.get('HTTP_AUTHORIZATION')
         if auth:
@@ -158,7 +165,8 @@ _HEADER_TEXT = { 2001 : "Skipole tests.",
                200001:"Responders",
                300001:"Validator Modules",
                300002:"Basic Validators",
-               300003:"Tests for the AllowedValuesOnly Validator"
+               300003:"Tests for the AllowedValuesOnly Validator",
+               410001:"Tests for diversions to sub project pages"
                }
 
 _NAV_BUTTONS = {  3001:[['home','Home', False, '']],
@@ -215,7 +223,8 @@ _NAV_BUTTONS = {  3001:[['home','Home', False, '']],
                 200001:[['home','Home', False, '']],
                 300001:[['home','Home', False, '']],
                 300002:[['home','Home', False, ''], ['valtests','Modules', False, '']],
-                300003:[['home','Home', False, ''], ['valtests','Modules', False, ''], ['basictests','Basic', False, '']]
+                300003:[['home','Home', False, ''], ['valtests','Modules', False, ''], ['basictests','Basic', False, '']],
+                410001:[['home','Home', False, '']]
                 }
 
 def end_call(page_ident, page_type, call_data, page_data, proj_data, lang):

@@ -62,5 +62,6 @@
   "page.3011.01": "These are the widgets in the info module.",
   "page.3012.01": "The widgets in the debug_tools module are only shown when debug mode is True. This page contains the widgets, but these will not normally be displayed, toggle the debug mode to show or hide them.",
   "page.3025.01": "These are the widgets in the lists module.",
-  "page.3026.01": "These are the widgets in the svggraphs module."
+  "page.3026.01": "These are the widgets in the svggraphs module.",
+  "page.410001.01": "The start_call function, GoTo exception and fail page jumps normally jump to a page within their own project, but it is possible they could divert to a sub project.\r\n\r\nTests here explore such diversions, using the lib project, which is always available as a sub-project."
 }
