@@ -2,7 +2,7 @@
 "url": "/",
 "default_language": "en",
 "brief": "Project to test the skipole framework",
-"version": "0.0.1",
+"version": "0.0.2",
 "skipole": "0.0.8",
 "subprojects": {
 "lib": {
@@ -5360,6 +5360,61 @@ false,
 "hide": false,
 "json_ident": "",
 "link_ident": 400003,
+"show": true,
+"show_error": "",
+"widget_class": "w3-section",
+"widget_style": ""
+}
+}
+]
+]
+}
+],
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "Paragraph about goto test3",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Text",
+"Test3 - GoTo exception jumps to lib,test1"
+]
+]
+}
+],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "div holding buttons",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"style": "margin-left:15%;width:50%;margin-right:auto;"
+},
+"parts": [
+[
+"Widget",
+{
+"class": "links.ButtonLink2",
+"name": "goto_test3",
+"brief": "Tests goto diversion",
+"fields": {
+"button_class": "w3-button w3-block w3-theme-l1 w3-border",
+"button_text": "goto test3",
+"button_wait_text": "Please wait...",
+"buttondiv_class": "ski_mid_button",
+"buttondiv_style": "",
+"clear_error": false,
+"error_class": "w3-panel w3-red",
+"get_field1": "",
+"get_field2": "",
+"hide": false,
+"json_ident": "",
+"link_ident": 400002,
 "show": true,
 "show_error": "",
 "widget_class": "w3-section",
