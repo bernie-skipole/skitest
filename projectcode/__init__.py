@@ -34,7 +34,7 @@ def start_call(environ, path, project, called_ident, caller_ident, received_cook
 
     # These are sub-project tests
     if called_ident[1] == 400002:
-        return "lib,general_json", {}, {}, lang
+        return "lib,test1", {}, {}, lang
     if called_ident[1] == 400003:
         return "http://www.bbc.co.uk", {}, {}, lang
 

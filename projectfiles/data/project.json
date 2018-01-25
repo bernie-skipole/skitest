@@ -5270,7 +5270,7 @@ false,
 "parts": [
 [
 "Text",
-"Test1 - the button below would normally link to a no-op responder which leads to the home page. But start_call directs this to lib,general_json"
+"Test1 - the button below would normally link to a no-op responder which leads to the home page. But start_call directs this to lib,test1"
 ]
 ]
 }
