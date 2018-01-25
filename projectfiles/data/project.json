@@ -111,7 +111,7 @@
 "url_not_found": 580,
 "validate_error": 510,
 "valtests": 300001,
-"w3_css": 1002,
+"w3_css": "lib,w3_css",
 "w3_theme_ski_css": 1008
 },
 "sections": {
@@ -436,15 +436,6 @@ false,
 "brief": "color theme",
 "FilePage": {
 "filepath": "skitest/static/w3-theme-ski.css",
-"enable_cache": true,
-"mimetype": "text/css"
-}
-},
-"w3.css": {
-"ident": 1002,
-"brief": "From www.w3schools.com/w3css/",
-"FilePage": {
-"filepath": "skitest/static/w3.css",
 "enable_cache": true,
 "mimetype": "text/css"
 }
