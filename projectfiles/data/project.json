@@ -5414,7 +5414,7 @@ false,
 "get_field2": "",
 "hide": false,
 "json_ident": "",
-"link_ident": 400002,
+"link_ident": 400004,
 "show": true,
 "show_error": "",
 "widget_class": "w3-section",
@@ -5447,6 +5447,23 @@ false,
 }
 },
 "pages": {
+"goto_test3": {
+"ident": 400004,
+"brief": "Submit data with goto exception",
+"RespondPage": {
+"class": "SubmitData",
+"original_args": {
+"fail_ident": "home",
+"submit_list": [
+"responders",
+"subproj",
+"goto_test3"
+],
+"target_ident": "home"
+},
+"original_fields": {}
+}
+},
 "start_call_test1": {
 "ident": 400002,
 "brief": "No-op to home page",
