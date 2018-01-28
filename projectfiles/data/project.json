@@ -3,7 +3,7 @@
 "default_language": "en",
 "brief": "Project to test the skipole framework",
 "version": "0.0.2",
-"skipole": "0.0.8",
+"skipole": "0.0.9",
 "subprojects": {
 "lib": {
 "path": "/lib/"
@@ -5417,6 +5417,61 @@ false,
 }
 ],
 [
+"Part",
+{
+"tag_name": "p",
+"brief": "Paragraph about test4",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Text",
+"Test4 - inserts an error message into lib,server_error page. In this case the responder target is a page in a sub project."
+]
+]
+}
+],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "div holding buttons",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"style": "margin-left:15%;width:50%;margin-right:auto;"
+},
+"parts": [
+[
+"Widget",
+{
+"class": "links.ButtonLink2",
+"name": "servererror_test4",
+"brief": "Tests responder target",
+"fields": {
+"button_class": "w3-button w3-block w3-theme-l1 w3-border",
+"button_text": "lib,server_error",
+"button_wait_text": "Please wait...",
+"buttondiv_class": "ski_mid_button",
+"buttondiv_style": "",
+"clear_error": false,
+"error_class": "w3-panel w3-red",
+"get_field1": "",
+"get_field2": "",
+"hide": false,
+"json_ident": "",
+"link_ident": 400005,
+"show": true,
+"show_error": "",
+"widget_class": "w3-section",
+"widget_style": ""
+}
+}
+]
+]
+}
+],
+[
 "SectionPlaceHolder",
 {
 "brief": "section footer with alias foot",
@@ -5453,6 +5508,19 @@ false,
 "target_ident": "home"
 },
 "original_fields": {}
+}
+},
+"servererror_test4": {
+"ident": 400005,
+"brief": "Calls lib,server_error",
+"RespondPage": {
+"class": "PageData",
+"original_args": {
+"target_ident": "lib,server_error"
+},
+"original_fields": {
+"show_error": "Error message inserted by responder servererror_test4"
+}
 }
 },
 "start_call_test1": {
