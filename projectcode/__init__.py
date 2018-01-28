@@ -32,6 +32,10 @@ def start_call(environ, path, project, called_ident, caller_ident, received_cook
         # return unknown url
         return None, {}, {}, lang
 
+    # Insert a deliberate error to show the server error page
+    if called_ident[1] == 560:
+        x = 1/0
+
     # These are sub-project tests
     if called_ident[1] == 400002:
         return "lib,test1", {}, {}, lang

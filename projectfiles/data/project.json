@@ -4435,32 +4435,6 @@ false,
 }
 ],
 [
-"ClosedPart",
-{
-"tag_name": "link",
-"brief": "css link to w3_theme_ski_css",
-"show": true,
-"attribs": {
-"href": "{w3_theme_ski_css}",
-"rel": "stylesheet",
-"type": "text/css"
-}
-}
-],
-[
-"ClosedPart",
-{
-"tag_name": "link",
-"brief": "css link to ski_css",
-"show": true,
-"attribs": {
-"href": "{ski_css}",
-"rel": "stylesheet",
-"type": "text/css"
-}
-}
-],
-[
 "Part",
 {
 "tag_name": "script",
@@ -4563,24 +4537,6 @@ false,
 }
 ]
 ]
-}
-],
-[
-"Widget",
-{
-"class": "debug_tools.ShowEnviron",
-"name": "se1",
-"brief": "ShowEnviron",
-"fields": {
-"clear_error": false,
-"error_class": "ski_errorcol",
-"para_class": "",
-"show": true,
-"show_error": "",
-"toptext": "Environmental variables for this call:",
-"widget_class": "",
-"widget_style": ""
-}
 }
 ]
 ]
