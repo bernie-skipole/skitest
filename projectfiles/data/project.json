@@ -3,7 +3,7 @@
 "default_language": "en",
 "brief": "Project to test the skipole framework",
 "version": "0.0.4",
-"skipole": "0.1.0",
+"skipole": "0.2.0",
 "subprojects": {
 "lib": {
 "path": "/lib/"
@@ -112,7 +112,7 @@
 "validate_error": "lib,validate_error",
 "valtests": 300001,
 "w3_css": "lib,w3_css",
-"w3_theme_ski_css": 1008
+"w3_theme_ski_css": "lib,theme1_css"
 },
 "sections": {
 "allowedvalstest6": [
@@ -427,15 +427,6 @@ false,
 "brief": "skipole css",
 "FilePage": {
 "filepath": "skitest/static/ski.css",
-"enable_cache": true,
-"mimetype": "text/css"
-}
-},
-"w3-theme-ski.css": {
-"ident": 1008,
-"brief": "color theme",
-"FilePage": {
-"filepath": "skitest/static/w3-theme-ski.css",
 "enable_cache": true,
 "mimetype": "text/css"
 }
@@ -7210,7 +7201,7 @@ false,
 "button_text": "Submit",
 "clear_error": false,
 "container_class": "",
-"div_class": "ski_inline",
+"div_class": "",
 "enctype": "",
 "error_class": "w3-panel w3-red",
 "hidden_field1": "",
