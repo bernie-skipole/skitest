@@ -116,6 +116,12 @@
 }
 },
 "headers": {
+"DropDownButton1": {
+"button_class": "w3-button w3-black",
+"div_class": "w3-dropdown-content w3-bar-block w3-card-4",
+"link_class": "w3-bar-item w3-button",
+"widget_class": "w3-dropdown-hover"
+},
 "HeaderText2": {
 "error_class": "w3-panel w3-red"
 },
@@ -210,9 +216,9 @@
 },
 "TextInput4": {
 "input_class": "ski_input",
-"inputdiv_class": "ski_left_marg_30_percent",
+"inputdiv_class": "ski_left_marg_35_percent",
 "label_class": "",
-"labeldiv_class": "ski_left_marg_30_percent"
+"labeldiv_class": "ski_left_marg_35_percent"
 },
 "TwoInputsSubmit1": {
 "button_class": "w3-button w3-theme-d4 w3-margin-left",
