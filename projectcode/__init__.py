@@ -32,10 +32,6 @@ def start_call(environ, path, project, called_ident, caller_ident, received_cook
         # return unknown url
         return None, {}, {}, lang
 
-    # Insert a deliberate error to show the server error page
-    if called_ident[1] == 560:
-        x = 1/0
-
     # These are sub-project tests
     if called_ident[1] == 400002:
         return "lib,test1", {}, {}, lang
@@ -63,6 +59,10 @@ def start_call(environ, path, project, called_ident, caller_ident, received_cook
 
 def submit_data(caller_ident, ident_list, submit_list, submit_dict, call_data, page_data, lang):
     "This function is called when a Responder wishes to submit data for processing in some manner"
+
+    # Show the server error page
+    if submit_list and (submit_list[0] == 'server_error'):
+        raise ServerError(message="This is a deliberate error to show the ServerError page", code=666)
 
     if submit_list and (submit_list[0] == 'widgets'):
         # expects submitlist to have contents such as ['widgets', 'checkbox', 'test1']
