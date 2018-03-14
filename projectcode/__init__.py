@@ -6,6 +6,7 @@ This package will be called by the Skipole framework to access your data.
 from base64 import b64decode
 
 from .. import FailPage, GoTo, ValidateError, ServerError
+from ... import skilift
 
 
 from . import widgets, login, responders, validators
@@ -163,6 +164,7 @@ _HEADER_TEXT = { 2001 : "Skipole tests.",
                 15001:"Tests for the UList1 widget.",
                 15101:"Tests for the Chart1 widget.",
                 15201:"Tests for the Vertical1 widget.",
+                15203:"Tests for the Traditional1 widget.",
                100101:"Tests using a cookie to login",
                100102:"Secure 1 page",
                100104:"Secure 2 page",
@@ -222,6 +224,7 @@ _NAV_BUTTONS = {  3001:[['home','Home', False, '']],
                  15001:[['home','Home', False, ''], ['modules', 'Modules', False, ''],['lists', 'lists', False, '']],
                  15101:[['home','Home', False, ''], ['modules', 'Modules', False, ''],['svggraphs', 'svggraphs', False, '']],
                  15201:[['home','Home', False, ''], ['modules', 'Modules', False, ''],['svgmeters', 'svgmeters', False, '']],
+                 15203:[['home','Home', False, ''], ['modules', 'Modules', False, ''],['svgmeters', 'svgmeters', False, '']],
                 100101:[['home','Home', False, '']],
                 100102:[['home','Home', False, ''], ['login','Test Login', False, '']],
                 100104:[['home','Home', False, ''], ['login','Test Login', False, '']],
@@ -248,7 +251,10 @@ def end_call(page_ident, page_type, call_data, page_data, proj_data, lang):
     # Insert a status message into the footer if call_data['status'] is given
     if 'status' in call_data:
         page_data['foot','foot_status','footer_text'] = call_data['status']
-
+    if skilift.get_debug():
+        page_data['foot','identlist','show'] = True
+    else:
+        page_data['foot','identlist','show'] = False
     # set secure1 cookie
     if 'session' in call_data:
         return call_data['session']
