@@ -39,8 +39,11 @@ def start_call(environ, path, project, called_ident, caller_ident, received_cook
     if called_ident[1] == 400003:
         return "http://www.bbc.co.uk", {}, {}, lang
 
-    call_data = {'project':project, 'received_cookies':received_cookies}
+    # store the project name and any cookies in the call_data dictionary
+    call_data = {'project':project,
+                 'received_cookies':received_cookies}
     page_data = {}
+
     # for basic auth, if access to secure3 via 100007 does not have password, return 100107 instead
     if called_ident[1] == 100007:
         # check user allowed to go to secure page 3
@@ -55,6 +58,7 @@ def start_call(environ, path, project, called_ident, caller_ident, received_cook
                 return called_ident, call_data, page_data, lang
         # login fail, request a login
         return (project,100107), call_data, page_data, lang
+
     return called_ident, call_data, page_data, lang
 
 
@@ -115,7 +119,7 @@ def submit_data(caller_ident, ident_list, submit_list, submit_dict, call_data, p
     raise FailPage("submit_list string not recognised")
 
 
-_HEADER_TEXT = { 2001 : "Skipole tests.",
+_HEADER_TEXT = { 2001 : "Project skitest.",
                  3001:"Widget Modules",
                  3002: "The checkbox module.",
                  3003: "The confirm module.",
@@ -251,10 +255,6 @@ def end_call(page_ident, page_type, call_data, page_data, proj_data, lang):
     # Insert a status message into the footer if call_data['status'] is given
     if 'status' in call_data:
         page_data['foot','foot_status','footer_text'] = call_data['status']
-    if skilift.get_debug():
-        page_data['foot','identlist','show'] = True
-    else:
-        page_data['foot','identlist','show'] = False
     # set secure1 cookie
     if 'session' in call_data:
         return call_data['session']
