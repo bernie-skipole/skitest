@@ -2,8 +2,8 @@
 "url": "/",
 "default_language": "en",
 "brief": "Project to test the skipole framework",
-"version": "0.2.1",
-"skipole": "0.9.2",
+"version": "0.3.0",
+"skipole": "0.9.3",
 "subprojects": {
 "lib": {
 "path": "/lib/"
@@ -60,6 +60,8 @@
 "info": 3011,
 "inputtext": 3010,
 "jquery_core": "lib,jquery_core",
+"jquery_ui": "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js",
+"jquery_ui_css": "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css",
 "links": 3007,
 "lists": 3025,
 "login": 100,
@@ -561,6 +563,32 @@
 "widget_style": ""
 }
 }
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink2",
+"name": "to_jqui",
+"brief": "to jquery ui test",
+"fields": {
+"button_class": "w3-button w3-theme-l1 w3-border w3-round w3-block",
+"button_text": "JqueryUI",
+"button_wait_text": "Please wait...",
+"buttondiv_class": "",
+"buttondiv_style": "",
+"clear_error": false,
+"error_class": "w3-panel w3-red",
+"get_field1": "",
+"get_field2": "",
+"hide": false,
+"json_ident": "",
+"link_ident": 500001,
+"show": true,
+"show_error": "",
+"widget_class": "w3-section",
+"widget_style": ""
+}
+}
 ]
 ]
 }
@@ -627,6 +655,385 @@ false,
 "filepath": "skitest/static/ski.css",
 "enable_cache": true,
 "mimetype": "text/css"
+}
+}
+}
+},
+"jqui": {
+"ident": 500000,
+"brief": "Folder of Jquery UI tests",
+"default_page_name": "index",
+"restricted": false,
+"folders": {
+"restricted": {
+"ident": 500100,
+"brief": "Restricted folder for jquery ui tests",
+"default_page_name": "index",
+"restricted": true,
+"folders": {},
+"pages": {
+"jqui_template": {
+"ident": 500101,
+"brief": "Template page showing jqueryUI test",
+"TemplatePage": {
+"show_backcol": false,
+"last_scroll": true,
+"interval": 0,
+"interval_target": null,
+"lang": "en",
+"backcol": "#b3b8bc",
+"default_error_widget": [
+"",
+"top_error"
+]
+},
+"head": [
+"Part",
+{
+"tag_name": "head",
+"brief": "The head section of the page",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"ClosedPart",
+{
+"tag_name": "meta",
+"brief": "The charset meta declaration",
+"show": true,
+"attribs": {
+"charset": "utf-8"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "meta",
+"brief": "The viewport meta declaration",
+"show": true,
+"attribs": {
+"content": "width=device-width, initial-scale=1",
+"name": "viewport"
+}
+}
+],
+[
+"Part",
+{
+"tag_name": "title",
+"brief": "The page title element",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Text",
+"Index"
+]
+]
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to w3_css",
+"show": true,
+"attribs": {
+"href": "{w3_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to w3_theme_ski.css",
+"show": true,
+"attribs": {
+"href": "{w3_theme_ski_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to ski.css",
+"show": true,
+"attribs": {
+"href": "{ski_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to jquery_ui_css",
+"show": true,
+"attribs": {
+"href": "{jquery_ui_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"Part",
+{
+"tag_name": "script",
+"brief": "script link to jquery_core",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"src": "{jquery_core}"
+},
+"parts": []
+}
+],
+[
+"Part",
+{
+"tag_name": "script",
+"brief": "script link to jquery_ui",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"src": "{jquery_ui}"
+},
+"parts": []
+}
+],
+[
+"Part",
+{
+"tag_name": "script",
+"brief": "script link to skipole_js",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"src": "{skipole_js}"
+},
+"parts": []
+}
+]
+]
+}
+],
+"body": [
+"Part",
+{
+"tag_name": "body",
+"brief": "The body section of the page",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "w3-theme"
+},
+"parts": [
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "container",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "w3-container"
+},
+"parts": [
+[
+"SectionPlaceHolder",
+{
+"brief": "Page header",
+"section_name": "header",
+"placename": "header",
+"multiplier": 1,
+"mtag": "div"
+}
+],
+[
+"SectionPlaceHolder",
+{
+"brief": "Left navigation panel",
+"section_name": "navigation",
+"placename": "navigation",
+"multiplier": 1,
+"mtag": "div"
+}
+],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "centre",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "w3-section",
+"style": "margin-left:25%"
+},
+"parts": [
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "Intro to jquery UI tests",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"TextBlock",
+{
+"textref": "page.500101.01",
+"failmessage": "TextBlock not found",
+"show": true,
+"escape": true,
+"linebreaks": true,
+"decode": false
+}
+]
+]
+}
+],
+[
+"Widget",
+{
+"class": "inputforms.SubmitForm1",
+"name": "dateform",
+"brief": "Form to input a date",
+"fields": {
+"action": "home",
+"action_json": 500002,
+"button_class": "w3-button w3-theme-d4",
+"button_text": "Submit",
+"clear_error": false,
+"container_class": "ski_mid_button",
+"div_class": "",
+"enctype": "",
+"error_class": "w3-panel w3-red",
+"hidden_field1": "",
+"hidden_field2": "",
+"hidden_field3": "",
+"hidden_field4": "",
+"left_class": "ski_left_label",
+"left_label": "Submit required date:",
+"right_class": "",
+"right_label": "",
+"show": true,
+"show_error": "",
+"widget_class": "w3-section",
+"widget_style": ""
+},
+"container_0": [
+[
+"ClosedWidget",
+{
+"class": "inputtext.TextInput1",
+"name": "date",
+"brief": "date picker input field",
+"fields": {
+"disabled": false,
+"input_accepted_class": "",
+"input_errored_class": "",
+"input_text": "",
+"maxlength": "",
+"pattern": "",
+"required": false,
+"set_input_accepted": false,
+"set_input_errored": false,
+"show": true,
+"size": "",
+"title": "",
+"type": "text",
+"widget_class": "",
+"widget_style": ""
+}
+}
+]
+]
+}
+],
+[
+"Widget",
+{
+"class": "paras.ParaText",
+"name": "showdate",
+"brief": "A paragraph showing the datepicker result",
+"fields": {
+"para_text": "Date not set.",
+"show": true,
+"widget_class": "",
+"widget_style": ""
+}
+}
+],
+[
+"SectionPlaceHolder",
+{
+"brief": "section footer with alias foot",
+"section_name": "footer",
+"placename": "foot",
+"multiplier": 1,
+"mtag": "div"
+}
+]
+]
+}
+]
+]
+}
+]
+]
+}
+]
+}
+}
+}
+},
+"pages": {
+"jqueryui": {
+"ident": 500001,
+"brief": "Responder leading to template",
+"RespondPage": {
+"class": "NoOperation",
+"original_args": {
+"target_ident": 500101
+},
+"original_fields": {}
+}
+},
+"set_date": {
+"ident": 500002,
+"brief": "JSON call to set the date",
+"RespondPage": {
+"class": "AllowStore",
+"original_args": {
+"allowed_callers": [
+500101
+],
+"alternate_ident": "home",
+"fail_ident": "general_json",
+"submit_list": [
+"jqui",
+"jqwidgets",
+"set_date"
+],
+"submit_option": true,
+"target_ident": "general_json",
+"validate_fail_ident": null,
+"validate_option": false
+},
+"original_fields": {
+"date:input_text": ""
+}
 }
 }
 }
@@ -4250,6 +4657,9 @@ false,
 ]
 ]
 }
+]
+]
+}
 ],
 [
 "Part",
@@ -4268,9 +4678,6 @@ false,
 "escape": true,
 "linebreaks": true,
 "decode": false
-}
-]
-]
 }
 ]
 ]

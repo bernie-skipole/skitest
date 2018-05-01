@@ -68,5 +68,6 @@
   "page.3018.01": "These are the widgets in the svgmeters module.",
   "page.3025.01": "These are the widgets in the lists module.",
   "page.3026.01": "These are the widgets in the svggraphs module.",
-  "page.410001.01": "The start_call function, GoTo exception and fail page jumps normally jump to a page within their own project, but it is possible they could divert to a sub project.\r\n\r\nTests here explore such diversions, using the lib project, which is always available as a sub-project."
+  "page.410001.01": "The start_call function, GoTo exception and fail page jumps normally jump to a page within their own project, but it is possible they could divert to a sub project.\r\n\r\nTests here explore such diversions, using the lib project, which is always available as a sub-project.",
+  "page.500101.01": "This page uses external jquery UI libraries to create ui widgets.\r\n\r\nIn particular the head section has a script link to jquery-ui.min.js\r\nand a css link to jquery-ui.css\r\n\r\nA statement:\r\npage_data['add_jscript'] = \"\"\"$( \"#date\" ).datepicker();\"\"\"\r\nis then set in the end_call function, which sets the 'date' widget to be a datepicker."
 }

@@ -9,7 +9,7 @@ from .. import FailPage, GoTo, ValidateError, ServerError
 from ... import skilift
 
 
-from . import widgets, login, responders, validators
+from . import widgets, login, responders, validators, jqui
 
 ##############################################################################
 #
@@ -116,6 +116,18 @@ def submit_data(caller_ident, ident_list, submit_list, submit_dict, call_data, p
         return submitfunc(caller_ident, ident_list, submit_list, submit_dict, call_data, page_data, lang)
 
 
+    if submit_list and (submit_list[0] == 'jqui'):
+        # expects submitlist to have contents such as ['jqui', 'jqwidgets', 'set_date']
+        try:
+            jquimod = getattr(jqui, submit_list[1])
+        except:
+            raise FailPage("submit_list contains 'jqui' but module not recognised")
+        try:
+            submitfunc = getattr(jquimod, submit_list[2])
+        except:
+            raise FailPage("submit_list contains 'jqui' and '%s', but function not recognised" % (submit_list[1],))
+        return submitfunc(caller_ident, ident_list, submit_list, submit_dict, call_data, page_data, lang)
+
     raise FailPage("submit_list string not recognised")
 
 
@@ -177,7 +189,8 @@ _HEADER_TEXT = { 2001 : "Project skitest.",
                300001:"Validator Modules",
                300002:"Basic Validators",
                300003:"Tests for the AllowedValuesOnly Validator",
-               410001:"Tests for diversions to sub project pages"
+               410001:"Tests for diversions to sub project pages",
+               500101:"Tests of jquery UI widgets"
                }
 
 _NAV_BUTTONS = {  3001:[['home','Home', False, '']],
@@ -237,7 +250,8 @@ _NAV_BUTTONS = {  3001:[['home','Home', False, '']],
                 300001:[['home','Home', False, '']],
                 300002:[['home','Home', False, ''], ['valtests','Modules', False, '']],
                 300003:[['home','Home', False, ''], ['valtests','Modules', False, ''], ['basictests','Basic', False, '']],
-                410001:[['home','Home', False, '']]
+                410001:[['home','Home', False, '']],
+                500101:[['home','Home', False, '']]
                 }
 
 def end_call(page_ident, page_type, call_data, page_data, proj_data, lang):
@@ -255,8 +269,14 @@ def end_call(page_ident, page_type, call_data, page_data, proj_data, lang):
     # Insert a status message into the footer if call_data['status'] is given
     if 'status' in call_data:
         page_data['foot','foot_status','footer_text'] = call_data['status']
+    if page_num == 500101:
+        # If this is the page of jquery UI tests, add the required javascript
+        page_data['add_jscript'] = """
+$( "#date" ).datepicker();
+"""
     # set secure1 cookie
     if 'session' in call_data:
         return call_data['session']
+
 
 
