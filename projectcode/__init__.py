@@ -132,7 +132,6 @@ def submit_data(caller_ident, ident_list, submit_list, submit_dict, call_data, p
 
 
 _HEADER_TEXT = { 2001 : "Project skitest.",
-                 3001:"Widget Modules",
                  3002: "The checkbox module.",
                  3003: "The confirm module.",
                  3006: "The paras module.",
@@ -154,6 +153,7 @@ _HEADER_TEXT = { 2001 : "Project skitest.",
                  3022: "The upload module",
                  3025: "The lists module",
                  3026: "The svggraphs module",
+                13001:"Widget Modules",
                 14002:"Tests for the CheckBox1 widget.",
                 14010:"Tests for the CheckBox2 widget.",
                 14020:"Tests for the CheckedText widget.",
@@ -194,7 +194,7 @@ _HEADER_TEXT = { 2001 : "Project skitest.",
                500101:"Tests of jquery UI widgets"
                }
 
-_NAV_BUTTONS = {  3001:[['home','Home', False, '']],
+_NAV_BUTTONS = {
                   3002:[['home','Home', False, ''], ['modules', 'Modules', False, '']],
                   3003:[['home','Home', False, ''], ['modules', 'Modules', False, '']],
                   3006:[['home','Home', False, ''], ['modules', 'Modules', False, '']],
@@ -216,6 +216,7 @@ _NAV_BUTTONS = {  3001:[['home','Home', False, '']],
                   3022:[['home','Home', False, ''], ['modules', 'Modules', False, '']],
                   3025:[['home','Home', False, ''], ['modules', 'Modules', False, '']],
                   3026:[['home','Home', False, ''], ['modules', 'Modules', False, '']],
+                 13001:[['home','Home', False, '']],
                  14002:[['home','Home', False, ''], ['modules', 'Modules', False, ''],['checkbox', 'checkbox', False, '']],
                  14010:[['home','Home', False, ''], ['modules', 'Modules', False, ''],['checkbox', 'checkbox', False, '']],
                  14020:[['home','Home', False, ''], ['modules', 'Modules', False, ''],['checkbox', 'checkbox', False, '']],
