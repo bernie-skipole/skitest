@@ -2991,6 +2991,250 @@ false,
 }
 }
 },
+"restricted": {
+"ident": 210000,
+"brief": "Restricted folder for responder tests",
+"default_page_name": "index",
+"restricted": true,
+"folders": {},
+"pages": {
+"responder_list": {
+"ident": 210001,
+"brief": "Template of links to responder tests",
+"TemplatePage": {
+"show_backcol": false,
+"last_scroll": true,
+"interval": 0,
+"interval_target": null,
+"lang": "en",
+"backcol": "#9dbd7a",
+"default_error_widget": [
+"header",
+"top_error"
+]
+},
+"head": [
+"Part",
+{
+"tag_name": "head",
+"brief": "The head section of the page",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"ClosedPart",
+{
+"tag_name": "meta",
+"brief": "The charset meta declaration",
+"show": true,
+"attribs": {
+"charset": "utf-8"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "meta",
+"brief": "The viewport meta declaration",
+"show": true,
+"attribs": {
+"content": "width=device-width, initial-scale=1",
+"name": "viewport"
+}
+}
+],
+[
+"Part",
+{
+"tag_name": "title",
+"brief": "The page title element",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Text",
+"Index"
+]
+]
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to w3_css",
+"show": true,
+"attribs": {
+"href": "{w3_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to w3_theme_ski_css",
+"show": true,
+"attribs": {
+"href": "{w3_theme_ski_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to ski_css",
+"show": true,
+"attribs": {
+"href": "{ski_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"Part",
+{
+"tag_name": "script",
+"brief": "script link to jquery_core",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"src": "{jquery_core}"
+},
+"parts": []
+}
+],
+[
+"Part",
+{
+"tag_name": "script",
+"brief": "script link to skipole_js",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"src": "{skipole_js}"
+},
+"parts": []
+}
+]
+]
+}
+],
+"body": [
+"Part",
+{
+"tag_name": "body",
+"brief": "The body section of the page",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "w3-theme"
+},
+"parts": [
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "container",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "w3-container"
+},
+"parts": [
+[
+"SectionPlaceHolder",
+{
+"brief": "Page header",
+"section_name": "header",
+"placename": "header",
+"multiplier": 1,
+"mtag": "div"
+}
+],
+[
+"SectionPlaceHolder",
+{
+"brief": "Left navigation panel",
+"section_name": "navigation",
+"placename": "navigation",
+"multiplier": 1,
+"mtag": "div"
+}
+],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "centre",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "w3-section",
+"style": "margin-left:25%"
+},
+"parts": [
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "Top description",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"TextBlock",
+{
+"textref": "page.200001.01",
+"failmessage": "TextBlock not found",
+"show": true,
+"escape": true,
+"linebreaks": true,
+"decode": false
+}
+]
+]
+}
+],
+[
+"SectionPlaceHolder",
+{
+"brief": "button links to responder tests",
+"section_name": "buttonlist",
+"placename": "responderbuttons",
+"multiplier": 1,
+"mtag": "div"
+}
+],
+[
+"SectionPlaceHolder",
+{
+"brief": "section footer with alias foot",
+"section_name": "footer",
+"placename": "foot",
+"multiplier": 1,
+"mtag": "div"
+}
+]
+]
+}
+]
+]
+}
+]
+]
+}
+]
+}
+}
+},
 "submitcss": {
 "ident": 202100,
 "brief": "Tests of SubmitCSS responder",
@@ -3634,819 +3878,22 @@ false,
 }
 },
 "pages": {
-"responders_list": {
+"responder_list": {
 "ident": 200001,
-"brief": "Template of buttons to responders",
-"TemplatePage": {
-"show_backcol": false,
-"last_scroll": true,
-"interval": 0,
-"interval_target": null,
-"lang": "en",
-"backcol": "#9dbd7a",
-"default_error_widget": [
-"header",
-"top_error"
-]
+"brief": "Fills in template of responder links",
+"RespondPage": {
+"class": "SubmitData",
+"original_args": {
+"fail_ident": "home",
+"submit_list": [
+"responders",
+"menus",
+"responders_menu"
+],
+"target_ident": 210001
 },
-"head": [
-"Part",
-{
-"tag_name": "head",
-"brief": "The head section of the page",
-"show": true,
-"hide_if_empty": false,
-"parts": [
-[
-"ClosedPart",
-{
-"tag_name": "meta",
-"brief": "The charset meta declaration",
-"show": true,
-"attribs": {
-"charset": "utf-8"
+"original_fields": {}
 }
-}
-],
-[
-"ClosedPart",
-{
-"tag_name": "meta",
-"brief": "The viewport meta declaration",
-"show": true,
-"attribs": {
-"content": "width=device-width, initial-scale=1",
-"name": "viewport"
-}
-}
-],
-[
-"Part",
-{
-"tag_name": "title",
-"brief": "The page title element",
-"show": true,
-"hide_if_empty": false,
-"parts": [
-[
-"Text",
-"Index"
-]
-]
-}
-],
-[
-"ClosedPart",
-{
-"tag_name": "link",
-"brief": "css link to w3_css",
-"show": true,
-"attribs": {
-"href": "{w3_css}",
-"rel": "stylesheet",
-"type": "text/css"
-}
-}
-],
-[
-"ClosedPart",
-{
-"tag_name": "link",
-"brief": "css link to w3_theme_ski_css",
-"show": true,
-"attribs": {
-"href": "{w3_theme_ski_css}",
-"rel": "stylesheet",
-"type": "text/css"
-}
-}
-],
-[
-"ClosedPart",
-{
-"tag_name": "link",
-"brief": "css link to ski_css",
-"show": true,
-"attribs": {
-"href": "{ski_css}",
-"rel": "stylesheet",
-"type": "text/css"
-}
-}
-],
-[
-"Part",
-{
-"tag_name": "script",
-"brief": "script link to jquery_core",
-"show": true,
-"hide_if_empty": false,
-"attribs": {
-"src": "{jquery_core}"
-},
-"parts": []
-}
-],
-[
-"Part",
-{
-"tag_name": "script",
-"brief": "script link to skipole_js",
-"show": true,
-"hide_if_empty": false,
-"attribs": {
-"src": "{skipole_js}"
-},
-"parts": []
-}
-]
-]
-}
-],
-"body": [
-"Part",
-{
-"tag_name": "body",
-"brief": "The body section of the page",
-"show": true,
-"hide_if_empty": false,
-"attribs": {
-"class": "w3-theme"
-},
-"parts": [
-[
-"Part",
-{
-"tag_name": "div",
-"brief": "container",
-"show": true,
-"hide_if_empty": false,
-"attribs": {
-"class": "w3-container"
-},
-"parts": [
-[
-"SectionPlaceHolder",
-{
-"brief": "Page header",
-"section_name": "header",
-"placename": "header",
-"multiplier": 1,
-"mtag": "div"
-}
-],
-[
-"SectionPlaceHolder",
-{
-"brief": "Left navigation panel",
-"section_name": "navigation",
-"placename": "navigation",
-"multiplier": 1,
-"mtag": "div"
-}
-],
-[
-"Part",
-{
-"tag_name": "div",
-"brief": "centre",
-"show": true,
-"hide_if_empty": false,
-"attribs": {
-"class": "w3-section",
-"style": "margin-left:25%"
-},
-"parts": [
-[
-"Part",
-{
-"tag_name": "p",
-"brief": "Top description",
-"show": true,
-"hide_if_empty": false,
-"parts": [
-[
-"TextBlock",
-{
-"textref": "page.200001.01",
-"failmessage": "TextBlock not found",
-"show": true,
-"escape": true,
-"linebreaks": true,
-"decode": false
-}
-]
-]
-}
-],
-[
-"Part",
-{
-"tag_name": "div",
-"brief": "Holds buttons",
-"show": true,
-"hide_if_empty": false,
-"attribs": {
-"style": "margin-left:15%;width:50%;margin-right:auto;"
-},
-"parts": [
-[
-"Widget",
-{
-"class": "links.ButtonLink1",
-"name": "accept",
-"brief": "Accept responder",
-"fields": {
-"button_text": "Accept",
-"clear_error": false,
-"error_class": "w3-button w3-block w3-theme-action",
-"force_ident": false,
-"get_field1": "",
-"get_field2": "",
-"hide": false,
-"link_ident": "home",
-"show": true,
-"show_error": "",
-"target": "",
-"widget_class": "w3-button w3-block w3-theme-d4",
-"widget_style": ""
-}
-}
-],
-[
-"Widget",
-{
-"class": "links.ButtonLink1",
-"name": "allowedaccept",
-"brief": "AllowedAccept responder",
-"fields": {
-"button_text": "AllowedAccept",
-"clear_error": false,
-"error_class": "w3-button w3-block w3-theme-action",
-"force_ident": false,
-"get_field1": "",
-"get_field2": "",
-"hide": false,
-"link_ident": "home",
-"show": true,
-"show_error": "",
-"target": "",
-"widget_class": "w3-button w3-block w3-theme-d4",
-"widget_style": ""
-}
-}
-],
-[
-"Widget",
-{
-"class": "links.ButtonLink1",
-"name": "allowedfields",
-"brief": "AllowedFields responder",
-"fields": {
-"button_text": "AllowedFields",
-"clear_error": false,
-"error_class": "w3-button w3-block w3-theme-action",
-"force_ident": false,
-"get_field1": "",
-"get_field2": "",
-"hide": false,
-"link_ident": "home",
-"show": true,
-"show_error": "",
-"target": "",
-"widget_class": "w3-button w3-block w3-theme-d4",
-"widget_style": ""
-}
-}
-],
-[
-"Widget",
-{
-"class": "links.ButtonLink1",
-"name": "allowstore",
-"brief": "AllowStore responder",
-"fields": {
-"button_text": "AllowStore",
-"clear_error": false,
-"error_class": "w3-button w3-block w3-theme-action",
-"force_ident": false,
-"get_field1": "",
-"get_field2": "",
-"hide": false,
-"link_ident": "home",
-"show": true,
-"show_error": "",
-"target": "",
-"widget_class": "w3-button w3-block w3-theme-d4",
-"widget_style": ""
-}
-}
-],
-[
-"Widget",
-{
-"class": "links.ButtonLink1",
-"name": "allowstorekeyed",
-"brief": "AllowStoreKeyed responder",
-"fields": {
-"button_text": "AllowStoreKeyed",
-"clear_error": false,
-"error_class": "w3-button w3-block w3-theme-action",
-"force_ident": false,
-"get_field1": "",
-"get_field2": "",
-"hide": false,
-"link_ident": "home",
-"show": true,
-"show_error": "",
-"target": "",
-"widget_class": "w3-button w3-block w3-theme-d4",
-"widget_style": ""
-}
-}
-],
-[
-"Widget",
-{
-"class": "links.ButtonLink1",
-"name": "caseswitch",
-"brief": "CaseSwitch responder",
-"fields": {
-"button_text": "CaseSwitch",
-"clear_error": false,
-"error_class": "w3-button w3-block w3-theme-action",
-"force_ident": false,
-"get_field1": "",
-"get_field2": "",
-"hide": false,
-"link_ident": "home",
-"show": true,
-"show_error": "",
-"target": "",
-"widget_class": "w3-button w3-block w3-theme-d4",
-"widget_style": ""
-}
-}
-],
-[
-"Widget",
-{
-"class": "links.ButtonLink1",
-"name": "coloursubstitute",
-"brief": "ColourSubstitute responder",
-"fields": {
-"button_text": "ColourSubstitute",
-"clear_error": false,
-"error_class": "w3-button w3-block w3-theme-action",
-"force_ident": false,
-"get_field1": "",
-"get_field2": "",
-"hide": false,
-"link_ident": "home",
-"show": true,
-"show_error": "",
-"target": "",
-"widget_class": "w3-button w3-block w3-theme-d4",
-"widget_style": ""
-}
-}
-],
-[
-"Widget",
-{
-"class": "links.ButtonLink1",
-"name": "delcalldataitem",
-"brief": "DelCallDataItem responder",
-"fields": {
-"button_text": "DelCallDataItem",
-"clear_error": false,
-"error_class": "w3-button w3-block w3-theme-action",
-"force_ident": false,
-"get_field1": "",
-"get_field2": "",
-"hide": false,
-"link_ident": "home",
-"show": true,
-"show_error": "",
-"target": "",
-"widget_class": "w3-button w3-block w3-theme-d4",
-"widget_style": ""
-}
-}
-],
-[
-"Widget",
-{
-"class": "links.ButtonLink1",
-"name": "emptycalldatagoto",
-"brief": "EmptyCallDataGoto responder",
-"fields": {
-"button_text": "EmptyCallDataGoto",
-"clear_error": false,
-"error_class": "w3-button w3-block w3-theme-action",
-"force_ident": false,
-"get_field1": "",
-"get_field2": "",
-"hide": false,
-"link_ident": "home",
-"show": true,
-"show_error": "",
-"target": "",
-"widget_class": "w3-button w3-block w3-theme-d4",
-"widget_style": ""
-}
-}
-],
-[
-"Widget",
-{
-"class": "links.ButtonLink1",
-"name": "emptygoto",
-"brief": "EmptyGoto responder",
-"fields": {
-"button_text": "EmptyGoto",
-"clear_error": false,
-"error_class": "w3-button w3-block w3-theme-action",
-"force_ident": false,
-"get_field1": "",
-"get_field2": "",
-"hide": false,
-"link_ident": "home",
-"show": true,
-"show_error": "",
-"target": "",
-"widget_class": "w3-button w3-block w3-theme-d4",
-"widget_style": ""
-}
-}
-],
-[
-"Widget",
-{
-"class": "links.ButtonLink1",
-"name": "fieldstoresubmit",
-"brief": "FieldStoreSubmit responder",
-"fields": {
-"button_text": "FieldStoreSubmit",
-"clear_error": false,
-"error_class": "w3-button w3-block w3-theme-action",
-"force_ident": false,
-"get_field1": "",
-"get_field2": "",
-"hide": false,
-"link_ident": "home",
-"show": true,
-"show_error": "",
-"target": "",
-"widget_class": "w3-button w3-block w3-theme-d4",
-"widget_style": ""
-}
-}
-],
-[
-"Widget",
-{
-"class": "links.ButtonLink1",
-"name": "getdictionarydefaults",
-"brief": "GetDictionaryDefaults responder",
-"fields": {
-"button_text": "GetDictionaryDefaults",
-"clear_error": false,
-"error_class": "w3-button w3-block w3-theme-action",
-"force_ident": false,
-"get_field1": "",
-"get_field2": "",
-"hide": false,
-"link_ident": "home",
-"show": true,
-"show_error": "",
-"target": "",
-"widget_class": "w3-button w3-block w3-theme-d4",
-"widget_style": ""
-}
-}
-],
-[
-"Widget",
-{
-"class": "links.ButtonLink1",
-"name": "languagecookie",
-"brief": "LanguageCookie responder",
-"fields": {
-"button_text": "LanguageCookie",
-"clear_error": false,
-"error_class": "w3-button w3-block w3-theme-action",
-"force_ident": false,
-"get_field1": "",
-"get_field2": "",
-"hide": false,
-"link_ident": "home",
-"show": true,
-"show_error": "",
-"target": "",
-"widget_class": "w3-button w3-block w3-theme-d4",
-"widget_style": ""
-}
-}
-],
-[
-"Widget",
-{
-"class": "links.ButtonLink1",
-"name": "nooperation",
-"brief": "NoOperation responder",
-"fields": {
-"button_text": "NoOperation",
-"clear_error": false,
-"error_class": "w3-button w3-block w3-theme-action",
-"force_ident": false,
-"get_field1": "",
-"get_field2": "",
-"hide": false,
-"link_ident": "home",
-"show": true,
-"show_error": "",
-"target": "",
-"widget_class": "w3-button w3-block w3-theme-d4",
-"widget_style": ""
-}
-}
-],
-[
-"Widget",
-{
-"class": "links.ButtonLink1",
-"name": "mediaquery",
-"brief": "MediaQuery responder",
-"fields": {
-"button_text": "MediaQuery",
-"clear_error": false,
-"error_class": "w3-button w3-block w3-theme-action",
-"force_ident": false,
-"get_field1": "",
-"get_field2": "",
-"hide": false,
-"link_ident": 201501,
-"show": true,
-"show_error": "",
-"target": "",
-"widget_class": "w3-button w3-block w3-theme-d4",
-"widget_style": ""
-}
-}
-],
-[
-"Widget",
-{
-"class": "links.ButtonLink1",
-"name": "pagedata",
-"brief": "PageData responder",
-"fields": {
-"button_text": "PageData",
-"clear_error": false,
-"error_class": "w3-button w3-block w3-theme-action",
-"force_ident": false,
-"get_field1": "",
-"get_field2": "",
-"hide": false,
-"link_ident": "home",
-"show": true,
-"show_error": "",
-"target": "",
-"widget_class": "w3-button w3-block w3-theme-d4",
-"widget_style": ""
-}
-}
-],
-[
-"Widget",
-{
-"class": "links.ButtonLink1",
-"name": "prettyformdata",
-"brief": "PrettyFormData responder",
-"fields": {
-"button_text": "PrettyFormData",
-"clear_error": false,
-"error_class": "w3-button w3-block w3-theme-action",
-"force_ident": false,
-"get_field1": "",
-"get_field2": "",
-"hide": false,
-"link_ident": "home",
-"show": true,
-"show_error": "",
-"target": "",
-"widget_class": "w3-button w3-block w3-theme-d4",
-"widget_style": ""
-}
-}
-],
-[
-"Widget",
-{
-"class": "links.ButtonLink1",
-"name": "setcookies",
-"brief": "SetCookies responder",
-"fields": {
-"button_text": "SetCookies",
-"clear_error": false,
-"error_class": "w3-button w3-block w3-theme-action",
-"force_ident": false,
-"get_field1": "",
-"get_field2": "",
-"hide": false,
-"link_ident": "home",
-"show": true,
-"show_error": "",
-"target": "",
-"widget_class": "w3-button w3-block w3-theme-d4",
-"widget_style": ""
-}
-}
-],
-[
-"Widget",
-{
-"class": "links.ButtonLink1",
-"name": "storedata",
-"brief": "StoreData responder",
-"fields": {
-"button_text": "StoreData",
-"clear_error": false,
-"error_class": "w3-button w3-block w3-theme-action",
-"force_ident": false,
-"get_field1": "",
-"get_field2": "",
-"hide": false,
-"link_ident": "home",
-"show": true,
-"show_error": "",
-"target": "",
-"widget_class": "w3-button w3-block w3-theme-d4",
-"widget_style": ""
-}
-}
-],
-[
-"Widget",
-{
-"class": "links.ButtonLink1",
-"name": "storedatakeyed",
-"brief": "StoreDataKeyed responder",
-"fields": {
-"button_text": "StoreDataKeyed",
-"clear_error": false,
-"error_class": "w3-button w3-block w3-theme-action",
-"force_ident": false,
-"get_field1": "",
-"get_field2": "",
-"hide": false,
-"link_ident": "home",
-"show": true,
-"show_error": "",
-"target": "",
-"widget_class": "w3-button w3-block w3-theme-d4",
-"widget_style": ""
-}
-}
-],
-[
-"Widget",
-{
-"class": "links.ButtonLink1",
-"name": "submitcss",
-"brief": "SubmitCSS responder",
-"fields": {
-"button_text": "SubmitCSS",
-"clear_error": false,
-"error_class": "w3-button w3-block w3-theme-action",
-"force_ident": false,
-"get_field1": "",
-"get_field2": "",
-"hide": false,
-"link_ident": 202101,
-"show": true,
-"show_error": "",
-"target": "",
-"widget_class": "w3-button w3-block w3-theme-d4",
-"widget_style": ""
-}
-}
-],
-[
-"Widget",
-{
-"class": "links.ButtonLink1",
-"name": "submitdata",
-"brief": "SubmitData responder",
-"fields": {
-"button_text": "SubmitData",
-"clear_error": false,
-"error_class": "w3-button w3-block w3-theme-action",
-"force_ident": false,
-"get_field1": "",
-"get_field2": "",
-"hide": false,
-"link_ident": "home",
-"show": true,
-"show_error": "",
-"target": "",
-"widget_class": "w3-button w3-block w3-theme-d4",
-"widget_style": ""
-}
-}
-],
-[
-"Widget",
-{
-"class": "links.ButtonLink1",
-"name": "submititerator",
-"brief": "SubmitIterator responder",
-"fields": {
-"button_text": "SubmitIterator",
-"clear_error": false,
-"error_class": "w3-button w3-block w3-theme-action",
-"force_ident": false,
-"get_field1": "",
-"get_field2": "",
-"hide": false,
-"link_ident": "home",
-"show": true,
-"show_error": "",
-"target": "",
-"widget_class": "w3-button w3-block w3-theme-d4",
-"widget_style": ""
-}
-}
-],
-[
-"Widget",
-{
-"class": "links.ButtonLink1",
-"name": "submitjson",
-"brief": "SubmitJSON responder",
-"fields": {
-"button_text": "SubmitJSON",
-"clear_error": false,
-"error_class": "w3-button w3-block w3-theme-action",
-"force_ident": false,
-"get_field1": "",
-"get_field2": "",
-"hide": false,
-"link_ident": "home",
-"show": true,
-"show_error": "",
-"target": "",
-"widget_class": "w3-button w3-block w3-theme-d4",
-"widget_style": ""
-}
-}
-],
-[
-"Widget",
-{
-"class": "links.ButtonLink1",
-"name": "submitplaintext",
-"brief": "SubmitPlainText responder",
-"fields": {
-"button_text": "SubmitPlainText",
-"clear_error": false,
-"error_class": "w3-button w3-block w3-theme-action",
-"force_ident": false,
-"get_field1": "",
-"get_field2": "",
-"hide": false,
-"link_ident": "home",
-"show": true,
-"show_error": "",
-"target": "",
-"widget_class": "w3-button w3-block w3-theme-d4",
-"widget_style": ""
-}
-}
-]
-]
-}
-],
-[
-"SectionPlaceHolder",
-{
-"brief": "section footer with alias foot",
-"section_name": "footer",
-"placename": "foot",
-"multiplier": 1,
-"mtag": "div"
-}
-]
-]
-}
-]
-]
-}
-]
-]
-}
-]
 }
 }
 },

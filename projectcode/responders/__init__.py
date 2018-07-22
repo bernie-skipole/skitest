@@ -1,1 +1,1 @@
-from . import submitcss, subproj
+from . import submitcss, subproj, menus
