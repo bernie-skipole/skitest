@@ -2815,23 +2815,6 @@ false,
 }
 ],
 [
-"Comment",
-{
-"text": "HTML5shiv - included as a TextBlock"
-}
-],
-[
-"TextBlock",
-{
-"textref": "html5shiv",
-"failmessage": "failed to read textblocks with ref html5shiv",
-"show": true,
-"escape": false,
-"linebreaks": false,
-"decode": false
-}
-],
-[
 "Part",
 {
 "tag_name": "script",
@@ -3372,23 +3355,6 @@ false,
 }
 ],
 [
-"Comment",
-{
-"text": "HTML5shiv - included as a TextBlock"
-}
-],
-[
-"TextBlock",
-{
-"textref": "html5shiv",
-"failmessage": "failed to read textblocks with ref html5shiv",
-"show": true,
-"escape": false,
-"linebreaks": false,
-"decode": false
-}
-],
-[
 "Part",
 {
 "tag_name": "script",
@@ -3436,7 +3402,7 @@ false,
 "show": true,
 "hide_if_empty": false,
 "attribs": {
-"class": "ski_container w3-amber"
+"class": "w3-container"
 },
 "parts": [
 [
@@ -3688,23 +3654,6 @@ false,
 }
 ],
 [
-"Comment",
-{
-"text": "HTML5shiv - included as a TextBlock"
-}
-],
-[
-"TextBlock",
-{
-"textref": "html5shiv",
-"failmessage": "failed to read textblocks with ref html5shiv",
-"show": true,
-"escape": false,
-"linebreaks": false,
-"decode": false
-}
-],
-[
 "Part",
 {
 "tag_name": "script",
@@ -3752,7 +3701,7 @@ false,
 "show": true,
 "hide_if_empty": false,
 "attribs": {
-"class": "ski_container w3-amber"
+"class": "w3-container"
 },
 "parts": [
 [

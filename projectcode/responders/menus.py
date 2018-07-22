@@ -6,7 +6,7 @@ def responders_menu(caller_ident, ident_list, submit_list, submit_dict, call_dat
     # each tuple in the list below is button text, link ident
 
     butt_list = [('Accept', 'home'),
-                 ('AlloweAccept', 'home'),
+                 ('AllowAccept', 'home'),
                  ('AllowedFields', 'home'),
                  ('AllowStore', 'home'),
                  ('AllowStoreKeyed', 'home'),
