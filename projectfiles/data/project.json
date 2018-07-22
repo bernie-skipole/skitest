@@ -12179,6 +12179,41 @@ false,
 }
 }
 },
+"footers": {
+"ident": 5300,
+"brief": "Tests of widgets in the footers module",
+"default_page_name": "index",
+"restricted": false,
+"folders": {
+"restricted": {
+"ident": 15300,
+"brief": "Restricted folder for footers widget tests",
+"default_page_name": "index",
+"restricted": true,
+"folders": {},
+"pages": {}
+}
+},
+"pages": {
+"set_style": {
+"ident": 5301,
+"brief": "Sets the style of the SimpleFooter widget",
+"RespondPage": {
+"class": "SubmitData",
+"original_args": {
+"fail_ident": 3014,
+"submit_list": [
+"widgets",
+"footers",
+"set_style"
+],
+"target_ident": "general_json"
+},
+"original_fields": {}
+}
+}
+}
+},
 "info": {
 "ident": 4300,
 "brief": "info module tests",
@@ -20559,6 +20594,9 @@ false,
 "linebreaks": true,
 "decode": false
 }
+]
+]
+}
 ],
 [
 "Widget",
@@ -20575,7 +20613,56 @@ false,
 "show": true,
 "show_error": "",
 "widget_class": "",
-"widget_style": "color:yellow;"
+"widget_style": "color:yellow;background-color:green;"
+}
+}
+],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "Test buttons",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "About set_style test",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Text",
+"This requests a JSON update to change the widget style to color:green;background-color:yellow;"
+]
+]
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink2",
+"name": "setstyle",
+"brief": "Link to test setting the style",
+"fields": {
+"button_class": "w3-button w3-block w3-theme-l1 w3-border w3-round",
+"button_text": "Set Style",
+"button_wait_text": "Please wait...",
+"buttondiv_class": "ski_mid_button",
+"buttondiv_style": "",
+"clear_error": false,
+"error_class": "w3-panel w3-red",
+"get_field1": "",
+"get_field2": "",
+"hide": false,
+"json_ident": "5301",
+"link_ident": "home",
+"show": true,
+"show_error": "",
+"widget_class": "w3-section",
+"widget_style": ""
 }
 }
 ]
