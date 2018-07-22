@@ -65,6 +65,7 @@
   "page.3011.01": "These are the widgets in the info module.",
   "page.3012.01": "Toggle the debug mode to show or hide the ident list at the foot of each page. If debug mode is on, javascript client side validation is disabled.",
   "page.3013.01": "These are the widgets in the dropdown module.",
+  "page.3014.01": "Currently this module only contains a single widget 'SimpleFooter'.\r\n\r\nThis is a div containing a further two div's. The first is normally hidden, and will be displayed on error. It contains a paragraph which will show the error message.\r\n\r\nThe second div contains a paragraph of text displaying text set in the field 'footer_text'.\r\n\r\nThe SimpleFooter is shown below with widget style set to color:yellow.",
   "page.3018.01": "These are the widgets in the svgmeters module.",
   "page.3025.01": "These are the widgets in the lists module.",
   "page.3026.01": "These are the widgets in the svggraphs module.",

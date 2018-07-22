@@ -20559,6 +20559,25 @@ false,
 "linebreaks": true,
 "decode": false
 }
+],
+[
+"Widget",
+{
+"class": "footers.SimpleFooter",
+"name": "testftr",
+"brief": "Test footer",
+"fields": {
+"clear_error": false,
+"error_class": "",
+"footer_text": "This is the footer text, it can be replaced by a JSON call.",
+"para_class": "",
+"paradiv_class": "",
+"show": true,
+"show_error": "",
+"widget_class": "",
+"widget_style": "color:yellow;"
+}
+}
 ]
 ]
 }
