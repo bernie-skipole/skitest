@@ -13,3 +13,7 @@ def set_text(caller_ident, ident_list, submit_list, submit_dict, call_data, page
     page_data['testftr', 'footer_text'] = "New text on this SimpleFooter has been set by JSON call"
     page_data['testftr', 'clear_error'] = True
 
+
+def set_error(caller_ident, ident_list, submit_list, submit_dict, call_data, page_data, lang):
+    "Raises an error with a message on the simplefooter"
+    raise FailPage(message="An error message is displayed here", widget='testftr')

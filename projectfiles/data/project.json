@@ -12195,6 +12195,23 @@ false,
 }
 },
 "pages": {
+"set_error": {
+"ident": 5305,
+"brief": "Sets the error message of the SimpleFooter",
+"RespondPage": {
+"class": "SubmitData",
+"original_args": {
+"fail_ident": "general_json",
+"submit_list": [
+"widgets",
+"footers",
+"set_error"
+],
+"target_ident": "general_json"
+},
+"original_fields": {}
+}
+},
 "set_style": {
 "ident": 5301,
 "brief": "Sets the style of the SimpleFooter widget",
@@ -20623,7 +20640,7 @@ false,
 "brief": "Test footer",
 "fields": {
 "clear_error": false,
-"error_class": "",
+"error_class": "w3-panel w3-red",
 "footer_text": "This is the footer text, it can be replaced by a JSON call.",
 "para_class": "",
 "paradiv_class": "",
@@ -20716,6 +20733,47 @@ false,
 "get_field2": "",
 "hide": false,
 "json_ident": "5303",
+"link_ident": "no_javascript",
+"show": true,
+"show_error": "",
+"widget_class": "w3-section",
+"widget_style": ""
+}
+}
+],
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "About set error test",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Text",
+"Sets an error message in the footer by raising FailPage with the widget argument set to the SimpleFooter widget name."
+]
+]
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink2",
+"name": "seterror",
+"brief": "Calls a test to set an error message",
+"fields": {
+"button_class": "w3-button w3-block w3-theme-l1 w3-border w3-round",
+"button_text": "Set Error",
+"button_wait_text": "Please wait...",
+"buttondiv_class": "ski_mid_button",
+"buttondiv_style": "",
+"clear_error": false,
+"error_class": "w3-panel w3-red",
+"get_field1": "",
+"get_field2": "",
+"hide": false,
+"json_ident": "5305",
 "link_ident": "no_javascript",
 "show": true,
 "show_error": "",
