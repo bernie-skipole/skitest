@@ -12211,6 +12211,23 @@ false,
 },
 "original_fields": {}
 }
+},
+"set_text": {
+"ident": 5303,
+"brief": "Sets the text of the SimpleFooter widget",
+"RespondPage": {
+"class": "SubmitData",
+"original_args": {
+"fail_ident": 3014,
+"submit_list": [
+"widgets",
+"footers",
+"set_text"
+],
+"target_ident": "general_json"
+},
+"original_fields": {}
+}
 }
 }
 },
@@ -20612,8 +20629,8 @@ false,
 "paradiv_class": "",
 "show": true,
 "show_error": "",
-"widget_class": "",
-"widget_style": "color:yellow;background-color:green;"
+"widget_class": "w3-container",
+"widget_style": ""
 }
 }
 ],
@@ -20658,7 +20675,48 @@ false,
 "get_field2": "",
 "hide": false,
 "json_ident": "5301",
-"link_ident": "home",
+"link_ident": "no_javascript",
+"show": true,
+"show_error": "",
+"widget_class": "w3-section",
+"widget_style": ""
+}
+}
+],
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "About set text test",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Text",
+"New text can be placed in the footer."
+]
+]
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink2",
+"name": "settext",
+"brief": "Sets new text in the footer",
+"fields": {
+"button_class": "w3-button w3-block w3-theme-l1 w3-border w3-round",
+"button_text": "Set Text",
+"button_wait_text": "Please wait...",
+"buttondiv_class": "ski_mid_button",
+"buttondiv_style": "",
+"clear_error": false,
+"error_class": "w3-panel w3-red",
+"get_field1": "",
+"get_field2": "",
+"hide": false,
+"json_ident": "5303",
+"link_ident": "no_javascript",
 "show": true,
 "show_error": "",
 "widget_class": "w3-section",

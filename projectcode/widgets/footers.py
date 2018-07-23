@@ -6,3 +6,10 @@ def set_style(caller_ident, ident_list, submit_list, submit_dict, call_data, pag
     page_data['testftr', 'widget_style'] = "color:green;background-color:yellow"
     page_data['testftr', 'clear_error'] = True
 
+
+
+def set_text(caller_ident, ident_list, submit_list, submit_dict, call_data, page_data, lang):
+    "Sets the text on the simplefooter"
+    page_data['testftr', 'footer_text'] = "New text on this SimpleFooter has been set by JSON call"
+    page_data['testftr', 'clear_error'] = True
+
