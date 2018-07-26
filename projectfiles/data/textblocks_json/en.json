@@ -50,7 +50,7 @@
   "page.15101.01": "An SVG Chart1 widget containing a list of values, these are JSON settable.",
   "page.15201.01": "An SVG defined meter with a measurement value which can be updated by JSON.",
   "page.15203.01": "An SVG defined Traditional1 widget. Measurement value can be updated by JSON.",
-  "page.200001.01": "Responders are pages which receive a call, and then manipulates the received data in some way, including calling your submit_data function to populate the page_data dictionary.\r\n\r\nThe responder then generally passes the call to a final template page which is returned to the client browser.\r\n\r\nThe following buttons link to tests for each responder type.",
+  "page.210001.01": "Responders are pages which receive a call, and then manipulates the received data in some way, including calling your submit_data function to populate the page_data dictionary.\r\n\r\nThe responder then generally passes the call to a final template or JSON page which is returned to the client browser.\r\n\r\nThe following buttons link to tests for each responder type.",
   "page.300001.01": "Validators are defined in modules - use the buttons below to the module required.",
   "page.300002.01": "Validators test user input. These are the validators in the basic module.\r\n\r\nThe links on this page are to input fields, in which validators are used to check various inputs, to confirm they are working correctly.\r\n\r\nGenerally a validator works both on the client with javascript, and at the server with Python. You should run the tests with javascript both enabled and disabled on your client browser.",
   "page.300003.01": "Tests for allowed input which should be 'one', 'two' or 'three' only. Any other value should cause a failure.",
@@ -70,5 +70,5 @@
   "page.3025.01": "These are the widgets in the lists module.",
   "page.3026.01": "These are the widgets in the svggraphs module.",
   "page.410001.01": "The start_call function, GoTo exception and fail page jumps normally jump to a page within their own project, but it is possible they could divert to a sub project.\r\n\r\nTests here explore such diversions, using the lib project, which is always available as a sub-project.",
-  "page.500101.01": "This page uses external jquery UI libraries to create ui widgets.\r\n\r\nIn particular the head section has a script link to jquery-ui.min.js\r\nand a css link to jquery-ui.css\r\n\r\nA statement:\r\npage_data['add_jscript'] = \"\"\"$( \"#date\" ).datepicker();\"\"\"\r\nis then set in the end_call function, which sets the 'date' widget to be a datepicker."
+  "page.500101.01": "This page uses external jquery UI libraries to create ui widgets.\r\n\r\nTo work correctly you will need an internet connection!\r\n\r\nThe head section of the page has a script link to jquery-ui.min.js\r\nand a css link to jquery-ui.css\r\n\r\nA statement:\r\npage_data['add_jscript'] = \"\"\"$( \"#date\" ).datepicker();\"\"\"\r\nis then set in the end_call function, which sets the 'date' widget to be a datepicker."
 }

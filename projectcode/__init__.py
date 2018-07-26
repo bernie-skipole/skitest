@@ -5,11 +5,9 @@ This package will be called by the Skipole framework to access your data.
 # this import used by basic authentication
 from base64 import b64decode
 
-from .. import FailPage, GoTo, ValidateError, ServerError
+from .. import FailPage, GoTo, ValidateError, ServerError, use_submit_list
 from ... import skilift
 
-
-from . import widgets, login, responders, validators, jqui
 
 ##############################################################################
 #
@@ -62,73 +60,16 @@ def start_call(environ, path, project, called_ident, caller_ident, received_cook
     return called_ident, call_data, page_data, lang
 
 
+@use_submit_list
 def submit_data(caller_ident, ident_list, submit_list, submit_dict, call_data, page_data, lang):
-    "This function is called when a Responder wishes to submit data for processing in some manner"
+    """This function is called when a Responder wishes to submit data for processing in some manner
+       For two or more submit_list values, the decorator ensures the matching function is called instead"""
 
     # Show the server error page
     if submit_list and (submit_list[0] == 'server_error'):
         raise ServerError(message="This is a deliberate error to show the ServerError page", code=666)
+    raise ServerError("submit_list string not recognised")
 
-    if submit_list and (submit_list[0] == 'widgets'):
-        # expects submitlist to have contents such as ['widgets', 'checkbox', 'test1']
-        # where package 'widgets' contains module 'checkbox' containing function 'test1' to be run as the submit_data function
-        try:
-            widgetmod = getattr(widgets, submit_list[1])
-        except:
-            raise FailPage("submit_list contains 'widgets' but module not recognised")
-        try:
-            submitfunc = getattr(widgetmod, submit_list[2])
-        except:
-            raise FailPage("submit_list contains 'widgets' and '%s', but function not recognised" % (submit_list[1],))
-        return submitfunc(caller_ident, ident_list, submit_list, submit_dict, call_data, page_data, lang)
-
-    if submit_list and (submit_list[0] == 'login'):
-        try:
-            submitfunc = getattr(login, submit_list[1])
-        except:
-            raise FailPage("submit_list contains 'login', but function not recognised")
-        return submitfunc(caller_ident, ident_list, submit_list, submit_dict, call_data, page_data, lang)
-
-    if submit_list and (submit_list[0] == 'responders'):
-        # expects submitlist to have contents such as ['responders', 'submitdata', 'test1']
-        # where package 'responders' contains module 'submitdata' containing function 'test1' to be run as the submit_data function
-        try:
-            respondersmod = getattr(responders, submit_list[1])
-        except:
-            raise FailPage("submit_list contains 'responders' but module not recognised")
-        try:
-            submitfunc = getattr(respondersmod, submit_list[2])
-        except:
-            raise FailPage("submit_list contains 'responders' and '%s', but function not recognised" % (submit_list[1],))
-        return submitfunc(caller_ident, ident_list, submit_list, submit_dict, call_data, page_data, lang)
-
-    if submit_list and (submit_list[0] == 'validators'):
-        # expects submitlist to have contents such as ['validators', 'allowedvaluesonly', 'test1']
-        # where package 'validators' contains module 'allowedvaluesonly' containing function 'test1'
-        try:
-            validatorsmod = getattr(validators, submit_list[1])
-        except:
-            raise FailPage("submit_list contains 'validators' but module not recognised")
-        try:
-            submitfunc = getattr(validatorsmod, submit_list[2])
-        except:
-            raise FailPage("submit_list contains 'validators' and '%s', but function not recognised" % (submit_list[1],))
-        return submitfunc(caller_ident, ident_list, submit_list, submit_dict, call_data, page_data, lang)
-
-
-    if submit_list and (submit_list[0] == 'jqui'):
-        # expects submitlist to have contents such as ['jqui', 'jqwidgets', 'set_date']
-        try:
-            jquimod = getattr(jqui, submit_list[1])
-        except:
-            raise FailPage("submit_list contains 'jqui' but module not recognised")
-        try:
-            submitfunc = getattr(jquimod, submit_list[2])
-        except:
-            raise FailPage("submit_list contains 'jqui' and '%s', but function not recognised" % (submit_list[1],))
-        return submitfunc(caller_ident, ident_list, submit_list, submit_dict, call_data, page_data, lang)
-
-    raise FailPage("submit_list string not recognised")
 
 
 _HEADER_TEXT = { 2001 : "Project skitest.",
