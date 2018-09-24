@@ -21,3 +21,8 @@ def table1button_htmltest(caller_ident, ident_list, submit_list, submit_dict, ca
         page_data['paratest','para_text'] = "First row button pressed"
     if call_data['table1button2', 'contents'] == 'test2':
         page_data['paratest','para_text'] = "Second row button pressed"
+
+
+def messagebutton(caller_ident, ident_list, submit_list, submit_dict, call_data, page_data, lang):
+    "Set text into Messagebox"
+    page_data['messagebutton', 'para_text'] = "This text placed by JSON file"

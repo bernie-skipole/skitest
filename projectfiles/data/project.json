@@ -3,7 +3,7 @@
 "default_language": "en",
 "brief": "Project to test the skipole framework",
 "version": "0.3.1",
-"skipole": "1.0.0",
+"skipole": "1.1.0",
 "subprojects": {
 "lib": {
 "path": "/lib/"
@@ -952,6 +952,7 @@ false,
 "action_json": 500002,
 "button_class": "w3-button w3-theme-d4",
 "button_text": "Submit",
+"button_wait_text": "",
 "clear_error": false,
 "container_class": "ski_mid_button",
 "div_class": "",
@@ -1343,6 +1344,7 @@ false,
 "action_json": "",
 "button_class": "w3-button w3-theme-d4",
 "button_text": "Submit",
+"button_wait_text": "",
 "clear_error": false,
 "container_class": "",
 "div_class": "",
@@ -1485,6 +1487,7 @@ false,
 "action_json": "",
 "button_class": "w3-button w3-theme-d4",
 "button_text": "Submit",
+"button_wait_text": "",
 "clear_error": false,
 "container_class": "",
 "div_class": "",
@@ -7015,6 +7018,7 @@ false,
 "action_json": "",
 "button_class": "w3-button w3-theme-d4",
 "button_text": "Submit",
+"button_wait_text": "",
 "clear_error": false,
 "container_class": "",
 "div_class": "",
@@ -7644,6 +7648,7 @@ false,
 "action_json": "",
 "button_class": "w3-button w3-theme-d4",
 "button_text": "Submit",
+"button_wait_text": "",
 "clear_error": false,
 "container_class": "",
 "div_class": "",
@@ -8095,6 +8100,7 @@ false,
 "action_json": "",
 "button_class": "w3-button w3-theme-d4",
 "button_text": "Submit",
+"button_wait_text": "",
 "clear_error": false,
 "container_class": "",
 "div_class": "",
@@ -13085,6 +13091,7 @@ false,
 "action_json": "",
 "button_class": "w3-button w3-theme-d4",
 "button_text": "Submit",
+"button_wait_text": "",
 "clear_error": false,
 "container_class": "",
 "div_class": "",
@@ -13461,6 +13468,7 @@ false,
 "action_json": "",
 "button_class": "w3-button w3-theme-d4",
 "button_text": "Submit",
+"button_wait_text": "",
 "clear_error": false,
 "container_class": "",
 "div_class": "",
@@ -13770,6 +13778,7 @@ false,
 "action_json": "",
 "button_class": "w3-button w3-theme-d4",
 "button_text": "Submit",
+"button_wait_text": "",
 "clear_error": false,
 "container_class": "",
 "div_class": "",
@@ -15145,6 +15154,7 @@ false,
 "action_json": "",
 "button_class": "w3-button w3-theme-d4",
 "button_text": "Submit",
+"button_wait_text": "",
 "clear_error": false,
 "container_class": "",
 "div_class": "",
@@ -15457,6 +15467,7 @@ false,
 "action_json": "",
 "button_class": "w3-button w3-theme-d4",
 "button_text": "Submit",
+"button_wait_text": "",
 "clear_error": false,
 "container_class": "",
 "div_class": "",
@@ -15778,6 +15789,7 @@ false,
 "action_json": "",
 "button_class": "w3-button w3-theme-d4",
 "button_text": "Submit",
+"button_wait_text": "",
 "clear_error": false,
 "container_class": "",
 "div_class": "",
@@ -16095,6 +16107,7 @@ false,
 "action_json": "",
 "button_class": "w3-button w3-theme-d4",
 "button_text": "Submit",
+"button_wait_text": "",
 "clear_error": false,
 "container_class": "",
 "div_class": "",
@@ -16964,6 +16977,278 @@ false,
 "restricted": true,
 "folders": {},
 "pages": {
+"messagebutton": {
+"ident": 14105,
+"brief": "Tests for MessageButton",
+"TemplatePage": {
+"show_backcol": false,
+"last_scroll": true,
+"interval": 0,
+"interval_target": null,
+"lang": "en",
+"backcol": "#9dbd7a",
+"default_error_widget": [
+"header",
+"top_error"
+]
+},
+"head": [
+"Part",
+{
+"tag_name": "head",
+"brief": "The head section of the page",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"ClosedPart",
+{
+"tag_name": "meta",
+"brief": "The charset meta declaration",
+"show": true,
+"attribs": {
+"charset": "utf-8"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "meta",
+"brief": "The viewport meta declaration",
+"show": true,
+"attribs": {
+"content": "width=device-width, initial-scale=1",
+"name": "viewport"
+}
+}
+],
+[
+"Part",
+{
+"tag_name": "title",
+"brief": "The page title element",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Text",
+"Index"
+]
+]
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to w3_css",
+"show": true,
+"attribs": {
+"href": "{w3_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to w3_theme_ski_css",
+"show": true,
+"attribs": {
+"href": "{w3_theme_ski_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to ski_css",
+"show": true,
+"attribs": {
+"href": "{ski_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"Part",
+{
+"tag_name": "script",
+"brief": "script link to jquery_core",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"src": "{jquery_core}"
+},
+"parts": []
+}
+],
+[
+"Part",
+{
+"tag_name": "script",
+"brief": "script link to skipole_js",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"src": "{skipole_js}"
+},
+"parts": []
+}
+]
+]
+}
+],
+"body": [
+"Part",
+{
+"tag_name": "body",
+"brief": "The body section of the page",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "w3-theme"
+},
+"parts": [
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "container",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "w3-container"
+},
+"parts": [
+[
+"SectionPlaceHolder",
+{
+"brief": "Page header",
+"section_name": "header",
+"placename": "header",
+"multiplier": 1,
+"mtag": "div"
+}
+],
+[
+"SectionPlaceHolder",
+{
+"brief": "Left navigation panel",
+"section_name": "navigation",
+"placename": "navigation",
+"multiplier": 1,
+"mtag": "div"
+}
+],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "centre",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "w3-section",
+"style": "margin-left:25%"
+},
+"parts": [
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "Top description",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"TextBlock",
+{
+"textref": "page.14105.01",
+"failmessage": "TextBlock not found",
+"show": true,
+"escape": true,
+"linebreaks": true,
+"decode": false
+}
+]
+]
+}
+],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "Holds buttons",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"style": "margin-left:15%;width:50%;margin-right:auto;"
+},
+"parts": [
+[
+"Widget",
+{
+"class": "links.MessageButton",
+"name": "messagebutton",
+"brief": "message button widget",
+"fields": {
+"boxdiv_class": "w3-modal-content w3-panel w3-theme-d4",
+"button_class": "",
+"button_text": "Submit",
+"buttondiv_class": "",
+"buttondiv_style": "",
+"force_ident": false,
+"get_field1": "",
+"get_field2": "",
+"hide": true,
+"inner_class": "w3-panel w3-theme-d4",
+"inner_style": "",
+"json_ident": "4106",
+"link_ident": "no_javascript",
+"messagediv_class": "w3-modal",
+"para_text": "Please wait...",
+"pre_line": true,
+"show": true,
+"target": "_blank",
+"widget_class": "",
+"widget_style": "",
+"x_class": "w3-bar-item w3-button w3-right w3-theme-l2",
+"xdiv_class": "w3-bar",
+"xdiv_style": ""
+}
+}
+]
+]
+}
+],
+[
+"SectionPlaceHolder",
+{
+"brief": "section footer with alias foot",
+"section_name": "footer",
+"placename": "foot",
+"multiplier": 1,
+"mtag": "div"
+}
+]
+]
+}
+]
+]
+}
+]
+]
+}
+]
+},
 "table1button": {
 "ident": 14101,
 "brief": "tests for Table1_Button widget",
@@ -17337,6 +17622,34 @@ false,
 }
 },
 "pages": {
+"messagebutton": {
+"ident": 4105,
+"brief": "displays the messagebutton test page",
+"RespondPage": {
+"class": "NoOperation",
+"original_args": {
+"target_ident": 14105
+},
+"original_fields": {}
+}
+},
+"messagebutton_test1": {
+"ident": 4106,
+"brief": "Requests a JSON file which alters the message text",
+"RespondPage": {
+"class": "SubmitData",
+"original_args": {
+"fail_ident": "home",
+"submit_list": [
+"widgets",
+"links",
+"messagebutton"
+],
+"target_ident": "general_json"
+},
+"original_fields": {}
+}
+},
 "table1button": {
 "ident": 4101,
 "brief": "tests for Table1_Button widget",
@@ -22756,6 +23069,29 @@ false,
 "get_field2": "",
 "hide": false,
 "link_ident": "table1button",
+"show": true,
+"show_error": "",
+"target": "",
+"widget_class": "w3-button w3-block w3-theme-d4",
+"widget_style": ""
+}
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink1",
+"name": "MessageButton",
+"brief": "link to meaagebutton test page",
+"fields": {
+"button_text": "MessageButton",
+"clear_error": false,
+"error_class": "w3-button w3-block w3-theme-action",
+"force_ident": false,
+"get_field1": "",
+"get_field2": "",
+"hide": false,
+"link_ident": "4105",
 "show": true,
 "show_error": "",
 "target": "",
