@@ -23047,32 +23047,32 @@ false,
 "Part",
 {
 "tag_name": "div",
-"brief": "Holds buttons",
+"brief": "div to hold buttons",
 "show": true,
 "hide_if_empty": false,
-"attribs": {
-"style": "margin-left:15%;width:50%;margin-right:auto;"
-},
 "parts": [
 [
 "Widget",
 {
-"class": "links.ButtonLink1",
-"name": "Table1_Button",
+"class": "links.ButtonLink2",
+"name": "table1_button",
 "brief": "Link to Table1_Button widget test page",
 "fields": {
+"button_class": "w3-button w3-block w3-theme-l1 w3-border w3-round",
 "button_text": "Table1_Button",
+"button_wait_text": "Please wait...",
+"buttondiv_class": "ski_mid_button",
+"buttondiv_style": "",
 "clear_error": false,
-"error_class": "w3-button w3-block w3-theme-action",
-"force_ident": false,
+"error_class": "w3-panel w3-red",
 "get_field1": "",
 "get_field2": "",
 "hide": false,
+"json_ident": "",
 "link_ident": "table1button",
 "show": true,
 "show_error": "",
-"target": "",
-"widget_class": "w3-button w3-block w3-theme-d4",
+"widget_class": "w3-section",
 "widget_style": ""
 }
 }
@@ -23080,22 +23080,25 @@ false,
 [
 "Widget",
 {
-"class": "links.ButtonLink1",
-"name": "MessageButton",
-"brief": "link to meaagebutton test page",
+"class": "links.ButtonLink2",
+"name": "messagebutton",
+"brief": "link to messagebutton test page",
 "fields": {
+"button_class": "w3-button w3-block w3-theme-l1 w3-border w3-round",
 "button_text": "MessageButton",
+"button_wait_text": "Please wait...",
+"buttondiv_class": "ski_mid_button",
+"buttondiv_style": "",
 "clear_error": false,
-"error_class": "w3-button w3-block w3-theme-action",
-"force_ident": false,
+"error_class": "w3-panel w3-red",
 "get_field1": "",
 "get_field2": "",
 "hide": false,
+"json_ident": "",
 "link_ident": "4105",
 "show": true,
 "show_error": "",
-"target": "",
-"widget_class": "w3-button w3-block w3-theme-d4",
+"widget_class": "w3-section",
 "widget_style": ""
 }
 }
