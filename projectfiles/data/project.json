@@ -16435,10 +16435,10 @@ false,
 "hidden_field2": "",
 "hidden_field3": "",
 "hidden_field4": "",
-"input_accepted_class": "",
+"input_accepted_class": "ski_input_accepted",
 "input_class1": "ski_input",
 "input_class2": "ski_input  w3-margin-left",
-"input_errored_class": "",
+"input_errored_class": "ski_input_errored",
 "input_text1": "",
 "input_text2": "",
 "inputdiv_class": "",
@@ -16465,6 +16465,44 @@ false,
 "widget_class": "w3-section",
 "widget_style": ""
 }
+}
+],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "div for button",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "ski_left_40_10",
+"style": "width:10em;"
+},
+"parts": [
+[
+"Widget",
+{
+"class": "links.JSONButtonLink",
+"name": "jsontest",
+"brief": "Requests jso to set ski_input_accepted/errored",
+"fields": {
+"button_text": "Set field flags",
+"button_wait_text": "Please wait...",
+"clear_error": false,
+"error_class": "w3-button w3-block w3-theme-action",
+"get_field1": "",
+"get_field2": "",
+"hide": false,
+"json_ident": "4682",
+"link_ident": "no_javascript",
+"show": true,
+"show_error": "",
+"widget_class": "w3-button w3-block w3-theme-d4",
+"widget_style": ""
+}
+}
+]
+]
 }
 ],
 [
@@ -16960,6 +16998,23 @@ false,
 "twoinputssubmit1_test1:input_text1": "",
 "twoinputssubmit1_test1:input_text2": ""
 }
+}
+},
+"twoinputssubmit1_test2": {
+"ident": 4682,
+"brief": "Requests a JSON file which alters the input fields",
+"RespondPage": {
+"class": "SubmitData",
+"original_args": {
+"fail_ident": 4680,
+"submit_list": [
+"widgets",
+"inputtext",
+"twoinputssubmit1_test2"
+],
+"target_ident": "general_json"
+},
+"original_fields": {}
 }
 }
 }

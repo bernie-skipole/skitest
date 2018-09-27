@@ -89,6 +89,13 @@ def twoinputssubmit1_test1(caller_ident, ident_list, submit_list, submit_dict, c
         page_data['result','para_text'] = "Nothing received"
 
 
+
+def twoinputssubmit1_test2(caller_ident, ident_list, submit_list, submit_dict, call_data, page_data, lang):
+    """Sets flags in input fields"""
+    page_data['twoinputssubmit1_test1', 'set_input_accepted1'] = True
+    page_data['twoinputssubmit1_test1', 'set_input_errored2'] = True
+
+
 def fill_submitdict1(caller_ident, ident_list, submit_list, submit_dict, call_data, page_data, lang):
     """Fills in the submitdict1 page"""
     page_data['submitdict1_test1', 'input_dict'] = OrderedDict([('one',''), ('two',''), ('three','')])
