@@ -18379,7 +18379,7 @@ false,
 "parts": [
 [
 "Text",
-"This is a NamePasswd1 form:"
+"This is a NamePasswd1 form, validation has been set so that a minimum of four characters is required in the username:"
 ]
 ]
 }
@@ -18436,6 +18436,28 @@ false,
 "title2": "",
 "widget_class": "",
 "widget_style": ""
+},
+"validators": {
+"input_text1": [
+{
+"class": "basic.MinLength",
+"message": "A minimum of four characters is required",
+"displaywidget": [
+"",
+"namepasswd1_test1",
+"",
+""
+],
+"val_args": {
+"minlength": "4"
+}
+}
+],
+"input_text2": [
+{
+"class": "basic.NoOperation"
+}
+]
 }
 }
 ],
@@ -18500,6 +18522,59 @@ false,
 }
 ],
 [
+"Part",
+{
+"tag_name": "p",
+"brief": "About clear error",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Text",
+"If an error is being displayed, the following clears the error."
+]
+]
+}
+],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "div for button",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "ski_left_40_10",
+"style": "width:10em;"
+},
+"parts": [
+[
+"Widget",
+{
+"class": "links.JSONButtonLink",
+"name": "clearerror",
+"brief": "Requests json to clear an error",
+"fields": {
+"button_text": "Clear Error",
+"button_wait_text": "Please wait...",
+"clear_error": false,
+"error_class": "w3-button w3-block w3-theme-action",
+"get_field1": "",
+"get_field2": "",
+"hide": false,
+"json_ident": "5504",
+"link_ident": "no_javascript",
+"show": true,
+"show_error": "",
+"widget_class": "w3-button w3-block w3-theme-d4",
+"widget_style": ""
+}
+}
+]
+]
+}
+],
+[
 "SectionPlaceHolder",
 {
 "brief": "section footer with alias foot",
@@ -18550,8 +18625,8 @@ false,
 ],
 "submit_option": true,
 "target_ident": 5501,
-"validate_fail_ident": null,
-"validate_option": false
+"validate_fail_ident": 5501,
+"validate_option": true
 },
 "original_fields": {
 "namepasswd1_test1:input_text1": "",
@@ -18565,11 +18640,28 @@ false,
 "RespondPage": {
 "class": "SubmitData",
 "original_args": {
-"fail_ident": 4680,
+"fail_ident": 5501,
 "submit_list": [
 "widgets",
 "logins",
 "namepasswd1_test2"
+],
+"target_ident": "general_json"
+},
+"original_fields": {}
+}
+},
+"namepasswd1_test3": {
+"ident": 5504,
+"brief": "Requests a JSON file which clears errors",
+"RespondPage": {
+"class": "SubmitData",
+"original_args": {
+"fail_ident": 5501,
+"submit_list": [
+"widgets",
+"logins",
+"namepasswd1_test3"
 ],
 "target_ident": "general_json"
 },

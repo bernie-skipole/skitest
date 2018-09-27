@@ -31,5 +31,10 @@ def namepasswd1_test2(caller_ident, ident_list, submit_list, submit_dict, call_d
     page_data['namepasswd1_test1', 'set_input_errored2'] = True
 
 
+def namepasswd1_test3(caller_ident, ident_list, submit_list, submit_dict, call_data, page_data, lang):
+    """clears errors"""
+    page_data['namepasswd1_test1', 'clear_error'] = True
+
+
 
 
