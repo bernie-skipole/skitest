@@ -53,6 +53,8 @@
   "page.15201.01": "An SVG defined meter with a measurement value which can be updated by JSON.",
   "page.15203.01": "An SVG defined Traditional1 widget. Measurement value can be updated by JSON.",
   "page.15401.01": "These are the widgets in the headers module.",
+  "page.15501.01": "NamePasswd1: A form with error paragraph, two input fields, submit button and four hidden fields.",
+  "page.15501.02": "It is possible to set 'accepted' or 'errored' classes on the input fields. The following button requests a JSON response to set such flags on the above fields.",
   "page.210001.01": "Responders are pages which receive a call, and then manipulates the received data in some way, including calling your submit_data function to populate the page_data dictionary.\r\n\r\nThe responder then generally passes the call to a final template or JSON page which is returned to the client browser.\r\n\r\nThe following buttons link to tests for each responder type.",
   "page.300001.01": "Validators are defined in modules - use the buttons below to the module required.",
   "page.300002.01": "Validators test user input. These are the validators in the basic module.\r\n\r\nThe links on this page are to input fields, in which validators are used to check various inputs, to confirm they are working correctly.\r\n\r\nGenerally a validator works both on the client with javascript, and at the server with Python. You should run the tests with javascript both enabled and disabled on your client browser.",
