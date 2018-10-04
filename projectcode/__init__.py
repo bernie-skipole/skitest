@@ -28,6 +28,7 @@ def start_project(project, projectfiles, path, option):
     # Set environ variable for Yale Bright star catalogue
     # this is required for testing the starchart widget
     os.environ["BSC_PATH"] = "/home/bernie/test"
+    os.environ["WCS_BINDIR"] = "/home/bernie/test"
     return proj_data
 
 

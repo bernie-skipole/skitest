@@ -26,7 +26,7 @@ def stars(caller_ident, ident_list, submit_list, submit_dict, call_data, page_da
     # convert view to radius in arc seconds
     radius_view = str(view * 3600/2.0)
 
-    args = ["scat", "-cd", "bsc", "-n", "100", "-r", radius_view, ra, dec, "J2000"]
+    args = ["scat", "-cd", "bsc", "-n", "800", "-r", radius_view, ra, dec, "J2000"]
     try:
         result = subprocess.check_output(args, timeout=2)
     except:
@@ -39,11 +39,11 @@ def stars(caller_ident, ident_list, submit_list, submit_dict, call_data, page_da
             # magnitude to drawn diameter
             magnitude = float(cols[3])
             if magnitude > 6.0:
-                star = [1]
+                star = [0.5]
             elif magnitude > 4.0:
+                star = [1]
+            elif magnitude > 2.0:
                 star = [2]
-            elif magnitude > 1.0:
-                star = [3]
             else:
                 star = [4]
             star.append(cols[1])
