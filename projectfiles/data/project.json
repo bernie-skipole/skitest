@@ -19569,14 +19569,15 @@ false,
 "name": "starchart",
 "brief": "StarChart widget",
 "fields": {
+"cross": true,
 "dec": "90",
-"fill": "white",
+"fill": "black",
 "flip_horizontal": false,
 "flip_vertical": false,
 "ra": "0",
 "show": true,
 "stars": [],
-"stroke": "black",
+"stroke": "white",
 "stroke_width": "1",
 "transform": "",
 "view": "180",
@@ -19584,6 +19585,439 @@ false,
 "widget_style": ""
 }
 }
+]
+]
+}
+]
+]
+}
+],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "centre",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "w3-container"
+},
+"parts": [
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "Paragraph above the form",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Text",
+"This form allows you to input a target chart centre, and the field of view in degrees."
+]
+]
+}
+],
+[
+"Widget",
+{
+"class": "inputforms.SubmitForm1",
+"name": "setchart",
+"brief": "form to set chart centre and field of view",
+"fields": {
+"action": "no_javascript",
+"action_json": "",
+"button_class": "w3-button w3-theme-d4",
+"button_text": "Submit",
+"button_wait_text": "Please wait",
+"clear_error": false,
+"container_class": "",
+"div_class": "",
+"enctype": "",
+"error_class": "w3-panel w3-red",
+"hidden_field1": "",
+"hidden_field2": "",
+"hidden_field3": "",
+"hidden_field4": "",
+"left_class": "ski_left_label",
+"left_label": "Submit centre and field of view:",
+"right_class": "",
+"right_label": "",
+"show": true,
+"show_error": "",
+"widget_class": "w3-section",
+"widget_style": ""
+},
+"container_0": [
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "Right Ascension input fields",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"style": "margin-top:20px;"
+},
+"parts": [
+[
+"Part",
+{
+"tag_name": "span",
+"brief": "Text of Right Ascension",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "ski_left_label"
+},
+"parts": [
+[
+"Text",
+"Right Ascension:"
+]
+]
+}
+],
+[
+"ClosedWidget",
+{
+"class": "inputtext.TextInput1",
+"name": "ra_hr",
+"brief": "Right ascension hour field",
+"fields": {
+"disabled": false,
+"input_accepted_class": "",
+"input_errored_class": "",
+"input_text": "",
+"maxlength": "2",
+"pattern": "",
+"required": false,
+"set_input_accepted": false,
+"set_input_errored": false,
+"show": true,
+"size": "2",
+"title": "",
+"type": "text",
+"widget_class": "ski_input",
+"widget_style": ""
+}
+}
+],
+[
+"HTMLSymbol",
+{
+"text": "&nbsp;"
+}
+],
+[
+"ClosedWidget",
+{
+"class": "inputtext.TextInput1",
+"name": "ra_min",
+"brief": "Right ascension minutes field",
+"fields": {
+"disabled": false,
+"input_accepted_class": "",
+"input_errored_class": "",
+"input_text": "",
+"maxlength": "2",
+"pattern": "",
+"required": false,
+"set_input_accepted": false,
+"set_input_errored": false,
+"show": true,
+"size": "2",
+"title": "",
+"type": "text",
+"widget_class": "ski_input",
+"widget_style": ""
+}
+}
+],
+[
+"HTMLSymbol",
+{
+"text": "&nbsp;"
+}
+],
+[
+"ClosedWidget",
+{
+"class": "inputtext.TextInput1",
+"name": "ra_sec",
+"brief": "Right ascension seconds field",
+"fields": {
+"disabled": false,
+"input_accepted_class": "",
+"input_errored_class": "",
+"input_text": "",
+"maxlength": "4",
+"pattern": "",
+"required": false,
+"set_input_accepted": false,
+"set_input_errored": false,
+"show": true,
+"size": "4",
+"title": "",
+"type": "text",
+"widget_class": "ski_input",
+"widget_style": ""
+}
+}
+],
+[
+"HTMLSymbol",
+{
+"text": "&nbsp;"
+}
+],
+[
+"Part",
+{
+"tag_name": "span",
+"brief": "text of (Hour, Minutes, seconds)",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Text",
+"(Hour, Minutes, Seconds)"
+]
+]
+}
+]
+]
+}
+],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "Declination input fields",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"style": "margin-top:10px;"
+},
+"parts": [
+[
+"Part",
+{
+"tag_name": "span",
+"brief": "Text of Declination",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "ski_left_label"
+},
+"parts": [
+[
+"Text",
+"Declination:"
+]
+]
+}
+],
+[
+"ClosedWidget",
+{
+"class": "inputtext.TextInput1",
+"name": "dec_sign",
+"brief": "The sign + or - of the declination",
+"fields": {
+"disabled": false,
+"input_accepted_class": "",
+"input_errored_class": "",
+"input_text": "+",
+"maxlength": "1",
+"pattern": "",
+"required": false,
+"set_input_accepted": false,
+"set_input_errored": false,
+"show": true,
+"size": "1",
+"title": "",
+"type": "text",
+"widget_class": "ski_input",
+"widget_style": ""
+}
+}
+],
+[
+"HTMLSymbol",
+{
+"text": "&nbsp;"
+}
+],
+[
+"ClosedWidget",
+{
+"class": "inputtext.TextInput1",
+"name": "dec_deg",
+"brief": "Declination degrees field",
+"fields": {
+"disabled": false,
+"input_accepted_class": "",
+"input_errored_class": "",
+"input_text": "",
+"maxlength": "2",
+"pattern": "",
+"required": false,
+"set_input_accepted": false,
+"set_input_errored": false,
+"show": true,
+"size": "2",
+"title": "",
+"type": "text",
+"widget_class": "ski_input",
+"widget_style": ""
+}
+}
+],
+[
+"HTMLSymbol",
+{
+"text": "&nbsp;"
+}
+],
+[
+"ClosedWidget",
+{
+"class": "inputtext.TextInput1",
+"name": "dec_min",
+"brief": "Declination minutes field",
+"fields": {
+"disabled": false,
+"input_accepted_class": "",
+"input_errored_class": "",
+"input_text": "",
+"maxlength": "2",
+"pattern": "",
+"required": false,
+"set_input_accepted": false,
+"set_input_errored": false,
+"show": true,
+"size": "2",
+"title": "",
+"type": "text",
+"widget_class": "ski_input",
+"widget_style": ""
+}
+}
+],
+[
+"HTMLSymbol",
+{
+"text": "&nbsp;"
+}
+],
+[
+"ClosedWidget",
+{
+"class": "inputtext.TextInput1",
+"name": "dec_sec",
+"brief": "Declination seconds field",
+"fields": {
+"disabled": false,
+"input_accepted_class": "",
+"input_errored_class": "",
+"input_text": "",
+"maxlength": "4",
+"pattern": "",
+"required": false,
+"set_input_accepted": false,
+"set_input_errored": false,
+"show": true,
+"size": "4",
+"title": "",
+"type": "text",
+"widget_class": "ski_input",
+"widget_style": ""
+}
+}
+],
+[
+"HTMLSymbol",
+{
+"text": "&nbsp;"
+}
+],
+[
+"Part",
+{
+"tag_name": "span",
+"brief": "text of (sign, Degrees, Minutes, seconds)",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Text",
+"(+/-, Degrees, Minutes, Seconds)"
+]
+]
+}
+]
+]
+}
+],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "field of view",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"style": "margin-top:10px;margin-bottom:10px;"
+},
+"parts": [
+[
+"Widget",
+{
+"class": "inputtext.TextInput3",
+"name": "view",
+"brief": "view in degrees",
+"fields": {
+"disabled": false,
+"input_accepted_class": "",
+"input_class": "ski_input",
+"input_errored_class": "",
+"input_text": "",
+"left_class": "ski_left_label",
+"left_label": "Diameter of the field of view:",
+"maxlength": "",
+"pattern": "",
+"required": false,
+"right_class": "",
+"right_label": "(degrees)",
+"set_input_accepted": false,
+"set_input_errored": false,
+"show": true,
+"size": "",
+"title": "",
+"type": "text",
+"widget_class": "",
+"widget_style": ""
+}
+}
+]
+]
+}
+]
+]
+}
+],
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "May take some time",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Text",
+"Once submitted, please wait a while, the calculations may take some time."
 ]
 ]
 }

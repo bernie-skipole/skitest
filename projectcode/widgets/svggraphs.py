@@ -39,13 +39,19 @@ def stars(caller_ident, ident_list, submit_list, submit_dict, call_data, page_da
             # magnitude to drawn diameter
             magnitude = float(cols[3])
             if magnitude > 6.0:
-                star = [0.5]
+                star = [0.1]
+            elif magnitude > 5.0:
+                star = [0.2]
             elif magnitude > 4.0:
-                star = [1]
+                star = [0.5]
+            elif magnitude > 3.0:
+                star = [1.0]
             elif magnitude > 2.0:
-                star = [2]
+                star = [2.0]
+            elif magnitude > 1.0:
+                star = [4.0]
             else:
-                star = [4]
+                star = [6.0]
             star.append(cols[1])
             star.append(cols[2])
             stars.append(star)
