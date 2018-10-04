@@ -2,6 +2,8 @@
 This package will be called by the Skipole framework to access your data.
 """
 
+import os
+
 # this import used by basic authentication
 from base64 import b64decode
 
@@ -22,6 +24,10 @@ def start_project(project, projectfiles, path, option):
            This function can be used to set any initial parameters, and the dictionary returned will
            be passed as 'proj_data' to subsequent start_call functions."""
     proj_data = {}
+
+    # Set environ variable for Yale Bright star catalogue
+    # this is required for testing the starchart widget
+    os.environ["BSC_PATH"] = "/home/bernie/test"
     return proj_data
 
 
@@ -122,6 +128,7 @@ _HEADER_TEXT = { 2001 : "Project skitest.",
                 14801:"Tests for the TagBlock widget.",
                 15001:"Tests for the UList1 widget.",
                 15101:"Tests for the Chart1 widget.",
+                15105:"Tests for the StarChart widget.",
                 15201:"Tests for the Vertical1 widget.",
                 15203:"Tests for the Traditional1 widget.",
                 15401: "The headers module",
@@ -188,6 +195,7 @@ _NAV_BUTTONS = {
                  14801:[['home','Home', False, ''], ['modules', 'Modules', False, ''],['paras', 'paras', False, '']],
                  15001:[['home','Home', False, ''], ['modules', 'Modules', False, ''],['lists', 'lists', False, '']],
                  15101:[['home','Home', False, ''], ['modules', 'Modules', False, ''],['svggraphs', 'svggraphs', False, '']],
+                 15105:[['home','Home', False, ''], ['modules', 'Modules', False, ''],['svggraphs', 'svggraphs', False, '']],
                  15201:[['home','Home', False, ''], ['modules', 'Modules', False, ''],['svgmeters', 'svgmeters', False, '']],
                  15203:[['home','Home', False, ''], ['modules', 'Modules', False, ''],['svgmeters', 'svgmeters', False, '']],
                  15401:[['home','Home', False, ''], ['modules', 'Modules', False, '']],
