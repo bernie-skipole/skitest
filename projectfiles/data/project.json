@@ -19625,7 +19625,7 @@ false,
 "name": "setchart",
 "brief": "form to set chart centre and field of view",
 "fields": {
-"action": "no_javascript",
+"action": "5106",
 "action_json": "",
 "button_class": "w3-button w3-theme-d4",
 "button_text": "Submit",
@@ -19985,7 +19985,7 @@ false,
 "input_text": "",
 "left_class": "ski_left_label",
 "left_label": "Diameter of the field of view:",
-"maxlength": "",
+"maxlength": "4",
 "pattern": "",
 "required": false,
 "right_class": "",
@@ -19993,7 +19993,7 @@ false,
 "set_input_accepted": false,
 "set_input_errored": false,
 "show": true,
-"size": "",
+"size": "4",
 "title": "",
 "type": "text",
 "widget_class": "",
@@ -20098,6 +20098,39 @@ false,
 "target_ident": 15105
 },
 "original_fields": {}
+}
+},
+"starchart_test2": {
+"ident": 5106,
+"brief": "Checks input for star chart test",
+"RespondPage": {
+"class": "AllowStore",
+"original_args": {
+"allowed_callers": [
+15105
+],
+"alternate_ident": "home",
+"fail_ident": 5105,
+"submit_list": [
+"widgets",
+"svggraphs",
+"check_target"
+],
+"submit_option": true,
+"target_ident": 5105,
+"validate_fail_ident": null,
+"validate_option": false
+},
+"original_fields": {
+"dec_deg:input_text": "",
+"dec_min:input_text": "",
+"dec_sec:input_text": "",
+"dec_sign:input_text": "",
+"ra_hr:input_text": "",
+"ra_min:input_text": "",
+"ra_sec:input_text": "",
+"view:input_text": ""
+}
 }
 }
 }
