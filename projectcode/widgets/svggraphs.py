@@ -29,6 +29,16 @@ def stars(caller_ident, ident_list, submit_list, submit_dict, call_data, page_da
         view = 180.0
         ra = 0.0
         dec = 90.0
+        page_data['ra_hr','input_text'] = "0"
+        page_data['ra_min','input_text'] = "0"
+        page_data['ra_sec','input_text'] = "0.0"
+        page_data['dec_sign','input_text'] = "+"
+        page_data['dec_deg','input_text'] = "90"
+        page_data['dec_min','input_text'] = "0"
+        page_data['dec_sec','input_text'] = "0.0"
+        page_data['view','input_text'] = "180.0"
+
+
 
     str_ra = "{:2.8f}".format(ra)
     str_dec = "{:2.8f}".format(dec)
@@ -37,6 +47,7 @@ def stars(caller_ident, ident_list, submit_list, submit_dict, call_data, page_da
     page_data['starchart', 'ra'] = str_ra
     page_data['starchart', 'dec'] = str_dec
     page_data['starchart', 'view'] = view
+    page_data['starchart', 'transform'] = "translate(10 10)"
 
     # convert view to radius in arc seconds
     radius_view = str(view * 3600/2.0)
