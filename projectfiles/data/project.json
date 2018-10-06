@@ -15821,6 +15821,7 @@ false,
 "input_accepted_class": "",
 "input_class": "ski_input",
 "input_errored_class": "",
+"input_style": "",
 "input_text": "",
 "left_class": "",
 "left_label": "Label on left:",
@@ -19769,18 +19770,15 @@ false,
 }
 ],
 [
-"HTMLSymbol",
-{
-"text": "&nbsp;"
-}
-],
-[
 "Part",
 {
 "tag_name": "span",
 "brief": "text of (Hour, Minutes, seconds)",
 "show": true,
 "hide_if_empty": false,
+"attribs": {
+"style": "margin-left:1em;"
+},
 "parts": [
 [
 "Text",
@@ -19940,18 +19938,15 @@ false,
 }
 ],
 [
-"HTMLSymbol",
-{
-"text": "&nbsp;"
-}
-],
-[
 "Part",
 {
 "tag_name": "span",
 "brief": "text of (sign, Degrees, Minutes, seconds)",
 "show": true,
 "hide_if_empty": false,
+"attribs": {
+"style": "margin-left:1em;"
+},
 "parts": [
 [
 "Text",
@@ -19985,6 +19980,7 @@ false,
 "input_accepted_class": "",
 "input_class": "ski_input",
 "input_errored_class": "",
+"input_style": "margin-right:1em;",
 "input_text": "",
 "left_class": "ski_left_label",
 "left_label": "Diameter of the field of view:",
