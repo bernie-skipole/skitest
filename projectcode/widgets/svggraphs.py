@@ -40,19 +40,12 @@ def stars(caller_ident, ident_list, submit_list, submit_dict, call_data, page_da
         page_data['dec_sec','input_text'] = "0.0"
         page_data['view','input_text'] = "180.0"
 
-    received_cookies = call_data['received_cookies']
-    if 'starchart' in received_cookies:
-        alignlist = received_cookies['starchart'].split(':')
-        if len(alignlist) == 3:
-            flipl = True if alignlist[0] == '1' else False
-            flipr = True if alignlist[1] == '1' else False
-            rot = alignlist[2]
-            alignstring = "translate(10 10)"
-            if rot and rot != "0":
-                alignstring += " rotate(" + rot + ",250,250)"
-            page_data['starchart', 'transform'] = alignstring
-    else:
-        page_data['starchart', 'transform'] = "translate(10 10)"
+    # read the cookie
+    flipv, fliph, rot = _read_cookie(call_data)
+    # get the transform string and cookie
+    transform, cki = _transform_cookie(flipv, fliph, rot, call_data)
+    # set the transform
+    page_data['starchart', 'transform'] = transform
 
     str_ra = "{:2.8f}".format(ra)
     str_dec = "{:2.8f}".format(dec)
@@ -245,88 +238,121 @@ def check_target(caller_ident, ident_list, submit_list, submit_dict, call_data, 
 def rotate_plus(caller_ident, ident_list, submit_list, submit_dict, call_data, page_data, lang):
     """Rotates the chart by 20 degrees"""
 
-    rot = 0
-    ck_string = '0:0:'
-    received_cookies = call_data['received_cookies']
-    if 'starchart' in received_cookies:
-        alignlist = received_cookies['starchart'].split(':')
-        if len(alignlist) == 3:
-            flipl = True if alignlist[0] == '1' else False
-            flipr = True if alignlist[1] == '1' else False
-            if alignlist[2]:
-                rot = int(alignlist[2])
-            else:
-                rot = 0
-            if flipl:
-                ck_string = "1:"
-            else:
-                ck_string = "0:"
-            if flipr:
-                ck_string += "1:"
-            else:
-                ck_string += "0:"
+    flipv, fliph, rot = _read_cookie(call_data)
 
+    # Do the actual rotating
     rot += 20
     if rot >= 360:
         rot -= 360
 
-    if rot:
-        page_data['starchart', 'transform'] = "translate(10 10) rotate(" + str(rot) + ",250,250)"
-    else:
-        page_data['starchart', 'transform'] = "translate(10 10)"
-
-    # set a cookie for cookie key 'starchart'
-    cki = cookies.SimpleCookie()
-    cki['starchart'] = ck_string + str(rot)
-    # twelve hours expirey time
-    cki['starchart']['max-age'] = 43200
-    # set root project path
-    url_dict = projectURLpaths()
-    cki['starchart']['path'] = url_dict[call_data['project']]
+    # get the new transform string and cookie
+    transform, cki = _transform_cookie(flipv, fliph, rot, call_data)
+    page_data['starchart', 'transform'] = transform
     return cki
 
 def rotate_minus(caller_ident, ident_list, submit_list, submit_dict, call_data, page_data, lang):
     """Rotates the chart by -20 degrees"""
 
-    rot = 0
-    ck_string = '0:0:'
-    received_cookies = call_data['received_cookies']
-    if 'starchart' in received_cookies:
-        alignlist = received_cookies['starchart'].split(':')
-        if len(alignlist) == 3:
-            flipl = True if alignlist[0] == '1' else False
-            flipr = True if alignlist[1] == '1' else False
-            if alignlist[2]:
-                rot = int(alignlist[2])
-            else:
-                rot = 0
-            if flipl:
-                ck_string = "1:"
-            else:
-                ck_string = "0:"
-            if flipr:
-                ck_string += "1:"
-            else:
-                ck_string += "0:"
+    flipv, fliph, rot = _read_cookie(call_data)
 
+    # Do the actual rotating
     rot -= 20
     if rot < 0:
         rot += 360
 
-    if rot:
-        page_data['starchart', 'transform'] = "translate(10 10) rotate(" + str(rot) + ",250,250)"
+    # get the new transform string and cookie
+    transform, cki = _transform_cookie(flipv, fliph, rot, call_data)
+    page_data['starchart', 'transform'] = transform
+    return cki
+
+
+
+def flip_v(caller_ident, ident_list, submit_list, submit_dict, call_data, page_data, lang):
+    """Flips the chart vertically"""
+
+    flipv, fliph, rot = _read_cookie(call_data)
+
+    # Do the actual flipping
+    if flipv:
+        flipv = False
     else:
-        page_data['starchart', 'transform'] = "translate(10 10)"
+        flipv = True
+
+    # get the new transform string and cookie
+    transform, cki = _transform_cookie(flipv, fliph, rot, call_data)
+    page_data['starchart', 'transform'] = transform
+    return cki
+
+
+def flip_h(caller_ident, ident_list, submit_list, submit_dict, call_data, page_data, lang):
+    """Flips the chart horizontally"""
+
+    flipv, fliph, rot = _read_cookie(call_data)
+
+    # Do the actual flipping
+    if fliph:
+        fliph = False
+    else:
+        fliph = True
+
+    # get the new transform string and cookie
+    transform, cki = _transform_cookie(flipv, fliph, rot, call_data)
+    page_data['starchart', 'transform'] = transform
+    return cki
+
+
+def _read_cookie(call_data):
+    "Reads cookie, and returns flipv, fliph, rot"
+    rot = 0
+    flipv = False
+    fliph = False
+    received_cookies = call_data['received_cookies']
+    if 'starchart' in received_cookies:
+        clist = received_cookies['starchart'].split(':')
+        if len(clist) == 3:
+            flipv = True if clist[0] == '1' else False
+            fliph = True if clist[1] == '1' else False
+            if clist[2]:
+                rot = int(clist[2])
+            else:
+                rot = 0
+    return flipv, fliph, rot
+
+
+def _transform_cookie(flipv, fliph, rot, call_data):
+    "Returns transform_string, cookie"
+    # set the widget transform attribute
+    if flipv and fliph:
+        transform = "translate(510 510) scale(-1)"
+    elif flipv:
+        transform = "translate(10 510) scale(1, -1)"
+    elif fliph:
+        transform = "translate(510 10) scale(-1, 1)"
+    else:
+        transform = "translate(10 10)"
+
+    if rot:
+        transform += " rotate(" + str(rot) + ",250,250)"
 
     # set a cookie for cookie key 'starchart'
+    if flipv:
+        ck_string = "1:"
+    else:
+        ck_string = "0:"
+    if fliph:
+        ck_string += "1:"
+    else:
+        ck_string += "0:"
+    ck_string += str(rot)
     cki = cookies.SimpleCookie()
-    cki['starchart'] = ck_string + str(rot)
+    cki['starchart'] = ck_string
     # twelve hours expirey time
     cki['starchart']['max-age'] = 43200
     # set root project path
     url_dict = projectURLpaths()
     cki['starchart']['path'] = url_dict[call_data['project']]
-    return cki
+    return transform, cki
+
     
 
 

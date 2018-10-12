@@ -19571,7 +19571,7 @@ false,
 "get_field1": "",
 "get_field2": "",
 "hide": false,
-"json_ident": "",
+"json_ident": "5109",
 "link_ident": "no_javascript",
 "show": true,
 "show_error": "",
@@ -19597,7 +19597,7 @@ false,
 "get_field1": "",
 "get_field2": "",
 "hide": false,
-"json_ident": "",
+"json_ident": "5110",
 "link_ident": "no_javascript",
 "show": true,
 "show_error": "",
@@ -20294,6 +20294,42 @@ false,
 "widgets",
 "svggraphs",
 "rotate_minus"
+],
+"target_ident": "general_json"
+},
+"original_fields": {}
+}
+},
+"starchart_test5": {
+"ident": 5109,
+"brief": "flip horizontally",
+"RespondPage": {
+"class": "SetCookies",
+"original_args": {
+"allowed_callers": [],
+"fail_ident": "general_json",
+"submit_list": [
+"widgets",
+"svggraphs",
+"flip_h"
+],
+"target_ident": "general_json"
+},
+"original_fields": {}
+}
+},
+"starchart_test6": {
+"ident": 5110,
+"brief": "flip vertically",
+"RespondPage": {
+"class": "SetCookies",
+"original_args": {
+"allowed_callers": [],
+"fail_ident": "general_json",
+"submit_list": [
+"widgets",
+"svggraphs",
+"flip_v"
 ],
 "target_ident": "general_json"
 },
