@@ -15792,7 +15792,7 @@ false,
 "button_text": "Submit",
 "button_wait_text": "",
 "clear_error": false,
-"container_class": "",
+"container_class": "w3-section",
 "div_class": "",
 "enctype": "",
 "error_class": "w3-panel w3-red",
@@ -15818,12 +15818,12 @@ false,
 "brief": "textinput3 widget",
 "fields": {
 "disabled": false,
-"input_accepted_class": "",
+"input_accepted_class": "ski_input_accepted",
 "input_class": "ski_input",
-"input_errored_class": "",
-"input_style": "",
+"input_errored_class": "ski_input_errored",
+"input_style": "margin-right:1em;",
 "input_text": "",
-"left_class": "",
+"left_class": "ski_left_label",
 "left_label": "Label on left:",
 "maxlength": "",
 "pattern": "",
@@ -19547,6 +19547,138 @@ false,
 "Part",
 {
 "tag_name": "div",
+"brief": "Holds flip buttons",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"style": "float:left;"
+},
+"parts": [
+[
+"Widget",
+{
+"class": "links.ButtonLink2",
+"name": "flip_h",
+"brief": "Flip Horizontal",
+"fields": {
+"button_class": "w3-button w3-block w3-theme-l1 w3-border w3-round",
+"button_text": "Flip Horizontally",
+"button_wait_text": "Please wait...",
+"buttondiv_class": "",
+"buttondiv_style": "",
+"clear_error": false,
+"error_class": "w3-panel w3-red",
+"get_field1": "",
+"get_field2": "",
+"hide": false,
+"json_ident": "",
+"link_ident": "no_javascript",
+"show": true,
+"show_error": "",
+"widget_class": "w3-section",
+"widget_style": ""
+}
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink2",
+"name": "flip_v",
+"brief": "Flip Vertical",
+"fields": {
+"button_class": "w3-button w3-block w3-theme-l1 w3-border w3-round",
+"button_text": "Flip Vertically",
+"button_wait_text": "Please wait...",
+"buttondiv_class": "",
+"buttondiv_style": "",
+"clear_error": false,
+"error_class": "w3-panel w3-red",
+"get_field1": "",
+"get_field2": "",
+"hide": false,
+"json_ident": "",
+"link_ident": "no_javascript",
+"show": true,
+"show_error": "",
+"widget_class": "w3-section",
+"widget_style": ""
+}
+}
+]
+]
+}
+],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "Holds rotate buttons",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"style": "float:right;"
+},
+"parts": [
+[
+"Widget",
+{
+"class": "links.ButtonLink2",
+"name": "rotate_plus",
+"brief": "Rotate by 20 degrees",
+"fields": {
+"button_class": "w3-button w3-block w3-theme-l1 w3-border w3-round",
+"button_text": "Rotate +20",
+"button_wait_text": "Please wait...",
+"buttondiv_class": "",
+"buttondiv_style": "",
+"clear_error": false,
+"error_class": "w3-panel w3-red",
+"get_field1": "",
+"get_field2": "",
+"hide": false,
+"json_ident": "5107",
+"link_ident": "no_javascript",
+"show": true,
+"show_error": "",
+"widget_class": "w3-section",
+"widget_style": ""
+}
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink2",
+"name": "rotate_minus",
+"brief": "Rotate by -20 degrees",
+"fields": {
+"button_class": "w3-button w3-block w3-theme-l1 w3-border w3-round",
+"button_text": "Rotate -20",
+"button_wait_text": "Please wait...",
+"buttondiv_class": "",
+"buttondiv_style": "",
+"clear_error": false,
+"error_class": "w3-panel w3-red",
+"get_field1": "",
+"get_field2": "",
+"hide": false,
+"json_ident": "5108",
+"link_ident": "no_javascript",
+"show": true,
+"show_error": "",
+"widget_class": "w3-section",
+"widget_style": ""
+}
+}
+]
+]
+}
+],
+[
+"Part",
+{
+"tag_name": "div",
 "brief": "div holding a StarChart widget",
 "show": true,
 "hide_if_empty": false,
@@ -20130,6 +20262,42 @@ false,
 "ra_sec:input_text": "",
 "view:input_text": ""
 }
+}
+},
+"starchart_test3": {
+"ident": 5107,
+"brief": "Rotate by +20",
+"RespondPage": {
+"class": "SetCookies",
+"original_args": {
+"allowed_callers": [],
+"fail_ident": "general_json",
+"submit_list": [
+"widgets",
+"svggraphs",
+"rotate_plus"
+],
+"target_ident": "general_json"
+},
+"original_fields": {}
+}
+},
+"starchart_test4": {
+"ident": 5108,
+"brief": "Rotate by -20",
+"RespondPage": {
+"class": "SetCookies",
+"original_args": {
+"allowed_callers": [],
+"fail_ident": "general_json",
+"submit_list": [
+"widgets",
+"svggraphs",
+"rotate_minus"
+],
+"target_ident": "general_json"
+},
+"original_fields": {}
 }
 }
 }
