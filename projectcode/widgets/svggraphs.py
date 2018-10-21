@@ -1,5 +1,5 @@
 
-import subprocess
+from struct import unpack
 
 from http import cookies
 
@@ -56,37 +56,33 @@ def stars(caller_ident, ident_list, submit_list, submit_dict, call_data, page_da
     page_data['starchart', 'view'] = view
 
 
-    # convert view to radius in arc seconds
-    radius_view = str(view * 3600/2.0)
+    max_dec = dec + view/2.0
+    min_dec = dec - view/2.0
 
-    args = ["scat", "-cd", "bsc", "-n", "800", "-r", radius_view, str_ra, str_dec, "J2000"]
-    try:
-        result = subprocess.check_output(args, timeout=2)
-    except:
-        raise FailPage("The star chart requires WCSTools to be present and working")
-    if not result:
-        return
-    for line in result.split(b"\n"):
-        cols = line.decode('ascii').split()
-        if cols:
-            # magnitude to drawn diameter
-            magnitude = float(cols[3])
+    with open("/home/bernie/test/bsc5/bsc5_remscope", "rb") as f:
+        while True:
+            bstar = f.read(12)
+            if not bstar:
+                break
+            ra_degrees, dec_degrees, magnitude = unpack('fff', bstar)
+            if dec_degrees > max_dec:
+                continue
+            if dec_degrees < min_dec:
+                continue
             if magnitude > 6.0:
-                star = [0.1]
+                star = [0.1, ra_degrees, dec_degrees]
             elif magnitude > 5.0:
-                star = [0.2]
+                star = [0.2, ra_degrees, dec_degrees]
             elif magnitude > 4.0:
-                star = [0.5]
+                star = [0.5, ra_degrees, dec_degrees]
             elif magnitude > 3.0:
-                star = [1.0]
+                star = [1.0, ra_degrees, dec_degrees]
             elif magnitude > 2.0:
-                star = [2.0]
+                star = [2.0, ra_degrees, dec_degrees]
             elif magnitude > 1.0:
-                star = [4.0]
+                star = [4.0, ra_degrees, dec_degrees]
             else:
-                star = [6.0]
-            star.append(cols[1])
-            star.append(cols[2])
+                star = [6.0, ra_degrees, dec_degrees]
             stars.append(star)
 
     if stars:
@@ -218,7 +214,7 @@ def check_target(caller_ident, ident_list, submit_list, submit_dict, call_data, 
     strview = call_data['view','input_text']
     try:
         view = float(strview)
-        if (view > 270.0) or (view < 0.0):
+        if (view > 360.0) or (view < 0.01):
             failflag = True
             strview = ''
             view = 90.0
