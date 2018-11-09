@@ -27,6 +27,7 @@
   "page.14020.04": "The following calls a JSON file to set the checkbox above to unticked.",
   "page.14101.01": "A table of a single text column, followed by a button link column.\r\nThere is a header and title over the text column, the button link can have one get field.",
   "page.14105.01": "A MessageButton is a link, which when chosen opens a message display and then calls the JSON or HTML page.  The message text can be altered by JSON. This test requests a JSON file which places appropriate text in the message box.",
+  "page.14110.01": "An Image1 widget is an img tag.  Please note the img_url field is NOT an ident, it is the actual url to be set as the src attribute in the widget.\r\n\r\nThis img_url can be set by JSON call.",
   "page.14201.01": "An ErrorDiv widget is set below this paragraph, normally invisible until an error condition is raised, at which point it will show the error message.",
   "page.14210.01": "An ErrorPara widget is set below this paragraph, normally invisible until an error condition is raised, at which point it will show the error message.",
   "page.14220.01": "A div - normally used for modal background containing a div with a paragraph of error text and a clear button with three optional get fields.\r\nThe 'clear' button hides the widget without making a call if javascript is available. If not, then the link is called.",
