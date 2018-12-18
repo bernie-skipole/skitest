@@ -1,6 +1,6 @@
 from ... import FailPage, GoTo, ValidateError, ServerError
 
-def modules_menu(caller_ident, ident_list, submit_list, submit_dict, call_data, page_data, lang):
+def modules_menu(skicall):
     """Fills in template of links to modules"""
 
     # each tuple in the list below is button text, link ident
@@ -29,11 +29,11 @@ def modules_menu(caller_ident, ident_list, submit_list, submit_dict, call_data, 
                  ('upload', 3022) ]
 
 
-    page_data['modbuttons', 'multiplier'] = len(butt_list)
+    skicall.page_data['modbuttons', 'multiplier'] = len(butt_list)
     for index,item in enumerate(butt_list):
         section_alias = 'modbuttons_' + str(index)
-        page_data[section_alias, 'linkbutton', 'button_text'] = item[0]
-        page_data[section_alias, 'linkbutton', 'link_ident'] = item[1]
+        skicall.page_data[section_alias, 'linkbutton', 'button_text'] = item[0]
+        skicall.page_data[section_alias, 'linkbutton', 'link_ident'] = item[1]
 
 
         

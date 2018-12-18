@@ -1,6 +1,6 @@
 from ... import FailPage, GoTo, ValidateError, ServerError
 
-def responders_menu(caller_ident, ident_list, submit_list, submit_dict, call_data, page_data, lang):
+def responders_menu(skicall):
     """Fills in template of links to responder tests"""
 
     # each tuple in the list below is button text, link ident
@@ -32,11 +32,11 @@ def responders_menu(caller_ident, ident_list, submit_list, submit_dict, call_dat
                  ('SubmitPlainText', 'home') ]
 
 
-    page_data['responderbuttons', 'multiplier'] = len(butt_list)
+    skicall.page_data['responderbuttons', 'multiplier'] = len(butt_list)
     for index,item in enumerate(butt_list):
         section_alias = 'responderbuttons_' + str(index)
-        page_data[section_alias, 'linkbutton', 'button_text'] = item[0]
-        page_data[section_alias, 'linkbutton', 'link_ident'] = item[1]
+        skicall.page_data[section_alias, 'linkbutton', 'button_text'] = item[0]
+        skicall.page_data[section_alias, 'linkbutton', 'link_ident'] = item[1]
 
 
         

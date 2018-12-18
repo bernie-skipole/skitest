@@ -1,6 +1,6 @@
 from ... import FailPage, GoTo, ValidateError, ServerError
 
-def test_blue(caller_ident, ident_list, submit_list, submit_dict, call_data, page_data, lang):
+def test_blue(skicall):
     """Tests submitcss by returning a css style makeblue, white text on a blue background"""
     return { '.makeblue': [['background-color', 'blue'],
                            ['color', 'white'],
@@ -9,7 +9,7 @@ def test_blue(caller_ident, ident_list, submit_list, submit_dict, call_data, pag
                            ] }
 
 
-def test_invblue(caller_ident, ident_list, submit_list, submit_dict, call_data, page_data, lang):
+def test_invblue(skicall):
     """Tests submitcss by returning a css style makeblue, blue text on a white background"""
     return { '.makeblue': [['background-color', 'white'],
                            ['color', 'blue'],

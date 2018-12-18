@@ -32,48 +32,43 @@ def start_project(project, projectfiles, path, option):
     return proj_data
 
 
-def start_call(environ, path, project, called_ident, caller_ident, received_cookies, ident_data, lang, option, proj_data):
+def start_call(called_ident, skicall):
     "When a call is initially received this function is called."
     if not called_ident:
         # return unknown url
-        return None, {}, {}, lang
+        return
 
     # These are sub-project tests
     if called_ident[1] == 400002:
-        return "lib,test1", {}, {}, lang
+        return "lib,test1"
     if called_ident[1] == 400003:
-        return "http://www.bbc.co.uk", {}, {}, lang
-
-    # store the project name and any cookies in the call_data dictionary
-    call_data = {'project':project,
-                 'received_cookies':received_cookies}
-    page_data = {}
+        return "http://www.bbc.co.uk"
 
     # for basic auth, if access to secure3 via 100007 does not have password, return 100107 instead
     if called_ident[1] == 100007:
         # check user allowed to go to secure page 3
-        auth = environ.get('HTTP_AUTHORIZATION')
+        auth = skicall.environ.get('HTTP_AUTHORIZATION')
         if auth:
             scheme, data = auth.split(" ", 1)
             assert scheme.lower() == 'basic'
             username, password = b64decode(data).decode('UTF-8').split(':', 1)
             if len(username) > 3 and password == "password3":
                 # login ok
-                call_data['USERNAME'] = username
-                return called_ident, call_data, page_data, lang
+                skicall.call_data['USERNAME'] = username
+                return called_ident
         # login fail, request a login
-        return (project,100107), call_data, page_data, lang
+        return (skicall.project,100107)
 
-    return called_ident, call_data, page_data, lang
+    return called_ident
 
 
 @use_submit_list
-def submit_data(caller_ident, ident_list, submit_list, submit_dict, call_data, page_data, lang):
+def submit_data(skicall):
     """This function is called when a Responder wishes to submit data for processing in some manner
        For two or more submit_list values, the decorator ensures the matching function is called instead"""
 
     # Show the server error page
-    if submit_list and (submit_list[0] == 'server_error'):
+    if skicall.submit_list and (skicall.submit_list[0] == 'server_error'):
         raise ServerError(message="This is a deliberate error to show the ServerError page", code=666)
     raise ServerError("submit_list string not recognised")
 
@@ -215,7 +210,7 @@ _NAV_BUTTONS = {
                 500101:[['home','Home', False, '']]
                 }
 
-def end_call(page_ident, page_type, call_data, page_data, proj_data, lang):
+def end_call(page_ident, page_type, skicall):
     """This function is called at the end of a call prior to filling the returned page with page_data,
        it can also return an optional ident_data string to embed into forms."""
     if page_type != "TemplatePage":
@@ -223,21 +218,21 @@ def end_call(page_ident, page_type, call_data, page_data, proj_data, lang):
     page_num = page_ident[1]
     # Insert header text into the template page
     if page_num in _HEADER_TEXT:
-        page_data['header', 'headpara', 'para_text']  = _HEADER_TEXT[page_num]
+        skicall.page_data['header', 'headpara', 'para_text']  = _HEADER_TEXT[page_num]
     # Insert navigation links into the template page
     if page_num in _NAV_BUTTONS:
-        page_data['navigation', 'navbuttons', 'nav_links'] = _NAV_BUTTONS[page_num]
+        skicall.page_data['navigation', 'navbuttons', 'nav_links'] = _NAV_BUTTONS[page_num]
     # Insert a status message into the footer if call_data['status'] is given
-    if 'status' in call_data:
-        page_data['foot','foot_status','footer_text'] = call_data['status']
+    if 'status' in skicall.call_data:
+        skicall.page_data['foot','foot_status','footer_text'] = skicall.call_data['status']
     if page_num == 500101:
         # If this is the page of jquery UI tests, add the required javascript
-        page_data['add_jscript'] = """
+        skicall.page_data['add_jscript'] = """
 $( "#date" ).datepicker();
 """
     # set secure1 cookie
-    if 'session' in call_data:
-        return call_data['session']
+    if 'session' in skicall.call_data:
+        return skicall.call_data['session']
 
 
 

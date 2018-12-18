@@ -1,6 +1,6 @@
 from ... import FailPage, GoTo, ValidateError, ServerError
 
-def widgets_menu(caller_ident, ident_list, submit_list, submit_dict, call_data, page_data, lang):
+def widgets_menu(skicall):
     """Fills in template of links to widget tests"""
 
     # each tuple in the list below is button text, link ident
@@ -19,11 +19,11 @@ def widgets_menu(caller_ident, ident_list, submit_list, submit_dict, call_data, 
                  ('HeaderText6', 'home') ]
 
 
-    page_data['widgetbuttons', 'multiplier'] = len(butt_list)
+    skicall.page_data['widgetbuttons', 'multiplier'] = len(butt_list)
     for index,item in enumerate(butt_list):
         section_alias = 'widgetbuttons_' + str(index)
-        page_data[section_alias, 'linkbutton', 'button_text'] = item[0]
-        page_data[section_alias, 'linkbutton', 'link_ident'] = item[1]
+        skicall.page_data[section_alias, 'linkbutton', 'button_text'] = item[0]
+        skicall.page_data[section_alias, 'linkbutton', 'link_ident'] = item[1]
 
 
         
