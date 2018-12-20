@@ -2,8 +2,8 @@
 "url": "/",
 "default_language": "en",
 "brief": "Project to test the skipole framework",
-"version": "0.3.1",
-"skipole": "1.2.0",
+"version": "0.4.0",
+"skipole": "2.0.0",
 "subprojects": {
 "lib": {
 "path": "/lib/"
@@ -1097,6 +1097,7 @@ false,
 "RespondPage": {
 "class": "SubmitData",
 "original_args": {
+"allowed_callers": [],
 "fail_ident": 100,
 "submit_list": [
 "login",
@@ -1681,6 +1682,7 @@ false,
 "RespondPage": {
 "class": "SubmitData",
 "original_args": {
+"allowed_callers": [],
 "fail_ident": "login",
 "submit_list": [
 "login",
@@ -2609,6 +2611,7 @@ false,
 "RespondPage": {
 "class": "SubmitData",
 "original_args": {
+"allowed_callers": [],
 "fail_ident": "home",
 "submit_list": [
 "login",
@@ -2642,6 +2645,7 @@ false,
 "RespondPage": {
 "class": "SubmitData",
 "original_args": {
+"allowed_callers": [],
 "fail_ident": 100,
 "submit_list": [
 "login",
@@ -2658,6 +2662,7 @@ false,
 "RespondPage": {
 "class": "SubmitData",
 "original_args": {
+"allowed_callers": [],
 "fail_ident": 100,
 "submit_list": [
 "login",
@@ -2674,6 +2679,7 @@ false,
 "RespondPage": {
 "class": "SubmitData",
 "original_args": {
+"allowed_callers": [],
 "fail_ident": "home",
 "submit_list": [
 "login",
@@ -3863,6 +3869,7 @@ false,
 "RespondPage": {
 "class": "SubmitData",
 "original_args": {
+"allowed_callers": [],
 "fail_ident": "home",
 "submit_list": [
 "responders",
@@ -4850,6 +4857,7 @@ false,
 "RespondPage": {
 "class": "SubmitData",
 "original_args": {
+"allowed_callers": [],
 "fail_ident": "home",
 "submit_list": [
 "responders",
@@ -4928,6 +4936,7 @@ false,
 "RespondPage": {
 "class": "SubmitData",
 "original_args": {
+"allowed_callers": [],
 "fail_ident": 300003,
 "submit_list": [
 "validators",
@@ -4945,6 +4954,7 @@ false,
 "RespondPage": {
 "class": "SubmitData",
 "original_args": {
+"allowed_callers": [],
 "fail_ident": 300003,
 "submit_list": [
 "validators",
@@ -4962,6 +4972,7 @@ false,
 "RespondPage": {
 "class": "SubmitData",
 "original_args": {
+"allowed_callers": [],
 "fail_ident": 300003,
 "submit_list": [
 "validators",
@@ -4979,6 +4990,7 @@ false,
 "RespondPage": {
 "class": "SubmitData",
 "original_args": {
+"allowed_callers": [],
 "fail_ident": 300003,
 "submit_list": [
 "validators",
@@ -9721,6 +9733,7 @@ false,
 "RespondPage": {
 "class": "SubmitData",
 "original_args": {
+"allowed_callers": [],
 "fail_ident": 14401,
 "submit_list": [
 "widgets",
@@ -9738,6 +9751,7 @@ false,
 "RespondPage": {
 "class": "SubmitData",
 "original_args": {
+"allowed_callers": [],
 "fail_ident": "general_json",
 "submit_list": [
 "widgets",
@@ -9755,6 +9769,7 @@ false,
 "RespondPage": {
 "class": "SubmitData",
 "original_args": {
+"allowed_callers": [],
 "fail_ident": 14401,
 "submit_list": [
 "widgets",
@@ -9772,6 +9787,7 @@ false,
 "RespondPage": {
 "class": "SubmitData",
 "original_args": {
+"allowed_callers": [],
 "fail_ident": "general_json",
 "submit_list": [
 "widgets",
@@ -9800,6 +9816,7 @@ false,
 "RespondPage": {
 "class": "SubmitData",
 "original_args": {
+"allowed_callers": [],
 "fail_ident": 14410,
 "submit_list": [
 "widgets",
@@ -9817,6 +9834,7 @@ false,
 "RespondPage": {
 "class": "SubmitData",
 "original_args": {
+"allowed_callers": [],
 "fail_ident": "general_json",
 "submit_list": [
 "widgets",
@@ -9834,6 +9852,7 @@ false,
 "RespondPage": {
 "class": "SubmitData",
 "original_args": {
+"allowed_callers": [],
 "fail_ident": "general_json",
 "submit_list": [
 "widgets",
@@ -9851,6 +9870,7 @@ false,
 "RespondPage": {
 "class": "SubmitData",
 "original_args": {
+"allowed_callers": [],
 "fail_ident": 14410,
 "submit_list": [
 "widgets",
@@ -9879,6 +9899,7 @@ false,
 "RespondPage": {
 "class": "SubmitData",
 "original_args": {
+"allowed_callers": [],
 "fail_ident": 14420,
 "submit_list": [
 "widgets",
@@ -9896,6 +9917,7 @@ false,
 "RespondPage": {
 "class": "SubmitData",
 "original_args": {
+"allowed_callers": [],
 "fail_ident": "general_json",
 "submit_list": [
 "widgets",
@@ -9922,6 +9944,7 @@ false,
 "RespondPage": {
 "class": "SubmitData",
 "original_args": {
+"allowed_callers": [],
 "fail_ident": 3012,
 "submit_list": [
 "widgets",
@@ -11856,6 +11879,7 @@ false,
 "RespondPage": {
 "class": "SubmitData",
 "original_args": {
+"allowed_callers": [],
 "fail_ident": 4220,
 "submit_list": [
 "widgets",
@@ -11873,6 +11897,7 @@ false,
 "RespondPage": {
 "class": "SubmitData",
 "original_args": {
+"allowed_callers": [],
 "fail_ident": "general_json",
 "submit_list": [
 "widgets",
@@ -11890,6 +11915,7 @@ false,
 "RespondPage": {
 "class": "SubmitData",
 "original_args": {
+"allowed_callers": [],
 "fail_ident": 4220,
 "submit_list": [
 "widgets",
@@ -11907,6 +11933,7 @@ false,
 "RespondPage": {
 "class": "SubmitData",
 "original_args": {
+"allowed_callers": [],
 "fail_ident": "general_json",
 "submit_list": [
 "widgets",
@@ -11935,6 +11962,7 @@ false,
 "RespondPage": {
 "class": "SubmitData",
 "original_args": {
+"allowed_callers": [],
 "fail_ident": 4230,
 "submit_list": [
 "widgets",
@@ -11952,6 +11980,7 @@ false,
 "RespondPage": {
 "class": "SubmitData",
 "original_args": {
+"allowed_callers": [],
 "fail_ident": "general_json",
 "submit_list": [
 "widgets",
@@ -11969,6 +11998,7 @@ false,
 "RespondPage": {
 "class": "SubmitData",
 "original_args": {
+"allowed_callers": [],
 "fail_ident": 4230,
 "submit_list": [
 "widgets",
@@ -11997,6 +12027,7 @@ false,
 "RespondPage": {
 "class": "SubmitData",
 "original_args": {
+"allowed_callers": [],
 "fail_ident": "errordiv",
 "submit_list": [
 "widgets",
@@ -12014,6 +12045,7 @@ false,
 "RespondPage": {
 "class": "SubmitData",
 "original_args": {
+"allowed_callers": [],
 "fail_ident": "errordiv",
 "submit_list": [
 "widgets",
@@ -12031,6 +12063,7 @@ false,
 "RespondPage": {
 "class": "SubmitData",
 "original_args": {
+"allowed_callers": [],
 "fail_ident": "general_json",
 "submit_list": [
 "widgets",
@@ -12048,6 +12081,7 @@ false,
 "RespondPage": {
 "class": "SubmitData",
 "original_args": {
+"allowed_callers": [],
 "fail_ident": "general_json",
 "submit_list": [
 "widgets",
@@ -12065,6 +12099,7 @@ false,
 "RespondPage": {
 "class": "SubmitData",
 "original_args": {
+"allowed_callers": [],
 "fail_ident": "general_json",
 "submit_list": [
 "widgets",
@@ -12119,6 +12154,7 @@ false,
 "RespondPage": {
 "class": "SubmitData",
 "original_args": {
+"allowed_callers": [],
 "fail_ident": "errorpara",
 "submit_list": [
 "widgets",
@@ -12136,6 +12172,7 @@ false,
 "RespondPage": {
 "class": "SubmitData",
 "original_args": {
+"allowed_callers": [],
 "fail_ident": "errorpara",
 "submit_list": [
 "widgets",
@@ -12153,6 +12190,7 @@ false,
 "RespondPage": {
 "class": "SubmitData",
 "original_args": {
+"allowed_callers": [],
 "fail_ident": "general_json",
 "submit_list": [
 "widgets",
@@ -12170,6 +12208,7 @@ false,
 "RespondPage": {
 "class": "SubmitData",
 "original_args": {
+"allowed_callers": [],
 "fail_ident": "general_json",
 "submit_list": [
 "widgets",
@@ -12187,6 +12226,7 @@ false,
 "RespondPage": {
 "class": "SubmitData",
 "original_args": {
+"allowed_callers": [],
 "fail_ident": "general_json",
 "submit_list": [
 "widgets",
@@ -12248,6 +12288,7 @@ false,
 "RespondPage": {
 "class": "SubmitData",
 "original_args": {
+"allowed_callers": [],
 "fail_ident": "general_json",
 "submit_list": [
 "widgets",
@@ -12265,6 +12306,7 @@ false,
 "RespondPage": {
 "class": "SubmitData",
 "original_args": {
+"allowed_callers": [],
 "fail_ident": 3014,
 "submit_list": [
 "widgets",
@@ -12282,6 +12324,7 @@ false,
 "RespondPage": {
 "class": "SubmitData",
 "original_args": {
+"allowed_callers": [],
 "fail_ident": 3014,
 "submit_list": [
 "widgets",
@@ -16673,6 +16716,7 @@ false,
 "RespondPage": {
 "class": "SubmitData",
 "original_args": {
+"allowed_callers": [],
 "fail_ident": "home",
 "submit_list": [
 "widgets",
@@ -16790,6 +16834,7 @@ false,
 "RespondPage": {
 "class": "SubmitData",
 "original_args": {
+"allowed_callers": [],
 "fail_ident": "general_json",
 "submit_list": [
 "widgets",
@@ -16807,6 +16852,7 @@ false,
 "RespondPage": {
 "class": "SubmitData",
 "original_args": {
+"allowed_callers": [],
 "fail_ident": "general_json",
 "submit_list": [
 "widgets",
@@ -16824,6 +16870,7 @@ false,
 "RespondPage": {
 "class": "SubmitData",
 "original_args": {
+"allowed_callers": [],
 "fail_ident": "general_json",
 "submit_list": [
 "widgets",
@@ -16841,6 +16888,7 @@ false,
 "RespondPage": {
 "class": "SubmitData",
 "original_args": {
+"allowed_callers": [],
 "fail_ident": "general_json",
 "submit_list": [
 "widgets",
@@ -17070,6 +17118,7 @@ false,
 "RespondPage": {
 "class": "SubmitData",
 "original_args": {
+"allowed_callers": [],
 "fail_ident": 4680,
 "submit_list": [
 "widgets",
@@ -18059,6 +18108,7 @@ false,
 "RespondPage": {
 "class": "SubmitData",
 "original_args": {
+"allowed_callers": [],
 "fail_ident": "home",
 "submit_list": [
 "widgets",
@@ -18089,6 +18139,7 @@ false,
 "RespondPage": {
 "class": "SubmitData",
 "original_args": {
+"allowed_callers": [],
 "fail_ident": "home",
 "submit_list": [
 "widgets",
@@ -18462,6 +18513,7 @@ false,
 "RespondPage": {
 "class": "SubmitData",
 "original_args": {
+"allowed_callers": [],
 "fail_ident": "home",
 "submit_list": [
 "widgets",
@@ -18479,6 +18531,7 @@ false,
 "RespondPage": {
 "class": "SubmitData",
 "original_args": {
+"allowed_callers": [],
 "fail_ident": "general_json",
 "submit_list": [
 "widgets",
@@ -18995,6 +19048,7 @@ false,
 "RespondPage": {
 "class": "SubmitData",
 "original_args": {
+"allowed_callers": [],
 "fail_ident": 5501,
 "submit_list": [
 "widgets",
@@ -19012,6 +19066,7 @@ false,
 "RespondPage": {
 "class": "SubmitData",
 "original_args": {
+"allowed_callers": [],
 "fail_ident": 5501,
 "submit_list": [
 "widgets",
@@ -20541,6 +20596,7 @@ false,
 "RespondPage": {
 "class": "SubmitData",
 "original_args": {
+"allowed_callers": [],
 "fail_ident": "home",
 "submit_list": [
 "widgets",
@@ -20558,6 +20614,7 @@ false,
 "RespondPage": {
 "class": "SubmitData",
 "original_args": {
+"allowed_callers": [],
 "fail_ident": "general_json",
 "submit_list": [
 "widgets",
@@ -20575,6 +20632,7 @@ false,
 "RespondPage": {
 "class": "SubmitData",
 "original_args": {
+"allowed_callers": [],
 "fail_ident": "home",
 "submit_list": [
 "widgets",
@@ -21260,6 +21318,7 @@ false,
 "RespondPage": {
 "class": "SubmitData",
 "original_args": {
+"allowed_callers": [],
 "fail_ident": "home",
 "submit_list": [
 "widgets",
@@ -21277,6 +21336,7 @@ false,
 "RespondPage": {
 "class": "SubmitData",
 "original_args": {
+"allowed_callers": [],
 "fail_ident": "general_json",
 "submit_list": [
 "widgets",
@@ -21294,6 +21354,7 @@ false,
 "RespondPage": {
 "class": "SubmitData",
 "original_args": {
+"allowed_callers": [],
 "fail_ident": "home",
 "submit_list": [
 "widgets",
@@ -21311,6 +21372,7 @@ false,
 "RespondPage": {
 "class": "SubmitData",
 "original_args": {
+"allowed_callers": [],
 "fail_ident": "general_json",
 "submit_list": [
 "widgets",
@@ -23304,6 +23366,7 @@ false,
 "RespondPage": {
 "class": "SubmitData",
 "original_args": {
+"allowed_callers": [],
 "fail_ident": "home",
 "submit_list": [
 "widgets",
@@ -25641,6 +25704,7 @@ false,
 "RespondPage": {
 "class": "SubmitData",
 "original_args": {
+"allowed_callers": [],
 "fail_ident": "home",
 "submit_list": [
 "widgets",
@@ -27681,6 +27745,7 @@ false,
 "RespondPage": {
 "class": "SubmitData",
 "original_args": {
+"allowed_callers": [],
 "fail_ident": "home",
 "submit_list": [
 "server_error"
