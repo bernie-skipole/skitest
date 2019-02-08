@@ -3,7 +3,7 @@
 "default_language": "en",
 "brief": "Project to test the skipole framework",
 "version": "0.4.0",
-"skipole": "2.0.0",
+"skipole": "2.3.7",
 "subprojects": {
 "lib": {
 "path": "/lib/"
@@ -2711,7 +2711,6 @@ false,
 "RespondPage": {
 "class": "MediaQuery",
 "original_args": {
-"alternate_ident": 202102,
 "fail_ident": null,
 "submit_option": false
 },
@@ -7255,6 +7254,8 @@ false,
 "hide": false,
 "json_ident": "check3test",
 "link_ident": "no_javascript",
+"local_storage": "",
+"session_storage": "",
 "show": true,
 "show_error": "",
 "widget_class": "w3-button w3-block w3-theme-d4",
@@ -7314,6 +7315,8 @@ false,
 "hide": false,
 "json_ident": "check4test",
 "link_ident": "no_javascript",
+"local_storage": "",
+"session_storage": "",
 "show": true,
 "show_error": "",
 "widget_class": "w3-button w3-block w3-theme-d4",
@@ -7373,6 +7376,8 @@ false,
 "hide": false,
 "json_ident": "check5test",
 "link_ident": "no_javascript",
+"local_storage": "",
+"session_storage": "",
 "show": true,
 "show_error": "",
 "widget_class": "w3-button w3-block w3-theme-d4",
@@ -7432,6 +7437,8 @@ false,
 "hide": false,
 "json_ident": "check6test",
 "link_ident": "no_javascript",
+"local_storage": "",
+"session_storage": "",
 "show": true,
 "show_error": "",
 "widget_class": "w3-button w3-block w3-theme-d4",
@@ -7825,6 +7832,8 @@ false,
 "hide": false,
 "json_ident": "check11test",
 "link_ident": "no_javascript",
+"local_storage": "",
+"session_storage": "",
 "show": true,
 "show_error": "",
 "widget_class": "w3-button w3-block w3-theme-d4",
@@ -7884,6 +7893,8 @@ false,
 "hide": false,
 "json_ident": "check12test",
 "link_ident": "no_javascript",
+"local_storage": "",
+"session_storage": "",
 "show": true,
 "show_error": "",
 "widget_class": "w3-button w3-block w3-theme-d4",
@@ -8283,6 +8294,8 @@ false,
 "hide": false,
 "json_ident": "check21test",
 "link_ident": "no_javascript",
+"local_storage": "",
+"session_storage": "",
 "show": true,
 "show_error": "",
 "widget_class": "w3-button w3-block w3-theme-d4",
@@ -8342,6 +8355,8 @@ false,
 "hide": false,
 "json_ident": "check22test",
 "link_ident": "no_javascript",
+"local_storage": "",
+"session_storage": "",
 "show": true,
 "show_error": "",
 "widget_class": "w3-button w3-block w3-theme-d4",
@@ -10256,6 +10271,8 @@ false,
 "hide": false,
 "json_ident": "errorclear1_test2",
 "link_ident": "no_javascript",
+"local_storage": "",
+"session_storage": "",
 "show": true,
 "show_error": "",
 "widget_class": "w3-button w3-block w3-theme-d4",
@@ -10304,6 +10321,8 @@ false,
 "hide": false,
 "json_ident": "errorclear1_test4",
 "link_ident": "no_javascript",
+"local_storage": "",
+"session_storage": "",
 "show": true,
 "show_error": "",
 "widget_class": "w3-button w3-block w3-theme-d4",
@@ -11055,6 +11074,8 @@ false,
 "hide": false,
 "json_ident": "errordiv_test3",
 "link_ident": "no_javascript",
+"local_storage": "",
+"session_storage": "",
 "show": true,
 "show_error": "",
 "widget_class": "w3-button w3-block w3-theme-d4",
@@ -11107,6 +11128,8 @@ false,
 "hide": false,
 "json_ident": "errordiv_test4",
 "link_ident": "no_javascript",
+"local_storage": "",
+"session_storage": "",
 "show": true,
 "show_error": "",
 "widget_class": "w3-button w3-block w3-theme-d4",
@@ -11159,6 +11182,8 @@ false,
 "hide": false,
 "json_ident": "errordiv_test5",
 "link_ident": "no_javascript",
+"local_storage": "",
+"session_storage": "",
 "show": true,
 "show_error": "",
 "widget_class": "w3-button w3-block w3-theme-d4",
@@ -11642,6 +11667,8 @@ false,
 "hide": false,
 "json_ident": "errorpara_test3",
 "link_ident": "no_javascript",
+"local_storage": "",
+"session_storage": "",
 "show": true,
 "show_error": "",
 "widget_class": "w3-button w3-block w3-theme-d4",
@@ -11694,6 +11721,8 @@ false,
 "hide": false,
 "json_ident": "errorpara_test4",
 "link_ident": "no_javascript",
+"local_storage": "",
+"session_storage": "",
 "show": true,
 "show_error": "",
 "widget_class": "w3-button w3-block w3-theme-d4",
@@ -11746,6 +11775,8 @@ false,
 "hide": false,
 "json_ident": "errorpara_test5",
 "link_ident": "no_javascript",
+"local_storage": "",
+"session_storage": "",
 "show": true,
 "show_error": "",
 "widget_class": "w3-button w3-block w3-theme-d4",
@@ -16602,6 +16633,8 @@ false,
 "hide": false,
 "json_ident": "4682",
 "link_ident": "no_javascript",
+"local_storage": "",
+"session_storage": "",
 "show": true,
 "show_error": "",
 "widget_class": "w3-button w3-block w3-theme-d4",
@@ -17377,6 +17410,8 @@ false,
 "hide": false,
 "json_ident": "4111",
 "link_ident": "no_javascript",
+"local_storage": "",
+"session_storage": "",
 "show": true,
 "show_error": "",
 "widget_class": "w3-button w3-block w3-theme-d4",
@@ -18473,6 +18508,8 @@ false,
 "hide": false,
 "json_ident": 5002,
 "link_ident": "no_javascript",
+"local_storage": "",
+"session_storage": "",
 "show": true,
 "show_error": "",
 "widget_class": "w3-button w3-block w3-theme-d4",
@@ -18919,6 +18956,8 @@ false,
 "hide": false,
 "json_ident": "5503",
 "link_ident": "no_javascript",
+"local_storage": "",
+"session_storage": "",
 "show": true,
 "show_error": "",
 "widget_class": "w3-button w3-block w3-theme-d4",
@@ -18972,6 +19011,8 @@ false,
 "hide": false,
 "json_ident": "5504",
 "link_ident": "no_javascript",
+"local_storage": "",
+"session_storage": "",
 "show": true,
 "show_error": "",
 "widget_class": "w3-button w3-block w3-theme-d4",
@@ -19093,6 +19134,314 @@ false,
 "restricted": true,
 "folders": {},
 "pages": {
+"divhtml": {
+"ident": 14810,
+"brief": "Template for DivHTML test",
+"TemplatePage": {
+"show_backcol": false,
+"last_scroll": true,
+"interval": 0,
+"interval_target": null,
+"lang": "en",
+"backcol": "#9dbd7a",
+"default_error_widget": [
+"header",
+"top_error"
+]
+},
+"head": [
+"Part",
+{
+"tag_name": "head",
+"brief": "The head section of the page",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"ClosedPart",
+{
+"tag_name": "meta",
+"brief": "The charset meta declaration",
+"show": true,
+"attribs": {
+"charset": "utf-8"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "meta",
+"brief": "The viewport meta declaration",
+"show": true,
+"attribs": {
+"content": "width=device-width, initial-scale=1",
+"name": "viewport"
+}
+}
+],
+[
+"Part",
+{
+"tag_name": "title",
+"brief": "The page title element",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Text",
+"DivHTML"
+]
+]
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to w3_css",
+"show": true,
+"attribs": {
+"href": "{w3_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to w3_theme_ski_css",
+"show": true,
+"attribs": {
+"href": "{w3_theme_ski_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to ski_css",
+"show": true,
+"attribs": {
+"href": "{ski_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"Part",
+{
+"tag_name": "script",
+"brief": "script link to jquery_core",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"src": "{jquery_core}"
+},
+"parts": []
+}
+],
+[
+"Part",
+{
+"tag_name": "script",
+"brief": "script link to skipole_js",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"src": "{skipole_js}"
+},
+"parts": []
+}
+]
+]
+}
+],
+"body": [
+"Part",
+{
+"tag_name": "body",
+"brief": "The body section of the page",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "w3-theme"
+},
+"parts": [
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "container",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "w3-container"
+},
+"parts": [
+[
+"SectionPlaceHolder",
+{
+"brief": "Page header",
+"section_name": "header",
+"placename": "header",
+"multiplier": 1,
+"mtag": "div"
+}
+],
+[
+"SectionPlaceHolder",
+{
+"brief": "Left navigation panel",
+"section_name": "navigation",
+"placename": "navigation",
+"multiplier": 1,
+"mtag": "div"
+}
+],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "centre",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "w3-section",
+"style": "margin-left:25%"
+},
+"parts": [
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "Top description",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"TextBlock",
+{
+"textref": "page.14810.01",
+"failmessage": "TextBlock not found",
+"show": true,
+"escape": true,
+"linebreaks": true,
+"decode": false
+}
+]
+]
+}
+],
+[
+"Widget",
+{
+"class": "paras.DivHTML",
+"name": "divhtml",
+"brief": "DivHTML widget",
+"fields": {
+"drag": "",
+"drop": "",
+"dropident": "",
+"hide": false,
+"set_html": "<p>Hello<br />World</p>",
+"show": true,
+"widget_class": "",
+"widget_style": ""
+}
+}
+],
+[
+"Widget",
+{
+"class": "links.ButtonLink2",
+"name": "jsonupdate",
+"brief": "Updates DivHTML widget",
+"fields": {
+"button_class": "w3-button w3-block w3-theme-l1 w3-border w3-round",
+"button_text": "Update by JSON",
+"button_wait_text": "Please wait...",
+"buttondiv_class": "ski_mid_button",
+"buttondiv_style": "",
+"clear_error": false,
+"error_class": "w3-panel w3-red",
+"get_field1": "",
+"get_field2": "",
+"hide": false,
+"json_ident": "4811",
+"link_ident": "no_javascript",
+"show": true,
+"show_error": "",
+"widget_class": "w3-section",
+"widget_style": ""
+}
+}
+],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "Holds button",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "ski_mid_button"
+},
+"parts": [
+[
+"Widget",
+{
+"class": "links.ButtonLink1",
+"name": "htmlupdate",
+"brief": "Updates DivHTML widget by html",
+"fields": {
+"button_text": "Update by HTML",
+"clear_error": false,
+"error_class": "w3-button w3-block w3-theme-action",
+"force_ident": false,
+"get_field1": "",
+"get_field2": "",
+"get_field3": "",
+"get_field4": "",
+"hide": false,
+"link_ident": "4812",
+"show": true,
+"show_error": "",
+"target": "",
+"widget_class": "w3-button w3-block w3-theme-l1 w3-border w3-round",
+"widget_style": ""
+}
+}
+]
+]
+}
+],
+[
+"SectionPlaceHolder",
+{
+"brief": "section footer with alias foot",
+"section_name": "footer",
+"placename": "foot",
+"multiplier": 1,
+"mtag": "div"
+}
+]
+]
+}
+]
+]
+}
+]
+]
+}
+]
+},
 "tagblock": {
 "ident": 14801,
 "brief": "Template for tagblock tests",
@@ -19385,6 +19734,45 @@ false,
 }
 },
 "pages": {
+"divhtml": {
+"ident": 4810,
+"brief": "Fills in divhtml page",
+"RespondPage": {
+"class": "NoOperation",
+"original_args": {
+"target_ident": 14810
+},
+"original_fields": {}
+}
+},
+"divhtmltest1": {
+"ident": 4811,
+"brief": "Updates divhtml by JSON",
+"JSON": {
+"enable_cache": false,
+"content": {
+"divhtml:set_html": "<p>And this is an\r\nupdated<br />Hello World string</p>"
+}
+}
+},
+"divhtmltest2": {
+"ident": 4812,
+"brief": "Updates divhtml by HTML",
+"RespondPage": {
+"class": "SubmitData",
+"original_args": {
+"allowed_callers": [],
+"fail_ident": 4810,
+"submit_list": [
+"widgets",
+"paras",
+"divhtml_test2"
+],
+"target_ident": 4810
+},
+"original_fields": {}
+}
+},
 "tagblock": {
 "ident": 4801,
 "brief": "Responder for page of tagblock tests",
@@ -19717,6 +20105,8 @@ false,
 "hide": false,
 "json_ident": 5102,
 "link_ident": "no_javascript",
+"local_storage": "",
+"session_storage": "",
 "show": true,
 "show_error": "",
 "widget_class": "w3-button w3-block w3-theme-d4",
@@ -25928,31 +26318,29 @@ false,
 "brief": "Holds buttons",
 "show": true,
 "hide_if_empty": false,
-"attribs": {
-"style": "margin-left:15%;width:50%;margin-right:auto;"
-},
 "parts": [
 [
 "Widget",
 {
-"class": "links.ButtonLink1",
+"class": "links.ButtonLink2",
 "name": "TagBlock",
 "brief": "Link to TagBlock widget test page",
 "fields": {
+"button_class": "w3-button w3-block w3-theme-l1 w3-border w3-round",
 "button_text": "TagBlock",
+"button_wait_text": "Please wait...",
+"buttondiv_class": "ski_mid_button",
+"buttondiv_style": "",
 "clear_error": false,
-"error_class": "w3-button w3-block w3-theme-action",
-"force_ident": false,
+"error_class": "w3-panel w3-red",
 "get_field1": "",
 "get_field2": "",
-"get_field3": "",
-"get_field4": "",
 "hide": false,
-"link_ident": 4801,
+"json_ident": "",
+"link_ident": "4801",
 "show": true,
 "show_error": "",
-"target": "",
-"widget_class": "w3-button w3-block w3-theme-d4",
+"widget_class": "w3-section",
 "widget_style": ""
 }
 }
@@ -25960,24 +26348,25 @@ false,
 [
 "Widget",
 {
-"class": "links.ButtonLink1",
-"name": "ParaText",
-"brief": "Link to ParaText widget test page",
+"class": "links.ButtonLink2",
+"name": "DivHTML",
+"brief": "Link to TagBlock widget test page",
 "fields": {
-"button_text": "ParaText",
+"button_class": "w3-button w3-block w3-theme-l1 w3-border w3-round",
+"button_text": "DivHTML",
+"button_wait_text": "Please wait...",
+"buttondiv_class": "ski_mid_button",
+"buttondiv_style": "",
 "clear_error": false,
-"error_class": "w3-button w3-block w3-theme-action",
-"force_ident": false,
+"error_class": "w3-panel w3-red",
 "get_field1": "",
 "get_field2": "",
-"get_field3": "",
-"get_field4": "",
 "hide": false,
-"link_ident": "home",
+"json_ident": "",
+"link_ident": "4810",
 "show": true,
 "show_error": "",
-"target": "",
-"widget_class": "w3-button w3-block w3-theme-d4",
+"widget_class": "w3-section",
 "widget_style": ""
 }
 }

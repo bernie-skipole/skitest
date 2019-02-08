@@ -49,6 +49,7 @@
   "page.14680.02": "It is possible to set 'accepted' or 'errored' classes on the input fields. The following button requests a JSON response to set such flags on the above fields.",
   "page.14690.01": "SubmitDict1: A  form with a list of input fields followed by a single submit button to allow a client to input a dictionary.\r\nThe widget 'input_dict' field is used with an ordered dictionary of keys:values, the keys are embedded in the field names, the values are input text values. On submission input_dict returned is a dictionary with the same keys, and values filled in from the form.",
   "page.14801.01": "A widget which can contain further html or widgets. Can provide drag and drop functionality.",
+  "page.14810.01": "Unescaped text set as HTML can be set in this div, this can be updated by JSON.",
   "page.15001.01": "An Unordered List widget containing text strings, these are JSON settable.",
   "page.15101.01": "An SVG Chart1 widget containing a list of values, these are JSON settable.",
   "page.15105.01": "Displays a star chart, centered at a given point.\r\nThis particular test generates star positions from a copy of the Yale Bright Star catalogue, which, together with WCSTools, must be available on the web server.",

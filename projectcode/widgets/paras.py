@@ -8,4 +8,14 @@ def tagblock_test1(skicall):
 
 
 
+def divhtml_test2(skicall):
+    """Changes divhtml widget content"""
+    skicall.page_data['divhtml', 'set_html'] = """<p>This
+is
+a
+paragraph<br />with two lines</p><p>And this is a second one line paragraph</p>"""
+
+
+
+
 
