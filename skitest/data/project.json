@@ -4,11 +4,6 @@
 "brief": "Project to test the skipole framework",
 "version": "0.4.0",
 "skipole": "2.3.7",
-"subprojects": {
-"lib": {
-"path": "/lib/"
-}
-},
 "specialpages": {
 "alertclear1": 4401,
 "basictests": 300002,
@@ -60,7 +55,7 @@
 "info": 3011,
 "inputforms": 3009,
 "inputtext": 3010,
-"jquery_core": "lib,jquery_core",
+"jquery_core": "skis,jquery_core",
 "jquery_ui": "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js",
 "jquery_ui_css": "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css",
 "links": 3007,
@@ -72,52 +67,52 @@
 "logout1": 100003,
 "logout2": 100006,
 "modules": 3001,
-"no_javascript": "lib,no_javascript",
+"no_javascript": "skis,no_javascript",
 "paras": 3006,
-"redirector": "lib,redirector",
+"redirector": "skis,redirector",
 "responders_list": 200001,
 "secure1": 100001,
 "secure2": 100004,
 "secure3": 100007,
-"server_error": "lib,server_error",
+"server_error": "skis,server_error",
 "servertimestamp": 4301,
-"ski_basic": "lib,ski_basic",
-"ski_checkbox": "lib,ski_checkbox",
-"ski_confirm": "lib,ski_confirm",
+"ski_basic": "skis,ski_basic",
+"ski_checkbox": "skis,ski_checkbox",
+"ski_confirm": "skis,ski_confirm",
 "ski_css": 1004,
-"ski_debug_tools": "lib,ski_debug_tools",
-"ski_dropdown": "lib,ski_dropdown",
-"ski_error_messages": "lib,ski_error_messages",
-"ski_footers": "lib,ski_footers",
-"ski_headers": "lib,ski_headers",
-"ski_info": "lib,ski_info",
-"ski_inputforms": "lib,ski_inputforms",
-"ski_inputtables": "lib,ski_inputtables",
-"ski_inputtext": "lib,ski_inputtext",
-"ski_links": "lib,ski_links",
-"ski_lists": "lib,ski_lists",
-"ski_logins": "lib,ski_logins",
-"ski_paras": "lib,ski_paras",
-"ski_paths": "lib,ski_paths",
-"ski_radio": "lib,ski_radio",
-"ski_svgbasics": "lib,ski_svgbasics",
-"ski_svggraphs": "lib,ski_svggraphs",
-"ski_svgmeters": "lib,ski_svgmeters",
-"ski_tables": "lib,ski_tables",
-"ski_textarea": "lib,ski_textarea",
-"ski_upload": "lib,ski_upload",
-"skipole_js": "lib,skipole_js",
+"ski_debug_tools": "skis,ski_debug_tools",
+"ski_dropdown": "skis,ski_dropdown",
+"ski_error_messages": "skis,ski_error_messages",
+"ski_footers": "skis,ski_footers",
+"ski_headers": "skis,ski_headers",
+"ski_info": "skis,ski_info",
+"ski_inputforms": "skis,ski_inputforms",
+"ski_inputtables": "skis,ski_inputtables",
+"ski_inputtext": "skis,ski_inputtext",
+"ski_links": "skis,ski_links",
+"ski_lists": "skis,ski_lists",
+"ski_logins": "skis,ski_logins",
+"ski_paras": "skis,ski_paras",
+"ski_paths": "skis,ski_paths",
+"ski_radio": "skis,ski_radio",
+"ski_svgbasics": "skis,ski_svgbasics",
+"ski_svggraphs": "skis,ski_svggraphs",
+"ski_svgmeters": "skis,ski_svgmeters",
+"ski_tables": "skis,ski_tables",
+"ski_textarea": "skis,ski_textarea",
+"ski_upload": "skis,ski_upload",
+"skipole_js": "skis,skipole_js",
 "subprojects": 400001,
 "svggraphs": 3026,
 "svgmeters": 3018,
 "table1button": 4101,
 "table1button_test1": 4102,
 "table1button_test2": 4103,
-"url_not_found": "lib,url_not_found",
-"validate_error": "lib,validate_error",
+"url_not_found": "skis,url_not_found",
+"validate_error": "skis,validate_error",
 "valtests": 300001,
-"w3_css": "lib,w3_css",
-"w3_theme_ski_css": "lib,theme1_css"
+"w3_css": "skis,w3_css",
+"w3_theme_ski_css": "skis,theme1_css"
 },
 "sections": {
 "allowedvalstest6": [
@@ -1061,7 +1056,7 @@ false,
 ],
 "alternate_ident": "home",
 "fail_ident": "general_json",
-"submit_list": [
+"submit_list": ["skilist_packages",
 "jqui",
 "jqwidgets",
 "set_date"
@@ -1099,7 +1094,7 @@ false,
 "original_args": {
 "allowed_callers": [],
 "fail_ident": 100,
-"submit_list": [
+"submit_list": ["skilist_packages",
 "login",
 "request_login3"
 ],
@@ -1684,7 +1679,7 @@ false,
 "original_args": {
 "allowed_callers": [],
 "fail_ident": "login",
-"submit_list": [
+"submit_list": ["skilist_packages",
 "login",
 "set_cookie1"
 ],
@@ -2003,7 +1998,7 @@ false,
 100005
 ],
 "fail_ident": "login",
-"submit_list": [
+"submit_list": ["skilist_packages",
 "login",
 "set_cookie2"
 ],
@@ -2566,7 +2561,7 @@ false,
 ],
 "alternate_ident": "home",
 "fail_ident": "login",
-"submit_list": [
+"submit_list": ["skilist_packages",
 "login",
 "check_login1"
 ],
@@ -2591,7 +2586,7 @@ false,
 ],
 "alternate_ident": "home",
 "fail_ident": "login",
-"submit_list": [
+"submit_list": ["skilist_packages",
 "login",
 "check_login2"
 ],
@@ -2613,7 +2608,7 @@ false,
 "original_args": {
 "allowed_callers": [],
 "fail_ident": "home",
-"submit_list": [
+"submit_list": ["skilist_packages",
 "login",
 "secure1_logout"
 ],
@@ -2630,7 +2625,7 @@ false,
 "original_args": {
 "allowed_callers": [],
 "fail_ident": "home",
-"submit_list": [
+"submit_list": ["skilist_packages",
 "login",
 "secure2_logout"
 ],
@@ -2647,7 +2642,7 @@ false,
 "original_args": {
 "allowed_callers": [],
 "fail_ident": 100,
-"submit_list": [
+"submit_list": ["skilist_packages",
 "login",
 "secure1_access"
 ],
@@ -2664,7 +2659,7 @@ false,
 "original_args": {
 "allowed_callers": [],
 "fail_ident": 100,
-"submit_list": [
+"submit_list": ["skilist_packages",
 "login",
 "secure2_access"
 ],
@@ -2681,7 +2676,7 @@ false,
 "original_args": {
 "allowed_callers": [],
 "fail_ident": "home",
-"submit_list": [
+"submit_list": ["skilist_packages",
 "login",
 "setup_secure3"
 ],
@@ -3255,7 +3250,7 @@ false,
 "class": "SubmitCSS",
 "original_args": {
 "fail_ident": "",
-"submit_list": [
+"submit_list": ["skilist_packages",
 "responders",
 "submitcss",
 "test_blue"
@@ -3560,7 +3555,7 @@ false,
 "class": "SubmitCSS",
 "original_args": {
 "fail_ident": "",
-"submit_list": [
+"submit_list": ["skilist_packages",
 "responders",
 "submitcss",
 "test_invblue"
@@ -3870,7 +3865,7 @@ false,
 "original_args": {
 "allowed_callers": [],
 "fail_ident": "home",
-"submit_list": [
+"submit_list": ["skilist_packages",
 "responders",
 "menus",
 "responders_menu"
@@ -4805,7 +4800,7 @@ false,
 "brief": "Tests responder target",
 "fields": {
 "button_class": "w3-button w3-block w3-theme-l1 w3-border",
-"button_text": "lib,server_error",
+"button_text": "skis,server_error",
 "button_wait_text": "Please wait...",
 "buttondiv_class": "ski_mid_button",
 "buttondiv_style": "",
@@ -4858,7 +4853,7 @@ false,
 "original_args": {
 "allowed_callers": [],
 "fail_ident": "home",
-"submit_list": [
+"submit_list": ["skilist_packages",
 "responders",
 "subproj",
 "goto_test3"
@@ -4874,7 +4869,7 @@ false,
 "RespondPage": {
 "class": "PageData",
 "original_args": {
-"target_ident": "lib,server_error"
+"target_ident": "skis,server_error"
 },
 "original_fields": {
 "show_error": "Error message inserted by responder servererror_test4"
@@ -4937,7 +4932,7 @@ false,
 "original_args": {
 "allowed_callers": [],
 "fail_ident": 300003,
-"submit_list": [
+"submit_list": ["skilist_packages",
 "validators",
 "allowedvaluesonly",
 "test2fail"
@@ -4955,7 +4950,7 @@ false,
 "original_args": {
 "allowed_callers": [],
 "fail_ident": 300003,
-"submit_list": [
+"submit_list": ["skilist_packages",
 "validators",
 "allowedvaluesonly",
 "test3fail"
@@ -4973,7 +4968,7 @@ false,
 "original_args": {
 "allowed_callers": [],
 "fail_ident": 300003,
-"submit_list": [
+"submit_list": ["skilist_packages",
 "validators",
 "allowedvaluesonly",
 "test5fail"
@@ -4991,7 +4986,7 @@ false,
 "original_args": {
 "allowed_callers": [],
 "fail_ident": 300003,
-"submit_list": [
+"submit_list": ["skilist_packages",
 "validators",
 "allowedvaluesonly",
 "test6fail"
@@ -5016,7 +5011,7 @@ false,
 ],
 "alternate_ident": "home",
 "fail_ident": 300003,
-"submit_list": [
+"submit_list": ["skilist_packages",
 "validators",
 "allowedvaluesonly",
 "test1"
@@ -5042,7 +5037,7 @@ false,
 ],
 "alternate_ident": "home",
 "fail_ident": 300003,
-"submit_list": [
+"submit_list": ["skilist_packages",
 "validators",
 "allowedvaluesonly",
 "test2"
@@ -5068,7 +5063,7 @@ false,
 ],
 "alternate_ident": "home",
 "fail_ident": 300003,
-"submit_list": [
+"submit_list": ["skilist_packages",
 "validators",
 "allowedvaluesonly",
 "test3"
@@ -5094,7 +5089,7 @@ false,
 ],
 "alternate_ident": "home",
 "fail_ident": 300003,
-"submit_list": [
+"submit_list": ["skilist_packages",
 "validators",
 "allowedvaluesonly",
 "test4"
@@ -5120,7 +5115,7 @@ false,
 ],
 "alternate_ident": "home",
 "fail_ident": 300003,
-"submit_list": [
+"submit_list": ["skilist_packages",
 "validators",
 "allowedvaluesonly",
 "test5"
@@ -5146,7 +5141,7 @@ false,
 ],
 "alternate_ident": "home",
 "fail_ident": 300003,
-"submit_list": [
+"submit_list": ["skilist_packages",
 "validators",
 "allowedvaluesonly",
 "test6"
@@ -8402,7 +8397,7 @@ false,
 ],
 "alternate_ident": "home",
 "fail_ident": 4010,
-"submit_list": [
+"submit_list": ["skilist_packages",
 "widgets",
 "checkbox",
 "check10"
@@ -8450,7 +8445,7 @@ false,
 ],
 "alternate_ident": "home",
 "fail_ident": 4002,
-"submit_list": [
+"submit_list": ["skilist_packages",
 "widgets",
 "checkbox",
 "check1"
@@ -8476,7 +8471,7 @@ false,
 ],
 "alternate_ident": "home",
 "fail_ident": 14020,
-"submit_list": [
+"submit_list": ["skilist_packages",
 "widgets",
 "checkbox",
 "check20"
@@ -8525,7 +8520,7 @@ false,
 ],
 "alternate_ident": "home",
 "fail_ident": 14002,
-"submit_list": [
+"submit_list": ["skilist_packages",
 "widgets",
 "checkbox",
 "check2"
@@ -8571,7 +8566,7 @@ false,
 ],
 "alternate_ident": "home",
 "fail_ident": "general_json",
-"submit_list": [
+"submit_list": ["skilist_packages",
 "widgets",
 "checkbox",
 "check5"
@@ -9750,7 +9745,7 @@ false,
 "original_args": {
 "allowed_callers": [],
 "fail_ident": 14401,
-"submit_list": [
+"submit_list": ["skilist_packages",
 "widgets",
 "confirm",
 "alertclear1_test1"
@@ -9768,7 +9763,7 @@ false,
 "original_args": {
 "allowed_callers": [],
 "fail_ident": "general_json",
-"submit_list": [
+"submit_list": ["skilist_packages",
 "widgets",
 "confirm",
 "alertclear1_test2"
@@ -9786,7 +9781,7 @@ false,
 "original_args": {
 "allowed_callers": [],
 "fail_ident": 14401,
-"submit_list": [
+"submit_list": ["skilist_packages",
 "widgets",
 "confirm",
 "alertclear1_test3"
@@ -9804,7 +9799,7 @@ false,
 "original_args": {
 "allowed_callers": [],
 "fail_ident": "general_json",
-"submit_list": [
+"submit_list": ["skilist_packages",
 "widgets",
 "confirm",
 "alertclear1_test4"
@@ -9833,7 +9828,7 @@ false,
 "original_args": {
 "allowed_callers": [],
 "fail_ident": 14410,
-"submit_list": [
+"submit_list": ["skilist_packages",
 "widgets",
 "confirm",
 "confirmbox1_test1"
@@ -9851,7 +9846,7 @@ false,
 "original_args": {
 "allowed_callers": [],
 "fail_ident": "general_json",
-"submit_list": [
+"submit_list": ["skilist_packages",
 "widgets",
 "confirm",
 "confirmbox1_test2"
@@ -9869,7 +9864,7 @@ false,
 "original_args": {
 "allowed_callers": [],
 "fail_ident": "general_json",
-"submit_list": [
+"submit_list": ["skilist_packages",
 "widgets",
 "confirm",
 "confirmbox1_test3"
@@ -9887,7 +9882,7 @@ false,
 "original_args": {
 "allowed_callers": [],
 "fail_ident": 14410,
-"submit_list": [
+"submit_list": ["skilist_packages",
 "widgets",
 "confirm",
 "confirmbox1_test4"
@@ -9916,7 +9911,7 @@ false,
 "original_args": {
 "allowed_callers": [],
 "fail_ident": 14420,
-"submit_list": [
+"submit_list": ["skilist_packages",
 "widgets",
 "confirm",
 "confirmbox2_test1"
@@ -9934,7 +9929,7 @@ false,
 "original_args": {
 "allowed_callers": [],
 "fail_ident": "general_json",
-"submit_list": [
+"submit_list": ["skilist_packages",
 "widgets",
 "confirm",
 "confirmbox2_test2"
@@ -9961,7 +9956,7 @@ false,
 "original_args": {
 "allowed_callers": [],
 "fail_ident": 3012,
-"submit_list": [
+"submit_list": ["skilist_packages",
 "widgets",
 "debug_tools",
 "toggle_debug_mode"
@@ -11912,7 +11907,7 @@ false,
 "original_args": {
 "allowed_callers": [],
 "fail_ident": 4220,
-"submit_list": [
+"submit_list": ["skilist_packages",
 "widgets",
 "error_messages",
 "errorclear1_test1"
@@ -11930,7 +11925,7 @@ false,
 "original_args": {
 "allowed_callers": [],
 "fail_ident": "general_json",
-"submit_list": [
+"submit_list": ["skilist_packages",
 "widgets",
 "error_messages",
 "errorclear1_test1"
@@ -11948,7 +11943,7 @@ false,
 "original_args": {
 "allowed_callers": [],
 "fail_ident": 4220,
-"submit_list": [
+"submit_list": ["skilist_packages",
 "widgets",
 "error_messages",
 "errorclear1_test3"
@@ -11966,7 +11961,7 @@ false,
 "original_args": {
 "allowed_callers": [],
 "fail_ident": "general_json",
-"submit_list": [
+"submit_list": ["skilist_packages",
 "widgets",
 "error_messages",
 "errorclear1_test3"
@@ -11995,7 +11990,7 @@ false,
 "original_args": {
 "allowed_callers": [],
 "fail_ident": 4230,
-"submit_list": [
+"submit_list": ["skilist_packages",
 "widgets",
 "error_messages",
 "errorclear2_test1"
@@ -12013,7 +12008,7 @@ false,
 "original_args": {
 "allowed_callers": [],
 "fail_ident": "general_json",
-"submit_list": [
+"submit_list": ["skilist_packages",
 "widgets",
 "error_messages",
 "errorclear2_test2"
@@ -12031,7 +12026,7 @@ false,
 "original_args": {
 "allowed_callers": [],
 "fail_ident": 4230,
-"submit_list": [
+"submit_list": ["skilist_packages",
 "widgets",
 "error_messages",
 "errorclear2_test3"
@@ -12060,7 +12055,7 @@ false,
 "original_args": {
 "allowed_callers": [],
 "fail_ident": "errordiv",
-"submit_list": [
+"submit_list": ["skilist_packages",
 "widgets",
 "error_messages",
 "errordiv_test1"
@@ -12078,7 +12073,7 @@ false,
 "original_args": {
 "allowed_callers": [],
 "fail_ident": "errordiv",
-"submit_list": [
+"submit_list": ["skilist_packages",
 "widgets",
 "error_messages",
 "errordiv_test2"
@@ -12096,7 +12091,7 @@ false,
 "original_args": {
 "allowed_callers": [],
 "fail_ident": "general_json",
-"submit_list": [
+"submit_list": ["skilist_packages",
 "widgets",
 "error_messages",
 "errordiv_test1"
@@ -12114,7 +12109,7 @@ false,
 "original_args": {
 "allowed_callers": [],
 "fail_ident": "general_json",
-"submit_list": [
+"submit_list": ["skilist_packages",
 "widgets",
 "error_messages",
 "errordiv_test2"
@@ -12132,7 +12127,7 @@ false,
 "original_args": {
 "allowed_callers": [],
 "fail_ident": "general_json",
-"submit_list": [
+"submit_list": ["skilist_packages",
 "widgets",
 "error_messages",
 "errordiv_test5"
@@ -12153,7 +12148,7 @@ false,
 ],
 "alternate_ident": "home",
 "fail_ident": "errordiv",
-"submit_list": [
+"submit_list": ["skilist_packages",
 "widgets",
 "error_messages",
 "errordiv_test6"
@@ -12187,7 +12182,7 @@ false,
 "original_args": {
 "allowed_callers": [],
 "fail_ident": "errorpara",
-"submit_list": [
+"submit_list": ["skilist_packages",
 "widgets",
 "error_messages",
 "errorpara_test1"
@@ -12205,7 +12200,7 @@ false,
 "original_args": {
 "allowed_callers": [],
 "fail_ident": "errorpara",
-"submit_list": [
+"submit_list": ["skilist_packages",
 "widgets",
 "error_messages",
 "errorpara_test2"
@@ -12223,7 +12218,7 @@ false,
 "original_args": {
 "allowed_callers": [],
 "fail_ident": "general_json",
-"submit_list": [
+"submit_list": ["skilist_packages",
 "widgets",
 "error_messages",
 "errorpara_test1"
@@ -12241,7 +12236,7 @@ false,
 "original_args": {
 "allowed_callers": [],
 "fail_ident": "general_json",
-"submit_list": [
+"submit_list": ["skilist_packages",
 "widgets",
 "error_messages",
 "errorpara_test2"
@@ -12259,7 +12254,7 @@ false,
 "original_args": {
 "allowed_callers": [],
 "fail_ident": "general_json",
-"submit_list": [
+"submit_list": ["skilist_packages",
 "widgets",
 "error_messages",
 "errorpara_test5"
@@ -12280,7 +12275,7 @@ false,
 ],
 "alternate_ident": "home",
 "fail_ident": "errorpara",
-"submit_list": [
+"submit_list": ["skilist_packages",
 "widgets",
 "error_messages",
 "errorpara_test6"
@@ -12321,7 +12316,7 @@ false,
 "original_args": {
 "allowed_callers": [],
 "fail_ident": "general_json",
-"submit_list": [
+"submit_list": ["skilist_packages",
 "widgets",
 "footers",
 "set_error"
@@ -12339,7 +12334,7 @@ false,
 "original_args": {
 "allowed_callers": [],
 "fail_ident": 3014,
-"submit_list": [
+"submit_list": ["skilist_packages",
 "widgets",
 "footers",
 "set_style"
@@ -12357,7 +12352,7 @@ false,
 "original_args": {
 "allowed_callers": [],
 "fail_ident": 3014,
-"submit_list": [
+"submit_list": ["skilist_packages",
 "widgets",
 "footers",
 "set_text"
@@ -13297,7 +13292,7 @@ false,
 ],
 "alternate_ident": "home",
 "fail_ident": 14701,
-"submit_list": [
+"submit_list": ["skilist_packages",
 "widgets",
 "inputforms",
 "hiddenfield_test1"
@@ -16691,7 +16686,7 @@ false,
 ],
 "alternate_ident": "home",
 "fail_ident": 4640,
-"submit_list": [
+"submit_list": ["skilist_packages",
 "widgets",
 "inputtext",
 "password1_test1"
@@ -16728,7 +16723,7 @@ false,
 ],
 "alternate_ident": "home",
 "fail_ident": 4650,
-"submit_list": [
+"submit_list": ["skilist_packages",
 "widgets",
 "inputtext",
 "password2_test1"
@@ -16751,7 +16746,7 @@ false,
 "original_args": {
 "allowed_callers": [],
 "fail_ident": "home",
-"submit_list": [
+"submit_list": ["skilist_packages",
 "widgets",
 "inputtext",
 "fill_submitdict1"
@@ -16772,7 +16767,7 @@ false,
 ],
 "alternate_ident": "home",
 "fail_ident": 4690,
-"submit_list": [
+"submit_list": ["skilist_packages",
 "widgets",
 "inputtext",
 "submitdict1_test1"
@@ -16809,7 +16804,7 @@ false,
 ],
 "alternate_ident": "home",
 "fail_ident": 4660,
-"submit_list": [
+"submit_list": ["skilist_packages",
 "widgets",
 "inputtext",
 "submittextinput1_test1"
@@ -16846,7 +16841,7 @@ false,
 ],
 "alternate_ident": "home",
 "fail_ident": 4670,
-"submit_list": [
+"submit_list": ["skilist_packages",
 "widgets",
 "inputtext",
 "submittextinput3_test1"
@@ -16869,7 +16864,7 @@ false,
 "original_args": {
 "allowed_callers": [],
 "fail_ident": "general_json",
-"submit_list": [
+"submit_list": ["skilist_packages",
 "widgets",
 "inputtext",
 "submittextinput3_test2"
@@ -16887,7 +16882,7 @@ false,
 "original_args": {
 "allowed_callers": [],
 "fail_ident": "general_json",
-"submit_list": [
+"submit_list": ["skilist_packages",
 "widgets",
 "inputtext",
 "submittextinput3_test3"
@@ -16905,7 +16900,7 @@ false,
 "original_args": {
 "allowed_callers": [],
 "fail_ident": "general_json",
-"submit_list": [
+"submit_list": ["skilist_packages",
 "widgets",
 "inputtext",
 "submittextinput3_test4"
@@ -16923,7 +16918,7 @@ false,
 "original_args": {
 "allowed_callers": [],
 "fail_ident": "general_json",
-"submit_list": [
+"submit_list": ["skilist_packages",
 "widgets",
 "inputtext",
 "submittextinput3_test5"
@@ -16944,7 +16939,7 @@ false,
 ],
 "alternate_ident": "home",
 "fail_ident": "general_json",
-"submit_list": [
+"submit_list": ["skilist_packages",
 "widgets",
 "inputtext",
 "submittextinput3_test6"
@@ -16981,7 +16976,7 @@ false,
 ],
 "alternate_ident": "home",
 "fail_ident": 4601,
-"submit_list": [
+"submit_list": ["skilist_packages",
 "widgets",
 "inputtext",
 "textinput1_test1"
@@ -17018,7 +17013,7 @@ false,
 ],
 "alternate_ident": "home",
 "fail_ident": 4610,
-"submit_list": [
+"submit_list": ["skilist_packages",
 "widgets",
 "inputtext",
 "textinput2_test1"
@@ -17055,7 +17050,7 @@ false,
 ],
 "alternate_ident": "home",
 "fail_ident": 4620,
-"submit_list": [
+"submit_list": ["skilist_packages",
 "widgets",
 "inputtext",
 "textinput3_test1"
@@ -17092,7 +17087,7 @@ false,
 ],
 "alternate_ident": "home",
 "fail_ident": 4630,
-"submit_list": [
+"submit_list": ["skilist_packages",
 "widgets",
 "inputtext",
 "textinput4_test1"
@@ -17129,7 +17124,7 @@ false,
 ],
 "alternate_ident": "home",
 "fail_ident": 4680,
-"submit_list": [
+"submit_list": ["skilist_packages",
 "widgets",
 "inputtext",
 "twoinputssubmit1_test1"
@@ -17153,7 +17148,7 @@ false,
 "original_args": {
 "allowed_callers": [],
 "fail_ident": 4680,
-"submit_list": [
+"submit_list": ["skilist_packages",
 "widgets",
 "inputtext",
 "twoinputssubmit1_test2"
@@ -18145,7 +18140,7 @@ false,
 "original_args": {
 "allowed_callers": [],
 "fail_ident": "home",
-"submit_list": [
+"submit_list": ["skilist_packages",
 "widgets",
 "links",
 "messagebutton"
@@ -18176,7 +18171,7 @@ false,
 "original_args": {
 "allowed_callers": [],
 "fail_ident": "home",
-"submit_list": [
+"submit_list": ["skilist_packages",
 "widgets",
 "links",
 "table1button"
@@ -18195,7 +18190,7 @@ false,
 "allowed_callers": [],
 "alternate_ident": "home",
 "fail_ident": "home",
-"submit_list": [
+"submit_list": ["skilist_packages",
 "widgets",
 "links",
 "table1button_jsontest"
@@ -18219,7 +18214,7 @@ false,
 "allowed_callers": [],
 "alternate_ident": "home",
 "fail_ident": "home",
-"submit_list": [
+"submit_list": ["skilist_packages",
 "widgets",
 "links",
 "table1button_htmltest"
@@ -18552,7 +18547,7 @@ false,
 "original_args": {
 "allowed_callers": [],
 "fail_ident": "home",
-"submit_list": [
+"submit_list": ["skilist_packages",
 "widgets",
 "lists",
 "populate_ulist1"
@@ -18570,7 +18565,7 @@ false,
 "original_args": {
 "allowed_callers": [],
 "fail_ident": "general_json",
-"submit_list": [
+"submit_list": ["skilist_packages",
 "widgets",
 "lists",
 "set_by_json"
@@ -19067,7 +19062,7 @@ false,
 "allowed_callers": [],
 "alternate_ident": "home",
 "fail_ident": 5501,
-"submit_list": [
+"submit_list": ["skilist_packages",
 "widgets",
 "logins",
 "namepasswd1_test1"
@@ -19091,7 +19086,7 @@ false,
 "original_args": {
 "allowed_callers": [],
 "fail_ident": 5501,
-"submit_list": [
+"submit_list": ["skilist_packages",
 "widgets",
 "logins",
 "namepasswd1_test2"
@@ -19109,7 +19104,7 @@ false,
 "original_args": {
 "allowed_callers": [],
 "fail_ident": 5501,
-"submit_list": [
+"submit_list": ["skilist_packages",
 "widgets",
 "logins",
 "namepasswd1_test3"
@@ -19763,7 +19758,7 @@ false,
 "original_args": {
 "allowed_callers": [],
 "fail_ident": 4810,
-"submit_list": [
+"submit_list": ["skilist_packages",
 "widgets",
 "paras",
 "divhtml_test2"
@@ -19795,7 +19790,7 @@ false,
 ],
 "alternate_ident": "home",
 "fail_ident": "general_json",
-"submit_list": [
+"submit_list": ["skilist_packages",
 "widgets",
 "paras",
 "tagblock_test1"
@@ -20988,7 +20983,7 @@ false,
 "original_args": {
 "allowed_callers": [],
 "fail_ident": "home",
-"submit_list": [
+"submit_list": ["skilist_packages",
 "widgets",
 "svggraphs",
 "populate_chart1"
@@ -21006,7 +21001,7 @@ false,
 "original_args": {
 "allowed_callers": [],
 "fail_ident": "general_json",
-"submit_list": [
+"submit_list": ["skilist_packages",
 "widgets",
 "svggraphs",
 "set_by_json"
@@ -21024,7 +21019,7 @@ false,
 "original_args": {
 "allowed_callers": [],
 "fail_ident": "home",
-"submit_list": [
+"submit_list": ["skilist_packages",
 "widgets",
 "svggraphs",
 "stars"
@@ -21045,7 +21040,7 @@ false,
 ],
 "alternate_ident": "home",
 "fail_ident": 5105,
-"submit_list": [
+"submit_list": ["skilist_packages",
 "widgets",
 "svggraphs",
 "check_target"
@@ -21075,7 +21070,7 @@ false,
 "original_args": {
 "allowed_callers": [],
 "fail_ident": "general_json",
-"submit_list": [
+"submit_list": ["skilist_packages",
 "widgets",
 "svggraphs",
 "rotate_plus"
@@ -21093,7 +21088,7 @@ false,
 "original_args": {
 "allowed_callers": [],
 "fail_ident": "general_json",
-"submit_list": [
+"submit_list": ["skilist_packages",
 "widgets",
 "svggraphs",
 "rotate_minus"
@@ -21111,7 +21106,7 @@ false,
 "original_args": {
 "allowed_callers": [],
 "fail_ident": "general_json",
-"submit_list": [
+"submit_list": ["skilist_packages",
 "widgets",
 "svggraphs",
 "flip_h"
@@ -21129,7 +21124,7 @@ false,
 "original_args": {
 "allowed_callers": [],
 "fail_ident": "general_json",
-"submit_list": [
+"submit_list": ["skilist_packages",
 "widgets",
 "svggraphs",
 "flip_v"
@@ -21710,7 +21705,7 @@ false,
 "original_args": {
 "allowed_callers": [],
 "fail_ident": "home",
-"submit_list": [
+"submit_list": ["skilist_packages",
 "widgets",
 "svgmeters",
 "populate_traditional1"
@@ -21728,7 +21723,7 @@ false,
 "original_args": {
 "allowed_callers": [],
 "fail_ident": "general_json",
-"submit_list": [
+"submit_list": ["skilist_packages",
 "widgets",
 "svgmeters",
 "populate_traditional1"
@@ -21746,7 +21741,7 @@ false,
 "original_args": {
 "allowed_callers": [],
 "fail_ident": "home",
-"submit_list": [
+"submit_list": ["skilist_packages",
 "widgets",
 "svgmeters",
 "populate_vertical1"
@@ -21764,7 +21759,7 @@ false,
 "original_args": {
 "allowed_callers": [],
 "fail_ident": "general_json",
-"submit_list": [
+"submit_list": ["skilist_packages",
 "widgets",
 "svgmeters",
 "populate_vertical1"
@@ -23758,7 +23753,7 @@ false,
 "original_args": {
 "allowed_callers": [],
 "fail_ident": "home",
-"submit_list": [
+"submit_list": ["skilist_packages",
 "widgets",
 "headers",
 "widgets_menu"
@@ -26096,7 +26091,7 @@ false,
 "original_args": {
 "allowed_callers": [],
 "fail_ident": "home",
-"submit_list": [
+"submit_list": ["skilist_packages",
 "widgets",
 "menus",
 "modules_menu"
@@ -28136,7 +28131,7 @@ false,
 "original_args": {
 "allowed_callers": [],
 "fail_ident": "home",
-"submit_list": [
+"submit_list": ["skilist_packages",
 "server_error"
 ],
 "target_ident": "home"
