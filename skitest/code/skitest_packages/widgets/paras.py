@@ -1,4 +1,4 @@
-from ... import FailPage, GoTo, ValidateError, ServerError
+from skipole import FailPage, GoTo, ValidateError, ServerError
 
 def tagblock_test1(skicall):
     """Changes tagblock1 to colour of drop in"""

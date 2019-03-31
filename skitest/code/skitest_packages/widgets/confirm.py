@@ -1,4 +1,4 @@
-from ... import FailPage, GoTo, ValidateError, ServerError
+from skipole import FailPage, GoTo, ValidateError, ServerError
 
 def alertclear1_test1(skicall):
     """Displays alertclear1"""

@@ -1,4 +1,4 @@
-from ... import FailPage, GoTo, ValidateError, ServerError
+from skipole import FailPage, GoTo, ValidateError, ServerError
 
 def errordiv_test1(skicall):
     """Raises an error for errordiv"""

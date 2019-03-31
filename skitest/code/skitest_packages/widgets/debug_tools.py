@@ -1,5 +1,5 @@
-from ... import FailPage, GoTo, ValidateError, ServerError
-from .... import skilift
+from skipole import FailPage, GoTo, ValidateError, ServerError
+from skipole import skilift
 
 
 def toggle_debug_mode(skicall):

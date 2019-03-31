@@ -1,4 +1,4 @@
-from ... import FailPage, GoTo, ValidateError, ServerError
+from skipole import FailPage, GoTo, ValidateError, ServerError
 
 def test_blue(skicall):
     """Tests submitcss by returning a css style makeblue, white text on a blue background"""

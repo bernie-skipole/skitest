@@ -1,4 +1,4 @@
-from ... import FailPage, GoTo, ValidateError, ServerError
+from skipole import FailPage, GoTo, ValidateError, ServerError
 
 def check1(skicall):
     """Tests CheckBox1 when submitted in a form"""

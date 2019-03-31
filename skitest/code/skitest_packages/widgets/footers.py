@@ -1,5 +1,5 @@
-from ... import FailPage, GoTo, ValidateError, ServerError
-from .... import skilift
+from skipole import FailPage, GoTo, ValidateError, ServerError
+
 
 def set_style(skicall):
     "Sets the style on the simplefooter"

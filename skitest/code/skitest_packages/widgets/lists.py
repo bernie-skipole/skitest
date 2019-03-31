@@ -1,5 +1,5 @@
-from ... import FailPage, GoTo, ValidateError, ServerError
-from .... import skilift
+from skipole import FailPage, GoTo, ValidateError, ServerError
+
 
 def populate_ulist1(skicall):
     """Sets content into ulist1"""

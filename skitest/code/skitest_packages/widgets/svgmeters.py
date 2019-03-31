@@ -1,6 +1,6 @@
 import random
 
-from ... import FailPage, GoTo, ValidateError, ServerError
+from skipole import FailPage, GoTo, ValidateError, ServerError
 
 
 _NUMBERS = [ n for n in range(5, 95)]

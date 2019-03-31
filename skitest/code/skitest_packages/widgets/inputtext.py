@@ -1,8 +1,8 @@
 
 from collections import OrderedDict
 
-from ... import FailPage, GoTo, ValidateError, ServerError
-from .... import skilift
+from skipole import FailPage, GoTo, ValidateError, ServerError
+
 
 def textinput1_test1(skicall):
     """Takes input from textinput1 widget"""

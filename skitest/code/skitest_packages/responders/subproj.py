@@ -1,7 +1,7 @@
-from ... import FailPage, GoTo, ValidateError, ServerError
+from skipole import FailPage, GoTo, ValidateError, ServerError
 
 def goto_test3(skicall):
     """Tests GoTo can call a labelled page in a sub project"""
-    raise GoTo(target = 'lib,test1')
+    raise GoTo(target = 'skis,test1')
 
 

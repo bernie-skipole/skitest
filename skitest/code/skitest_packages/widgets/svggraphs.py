@@ -3,7 +3,7 @@ from struct import unpack
 
 from http import cookies
 
-from ....skilift import FailPage, GoTo, ValidateError, ServerError, projectURLpaths
+from skipole import FailPage, GoTo, ValidateError, ServerError
 
 
 def populate_chart1(skicall):
@@ -46,7 +46,7 @@ def stars(skicall):
     # get the transform string and cookie
 
 
-    transform, cki = _transform_cookie(flipv, fliph, rot, skicall.project)
+    transform, cki = _transform_cookie(flipv, fliph, rot, skicall)
     # set the transform
     skicall.page_data['starchart', 'transform'] = transform
 
@@ -244,7 +244,7 @@ def rotate_plus(skicall):
         rot -= 360
 
     # get the new transform string and cookie
-    transform, cki = _transform_cookie(flipv, fliph, rot, skicall.project)
+    transform, cki = _transform_cookie(flipv, fliph, rot, skicall)
     skicall.page_data['starchart', 'transform'] = transform
     return cki
 
@@ -259,7 +259,7 @@ def rotate_minus(skicall):
         rot += 360
 
     # get the new transform string and cookie
-    transform, cki = _transform_cookie(flipv, fliph, rot, skicall.project)
+    transform, cki = _transform_cookie(flipv, fliph, rot, skicall)
     skicall.page_data['starchart', 'transform'] = transform
     return cki
 
@@ -277,7 +277,7 @@ def flip_v(skicall):
         flipv = True
 
     # get the new transform string and cookie
-    transform, cki = _transform_cookie(flipv, fliph, rot, skicall.project)
+    transform, cki = _transform_cookie(flipv, fliph, rot, skicall)
     skicall.page_data['starchart', 'transform'] = transform
     return cki
 
@@ -294,7 +294,7 @@ def flip_h(skicall):
         fliph = True
 
     # get the new transform string and cookie
-    transform, cki = _transform_cookie(flipv, fliph, rot, skicall.project)
+    transform, cki = _transform_cookie(flipv, fliph, rot, skicall)
     skicall.page_data['starchart', 'transform'] = transform
     return cki
 
@@ -316,7 +316,7 @@ def _read_cookie(received_cookies):
     return flipv, fliph, rot
 
 
-def _transform_cookie(flipv, fliph, rot, project):
+def _transform_cookie(flipv, fliph, rot, skicall):
     "Returns transform_string, cookie"
     # set the widget transform attribute
     if flipv and fliph:
@@ -346,8 +346,8 @@ def _transform_cookie(flipv, fliph, rot, project):
     # twelve hours expirey time
     cki['starchart']['max-age'] = 43200
     # set root project path
-    url_dict = projectURLpaths()
-    cki['starchart']['path'] = url_dict[project]
+    url_dict = skicall.projectpaths()
+    cki['starchart']['path'] = url_dict[skicall.project]
     return transform, cki
 
     

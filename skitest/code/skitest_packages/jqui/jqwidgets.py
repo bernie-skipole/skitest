@@ -1,5 +1,5 @@
-from ... import FailPage, GoTo, ValidateError, ServerError
-from .... import skilift
+from skipole import FailPage, GoTo, ValidateError, ServerError
+
 
 def set_date(skicall):
     """Sets date given in call_data into the showdate paragraph"""
