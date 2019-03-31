@@ -2,34 +2,35 @@
 This package will be called by the Skipole framework to access your data.
 """
 
-import os
+import os, sys
 
 # this import used by basic authentication
 from base64 import b64decode
 
-from .. import FailPage, GoTo, ValidateError, ServerError, use_submit_list
-from ... import skilift
+
+skipole_package_location = "/home/bernie/mercurial/skipole"
+if skipole_package_location not in sys.path:
+    sys.path.append(skipole_package_location)
+
+from skipole import WSGIApplication, FailPage, GoTo, ValidateError, ServerError, set_debug, use_submit_list
 
 
-##############################################################################
-#
-# Your code needs to provide your own version of the following functions
-#
-##############################################################################
+
+# the framework needs to know the location of the projectfiles directory holding this and
+# other projects - specifically the skis and skiadmin projects
+# The following line assumes, as default, that this file is located beneath
+# ...projectfiles/newproj/code/
+
+PROJECTFILES = os.path.dirname(os.path.dirname(os.path.dirname(os.path.realpath(__file__))))
+PROJECT = 'skitest'
 
 
-def start_project(project, projectfiles, path, option):
-    """On a project being loaded, and before the wsgi service is started, this is called once,
-          and should return a dictionary (typically an empty dictionary if this value is not used).
-           This function can be used to set any initial parameters, and the dictionary returned will
-           be passed as 'proj_data' to subsequent start_call functions."""
-    proj_data = {}
 
-    # Set environ variable for Yale Bright star catalogue
-    # this is required for testing the starchart widget
-    os.environ["BSC_PATH"] = "/home/bernie/test/ybs"
-    os.environ["WCS_BINDIR"] = "/home/bernie/test/ybs"
-    return proj_data
+# Set environ variable for Yale Bright star catalogue
+# this is required for testing the starchart widget
+os.environ["BSC_PATH"] = "/home/bernie/test/ybs"
+os.environ["WCS_BINDIR"] = "/home/bernie/test/ybs"
+
 
 
 def start_call(called_ident, skicall):
@@ -40,7 +41,7 @@ def start_call(called_ident, skicall):
 
     # These are sub-project tests
     if called_ident[1] == 400002:
-        return "lib,test1"
+        return "skis,test1"
     if called_ident[1] == 400003:
         return "http://www.bbc.co.uk"
 
@@ -235,6 +236,55 @@ $( "#date" ).datepicker();
     # set secure1 cookie
     if 'session' in skicall.call_data:
         return skicall.call_data['session']
+
+
+# create the wsgi application
+application = WSGIApplication(project=PROJECT,
+                              projectfiles=PROJECTFILES,
+                              proj_data={},
+                              start_call=start_call,
+                              submit_data=submit_data,
+                              end_call=end_call,
+                              url="/")
+
+
+
+skis_code = os.path.join(PROJECTFILES, 'skis', 'code')
+if skis_code not in sys.path:
+    sys.path.append(skis_code)
+import skis
+skis_application = skis.makeapp(PROJECTFILES)
+application.add_project(skis_application, url='/lib')
+
+
+
+if __name__ == "__main__":
+
+    # If called as a script, this portion runs the python wsgiref.simple_server
+    # and serves the project. Typically you would do this with the 'skiadmin'
+    # sub project added which can be used to develop pages for your project
+
+    ############################### THESE LINES ADD SKIADMIN ######################
+                                                                                  #
+    set_debug(True)                                                               #
+    skiadmin_code = os.path.join(PROJECTFILES, 'skiadmin', 'code')                #
+    if skiadmin_code not in sys.path:                                             #
+        sys.path.append(skiadmin_code)                                            #
+    import skiadmin                                                               #
+    skiadmin_application = skiadmin.makeapp(PROJECTFILES, editedprojname=PROJECT) #
+    application.add_project(skiadmin_application, url='/skiadmin')                #
+                                                                                  #
+    ###############################################################################
+
+    from wsgiref.simple_server import make_server
+
+    # serve the application
+    host = "127.0.0.1"
+    port = 8000
+
+    httpd = make_server(host, port, application)
+    print("Serving %s on port %s. Call http://localhost:%s/skiadmin to edit." % (PROJECT, port, port))
+    httpd.serve_forever()
 
 
 
