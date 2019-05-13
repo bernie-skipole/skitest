@@ -67,8 +67,12 @@ def retrieve_widgets_list(skicall):
         ref = ".".join(("widgets", module_name, widget.classname))
         notfound = 'Textblock reference %s not found' % ref
         classname = widget.classname
-        contents.append([classname, classname, '', ref, notfound, ''])
+        contents.append([classname, classname, module_name, ref, notfound, ''])
 
     page_data[("widgets","link_table")] = contents
+
+
+def retrieve_widgets_edit(skicall):
+    pass
 
 

@@ -6903,6 +6903,225 @@ false,
 }
 ]
 },
+"testwidget": {
+"ident": 9103,
+"brief": "Test widget page",
+"TemplatePage": {
+"show_backcol": false,
+"last_scroll": true,
+"interval": 0,
+"interval_target": null,
+"lang": "en",
+"backcol": "#e5d29f",
+"default_error_widget": [
+"adminhead",
+"show_status"
+]
+},
+"head": [
+"Part",
+{
+"tag_name": "head",
+"brief": "The head section of the page",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"ClosedPart",
+{
+"tag_name": "meta",
+"brief": "The charset meta declaration",
+"show": true,
+"attribs": {
+"charset": "utf-8"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "meta",
+"brief": "meta for viewport",
+"show": true,
+"attribs": {
+"content": "width=device-width, initial-scale=1",
+"name": "viewport"
+}
+}
+],
+[
+"Part",
+{
+"tag_name": "title",
+"brief": "The page title element",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Text",
+"Widgets"
+]
+]
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to w3_css",
+"show": true,
+"attribs": {
+"href": "{w3_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to w3_theme_ski_css",
+"show": true,
+"attribs": {
+"href": "{w3_theme_ski_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to ski_css",
+"show": true,
+"attribs": {
+"href": "{ski_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"Part",
+{
+"tag_name": "script",
+"brief": "script link to jquery_core",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"src": "{jquery_core}"
+},
+"parts": []
+}
+],
+[
+"Part",
+{
+"tag_name": "script",
+"brief": "script link to skipole_js",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"src": "{skipole_js}"
+},
+"parts": []
+}
+]
+]
+}
+],
+"body": [
+"Part",
+{
+"tag_name": "body",
+"brief": "The body section of the page",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "w3-theme"
+},
+"parts": [
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "container",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "w3-container"
+},
+"parts": [
+[
+"SectionPlaceHolder",
+{
+"brief": "Page header",
+"section_name": "header",
+"placename": "header",
+"multiplier": 1,
+"mtag": "div"
+}
+],
+[
+"SectionPlaceHolder",
+{
+"brief": "Left navigation panel",
+"section_name": "navigation",
+"placename": "navigation",
+"multiplier": 1,
+"mtag": "div"
+}
+],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "centre",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "w3-section",
+"style": "margin-left:25%"
+},
+"parts": [
+[
+"Widget",
+{
+"class": "links.ProjectiFrame",
+"name": "widgettest",
+"brief": "iframe to project",
+"fields": {
+"height": "800",
+"project": "skitest",
+"show": true,
+"widget_class": "",
+"widget_style": "",
+"width": "800"
+}
+}
+],
+[
+"SectionPlaceHolder",
+{
+"brief": "section footer with alias foot",
+"section_name": "footer",
+"placename": "foot",
+"multiplier": 1,
+"mtag": "div"
+}
+]
+]
+}
+]
+]
+}
+]
+]
+}
+]
+},
 "widgets": {
 "ident": 9102,
 "brief": "Lists widgets",
@@ -7130,7 +7349,7 @@ false,
 "even_class": "",
 "force_ident": false,
 "header_class": "w3-theme-d3",
-"link_ident": "home",
+"link_ident": "9003",
 "link_table": [
 [
 "",
@@ -7144,12 +7363,13 @@ false,
 "odd_class": "w3-theme-d2",
 "show": true,
 "show_get_field1": true,
-"show_get_field2": false,
+"show_get_field2": true,
 "widget_class": "w3-table w3-theme-d1 w3-border w3-bordered",
 "widget_style": ""
 },
 "set_names": {
-"show_get_field1": "widget"
+"show_get_field1": "widget",
+"show_get_field2": "module"
 },
 "validators": {
 "widget": [
@@ -7227,6 +7447,31 @@ false,
 },
 "original_fields": {
 "modules:module": "module"
+}
+}
+},
+"testwidget": {
+"ident": 9003,
+"brief": "Forwards to the testwidget page",
+"RespondPage": {
+"class": "AllowStoreKeyed",
+"original_args": {
+"allowed_callers": [],
+"alternate_ident": "home",
+"fail_ident": "home",
+"submit_list": [
+"skitest_packages",
+"modulelist",
+"retrieve_widgets_edit"
+],
+"submit_option": true,
+"target_ident": 9103,
+"validate_fail_ident": null,
+"validate_option": false
+},
+"original_fields": {
+"widgets:module": "module",
+"widgets:widget": "widget"
 }
 }
 }
