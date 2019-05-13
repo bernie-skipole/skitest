@@ -3,7 +3,7 @@
 "default_language": "en",
 "brief": "Project to test the skipole framework",
 "version": "0.4.0",
-"skipole": "3.0.2",
+"skipole": "3.0.5",
 "specialpages": {
 "alertclear1": 4401,
 "basictests": 300002,
@@ -59,7 +59,9 @@
 "jquery_ui": "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js",
 "jquery_ui_css": "https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css",
 "links": 3007,
+"listmodules": 9001,
 "lists": 3025,
+"listwidgets": 9002,
 "login": 100,
 "login1": 100002,
 "login2": 100005,
@@ -416,6 +418,32 @@
 "style": "width:20%"
 },
 "parts": [
+[
+"Widget",
+{
+"class": "links.ButtonLink2",
+"name": "to_modules",
+"brief": "To modules list",
+"fields": {
+"button_class": "w3-button w3-theme-l1 w3-border w3-round w3-block",
+"button_text": "New Widgets",
+"button_wait_text": "Please wait...",
+"buttondiv_class": "",
+"buttondiv_style": "",
+"clear_error": false,
+"error_class": "w3-panel w3-red",
+"get_field1": "",
+"get_field2": "",
+"hide": false,
+"json_ident": "",
+"link_ident": "listmodules",
+"show": true,
+"show_error": "",
+"widget_class": "w3-section",
+"widget_style": ""
+}
+}
+],
 [
 "Widget",
 {
@@ -6581,6 +6609,629 @@ false,
 "default_page_name": "index",
 "restricted": false,
 "folders": {
+"list_modules": {
+"ident": 9000,
+"brief": "Leads to modules and widget lists",
+"default_page_name": "listmodules",
+"restricted": false,
+"folders": {
+"restricted": {
+"ident": 9100,
+"brief": "Templates",
+"default_page_name": "index",
+"restricted": true,
+"folders": {},
+"pages": {
+"modules": {
+"ident": 9101,
+"brief": "Lists modules",
+"TemplatePage": {
+"show_backcol": false,
+"last_scroll": true,
+"interval": 0,
+"interval_target": null,
+"lang": "en",
+"backcol": "#e5d29f",
+"default_error_widget": [
+"adminhead",
+"show_status"
+]
+},
+"head": [
+"Part",
+{
+"tag_name": "head",
+"brief": "The head section of the page",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"ClosedPart",
+{
+"tag_name": "meta",
+"brief": "The charset meta declaration",
+"show": true,
+"attribs": {
+"charset": "utf-8"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "meta",
+"brief": "meta for viewport",
+"show": true,
+"attribs": {
+"content": "width=device-width, initial-scale=1",
+"name": "viewport"
+}
+}
+],
+[
+"Part",
+{
+"tag_name": "title",
+"brief": "The page title element",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Text",
+"Widget modules"
+]
+]
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to w3_css",
+"show": true,
+"attribs": {
+"href": "{w3_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to w3_theme_ski_css",
+"show": true,
+"attribs": {
+"href": "{w3_theme_ski_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to ski_css",
+"show": true,
+"attribs": {
+"href": "{ski_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"Part",
+{
+"tag_name": "script",
+"brief": "script link to jquery_core",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"src": "{jquery_core}"
+},
+"parts": []
+}
+],
+[
+"Part",
+{
+"tag_name": "script",
+"brief": "script link to skipole_js",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"src": "{skipole_js}"
+},
+"parts": []
+}
+]
+]
+}
+],
+"body": [
+"Part",
+{
+"tag_name": "body",
+"brief": "The body section of the page",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "w3-theme"
+},
+"parts": [
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "container",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "w3-container"
+},
+"parts": [
+[
+"SectionPlaceHolder",
+{
+"brief": "Page header",
+"section_name": "header",
+"placename": "header",
+"multiplier": 1,
+"mtag": "div"
+}
+],
+[
+"SectionPlaceHolder",
+{
+"brief": "Left navigation panel",
+"section_name": "navigation",
+"placename": "navigation",
+"multiplier": 1,
+"mtag": "div"
+}
+],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "centre",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "w3-section",
+"style": "margin-left:25%"
+},
+"parts": [
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "Top description",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"TextBlock",
+{
+"textref": "page.9101.01",
+"failmessage": "TextBlock not found",
+"show": true,
+"escape": true,
+"linebreaks": true
+}
+]
+]
+}
+],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "New Tag",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "w3-section"
+},
+"parts": [
+[
+"Widget",
+{
+"class": "links.LinkTextBlockTable1",
+"name": "modules",
+"brief": "LinkTextBlockTable1",
+"fields": {
+"col1_link_title": "",
+"col2_text_title": "",
+"even_class": "",
+"force_ident": false,
+"header_class": "w3-theme-d3",
+"link_ident": "9002",
+"link_table": [
+[
+"",
+"",
+"",
+"",
+"",
+""
+]
+],
+"odd_class": "w3-theme-d2",
+"show": true,
+"show_get_field1": true,
+"show_get_field2": false,
+"widget_class": "w3-table w3-theme-d1 w3-border w3-bordered",
+"widget_style": ""
+},
+"set_names": {
+"show_get_field1": "module"
+},
+"validators": {
+"module": [
+{
+"class": "basic.NotEmpty",
+"message": "No module has been submitted"
+}
+]
+}
+}
+]
+]
+}
+],
+[
+"SectionPlaceHolder",
+{
+"brief": "section footer with alias foot",
+"section_name": "footer",
+"placename": "foot",
+"multiplier": 1,
+"mtag": "div"
+}
+]
+]
+}
+]
+]
+}
+]
+]
+}
+]
+},
+"widgets": {
+"ident": 9102,
+"brief": "Lists widgets",
+"TemplatePage": {
+"show_backcol": false,
+"last_scroll": true,
+"interval": 0,
+"interval_target": null,
+"lang": "en",
+"backcol": "#e5d29f",
+"default_error_widget": [
+"adminhead",
+"show_status"
+]
+},
+"head": [
+"Part",
+{
+"tag_name": "head",
+"brief": "The head section of the page",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"ClosedPart",
+{
+"tag_name": "meta",
+"brief": "The charset meta declaration",
+"show": true,
+"attribs": {
+"charset": "utf-8"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "meta",
+"brief": "meta for viewport",
+"show": true,
+"attribs": {
+"content": "width=device-width, initial-scale=1",
+"name": "viewport"
+}
+}
+],
+[
+"Part",
+{
+"tag_name": "title",
+"brief": "The page title element",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Text",
+"Widgets"
+]
+]
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to w3_css",
+"show": true,
+"attribs": {
+"href": "{w3_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to w3_theme_ski_css",
+"show": true,
+"attribs": {
+"href": "{w3_theme_ski_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to ski_css",
+"show": true,
+"attribs": {
+"href": "{ski_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"Part",
+{
+"tag_name": "script",
+"brief": "script link to jquery_core",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"src": "{jquery_core}"
+},
+"parts": []
+}
+],
+[
+"Part",
+{
+"tag_name": "script",
+"brief": "script link to skipole_js",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"src": "{skipole_js}"
+},
+"parts": []
+}
+]
+]
+}
+],
+"body": [
+"Part",
+{
+"tag_name": "body",
+"brief": "The body section of the page",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "w3-theme"
+},
+"parts": [
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "container",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "w3-container"
+},
+"parts": [
+[
+"SectionPlaceHolder",
+{
+"brief": "Page header",
+"section_name": "header",
+"placename": "header",
+"multiplier": 1,
+"mtag": "div"
+}
+],
+[
+"SectionPlaceHolder",
+{
+"brief": "Left navigation panel",
+"section_name": "navigation",
+"placename": "navigation",
+"multiplier": 1,
+"mtag": "div"
+}
+],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "centre",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "w3-section",
+"style": "margin-left:25%"
+},
+"parts": [
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "Top description",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"TextBlock",
+{
+"textref": "page.9102.01",
+"failmessage": "TextBlock not found",
+"show": true,
+"escape": true,
+"linebreaks": true
+}
+]
+]
+}
+],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "New Tag",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "w3-section"
+},
+"parts": [
+[
+"Widget",
+{
+"class": "links.LinkTextBlockTable1",
+"name": "widgets",
+"brief": "LinkTextBlockTable1",
+"fields": {
+"col1_link_title": "",
+"col2_text_title": "",
+"even_class": "",
+"force_ident": false,
+"header_class": "w3-theme-d3",
+"link_ident": "home",
+"link_table": [
+[
+"",
+"",
+"",
+"",
+"",
+""
+]
+],
+"odd_class": "w3-theme-d2",
+"show": true,
+"show_get_field1": true,
+"show_get_field2": false,
+"widget_class": "w3-table w3-theme-d1 w3-border w3-bordered",
+"widget_style": ""
+},
+"set_names": {
+"show_get_field1": "widget"
+},
+"validators": {
+"widget": [
+{
+"class": "basic.NotEmpty",
+"message": "No widget has been submitted"
+}
+]
+}
+}
+]
+]
+}
+],
+[
+"SectionPlaceHolder",
+{
+"brief": "section footer with alias foot",
+"section_name": "footer",
+"placename": "foot",
+"multiplier": 1,
+"mtag": "div"
+}
+]
+]
+}
+]
+]
+}
+]
+]
+}
+]
+}
+}
+}
+},
+"pages": {
+"listmodules": {
+"ident": 9001,
+"brief": "Lists modules",
+"RespondPage": {
+"class": "SubmitData",
+"original_args": {
+"allowed_callers": [],
+"fail_ident": "home",
+"submit_list": [
+"skitest_packages",
+"modulelist",
+"retrieve_module_list"
+],
+"target_ident": 9101
+},
+"original_fields": {}
+}
+},
+"listwidgets": {
+"ident": 9002,
+"brief": "Lists widgets",
+"RespondPage": {
+"class": "AllowStoreKeyed",
+"original_args": {
+"allowed_callers": [],
+"alternate_ident": "home",
+"fail_ident": "home",
+"submit_list": [
+"skitest_packages",
+"modulelist",
+"retrieve_widgets_list"
+],
+"submit_option": true,
+"target_ident": 9102,
+"validate_fail_ident": null,
+"validate_option": false
+},
+"original_fields": {
+"modules:module": "module"
+}
+}
+}
+}
+},
 "restricted": {
 "ident": 13000,
 "brief": "Restricted folder for widget top menus",
@@ -10907,6 +11558,7 @@ false,
 "brief": "ErrorDiv used for testing",
 "fields": {
 "clear_error": false,
+"container_class": "",
 "error_class": "w3-panel w3-red",
 "hide": true,
 "show": true,

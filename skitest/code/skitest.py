@@ -7,14 +7,7 @@ import os, sys
 # this import used by basic authentication
 from base64 import b64decode
 
-
-skipole_package_location = "/home/bernie/mercurial/skipole"
-if skipole_package_location not in sys.path:
-    sys.path.append(skipole_package_location)
-
 from skipole import WSGIApplication, FailPage, GoTo, ValidateError, ServerError, set_debug, use_submit_list
-
-
 
 # the framework needs to know the location of the projectfiles directory holding this and
 # other projects - specifically the skis and skiadmin projects
@@ -97,6 +90,8 @@ _HEADER_TEXT = { 2001 : "Project skitest.",
                  3023: "The logins module",
                  3025: "The lists module",
                  3026: "The svggraphs module",
+                 9101: "Widget modules",
+                 9102: "Widgets",
                 13001:"Widget Modules",
                 14002:"Tests for the CheckBox1 widget.",
                 14010:"Tests for the CheckBox2 widget.",
@@ -166,6 +161,8 @@ _NAV_BUTTONS = {
                   3023:[['home','Home', False, ''], ['modules', 'Modules', False, '']],
                   3025:[['home','Home', False, ''], ['modules', 'Modules', False, '']],
                   3026:[['home','Home', False, ''], ['modules', 'Modules', False, '']],
+                  9101:[['home','Home', False, '']],
+                  9102:[['home','Home', False, ''], ['listmodules', 'Modules', False, '']],
                  13001:[['home','Home', False, '']],
                  14002:[['home','Home', False, ''], ['modules', 'Modules', False, ''],['checkbox', 'checkbox', False, '']],
                  14010:[['home','Home', False, ''], ['modules', 'Modules', False, ''],['checkbox', 'checkbox', False, '']],
