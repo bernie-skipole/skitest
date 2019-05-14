@@ -46,6 +46,8 @@ def submit_data(skicall):
     "This function is called when a Responder wishes to submit data for processing in some manner"
     if skicall.submit_list[0] == 'test1':
         _test1(skicall)
+    elif skicall.submit_list[0] == 'test2':
+        _test2(skicall)
     return
 
 

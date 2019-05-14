@@ -268,8 +268,7 @@
 "show": true,
 "hide_if_empty": false,
 "attribs": {
-"class": "w3-section",
-"style": "margin-left:25%"
+"class": "w3-section"
 },
 "parts": [
 [
@@ -439,7 +438,7 @@
 "get_field3": "",
 "get_field4": "",
 "hide": false,
-"link_ident": "check2test",
+"link_ident": "3",
 "show": true,
 "show_error": "",
 "target": "",
@@ -746,6 +745,22 @@
 "original_fields": {
 "check1:checkbox": ""
 }
+}
+},
+"test2": {
+"ident": 3,
+"brief": "test 2",
+"RespondPage": {
+"class": "SubmitData",
+"original_args": {
+"allowed_callers": [],
+"fail_ident": 2001,
+"submit_list": [
+"test2"
+],
+"target_ident": 2001
+},
+"original_fields": {}
 }
 }
 }
