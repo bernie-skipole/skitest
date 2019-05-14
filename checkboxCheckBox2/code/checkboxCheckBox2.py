@@ -57,12 +57,12 @@ def end_call(page_ident, page_type, skicall):
 
 def _test1(skicall):
     """Tests CheckBox2 when submitted in a form"""
-    if skicall.call_data['check10','checkbox'] == 'check10':
-        skicall.page_data['check10result', 'para_text'] = "Form submission result: The checkbox is TICKED."
-        skicall.page_data['check10', 'checked'] = True
+    if skicall.call_data['check','checkbox'] == 'check':
+        skicall.page_data['checkresult', 'para_text'] = "Form submission result: The checkbox is TICKED."
+        skicall.page_data['check', 'checked'] = True
     else:
-       skicall.page_data['check10result', 'para_text'] = "Form submission result: The checkbox is NOT TICKED."
-       skicall.page_data['check10', 'checked'] = False
+       skicall.page_data['checkresult', 'para_text'] = "Form submission result: The checkbox is NOT TICKED."
+       skicall.page_data['check', 'checked'] = False
 
 
 ##############################################################################

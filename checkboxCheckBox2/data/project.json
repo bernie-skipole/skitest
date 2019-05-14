@@ -308,9 +308,9 @@
 {
 "class": "inputforms.SubmitForm1",
 "name": "form1",
-"brief": "submitform1 holding check10",
+"brief": "submitform1 holding checkbox2",
 "fields": {
-"action": "check10test",
+"action": "2",
 "action_json": "",
 "button_class": "w3-button w3-theme-d4",
 "button_text": "Submit",
@@ -338,14 +338,14 @@
 "Widget",
 {
 "class": "checkbox.CheckBox2",
-"name": "check10",
-"brief": "check10",
+"name": "check",
+"brief": "checkbox2",
 "fields": {
-"checkbox": "check10",
+"checkbox": "check",
 "checkbox_class": "w3-check",
 "checked": false,
 "left_class": "ski_left_label",
-"left_label": "check10:",
+"left_label": "check:",
 "right_class": "",
 "right_label": "",
 "show": true,
@@ -382,8 +382,8 @@
 "Widget",
 {
 "class": "paras.DivPara",
-"name": "check10result",
-"brief": "Result of check10 test",
+"name": "checkresult",
+"brief": "Result of the checkbox2",
 "fields": {
 "clear_error": false,
 "error_class": "w3-red",
@@ -553,6 +553,28 @@
 "target_ident": 2001
 },
 "original_fields": {}
+}
+},
+"test1": {
+"ident": 2,
+"brief": "test 1",
+"RespondPage": {
+"class": "AllowStore",
+"original_args": {
+"allowed_callers": [],
+"alternate_ident": "home",
+"fail_ident": "home",
+"submit_list": [
+"test1"
+],
+"submit_option": true,
+"target_ident": 2001,
+"validate_fail_ident": null,
+"validate_option": false
+},
+"original_fields": {
+"check:checkbox": ""
+}
 }
 }
 }
