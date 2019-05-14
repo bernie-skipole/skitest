@@ -255,7 +255,13 @@ import skis
 skis_application = skis.makeapp(PROJECTFILES)
 application.add_project(skis_application, url='/lib')
 
+# add widget sub projects
 
+checkboxCheckBox1_code = os.path.join(PROJECTFILES, 'checkboxCheckBox1', 'code')
+if checkboxCheckBox1_code not in sys.path:
+    sys.path.append(checkboxCheckBox1_code)
+from checkboxCheckBox1 import application as checkboxCheckBox1_application
+application.add_project(checkboxCheckBox1_application, url='/checkboxCheckBox1')
 
 if __name__ == "__main__":
 

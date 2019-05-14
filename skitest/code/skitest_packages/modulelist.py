@@ -73,6 +73,16 @@ def retrieve_widgets_list(skicall):
 
 
 def retrieve_widgets_edit(skicall):
-    pass
+    result = False
+    if skicall.call_data['module'] == 'checkbox':
+        if skicall.call_data['widget'] == 'CheckBox1':
+            result = True
+    # followed by lots of elif's
+
+
+    if result:
+        skicall.page_data['widgettest','project'] = skicall.call_data['module'] + skicall.call_data['widget']
+    else:
+        raise FailPage("Unknown widget")
 
 
