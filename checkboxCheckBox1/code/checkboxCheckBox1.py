@@ -48,6 +48,8 @@ def submit_data(skicall):
         _test1(skicall)
     elif skicall.submit_list[0] == 'test2':
         _test2(skicall)
+    elif skicall.submit_list[0] == 'test5':
+        _test2(skicall)
     return
 
 
@@ -71,10 +73,6 @@ def _test2(skicall):
     """Raises an error in CheckBox1"""
     raise FailPage(message="Test error raised", widget='check1')
 
-
-def _test3(skicall):
-    """Raises an error in CheckBox1 by JSON"""
-    raise FailPage(message="Test error raised", widget='check1')
 
 
 

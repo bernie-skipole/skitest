@@ -496,7 +496,7 @@
 "get_field1": "",
 "get_field2": "",
 "hide": false,
-"json_ident": "check3test",
+"json_ident": "4",
 "link_ident": "no_javascript",
 "local_storage": "",
 "session_storage": "",
@@ -556,7 +556,7 @@
 "get_field1": "",
 "get_field2": "",
 "hide": false,
-"json_ident": "check4test",
+"json_ident": "5",
 "link_ident": "no_javascript",
 "local_storage": "",
 "session_storage": "",
@@ -616,7 +616,7 @@
 "get_field1": "",
 "get_field2": "",
 "hide": false,
-"json_ident": "check5test",
+"json_ident": "6",
 "link_ident": "no_javascript",
 "local_storage": "",
 "session_storage": "",
@@ -676,7 +676,7 @@
 "get_field1": "",
 "get_field2": "",
 "hide": false,
-"json_ident": "check6test",
+"json_ident": "7",
 "link_ident": "no_javascript",
 "local_storage": "",
 "session_storage": "",
@@ -761,6 +761,54 @@
 "target_ident": 2001
 },
 "original_fields": {}
+}
+},
+"test3": {
+"ident": 4,
+"brief": "checkbox1 set checked by JSON",
+"JSON": {
+"enable_cache": true,
+"content": {
+"check1result:para_text": "The checkbox is TICKED.",
+"check1:checked": true
+}
+}
+},
+"test4": {
+"ident": 5,
+"brief": "checkbox1 set unchecked by JSON",
+"JSON": {
+"enable_cache": true,
+"content": {
+"check1:checked": false,
+"check1result:para_text": "The checkbox is NOT TICKED."
+}
+}
+},
+"test5": {
+"ident": 6,
+"brief": "test 5 JSON call raises an error",
+"RespondPage": {
+"class": "SubmitData",
+"original_args": {
+"allowed_callers": [],
+"fail_ident": "general_json",
+"submit_list": [
+"test5"
+],
+"target_ident": "general_json"
+},
+"original_fields": {}
+}
+},
+"test6": {
+"ident": 7,
+"brief": "test 6 JSON call to clear error",
+"JSON": {
+"enable_cache": true,
+"content": {
+"check1:clear_error": true
+}
 }
 }
 }
