@@ -283,7 +283,7 @@
 [
 "TextBlock",
 {
-"textref": "page.14002.01",
+"textref": "01",
 "failmessage": "TextBlock not found",
 "show": true,
 "escape": true,
@@ -300,7 +300,7 @@
 "name": "form1",
 "brief": "submitform1 holding check1",
 "fields": {
-"action": "check1test",
+"action": "2",
 "action_json": "",
 "button_class": "w3-button w3-theme-d4",
 "button_text": "Submit",
@@ -362,7 +362,7 @@
 [
 "TextBlock",
 {
-"textref": "page.14002.02",
+"textref": "02",
 "failmessage": "TextBlock not found",
 "show": true,
 "escape": true,
@@ -402,7 +402,7 @@
 [
 "TextBlock",
 {
-"textref": "page.14002.03",
+"textref": "03",
 "failmessage": "TextBlock not found",
 "show": true,
 "escape": true,
@@ -462,7 +462,7 @@
 [
 "TextBlock",
 {
-"textref": "page.14002.04",
+"textref": "04",
 "failmessage": "TextBlock not found",
 "show": true,
 "escape": true,
@@ -522,7 +522,7 @@
 [
 "TextBlock",
 {
-"textref": "page.14002.05",
+"textref": "05",
 "failmessage": "TextBlock not found",
 "show": true,
 "escape": true,
@@ -582,7 +582,7 @@
 [
 "TextBlock",
 {
-"textref": "page.14002.06",
+"textref": "06",
 "failmessage": "TextBlock not found",
 "show": true,
 "escape": true,
@@ -642,7 +642,7 @@
 [
 "TextBlock",
 {
-"textref": "page.14002.07",
+"textref": "07",
 "failmessage": "TextBlock not found",
 "show": true,
 "escape": true,
@@ -724,6 +724,28 @@
 "target_ident": 2001
 },
 "original_fields": {}
+}
+},
+"test1": {
+"ident": 2,
+"brief": "test 1",
+"RespondPage": {
+"class": "AllowStore",
+"original_args": {
+"allowed_callers": [],
+"alternate_ident": "home",
+"fail_ident": "home",
+"submit_list": [
+"test1"
+],
+"submit_option": true,
+"target_ident": 2001,
+"validate_fail_ident": null,
+"validate_option": false
+},
+"original_fields": {
+"check1:checkbox": ""
+}
 }
 }
 }
