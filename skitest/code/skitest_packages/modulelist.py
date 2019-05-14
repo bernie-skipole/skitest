@@ -77,6 +77,8 @@ def retrieve_widgets_edit(skicall):
     if skicall.call_data['module'] == 'checkbox':
         if skicall.call_data['widget'] == 'CheckBox1':
             result = True
+        elif skicall.call_data['widget'] == 'CheckBox2':
+            result = True
     # followed by lots of elif's
 
 

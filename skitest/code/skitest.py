@@ -94,7 +94,6 @@ _HEADER_TEXT = { 2001 : "Project skitest.",
                  9102: "Widgets",
                  9103: "Test Widget",
                 13001:"Widget Modules",
-                14002:"Tests for the CheckBox1 widget.",
                 14010:"Tests for the CheckBox2 widget.",
                 14020:"Tests for the CheckedText widget.",
                 14101:"Tests for the Table1_Button widget.",
@@ -166,7 +165,6 @@ _NAV_BUTTONS = {
                   9102:[['home','Home', False, ''], ['listmodules', 'Modules', False, '']],
                   9103:[['home','Home', False, ''], ['listmodules', 'Modules', False, '']],
                  13001:[['home','Home', False, '']],
-                 14002:[['home','Home', False, ''], ['modules', 'Modules', False, ''],['checkbox', 'checkbox', False, '']],
                  14010:[['home','Home', False, ''], ['modules', 'Modules', False, ''],['checkbox', 'checkbox', False, '']],
                  14020:[['home','Home', False, ''], ['modules', 'Modules', False, ''],['checkbox', 'checkbox', False, '']],
                  14101:[['home','Home', False, ''], ['modules', 'Modules', False, ''],['links', 'links', False, '']],
@@ -262,6 +260,12 @@ if checkboxCheckBox1_code not in sys.path:
     sys.path.append(checkboxCheckBox1_code)
 from checkboxCheckBox1 import application as checkboxCheckBox1_application
 application.add_project(checkboxCheckBox1_application, url='/checkboxCheckBox1')
+
+checkboxCheckBox2_code = os.path.join(PROJECTFILES, 'checkboxCheckBox2', 'code')
+if checkboxCheckBox2_code not in sys.path:
+    sys.path.append(checkboxCheckBox2_code)
+from checkboxCheckBox2 import application as checkboxCheckBox2_application
+application.add_project(checkboxCheckBox2_application, url='/checkboxCheckBox2')
 
 if __name__ == "__main__":
 
