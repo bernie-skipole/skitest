@@ -436,7 +436,7 @@
 "Widget",
 {
 "class": "links.JSONButtonLink",
-"name": "check11",
+"name": "check3",
 "brief": "Sets checked using JSON",
 "fields": {
 "button_text": "Set checked (JSON)",
@@ -446,7 +446,7 @@
 "get_field1": "",
 "get_field2": "",
 "hide": false,
-"json_ident": "check11test",
+"json_ident": "3",
 "link_ident": "no_javascript",
 "local_storage": "",
 "session_storage": "",
@@ -496,7 +496,7 @@
 "Widget",
 {
 "class": "links.JSONButtonLink",
-"name": "check12",
+"name": "check4",
 "brief": "Sets unchecked using JSON",
 "fields": {
 "button_text": "Set unchecked (JSON)",
@@ -506,7 +506,7 @@
 "get_field1": "",
 "get_field2": "",
 "hide": false,
-"json_ident": "check12test",
+"json_ident": "4",
 "link_ident": "no_javascript",
 "local_storage": "",
 "session_storage": "",
@@ -574,6 +574,28 @@
 },
 "original_fields": {
 "check:checkbox": ""
+}
+}
+},
+"test2": {
+"ident": 3,
+"brief": "Set checkbox ticked",
+"JSON": {
+"enable_cache": true,
+"content": {
+"check:checked": true,
+"checkresult:para_text": "Form submission result: The checkbox is TICKED."
+}
+}
+},
+"test3": {
+"ident": 4,
+"brief": "Set checkbox unticked",
+"JSON": {
+"enable_cache": true,
+"content": {
+"check:checked": false,
+"checkresult:para_text": "Form submission result: The checkbox is NOT TICKED."
 }
 }
 }
