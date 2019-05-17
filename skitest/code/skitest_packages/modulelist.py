@@ -79,6 +79,8 @@ def retrieve_widgets_edit(skicall):
             result = True
         elif skicall.call_data['widget'] == 'CheckBox2':
             result = True
+        elif skicall.call_data['widget'] == 'CheckedText':
+            result = True
     # followed by lots of elif's
 
 

@@ -5,7 +5,7 @@ def modules_menu(skicall):
 
     # each tuple in the list below is button text, link ident
 
-    butt_list = [('checkbox', 'checkbox'),
+    butt_list = [
                  ('confirm', 'confirm'),
                  ('debug_tools', 3012),
                  ('dropdown', 3013),
