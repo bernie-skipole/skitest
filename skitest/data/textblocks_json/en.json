@@ -19,7 +19,6 @@
   "page.14230.01": "A div - could be used for modal background containing a div with a paragraph of error text and an X close button with three optional get fields.\r\nThe 'X' button hides the widget without making a call if javascript is available. If not, then the link is called.",
   "page.14301.01": "A widget containing the current server time. Consists of a span with time stamp.",
   "page.14401.01": "A widget of div's containing a paragraph and close button, on the button being pressed, closes without calling the link - but the link is called if javascript disabled. The text changes to the error message on error, and inner div class changes to error_class on error.",
-  "page.14410.01": "ConfirmBox1: A widget of div's containing a paragraph and two link buttons, The links have options to call either JSON or HTML pages.",
   "page.14420.01": "ConfirmBox2: A widget of div's containing a paragraph and two link buttons, The first link auto closes the call if the client has javascript enabled, otherwise it makes the call. The second link targets a html page.",
   "page.14601.01": "TextInput1: An input field only, needs to be contained within a form.",
   "page.14610.01": "TextInput2: A div containing a hidden error paragraph with a text input field (no form or submit button). A label to the left of the input field can have a class and text set",
