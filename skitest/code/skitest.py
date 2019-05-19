@@ -271,6 +271,13 @@ if checkboxCheckedText_code not in sys.path:
 from checkboxCheckedText import application as checkboxCheckedText_application
 application.add_project(checkboxCheckedText_application, url='/checkboxCheckedText')
 
+confirmConfirmBox1_code = os.path.join(PROJECTFILES, 'confirmConfirmBox1', 'code')
+if confirmConfirmBox1_code not in sys.path:
+    sys.path.append(confirmConfirmBox1_code)
+from confirmConfirmBox1 import application as confirmConfirmBox1_application
+application.add_project(confirmConfirmBox1_application, url='/confirmConfirmBox1')
+
+
 
 if __name__ == "__main__":
 
