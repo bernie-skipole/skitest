@@ -4,6 +4,10 @@ This package will be called by the Skipole framework to access your data.
 
 import os, sys
 
+##################################
+from importlib import import_module
+import pkgutil
+
 # this import used by basic authentication
 from base64 import b64decode
 
@@ -251,29 +255,15 @@ application.add_project(skis_application, url='/lib')
 
 # add widget sub projects
 
-checkboxCheckBox1_code = os.path.join(PROJECTFILES, 'checkboxCheckBox1', 'code')
-if checkboxCheckBox1_code not in sys.path:
-    sys.path.append(checkboxCheckBox1_code)
-from checkboxCheckBox1 import application as checkboxCheckBox1_application
-application.add_project(checkboxCheckBox1_application, url='/checkboxCheckBox1')
+# import the module where the code for each test widget is found
+widgetprojmodule = import_module('widgetprojects', __name__)
 
-checkboxCheckBox2_code = os.path.join(PROJECTFILES, 'checkboxCheckBox2', 'code')
-if checkboxCheckBox2_code not in sys.path:
-    sys.path.append(checkboxCheckBox2_code)
-from checkboxCheckBox2 import application as checkboxCheckBox2_application
-application.add_project(checkboxCheckBox2_application, url='/checkboxCheckBox2')
-
-checkboxCheckedText_code = os.path.join(PROJECTFILES, 'checkboxCheckedText', 'code')
-if checkboxCheckedText_code not in sys.path:
-    sys.path.append(checkboxCheckedText_code)
-from checkboxCheckedText import application as checkboxCheckedText_application
-application.add_project(checkboxCheckedText_application, url='/checkboxCheckedText')
-
-confirmConfirmBox1_code = os.path.join(PROJECTFILES, 'confirmConfirmBox1', 'code')
-if confirmConfirmBox1_code not in sys.path:
-    sys.path.append(confirmConfirmBox1_code)
-from confirmConfirmBox1 import application as confirmConfirmBox1_application
-application.add_project(confirmConfirmBox1_application, url='/confirmConfirmBox1')
+# from this module, obtain and import each further module containing a widget test application
+module_tuple = tuple(name for (module_loader, name, ispkg) in pkgutil.iter_modules(widgetprojmodule.__path__))
+for name in module_tuple:
+    appmodule = import_module('widgetprojects.' + name, __name__)
+    widget_application = appmodule.makeapp(PROJECTFILES)
+    application.add_project(widget_application, url='/'+name)
 
 
 
