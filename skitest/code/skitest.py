@@ -256,12 +256,13 @@ application.add_project(skis_application, url='/lib')
 # add widget sub projects
 
 # import the module where the code for each test widget is found
-widgetprojmodule = import_module('widgetprojects', __name__)
+import widgetprojects
 
 # from this module, obtain and import each further module containing a widget test application
-module_tuple = tuple(name for (module_loader, name, ispkg) in pkgutil.iter_modules(widgetprojmodule.__path__))
+
+module_tuple = tuple(name for (module_loader, name, ispkg) in pkgutil.iter_modules(widgetprojects.__path__))
 for name in module_tuple:
-    appmodule = import_module('widgetprojects.' + name, __name__)
+    appmodule = import_module('widgetprojects.' + name)
     widget_application = appmodule.makeapp(PROJECTFILES)
     application.add_project(widget_application, url='/'+name)
 
