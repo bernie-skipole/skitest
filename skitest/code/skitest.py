@@ -23,13 +23,6 @@ PROJECT = 'skitest'
 
 
 
-# Set environ variable for Yale Bright star catalogue
-# this is required for testing the starchart widget
-os.environ["BSC_PATH"] = "/home/bernie/test/ybs"
-os.environ["WCS_BINDIR"] = "/home/bernie/test/ybs"
-
-
-
 def start_call(called_ident, skicall):
     "When a call is initially received this function is called."
     if not called_ident:

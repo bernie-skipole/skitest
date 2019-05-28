@@ -34,7 +34,7 @@
   "page.14810.01": "Unescaped text set as HTML can be set in this div, this can be updated by JSON.",
   "page.15001.01": "An Unordered List widget containing text strings, these are JSON settable.",
   "page.15101.01": "An SVG Chart1 widget containing a list of values, these are JSON settable.",
-  "page.15105.01": "Displays a star chart, centered at a given point.\r\nThis particular test generates star positions from a copy of the Yale Bright Star catalogue, which, together with WCSTools, must be available on the web server.",
+  "page.15105.01": "Displays a star chart, centered at a given point.\r\nThis particular test generates star positions from a copy of the Yale Bright Star catalogue, which must be available on the web server.",
   "page.15201.01": "An SVG defined meter with a measurement value which can be updated by JSON.",
   "page.15203.01": "An SVG defined Traditional1 widget. Measurement value can be updated by JSON.",
   "page.15401.01": "These are the widgets in the headers module.",
