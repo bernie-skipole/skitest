@@ -21,7 +21,6 @@ def modules_menu(skicall):
                  ('paras', 'paras'),
                  ('radio', 3017),
                  ('svgbasics', 3019),
-                 ('svggraphs', 'svggraphs'),
                  ('svgmeters', 3018),
                  ('tables', 3020),
                  ('textarea', 3021),
