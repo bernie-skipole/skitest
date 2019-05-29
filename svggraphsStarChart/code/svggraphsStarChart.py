@@ -56,6 +56,10 @@ def submit_data(skicall):
         return _test2(skicall)                # must return here as this sets a cookie
     elif skicall.submit_list[0] == 'test3':
         return _test3(skicall)
+    elif skicall.submit_list[0] == 'test4':
+        return _test4(skicall)
+    elif skicall.submit_list[0] == 'test5':
+        return _test5(skicall)
     return
 
 
@@ -315,25 +319,7 @@ def _test3(skicall):
     return cki
 
 
-
-def flip_v(skicall):
-    """Flips the chart vertically"""
-
-    flipv, fliph, rot = _read_cookie(skicall.received_cookies)
-
-    # Do the actual flipping
-    if flipv:
-        flipv = False
-    else:
-        flipv = True
-
-    # get the new transform string and cookie
-    transform, cki = _transform_cookie(flipv, fliph, rot, skicall)
-    skicall.page_data['starchart', 'transform'] = transform
-    return cki
-
-
-def flip_h(skicall):
+def _test4(skicall):
     """Flips the chart horizontally"""
 
     flipv, fliph, rot = _read_cookie(skicall.received_cookies)
@@ -343,6 +329,23 @@ def flip_h(skicall):
         fliph = False
     else:
         fliph = True
+
+    # get the new transform string and cookie
+    transform, cki = _transform_cookie(flipv, fliph, rot, skicall)
+    skicall.page_data['starchart', 'transform'] = transform
+    return cki
+
+
+def _test5(skicall):
+    """Flips the chart vertically"""
+
+    flipv, fliph, rot = _read_cookie(skicall.received_cookies)
+
+    # Do the actual flipping
+    if flipv:
+        flipv = False
+    else:
+        flipv = True
 
     # get the new transform string and cookie
     transform, cki = _transform_cookie(flipv, fliph, rot, skicall)

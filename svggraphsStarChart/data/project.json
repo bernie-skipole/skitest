@@ -67,53 +67,6 @@
 }
 }
 },
-"fff": {
-"ident": 5100,
-"brief": "lists module tests",
-"default_page_name": "index",
-"restricted": false,
-"folders": {},
-"pages": {
-"starchart_test5": {
-"ident": 5109,
-"brief": "flip horizontally",
-"RespondPage": {
-"class": "SetCookies",
-"original_args": {
-"allowed_callers": [],
-"fail_ident": "general_json",
-"submit_list": [
-"skitest_packages",
-"widgets",
-"svggraphs",
-"flip_h"
-],
-"target_ident": "general_json"
-},
-"original_fields": {}
-}
-},
-"starchart_test6": {
-"ident": 5110,
-"brief": "flip vertically",
-"RespondPage": {
-"class": "SetCookies",
-"original_args": {
-"allowed_callers": [],
-"fail_ident": "general_json",
-"submit_list": [
-"skitest_packages",
-"widgets",
-"svggraphs",
-"flip_v"
-],
-"target_ident": "general_json"
-},
-"original_fields": {}
-}
-}
-}
-},
 "images": {
 "ident": 3000,
 "brief": "Holds images",
@@ -367,7 +320,7 @@
 "get_field1": "",
 "get_field2": "",
 "hide": false,
-"json_ident": "5109",
+"json_ident": "5",
 "link_ident": "no_javascript",
 "show": true,
 "show_error": "",
@@ -393,7 +346,7 @@
 "get_field1": "",
 "get_field2": "",
 "hide": false,
-"json_ident": "5110",
+"json_ident": "6",
 "link_ident": "no_javascript",
 "show": true,
 "show_error": "",
@@ -1048,6 +1001,38 @@
 "fail_ident": "general_json",
 "submit_list": [
 "test3"
+],
+"target_ident": "general_json"
+},
+"original_fields": {}
+}
+},
+"test4": {
+"ident": 5,
+"brief": "flip horizontally",
+"RespondPage": {
+"class": "SetCookies",
+"original_args": {
+"allowed_callers": [],
+"fail_ident": "general_json",
+"submit_list": [
+"test4"
+],
+"target_ident": "general_json"
+},
+"original_fields": {}
+}
+},
+"test5": {
+"ident": 6,
+"brief": "flip vertically",
+"RespondPage": {
+"class": "SetCookies",
+"original_args": {
+"allowed_callers": [],
+"fail_ident": "general_json",
+"submit_list": [
+"test5"
 ],
 "target_ident": "general_json"
 },
