@@ -1,0 +1,8 @@
+bsc5 format
+
+
+For each star, J2000 coordinates and visual magnitude:
+
+4 bytes - float RA degrees
+4 bytes - float DEC degrees
+4 bytes - float magnitude
