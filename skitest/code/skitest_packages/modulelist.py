@@ -74,7 +74,7 @@ def retrieve_widgets_list(skicall):
 
 def retrieve_widgets_edit(skicall):
     "Set the project iframe with the widget project name"
-    skicall.page_data['widgettest','project'] = skicall.call_data['module'] + skicall.call_data['widget']
+    skicall.page_data['widgettest','project'] = skicall.call_data['module'].replace('_','') + skicall.call_data['widget'].replace('_','')
 
 
 
