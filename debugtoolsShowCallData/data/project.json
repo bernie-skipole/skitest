@@ -60,7 +60,7 @@
 "ident": 1004,
 "brief": "Links to .../static/css/ski.css",
 "FilePage": {
-"filepath": "debugtoolsShowEnviron/static/css/ski.css",
+"filepath": "debugtoolsShowCallData/static/css/ski.css",
 "enable_cache": true,
 "mimetype": "text/css"
 }
@@ -78,7 +78,7 @@
 "ident": 3001,
 "brief": "skipole logo",
 "FilePage": {
-"filepath": "debugtoolsShowEnviron/static/images/logo.svg",
+"filepath": "debugtoolsShowCallData/static/images/logo.svg",
 "enable_cache": true,
 "mimetype": "image/svg+xml"
 }
@@ -87,7 +87,7 @@
 "ident": 3002,
 "brief": "skipole icon",
 "FilePage": {
-"filepath": "debugtoolsShowEnviron/static/images/logo_icon16.svg",
+"filepath": "debugtoolsShowCallData/static/images/logo_icon16.svg",
 "enable_cache": true,
 "mimetype": "image/svg+xml"
 }
@@ -288,26 +288,26 @@
 "escape": true,
 "linebreaks": true
 }
-]
-]
-}
 ],
 [
 "Widget",
 {
-"class": "debug_tools.ShowEnviron",
-"name": "showenviron",
-"brief": "Shows environment",
+"class": "debug_tools.ShowCallData",
+"name": "showcalldata",
+"brief": "The ShowCallData widget",
 "fields": {
 "clear_error": false,
-"error_class": "",
-"para_class": "",
+"error_class": "w3-panel w3-red",
+"para_class": "w3-section",
 "show": true,
 "show_error": "",
 "toptext": "DEBUG MODE IS ON",
-"widget_class": "",
+"widget_class": "w3-section",
 "widget_style": ""
 }
+}
+]
+]
 }
 ]
 ]
@@ -326,10 +326,12 @@
 "pages": {
 "index": {
 "ident": 1,
-"brief": "Forward call to index_template",
+"brief": "Sets some data into call_data",
 "RespondPage": {
-"class": "NoOperation",
+"class": "SubmitData",
 "original_args": {
+"allowed_callers": [],
+"fail_ident": 2001,
 "target_ident": 2001
 },
 "original_fields": {}
