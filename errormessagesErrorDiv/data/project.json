@@ -60,7 +60,7 @@
 "ident": 1004,
 "brief": "Links to .../static/css/ski.css",
 "FilePage": {
-"filepath": "errormessagesErrorPara/static/css/ski.css",
+"filepath": "errormessagesErrorDiv/static/css/ski.css",
 "enable_cache": true,
 "mimetype": "text/css"
 }
@@ -78,7 +78,7 @@
 "ident": 3001,
 "brief": "skipole logo",
 "FilePage": {
-"filepath": "errormessagesErrorPara/static/images/logo.svg",
+"filepath": "errormessagesErrorDiv/static/images/logo.svg",
 "enable_cache": true,
 "mimetype": "image/svg+xml"
 }
@@ -87,7 +87,7 @@
 "ident": 3002,
 "brief": "skipole icon",
 "FilePage": {
-"filepath": "errormessagesErrorPara/static/images/logo_icon16.svg",
+"filepath": "errormessagesErrorDiv/static/images/logo_icon16.svg",
 "enable_cache": true,
 "mimetype": "image/svg+xml"
 }
@@ -121,7 +121,7 @@
 "backcol": "#9dbd7a",
 "default_error_widget": [
 "",
-"testerrorpara"
+"testerrordiv"
 ]
 },
 "head": [
@@ -295,17 +295,25 @@
 [
 "Widget",
 {
-"class": "error_messages.ErrorPara",
-"name": "testerrorpara",
-"brief": "ErrorPara used for testing",
+"class": "error_messages.ErrorDiv",
+"name": "testerrordiv",
+"brief": "ErrorDiv used for testing",
 "fields": {
 "clear_error": false,
+"container_class": "",
+"error_class": "w3-panel w3-red",
 "hide": true,
 "show": true,
-"show_error": "Default error message",
-"widget_class": "w3-red",
+"show_error": "Default error message set on widget.",
+"widget_class": "",
 "widget_style": ""
-}
+},
+"container_0": [
+[
+"Text",
+""
+]
+]
 }
 ],
 [
@@ -393,7 +401,7 @@
 {
 "class": "links.ButtonLink1",
 "name": "defaultmessage",
-"brief": "Link to errorpara_test2",
+"brief": "Link to errordiv_test2",
 "fields": {
 "button_text": "Default Message",
 "clear_error": false,
@@ -767,7 +775,7 @@
 },
 "test6": {
 "ident": 7,
-"brief": "Responder for validation of input for errorpara test",
+"brief": "Responder for validation of input for errordiv test",
 "RespondPage": {
 "class": "AllowStore",
 "original_args": {
