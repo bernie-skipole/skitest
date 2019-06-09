@@ -58,9 +58,9 @@
 "pages": {
 "ski.css": {
 "ident": 1004,
-"brief": "Links to .../static/css/ski.css",
+"brief": "Links to ski.css",
 "FilePage": {
-"filepath": "confirmConfirmBox1/static/css/ski.css",
+"filepath": "ski.css",
 "enable_cache": true,
 "mimetype": "text/css"
 }

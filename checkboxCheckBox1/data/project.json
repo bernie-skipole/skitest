@@ -3,7 +3,7 @@
 "default_language": "en",
 "brief": "New Project",
 "version": "0.0.1",
-"skipole": "3.0.5",
+"skipole": "3.0.8",
 "specialpages": {
 "favicon": 3002,
 "general_json": 2002,
@@ -58,9 +58,9 @@
 "pages": {
 "ski.css": {
 "ident": 1004,
-"brief": "Links to .../static/css/ski.css",
+"brief": "Links to ski.css",
 "FilePage": {
-"filepath": "checkboxCheckBox1/static/css/ski.css",
+"filepath": "ski.css",
 "enable_cache": true,
 "mimetype": "text/css"
 }
