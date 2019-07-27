@@ -3,7 +3,7 @@
 "default_language": "en",
 "brief": "Project to test the skipole framework",
 "version": "0.4.0",
-"skipole": "3.2.0",
+"skipole": "3.3.0",
 "specialpages": {
 "basictests": 300002,
 "error_messages": 3008,

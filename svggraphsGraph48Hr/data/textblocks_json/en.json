@@ -1,0 +1,3 @@
+{
+  "01": "The Graph48Hr widget takes a list points, each point being a two element list of values against datetime.datetime objects. It displays a graph of these points over the last 48 hours."
+}

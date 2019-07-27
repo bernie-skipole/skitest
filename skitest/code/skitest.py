@@ -4,7 +4,6 @@ This package will be called by the Skipole framework to access your data.
 
 import os, sys
 
-##################################
 from importlib import import_module
 import pkgutil
 
@@ -16,7 +15,7 @@ from skipole import WSGIApplication, FailPage, GoTo, ValidateError, ServerError,
 # the framework needs to know the location of the projectfiles directory holding this and
 # other projects - specifically the skis and skiadmin projects
 # The following line assumes, as default, that this file is located beneath
-# ...projectfiles/newproj/code/
+# ...projectfiles/skitest/code/
 
 PROJECTFILES = os.path.dirname(os.path.dirname(os.path.dirname(os.path.realpath(__file__))))
 PROJECT = 'skitest'
