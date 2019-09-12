@@ -74,6 +74,8 @@ _HEADER_TEXT = { 2001 : "Project skitest.",
                100106 : "Secure 3",
                210001 : "Responders",
                300001 : "Validator Modules.",
+               300002 : "Basic Validators.",
+               300003 : "Allowed Values.",
                410001 : "Sub-project Tests",
                500101 : "UI Tests"
                }
@@ -96,6 +98,8 @@ _NAV_BUTTONS = {
                 100106 : [['home','Home', False, ''],['login', 'Test Login', False, '']],
                 210001 : [['home','Home', False, '']],
                 300001 : [['home','Home', False, '']],
+                300002 : [['home','Home', False, ''],['valtests', 'Validators', False, '']],
+                300003 : [['home','Home', False, ''],['valtests', 'Validators', False, ''], [300002, 'Basic', False, '']],
                 410001 : [['home','Home', False, '']],
                 500101 : [['home','Home', False, '']]
 
