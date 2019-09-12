@@ -229,8 +229,8 @@
 "button_class": "w3-button w3-block w3-theme-l1 w3-border w3-round",
 "button_text": "target",
 "button_wait_text": "Please wait...",
-"buttondiv_class": "ski_mid_button",
-"buttondiv_style": "",
+"buttondiv_class": "w3-container w3-center",
+"buttondiv_style": "margin-left:30%;width:20em;",
 "clear_error": false,
 "error_class": "w3-panel w3-red",
 "get_field1": "",
@@ -2538,19 +2538,6 @@ false,
 "ClosedPart",
 {
 "tag_name": "link",
-"brief": "css link to ski_css",
-"show": true,
-"attribs": {
-"href": "{ski_css}",
-"rel": "stylesheet",
-"type": "text/css"
-}
-}
-],
-[
-"ClosedPart",
-{
-"tag_name": "link",
 "brief": "css link to media.css",
 "show": true,
 "attribs": {
@@ -2649,7 +2636,18 @@ false,
 "hide_if_empty": false,
 "attribs": {
 "class": "w3-section",
-"style": "margin-left:25%;width:50%;margin-right:auto;"
+"style": "margin-left:30%;width:20em;"
+},
+"parts": [
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "button section",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "w3-section"
 },
 "parts": [
 [
@@ -2676,7 +2674,21 @@ false,
 "widget_style": ""
 }
 }
+]
+]
+}
 ],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "button section",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "w3-section"
+},
+"parts": [
 [
 "Widget",
 {
@@ -2700,6 +2712,9 @@ false,
 "widget_class": "w3-button w3-block w3-theme-d4",
 "widget_style": ""
 }
+}
+]
+]
 }
 ]
 ]
@@ -2813,19 +2828,6 @@ false,
 "show": true,
 "attribs": {
 "href": "{w3_theme_ski_css}",
-"rel": "stylesheet",
-"type": "text/css"
-}
-}
-],
-[
-"ClosedPart",
-{
-"tag_name": "link",
-"brief": "css link to ski_css",
-"show": true,
-"attribs": {
-"href": "{ski_css}",
 "rel": "stylesheet",
 "type": "text/css"
 }
@@ -3082,19 +3084,6 @@ false,
 "ClosedPart",
 {
 "tag_name": "link",
-"brief": "css link to ski_css",
-"show": true,
-"attribs": {
-"href": "{ski_css}",
-"rel": "stylesheet",
-"type": "text/css"
-}
-}
-],
-[
-"ClosedPart",
-{
-"tag_name": "link",
 "brief": "css link to blue.css",
 "show": true,
 "attribs": {
@@ -3196,6 +3185,18 @@ false,
 },
 "parts": [
 [
+"Part",
+{
+"tag_name": "div",
+"brief": "div for button",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "w3-section",
+"style": "margin-left:30%;width:20em"
+},
+"parts": [
+[
 "Widget",
 {
 "class": "links.ButtonLink1",
@@ -3219,7 +3220,22 @@ false,
 "widget_style": ""
 }
 }
+]
+]
+}
 ],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "div for button",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "w3-section",
+"style": "margin-left:30%;width:20em"
+},
+"parts": [
 [
 "Widget",
 {
@@ -3244,7 +3260,22 @@ false,
 "widget_style": ""
 }
 }
+]
+]
+}
 ],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "div for button",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "w3-section",
+"style": "margin-left:30%;width:20em"
+},
+"parts": [
 [
 "Widget",
 {
@@ -3268,6 +3299,9 @@ false,
 "widget_class": "w3-button w3-block w3-theme-d4",
 "widget_style": ""
 }
+}
+]
+]
 }
 ]
 ]
@@ -3388,19 +3422,6 @@ false,
 "ClosedPart",
 {
 "tag_name": "link",
-"brief": "css link to ski_css",
-"show": true,
-"attribs": {
-"href": "{ski_css}",
-"rel": "stylesheet",
-"type": "text/css"
-}
-}
-],
-[
-"ClosedPart",
-{
-"tag_name": "link",
 "brief": "css link to invblue.css",
 "show": true,
 "attribs": {
@@ -3502,6 +3523,18 @@ false,
 },
 "parts": [
 [
+"Part",
+{
+"tag_name": "div",
+"brief": "div for button",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "w3-section",
+"style": "margin-left:30%;width:20em"
+},
+"parts": [
+[
 "Widget",
 {
 "class": "links.ButtonLink1",
@@ -3525,7 +3558,22 @@ false,
 "widget_style": ""
 }
 }
+]
+]
+}
 ],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "div for button",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "w3-section",
+"style": "margin-left:30%;width:20em"
+},
+"parts": [
 [
 "Widget",
 {
@@ -3550,7 +3598,22 @@ false,
 "widget_style": ""
 }
 }
+]
+]
+}
 ],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "div for button",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "w3-section",
+"style": "margin-left:30%;width:20em"
+},
+"parts": [
 [
 "Widget",
 {
@@ -3574,6 +3637,9 @@ false,
 "widget_class": "w3-button w3-block w3-theme-d4",
 "widget_style": ""
 }
+}
+]
+]
 }
 ]
 ]
