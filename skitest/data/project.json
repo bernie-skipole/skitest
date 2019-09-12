@@ -520,19 +520,6 @@ false,
 "ClosedPart",
 {
 "tag_name": "link",
-"brief": "css link to ski.css",
-"show": true,
-"attribs": {
-"href": "{ski_css}",
-"rel": "stylesheet",
-"type": "text/css"
-}
-}
-],
-[
-"ClosedPart",
-{
-"tag_name": "link",
 "brief": "css link to jquery_ui_css",
 "show": true,
 "attribs": {
@@ -672,7 +659,7 @@ false,
 "button_text": "Submit",
 "button_wait_text": "",
 "clear_error": false,
-"container_class": "ski_mid_button",
+"container_class": "",
 "div_class": "",
 "enctype": "",
 "error_class": "w3-panel w3-red",
@@ -680,9 +667,9 @@ false,
 "hidden_field2": "",
 "hidden_field3": "",
 "hidden_field4": "",
-"left_class": "ski_left_label",
+"left_class": "",
 "left_label": "Submit required date:",
-"left_style": "",
+"left_style": "display:inline-block;margin-right:1%;text-align:right;width:30%;",
 "right_class": "",
 "right_label": "",
 "right_style": "",
@@ -692,6 +679,18 @@ false,
 "widget_style": ""
 },
 "container_0": [
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "div holding input field",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "w3-section",
+"style": "margin-left:20%"
+},
+"parts": [
 [
 "ClosedWidget",
 {
@@ -715,6 +714,9 @@ false,
 "widget_class": "",
 "widget_style": ""
 }
+}
+]
+]
 }
 ]
 ]
@@ -917,19 +919,6 @@ false,
 }
 ],
 [
-"ClosedPart",
-{
-"tag_name": "link",
-"brief": "css link to ski_css",
-"show": true,
-"attribs": {
-"href": "{ski_css}",
-"rel": "stylesheet",
-"type": "text/css"
-}
-}
-],
-[
 "Part",
 {
 "tag_name": "script",
@@ -1051,9 +1040,6 @@ false,
 "brief": "Holds password form for secure 1",
 "show": true,
 "hide_if_empty": false,
-"attribs": {
-"style": "margin-left:20%"
-},
 "parts": [
 [
 "Widget",
@@ -1068,7 +1054,7 @@ false,
 "button_text": "Submit",
 "button_wait_text": "",
 "clear_error": false,
-"container_class": "",
+"container_class": "w3-section",
 "div_class": "",
 "enctype": "",
 "error_class": "w3-panel w3-red",
@@ -1076,9 +1062,9 @@ false,
 "hidden_field2": "",
 "hidden_field3": "",
 "hidden_field4": "",
-"left_class": "ski_left_label",
-"left_label": "",
-"left_style": "",
+"left_class": "",
+"left_label": "Submit Password:",
+"left_style": "display:inline-block;margin-right:1%;text-align:right;width:30%;",
 "right_class": "",
 "right_label": "",
 "right_style": "",
@@ -1089,6 +1075,17 @@ false,
 },
 "container_0": [
 [
+"Part",
+{
+"tag_name": "div",
+"brief": "div holding input field",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"style": "margin-left:30%"
+},
+"parts": [
+[
 "ClosedWidget",
 {
 "class": "inputtext.Password1",
@@ -1096,8 +1093,8 @@ false,
 "brief": "Password input field",
 "fields": {
 "disabled": false,
-"input_accepted_class": "",
-"input_errored_class": "ski_input_errored",
+"input_accepted_class": "w3-pale-green",
+"input_errored_class": "w3-pale-red",
 "input_text": "",
 "maxlength": "10",
 "required": true,
@@ -1120,11 +1117,12 @@ false,
 "Part",
 {
 "tag_name": "div",
-"brief": "Holds buttons",
+"brief": "Holds link button",
 "show": true,
 "hide_if_empty": false,
 "attribs": {
-"style": "margin-left:15%;width:50%;margin-right:auto;"
+"class": "w3-section",
+"style": "margin-left:30%;width:10em;"
 },
 "parts": [
 [
@@ -1150,6 +1148,9 @@ false,
 "widget_class": "w3-button w3-block w3-theme-d4",
 "widget_style": ""
 }
+}
+]
+]
 }
 ]
 ]
@@ -1197,9 +1198,6 @@ false,
 "brief": "Holds password form for secure2",
 "show": true,
 "hide_if_empty": false,
-"attribs": {
-"style": "margin-left:20%"
-},
 "parts": [
 [
 "Widget",
@@ -1214,7 +1212,7 @@ false,
 "button_text": "Submit",
 "button_wait_text": "",
 "clear_error": false,
-"container_class": "",
+"container_class": "w3-section",
 "div_class": "",
 "enctype": "",
 "error_class": "w3-panel w3-red",
@@ -1222,9 +1220,9 @@ false,
 "hidden_field2": "",
 "hidden_field3": "",
 "hidden_field4": "",
-"left_class": "ski_left_label",
-"left_label": "",
-"left_style": "",
+"left_class": "",
+"left_label": "Submit Password:",
+"left_style": "display:inline-block;margin-right:1%;text-align:right;width:30%;",
 "right_class": "",
 "right_label": "",
 "right_style": "",
@@ -1235,6 +1233,17 @@ false,
 },
 "container_0": [
 [
+"Part",
+{
+"tag_name": "div",
+"brief": "div holding input field",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"style": "margin-left:30%"
+},
+"parts": [
+[
 "ClosedWidget",
 {
 "class": "inputtext.Password1",
@@ -1242,8 +1251,8 @@ false,
 "brief": "Password input field",
 "fields": {
 "disabled": false,
-"input_accepted_class": "",
-"input_errored_class": "ski_input_errored",
+"input_accepted_class": "w3-pale-green",
+"input_errored_class": "w3-pale-red",
 "input_text": "",
 "maxlength": "10",
 "required": true,
@@ -1261,16 +1270,20 @@ false,
 ]
 ]
 }
+]
+]
+}
 ],
 [
 "Part",
 {
 "tag_name": "div",
-"brief": "Holds buttons",
+"brief": "Holds link button",
 "show": true,
 "hide_if_empty": false,
 "attribs": {
-"style": "margin-left:15%;width:50%;margin-right:auto;"
+"class": "w3-section",
+"style": "margin-left:30%;width:10em;"
 },
 "parts": [
 [
@@ -1344,7 +1357,8 @@ false,
 "show": true,
 "hide_if_empty": false,
 "attribs": {
-"style": "margin-left:15%;width:50%;margin-right:auto;"
+"class": "w3-section",
+"style": "margin-left:30%;width:10em;"
 },
 "parts": [
 [
@@ -2114,19 +2128,6 @@ false,
 "show": true,
 "attribs": {
 "href": "{w3_theme_ski_css}",
-"rel": "stylesheet",
-"type": "text/css"
-}
-}
-],
-[
-"ClosedPart",
-{
-"tag_name": "link",
-"brief": "css link to ski_css",
-"show": true,
-"attribs": {
-"href": "{ski_css}",
 "rel": "stylesheet",
 "type": "text/css"
 }
@@ -3989,19 +3990,6 @@ false,
 }
 ],
 [
-"ClosedPart",
-{
-"tag_name": "link",
-"brief": "css link to ski_css",
-"show": true,
-"attribs": {
-"href": "{ski_css}",
-"rel": "stylesheet",
-"type": "text/css"
-}
-}
-],
-[
 "Part",
 {
 "tag_name": "script",
@@ -4115,7 +4103,7 @@ false,
 "parts": [
 [
 "Text",
-"Test1 - the button below would normally link to a no-op responder which leads to the home page. But start_call directs this to lib,test1"
+"Test1 - the button below would normally link to a no-op responder which leads to the home page. But start_call directs this to skis,test1"
 ]
 ]
 }
@@ -4128,7 +4116,7 @@ false,
 "show": true,
 "hide_if_empty": false,
 "attribs": {
-"style": "margin-left:15%;width:50%;margin-right:auto;"
+"style": "margin-left:30%;width:20em"
 },
 "parts": [
 [
@@ -4141,7 +4129,7 @@ false,
 "button_class": "w3-button w3-block w3-theme-l1 w3-border",
 "button_text": "start_call test1",
 "button_wait_text": "Please wait...",
-"buttondiv_class": "ski_mid_button",
+"buttondiv_class": "w3-container w3-center",
 "buttondiv_style": "",
 "clear_error": false,
 "error_class": "w3-panel w3-red",
@@ -4183,7 +4171,7 @@ false,
 "show": true,
 "hide_if_empty": false,
 "attribs": {
-"style": "margin-left:15%;width:50%;margin-right:auto;"
+"style": "margin-left:30%;width:20em"
 },
 "parts": [
 [
@@ -4196,7 +4184,7 @@ false,
 "button_class": "w3-button w3-block w3-theme-l1 w3-border",
 "button_text": "start_call test2",
 "button_wait_text": "Please wait...",
-"buttondiv_class": "ski_mid_button",
+"buttondiv_class": "w3-container w3-center",
 "buttondiv_style": "",
 "clear_error": false,
 "error_class": "w3-panel w3-red",
@@ -4238,7 +4226,7 @@ false,
 "show": true,
 "hide_if_empty": false,
 "attribs": {
-"style": "margin-left:15%;width:50%;margin-right:auto;"
+"style": "margin-left:30%;width:20em"
 },
 "parts": [
 [
@@ -4251,7 +4239,7 @@ false,
 "button_class": "w3-button w3-block w3-theme-l1 w3-border",
 "button_text": "goto test3",
 "button_wait_text": "Please wait...",
-"buttondiv_class": "ski_mid_button",
+"buttondiv_class": "w3-container w3-center",
 "buttondiv_style": "",
 "clear_error": false,
 "error_class": "w3-panel w3-red",
@@ -4280,7 +4268,7 @@ false,
 "parts": [
 [
 "Text",
-"Test4 - inserts an error message into lib,server_error page. In this case the responder target is a page in a sub project."
+"Test4 - inserts an error message into skis,server_error page. In this case the responder target is a page in a sub project."
 ]
 ]
 }
@@ -4293,7 +4281,7 @@ false,
 "show": true,
 "hide_if_empty": false,
 "attribs": {
-"style": "margin-left:15%;width:50%;margin-right:auto;"
+"style": "margin-left:30%;width:20em"
 },
 "parts": [
 [
@@ -4306,7 +4294,7 @@ false,
 "button_class": "w3-button w3-block w3-theme-l1 w3-border",
 "button_text": "skis,server_error",
 "button_wait_text": "Please wait...",
-"buttondiv_class": "ski_mid_button",
+"buttondiv_class": "w3-container w3-center",
 "buttondiv_style": "",
 "clear_error": false,
 "error_class": "w3-panel w3-red",
