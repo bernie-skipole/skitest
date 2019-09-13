@@ -66,8 +66,8 @@ def submit_data(skicall):
 
 _HEADER_TEXT = { 2001 : "Project skitest.",
                  9101 : "Widget Modules.",
-                 9102 : "Widgets in Module.",
-                 9103 : "Widget Tests",
+                 9102 : "Widgets in module ",
+                 9103 : "Tests of ",
                100101 : "Login Tests",
                100102 : "Secure 1",
                100104 : "Secure 2",
@@ -114,9 +114,15 @@ def end_call(page_ident, page_type, skicall):
     # Insert header text into the template page
     if page_num in _HEADER_TEXT:
         skicall.page_data['header', 'headpara', 'para_text']  = _HEADER_TEXT[page_num]
+    # add further text to the header, if text is given in call_data['headtext']
+    if 'headtext' in skicall.call_data:
+       skicall.page_data['header', 'headpara', 'para_text'] +=  skicall.call_data['headtext']
     # Insert navigation links into the template page
     if page_num in _NAV_BUTTONS:
-        skicall.page_data['navigation', 'navbuttons', 'nav_links'] = _NAV_BUTTONS[page_num]
+        skicall.page_data['navigation', 'navbuttons', 'nav_links'] = _NAV_BUTTONS[page_num][:]
+    # append another link in the nav buttons, if a link list is given in call_data['navlink']
+    if 'navlink' in skicall.call_data:
+        skicall.page_data['navigation', 'navbuttons', 'nav_links'].append(skicall.call_data['navlink'])    
     # Insert a status message into the footer if call_data['status'] is given
     if 'status' in skicall.call_data:
         skicall.page_data['foot','foot_status','footer_text'] = skicall.call_data['status']

@@ -6913,6 +6913,32 @@ false,
 }
 },
 "pages": {
+"backtomodule": {
+"ident": 9004,
+"brief": "Link to the module",
+"RespondPage": {
+"class": "AllowStoreKeyed",
+"original_args": {
+"allowed_callers": [
+9103
+],
+"alternate_ident": "home",
+"fail_ident": "home",
+"submit_list": [
+"skitest_packages",
+"modulelist",
+"retrieve_widgets_list"
+],
+"submit_option": true,
+"target_ident": 9102,
+"validate_fail_ident": null,
+"validate_option": false
+},
+"original_fields": {
+"navigation-navbuttons:nav_links": "module"
+}
+}
+},
 "listmodules": {
 "ident": 9001,
 "brief": "Lists modules",

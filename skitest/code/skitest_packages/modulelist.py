@@ -49,7 +49,7 @@ def retrieve_widgets_list(skicall):
     # set module into call_data
     call_data['module'] = module_name
 
-    page_data[("adminhead","page_head","large_text")] = "Widgets in module %s" % (module_name,)
+    call_data['headtext'] = module_name
     page_data[('moduledesc','textblock_ref')] = 'widgets.' + module_name + '.module'
 
     # table of widgets
@@ -74,7 +74,15 @@ def retrieve_widgets_list(skicall):
 
 def retrieve_widgets_edit(skicall):
     "Set the project iframe with the widget project name"
+    # iframe shows project
     skicall.page_data['widgettest','project'] = skicall.call_data['module'].replace('_','') + skicall.call_data['widget'].replace('_','')
+    # navlink has a button appended
+    skicall.call_data['navlink']= [9004,'Module '+skicall.call_data['module'], False, skicall.call_data['module']]
+    # page header has widget name
+    skicall.call_data['headtext'] = skicall.call_data['widget']
+
+
+
 
 
 
