@@ -398,24 +398,6 @@ false,
 "default_page_name": "index",
 "restricted": false,
 "folders": {
-"css": {
-"ident": 1000,
-"brief": "Holds CSS pages",
-"default_page_name": "index",
-"restricted": false,
-"folders": {},
-"pages": {
-"ski.css": {
-"ident": 1004,
-"brief": "skipole css",
-"FilePage": {
-"filepath": "skitest/static/ski.css",
-"enable_cache": true,
-"mimetype": "text/css"
-}
-}
-}
-},
 "jqui": {
 "ident": 500000,
 "brief": "Folder of Jquery UI tests",
