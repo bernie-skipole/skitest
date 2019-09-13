@@ -3,7 +3,7 @@
 "default_language": "en",
 "brief": "New Project",
 "version": "0.0.1",
-"skipole": "3.0.8",
+"skipole": "3.5.4",
 "specialpages": {
 "favicon": 3002,
 "general_json": 2002,
@@ -15,7 +15,6 @@
 "ski_basic": "skis,ski_basic",
 "ski_checkbox": "skis,ski_checkbox",
 "ski_confirm": "skis,ski_confirm",
-"ski_css": 1004,
 "ski_debug_tools": "skis,ski_debug_tools",
 "ski_dropdown": "skis,ski_dropdown",
 "ski_error_messages": "skis,ski_error_messages",
@@ -49,24 +48,6 @@
 "default_page_name": "index",
 "restricted": false,
 "folders": {
-"css": {
-"ident": 1000,
-"brief": "Holds CSS pages",
-"default_page_name": "index",
-"restricted": false,
-"folders": {},
-"pages": {
-"ski.css": {
-"ident": 1004,
-"brief": "Links to ski.css",
-"FilePage": {
-"filepath": "ski.css",
-"enable_cache": true,
-"mimetype": "text/css"
-}
-}
-}
-},
 "images": {
 "ident": 3000,
 "brief": "Holds images",
@@ -197,19 +178,6 @@
 }
 ],
 [
-"ClosedPart",
-{
-"tag_name": "link",
-"brief": "css link to ski_css",
-"show": true,
-"attribs": {
-"href": "{ski_css}",
-"rel": "stylesheet",
-"type": "text/css"
-}
-}
-],
-[
 "Part",
 {
 "tag_name": "script",
@@ -313,10 +281,12 @@
 "hidden_field2": "",
 "hidden_field3": "",
 "hidden_field4": "",
-"left_class": "ski_left_label",
+"left_class": "",
 "left_label": "Send check1 value:",
+"left_style": "display:inline-block;margin-right:1%;text-align:right;width:30%;",
 "right_class": "",
 "right_label": "",
+"right_style": "",
 "show": true,
 "show_error": "",
 "widget_class": "w3-section",
@@ -332,14 +302,18 @@
 "fields": {
 "checkbox": "check1",
 "checkbox_class": "w3-check",
+"checkbox_style": "",
 "checked": false,
 "clear_error": false,
 "div_class": "",
+"div_style": "",
 "error_class": "w3-panel w3-red",
-"left_class": "ski_left_label",
+"left_class": "",
 "left_label": "check1:",
+"left_style": "display:inline-block;margin-right:1%;text-align:right;width:30%;",
 "right_class": "",
 "right_label": "",
+"right_style": "",
 "show": true,
 "show_error": "",
 "widget_class": "w3-section",
@@ -419,7 +393,7 @@
 "show": true,
 "hide_if_empty": false,
 "attribs": {
-"style": "margin-left:15%;width:50%;margin-right:auto;"
+"style": "margin-left:30%;width:20em;"
 },
 "parts": [
 [
@@ -479,7 +453,7 @@
 "show": true,
 "hide_if_empty": false,
 "attribs": {
-"style": "margin-left:15%;width:50%;margin-right:auto;"
+"style": "margin-left:30%;width:20em;"
 },
 "parts": [
 [
@@ -539,7 +513,7 @@
 "show": true,
 "hide_if_empty": false,
 "attribs": {
-"style": "margin-left:15%;width:50%;margin-right:auto;"
+"style": "margin-left:30%;width:20em;"
 },
 "parts": [
 [
@@ -599,7 +573,7 @@
 "show": true,
 "hide_if_empty": false,
 "attribs": {
-"style": "margin-left:15%;width:50%;margin-right:auto;"
+"style": "margin-left:30%;width:20em;"
 },
 "parts": [
 [
@@ -659,7 +633,7 @@
 "show": true,
 "hide_if_empty": false,
 "attribs": {
-"style": "margin-left:15%;width:50%;margin-right:auto;"
+"style": "margin-left:30%;width:20em;"
 },
 "parts": [
 [
@@ -696,7 +670,7 @@
 "brief": "section footer with alias foot",
 "section_name": "footer",
 "placename": "foot",
-"multiplier": 1,
+"multiplier": 0,
 "mtag": "div"
 }
 ]
