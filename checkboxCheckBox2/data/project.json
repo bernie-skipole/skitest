@@ -3,7 +3,7 @@
 "default_language": "en",
 "brief": "New Project",
 "version": "0.0.1",
-"skipole": "3.0.5",
+"skipole": "3.5.4",
 "specialpages": {
 "favicon": 3002,
 "general_json": 2002,
@@ -15,7 +15,6 @@
 "ski_basic": "skis,ski_basic",
 "ski_checkbox": "skis,ski_checkbox",
 "ski_confirm": "skis,ski_confirm",
-"ski_css": 1004,
 "ski_debug_tools": "skis,ski_debug_tools",
 "ski_dropdown": "skis,ski_dropdown",
 "ski_error_messages": "skis,ski_error_messages",
@@ -49,24 +48,6 @@
 "default_page_name": "index",
 "restricted": false,
 "folders": {
-"css": {
-"ident": 1000,
-"brief": "Holds CSS pages",
-"default_page_name": "index",
-"restricted": false,
-"folders": {},
-"pages": {
-"ski.css": {
-"ident": 1004,
-"brief": "Links to ski.css",
-"FilePage": {
-"filepath": "ski.css",
-"enable_cache": true,
-"mimetype": "text/css"
-}
-}
-}
-},
 "images": {
 "ident": 3000,
 "brief": "Holds images",
@@ -197,19 +178,6 @@
 }
 ],
 [
-"ClosedPart",
-{
-"tag_name": "link",
-"brief": "css link to ski_css",
-"show": true,
-"attribs": {
-"href": "{ski_css}",
-"rel": "stylesheet",
-"type": "text/css"
-}
-}
-],
-[
 "Part",
 {
 "tag_name": "script",
@@ -299,9 +267,6 @@
 "brief": "check10",
 "show": true,
 "hide_if_empty": false,
-"attribs": {
-"class": "even"
-},
 "parts": [
 [
 "Widget",
@@ -324,16 +289,30 @@
 "hidden_field2": "",
 "hidden_field3": "",
 "hidden_field4": "",
-"left_class": "ski_left_label",
-"left_label": "",
+"left_class": "",
+"left_label": "Submit to test:",
+"left_style": "display:inline-block;margin-right:1%;text-align:right;width:20%;",
 "right_class": "",
 "right_label": "",
+"right_style": "",
 "show": true,
 "show_error": "",
 "widget_class": "w3-section",
 "widget_style": ""
 },
 "container_0": [
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "div holding checkbox",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "w3-section",
+"style": "margin-left:20%"
+},
+"parts": [
 [
 "Widget",
 {
@@ -343,15 +322,21 @@
 "fields": {
 "checkbox": "check",
 "checkbox_class": "w3-check",
+"checkbox_style": "",
 "checked": false,
-"left_class": "ski_left_label",
+"left_class": "",
 "left_label": "check:",
+"left_style": "margin-right:1em",
 "right_class": "",
-"right_label": "",
+"right_label": "then press submit.",
+"right_style": "margin-left:1em",
 "show": true,
 "widget_class": "",
 "widget_style": ""
 }
+}
+]
+]
 }
 ]
 ]
@@ -429,7 +414,7 @@
 "show": true,
 "hide_if_empty": false,
 "attribs": {
-"style": "margin-left:15%;width:50%;margin-right:auto;"
+"style": "margin-left:20%;width:20em;"
 },
 "parts": [
 [
@@ -489,7 +474,7 @@
 "show": true,
 "hide_if_empty": false,
 "attribs": {
-"style": "margin-left:15%;width:50%;margin-right:auto;"
+"style": "margin-left:20%;width:20em;"
 },
 "parts": [
 [
@@ -526,7 +511,7 @@
 "brief": "section footer with alias foot",
 "section_name": "footer",
 "placename": "foot",
-"multiplier": 1,
+"multiplier": 0,
 "mtag": "div"
 }
 ]

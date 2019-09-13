@@ -18,7 +18,9 @@
 "widget_class": "w3-section"
 },
 "CheckBox2": {
-"checkbox_class": "w3-check"
+"checkbox_class": "w3-check",
+"left_style": "margin-right:1em",
+"right_style": "margin-left:1em"
 },
 "CheckInputs": {
 "checkbox_class": "w3-check",
