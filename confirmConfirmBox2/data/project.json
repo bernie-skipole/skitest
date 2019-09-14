@@ -3,7 +3,7 @@
 "default_language": "en",
 "brief": "New Project",
 "version": "0.0.1",
-"skipole": "3.0.7",
+"skipole": "3.5.4",
 "specialpages": {
 "favicon": 3002,
 "general_json": 2002,
@@ -15,7 +15,6 @@
 "ski_basic": "skis,ski_basic",
 "ski_checkbox": "skis,ski_checkbox",
 "ski_confirm": "skis,ski_confirm",
-"ski_css": 1004,
 "ski_debug_tools": "skis,ski_debug_tools",
 "ski_dropdown": "skis,ski_dropdown",
 "ski_error_messages": "skis,ski_error_messages",
@@ -49,24 +48,6 @@
 "default_page_name": "index",
 "restricted": false,
 "folders": {
-"css": {
-"ident": 1000,
-"brief": "Holds CSS pages",
-"default_page_name": "index",
-"restricted": false,
-"folders": {},
-"pages": {
-"ski.css": {
-"ident": 1004,
-"brief": "Links to ski.css",
-"FilePage": {
-"filepath": "ski.css",
-"enable_cache": true,
-"mimetype": "text/css"
-}
-}
-}
-},
 "images": {
 "ident": 3000,
 "brief": "Holds images",
@@ -191,19 +172,6 @@
 "show": true,
 "attribs": {
 "href": "{w3_theme_ski_css}",
-"rel": "stylesheet",
-"type": "text/css"
-}
-}
-],
-[
-"ClosedPart",
-{
-"tag_name": "link",
-"brief": "css link to ski_css",
-"show": true,
-"attribs": {
-"href": "{ski_css}",
 "rel": "stylesheet",
 "type": "text/css"
 }
@@ -350,8 +318,8 @@
 "button_class": "w3-button w3-block w3-theme-l1 w3-border",
 "button_text": "HTML call",
 "button_wait_text": "Please wait...",
-"buttondiv_class": "ski_mid_button",
-"buttondiv_style": "",
+"buttondiv_class": "",
+"buttondiv_style": "margin-left:20%;width:20em;",
 "clear_error": false,
 "error_class": "w3-panel w3-red",
 "get_field1": "",
@@ -391,8 +359,8 @@
 "button_class": "w3-button w3-block w3-theme-l1 w3-border",
 "button_text": "JSON call",
 "button_wait_text": "Please wait...",
-"buttondiv_class": "ski_mid_button",
-"buttondiv_style": "",
+"buttondiv_class": "",
+"buttondiv_style": "margin-left:20%;width:20em;",
 "clear_error": false,
 "error_class": "w3-panel w3-red",
 "get_field1": "",
@@ -405,16 +373,6 @@
 "widget_class": "w3-section",
 "widget_style": ""
 }
-}
-],
-[
-"SectionPlaceHolder",
-{
-"brief": "section footer with alias foot",
-"section_name": "footer",
-"placename": "foot",
-"multiplier": 1,
-"mtag": "div"
 }
 ]
 ]
