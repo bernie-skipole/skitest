@@ -239,7 +239,7 @@
 [
 "TextBlock",
 {
-"textref": "page.14220.01",
+"textref": "01",
 "failmessage": "TextBlock not found",
 "show": true,
 "escape": true,
@@ -285,7 +285,18 @@
 "show": true,
 "hide_if_empty": false,
 "attribs": {
-"style": "margin-left:15%;width:50%;margin-right:auto;"
+"style": "margin-left:30%;width:20em"
+},
+"parts": [
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "button section",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "w3-section"
 },
 "parts": [
 [
@@ -312,7 +323,21 @@
 "widget_style": ""
 }
 }
+]
+]
+}
 ],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "button section",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "w3-section"
+},
+"parts": [
 [
 "Widget",
 {
@@ -337,7 +362,21 @@
 "widget_style": ""
 }
 }
+]
+]
+}
 ],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "button section",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "w3-section"
+},
+"parts": [
 [
 "Widget",
 {
@@ -362,7 +401,21 @@
 "widget_style": ""
 }
 }
+]
+]
+}
 ],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "button section",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "w3-section"
+},
+"parts": [
 [
 "Widget",
 {
@@ -386,6 +439,9 @@
 "widget_class": "w3-button w3-block w3-theme-d4",
 "widget_style": ""
 }
+}
+]
+]
 }
 ]
 ]
