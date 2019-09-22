@@ -3,7 +3,7 @@
 "default_language": "en",
 "brief": "New Project",
 "version": "0.0.1",
-"skipole": "3.0.7",
+"skipole": "3.5.4",
 "specialpages": {
 "favicon": 3002,
 "general_json": 2002,
@@ -15,7 +15,6 @@
 "ski_basic": "skis,ski_basic",
 "ski_checkbox": "skis,ski_checkbox",
 "ski_confirm": "skis,ski_confirm",
-"ski_css": 1004,
 "ski_debug_tools": "skis,ski_debug_tools",
 "ski_dropdown": "skis,ski_dropdown",
 "ski_error_messages": "skis,ski_error_messages",
@@ -49,24 +48,6 @@
 "default_page_name": "index",
 "restricted": false,
 "folders": {
-"css": {
-"ident": 1000,
-"brief": "Holds CSS pages",
-"default_page_name": "index",
-"restricted": false,
-"folders": {},
-"pages": {
-"ski.css": {
-"ident": 1004,
-"brief": "Links to ski.css",
-"FilePage": {
-"filepath": "ski.css",
-"enable_cache": true,
-"mimetype": "text/css"
-}
-}
-}
-},
 "images": {
 "ident": 3000,
 "brief": "Holds images",
@@ -191,19 +172,6 @@
 "show": true,
 "attribs": {
 "href": "{w3_theme_ski_css}",
-"rel": "stylesheet",
-"type": "text/css"
-}
-}
-],
-[
-"ClosedPart",
-{
-"tag_name": "link",
-"brief": "css link to ski_css",
-"show": true,
-"attribs": {
-"href": "{ski_css}",
 "rel": "stylesheet",
 "type": "text/css"
 }
@@ -525,10 +493,12 @@
 "hidden_field2": "",
 "hidden_field3": "",
 "hidden_field4": "",
-"left_class": "ski_left_label",
+"left_class": "",
 "left_label": "Submit centre and field of view:",
+"left_style": "display:inline-block;margin-right:1%;text-align:right;width:30%;",
 "right_class": "",
 "right_label": "",
+"right_style": "",
 "show": true,
 "show_error": "",
 "widget_class": "w3-section",
@@ -554,7 +524,7 @@
 "show": true,
 "hide_if_empty": false,
 "attribs": {
-"class": "ski_left_label"
+"style": "display:inline-block;margin-right:1%;text-align:right;width:30%;"
 },
 "parts": [
 [
@@ -584,7 +554,7 @@
 "size": "2",
 "title": "",
 "type": "text",
-"widget_class": "ski_input",
+"widget_class": "",
 "widget_style": ""
 }
 }
@@ -615,7 +585,7 @@
 "size": "2",
 "title": "",
 "type": "text",
-"widget_class": "ski_input",
+"widget_class": "",
 "widget_style": ""
 }
 }
@@ -646,7 +616,7 @@
 "size": "4",
 "title": "",
 "type": "text",
-"widget_class": "ski_input",
+"widget_class": "",
 "widget_style": ""
 }
 }
@@ -691,7 +661,7 @@
 "show": true,
 "hide_if_empty": false,
 "attribs": {
-"class": "ski_left_label"
+"style": "display:inline-block;margin-right:1%;text-align:right;width:30%;"
 },
 "parts": [
 [
@@ -721,7 +691,7 @@
 "size": "1",
 "title": "",
 "type": "text",
-"widget_class": "ski_input",
+"widget_class": "",
 "widget_style": ""
 }
 }
@@ -752,7 +722,7 @@
 "size": "2",
 "title": "",
 "type": "text",
-"widget_class": "ski_input",
+"widget_class": "",
 "widget_style": ""
 }
 }
@@ -783,7 +753,7 @@
 "size": "2",
 "title": "",
 "type": "text",
-"widget_class": "ski_input",
+"widget_class": "",
 "widget_style": ""
 }
 }
@@ -814,7 +784,7 @@
 "size": "4",
 "title": "",
 "type": "text",
-"widget_class": "ski_input",
+"widget_class": "",
 "widget_style": ""
 }
 }
@@ -860,17 +830,19 @@
 "fields": {
 "disabled": false,
 "input_accepted_class": "",
-"input_class": "ski_input",
+"input_class": "",
 "input_errored_class": "",
 "input_style": "margin-right:1em;",
 "input_text": "",
-"left_class": "ski_left_label",
+"left_class": "",
 "left_label": "Diameter of the field of view:",
+"left_style": "display:inline-block;margin-right:1%;text-align:right;width:30%;",
 "maxlength": "6",
 "pattern": "",
 "required": false,
 "right_class": "",
 "right_label": "(degrees)",
+"right_style": "",
 "set_input_accepted": false,
 "set_input_errored": false,
 "show": true,
@@ -904,16 +876,6 @@
 }
 ]
 ]
-}
-],
-[
-"SectionPlaceHolder",
-{
-"brief": "section footer with alias foot",
-"section_name": "footer",
-"placename": "foot",
-"multiplier": 1,
-"mtag": "div"
 }
 ]
 ]
