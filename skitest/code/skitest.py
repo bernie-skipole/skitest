@@ -4,6 +4,49 @@ This package will be called by the Skipole framework to access your data.
 
 import os, sys
 
+
+
+
+
+
+
+
+
+
+# FOR DEVELOPMENT ONLY ###########################################
+#
+# These lines should be deleted when this project is copied
+# to the 'template_projects' directory of skipole
+#
+# This code ensures the development version of skipole is
+# imported rather than the installed version
+#
+# It assumes a development directory structure of
+#
+# ../skipole          - the development skipole directory
+# ../templates        - the development template projects
+# ../templates/newproj
+# ../templates/skiadmin
+# ../templates/skis
+#
+
+skipole_package_location = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.realpath(__file__))))),
+                                        'skipole')
+
+
+if skipole_package_location not in sys.path:
+    sys.path.insert(0,skipole_package_location)
+
+#
+####################################################################
+
+
+
+
+
+
+
+
 from importlib import import_module
 import pkgutil
 
