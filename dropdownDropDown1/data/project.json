@@ -101,8 +101,8 @@
 "lang": "en",
 "backcol": "#9dbd7a",
 "default_error_widget": [
-"header",
-"top_error"
+"",
+"dropdown1"
 ]
 },
 "head": [
@@ -261,6 +261,98 @@
 }
 ],
 [
+"Widget",
+{
+"class": "inputforms.SubmitForm1",
+"name": "submitform1",
+"brief": "Form used to contain the DropDown1 widget",
+"fields": {
+"action": "2",
+"action_json": "",
+"button_class": "w3-button w3-theme-d4",
+"button_text": "Submit",
+"button_wait_text": "",
+"clear_error": false,
+"container_class": "w3-section",
+"div_class": "",
+"enctype": "",
+"error_class": "w3-panel w3-red",
+"hidden_field1": "",
+"hidden_field2": "",
+"hidden_field3": "",
+"hidden_field4": "",
+"left_class": "",
+"left_label": "Please Submit:",
+"left_style": "display:inline-block;margin-right:1%;text-align:right;width:30%;",
+"right_class": "",
+"right_label": "",
+"right_style": "",
+"show": true,
+"show_error": "",
+"widget_class": "w3-container w3-section",
+"widget_style": ""
+},
+"container_0": [
+[
+"Widget",
+{
+"class": "dropdown.DropDown1",
+"name": "dropdown1",
+"brief": "The DropDown1 widget being tested",
+"fields": {
+"clear_error": false,
+"div_class": "",
+"error_class": "w3-panel w3-red",
+"left_class": "",
+"left_label": "Choose:",
+"left_style": "display:inline-block;margin-right:1%;text-align:right;width:30%;",
+"option_list": [],
+"right_class": "",
+"right_label": "",
+"right_style": "",
+"select_class": "",
+"select_style": "",
+"selectvalue": "\"one\"",
+"show": true,
+"show_error": "",
+"widget_class": "w3-container",
+"widget_style": ""
+}
+}
+]
+]
+}
+],
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "About result",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Text",
+"The result will be shown here:"
+]
+]
+}
+],
+[
+"Widget",
+{
+"class": "paras.ParaText",
+"name": "result",
+"brief": "Shows result of the dropdown selection",
+"fields": {
+"para_text": "No result chosen.",
+"show": true,
+"widget_class": "",
+"widget_style": ""
+}
+}
+],
+[
 "Part",
 {
 "tag_name": "div",
@@ -274,23 +366,23 @@
 [
 "Widget",
 {
-"class": "links.JSONButtonLink",
-"name": "test1",
-"brief": "test1 button",
+"class": "links.ButtonLink1",
+"name": "raiseerror",
+"brief": "Link to test2 to raise an error",
 "fields": {
-"button_text": "test1",
-"button_wait_text": "Please wait...",
+"button_text": "Error",
 "clear_error": false,
 "error_class": "w3-button w3-block w3-theme-action",
+"force_ident": false,
 "get_field1": "",
 "get_field2": "",
+"get_field3": "",
+"get_field4": "",
 "hide": false,
-"json_ident": "",
-"link_ident": "home",
-"local_storage": "",
-"session_storage": "",
+"link_ident": "3",
 "show": true,
 "show_error": "",
+"target": "",
 "widget_class": "w3-button w3-block w3-theme-d4",
 "widget_style": ""
 }
@@ -315,11 +407,52 @@
 "pages": {
 "index": {
 "ident": 1,
-"brief": "Forward call to index_template",
+"brief": "Fills in the index page",
 "RespondPage": {
-"class": "NoOperation",
+"class": "SubmitData",
 "original_args": {
+"allowed_callers": [],
+"fail_ident": "server_error",
+"submit_list": [
+"index"
+],
 "target_ident": 2001
+},
+"original_fields": {}
+}
+},
+"test1": {
+"ident": 2,
+"brief": "Accepts the selection",
+"RespondPage": {
+"class": "StoreData",
+"original_args": {
+"fail_ident": "server_error",
+"submit_list": [
+"test1"
+],
+"submit_option": true,
+"target_ident": 2001,
+"validate_fail_ident": null,
+"validate_option": false
+},
+"original_fields": {
+"dropdown1:selectvalue": ""
+}
+}
+},
+"test2": {
+"ident": 3,
+"brief": "Called by button to raise an error",
+"RespondPage": {
+"class": "SubmitData",
+"original_args": {
+"allowed_callers": [],
+"fail_ident": "home",
+"submit_list": [
+"test2"
+],
+"target_ident": "home"
 },
 "original_fields": {}
 }

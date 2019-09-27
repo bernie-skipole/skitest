@@ -44,10 +44,12 @@ def start_call(called_ident, skicall):
 
 def submit_data(skicall):
     "This function is called when a Responder wishes to submit data for processing in some manner"
-    if skicall.submit_list[0] == 'test1':
+    if skicall.submit_list[0] == 'index':
+        _options(skicall)
+    elif skicall.submit_list[0] == 'test1':
         _test1(skicall)
     elif skicall.submit_list[0] == 'test2':
-        _test2(skicall)
+        raise FailPage("This error is shown in the DropDown1 error paragraph")
     return
 
 
@@ -57,14 +59,19 @@ def end_call(page_ident, page_type, skicall):
     return
 
 
+def _options(skicall):
+    """Fills dropdown"""
+    skicall.page_data["dropdown1","option_list"] = ["one","two","three"]
+    skicall.page_data["dropdown1","selectvalue"] = "one"
+
+
 def _test1(skicall):
     """Test 1"""
-    pass
-
-def _test2(skicall):
-    """Test 2"""
-    pass
-
+    _options(skicall)
+    selected = skicall.call_data["dropdown1","selectvalue"]
+    if selected and (selected in skicall.page_data["dropdown1","option_list"]):
+        skicall.page_data["dropdown1","selectvalue"] = selected
+        skicall.page_data["result","para_text"] = "The option selected is " + selected
 
 
 

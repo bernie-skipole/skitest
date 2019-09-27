@@ -1,4 +1,4 @@
 {
-  "01": "Widget description",
+  "01": "DropDown1 - a div containing a normally hidden error paragraph, and a label with drop down select options. Does not include submit button so should normally be included in a form.\r\n\r\nThe DropDown1 widget below is included within an inputforms.SubmitForm1 widget. Choose an option and press submit.",
   "no_javascript_text": "JAVASCRIPT FAILURE\r\n\r\nThis page is shown because the script on the previous page has failed to run.\r\n\r\nThis could be due to either a failure in the script, or your browser has javascript disabled."
 }
