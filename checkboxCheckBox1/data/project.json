@@ -3,7 +3,7 @@
 "default_language": "en",
 "brief": "New Project",
 "version": "0.0.1",
-"skipole": "3.5.4",
+"skipole": "3.5.5",
 "specialpages": {
 "favicon": 3002,
 "general_json": 2002,
@@ -662,16 +662,6 @@
 }
 ]
 ]
-}
-],
-[
-"SectionPlaceHolder",
-{
-"brief": "section footer with alias foot",
-"section_name": "footer",
-"placename": "foot",
-"multiplier": 0,
-"mtag": "div"
 }
 ]
 ]
