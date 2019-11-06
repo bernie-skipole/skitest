@@ -59,7 +59,7 @@
 "ident": 3001,
 "brief": "skipole logo",
 "FilePage": {
-"filepath": "blank/static/images/logo.svg",
+"filepath": "footersSimpleFooter/static/images/logo.svg",
 "enable_cache": true,
 "mimetype": "image/svg+xml"
 }
@@ -68,7 +68,7 @@
 "ident": 3002,
 "brief": "skipole icon",
 "FilePage": {
-"filepath": "blank/static/images/logo_icon16.svg",
+"filepath": "footersSimpleFooter/static/images/logo_icon16.svg",
 "enable_cache": true,
 "mimetype": "image/svg+xml"
 }
@@ -101,8 +101,8 @@
 "lang": "en",
 "backcol": "#9dbd7a",
 "default_error_widget": [
-"header",
-"top_error"
+"",
+"simplefooter"
 ]
 },
 "head": [
@@ -261,6 +261,40 @@
 }
 ],
 [
+"Widget",
+{
+"class": "footers.SimpleFooter",
+"name": "simplefooter",
+"brief": "Test of simple footer",
+"fields": {
+"clear_error": false,
+"error_class": "w3-panel w3-red",
+"footer_text": "This is the footer text",
+"para_class": "",
+"paradiv_class": "",
+"show": true,
+"show_error": "",
+"widget_class": "w3-container",
+"widget_style": ""
+}
+}
+],
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "first test",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Text",
+"This test sets the paragraph text using a JSON call"
+]
+]
+}
+],
+[
 "Part",
 {
 "tag_name": "div",
@@ -286,7 +320,117 @@
 "get_field1": "",
 "get_field2": "",
 "hide": false,
-"json_ident": "",
+"json_ident": "2",
+"link_ident": "home",
+"local_storage": "",
+"session_storage": "",
+"show": true,
+"show_error": "",
+"widget_class": "w3-button w3-block w3-theme-d4",
+"widget_style": ""
+}
+}
+]
+]
+}
+],
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "second test",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Text",
+"This test raises an error for the default widget of this page, which is the SimpleFooter above."
+]
+]
+}
+],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "Holds button",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "w3-section",
+"style": "margin-left:30%;width:20em;"
+},
+"parts": [
+[
+"Widget",
+{
+"class": "links.JSONButtonLink",
+"name": "test2",
+"brief": "test2 button",
+"fields": {
+"button_text": "test2",
+"button_wait_text": "Please wait...",
+"clear_error": false,
+"error_class": "w3-button w3-block w3-theme-action",
+"get_field1": "",
+"get_field2": "",
+"hide": false,
+"json_ident": "3",
+"link_ident": "home",
+"local_storage": "",
+"session_storage": "",
+"show": true,
+"show_error": "",
+"widget_class": "w3-button w3-block w3-theme-d4",
+"widget_style": ""
+}
+}
+]
+]
+}
+],
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "third test",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Text",
+"If an error is showing, this clears it."
+]
+]
+}
+],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "Holds button",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "w3-section",
+"style": "margin-left:30%;width:20em;"
+},
+"parts": [
+[
+"Widget",
+{
+"class": "links.JSONButtonLink",
+"name": "test3",
+"brief": "test3 button",
+"fields": {
+"button_text": "test3",
+"button_wait_text": "Please wait...",
+"clear_error": false,
+"error_class": "w3-button w3-block w3-theme-action",
+"get_field1": "",
+"get_field2": "",
+"hide": false,
+"json_ident": "4",
 "link_ident": "home",
 "local_storage": "",
 "session_storage": "",
@@ -314,6 +458,22 @@
 }
 },
 "pages": {
+"clear_error": {
+"ident": 4,
+"brief": "Clears an error",
+"RespondPage": {
+"class": "SubmitData",
+"original_args": {
+"allowed_callers": [],
+"fail_ident": "general_json",
+"submit_list": [
+"test3"
+],
+"target_ident": "general_json"
+},
+"original_fields": {}
+}
+},
 "index": {
 "ident": 1,
 "brief": "Forward call to index_template",
@@ -321,6 +481,38 @@
 "class": "NoOperation",
 "original_args": {
 "target_ident": 2001
+},
+"original_fields": {}
+}
+},
+"set_error": {
+"ident": 3,
+"brief": "Sets an error",
+"RespondPage": {
+"class": "SubmitData",
+"original_args": {
+"allowed_callers": [],
+"fail_ident": "general_json",
+"submit_list": [
+"test2"
+],
+"target_ident": "home"
+},
+"original_fields": {}
+}
+},
+"set_text": {
+"ident": 2,
+"brief": "Sets the text by JSON call",
+"RespondPage": {
+"class": "SubmitData",
+"original_args": {
+"allowed_callers": [],
+"fail_ident": "general_json",
+"submit_list": [
+"test1"
+],
+"target_ident": "general_json"
 },
 "original_fields": {}
 }

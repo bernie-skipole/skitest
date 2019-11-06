@@ -23,7 +23,7 @@ from skipole import WSGIApplication, FailPage, GoTo, ValidateError, ServerError,
 # ...projectfiles/checkboxCheckBox1/code/
 
 PROJECTFILES = os.path.dirname(os.path.dirname(os.path.dirname(os.path.realpath(__file__))))
-PROJECT = 'blank'
+PROJECT = 'footersSimpleFooter'
 
 
 
@@ -48,6 +48,8 @@ def submit_data(skicall):
         _test1(skicall)
     elif skicall.submit_list[0] == 'test2':
         _test2(skicall)
+    elif skicall.submit_list[0] == 'test3':
+        _test3(skicall)
     return
 
 
@@ -59,11 +61,14 @@ def end_call(page_ident, page_type, skicall):
 
 def _test1(skicall):
     """Test 1"""
-    pass
+    skicall.page_data['simplefooter', 'footer_text'] = "New text set by JSON call"
 
 def _test2(skicall):
-    """Test 2"""
-    pass
+    raise FailPage("This is an error message set on the footer")
+
+def _test3(skicall):
+    """Test 3"""
+    skicall.page_data['simplefooter', 'clear_error'] = True
 
 
 
