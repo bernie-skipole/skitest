@@ -153,6 +153,7 @@
   "widgets.links.Table3_Buttons2": "A table of three text columns and two button link columns.",
   "widgets.links.module": "Links, including links to page idents, and tables of links with get fields and link text.",
   "widgets.lists.UList1": "A UL list with JSON settable text content.",
+  "widgets.lists.UList2": "A UL list with JSON settable html content.",
   "widgets.lists.module": "Lists, including unordered and ordered lists with JSON settable content.",
   "widgets.logins.NamePasswd1": "A form with input text and password fields, a submit button and four hidden fields.",
   "widgets.logins.Pin4": "Defines a form containing four single character input fields.",

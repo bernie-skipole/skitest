@@ -8,6 +8,30 @@ import os, sys
 # from skipole import the WSGIApplication class which will be used to create a wsgi
 # application, and exception classes which you will need in your functions
 
+
+# FOR DEVELOPMENT ONLY ###########################################
+#
+# This code ensures the development version of skipole is
+# imported rather than the installed version
+#
+# It assumes a development directory structure of
+#
+# ../skipole               - the development skipole directory
+# ../skitest/blank         - the project directory
+#
+
+import os, sys
+
+skipole_package_location = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.realpath(__file__))))),
+                                        'skipole')
+
+if skipole_package_location not in sys.path:
+    sys.path.insert(0,skipole_package_location)
+
+#
+####################################################################
+
+
 from skipole import WSGIApplication, FailPage, GoTo, ValidateError, ServerError, set_debug
 
 # The set_debug function is used during development, it adds exception data to server error
@@ -19,8 +43,7 @@ from skipole import WSGIApplication, FailPage, GoTo, ValidateError, ServerError,
 
 # the framework needs to know the location of the projectfiles directory holding this and
 # other projects - specifically the skis and skiadmin projects
-# The following line assumes, as default, that this script file is located beneath
-# ...projectfiles/checkboxCheckBox1/code/
+
 
 PROJECTFILES = os.path.dirname(os.path.dirname(os.path.dirname(os.path.realpath(__file__))))
 PROJECT = 'blank'

@@ -3,7 +3,7 @@
 "default_language": "en",
 "brief": "Project to test the skipole framework",
 "version": "0.5.0",
-"skipole": "3.5.5",
+"skipole": "3.6.4",
 "specialpages": {
 "basictests": 300002,
 "general_json": 2002,
@@ -227,6 +227,7 @@
 "brief": "Link to multiple destinations set dynamically",
 "fields": {
 "button_class": "w3-button w3-block w3-theme-l1 w3-border w3-round",
+"button_style": "",
 "button_text": "target",
 "button_wait_text": "Please wait...",
 "buttondiv_class": "w3-container w3-center",
@@ -4175,6 +4176,7 @@ false,
 "brief": "Tests start call diversion",
 "fields": {
 "button_class": "w3-button w3-block w3-theme-l1 w3-border",
+"button_style": "",
 "button_text": "start_call test1",
 "button_wait_text": "Please wait...",
 "buttondiv_class": "w3-container w3-center",
@@ -4230,6 +4232,7 @@ false,
 "brief": "Tests start call diversion",
 "fields": {
 "button_class": "w3-button w3-block w3-theme-l1 w3-border",
+"button_style": "",
 "button_text": "start_call test2",
 "button_wait_text": "Please wait...",
 "buttondiv_class": "w3-container w3-center",
@@ -4285,6 +4288,7 @@ false,
 "brief": "Tests goto diversion",
 "fields": {
 "button_class": "w3-button w3-block w3-theme-l1 w3-border",
+"button_style": "",
 "button_text": "goto test3",
 "button_wait_text": "Please wait...",
 "buttondiv_class": "w3-container w3-center",
@@ -4340,6 +4344,7 @@ false,
 "brief": "Tests responder target",
 "fields": {
 "button_class": "w3-button w3-block w3-theme-l1 w3-border",
+"button_style": "",
 "button_text": "skis,server_error",
 "button_wait_text": "Please wait...",
 "buttondiv_class": "w3-container w3-center",
@@ -4918,6 +4923,7 @@ false,
 "brief": "Link to allowedvaluesonly tests",
 "fields": {
 "button_class": "w3-button w3-block w3-theme-l1 w3-border",
+"button_style": "",
 "button_text": "AllowedValuesOnly",
 "button_wait_text": "Please wait...",
 "buttondiv_class": "",
@@ -5170,6 +5176,7 @@ false,
 "brief": "Link to basic validators",
 "fields": {
 "button_class": "w3-button w3-block w3-theme-l1 w3-border",
+"button_style": "",
 "button_text": "basic",
 "button_wait_text": "Please wait...",
 "buttondiv_class": "",
@@ -5211,6 +5218,7 @@ false,
 "brief": "Link to paths validators",
 "fields": {
 "button_class": "w3-button w3-block w3-theme-l1 w3-border",
+"button_style": "",
 "button_text": "paths",
 "button_wait_text": "Please wait...",
 "buttondiv_class": "",
@@ -6215,19 +6223,6 @@ false,
 }
 ],
 [
-"ClosedPart",
-{
-"tag_name": "link",
-"brief": "css link to ski_css",
-"show": true,
-"attribs": {
-"href": "{ski_css}",
-"rel": "stylesheet",
-"type": "text/css"
-}
-}
-],
-[
 "Part",
 {
 "tag_name": "script",
@@ -6496,19 +6491,6 @@ false,
 }
 ],
 [
-"ClosedPart",
-{
-"tag_name": "link",
-"brief": "css link to ski_css",
-"show": true,
-"attribs": {
-"href": "{ski_css}",
-"rel": "stylesheet",
-"type": "text/css"
-}
-}
-],
-[
 "Part",
 {
 "tag_name": "script",
@@ -6709,19 +6691,6 @@ false,
 "show": true,
 "attribs": {
 "href": "{w3_theme_ski_css}",
-"rel": "stylesheet",
-"type": "text/css"
-}
-}
-],
-[
-"ClosedPart",
-{
-"tag_name": "link",
-"brief": "css link to ski_css",
-"show": true,
-"attribs": {
-"href": "{ski_css}",
 "rel": "stylesheet",
 "type": "text/css"
 }
