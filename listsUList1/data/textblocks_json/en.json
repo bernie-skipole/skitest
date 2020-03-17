@@ -1,0 +1,5 @@
+{
+  "01": "This widget is a list of text items, which can be set by JSON. Below is an inital list, the JSON request swaps items.",
+  "02": "Test1 sends a JSON request to change the list contents.",
+  "no_javascript_text": "JAVASCRIPT FAILURE\r\n\r\nThis page is shown because the script on the previous page has failed to run.\r\n\r\nThis could be due to either a failure in the script, or your browser has javascript disabled."
+}

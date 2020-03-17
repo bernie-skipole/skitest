@@ -1,0 +1,404 @@
+{
+"url": "/",
+"default_language": "en",
+"brief": "New Project",
+"version": "0.0.1",
+"skipole": "3.6.4",
+"specialpages": {
+"favicon": 3002,
+"general_json": 2002,
+"home": 1,
+"jquery_core": "skis,jquery_core",
+"no_javascript": "skis,no_javascript",
+"redirector": "skis,redirector",
+"server_error": "skis,server_error",
+"ski_basic": "skis,ski_basic",
+"ski_checkbox": "skis,ski_checkbox",
+"ski_confirm": "skis,ski_confirm",
+"ski_debug_tools": "skis,ski_debug_tools",
+"ski_dropdown": "skis,ski_dropdown",
+"ski_error_messages": "skis,ski_error_messages",
+"ski_footers": "skis,ski_footers",
+"ski_headers": "skis,ski_headers",
+"ski_info": "skis,ski_info",
+"ski_inputforms": "skis,ski_inputforms",
+"ski_inputtables": "skis,ski_inputtables",
+"ski_inputtext": "skis,ski_inputtext",
+"ski_links": "skis,ski_links",
+"ski_lists": "skis,ski_lists",
+"ski_logins": "skis,ski_logins",
+"ski_paras": "skis,ski_paras",
+"ski_paths": "skis,ski_paths",
+"ski_radio": "skis,ski_radio",
+"ski_svgbasics": "skis,ski_svgbasics",
+"ski_svggraphs": "skis,ski_svggraphs",
+"ski_svgmeters": "skis,ski_svgmeters",
+"ski_tables": "skis,ski_tables",
+"ski_textarea": "skis,ski_textarea",
+"ski_upload": "skis,ski_upload",
+"skipole_js": "skis,skipole_js",
+"url_not_found": "skis,url_not_found",
+"validate_error": "skis,validate_error",
+"w3_css": "skis,w3_css",
+"w3_theme_ski_css": "skis,theme4_css"
+},
+"sections": {},
+"RootFolder": {
+"brief": "Site root",
+"default_page_name": "index",
+"restricted": false,
+"folders": {
+"images": {
+"ident": 3000,
+"brief": "Holds images",
+"default_page_name": "index",
+"restricted": false,
+"folders": {},
+"pages": {
+"logo.svg": {
+"ident": 3001,
+"brief": "skipole logo",
+"FilePage": {
+"filepath": "blank/static/images/logo.svg",
+"enable_cache": true,
+"mimetype": "image/svg+xml"
+}
+},
+"logo_icon16.svg": {
+"ident": 3002,
+"brief": "skipole icon",
+"FilePage": {
+"filepath": "blank/static/images/logo_icon16.svg",
+"enable_cache": true,
+"mimetype": "image/svg+xml"
+}
+}
+}
+},
+"restricted": {
+"ident": 2000,
+"brief": "Holds pages not accessable directly via URL",
+"default_page_name": "index",
+"restricted": true,
+"folders": {},
+"pages": {
+"general_json": {
+"ident": 2002,
+"brief": "Empty JSON file for general use",
+"JSON": {
+"enable_cache": false,
+"content": {}
+}
+},
+"index_template": {
+"ident": 2001,
+"brief": "home page for project",
+"TemplatePage": {
+"show_backcol": false,
+"last_scroll": true,
+"interval": 0,
+"interval_target": null,
+"lang": "en",
+"backcol": "#9dbd7a",
+"default_error_widget": [
+"header",
+"top_error"
+]
+},
+"head": [
+"Part",
+{
+"tag_name": "head",
+"brief": "The head section of the page",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"ClosedPart",
+{
+"tag_name": "meta",
+"brief": "The charset meta declaration",
+"show": true,
+"attribs": {
+"charset": "utf-8"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "meta",
+"brief": "The viewport meta declaration",
+"show": true,
+"attribs": {
+"content": "width=device-width, initial-scale=1",
+"name": "viewport"
+}
+}
+],
+[
+"Part",
+{
+"tag_name": "title",
+"brief": "The page title element",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"Text",
+"Index"
+]
+]
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to w3_css",
+"show": true,
+"attribs": {
+"href": "{w3_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"ClosedPart",
+{
+"tag_name": "link",
+"brief": "css link to w3_theme_ski_css",
+"show": true,
+"attribs": {
+"href": "{w3_theme_ski_css}",
+"rel": "stylesheet",
+"type": "text/css"
+}
+}
+],
+[
+"Part",
+{
+"tag_name": "script",
+"brief": "script link to jquery_core",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"src": "{jquery_core}"
+},
+"parts": []
+}
+],
+[
+"Part",
+{
+"tag_name": "script",
+"brief": "script link to skipole_js",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"src": "{skipole_js}"
+},
+"parts": []
+}
+]
+]
+}
+],
+"body": [
+"Part",
+{
+"tag_name": "body",
+"brief": "The body section of the page",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "w3-theme"
+},
+"parts": [
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "container",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "w3-container"
+},
+"parts": [
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "centre",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "w3-section"
+},
+"parts": [
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "Top description",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"TextBlock",
+{
+"textref": "01",
+"failmessage": "TextBlock not found",
+"show": true,
+"escape": true,
+"linebreaks": true
+}
+]
+]
+}
+],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "Widget to be tested",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "w3-section"
+},
+"parts": [
+[
+"Widget",
+{
+"class": "lists.UList1",
+"name": "testwidget",
+"brief": "The UList1 test widget",
+"fields": {
+"even_class": "",
+"odd_class": "",
+"contents": [],
+"show": true,
+"widget_class": "",
+"widget_style": ""
+}
+}
+]
+]
+}
+],
+[
+"Part",
+{
+"tag_name": "p",
+"brief": "About test 1",
+"show": true,
+"hide_if_empty": false,
+"parts": [
+[
+"TextBlock",
+{
+"textref": "02",
+"failmessage": "TextBlock not found",
+"show": true,
+"escape": true,
+"linebreaks": true
+}
+]
+]
+}
+],
+[
+"Part",
+{
+"tag_name": "div",
+"brief": "Holds button",
+"show": true,
+"hide_if_empty": false,
+"attribs": {
+"class": "w3-section",
+"style": "margin-left:30%;width:20em;"
+},
+"parts": [
+[
+"Widget",
+{
+"class": "links.JSONButtonLink",
+"name": "test1",
+"brief": "test1 button",
+"fields": {
+"button_text": "test1",
+"button_wait_text": "Please wait...",
+"clear_error": false,
+"error_class": "w3-button w3-block w3-theme-action",
+"get_field1": "",
+"get_field2": "",
+"hide": false,
+"json_ident": "2",
+"link_ident": "no_javascript",
+"local_storage": "",
+"session_storage": "",
+"show": true,
+"show_error": "",
+"widget_class": "w3-button w3-block w3-theme-d4",
+"widget_style": ""
+}
+}
+]
+]
+}
+]
+]
+}
+]
+]
+}
+]
+]
+}
+]
+}
+}
+}
+},
+"pages": {
+"index": {
+"ident": 1,
+"brief": "Sets initial content",
+"RespondPage": {
+"class": "SubmitData",
+"original_args": {
+"allowed_callers": [],
+"fail_ident": "",
+"submit_list": [
+"index"
+],
+"target_ident": 2001
+},
+"original_fields": {}
+}
+},
+"test1": {
+"ident": 2,
+"brief": "Set list content by JSON",
+"RespondPage": {
+"class": "SubmitData",
+"original_args": {
+"allowed_callers": [
+2001
+],
+"fail_ident": "general_json",
+"submit_list": [
+"test1"
+],
+"target_ident": "general_json"
+},
+"original_fields": {}
+}
+}
+}
+}
+}
