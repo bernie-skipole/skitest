@@ -10,32 +10,6 @@ import pkgutil
 # this import used by basic authentication
 from base64 import b64decode
 
-
-
-# FOR DEVELOPMENT ONLY ###########################################
-#
-# This code ensures the development version of skipole is
-# imported rather than the installed version
-#
-# It assumes a development directory structure of
-#
-# ../skipole          - the development skipole directory
-# ../skitest/skitest  - the project directory
-#
-
-import os, sys
-
-skipole_package_location = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.dirname(os.path.realpath(__file__))))),
-                                        'skipole')
-
-if skipole_package_location not in sys.path:
-    sys.path.insert(0,skipole_package_location)
-
-#
-####################################################################
-
-
-
 from skipole import WSGIApplication, FailPage, GoTo, ValidateError, ServerError, set_debug, use_submit_list
 
 # the framework needs to know the location of the projectfiles directory holding this and
