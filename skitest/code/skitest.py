@@ -1,6 +1,7 @@
 #!/home/bernard/testvenv/bin/python3
 
-# The above line allows this script to be exe
+# The above line allows this script to be executed within the previously
+# prepared virtual environment
 
 """
 This package will be called by the Skipole framework to access your data.
@@ -199,7 +200,7 @@ if __name__ == "__main__":
 
     host = "127.0.0.1"
     port = 8000
-    print("Serving %s on port %s. Call http://localhost:%s/skiadmin to edit." % (PROJECT, port, port))
+    print("Serving %s on port %s. Call http://localhost:%s/test/skiadmin to edit." % (PROJECT, port, port))
 
     # using waitress
     # serve(application, host, port)
