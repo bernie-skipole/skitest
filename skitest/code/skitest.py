@@ -1,3 +1,7 @@
+#!/home/bernard/testvenv/bin/python3
+
+# The above line allows this script to be exe
+
 """
 This package will be called by the Skipole framework to access your data.
 """
@@ -141,7 +145,7 @@ application = WSGIApplication(project=PROJECT,
                               start_call=start_call,
                               submit_data=submit_data,
                               end_call=end_call,
-                              url="/")
+                              url="/test")
 
 
 
@@ -150,7 +154,7 @@ if skis_code not in sys.path:
     sys.path.append(skis_code)
 import skis
 skis_application = skis.makeapp(PROJECTFILES)
-application.add_project(skis_application, url='/lib')
+application.add_project(skis_application, url='/test/lib')
 
 # add widget sub projects
 
@@ -163,7 +167,7 @@ module_tuple = tuple(name for (module_loader, name, ispkg) in pkgutil.iter_modul
 for name in module_tuple:
     appmodule = import_module('widgetprojects.' + name)
     widget_application = appmodule.makeapp(PROJECTFILES)
-    application.add_project(widget_application, url='/'+name)
+    application.add_project(widget_application, url='/test/'+name)
 
 
 
@@ -181,17 +185,26 @@ if __name__ == "__main__":
         sys.path.append(skiadmin_code)                                            #
     import skiadmin                                                               #
     skiadmin_application = skiadmin.makeapp(PROJECTFILES, editedprojname=PROJECT) #
-    application.add_project(skiadmin_application, url='/skiadmin')                #
+    application.add_project(skiadmin_application, url='/test/skiadmin')           #
                                                                                   #
     ###############################################################################
 
+    # if using the waitress server
+    # from waitress import serve
+
+    # or the skilift development server
     from skipole import skilift
 
-    # serve the application with the development server from skilift
+    # serve the application
 
     host = "127.0.0.1"
     port = 8000
     print("Serving %s on port %s. Call http://localhost:%s/skiadmin to edit." % (PROJECT, port, port))
+
+    # using waitress
+    # serve(application, host, port)
+
+    # or skilift
     skilift.development_server(host, port, application)
 
 
