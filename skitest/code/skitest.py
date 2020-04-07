@@ -15,6 +15,15 @@ import pkgutil
 # this import used by basic authentication
 from base64 import b64decode
 
+
+################## For development
+
+sys.path.insert(0,"/home/bernard/git/skipole")
+####################################################
+
+
+
+
 from skipole import WSGIApplication, FailPage, GoTo, ValidateError, ServerError, set_debug, use_submit_list
 
 # the framework needs to know the location of the projectfiles directory holding this and
