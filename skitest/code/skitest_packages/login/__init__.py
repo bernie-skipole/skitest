@@ -44,11 +44,7 @@ def set_cookie2(skicall):
     """set cookie for access to secure2"""
     # set a cookie 'project2:secure2'
     project = skicall.project +"2"
-    cki = cookies.SimpleCookie()
-    cki[project] = "secure2"
-    # one minute expirey time
-    cki[project]['max-age'] = 60
-    return cki
+    return [[project, "secure2", 60]]
 
 
 def secure2_access(skicall):
@@ -63,12 +59,8 @@ def secure2_access(skicall):
 
 def secure2_logout(skicall):
     """set cookie which will not give access to secure2"""
-    # set a cookie 'project2:noaccess'
-    project = skicall.project
-    cki = cookies.SimpleCookie()
-    cki[project +"2"] = "noaccess"
-    return cki
-
+    project = skicall.project +"2"
+    return [[project, "secure2", 0]]
 
 def request_login3(skicall):
     """Set up the basic authentication"""
