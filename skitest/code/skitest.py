@@ -190,9 +190,10 @@ if __name__ == "__main__":
     # or the skilift development server
     from skipole import skilift
 
-    # serve the application
+    # serve the application, note host 0.0.0.0 rather than
+    # 127.0.0.1 - so this will be available externally
 
-    host = "127.0.0.1"
+    host = "0.0.0.0"
     port = 8000
     print("Serving %s on port %s" % (PROJECT, port))
 
