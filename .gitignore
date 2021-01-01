@@ -4,6 +4,5 @@ __pycache__/
 *.tar.gz
 *.db
 *.log
-/skis/*
-/skiadmin/*
+
 

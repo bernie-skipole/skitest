@@ -1,10 +1,6 @@
-#!/home/bernard/testvenv/bin/python3
-
-# The above line allows this script to be executed within the previously
-# prepared virtual environment
 
 """
-This package will be called by the Skipole framework to access your data.
+A test website to illustrate skipole widgets
 """
 
 import os, sys
@@ -16,18 +12,10 @@ import pkgutil
 from base64 import b64decode
 
 
-################## For development
-
-sys.path.insert(0,"/home/bernard/git/skipole")
-####################################################
-
-
-
-
-from skipole import WSGIApplication, FailPage, GoTo, ValidateError, ServerError, set_debug, use_submit_list
+from skipole import WSGIApplication, skis, FailPage, GoTo, ValidateError, ServerError, set_debug, use_submit_list
 
 # the framework needs to know the location of the projectfiles directory holding this and
-# other projects - specifically the skis and skiadmin projects
+# other projects
 
 PROJECTFILES = os.path.dirname(os.path.dirname(os.path.dirname(os.path.realpath(__file__))))
 PROJECT = 'skitest'
@@ -159,11 +147,7 @@ application = WSGIApplication(project=PROJECT,
 
 
 
-skis_code = os.path.join(PROJECTFILES, 'skis', 'code')
-if skis_code not in sys.path:
-    sys.path.append(skis_code)
-import skis
-skis_application = skis.makeapp(PROJECTFILES)
+skis_application = skis.makeapp()
 application.add_project(skis_application, url='/test/lib')
 
 # add widget sub projects
@@ -184,19 +168,20 @@ for name in module_tuple:
 if __name__ == "__main__":
 
     # If called as a script, this portion runs the python wsgiref.simple_server
-    # and serves the project. Typically you would do this with the 'skiadmin'
-    # sub project added which can be used to develop pages for your project
+    # and serves the project.
 
+    ###############################################################################
+    #
+    # you could add the 'skiadmin' sub project
+    # which can be used to develop pages for your project
+    #
     ############################### THESE LINES ADD SKIADMIN ######################
-                                                                                  #
-    set_debug(True)                                                               #
-    skiadmin_code = os.path.join(PROJECTFILES, 'skiadmin', 'code')                #
-    if skiadmin_code not in sys.path:                                             #
-        sys.path.append(skiadmin_code)                                            #
-    import skiadmin                                                               #
-    skiadmin_application = skiadmin.makeapp(PROJECTFILES, editedprojname=PROJECT) #
-    application.add_project(skiadmin_application, url='/test/skiadmin')           #
-                                                                                  #
+    #                                                                             #
+    #set_debug(True)                                                               #
+    #from skipole import skiadmin                                                  #
+    #skiadmin_application = skiadmin.makeapp(editedprojname=PROJECT)               #
+    #application.add_project(skiadmin_application, url='/test/skiadmin')           #
+    #                                                                             #
     ###############################################################################
 
     # if using the waitress server
@@ -209,7 +194,7 @@ if __name__ == "__main__":
 
     host = "127.0.0.1"
     port = 8000
-    print("Serving %s on port %s. Call http://localhost:%s/test/skiadmin to edit." % (PROJECT, port, port))
+    print("Serving %s on port %s" % (PROJECT, port))
 
     # using waitress
     # serve(application, host, port)
