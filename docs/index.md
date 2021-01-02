@@ -38,7 +38,7 @@ clone any required repositories
 git clone git@github.com:bernie-skipole/skitest.git
 
 copy /home/bernard/skitest to /home/bernard/www without the .git and .gitignore
-(this rsync can be used to update www whenever git pull is used to update /skitest)
+(this rsync command can be used to update /www whenever git pull is used to update /skitest)
 
 rsync -ua --exclude=".*" ~/skitest/ ~/www/
 
@@ -58,6 +58,24 @@ And you should get the message
 Serving skitest on port 8000
 
 Use ctrl-c to exit, and set up a service to run this automatically
+
+## Install skitest.service
+
+as root, copy the file
+
+cp /home/bernard/www/skitest.service /lib/systemd/system
+
+Enable the service
+
+systemctl daemon-reload
+systemctl enable skitest.service
+systemctl start skitest
+
+This starts /home/bernard/www/skitest/code/skitest.py on boot up.
+
+The site will be visible at.
+
+[https://webparametrics.co.uk/test](https://webparametrics.co.uk/test)
 
 
 
