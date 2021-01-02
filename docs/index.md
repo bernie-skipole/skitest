@@ -37,15 +37,10 @@ clone any required repositories
 
 git clone git@github.com:bernie-skipole/skitest.git
 
-copy /home/bernard/skitest to /home/bernard/www and remove the .git, .gitignore, README.md leaving just the files needed to serve the project
+copy /home/bernard/skitest to /home/bernard/www without the .git and .gitignore
+(this rsync can be used to update www whenever git pull is used to update /skitest)
 
-cp -r skitest www
-
-rm -r www/.git
-
-rm www/.gitignore
-
-rm www/README.md
+rsync -ua --exclude=".*" ~/skitest/ ~/www/
 
 The skitest Python program requires the skipole package
 and waitress

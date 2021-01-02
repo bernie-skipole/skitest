@@ -195,12 +195,12 @@ if __name__ == "__main__":
 
     host = "0.0.0.0"
     port = 8000
-    print("Serving %s on port %s" % (PROJECT, port))
 
     # using waitress
-    serve(application, host, port)
+    serve(application, host=host, port=port)
 
     # or skilift
+    # print("Serving %s on port %s" % (PROJECT, port))
     # skilift.development_server(host, port, application)
 
 
