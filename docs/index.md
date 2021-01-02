@@ -1,8 +1,10 @@
 # Container build documentation
 
-This documents creating a container on a server, for the full build of the server, see
+This documents creating a container on webparametrics.co.uk, for the full build of the server, see
 
 [https://bernie-skipole.github.io/webparametrics/](https://bernie-skipole.github.io/webparametrics/)
+
+This container will serve widgets produced by the skipole framework.
 
 On server webparametrics.co.uk, as user bernard
 
@@ -14,13 +16,13 @@ This gives container ip address 10.105.192.227
 
 lxc exec skitest -- /bin/bash
 
+This gives a bash console as root in the skitest container. Update, install pip and add a user, in this case 'bernard'.
+
 apt-get update
 
 apt-get upgrade
 
 apt-get install python3-pip
-
-Then as root in tester:
 
 adduser bernard
 
@@ -69,10 +71,12 @@ as root, copy the file
 
 cp /home/bernard/www/skitest.service /lib/systemd/system
 
-Enable the service
+Enable the service with
 
 systemctl daemon-reload
+
 systemctl enable skitest.service
+
 systemctl start skitest
 
 This starts /home/bernard/www/skitest/code/skitest.py on boot up.
