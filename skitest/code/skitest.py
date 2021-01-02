@@ -167,7 +167,7 @@ for name in module_tuple:
 
 if __name__ == "__main__":
 
-    # If called as a script, this portion runs the python wsgiref.simple_server
+    # If called as a script, this portion runs the python waitress server
     # and serves the project.
 
     ###############################################################################
@@ -185,10 +185,10 @@ if __name__ == "__main__":
     ###############################################################################
 
     # if using the waitress server
-    # from waitress import serve
+    from waitress import serve
 
     # or the skilift development server
-    from skipole import skilift
+    # from skipole import skilift
 
     # serve the application, note host 0.0.0.0 rather than
     # 127.0.0.1 - so this will be available externally
@@ -198,10 +198,10 @@ if __name__ == "__main__":
     print("Serving %s on port %s" % (PROJECT, port))
 
     # using waitress
-    # serve(application, host, port)
+    serve(application, host, port)
 
     # or skilift
-    skilift.development_server(host, port, application)
+    # skilift.development_server(host, port, application)
 
 
 

@@ -48,8 +48,11 @@ rm www/.gitignore
 rm www/README.md
 
 The skitest Python program requires the skipole package
+and waitress
 
 python3 -m pip install --user skipole
+
+Python3 -m pip install --user waitress
 
 It should now be possible to run skitest
 
