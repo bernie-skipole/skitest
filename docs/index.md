@@ -1,5 +1,9 @@
 # Container build documentation
 
+This documents creating a container on a server, for the full build of the server, see
+
+[https://bernie-skipole.github.io/webparametrics/](https://bernie-skipole.github.io/webparametrics/)
+
 On server webparametrics.co.uk, as user bernard
 
 lxc launch ubuntu:20.04 skitest
